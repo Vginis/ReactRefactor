@@ -3,26 +3,158 @@ import * as fs from 'fs';
 import jscodeshift from 'jscodeshift';
 
 class ReactComponent {
-    constructor(name, properties, returnedElements,parentElements, filepath, ast){
+    constructor(name, properties, returnedElements,parentElements, filepath, ast, useStateDeclarations=[]){
         this.name = name;
         this.properties = properties;
         this.returnedElements = returnedElements;
         this.parentElements = parentElements;
         this.filepath = filepath;
         this.ast = ast;
+        this.useStateDeclarations = useStateDeclarations;
     }
 
     addNewProperty(newProp){
         if(!this.properties.includes(newProp)){
             this.properties.push(newProp);
-        }
+        }else{
+            console.log("Property already exists. Maybe pick a new name for the prop.")
+            return;}
+        const j = jscodeshift;
+        const filePath = this.filepath;
+        const ast = this.ast;
+    
+        let updatedAst = ast;
+        updatedAst.find(j.FunctionDeclaration).forEach(path => {
+            if (path.node.id.name === this.name) {
+                if (path.node.params.length === 0) {
+                    const newPropNode = j.property('init', j.identifier(newProp), j.identifier(newProp));
+                    const objectPattern = j.objectPattern([newPropNode]);
+                    path.node.params.push(objectPattern);
+                } else {
+                    path.node.params.forEach(param => {
+                        if (param.type === 'ObjectPattern') {
+                            const newPropNode = j.property('init', j.identifier(newProp), j.identifier(newProp));
+                            param.properties.push(newPropNode);
+                        }
+                    });
+                }
+            }
+        });
+    
+        const updatedCode = updatedAst.toSource();
+        fs.writeFileSync(filePath, updatedCode, 'utf8');
     }
 
     removeProperty(prop){
-        if(this.properties.includes(prop)){
-            this.properties = this.properties.filter(pr => pr!==prop)
+        let deleted = false;
+        if(this.properties.includes(prop+`=${prop}`)){
+            this.properties = this.properties.filter(pr => pr!==(prop+`=${prop}`))
+            deleted = true;
         }
+        if(!deleted){
+            console.log("This Property doesn't exist");
+            return;
+        }
+        const ast = this.ast;
+        const j = jscodeshift;
+        const filePath = this.filepath;
+        let updatedAst = ast;
+        updatedAst.find(j.FunctionDeclaration).forEach(path => {
+            path.node.params.forEach(param => {
+                if (param.type === 'ObjectPattern') {
+                    param.properties = param.properties.filter(property => {
+                        return !(property.key && property.key.name === prop);
+                    });
+                    
+                }
+            });
+        });
+        const updatedCode = updatedAst.toSource();
+        fs.writeFileSync(filePath, updatedCode, 'utf8');
     }
+//BUG: when the import is like this: import React,{useState} from 'react'; is not working. 
+    addNewUseStateDeclaration(variableDec){
+        if(!this.useStateDeclarations.includes(variableDec)){
+            this.useStateDeclarations.push(variableDec);
+        }
+        const j = jscodeshift;
+        const { variableName, setVariableMethod, initialValue } = variableDec;
+        let foundUseState = false;
+
+        this.ast.find(j.ImportDeclaration).forEach(path => {
+            if (path.node.source.value === 'react') {
+                const existingSpecifier = path.node.specifiers.find(specifier => specifier.imported.name === 'useState');
+                if (!existingSpecifier) {
+                    path.node.specifiers.push(j.importSpecifier(j.identifier('useState')));
+                }
+                foundUseState = true;
+            }
+        });
+
+        if (!foundUseState) {
+            const importDeclaration = j.importDeclaration(
+                [j.importSpecifier(j.identifier('useState'))],
+                j.literal('react')
+            );
+            this.ast.get().node.program.body.unshift(importDeclaration);
+        }
+
+        this.ast.find(j.FunctionDeclaration).forEach(path => {
+            if (path.node.id.name === this.name) {
+                const useStateCall = j.variableDeclaration('const', [
+                    j.variableDeclarator(
+                        j.arrayPattern([
+                            j.identifier(variableName),
+                            j.identifier(setVariableMethod)
+                        ]),
+                        j.callExpression(
+                            j.identifier('useState'),
+                            [j.literal(initialValue)]
+                        )
+                    )
+                ]);
+
+                path.node.body.body.unshift(useStateCall);
+            }
+        });
+
+        const updatedCode = this.ast.toSource();
+        fs.writeFileSync(this.filepath, updatedCode, 'utf8');
+    }
+    removeUseStateDeclaration(variableName){
+        let deleted = false;
+        this.useStateDeclarations.forEach(el => {
+            if(el.variableName === variableName){
+                this.useStateDeclarations = this.useStateDeclarations.filter(el => el.variableName !== variableName);
+                deleted = true;
+            }
+        })
+        if(!deleted){
+            console.log("Use State Declaration doesn't exist");
+            return;
+        }
+        const j = jscodeshift;
+        const filePath = this.filepath;
+        const ast = this.ast;
+        ast.find(j.FunctionDeclaration).forEach(path => {
+            if (path.node.id.name === this.name) {
+                path.node.body.body = path.node.body.body.filter(node => {
+                    if (j.VariableDeclaration.check(node)) {
+                        const declaration = node.declarations[0];
+                        if (j.ArrayPattern.check(declaration.id)) {
+                            const [stateVar] = declaration.id.elements;
+                            return stateVar.name !== variableName;
+                        }
+                    }
+                    return true;
+                });
+            }
+        });
+
+        const updatedCode = ast.toSource();
+        fs.writeFileSync(filePath, updatedCode, 'utf8');
+
+        }
 }
 
 function loadReactComponents(files){
@@ -116,58 +248,4 @@ function addParents(reactComponents){
     
 }
 
-function addNewPropToComponent(reactComponent, newProp) {
-    const j = jscodeshift;
-    const filePath = reactComponent.filepath;
-    const ast = reactComponent.ast;
-
-    let updatedAst = ast;
-    updatedAst.find(j.FunctionDeclaration).forEach(path => {
-        if (path.node.id.name === reactComponent.name) {
-            console.log('here-1');
-            reactComponent.addNewProperty(newProp);
-            console.log('here0');
-            if (path.node.params.length === 0) {
-                const newPropNode = j.property('init', j.identifier(newProp.split('=')[0]), j.identifier(newProp.split('=')[1]));
-                const objectPattern = j.objectPattern([newPropNode]);
-                path.node.params.push(objectPattern);
-                console.log('here1');
-            } else {
-                path.node.params.forEach(param => {
-                    if (param.type === 'ObjectPattern') {
-                        const newPropNode = j.property('init', j.identifier(newProp.split('=')[0]), j.identifier(newProp.split('=')[1]));
-                        param.properties.push(newPropNode);
-                        console.log('here2');
-                    }
-                });
-            }
-        }
-    });
-
-    const updatedCode = updatedAst.toSource();
-    fs.writeFileSync(filePath, updatedCode, 'utf8');
-}
-
-function removeExistingPropFromComponent(reactComponent, prop){
-    const j = jscodeshift;
-    const filePath = reactComponent.filepath;
-    const ast = reactComponent.ast;
-
-    let updatedAst = ast;
-    updatedAst.find(j.FunctionDeclaration).forEach(path => {
-        path.node.params.forEach(param => {
-            if (param.type === 'ObjectPattern') {
-                console.log(param.properties[0].key);
-                console.log(prop);
-                param.properties = param.properties.filter(property => {
-                    return !(property.key && property.key.name === prop);
-                });
-                
-            }
-        });
-    });
-    //reactComponent.removeProperty(prop);
-    const updatedCode = updatedAst.toSource();
-    fs.writeFileSync(filePath, updatedCode, 'utf8');
-}
-export {ReactComponent, loadReactComponents, addParents,addNewPropToComponent,removeExistingPropFromComponent};
+export {ReactComponent, loadReactComponents, addParents};
