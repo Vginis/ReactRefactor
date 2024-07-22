@@ -13,15 +13,20 @@ class ReactComponent {
         this.useStateDeclarations = useStateDeclarations;
     }
 
+    loadFileAndAst(){
+        const j = jscodeshift;
+        const filePath = this.filepath;
+        const ast = this.ast;
+        return {j,filePath,ast};
+    }
+
     addNewProperty(newProp){
         if(!this.properties.includes(newProp)){
             this.properties.push(newProp);
         }else{
             console.log("Property already exists. Maybe pick a new name for the prop.")
             return;}
-        const j = jscodeshift;
-        const filePath = this.filepath;
-        const ast = this.ast;
+        const {j,filePath,ast} = this.loadFileAndAst();
     
         let updatedAst = ast;
         updatedAst.find(j.FunctionDeclaration).forEach(path => {
@@ -55,9 +60,7 @@ class ReactComponent {
             console.log("This Property doesn't exist");
             return;
         }
-        const ast = this.ast;
-        const j = jscodeshift;
-        const filePath = this.filepath;
+        const {j,filePath,ast} = this.loadFileAndAst();
         let updatedAst = ast;
         updatedAst.find(j.FunctionDeclaration).forEach(path => {
             path.node.params.forEach(param => {
@@ -133,9 +136,7 @@ class ReactComponent {
             console.log("Use State Declaration doesn't exist");
             return;
         }
-        const j = jscodeshift;
-        const filePath = this.filepath;
-        const ast = this.ast;
+        const {j,filePath,ast} = this.loadFileAndAst();
         ast.find(j.FunctionDeclaration).forEach(path => {
             if (path.node.id.name === this.name) {
                 path.node.body.body = path.node.body.body.filter(node => {
@@ -162,9 +163,7 @@ class ReactComponent {
             return;
         }
 
-        const j = jscodeshift;
-        const ast = this.ast;
-        const filePath = this.filepath;
+        const {j,filePath,ast} = this.loadFileAndAst();
         
          ast.find(j.ReturnStatement).forEach(path => {
             j(path).find(j.JSXElement).forEach(elementPath => {
@@ -192,9 +191,7 @@ class ReactComponent {
             console.log("Given componentName not included in the return elements.")
             return;
         }
-        const j = jscodeshift;
-        const ast = this.ast;
-        const filePath = this.filepath;
+        const {j,filePath,ast} = this.loadFileAndAst();
 
         ast.find(j.ReturnStatement).forEach(path => {
             j(path).find(j.JSXElement).forEach(elementPath => {
@@ -211,7 +208,7 @@ class ReactComponent {
         fs.writeFileSync(filePath, output);
     }
 }
-
+//todo ayta edo se allo arxeio
 function loadReactComponents(files){
     let components = [];
     const j = jscodeshift;

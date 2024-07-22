@@ -1,3 +1,6 @@
+import path from 'path';
+import * as fs from 'fs';
+import jscodeshift from 'jscodeshift';
 function findCommonAncestor(componentA, componentB,root){
     function getAncestors(component) {
         const ancestors = [];
@@ -27,4 +30,42 @@ function findCommonAncestor(componentA, componentB,root){
     return null;
 }
 
-export {findCommonAncestor};
+function getValueFromGivenState(state,component){
+    const j = jscodeshift;
+    let foundDeclaration = null;
+    const ast = component.ast;
+    ast.find(j.VariableDeclaration).forEach(path => {
+        path.node.declarations.forEach(declaration => {
+            if (j.ArrayPattern.check(declaration.id) && declaration.id.elements.length === 2){
+                const [stateElement] = declaration.id.elements;
+                if(j.Identifier.check(stateElement) && stateElement.name === state){
+                    if( 
+                    j.CallExpression.check(declaration.init) &&
+                    j.Identifier.check(declaration.init.callee) &&
+                    declaration.init.callee.name === 'useState'
+                ) {
+                    foundDeclaration = declaration.init.arguments[0].value;
+                }
+                }
+            }
+        })
+    });
+
+return foundDeclaration;
+}
+
+function findCommonUseStates(useStateDeclarations){
+    let counts = {};
+    useStateDeclarations.forEach(declaration => {
+        const key = JSON.stringify({ name: declaration.variableName, value: declaration.initialValue });
+
+        if(counts[key] === undefined){
+            counts[key] = 1;
+        } else {
+            counts[key] ++;
+        }
+    })
+    return counts;
+}
+
+export {findCommonAncestor,getValueFromGivenState,findCommonUseStates};
