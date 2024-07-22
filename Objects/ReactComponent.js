@@ -155,6 +155,61 @@ class ReactComponent {
         fs.writeFileSync(filePath, updatedCode, 'utf8');
 
         }
+    
+    addNewPropToReturnElement(variableName,componentName){
+        if(!this.returnedElements.includes(componentName)){
+            console.log("Given componentName not included in the return elements.")
+            return;
+        }
+
+        const j = jscodeshift;
+        const ast = this.ast;
+        const filePath = this.filepath;
+        
+         ast.find(j.ReturnStatement).forEach(path => {
+            j(path).find(j.JSXElement).forEach(elementPath => {
+                if(elementPath.node.openingElement.name.name === componentName){
+                    const attributes = elementPath.node.openingElement.attributes;
+
+                    if(!attributes.some(attr => attr.name && attr.name.name === variableName)){
+                        attributes.push(
+                            j.jsxAttribute(
+                                j.jsxIdentifier(variableName),
+                                j.jsxExpressionContainer(j.identifier(variableName))
+                            )
+                        );
+                    }
+                }
+            });
+        });
+
+        const output = ast.toSource();
+        fs.writeFileSync(filePath, output);
+    }
+
+    removePropFromReturnElement(variableName,componentName){
+        if(!this.returnedElements.includes(componentName)){
+            console.log("Given componentName not included in the return elements.")
+            return;
+        }
+        const j = jscodeshift;
+        const ast = this.ast;
+        const filePath = this.filepath;
+
+        ast.find(j.ReturnStatement).forEach(path => {
+            j(path).find(j.JSXElement).forEach(elementPath => {
+               if(elementPath.node.openingElement.name.name === componentName){
+                 const attributes = elementPath.node.openingElement.attributes;
+                 const filtAttributes = attributes.filter(el => (el.name.name !== variableName));
+                 console.log(filtAttributes);
+                 elementPath.node.openingElement.attributes = filtAttributes;
+               }
+            })
+        })
+
+        const output = ast.toSource();
+        fs.writeFileSync(filePath, output);
+    }
 }
 
 function loadReactComponents(files){
