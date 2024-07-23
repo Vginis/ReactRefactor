@@ -1,5 +1,3 @@
-import path from 'path';
-import * as fs from 'fs';
 import jscodeshift from 'jscodeshift';
 function findCommonAncestor(componentA, componentB,root){
     function getAncestors(component) {
@@ -68,4 +66,47 @@ function findCommonUseStates(useStateDeclarations){
     return counts;
 }
 
-export {findCommonAncestor,getValueFromGivenState,findCommonUseStates};
+function findRepeatedCode(componentA,componentB,minLines = 4){
+    const linesA = getLinesFromAst(componentA.ast);
+    const linesB = getLinesFromAst(componentB.ast);
+
+    const repeatedSeqs = [];
+
+    for(let i=0; i<linesA.length; i++){
+        for(let j=0; j<linesB.length; j++){
+            let k = 0;
+            while(linesA[i+k] && linesB[j+k] && linesA[i+k] === linesB[j+k]){
+                k++;
+            }
+            if(k >= minLines){
+                repeatedSeqs.push({
+                    start1: i,
+                    start2: j,
+                    length: k,
+                    lines: linesA.slice(i, i + k)
+                });
+            }
+        }
+    }
+    const filteredSeqs = [];
+    repeatedSeqs.forEach(seq => {
+        const isSubset = repeatedSeqs.some(otherSeq =>
+            otherSeq !== seq &&
+            seq.start1 >= otherSeq.start1 &&
+            seq.start2 >= otherSeq.start2 &&
+            seq.start1 + seq.length <= otherSeq.start1 + otherSeq.length &&
+            seq.start2 + seq.length <= otherSeq.start2 + otherSeq.length
+        );
+        if (!isSubset) {
+            filteredSeqs.push(seq);
+        }
+    });
+
+    return filteredSeqs;
+}
+
+function getLinesFromAst(ast){
+    const code = ast.toSource();
+    return code.split('\n');
+}
+export {findCommonAncestor,getValueFromGivenState,findCommonUseStates,findRepeatedCode};

@@ -1,10 +1,10 @@
 import * as fs from 'fs';
 import jscodeshift from 'jscodeshift';
-import path from 'path';
 import {ReactFile,loadReactFiles} from './Objects/ReactFile.js';
-import {ReactComponent, loadReactComponents,addParents} from './Objects/ReactComponent.js';
+import {ReactComponent} from './Objects/ReactComponent.js';
+import { loadReactComponents,addParents } from './Objects/loadingFuncs.js';
 import {UseStateDeclaration, loadUseStateVariables} from './Objects/UseStateDeclaration.js';
-import {findCommonAncestor,getValueFromGivenState,findCommonUseStates} from './Objects/util.js';
+import {findCommonAncestor,getValueFromGivenState,findCommonUseStates,findRepeatedCode} from './Objects/util.js';
 import {StateLifter} from './Objects/StateLifter.js';
 let files = fs.readdirSync('../code/vite-project/src/');
 const j = jscodeshift;
@@ -29,7 +29,7 @@ const root = reactComponents[0];
 
 const liftStater = new StateLifter([reactComponents[0],reactComponents[3]],'age');
 
-
+console.log(reactComponents);
 //USE CASES(TESTING PURPOSES)
 // const variable = 'number';
 // reactComponents[3].addNewUseStateDeclaration({
@@ -39,7 +39,7 @@ const liftStater = new StateLifter([reactComponents[0],reactComponents[3]],'age'
 //     filePath: reactComponents[3].filepath,
 //     reactComponent: reactComponents[3].name
 // });
-reactComponents[0].addNewProperty('age')
+//reactComponents[0].addNewProperty('age')
 //reactComponents[1].removeProperty('age')
 //reactComponents[3].removeUseStateDeclaration('number');
 //console.log(findCommonAncestor(reactComponents[2],reactComponents[1],root));
