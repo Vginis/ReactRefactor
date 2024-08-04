@@ -4,7 +4,7 @@ import {ReactFile,loadReactFiles} from './lib/ReactFile.js';
 import {ReactComponent} from './lib/ReactComponent.js';
 import { loadReactComponents,addParents } from './lib/loadingFuncs.js';
 import {UseStateDeclaration, loadUseStateVariables} from './lib/UseStateDeclaration.js';
-import {findCommonAncestor,getValueFromGivenState,findCommonUseStates,findRepeatedCode} from './lib/util.js';
+import {findCommonAncestor,getValueFromGivenState,findCommonUseStates,findRepeatedCode, locatePropDrillingPath} from './lib/util.js';
 import {StateLifter} from './lib/StateLifter.js';
 import {loadHierarchy} from './lib/hierarchy.js';
 let files = fs.readdirSync('../code/vite-project/src/');
@@ -46,7 +46,8 @@ const hierarchyTree = loadHierarchy(root,reactComponents);
 // console.log(getValueFromGivenState('age',reactComponents[3]));
 // liftStater.liftStateUpFromTwoComponents(root);
 //const counts = findCommonUseStates(useStateVariableDeclarations);
-
+//console.log(reactComponents[1].getChildProps());
+console.log(locatePropDrillingPath(root,reactComponents))
 reactComponents.forEach(comp => {
     comp.writeChanges();
 })
