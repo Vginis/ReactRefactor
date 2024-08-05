@@ -4,9 +4,11 @@ import {ReactFile,loadReactFiles} from './lib/ReactFile.js';
 import {ReactComponent} from './lib/ReactComponent.js';
 import { loadReactComponents,addParents } from './lib/loadingFuncs.js';
 import {UseStateDeclaration, loadUseStateVariables} from './lib/UseStateDeclaration.js';
-import {findCommonAncestor,getValueFromGivenState,findCommonUseStates,findRepeatedCode, locatePropDrillingPath} from './lib/util.js';
+import {findCommonAncestor,getValueFromGivenState,findCommonUseStates,findRepeatedCode} from './lib/util.js';
+import { PropDrilling,locatePropDrillingPath } from './lib/PropDrilling.js';
 import {StateLifter} from './lib/StateLifter.js';
 import {loadHierarchy} from './lib/hierarchy.js';
+import { createNewContextFile } from './lib/CreateNewFiles.js';
 let files = fs.readdirSync('../code/vite-project/src/');
 
 files = files.filter(file => file.endsWith(".jsx"));
@@ -47,7 +49,12 @@ const hierarchyTree = loadHierarchy(root,reactComponents);
 // liftStater.liftStateUpFromTwoComponents(root);
 //const counts = findCommonUseStates(useStateVariableDeclarations);
 //console.log(reactComponents[1].getChildProps());
-console.log(locatePropDrillingPath(root,reactComponents))
+// const propDrilling = locatePropDrillingPath(root,reactComponents);
+// propDrilling.removeAllProps(reactComponents);
+// console.log(locatePropDrillingPath(root,reactComponents));
+//createNewContextFile('age')
+
+reactComponents[1].addValueContextUsage('age');
 reactComponents.forEach(comp => {
     comp.writeChanges();
 })
