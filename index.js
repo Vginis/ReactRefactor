@@ -49,12 +49,15 @@ const hierarchyTree = loadHierarchy(root,reactComponents);
 // liftStater.liftStateUpFromTwoComponents(root);
 //const counts = findCommonUseStates(useStateVariableDeclarations);
 //console.log(reactComponents[1].getChildProps());
-// const propDrilling = locatePropDrillingPath(root,reactComponents);
+//const propDrilling = locatePropDrillingPath(root,reactComponents);
 // propDrilling.removeAllProps(reactComponents);
-// console.log(locatePropDrillingPath(root,reactComponents));
+//console.log(locatePropDrillingPath(root,reactComponents));
+const propDrilinOb = locatePropDrillingPath(root,reactComponents);
+propDrilinOb[0].addUseContext(reactComponents);
 //createNewContextFile('age')
+//propDrilling.addUseContext(reactComponents);
 
-reactComponents[1].addValueContextUsage('age');
+
 reactComponents.forEach(comp => {
     comp.writeChanges();
 })
