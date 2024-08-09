@@ -5,9 +5,9 @@ import {ReactComponent} from './lib/ReactComponent.js';
 import { loadReactComponents,addParents } from './lib/loadingFuncs.js';
 import {UseStateDeclaration, loadUseStateVariables} from './lib/UseStateDeclaration.js';
 import {findCommonAncestor,getValueFromGivenState,findCommonUseStates,findRepeatedCode} from './lib/util.js';
-import { PropDrilling,locatePropDrillingPath } from './lib/PropDrilling.js';
+import { PropDrilling } from './lib/PropDrilling.js';
 import {StateLifter} from './lib/StateLifter.js';
-import {loadHierarchy} from './lib/hierarchy.js';
+import {loadHierarchy,extractAllPaths,extractPropDrillingObjects} from './lib/hierarchy.js';
 import { createNewContextFile } from './lib/CreateNewFiles.js';
 let files = fs.readdirSync('../code/vite-project/src/');
 
@@ -28,6 +28,8 @@ useStateVariableDeclarations.forEach(variable => {
 })
 const root = reactComponents.find(comp => !comp.parent);
 const hierarchyTree = loadHierarchy(root,reactComponents);
+const paths = extractAllPaths(hierarchyTree);
+console.log(extractPropDrillingObjects(paths,reactComponents));
 //console.log(JSON.stringify(hierarchyTree, null, 2));
 ///const liftStater = new StateLifter([reactComponents[0],reactComponents[3]],'age');
 //USE CASES(TESTING PURPOSES)
@@ -52,11 +54,9 @@ const hierarchyTree = loadHierarchy(root,reactComponents);
 //const propDrilling = locatePropDrillingPath(root,reactComponents);
 // propDrilling.removeAllProps(reactComponents);
 //console.log(locatePropDrillingPath(root,reactComponents));
-const propDrilinOb = locatePropDrillingPath(root,reactComponents);
-propDrilinOb[0].addUseContext(reactComponents);
+// propDrilinOb[0].addUseContext(reactComponents);
 //createNewContextFile('age')
 //propDrilling.addUseContext(reactComponents);
-
 
 reactComponents.forEach(comp => {
     comp.writeChanges();
