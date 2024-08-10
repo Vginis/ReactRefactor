@@ -29,7 +29,8 @@ useStateVariableDeclarations.forEach(variable => {
 const root = reactComponents.find(comp => !comp.parent);
 const hierarchyTree = loadHierarchy(root,reactComponents);
 const paths = extractAllPaths(hierarchyTree);
-console.log(extractPropDrillingObjects(paths,reactComponents));
+const propDrillingObjs = extractPropDrillingObjects(paths,reactComponents);
+//propDrillingObjs[0].addComponentComposition(reactComponents);
 //console.log(JSON.stringify(hierarchyTree, null, 2));
 ///const liftStater = new StateLifter([reactComponents[0],reactComponents[3]],'age');
 //USE CASES(TESTING PURPOSES)
