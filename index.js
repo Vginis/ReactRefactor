@@ -9,10 +9,12 @@ import { PropDrilling } from './lib/PropDrilling.js';
 import {StateLifter} from './lib/StateLifter.js';
 import {loadHierarchy,extractAllPaths,extractPropDrillingObjects} from './lib/hierarchy.js';
 import { createNewContextFile } from './lib/CreateNewFiles.js';
-let files = fs.readdirSync('../code/vite-project/src/');
+
+export const projectPath = '../code/vite-project/src/';
+
+let files = fs.readdirSync(`${projectPath}`);
 
 files = files.filter(file => file.endsWith(".jsx"));
-
 const reactFiles = loadReactFiles(files);
 const reactComponents = loadReactComponents(reactFiles);
 const useStateVariableDeclarations = loadUseStateVariables(reactFiles);
@@ -30,10 +32,10 @@ const root = reactComponents.find(comp => !comp.parent);
 const hierarchyTree = loadHierarchy(root,reactComponents);
 const paths = extractAllPaths(hierarchyTree);
 const propDrillingObjs = extractPropDrillingObjects(paths,reactComponents);
-
+//console.log(propDrillingObjs);
 //USE CASES(TESTING PURPOSES)
 //propDrillingObjs[0].addComponentComposition(reactComponents);
-//console.log(JSON.stringify(hierarchyTree, null, 2));
+console.log(JSON.stringify(hierarchyTree, null, 2));
 //const liftStater = new StateLifter([reactComponents[0],reactComponents[3]],'age')
 // const variable = 'number';
 // reactComponents[0].addNewUseStateDeclaration({
@@ -43,7 +45,7 @@ const propDrillingObjs = extractPropDrillingObjects(paths,reactComponents);
 //     filePath: reactComponents[3].filepath,
 //     reactComponent: reactComponents[3].name
 // });
-//reactComponents[1].addNewProperty('age')
+//reactComponents[0].addNewProperty('age')
 //reactComponents[0].removeProperty('age')
 //reactComponents[0].removeUseStateDeclaration('number');
 //console.log(findCommonAncestor(reactComponents[2],reactComponents[1],root));
