@@ -10,14 +10,14 @@ import {StateLifter} from './lib/StateLifter.js';
 import {loadHierarchy,extractAllPaths,extractPropDrillingObjects} from './lib/hierarchy.js';
 import { createNewContextFile } from './lib/CreateNewFiles.js';
 
-export const projectPath = '../chat-app-react-nodejs-master/chat-app-react-nodejs-master/public/src/components';
+export const projectPath = '../code2/my-app/src';
 
 let files = fs.readdirSync(`${projectPath}`);
 
-files = files.filter(file => file.endsWith(".jsx"));
+files = files.filter(file => file.endsWith(".js"));
 const reactFiles = loadReactFiles(files);
 const reactComponents = loadReactComponents(reactFiles);
-const useStateVariableDeclarations = loadUseStateVariables(reactFiles);
+const useStateVariableDeclarations = loadUseStateVariables(reactFiles);//this doesn't work for arrow functions
 
 addParents(reactComponents);
 useStateVariableDeclarations.forEach(variable => {
@@ -27,7 +27,6 @@ useStateVariableDeclarations.forEach(variable => {
         }
     })
 });
-//console.log(reactComponents[1].name);
 const root = reactComponents.find(comp => !comp.parent);
 const hierarchyTree = loadHierarchy(root,reactComponents);
 const paths = extractAllPaths(hierarchyTree);
@@ -35,23 +34,23 @@ const propDrillingObjs = extractPropDrillingObjects(paths,reactComponents);
 console.log(propDrillingObjs);
 //USE CASES(TESTING PURPOSES)
 //propDrillingObjs[0].addComponentComposition(reactComponents);
-console.log(JSON.stringify(hierarchyTree, null, 2));
+//console.log(JSON.stringify(hierarchyTree, null, 2));
 //const liftStater = new StateLifter([reactComponents[0],reactComponents[3]],'age')
 // const variable = 'number';
 // reactComponents[0].addNewUseStateDeclaration({
 //     variableName: variable,
 //     setVariableMethod: `set${variable.charAt(0).toUpperCase() + variable.slice(1)}`,
 //     initialValue: 90,
-//     filePath: reactComponents[3].filepath,
-//     reactComponent: reactComponents[3].name
+//     filePath: reactComponents[0].filepath,
+//     reactComponent: reactComponents[0].name
 // });
-//reactComponents[1].addNewProperty('number')
-//reactComponents[3].removeProperty('age')
-//reactComponents[3].removeUseStateDeclaration('msg');
+//reactComponents[0].addNewProperty('id')
+//reactComponents[0].removeProperty('id')
+//reactComponents[0].removeUseStateDeclaration('number');
 //console.log(findCommonAncestor(reactComponents[2],reactComponents[1],root));
-//reactComponents[1].addNewPropToReturnElement('number','Welcome');
-//reactComponents[3].removePropFromReturnElement('age','Container');
-// console.log(getValueFromGivenState('age',reactComponents[3]));
+//reactComponents[0].addNewPropToReturnElement('age','Example');
+//reactComponents[0].removePropFromReturnElement('age','Example');
+//console.log(getValueFromGivenState('age',reactComponents[0]));
 // liftStater.liftStateUpFromTwoComponents(root);
 //const counts = findCommonUseStates(useStateVariableDeclarations);
 //console.log(reactComponents[1].getChildProps());
@@ -60,7 +59,6 @@ console.log(JSON.stringify(hierarchyTree, null, 2));
 //console.log(locatePropDrillingPath(root,reactComponents));
 propDrillingObjs[0].addUseContext(reactComponents);
 //createNewContextFile('age')
-
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
