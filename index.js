@@ -17,8 +17,7 @@ let files = fs.readdirSync(`${projectPath}`);
 files = files.filter(file => file.endsWith(".js"));
 const reactFiles = loadReactFiles(files);
 const reactComponents = loadReactComponents(reactFiles);
-const useStateVariableDeclarations = loadUseStateVariables(reactFiles);//this doesn't work for arrow functions
-
+const useStateVariableDeclarations = loadUseStateVariables(reactFiles);
 addParents(reactComponents);
 useStateVariableDeclarations.forEach(variable => {
     reactComponents.forEach(comp => {
@@ -31,9 +30,12 @@ const root = reactComponents.find(comp => !comp.parent);
 const hierarchyTree = loadHierarchy(root,reactComponents);
 const paths = extractAllPaths(hierarchyTree);
 const propDrillingObjs = extractPropDrillingObjects(paths,reactComponents);
+reactComponents.forEach(comp => {
+    console.log(comp.name + " has these returned Elements: " + comp.returnedElements);
+})
 console.log(propDrillingObjs);
 //USE CASES(TESTING PURPOSES)
-//propDrillingObjs[0].addComponentComposition(reactComponents);
+propDrillingObjs[0].addComponentComposition(reactComponents);
 //console.log(JSON.stringify(hierarchyTree, null, 2));
 //const liftStater = new StateLifter([reactComponents[0],reactComponents[3]],'age')
 // const variable = 'number';
@@ -57,7 +59,7 @@ console.log(propDrillingObjs);
 //const propDrilling = locatePropDrillingPath(root,reactComponents);
 // propDrilling.removeAllProps(reactComponents);
 //console.log(locatePropDrillingPath(root,reactComponents));
-propDrillingObjs[0].addUseContext(reactComponents);
+//propDrillingObjs[0].addUseContext(reactComponents);
 //createNewContextFile('age')
 reactComponents.forEach(comp => {
     comp.writeChanges();
