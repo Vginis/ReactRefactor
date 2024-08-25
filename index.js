@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import jscodeshift from 'jscodeshift';
 import {ReactFile,loadReactFiles} from './lib/ReactFile.js';
 import {ReactComponent} from './lib/ReactComponent.js';
-import { loadReactComponents,addParents, extractImportDeclarations } from './lib/loadingFuncs.js';
+import { loadReactComponents,addParents } from './lib/loadingFuncs.js';
 import {UseStateDeclaration, loadUseStateVariables} from './lib/UseStateDeclaration.js';
 import {findCommonAncestor,getValueFromGivenState,findCommonUseStates,findRepeatedCode} from './lib/util.js';
 import { PropDrilling } from './lib/PropDrilling.js';
@@ -30,12 +30,11 @@ const root = reactComponents.find(comp => !comp.parent);
 const hierarchyTree = loadHierarchy(root,reactComponents);
 const paths = extractAllPaths(hierarchyTree);
 const propDrillingObjs = extractPropDrillingObjects(paths,reactComponents);
-reactComponents.forEach(comp => {
-    console.log(comp.name + " has these returned Elements: " + comp.returnedElements);
-})
+
 console.log(propDrillingObjs);
+console.log(reactComponents[1].checkIfPropIsUsedOutsideJSXProps('age','Example2'));
 //USE CASES(TESTING PURPOSES)
-propDrillingObjs[0].addComponentComposition(reactComponents);
+//propDrillingObjs[0].addComponentComposition(reactComponents);
 //console.log(JSON.stringify(hierarchyTree, null, 2));
 //const liftStater = new StateLifter([reactComponents[0],reactComponents[3]],'age')
 // const variable = 'number';
@@ -43,7 +42,6 @@ propDrillingObjs[0].addComponentComposition(reactComponents);
 //     variableName: variable,
 //     setVariableMethod: `set${variable.charAt(0).toUpperCase() + variable.slice(1)}`,
 //     initialValue: 90,
-//     filePath: reactComponents[0].filepath,
 //     reactComponent: reactComponents[0].name
 // });
 //reactComponents[0].addNewProperty('id')
