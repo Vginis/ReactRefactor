@@ -10,11 +10,11 @@ import {StateLifter} from './lib/StateLifter.js';
 import {loadHierarchy,extractAllPaths,extractPropDrillingObjects} from './lib/hierarchy.js';
 import { createNewContextFile } from './lib/CreateNewFiles.js';
 
-export const projectPath = '../code2/my-app/src';
+export const projectPath = '../chat-app-react-nodejs-master/chat-app-react-nodejs-master/public/src/components';
 
 let files = fs.readdirSync(`${projectPath}`);
 
-files = files.filter(file => file.endsWith(".js"));
+files = files.filter(file => file.endsWith(".jsx"));
 const reactFiles = loadReactFiles(files);
 const reactComponents = loadReactComponents(reactFiles);
 const useStateVariableDeclarations = loadUseStateVariables(reactFiles);
@@ -32,10 +32,15 @@ const paths = extractAllPaths(hierarchyTree);
 const propDrillingObjs = extractPropDrillingObjects(paths,reactComponents);
 
 console.log(propDrillingObjs);
-console.log(reactComponents[1].checkIfPropIsUsedOutsideJSXProps('age','Example2'));
+const component = reactComponents.find(comp => comp.name === 'Chat');
+const {j} = component.loadFileAndAst();
+const composed = component.insertComposition(reactComponents);
+console.log(j(composed).toSource())
 //USE CASES(TESTING PURPOSES)
-//propDrillingObjs[0].addComponentComposition(reactComponents);
-//console.log(JSON.stringify(hierarchyTree, null, 2));
+// propDrillingObjs[0].addComponentComposition(reactComponents);
+// const sourceComponent = reactComponents.find(comp => comp.name === propDrillingObjs[0].source);
+// sourceComponent.isChanged = true;//fix this some day
+console.log(JSON.stringify(hierarchyTree, null, 2));
 //const liftStater = new StateLifter([reactComponents[0],reactComponents[3]],'age')
 // const variable = 'number';
 // reactComponents[0].addNewUseStateDeclaration({
