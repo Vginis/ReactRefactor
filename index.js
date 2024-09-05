@@ -1,4 +1,5 @@
 import * as fs from 'fs';
+import * as path from 'path';
 import jscodeshift from 'jscodeshift';
 import {ReactFile,loadReactFiles} from './lib/ReactFile.js';
 import {ReactComponent} from './lib/ReactComponent.js';
@@ -10,11 +11,31 @@ import {StateLifter} from './lib/StateLifter.js';
 import {loadHierarchy,extractAllPaths,extractPropDrillingObjects} from './lib/hierarchy.js';
 import { createNewContextFile } from './lib/CreateNewFiles.js';
 
-export const projectPath = '../chat-app-react-nodejs-master/chat-app-react-nodejs-master/public/src/components';
+export const projectPath = '../code/vite-project/src';
 
-let files = fs.readdirSync(`${projectPath}`);
+function getAllFiles(dirPath) {
+    const stack = [dirPath];
+    const allFiles = [];
 
-files = files.filter(file => file.endsWith(".jsx"));
+    while (stack.length > 0) {
+        const currentDir = stack.pop();
+        const files = fs.readdirSync(currentDir);
+
+        files.forEach(file => {
+            const fullPath = path.join(currentDir, file);
+            const stats = fs.statSync(fullPath);
+
+            if (stats.isDirectory()) {
+                stack.push(fullPath);
+            } else if (file.endsWith('.jsx') || file.endsWith('.js')) {
+                allFiles.push(fullPath);
+            }
+        });
+    }
+    return allFiles;
+}
+const files = getAllFiles(projectPath);
+
 const reactFiles = loadReactFiles(files);
 const reactComponents = loadReactComponents(reactFiles);
 const useStateVariableDeclarations = loadUseStateVariables(reactFiles);
@@ -32,15 +53,14 @@ const paths = extractAllPaths(hierarchyTree);
 const propDrillingObjs = extractPropDrillingObjects(paths,reactComponents);
 
 console.log(propDrillingObjs);
-const component = reactComponents.find(comp => comp.name === 'Chat');
-const {j} = component.loadFileAndAst();
-const composed = component.insertComposition(reactComponents);
-console.log(j(composed).toSource())
+// const comp = reactComponents.find(como => como.name==="App");
+// const {j} = comp.loadFileAndAst(); 
+// console.log(j(comp.insertComposition(propDrillingObjs[0].path)).toSource());
 //USE CASES(TESTING PURPOSES)
-// propDrillingObjs[0].addComponentComposition(reactComponents);
+propDrillingObjs[0].addComponentComposition(reactComponents);
 // const sourceComponent = reactComponents.find(comp => comp.name === propDrillingObjs[0].source);
 // sourceComponent.isChanged = true;//fix this some day
-console.log(JSON.stringify(hierarchyTree, null, 2));
+//console.log(JSON.stringify(hierarchyTree, null, 2));
 //const liftStater = new StateLifter([reactComponents[0],reactComponents[3]],'age')
 // const variable = 'number';
 // reactComponents[0].addNewUseStateDeclaration({
