@@ -1,9 +1,10 @@
+#!/usr/bin/env node
 import * as fs from 'fs';
 import * as path from 'path';
 import jscodeshift from 'jscodeshift';
 import {ReactFile,loadReactFiles} from './lib/ReactFile.js';
 import {ReactComponent} from './lib/ReactComponent.js';
-import { loadReactComponents,addParents } from './lib/loadingFuncs.js';
+import { loadReactComponents,addParents,checkComponentAcrossFiles } from './lib/loadingFuncs.js';
 import {UseStateDeclaration, loadUseStateVariables} from './lib/UseStateDeclaration.js';
 import {findCommonAncestor,getValueFromGivenState,findCommonUseStates,findRepeatedCode} from './lib/util.js';
 import { PropDrilling } from './lib/PropDrilling.js';
@@ -11,7 +12,14 @@ import {StateLifter} from './lib/StateLifter.js';
 import {loadHierarchy,extractAllPaths,extractPropDrillingObjects} from './lib/hierarchy.js';
 import { createNewContextFile } from './lib/CreateNewFiles.js';
 
-export const projectPath = '../code/vite-project/src';
+const args = process.argv.slice(2);
+
+export const projectPath = args[0];
+
+if(!projectPath){
+    console.error("Error: Please provide project path");
+    process.exit(1);
+}
 
 function getAllFiles(dirPath) {
     const stack = [dirPath];
@@ -47,19 +55,17 @@ useStateVariableDeclarations.forEach(variable => {
         }
     })
 });
-const root = reactComponents.find(comp => !comp.parent);
+console.log(reactFiles);
+const root = reactComponents.find(comp => comp.isInRootFile === true);
 const hierarchyTree = loadHierarchy(root,reactComponents);
 const paths = extractAllPaths(hierarchyTree);
 const propDrillingObjs = extractPropDrillingObjects(paths,reactComponents);
-
 console.log(propDrillingObjs);
-// const comp = reactComponents.find(como => como.name==="App");
 // const {j} = comp.loadFileAndAst(); 
 // console.log(j(comp.insertComposition(propDrillingObjs[0].path)).toSource());
 //USE CASES(TESTING PURPOSES)
-propDrillingObjs[0].addComponentComposition(reactComponents);
+//propDrillingObjs[0].addComponentComposition(reactComponents);
 // const sourceComponent = reactComponents.find(comp => comp.name === propDrillingObjs[0].source);
-// sourceComponent.isChanged = true;//fix this some day
 //console.log(JSON.stringify(hierarchyTree, null, 2));
 //const liftStater = new StateLifter([reactComponents[0],reactComponents[3]],'age')
 // const variable = 'number';
