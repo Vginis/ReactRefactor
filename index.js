@@ -9,7 +9,7 @@ import {UseStateDeclaration, loadUseStateVariables} from './lib/UseStateDeclarat
 import {findCommonAncestor,getValueFromGivenState,findCommonUseStates,findRepeatedCode} from './lib/util.js';
 import { PropDrilling } from './lib/PropDrilling.js';
 import {StateLifter} from './lib/StateLifter.js';
-import {loadHierarchy,extractAllPaths,extractPropDrillingObjects} from './lib/hierarchy.js';
+import {loadHierarchy,extractAllPaths,extractPropDrillingObjects} from './lib/Hierarchy.js';
 import { createNewContextFile } from './lib/CreateNewFiles.js';
 
 const args = process.argv.slice(2);
@@ -46,25 +46,27 @@ const files = getAllFiles(projectPath);
 
 const reactFiles = loadReactFiles(files);
 const reactComponents = loadReactComponents(reactFiles);
-const useStateVariableDeclarations = loadUseStateVariables(reactFiles);
-addParents(reactComponents);
-useStateVariableDeclarations.forEach(variable => {
-    reactComponents.forEach(comp => {
-        if(comp.name === variable.reactComponent){
-            comp.useStateDeclarations.push(variable);
-        }
-    })
-});
 
-const root = reactComponents.find(comp => comp.isInRootFile === true);
+//const useStateVariableDeclarations = loadUseStateVariables(reactFiles);
+addParents(reactComponents);
+// useStateVariableDeclarations.forEach(variable => {
+//     reactComponents.forEach(comp => {
+//         if(comp.name === variable.reactComponent){
+//             comp.useStateDeclarations.push(variable);
+//         }
+//     })
+// });
+//const root = reactComponents.find(comp => comp.isInRootFile === true);
+const root = reactComponents.find(comp => comp.name === 'App');
 const hierarchyTree = loadHierarchy(root,reactComponents);
 const paths = extractAllPaths(hierarchyTree);
 const propDrillingObjs = extractPropDrillingObjects(paths,reactComponents);
 console.log(propDrillingObjs);
+//console.log(reactComponents[0].importDeclarations);
 // const {j} = comp.loadFileAndAst(); 
 // console.log(j(comp.insertComposition(propDrillingObjs[0].path)).toSource());
 //USE CASES(TESTING PURPOSES)
-propDrillingObjs[0].addComponentComposition(reactComponents,propDrillingObjs.slice(1));
+//propDrillingObjs[0].addComponentComposition(reactComponents,propDrillingObjs.slice(1));
 // const sourceComponent = reactComponents.find(comp => comp.name === propDrillingObjs[0].source);
 //console.log(JSON.stringify(hierarchyTree, null, 2));
 //const liftStater = new StateLifter([reactComponents[0],reactComponents[3]],'age')
@@ -90,6 +92,6 @@ propDrillingObjs[0].addComponentComposition(reactComponents,propDrillingObjs.sli
 //console.log(locatePropDrillingPath(root,reactComponents));
 //propDrillingObjs[0].addUseContext(reactComponents);
 //createNewContextFile('age')
-reactComponents.forEach(comp => {
-    comp.writeChanges();
-});
+// reactComponents.forEach(comp => {
+//     comp.writeChanges();
+// });
