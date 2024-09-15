@@ -5,17 +5,14 @@ import jscodeshift from 'jscodeshift';
 import {ReactFile,loadReactFiles} from './lib/ReactFile.js';
 import {ReactComponent} from './lib/ReactComponent.js';
 import { loadReactComponents,addParents,checkComponentAcrossFiles } from './lib/loadingFuncs.js';
-import {UseStateDeclaration, loadUseStateVariables} from './lib/UseStateDeclaration.js';
-import {findCommonAncestor,getValueFromGivenState,findCommonUseStates,findRepeatedCode} from './lib/util.js';
 import { PropDrilling } from './lib/PropDrilling.js';
-import {StateLifter} from './lib/StateLifter.js';
 import {loadHierarchy,extractAllPaths,extractPropDrillingObjects} from './lib/Hierarchy.js';
 import { createNewContextFile } from './lib/CreateNewFiles.js';
 
 const args = process.argv.slice(2);
 
 export const projectPath = args[0];
-
+export const rootFile = args[1];
 if(!projectPath){
     console.error("Error: Please provide project path");
     process.exit(1);
@@ -43,25 +40,18 @@ function getAllFiles(dirPath) {
     return allFiles;
 }
 const files = getAllFiles(projectPath);
-
-const reactFiles = loadReactFiles(files);
+const reactFiles = loadReactFiles(files,rootFile);
 const reactComponents = loadReactComponents(reactFiles);
-
-//const useStateVariableDeclarations = loadUseStateVariables(reactFiles);
 addParents(reactComponents);
-// useStateVariableDeclarations.forEach(variable => {
-//     reactComponents.forEach(comp => {
-//         if(comp.name === variable.reactComponent){
-//             comp.useStateDeclarations.push(variable);
-//         }
-//     })
-// });
-//const root = reactComponents.find(comp => comp.isInRootFile === true);
-const root = reactComponents.find(comp => comp.name === 'App');
+
+const roots = reactComponents.filter(comp => comp.isInRootFile).map(comp => comp.name);
+const reactFile = reactFiles.find(reactF => reactF.name===rootFile);
+const root = reactComponents.find(comp => comp.name === reactFile.findMostNestedComponent(roots));
 const hierarchyTree = loadHierarchy(root,reactComponents);
 const paths = extractAllPaths(hierarchyTree);
 const propDrillingObjs = extractPropDrillingObjects(paths,reactComponents);
-console.log(propDrillingObjs);
+console.log(propDrillingObjs)
+
 //console.log(reactComponents[0].importDeclarations);
 // const {j} = comp.loadFileAndAst(); 
 // console.log(j(comp.insertComposition(propDrillingObjs[0].path)).toSource());
