@@ -82,7 +82,6 @@ console.log(JSON.stringify(hierarchyTree, null, 2));
 //console.log(locatePropDrillingPath(root,reactComponents));
 //propDrillingObjs[0].addUseContext(reactComponents);
 //createNewContextFile('age')
-
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
