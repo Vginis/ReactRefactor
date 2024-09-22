@@ -42,6 +42,7 @@ function getAllFiles(dirPath) {
 const files = getAllFiles(projectPath);
 const reactFiles = loadReactFiles(files,rootFile);
 const reactComponents = loadReactComponents(reactFiles);
+console.log(reactComponents.length);
 addParents(reactComponents);
 
 const roots = reactComponents.filter(comp => comp.isInRootFile).map(comp => comp.name);
@@ -51,7 +52,7 @@ const hierarchyTree = loadHierarchy(root,reactComponents);
 const paths = extractAllPaths(hierarchyTree);
 const propDrillingObjs = extractPropDrillingObjects(paths,reactComponents);
 console.log(propDrillingObjs)
-console.log(reactComponents.length);
+console.log(JSON.stringify(hierarchyTree, null, 2));
 //console.log(reactComponents[0].importDeclarations);
 // const {j} = comp.loadFileAndAst(); 
 // console.log(j(comp.insertComposition(propDrillingObjs[0].path)).toSource());
@@ -81,6 +82,7 @@ console.log(reactComponents.length);
 //console.log(locatePropDrillingPath(root,reactComponents));
 //propDrillingObjs[0].addUseContext(reactComponents);
 //createNewContextFile('age')
-// reactComponents.forEach(comp => {
-//     comp.writeChanges();
-// });
+
+reactComponents.forEach(comp => {
+    comp.writeChanges();
+});
