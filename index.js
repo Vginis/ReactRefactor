@@ -8,7 +8,7 @@ import { loadReactComponents,addParents,checkComponentAcrossFiles } from './lib/
 import { PropDrilling } from './lib/PropDrilling.js';
 import {loadHierarchy,extractAllPaths,extractPropDrillingObjects} from './lib/Hierarchy.js';
 import { createNewContextFile } from './lib/CreateNewFiles.js';
-
+import { loadAliases } from './lib/Alias.js';
 const args = process.argv.slice(2);
 
 export const projectPath = args[0];
@@ -44,6 +44,7 @@ const reactFiles = loadReactFiles(files,rootFile);
 const reactComponents = loadReactComponents(reactFiles);
 console.log(reactComponents.length);
 addParents(reactComponents);
+loadAliases(reactFiles,reactComponents);
 
 const roots = reactComponents.filter(comp => comp.isInRootFile).map(comp => comp.name);
 const reactFile = reactFiles.find(reactF => reactF.name===rootFile);
