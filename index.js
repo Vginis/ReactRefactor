@@ -45,7 +45,6 @@ const reactComponents = loadReactComponents(reactFiles);
 console.log(reactComponents.length);
 addParents(reactComponents);
 loadAliases(reactFiles,reactComponents);
-
 const roots = reactComponents.filter(comp => comp.isInRootFile).map(comp => comp.name);
 const reactFile = reactFiles.find(reactF => reactF.name===rootFile);
 const root = reactComponents.find(comp => comp.name === reactFile.findMostNestedComponent(roots));
@@ -54,9 +53,7 @@ const paths = extractAllPaths(hierarchyTree);
 const propDrillingObjs = extractPropDrillingObjects(paths,reactComponents);
 console.log(propDrillingObjs)
 console.log(JSON.stringify(hierarchyTree, null, 2));
-//console.log(reactComponents[0].importDeclarations);
-// const {j} = comp.loadFileAndAst(); 
-// console.log(j(comp.insertComposition(propDrillingObjs[0].path)).toSource());
+
 //USE CASES(TESTING PURPOSES)
 //propDrillingObjs[0].addComponentComposition(reactComponents,propDrillingObjs.slice(1));
 // const sourceComponent = reactComponents.find(comp => comp.name === propDrillingObjs[0].source);
@@ -86,3 +83,8 @@ console.log(JSON.stringify(hierarchyTree, null, 2));
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
+
+//todo Finish the component composition for aliases
+//see Zafiris notes
+//add a File column field in the ReactComponent entity
+//enhance aliasing for the condition import {Down as ArrowDown} ...
