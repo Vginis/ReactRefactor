@@ -46,7 +46,7 @@ console.log(reactComponents.length);
 addParents(reactComponents);
 loadAliases(reactFiles,reactComponents);
 const roots = reactComponents.filter(comp => comp.isInRootFile).map(comp => comp.name);
-const reactFile = reactFiles.find(reactF => reactF.name===rootFile);
+const reactFile = reactFiles.find(reactF => reactF.filePath===rootFile);
 const root = reactComponents.find(comp => comp.name === reactFile.findMostNestedComponent(roots));
 const hierarchyTree = loadHierarchy(root,reactComponents);
 const paths = extractAllPaths(hierarchyTree);
@@ -84,7 +84,7 @@ reactComponents.forEach(comp => {
     comp.writeChanges();
 });
 
-//todo Finish the component composition for aliases
+//todo Finish the component composition for aliases(pending for refactoring of reactComponent)
 //see Zafiris notes
 //add a File column field in the ReactComponent entity
 //enhance aliasing for the condition import {Down as ArrowDown} ...
