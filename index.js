@@ -83,7 +83,9 @@ console.log(JSON.stringify(hierarchyTree, null, 2));
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
-
+const f = reactFiles.find(file => file.filePath === reactComponents[0].filePath)
+console.log(reactComponents[0].aliases)
+console.log(f.importDeclarations)
 //todo Finish the component composition for aliases(pending for refactoring of reactComponent)
 //see Zafiris notes
 //add a File column field in the ReactComponent entity
