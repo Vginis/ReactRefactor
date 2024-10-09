@@ -83,10 +83,14 @@ console.log(JSON.stringify(hierarchyTree, null, 2));
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
-const f = reactFiles.find(file => file.filePath === reactComponents[0].filePath)
-console.log(reactComponents[0].aliases)
-console.log(f.importDeclarations)
+const comp = reactComponents.find(c => c.name==='Down');
+console.log(comp.aliases);
+
+const comp2 = reactComponents.find(c => c.name === 'ExportMenu');
+const file = reactFiles.find(f => f.filePath === comp2.filePath)
+console.log(file.importDeclarations);
+file.importDeclarations.forEach(imp => console.log(imp.importSpecifiers));
 //todo Finish the component composition for aliases(pending for refactoring of reactComponent)
 //see Zafiris notes
 //add a File column field in the ReactComponent entity
-//enhance aliasing for the condition import {Down as ArrowDown} ...
+//fix the bug in Carbon that is not recognizing {Down as ArrowDown} ...
