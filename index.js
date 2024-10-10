@@ -83,7 +83,6 @@ console.log(JSON.stringify(hierarchyTree, null, 2));
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
-//todo Finish the component composition for aliases(pending for refactoring of reactComponent)
+
 //see Zafiris notes
-//add a File column field in the ReactComponent entity
-//fix the bug in Carbon that is not recognizing {Down as ArrowDown} ...
+//todo refactor import Statement class: Remove the specifiers field.
