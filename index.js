@@ -58,7 +58,7 @@ console.log(JSON.stringify(hierarchyTree, null, 2));
 //propDrillingObjs[0].addComponentComposition(reactComponents,propDrillingObjs.slice(1));
 // const sourceComponent = reactComponents.find(comp => comp.name === propDrillingObjs[0].source);
 //const liftStater = new StateLifter([reactComponents[0],reactComponents[3]],'age')
-// const variable = 'number';
+// const variable = 'age';
 // reactComponents[0].addNewUseStateDeclaration({
 //     variableName: variable,
 //     setVariableMethod: `set${variable.charAt(0).toUpperCase() + variable.slice(1)}`,
@@ -83,6 +83,6 @@ console.log(JSON.stringify(hierarchyTree, null, 2));
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
-
 //see Zafiris notes
-//todo refactor import Statement class: Remove the specifiers field.
+//todo see the check i added in aliases
+//todo see the bug with imports i thought i have fixed
