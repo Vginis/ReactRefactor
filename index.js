@@ -5,7 +5,7 @@ import jscodeshift from 'jscodeshift';
 import {ReactFile,loadReactFiles} from './lib/ReactFile.js';
 import {ReactComponent} from './lib/ReactComponent.js';
 import { loadReactComponents,addParents,checkComponentAcrossFiles } from './lib/loadingFuncs.js';
-import { PropDrilling } from './lib/PropDrilling.js';
+import { PropDrilling,giveDetailedPropDrillingPath } from './lib/PropDrilling.js';
 import {loadHierarchy,extractAllPaths,extractPropDrillingObjects} from './lib/Hierarchy.js';
 import { createNewContextFile } from './lib/CreateNewFiles.js';
 import { loadAliases } from './lib/Alias.js';
@@ -83,6 +83,7 @@ console.log(JSON.stringify(hierarchyTree, null, 2));
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
+
+console.log(giveDetailedPropDrillingPath(propDrillingObjs,reactComponents));
 //see Zafiris notes
-//todo see the check i added in aliases
 //todo see the bug with imports i thought i have fixed
