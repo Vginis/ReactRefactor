@@ -5,7 +5,7 @@ import jscodeshift from 'jscodeshift';
 import {ReactFile,loadReactFiles} from './lib/ReactFile.js';
 import {ReactComponent} from './lib/ReactComponent.js';
 import { loadReactComponents,addParents,checkComponentAcrossFiles } from './lib/loadingFuncs.js';
-import { PropDrilling,giveDetailedPropDrillingPath } from './lib/PropDrilling.js';
+import { PropDrilling,giveDetailedPropDrillingPath,checkForOtherIntermediatePropsInPath } from './lib/PropDrilling.js';
 import {loadHierarchy,extractAllPaths,extractPropDrillingObjects} from './lib/Hierarchy.js';
 import { createNewContextFile } from './lib/CreateNewFiles.js';
 import { loadAliases } from './lib/Alias.js';
@@ -85,5 +85,7 @@ reactComponents.forEach(comp => {
 });
 
 console.log(giveDetailedPropDrillingPath(propDrillingObjs,reactComponents));
+console.log(checkForOtherIntermediatePropsInPath(propDrillingObjs[0],reactComponents))
 //see Zafiris notes
+//todo new bug: userContext is not correctly imported at Example.jsx of ..\code\vite-project\src. It imports NumProvider which is not used. 
 //todo see the bug with imports i thought i have fixed
