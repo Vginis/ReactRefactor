@@ -6,7 +6,7 @@ import {ReactFile,loadReactFiles} from './lib/ReactFile.js';
 import {ReactComponent} from './lib/ReactComponent.js';
 import { loadReactComponents,addParents,checkComponentAcrossFiles } from './lib/loadingFuncs.js';
 import { PropDrilling,giveDetailedPropDrillingPath } from './lib/PropDrilling.js';
-import {loadHierarchy,extractAllPaths,extractPropDrillingObjects} from './lib/Hierarchy.js';
+import {loadHierarchy,extractAllPaths,extractPropDrillingObjects,detectPropDrilling} from './lib/Hierarchy.js';
 import { createNewContextFile } from './lib/CreateNewFiles.js';
 import { loadAliases } from './lib/Alias.js';
 const args = process.argv.slice(2);
@@ -78,8 +78,11 @@ console.log(giveDetailedPropDrillingPath(propDrillingObjs,reactComponents));
 //const propDrilling = locatePropDrillingPath(root,reactComponents);
 // propDrilling.removeAllProps(reactComponents);
 //console.log(locatePropDrillingPath(root,reactComponents));
-//propDrillingObjs[0].addUseContext(reactComponents);
+propDrillingObjs[0].addUseContext(reactComponents);
 //createNewContextFile('age')
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
+
+
+//todo fix the refactoring for the situation where the drilled variable name changes
