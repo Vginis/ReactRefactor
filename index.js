@@ -78,7 +78,7 @@ console.log(giveDetailedPropDrillingPath(propDrillingObjs,reactComponents));
 //const propDrilling = locatePropDrillingPath(root,reactComponents);
 // propDrilling.removeAllProps(reactComponents);
 //console.log(locatePropDrillingPath(root,reactComponents));
-propDrillingObjs[0].addUseContext(reactComponents);
+//propDrillingObjs[0].addUseContext(reactComponents);
 //createNewContextFile('age')
 reactComponents.forEach(comp => {
     comp.writeChanges();
