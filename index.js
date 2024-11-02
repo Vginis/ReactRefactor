@@ -50,8 +50,10 @@ const reactFile = reactFiles.find(reactF => reactF.filePath===rootFile);
 const root = reactComponents.find(comp => comp.name === reactFile.findMostNestedComponent(roots));
 const hierarchyTree = loadHierarchy(root,reactComponents);
 const paths = extractAllPaths(hierarchyTree);
-const propDrillings =detectPropDrilling(paths,reactComponents);
-console.log(propDrillings)
+const propDrillings = detectPropDrilling(paths,reactComponents);
+console.log("Found: " + propDrillings.length + " Prop Drilling Occurences");
+console.log(propDrillings);
+
 console.log(JSON.stringify(hierarchyTree, null, 2));
 console.log(giveDetailedPropDrillingPath(propDrillings,reactComponents));
 
@@ -86,3 +88,6 @@ reactComponents.forEach(comp => {
 });
 
 //todo fix the refactoring for the situation where the drilled variable name changes
+//todo:add a mapping entity for the variables in the PropDrilling class
+//todo:fix the giveDetailedPropDrillingPath
+//todo: fix the refactoring methods
