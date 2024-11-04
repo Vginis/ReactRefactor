@@ -50,9 +50,10 @@ const reactFile = reactFiles.find(reactF => reactF.filePath===rootFile);
 const root = reactComponents.find(comp => comp.name === reactFile.findMostNestedComponent(roots));
 const hierarchyTree = loadHierarchy(root,reactComponents);
 const paths = extractAllPaths(hierarchyTree);
-const propDrillings = detectPropDrilling(paths,reactComponents);
+
 
 console.log(JSON.stringify(hierarchyTree, null, 2));
+const propDrillings = detectPropDrilling(paths,reactComponents);
 
 console.log("Found: " + propDrillings.length + " Prop Drilling Occurences");
 console.log(propDrillings);
