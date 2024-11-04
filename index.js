@@ -5,7 +5,7 @@ import jscodeshift from 'jscodeshift';
 import {ReactFile,loadReactFiles} from './lib/ReactFile.js';
 import {ReactComponent} from './lib/ReactComponent.js';
 import { loadReactComponents,addParents,checkComponentAcrossFiles } from './lib/loadingFuncs.js';
-import { PropDrilling,giveDetailedPropDrillingPath } from './lib/PropDrilling.js';
+import { PropDrilling } from './lib/PropDrilling.js';
 import {loadHierarchy,extractAllPaths,detectPropDrilling} from './lib/Hierarchy.js';
 import { createNewContextFile } from './lib/CreateNewFiles.js';
 import { loadAliases } from './lib/Alias.js';
@@ -51,12 +51,12 @@ const root = reactComponents.find(comp => comp.name === reactFile.findMostNested
 const hierarchyTree = loadHierarchy(root,reactComponents);
 const paths = extractAllPaths(hierarchyTree);
 const propDrillings = detectPropDrilling(paths,reactComponents);
-console.log("Found: " + propDrillings.length + " Prop Drilling Occurences");
-console.log(propDrillings);
 
 console.log(JSON.stringify(hierarchyTree, null, 2));
-console.log(giveDetailedPropDrillingPath(propDrillings,reactComponents));
 
+console.log("Found: " + propDrillings.length + " Prop Drilling Occurences");
+console.log(propDrillings);
+propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropDrillingPath()))
 //USE CASES(TESTING PURPOSES)
 //propDrillingObjs[0].addComponentComposition(reactComponents,propDrillingObjs.slice(1));
 // const sourceComponent = reactComponents.find(comp => comp.name === propDrillingObjs[0].source);
