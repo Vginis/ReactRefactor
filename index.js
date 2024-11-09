@@ -9,6 +9,7 @@ import { PropDrilling } from './lib/PropDrilling.js';
 import {loadHierarchy,extractAllPaths,detectPropDrilling} from './lib/Hierarchy.js';
 import { createNewContextFile } from './lib/CreateNewFiles.js';
 import { loadAliases } from './lib/Alias.js';
+import { ImportSpecifier } from './lib/ImportStatement.js';
 const args = process.argv.slice(2);
 
 export const projectPath = args[0];
@@ -59,7 +60,7 @@ console.log("Found: " + propDrillings.length + " Prop Drilling Occurences");
 console.log(propDrillings);
 propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropDrillingPath()))
 //USE CASES(TESTING PURPOSES)
-//propDrillingObjs[0].addComponentComposition(reactComponents,propDrillingObjs.slice(1));
+//propDrillings[0].addComponentComposition(reactComponents,propDrillings);// here relation i -- i+1
 // const sourceComponent = reactComponents.find(comp => comp.name === propDrillingObjs[0].source);
 //const liftStater = new StateLifter([reactComponents[0],reactComponents[3]],'age')
 // const variable = 'age';
@@ -82,13 +83,13 @@ propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropD
 //const propDrilling = locatePropDrillingPath(root,reactComponents);
 // propDrilling.removeAllProps(reactComponents);
 //console.log(locatePropDrillingPath(root,reactComponents));
-//propDrillingObjs[0].addUseContext(reactComponents);
+propDrillings[0].addUseContext(reactComponents,propDrillings);
 //createNewContextFile('age')
+
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
 
-//todo fix the refactoring for the situation where the drilled variable name changes
-//todo:add a mapping entity for the variables in the PropDrilling class
-//todo:fix the giveDetailedPropDrillingPath
+
+//todo: fix bugs in ecommmerce, carbon
 //todo: fix the refactoring methods
