@@ -83,7 +83,7 @@ propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropD
 //const propDrilling = locatePropDrillingPath(root,reactComponents);
 // propDrilling.removeAllProps(reactComponents);
 //console.log(locatePropDrillingPath(root,reactComponents));
-propDrillings[0].addUseContext(reactComponents,propDrillings);
+//propDrillings[0].addUseContext(reactComponents,propDrillings);
 //createNewContextFile('age')
 reactComponents.forEach(comp => {
     comp.writeChanges();
@@ -91,4 +91,3 @@ reactComponents.forEach(comp => {
 
 //todo: fix ecommmerce, carbon
 //todo: remove unneccesary methods
-//todo: Implement logic for Context usage for variable name change
