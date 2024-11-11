@@ -89,5 +89,6 @@ reactComponents.forEach(comp => {
     comp.writeChanges();
 });
 
-//todo: fix bugs in ecommmerce, carbon
+//todo: fix ecommmerce, carbon
 //todo: remove unneccesary methods
+//todo: Implement logic for Context usage for variable name change
