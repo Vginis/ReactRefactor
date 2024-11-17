@@ -87,6 +87,10 @@ propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropD
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
-
+// const comp = reactComponents.find(copm => copm.name==='AppRouter');
+// console.log(comp.returnedElements)
+// const comp1 = reactComponents.find(copm => copm.name==='ShippingDetails');
+// console.log(comp1.aliases)
+//console.log(f.ast);
 //todo: fix ecommmerce, carbon
 //todo: remove unneccesary methods
