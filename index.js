@@ -52,13 +52,12 @@ const root = reactComponents.find(comp => comp.name === reactFile.findMostNested
 const hierarchyTree = loadHierarchy(root,reactComponents);
 const paths = extractAllPaths(hierarchyTree);
 
-
 console.log(JSON.stringify(hierarchyTree, null, 2));
 const propDrillings = detectPropDrilling(paths,reactComponents);
 
 console.log("Found: " + propDrillings.length + " Prop Drilling Occurences");
-console.log(propDrillings);
 propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropDrillingPath()))
+
 //USE CASES(TESTING PURPOSES)
 //propDrillings[0].addComponentComposition(reactComponents,propDrillings);// here relation i -- i+1
 // const sourceComponent = reactComponents.find(comp => comp.name === propDrillingObjs[0].source);
