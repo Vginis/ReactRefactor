@@ -44,8 +44,9 @@ const files = getAllFiles(projectPath);
 const reactFiles = loadReactFiles(files,rootFile);
 const reactComponents = loadReactComponents(reactFiles);
 console.log(reactComponents.length);
-addParents(reactComponents);
+
 loadAliases(reactFiles,reactComponents);
+addParents(reactComponents);
 const roots = reactComponents.filter(comp => comp.isInRootFile).map(comp => comp.name);
 const reactFile = reactFiles.find(reactF => reactF.filePath===rootFile);
 const root = reactComponents.find(comp => comp.name === reactFile.findMostNestedComponent(roots));
@@ -87,10 +88,9 @@ propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropD
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
-// const comp = reactComponents.find(copm => copm.name==='AppRouter');
-// console.log(comp.returnedElements)
-// const comp1 = reactComponents.find(copm => copm.name==='ShippingDetails');
-// console.log(comp1.aliases)
-//console.log(f.ast);
-//todo: fix ecommmerce, carbon
-//todo: remove unneccesary methods
+
+//todos:
+//1 Find the correct condition for the 3rd alias locate function
+//2 Make ecommerce play(without refactorings)
+//3 Compare carbon,ecommerce with reactSniffer
+//4 Find 3 other projects
