@@ -90,7 +90,4 @@ reactComponents.forEach(comp => {
 });
 
 //todos:
-//1 Find the correct condition for the 3rd alias locate function
-//2 Make ecommerce play(without refactorings)
-//3 Compare carbon,ecommerce with reactSniffer
 //4 Find 3 other projects
