@@ -85,9 +85,9 @@ propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropD
 //console.log(locatePropDrillingPath(root,reactComponents));
 //propDrillings[0].addUseContext(reactComponents,propDrillings);
 //createNewContextFile('age')
+
+const cmp = reactComponents.find(c => c.name==='HorizontalScrollbar');
+cmp.removePropFromReturnElement("setBodyPart","BodyPart",reactComponents)
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
-
-//todos:
-//4 Find 3 other projects
