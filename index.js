@@ -61,30 +61,7 @@ propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropD
 
 //USE CASES(TESTING PURPOSES)
 //propDrillings[0].addComponentComposition(reactComponents,propDrillings);// here relation i -- i+1
-// const sourceComponent = reactComponents.find(comp => comp.name === propDrillingObjs[0].source);
-//const liftStater = new StateLifter([reactComponents[0],reactComponents[3]],'age')
-// const variable = 'age';
-// reactComponents[0].addNewUseStateDeclaration({
-//     variableName: variable,
-//     setVariableMethod: `set${variable.charAt(0).toUpperCase() + variable.slice(1)}`,
-//     initialValue: 90,
-//     reactComponent: reactComponents[0].name
-// });
-//reactComponents[0].addNewProperty('id')
-//reactComponents[0].removeProperty('id')
-//reactComponents[0].removeUseStateDeclaration('number');
-//console.log(findCommonAncestor(reactComponents[2],reactComponents[1],root));
-//reactComponents[0].addNewPropToReturnElement('age','Example');
-//reactComponents[0].removePropFromReturnElement('age','Deposit');
-//console.log(getValueFromGivenState('age',reactComponents[0]));
-// liftStater.liftStateUpFromTwoComponents(root);
-//const counts = findCommonUseStates(useStateVariableDeclarations);
-//console.log(reactComponents[1].getChildProps());
-//const propDrilling = locatePropDrillingPath(root,reactComponents);
-// propDrilling.removeAllProps(reactComponents);
-//console.log(locatePropDrillingPath(root,reactComponents));
-propDrillings[0].addUseContext(reactComponents,propDrillings);
-//createNewContextFile('age')
+//propDrillings[0].addUseContext(reactComponents,propDrillings);
 
 reactComponents.forEach(comp => {
     comp.writeChanges();
