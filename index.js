@@ -86,13 +86,6 @@ propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropD
 propDrillings[0].addUseContext(reactComponents,propDrillings);
 //createNewContextFile('age')
 
-// const groupedProps = [{bodyPart: 'bodyPart'},{setBodyPart: 'setBodyPart'}];
-// const propMapping = new Map();
-// propMapping.set('item','setExercises')
-// propMapping.set('bodyPart','bodyPart')
-// propMapping.set('setBodyPart','setBodyPart')
-// const cmp = reactComponents.find(c => c.name==='BodyPart');
-// cmp.addValueContextUsage(groupedProps,propMapping)
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
