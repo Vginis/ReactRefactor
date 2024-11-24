@@ -83,11 +83,16 @@ propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropD
 //const propDrilling = locatePropDrillingPath(root,reactComponents);
 // propDrilling.removeAllProps(reactComponents);
 //console.log(locatePropDrillingPath(root,reactComponents));
-//propDrillings[0].addUseContext(reactComponents,propDrillings);
+propDrillings[0].addUseContext(reactComponents,propDrillings);
 //createNewContextFile('age')
 
-const cmp = reactComponents.find(c => c.name==='HorizontalScrollbar');
-cmp.removePropFromReturnElement("setBodyPart","BodyPart",reactComponents)
+// const groupedProps = [{bodyPart: 'bodyPart'},{setBodyPart: 'setBodyPart'}];
+// const propMapping = new Map();
+// propMapping.set('item','setExercises')
+// propMapping.set('bodyPart','bodyPart')
+// propMapping.set('setBodyPart','setBodyPart')
+// const cmp = reactComponents.find(c => c.name==='BodyPart');
+// cmp.addValueContextUsage(groupedProps,propMapping)
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
