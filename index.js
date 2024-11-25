@@ -60,8 +60,8 @@ console.log("Found: " + propDrillings.length + " Prop Drilling Occurences");
 propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropDrillingPath()))
 
 //USE CASES(TESTING PURPOSES)
-//propDrillings[0].addComponentComposition(reactComponents,propDrillings);// here relation i -- i+1
-//propDrillings[0].addUseContext(reactComponents,propDrillings);
+//propDrillings[0].addComponentComposition(reactComponents,propDrillings);
+propDrillings[0].addUseContext(reactComponents,propDrillings);
 
 reactComponents.forEach(comp => {
     comp.writeChanges();
