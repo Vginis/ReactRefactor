@@ -55,14 +55,12 @@ const paths = extractAllPaths(hierarchyTree);
 
 console.log(JSON.stringify(hierarchyTree, null, 2));
 const propDrillings = detectPropDrilling(paths,reactComponents);
-
 console.log("Found: " + propDrillings.length + " Prop Drilling Occurences");
 propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropDrillingPath()))
 
 //USE CASES(TESTING PURPOSES)
 //propDrillings[0].addComponentComposition(reactComponents,propDrillings);
-propDrillings[0].addUseContext(reactComponents,propDrillings);
-//console.log(propDrillings[0].checkIfPdPathHasCommonEnding(propDrillings));
+//const propDrilling = propDrillings.find(pd => pd.source.name==='SnippetToolbar' && pd.dest.name==='Button');
 
 reactComponents.forEach(comp => {
     comp.writeChanges();
