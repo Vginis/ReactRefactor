@@ -60,7 +60,7 @@ propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropD
 
 //USE CASES(TESTING PURPOSES)
 //propDrillings[0].addComponentComposition(reactComponents,propDrillings);
-//const propDrilling = propDrillings.find(pd => pd.source.name==='SnippetToolbar' && pd.dest.name==='Button');
+//propDrillings[1].addUseContext(reactComponents,propDrillings);
 
 reactComponents.forEach(comp => {
     comp.writeChanges();
