@@ -60,7 +60,7 @@ propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropD
 
 //USE CASES(TESTING PURPOSES)
 //propDrillings[0].addComponentComposition(reactComponents,propDrillings);
-//propDrillings[0].addUseContext(reactComponents,propDrillings);
+//propDrillings[5].addUseContext(reactComponents,propDrillings);
 
 reactComponents.forEach(comp => {
     comp.writeChanges();
