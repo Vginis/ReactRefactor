@@ -1,15 +1,12 @@
 #!/usr/bin/env node
 import * as fs from 'fs';
 import * as path from 'path';
-import jscodeshift from 'jscodeshift';
-import {ReactFile,loadReactFiles} from './lib/ReactFile.js';
-import {ReactComponent} from './lib/ReactComponent.js';
+import {loadReactFiles} from './lib/ReactFile.js';
 import { loadReactComponents,addParents,checkComponentAcrossFiles } from './lib/loadingFuncs.js';
-import { PropDrilling } from './lib/PropDrilling.js';
 import {loadHierarchy,extractAllPaths,detectPropDrilling} from './lib/Hierarchy.js';
-import { createNewContextFile } from './lib/CreateNewFiles.js';
+import readline from 'readline';
 import { loadAliases } from './lib/Alias.js';
-import { ImportSpecifier } from './lib/ImportStatement.js';
+import { displayPropDrilling, handleUserInput } from './lib/cli.js';
 const args = process.argv.slice(2);
 
 export const projectPath = args[0];
@@ -56,11 +53,35 @@ const paths = extractAllPaths(hierarchyTree);
 console.log(JSON.stringify(hierarchyTree, null, 2));
 const propDrillings = detectPropDrilling(paths,reactComponents);
 console.log("Found: " + propDrillings.length + " Prop Drilling Occurences");
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+let currentIndex = 0;
+
+if(propDrillings.length > 0){
+    console.clear();
+    displayPropDrilling(currentIndex,propDrillings);
+    const propDrillingInformation = {
+        propDrillings,reactComponents,rl,currentIndex
+    };
+    process.stdin.on('keypress', (chunk,key) => handleUserInput(key.sequence,propDrillingInformation));
+} else {
+    console.log("No Prop Drilling occurences found.");
+    process.exit();
+}
+
+rl.on('SIGINT', () => {
+    rl.close();
+    process.exit();
+});
 propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropDrillingPath()))
 
 //USE CASES(TESTING PURPOSES)
 //propDrillings[0].addComponentComposition(reactComponents,propDrillings);
-//propDrillings[5].addUseContext(reactComponents,propDrillings);
+//propDrillings[0].addUseContext(reactComponents,propDrillings);
 
 reactComponents.forEach(comp => {
     comp.writeChanges();
