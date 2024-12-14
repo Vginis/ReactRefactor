@@ -54,34 +54,34 @@ console.log(JSON.stringify(hierarchyTree, null, 2));
 const propDrillings = detectPropDrilling(paths,reactComponents);
 console.log("Found: " + propDrillings.length + " Prop Drilling Occurences");
 
-// const rl = readline.createInterface({
-//     input: process.stdin,
-//     output: process.stdout
-// });
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
-// let currentIndex = 0;
+let currentIndex = 0;
 
-// if(propDrillings.length > 0){
-//     console.clear();
-//     displayPropDrilling(currentIndex,propDrillings);
-//     const propDrillingInformation = {
-//         propDrillings,reactComponents,rl,currentIndex
-//     };
-//     process.stdin.on('keypress', (chunk,key) => handleUserInput(key.sequence,propDrillingInformation));
-// } else {
-//     console.log("No Prop Drilling occurences found.");
-//     process.exit();
-// }
+if(propDrillings.length > 0){
+    console.clear();
+    displayPropDrilling(currentIndex,propDrillings);
+    const propDrillingInformation = {
+        propDrillings,reactComponents,rl,currentIndex
+    };
+    process.stdin.on('keypress', (chunk,key) => handleUserInput(key.sequence,propDrillingInformation));
+} else {
+    console.log("No Prop Drilling occurences found.");
+    process.exit();
+}
 
-// rl.on('SIGINT', () => {
-//     rl.close();
-//     process.exit();
-// });
+rl.on('SIGINT', () => {
+    rl.close();
+    process.exit();
+});
 propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropDrillingPath()))
 
 //USE CASES(TESTING PURPOSES)
 //propDrillings[0].addComponentComposition(reactComponents,propDrillings);
-propDrillings[5].addUseContext(reactComponents,propDrillings);
+//propDrillings[0].addUseContext(reactComponents,propDrillings);
 
 reactComponents.forEach(comp => {
     comp.writeChanges();
