@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+console.time("Execution time");
 import * as fs from 'fs';
 import * as path from 'path';
 import {loadReactFiles} from './lib/ReactFile.js';
@@ -11,8 +12,10 @@ const args = process.argv.slice(2);
 
 export const projectPath = args[0];
 export const rootFile = args[1];
-if(!projectPath){
-    console.error("Error: Please provide project path");
+export const rootComponent = args[2];
+
+if(!projectPath && !rootFile){
+    console.error("Error: Please provide project path and root file.");
     process.exit(1);
 }
 
@@ -45,8 +48,8 @@ console.log(reactComponents.length);
 loadAliases(reactFiles,reactComponents);
 addParents(reactComponents);
 const roots = reactComponents.filter(comp => comp.isInRootFile).map(comp => comp.name);
-const reactFile = reactFiles.find(reactF => reactF.filePath===rootFile);
-const root = reactComponents.find(comp => comp.name === reactFile.findMostNestedComponent(roots));
+const reactRootFile = reactFiles.find(reactF => reactF.filePath===rootFile);
+const root = reactComponents.find(comp => comp.name === reactRootFile.findMostNestedComponent(roots)) || reactComponents.find(comp => comp.name === rootComponent);
 const hierarchyTree = loadHierarchy(root,reactComponents);
 const paths = extractAllPaths(hierarchyTree);
 
@@ -148,9 +151,11 @@ rl.on('SIGINT', () => {
 propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropDrillingPath()))
 
 //USE CASES(TESTING PURPOSES)
-//propDrillings[0].addComponentComposition(reactComponents,propDrillings);
+//propDrillings[1].addComponentComposition(reactComponents,propDrillings);
 //propDrillings[0].addUseContext(reactComponents,propDrillings);
 
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
+
+console.timeEnd("Execution time");
