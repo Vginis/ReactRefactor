@@ -151,8 +151,8 @@ rl.on('SIGINT', () => {
 propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropDrillingPath()))
 
 //USE CASES(TESTING PURPOSES)
-//propDrillings[0].addComponentComposition(reactComponents,propDrillings);
-//propDrillings[1].addUseContext(reactComponents,propDrillings);
+//propDrillings[2].addComponentComposition(reactComponents,propDrillings);
+//propDrillings[0].addUseContext(reactComponents,propDrillings);
 
 reactComponents.forEach(comp => {
     comp.writeChanges();
