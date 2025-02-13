@@ -3,7 +3,7 @@ console.time("Execution time");
 import * as fs from 'fs';
 import * as path from 'path';
 import {loadReactFiles} from './lib/ReactFile.js';
-import { loadReactComponents,addParents,checkComponentAcrossFiles } from './lib/loadingFuncs.js';
+import { loadReactComponents,addParents,addCompositeKeyReturnedElements } from './lib/loadingFuncs.js';
 import {loadHierarchy,extractAllPaths,detectPropDrilling} from './lib/Hierarchy.js';
 import readline from 'readline';
 import { loadAliases } from './lib/Alias.js';
@@ -47,6 +47,7 @@ console.log(reactComponents.length);
 
 loadAliases(reactFiles,reactComponents);
 addParents(reactComponents);
+addCompositeKeyReturnedElements(reactComponents,reactFiles);
 const roots = reactComponents.filter(comp => comp.isInRootFile).map(comp => comp.name);
 const reactRootFile = reactFiles.find(reactF => reactF.filePath===rootFile);
 const root = reactComponents.find(comp => comp.name === reactRootFile.findMostNestedComponent(roots)) || reactComponents.find(comp => comp.name === rootComponent);
@@ -153,7 +154,6 @@ propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropD
 //USE CASES(TESTING PURPOSES)
 //propDrillings[2].addComponentComposition(reactComponents,propDrillings);
 //propDrillings[0].addUseContext(reactComponents,propDrillings);
-
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
