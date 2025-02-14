@@ -13,6 +13,7 @@ const args = process.argv.slice(2);
 export const projectPath = args[0];
 export const rootFile = args[1];
 export const rootComponent = args[2];
+export const fileType = rootFile.split(".").pop();
 
 if(!projectPath && !rootFile){
     console.error("Error: Please provide project path and root file.");
@@ -33,7 +34,7 @@ function getAllFiles(dirPath) {
 
             if (stats.isDirectory()) {
                 stack.push(fullPath);
-            } else if (file.endsWith('.jsx') || file.endsWith('.js')) {
+            } else if (file.endsWith('.jsx') || file.endsWith('.js') || file.endsWith('.tsx')) {
                 allFiles.push(fullPath);
             }
         });
