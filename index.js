@@ -44,7 +44,7 @@ function getAllFiles(dirPath) {
 const files = getAllFiles(projectPath);
 const reactFiles = loadReactFiles(files,rootFile);
 const reactComponents = loadReactComponents(reactFiles);
-console.log(reactComponents.length);
+console.log(`Number of found Components: ${reactComponents.length}`);
 
 loadAliases(reactFiles,reactComponents);
 addParents(reactComponents);
@@ -153,7 +153,7 @@ rl.on('SIGINT', () => {
 propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropDrillingPath()))
 
 //USE CASES(TESTING PURPOSES)
-//propDrillings[2].addComponentComposition(reactComponents,propDrillings);
+//propDrillings[6].addComponentComposition(reactComponents,propDrillings);
 //propDrillings[0].addUseContext(reactComponents,propDrillings);
 reactComponents.forEach(comp => {
     comp.writeChanges();
