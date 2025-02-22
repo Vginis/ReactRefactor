@@ -3,7 +3,7 @@ console.time("Execution time");
 import * as fs from 'fs';
 import * as path from 'path';
 import {loadReactFiles} from './lib/ReactFile.js';
-import { loadReactComponents,addParents,checkComponentAcrossFiles } from './lib/loadingFuncs.js';
+import { loadReactComponents,addParents,addCompositeKeyReturnedElements } from './lib/loadingFuncs.js';
 import {loadHierarchy,extractAllPaths,detectPropDrilling} from './lib/Hierarchy.js';
 import readline from 'readline';
 import { loadAliases } from './lib/Alias.js';
@@ -13,6 +13,7 @@ const args = process.argv.slice(2);
 export const projectPath = args[0];
 export const rootFile = args[1];
 export const rootComponent = args[2];
+export const fileType = rootFile.split(".").pop();
 
 if(!projectPath && !rootFile){
     console.error("Error: Please provide project path and root file.");
@@ -33,7 +34,7 @@ function getAllFiles(dirPath) {
 
             if (stats.isDirectory()) {
                 stack.push(fullPath);
-            } else if (file.endsWith('.jsx') || file.endsWith('.js')) {
+            } else if (file.endsWith('.jsx') || file.endsWith('.js') || file.endsWith('.tsx')) {
                 allFiles.push(fullPath);
             }
         });
@@ -43,10 +44,11 @@ function getAllFiles(dirPath) {
 const files = getAllFiles(projectPath);
 const reactFiles = loadReactFiles(files,rootFile);
 const reactComponents = loadReactComponents(reactFiles);
-console.log(reactComponents.length);
+console.log(`Number of found Components: ${reactComponents.length}`);
 
 loadAliases(reactFiles,reactComponents);
 addParents(reactComponents);
+addCompositeKeyReturnedElements(reactComponents,reactFiles);
 const roots = reactComponents.filter(comp => comp.isInRootFile).map(comp => comp.name);
 const reactRootFile = reactFiles.find(reactF => reactF.filePath===rootFile);
 const root = reactComponents.find(comp => comp.name === reactRootFile.findMostNestedComponent(roots)) || reactComponents.find(comp => comp.name === rootComponent);
@@ -151,9 +153,8 @@ rl.on('SIGINT', () => {
 propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropDrillingPath()))
 
 //USE CASES(TESTING PURPOSES)
-//propDrillings[2].addComponentComposition(reactComponents,propDrillings);
+//propDrillings[6].addComponentComposition(reactComponents,propDrillings);
 //propDrillings[0].addUseContext(reactComponents,propDrillings);
-
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
