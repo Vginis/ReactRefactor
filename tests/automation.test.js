@@ -40,19 +40,19 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
             expectedComponents: 31,
             expectedPropDrillings: 1
         }
-        //,
-        // {
-        //     path: "..\\ecommerce-react-master\\ecommerce-react-master\\src",
-        //     mainFile:"..\\ecommerce-react-master\\ecommerce-react-master\\src\\index.jsx",
-        //     expectedComponents: 80,
-        //     expectedPropDrillings: 2
-        // },
-        // {
-        //     path: "..\\carbon-main\\carbon-main",
-        //     mainFile:"..\\carbon-main\\carbon-main\\pages\\index.js",
-        //     expectedComponents: 99,
-        //     expectedPropDrillings: 41
-        // }
+        ,
+        {
+            path: "..\\ecommerce-react-master\\ecommerce-react-master\\src",
+            mainFile:"..\\ecommerce-react-master\\ecommerce-react-master\\src\\index.jsx",
+            expectedComponents: 80,
+            expectedPropDrillings: 2
+        },
+        {
+            path: "..\\carbon-main\\carbon-main",
+            mainFile:"..\\carbon-main\\carbon-main\\pages\\index.js",
+            expectedComponents: 99,
+            expectedPropDrillings: 48
+        }
     ];
 
     testProjects.forEach(({ path, mainFile, expectedComponents, expectedPropDrillings }) => {
