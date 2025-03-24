@@ -7,6 +7,7 @@ import { detectPropDrilling } from './lib/Hierarchy.js';
 import readline from 'readline';
 import { loadAliases } from './lib/Alias.js';
 import { displayMenu,displayPropDrilling } from './lib/cli.js';
+import { countPathOccurrences } from './lib/statsCalculation.js';
 const args = process.argv.slice(2);
 
 export const projectPath = args[0];
@@ -28,6 +29,7 @@ console.log(`Number of found Components: ${reactComponents.length}`);
 loadAliases(reactFiles,reactComponents);
 addParents(reactComponents);
 addCompositeKeyReturnedElements(reactComponents,reactFiles);
+console.log("Start analysis of paths and hierarchies");
 const {hierarchyTrees, paths} = extractPathsAndHierarchies(reactFiles,reactComponents,isNextJsProject);
 
 // Print all hierarchy trees
@@ -131,6 +133,7 @@ propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropD
 //propDrillings[0].addComponentComposition(reactComponents,propDrillings);
 //propDrillings[4].addUseContext(reactComponents,propDrillings);
 
+console.log(countPathOccurrences(propDrillings));
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
