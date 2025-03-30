@@ -8,7 +8,7 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
             path: "..\\testing-projects\\react-redux-realworld-example-app-master\\react-redux-realworld-example-app-master\\src",
             mainFile:"..\\testing-projects\\react-redux-realworld-example-app-master\\react-redux-realworld-example-app-master\\src\\index.js",
             expectedComponents: 31,
-            expectedPropDrillings: 9
+            expectedPropDrillings: 14
         },
         {
             path: "..\\testing-projects\\react-proto-master_v2\\react-proto-master_v2\\src",
@@ -32,9 +32,9 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
             rootComponent: ""
         },
         {
-            path: "..\\testing-projects\\Whisper-main\\Whisper-main\\client\\src",
-            mainFile:"..\\testing-projects\\Whisper-main\\Whisper-main\\client\\src\\index.jsx",
-            expectedComponents: 31,
+            path: "..\\testing-projects\\Whisper-main2\\Whisper-main\\client\\src",
+            mainFile:"..\\testing-projects\\Whisper-main2\\Whisper-main\\client\\src\\index.jsx",
+            expectedComponents: 33,
             expectedPropDrillings: 1,
             rootComponent: ""
         }
@@ -50,7 +50,7 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
             path: "..\\testing-projects\\carbon-main\\carbon-main",
             mainFile:"..\\testing-projects\\carbon-main\\carbon-main\\pages\\index.js",
             expectedComponents: 100,
-            expectedPropDrillings: 48,
+            expectedPropDrillings: 50,
             rootComponent: ""
         }
     ];
