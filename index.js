@@ -13,7 +13,7 @@ const args = process.argv.slice(2);
 export const projectPath = args[0];
 export const rootFile = args[1];
 export const rootComponent = args[2];
-export const fileType = rootFile.split(".").pop();
+export const fileType = args[3] || rootFile.split(".").pop();
 
 if(!projectPath && !rootFile){
     console.error("Error: Please provide project path and root file.");
@@ -131,9 +131,24 @@ rl.on('SIGINT', () => {
 propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropDrillingPath()))
 //USE CASES(TESTING PURPOSES)
 //propDrillings[0].addComponentComposition(reactComponents,propDrillings);
-//propDrillings[4].addUseContext(reactComponents,propDrillings);
+//propDrillings[3].addUseContext(reactComponents,propDrillings);
 
-console.log(countPathOccurrences(propDrillings));
+//StatsModule
+// console.log(`Components participation percentage in Prop Drillings: ${(countDistinctComponents(propDrillings)/reactComponents.length).toFixed(2)}`)
+// const depthsMap = calculatePropDrillingDepths(propDrillings);
+// for(let i=3; i<=5; i++){
+//     const familyDepth = (depthsMap.get(i)) ? depthsMap.get(i) : 0; 
+//     console.log(`Number of Prop Drillings with depth ${i}: ${familyDepth}`);
+// }
+
+// console.log(`Number of Compound Prop Drillings: ${countCompoundPropDrillings(propDrillings)}`);
+// console.log(countPathOccurrences(propDrillings));
+// const compoundPropDrillingFamilies = countPropDrillingFamilies(propDrillings);
+
+// console.log(`Compound Prop Drilling Families with 2 properties: ${compoundPropDrillingFamilies["twos"]}`);
+// console.log(`Compound Prop Drilling Families with 3 properties: ${compoundPropDrillingFamilies["threes"]}`);
+// console.log(`Compound Prop Drilling Families with more than 4 properties: ${compoundPropDrillingFamilies["multiples"]}`);
+
 reactComponents.forEach(comp => {
     comp.writeChanges();
 });
