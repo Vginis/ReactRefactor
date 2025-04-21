@@ -7,7 +7,8 @@ import { detectPropDrilling } from './lib/Hierarchy.js';
 import readline from 'readline';
 import { loadAliases } from './lib/Alias.js';
 import { displayMenu,displayPropDrilling } from './lib/cli.js';
-import { countPathOccurrences } from './lib/statsCalculation.js';
+import { countDistinctComponents,calculatePropDrillingDepths,countCompoundPropDrillings,countPathOccurrences,countPropDrillingFamilies } from './lib/statsCalculation.js';
+import { printPropDrillingsWithDetails } from './lib/PropDrilling.js';
 const args = process.argv.slice(2);
 
 export const projectPath = args[0];
@@ -59,12 +60,12 @@ function handleUserInput(key){
     } else if(key === '\u001b[A'){ //UP arrow
         if(currentIndex > 0){
             currentIndex -= 1;
-            displayPropDrilling(currentIndex,propDrillings);
+            displayPropDrilling(currentIndex,propDrillings,reactComponents);
         }
     } else if(key === '\u001b[B'){ //DOWN arrow
         if(currentIndex <propDrillings.length-1){
             currentIndex += 1;
-            displayPropDrilling(currentIndex,propDrillings);
+            displayPropDrilling(currentIndex,propDrillings,reactComponents);
         }
     } else if(key === '\r'){//Enter
         inMenu = true;
@@ -75,7 +76,7 @@ function handleUserInput(key){
 function handleMenuInput(key){
      if (key === '\u0003' || key.toLowerCase() === 'q') { // Ctrl+C or 'Q'
          inMenu = false;
-         displayPropDrilling(currentIndex,propDrillings);
+         displayPropDrilling(currentIndex,propDrillings,reactComponents);
      } else if (key === '\u001b[A') { // UP arrow
          if (currentMenuIndex > 0) {
              currentMenuIndex -= 1;
@@ -100,21 +101,21 @@ function handleMenuInput(key){
              propDrillings[currentIndex].addComponentComposition(reactComponents,propDrillings);
          } else if (selectedOption === "View Detailed Path") {
              console.log("Displaying detailed path...");           
-             console.log(propDrillings[currentIndex].giveDetailedPropDrillingPath());
+             console.log(propDrillings[currentIndex].giveDetailedPropDrillingPath(propDrillings,reactComponents,propDrillings[currentIndex].getGroupedProps(propDrillings)));
          }
          reactComponents.forEach(comp => {
              comp.writeChanges();
          });
          console.log("\nPress any key to go back.");
          process.stdin.once("keypress", () => {
-             displayPropDrilling(currentIndex,propDrillings);
+             displayPropDrilling(currentIndex,propDrillings,reactComponents);
          });
      }
  }
 
 if(propDrillings.length > 0){
     console.clear();
-    displayPropDrilling(currentIndex,propDrillings);
+    displayPropDrilling(currentIndex,propDrillings,reactComponents);
     const propDrillingInformation = {
         propDrillings,reactComponents,rl,currentIndex
     };
@@ -128,10 +129,11 @@ rl.on('SIGINT', () => {
     rl.close();
     process.exit();
 });
-propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropDrillingPath()))
+printPropDrillingsWithDetails(propDrillings, reactComponents);
+//propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropDrillingPath()))
 //USE CASES(TESTING PURPOSES)
 //propDrillings[0].addComponentComposition(reactComponents,propDrillings);
-//propDrillings[3].addUseContext(reactComponents,propDrillings);
+//propDrillings[0].addUseContext(reactComponents,propDrillings);
 
 //StatsModule
 // console.log(`Components participation percentage in Prop Drillings: ${(countDistinctComponents(propDrillings)/reactComponents.length).toFixed(2)}`)
