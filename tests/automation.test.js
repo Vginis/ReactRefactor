@@ -7,13 +7,13 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
         {
             path: "..\\testing-projects\\react-redux-realworld-example-app-master\\react-redux-realworld-example-app-master\\src",
             mainFile:"..\\testing-projects\\react-redux-realworld-example-app-master\\react-redux-realworld-example-app-master\\src\\index.js",
-            expectedComponents: 31,
+            expectedComponents: 32,
             expectedPropDrillings: 14
         },
         {
             path: "..\\testing-projects\\react-proto-master_v2\\react-proto-master_v2\\src",
             mainFile:"..\\testing-projects\\react-proto-master_v2\\react-proto-master_v2\\src\\index.js",
-            expectedComponents: 19,
+            expectedComponents: 20,
             expectedPropDrillings: 5,
             rootComponent: ""
         },

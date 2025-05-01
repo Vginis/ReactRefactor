@@ -9,18 +9,20 @@ let propDrillingParticipationPercentages = [];
 let propDrillingDepths = [];
 let compoundPropDrillingsCount = [];
 let compoundPropDrillingFamilies = [];
+let compositionRefactoringsCount = [];
+let contextRefactoringsCount = [];
 
 function generatePropDrillingReport(){
-    initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\code2\\my-app\\src\\ ..\\testing-projects\\code2\\my-app\\src\\index.js','code2');
+    //initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\code2\\my-app\\src\\ ..\\testing-projects\\code2\\my-app\\src\\index.js','code2');
     initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\carbon-main\\carbon-main ..\\testing-projects\\carbon-main\\carbon-main\\pages\\index.js'
         ,'Carbon');
     initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\react-redux-realworld-example-app-master\\react-redux-realworld-example-app-master\\src ..\\testing-projects\\react-redux-realworld-example-app-master\\react-redux-realworld-example-app-master\\src\\index.js'
         ,'Redux Realworld Example');
     initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\react-proto-master_v2\\react-proto-master_v2\\src ..\\testing-projects\\react-proto-master_v2\\react-proto-master_v2\\src\\index.js'
         ,'React proto');
-    initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\project_fitness_app-main\\project_fitness_app-main\\src ..\\testing-projects\\project_fitness_app-main\\project_fitness_app-main\\src\\index.js'
-        ,'Project fitness');
-    initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\ecommerce-react-master\\ecommerce-react-master\\src ..\\testing-projects\\ecommerce-react-master\\ecommerce-react-master\\src\\index.jsx'
+    // initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\project_fitness_app-main\\project_fitness_app-main\\src ..\\testing-projects\\project_fitness_app-main\\project_fitness_app-main\\src\\index.js'
+    //     ,'Project fitness');
+    initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\ecommerce-react-master\\ecommerce-react-master\\src ..\\testing-projects\\ecommerce-react-master\\ecommerce-react-master\\src\\index.jsx App'
         ,'Ecommerce React');
     initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\Whisper-main2\\Whisper-main\\client\\src ..\\testing-projects\\Whisper-main2\\Whisper-main\\client\\src\\index.jsx'
         ,'Whisper');
@@ -32,6 +34,12 @@ function generatePropDrillingReport(){
         ,'MITM');
     initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\joplin-release-1.0\\joplin-release-1.0\\ElectronClient\\gui\\ ..\\testing-projects\\joplin-release-1.0\\joplin-release-1.0\\ElectronClient\\gui\\Root.jsx MainScreenComponent,ConfigScreenComponent tsx'
         ,'Joplin');
+    initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\conky-1.22.1\\conky-1.22.1\\web\\ ..\\testing-projects\\conky-1.22.1\\conky-1.22.1\\web\\index.tsx '
+        ,'Conky');
+    initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\vitess-22.0.0-rc3\\vitess-22.0.0-rc3\\web\\vtadmin\\src\\ ..\\testing-projects\\vitess-22.0.0-rc3\\vitess-22.0.0-rc3\\web\\vtadmin\\src\\index.tsx App'
+        ,'Vitess');
+    initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\lossless-cut-master\\lossless-cut-master\\src\\renderer\\src\\ ..\\testing-projects\\lossless-cut-master\\lossless-cut-master\\src\\renderer\\src\\index.tsx App'
+        ,'Lossless Cut');
 }
 generatePropDrillingReport();
 
@@ -87,6 +95,13 @@ function initGenerationForPropDrillingReport(entryCommand,projectName){
 
         const compoundPropDrillingsFamiliesArray = [compoundPropDrilling_2_properties_result, compoundPropDrilling_3_properties_result, compoundPropDrilling_multiple_properties_result];
 
+        //Refactoring applicability
+        const compositionRefactoringCount = stdout.match(/Allowed Refactorings with Component Composition: (\d+)/);
+        const compositionRefactoringCountResult = parseInt(compositionRefactoringCount[1]);
+
+        const contextRefactoringCount = stdout.match(/Allowed Refactorings with Context: (\d+)/);
+        const contextRefactoringCountResult = parseInt(contextRefactoringCount[1]);
+
         //push elements to lists for csv
         projectNames.push(projectName);
         componentsCount.push(componentsCountMatchResult);
@@ -95,12 +110,15 @@ function initGenerationForPropDrillingReport(entryCommand,projectName){
         compoundPropDrillingsCount.push(compoundPropDrillingCountMatchResult);
         propDrillingDepths.push(propDrillingDepthArray);
         compoundPropDrillingFamilies.push(compoundPropDrillingsFamiliesArray);
+        compositionRefactoringsCount.push(compositionRefactoringCountResult)
+        contextRefactoringsCount.push(contextRefactoringCountResult);
 
         generateCsvForPropDrillingFrequency(projectNames, componentsCount, propDrillingsCount, propDrillingParticipationPercentages);
         generateCsvForPropDrillingDepths(projectNames, propDrillingsCount, propDrillingDepths);
         generateCsvForCompoundPropDrillingsCount(projectNames, propDrillingsCount, compoundPropDrillingsCount);
         generateCsvForCompoundPropDrillingsStats(propDrillingsCount, compoundPropDrillingsCount);
         generateCsvForCompoundPropDrillingsFamilies(projectNames,compoundPropDrillingsCount, compoundPropDrillingFamilies);
+        generateCsvForRefactorings(projectNames, compositionRefactoringsCount, contextRefactoringsCount);
     });
 }
 
@@ -225,6 +243,26 @@ function generateCsvForCompoundPropDrillingsFamilies(projectNames,compoundPropDr
         });
     const csvContent = [header.join(','), ...rows].join('\n');
     const outputPath = path.join('stats/prop_drilling_families_report.csv');
+    fs.writeFileSync(outputPath, csvContent, 'utf8');
+    console.log(`CSV depths file generated at: ${outputPath}`);
+}
+
+function generateCsvForRefactorings(projectNames, compositionRefactoringsCount, contextRefactoringsCount){
+    if(projectNames.length !== compositionRefactoringsCount.length || projectNames.length !== contextRefactoringsCount.length){
+        console.error("Input arrays must have the same length.");
+        return;
+    }
+
+    const header = ['Project Names', 'Compoenent Composition', 'Context'];
+    const rows = projectNames.map((project, index) => {
+        return [
+            project,
+            compositionRefactoringsCount[index],
+            contextRefactoringsCount[index]
+        ].join(',');
+        });
+    const csvContent = [header.join(','), ...rows].join('\n');
+    const outputPath = path.join('stats/prop_drilling_refactoring.csv');
     fs.writeFileSync(outputPath, csvContent, 'utf8');
     console.log(`CSV depths file generated at: ${outputPath}`);
 }

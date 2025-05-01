@@ -7,7 +7,7 @@ import { detectPropDrilling } from './lib/Hierarchy.js';
 import readline from 'readline';
 import { loadAliases } from './lib/Alias.js';
 import { displayMenu,displayPropDrilling } from './lib/cli.js';
-import { countDistinctComponents,calculatePropDrillingDepths,countCompoundPropDrillings,countPathOccurrences,countPropDrillingFamilies } from './lib/statsCalculation.js';
+import { countDistinctComponents,calculatePropDrillingDepths,countCompoundPropDrillings,countPathOccurrences,countPropDrillingFamilies,countPropDrillingRefactoringStats } from './lib/statsCalculation.js';
 import { printPropDrillingsWithDetails } from './lib/PropDrilling.js';
 const args = process.argv.slice(2);
 
@@ -150,6 +150,10 @@ printPropDrillingsWithDetails(propDrillings, reactComponents);
 // console.log(`Compound Prop Drilling Families with 2 properties: ${compoundPropDrillingFamilies["twos"]}`);
 // console.log(`Compound Prop Drilling Families with 3 properties: ${compoundPropDrillingFamilies["threes"]}`);
 // console.log(`Compound Prop Drilling Families with more than 4 properties: ${compoundPropDrillingFamilies["multiples"]}`);
+
+// const {componentCompositionCount, contextCount} = countPropDrillingRefactoringStats(propDrillings);
+// console.log(`Allowed Refactorings with Component Composition: ${componentCompositionCount}`);
+// console.log(`Allowed Refactorings with Context: ${contextCount}`);
 
 reactComponents.forEach(comp => {
     comp.writeChanges();
