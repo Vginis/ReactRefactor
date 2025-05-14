@@ -136,6 +136,7 @@ printPropDrillingsWithDetails(propDrillings, reactComponents);
 //propDrillings[0].addUseContext(reactComponents,propDrillings);
 
 //StatsModule
+// console.log(`Components participating in Prop Drillings: ${(countDistinctComponents(propDrillings))}`)
 // console.log(`Components participation percentage in Prop Drillings: ${(countDistinctComponents(propDrillings)/reactComponents.length).toFixed(2)}`)
 // const depthsMap = calculatePropDrillingDepths(propDrillings);
 // for(let i=3; i<=5; i++){
@@ -144,7 +145,9 @@ printPropDrillingsWithDetails(propDrillings, reactComponents);
 // }
 
 // console.log(`Number of Compound Prop Drillings: ${countCompoundPropDrillings(propDrillings)}`);
-// console.log(countPathOccurrences(propDrillings));
+// const pathOccurencesMap = countPathOccurrences(propDrillings);
+// console.log(pathOccurencesMap);
+// console.log("Path Occurences Array: " + [...pathOccurencesMap.values()]);
 // const compoundPropDrillingFamilies = countPropDrillingFamilies(propDrillings);
 
 // console.log(`Compound Prop Drilling Families with 2 properties: ${compoundPropDrillingFamilies["twos"]}`);
