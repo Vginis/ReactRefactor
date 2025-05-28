@@ -15,15 +15,14 @@ let contextRefactoringsCount = [];
 let pathOccurencesArrays = [];
 
 function generatePropDrillingReport(){
-    //initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\code2\\my-app\\src\\ ..\\testing-projects\\code2\\my-app\\src\\index.js','code2');
     initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\carbon-main\\carbon-main ..\\testing-projects\\carbon-main\\carbon-main\\pages\\index.js'
         ,'Carbon');
     initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\react-redux-realworld-example-app-master\\react-redux-realworld-example-app-master\\src ..\\testing-projects\\react-redux-realworld-example-app-master\\react-redux-realworld-example-app-master\\src\\index.js'
         ,'Redux Realworld Example');
     initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\react-proto-master_v2\\react-proto-master_v2\\src ..\\testing-projects\\react-proto-master_v2\\react-proto-master_v2\\src\\index.js'
         ,'React proto');
-    // initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\project_fitness_app-main\\project_fitness_app-main\\src ..\\testing-projects\\project_fitness_app-main\\project_fitness_app-main\\src\\index.js'
-    //     ,'Project fitness');
+    initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\project_fitness_app-main\\project_fitness_app-main\\src ..\\testing-projects\\project_fitness_app-main\\project_fitness_app-main\\src\\index.js'
+        ,'Project fitness');
     initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\ecommerce-react-master\\ecommerce-react-master\\src ..\\testing-projects\\ecommerce-react-master\\ecommerce-react-master\\src\\index.jsx App'
         ,'Ecommerce React');
     initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\Whisper-main2\\Whisper-main\\client\\src ..\\testing-projects\\Whisper-main2\\Whisper-main\\client\\src\\index.jsx'
@@ -42,6 +41,10 @@ function generatePropDrillingReport(){
         ,'Vitess');
     initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\lossless-cut-master\\lossless-cut-master\\src\\renderer\\src\\ ..\\testing-projects\\lossless-cut-master\\lossless-cut-master\\src\\renderer\\src\\index.tsx App'
         ,'Lossless Cut');
+    initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\superset-2021.41.0\\superset-2021.41.0\\superset-frontend\\src\\ ..\\testing-projects\\superset-2021.41.0\\superset-2021.41.0\\superset-frontend\\src\\profile\\index.tsx App'
+        ,'Apache Superset');
+    initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\lighthouse-main\\lighthouse-main\\flow-report\\src\\ ..\\testing-projects\\lighthouse-main\\lighthouse-main\\flow-report\\src\\app.tsx App'
+        ,'Lighthouse');
 }
 generatePropDrillingReport();
 

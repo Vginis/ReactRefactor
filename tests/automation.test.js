@@ -8,7 +8,8 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
             path: "..\\testing-projects\\react-redux-realworld-example-app-master\\react-redux-realworld-example-app-master\\src",
             mainFile:"..\\testing-projects\\react-redux-realworld-example-app-master\\react-redux-realworld-example-app-master\\src\\index.js",
             expectedComponents: 32,
-            expectedPropDrillings: 14
+            expectedPropDrillings: 14,
+            rootComponent: ""
         },
         {
             path: "..\\testing-projects\\react-proto-master_v2\\react-proto-master_v2\\src",
@@ -42,7 +43,7 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
         {
             path: "..\\testing-projects\\ecommerce-react-master\\ecommerce-react-master\\src",
             mainFile:"..\\testing-projects\\ecommerce-react-master\\ecommerce-react-master\\src\\index.jsx",
-            expectedComponents: 82,
+            expectedComponents: 81,
             expectedPropDrillings: 2,
             rootComponent: 'App'
         },
@@ -50,8 +51,71 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
             path: "..\\testing-projects\\carbon-main\\carbon-main",
             mainFile:"..\\testing-projects\\carbon-main\\carbon-main\\pages\\index.js",
             expectedComponents: 100,
-            expectedPropDrillings: 50,
+            expectedPropDrillings: 51,
             rootComponent: ""
+        },
+        {
+            path: "..\\testing-projects\\prometheus-release-2.21\\prometheus-release-2.21\\web\\ui\\react-app\\src",
+            mainFile:"..\\testing-projects\\prometheus-release-2.21\\prometheus-release-2.21\\web\\ui\\react-app\\src\\App.tsx",
+            expectedComponents: 42,
+            expectedPropDrillings: 7,
+            rootComponent: "App"
+        },
+        {
+            path: "..\\testing-projects\\tidb-release-6.5\\tidb-release-6.5\\br\\web\\src\\",
+            mainFile:"..\\testing-projects\\tidb-release-6.5\\tidb-release-6.5\\br\\web\\src\\index.tsx",
+            expectedComponents: 17,
+            expectedPropDrillings: 7,
+            rootComponent: "App"
+        },
+        {
+            path: "..\\testing-projects\\mitmproxy-7.0.x\\mitmproxy-7.0.x\\web\\src\\js\\",
+            mainFile:"..\\testing-projects\\mitmproxy-7.0.x\\mitmproxy-7.0.x\\web\\src\\js\\app.jsx",
+            expectedComponents: 80,
+            expectedPropDrillings: 9,
+            rootComponent: "Response,Request"
+        },
+        {
+            path: "..\\testing-projects\\conky-1.22.1\\conky-1.22.1\\web\\",
+            mainFile:"..\\testing-projects\\conky-1.22.1\\conky-1.22.1\\web\\index.tsx",
+            expectedComponents: 21,
+            expectedPropDrillings: 1,
+            rootComponent: ""
+        },
+        {
+            path: "..\\testing-projects\\joplin-release-1.0\\joplin-release-1.0\\ElectronClient\\gui\\",
+            mainFile:"..\\testing-projects\\joplin-release-1.0\\joplin-release-1.0\\ElectronClient\\gui\\Root.jsx",
+            expectedComponents: 48,
+            expectedPropDrillings: 5,
+            rootComponent: "MainScreenComponent,ConfigScreenComponent tsx"
+        },
+        {
+            path: "..\\testing-projects\\vitess-22.0.0-rc3\\vitess-22.0.0-rc3\\web\\vtadmin\\src\\",
+            mainFile:"..\\testing-projects\\vitess-22.0.0-rc3\\vitess-22.0.0-rc3\\web\\vtadmin\\src\\index.tsx",
+            expectedComponents: 112,
+            expectedPropDrillings: 34,
+            rootComponent: "App"
+        },
+        {
+            path: "..\\testing-projects\\lossless-cut-master\\lossless-cut-master\\src\\renderer\\src\\",
+            mainFile:"..\\testing-projects\\lossless-cut-master\\lossless-cut-master\\src\\renderer\\src\\index.tsx",
+            expectedComponents: 65,
+            expectedPropDrillings: 23,
+            rootComponent: "App"
+        },
+        {
+            path: "..\\testing-projects\\superset-2021.41.0\\superset-2021.41.0\\superset-frontend\\src\\",
+            mainFile:"..\\testing-projects\\superset-2021.41.0\\superset-2021.41.0\\superset-frontend\\src\\profile\\index.tsx",
+            expectedComponents: 443,
+            expectedPropDrillings: 73,
+            rootComponent: "App"
+        },
+        {
+            path: "..\\testing-projects\\lighthouse-main\\lighthouse-main\\flow-report\\src\\",
+            mainFile:"..\\testing-projects\\lighthouse-main\\lighthouse-main\\flow-report\\src\\app.tsx",
+            expectedComponents: 46,
+            expectedPropDrillings: 12,
+            rootComponent: "App"
         }
     ];
 
