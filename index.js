@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 console.time("Execution time");
+import * as fs from 'fs';
 import { getAllFiles,extractPathsAndHierarchies } from './lib/util.js';
 import { loadReactFiles } from './lib/ReactFile.js';
 import { loadReactComponents,addParents,addCompositeKeyReturnedElements } from './lib/loadingFuncs.js';
@@ -30,10 +31,11 @@ console.log(`Number of found Components: ${reactComponents.length}`);
 loadAliases(reactFiles,reactComponents);
 addParents(reactComponents);
 addCompositeKeyReturnedElements(reactComponents,reactFiles);
-console.log("Start analysis of paths and hierarchies");
-const {hierarchyTrees, paths} = extractPathsAndHierarchies(reactFiles,reactComponents,isNextJsProject);
+
+const {hierarchyTrees, paths} = extractPathsAndHierarchies(reactFiles,rootFile,reactComponents,isNextJsProject);
 
 // Print all hierarchy trees
+fs.writeFileSync('./stats/a.json', JSON.stringify(hierarchyTrees, null, 2), 'utf-8');
 console.log(JSON.stringify(hierarchyTrees, null, 2));
 const propDrillings = detectPropDrilling(paths,reactComponents);
 console.log("Found: " + propDrillings.length + " Prop Drilling Occurences");
@@ -129,8 +131,7 @@ rl.on('SIGINT', () => {
     rl.close();
     process.exit();
 });
-printPropDrillingsWithDetails(propDrillings, reactComponents);
-//propDrillings.forEach(propDrilling => console.log(propDrilling.giveDetailedPropDrillingPath()))
+const possilbleRefactorings = printPropDrillingsWithDetails(propDrillings, reactComponents);
 //USE CASES(TESTING PURPOSES)
 //propDrillings[0].addComponentComposition(reactComponents,propDrillings);
 //propDrillings[0].addUseContext(reactComponents,propDrillings);
@@ -138,6 +139,7 @@ printPropDrillingsWithDetails(propDrillings, reactComponents);
 //StatsModule
 // console.log(`Components participating in Prop Drillings: ${(countDistinctComponents(propDrillings))}`)
 // console.log(`Components participation percentage in Prop Drillings: ${(countDistinctComponents(propDrillings)/reactComponents.length).toFixed(2)}`)
+// console.log(`Possible Refactorings with Context or Composition: ${possilbleRefactorings}`);
 // const depthsMap = calculatePropDrillingDepths(propDrillings);
 // for(let i=3; i<=5; i++){
 //     const familyDepth = (depthsMap.get(i)) ? depthsMap.get(i) : 0; 

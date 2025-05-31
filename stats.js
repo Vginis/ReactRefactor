@@ -12,6 +12,7 @@ let compoundPropDrillingsCount = [];
 let compoundPropDrillingFamilies = [];
 let compositionRefactoringsCount = [];
 let contextRefactoringsCount = [];
+let totalRefactoringsCount = [];
 let pathOccurencesArrays = [];
 
 function generatePropDrillingReport(){
@@ -110,6 +111,9 @@ function initGenerationForPropDrillingReport(entryCommand,projectName){
         const contextRefactoringCount = stdout.match(/Allowed Refactorings with Context: (\d+)/);
         const contextRefactoringCountResult = parseInt(contextRefactoringCount[1]);
 
+        const totalRefactoringCount = stdout.match(/Possible Refactorings with Context or Composition: (\d+)/);
+        const totalRefactoringCountResult = parseInt(totalRefactoringCount[1]);
+
         //Compound Prop Drilling stats by project
         const compoundPropDrillingsArray = stdout.match(/Path Occurences Array: ([\d,]+)/);
         const compoundPropDrillingsArrayResult = compoundPropDrillingsArray ? compoundPropDrillingsArray[1].split(',').map(Number) : [];
@@ -125,6 +129,7 @@ function initGenerationForPropDrillingReport(entryCommand,projectName){
         compoundPropDrillingFamilies.push(compoundPropDrillingsFamiliesArray);
         compositionRefactoringsCount.push(compositionRefactoringCountResult)
         contextRefactoringsCount.push(contextRefactoringCountResult);
+        totalRefactoringsCount.push(totalRefactoringCountResult);
         pathOccurencesArrays.push(compoundPropDrillingsArrayResult);
 
         generateCsvForPropDrillingFrequency(projectNames, componentsCount, propDrillingsCount, propDrillingParticipationCount, propDrillingParticipationPercentages);
@@ -132,7 +137,7 @@ function initGenerationForPropDrillingReport(entryCommand,projectName){
         generateCsvForCompoundPropDrillingsCount(projectNames, propDrillingsCount, compoundPropDrillingsCount);
         generateCsvForCompoundPropDrillingsStats(propDrillingsCount, compoundPropDrillingsCount);
         generateCsvForCompoundPropDrillingsFamilies(projectNames,compoundPropDrillingsCount, compoundPropDrillingFamilies);
-        generateCsvForRefactorings(projectNames, compositionRefactoringsCount, contextRefactoringsCount);
+        generateCsvForRefactorings(projectNames, compositionRefactoringsCount, contextRefactoringsCount,totalRefactoringsCount);
         generateCsvForCompoundPropDrillingStatsByProject(projectNames, pathOccurencesArrays)
     });
 }
@@ -265,18 +270,20 @@ function generateCsvForCompoundPropDrillingsFamilies(projectNames,compoundPropDr
     console.log(`CSV depths file generated at: ${outputPath}`);
 }
 
-function generateCsvForRefactorings(projectNames, compositionRefactoringsCount, contextRefactoringsCount){
-    if(projectNames.length !== compositionRefactoringsCount.length || projectNames.length !== contextRefactoringsCount.length){
+function generateCsvForRefactorings(projectNames, compositionRefactoringsCount, contextRefactoringsCount,totalRefactoringsCount){
+    if(projectNames.length !== compositionRefactoringsCount.length || projectNames.length !== contextRefactoringsCount.length
+         || totalRefactoringsCount.length !== contextRefactoringsCount.length){
         console.error("Input arrays must have the same length.");
         return;
     }
 
-    const header = ['Project Names', 'Compoenent Composition', 'Context'];
+    const header = ['Project Names', 'Compoenent Composition', 'Context', 'Total'];
     const rows = projectNames.map((project, index) => {
         return [
             project,
             compositionRefactoringsCount[index],
-            contextRefactoringsCount[index]
+            contextRefactoringsCount[index],
+            totalRefactoringsCount[index]
         ].join(',');
         });
     const csvContent = [header.join(','), ...rows].join('\n');
