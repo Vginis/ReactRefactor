@@ -51,14 +51,14 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
             path: "..\\testing-projects\\carbon-main\\carbon-main",
             mainFile:"..\\testing-projects\\carbon-main\\carbon-main\\pages\\index.js",
             expectedComponents: 100,
-            expectedPropDrillings: 51,
+            expectedPropDrillings: 54,
             rootComponent: ""
         },
         {
             path: "..\\testing-projects\\prometheus-release-2.21\\prometheus-release-2.21\\web\\ui\\react-app\\src",
             mainFile:"..\\testing-projects\\prometheus-release-2.21\\prometheus-release-2.21\\web\\ui\\react-app\\src\\App.tsx",
             expectedComponents: 42,
-            expectedPropDrillings: 7,
+            expectedPropDrillings: 8,
             rootComponent: "App"
         },
         {
@@ -72,7 +72,7 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
             path: "..\\testing-projects\\mitmproxy-7.0.x\\mitmproxy-7.0.x\\web\\src\\js\\",
             mainFile:"..\\testing-projects\\mitmproxy-7.0.x\\mitmproxy-7.0.x\\web\\src\\js\\app.jsx",
             expectedComponents: 80,
-            expectedPropDrillings: 9,
+            expectedPropDrillings: 10,
             rootComponent: "Response,Request"
         },
         {
@@ -100,7 +100,7 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
             path: "..\\testing-projects\\lossless-cut-master\\lossless-cut-master\\src\\renderer\\src\\",
             mainFile:"..\\testing-projects\\lossless-cut-master\\lossless-cut-master\\src\\renderer\\src\\index.tsx",
             expectedComponents: 65,
-            expectedPropDrillings: 23,
+            expectedPropDrillings: 26,
             rootComponent: "App"
         },
         {
