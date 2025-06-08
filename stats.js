@@ -14,6 +14,8 @@ let compositionRefactoringsCount = [];
 let contextRefactoringsCount = [];
 let totalRefactoringsCount = [];
 let pathOccurencesArrays = [];
+let propDrillingsWithCommonEndingArray = [];
+let propDrillingsWithCommonStartArray = [];
 
 function generatePropDrillingReport(){
     initGenerationForPropDrillingReport('node index.js ..\\testing-projects\\carbon-main\\carbon-main ..\\testing-projects\\carbon-main\\carbon-main\\pages\\index.js'
@@ -118,6 +120,12 @@ function initGenerationForPropDrillingReport(entryCommand,projectName){
         const compoundPropDrillingsArray = stdout.match(/Path Occurences Array: ([\d,]+)/);
         const compoundPropDrillingsArrayResult = compoundPropDrillingsArray ? compoundPropDrillingsArray[1].split(',').map(Number) : [];
         
+        //Prop Drillings with common ending and start
+        const propDrillingsWithCommonEnding = stdout.match(/Prop Drillings with common ending: ([\d,]+)/);
+        const propDrillingsWithCommonStart = stdout.match(/Prop Drillings with common start: ([\d,]+)/);
+        const propDrillingsWithCommonEndingResult = parseInt(propDrillingsWithCommonEnding[1]);
+        const propDrillingsWithCommonStartResult = parseInt(propDrillingsWithCommonStart)
+
         //push elements to lists for csv
         projectNames.push(projectName);
         componentsCount.push(componentsCountMatchResult);
@@ -131,14 +139,17 @@ function initGenerationForPropDrillingReport(entryCommand,projectName){
         contextRefactoringsCount.push(contextRefactoringCountResult);
         totalRefactoringsCount.push(totalRefactoringCountResult);
         pathOccurencesArrays.push(compoundPropDrillingsArrayResult);
-
+        propDrillingsWithCommonEndingArray.push(propDrillingsWithCommonEndingResult);
+        propDrillingsWithCommonStartArray.push(propDrillingsWithCommonStartResult);
+        
         generateCsvForPropDrillingFrequency(projectNames, componentsCount, propDrillingsCount, propDrillingParticipationCount, propDrillingParticipationPercentages);
         generateCsvForPropDrillingDepths(projectNames, propDrillingsCount, propDrillingDepths);
         generateCsvForCompoundPropDrillingsCount(projectNames, propDrillingsCount, compoundPropDrillingsCount);
         generateCsvForCompoundPropDrillingsStats(propDrillingsCount, compoundPropDrillingsCount);
         generateCsvForCompoundPropDrillingsFamilies(projectNames,compoundPropDrillingsCount, compoundPropDrillingFamilies);
         generateCsvForRefactorings(projectNames, compositionRefactoringsCount, contextRefactoringsCount,totalRefactoringsCount);
-        generateCsvForCompoundPropDrillingStatsByProject(projectNames, pathOccurencesArrays)
+        generateCsvForCompoundPropDrillingStatsByProject(projectNames, pathOccurencesArrays);
+        generateCsvForPropDrillingsWithCommonStartEnding(projectNames, propDrillingsWithCommonEndingArray,propDrillingsWithCommonStartArray);
     });
 }
 
@@ -312,5 +323,20 @@ function generateCsvForCompoundPropDrillingStatsByProject(projectNames, pathOccu
     const outputPath = path.join('stats/compound_prop_drilling_stats_by_project.csv');
     fs.writeFileSync(outputPath, csvContent, 'utf8');
     console.log(`CSV depths file generated at: ${outputPath}`);
+}
 
+function generateCsvForPropDrillingsWithCommonStartEnding(projectNames,propDrillingsWithCommonEndingArray,propDrillingsWithCommonStartArray){
+    const header = ['Project Names', 'Prop Drillings with Common Ending', 'Prop Drillings with Common Start'];
+    const rows = projectNames.map((project, index) => {
+        return [
+            project,
+            propDrillingsWithCommonEndingArray,
+            propDrillingsWithCommonStartArray
+        ].join(',');
+    });
+
+    const csvContent = [header.join(','), ...rows].join('\n');
+    const outputPath = path.join('stats/prop_drillings_with_common_endings_starts.csv');
+    fs.writeFileSync(outputPath, csvContent, 'utf8');
+    console.log(`CSV common starts/endings file generated at: ${outputPath}`);
 }
