@@ -60,7 +60,7 @@ This markdown document provides the Prop Drillings per project that we selected 
 - [Request(message (drilled only)), ContentViewOptions(message), DownloadContentButton] Refactoring with Context
 ```
 
-10. Joplin
+10. Joplin (CHECK)
 ```bash
 - [MainScreenComponent(style (drilled only)), NoteEditor(style), MultiNoteActions] Refactoring with Context
 - [ConfigScreenComponent(theme (drilled only)), ConfigMenuBar(theme (drilled only)), ConfigMenuBarButton] Refactoring with Context
@@ -99,7 +99,7 @@ This markdown document provides the Prop Drillings per project that we selected 
 - [Welcome(showThumbnails), ChartTable(showThumbnails), ChartCard] Refactor with Context
 ```
 
-15. Lighthouse
+15. Lighthouse (CHECK)
 ```bash
 - [SummaryNavigationHeader(mode (drilled only)), FlowSegment(mode), FlowStepIcon] Refactoring with Context
 - [SummaryFlowStep(mode), FlowSegment(mode), FlowStepIcon] Refactoring with Context
