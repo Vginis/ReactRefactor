@@ -1,7 +1,7 @@
 # Selected Prop Drillings to refactor from dataset
 This markdown document provides the Prop Drillings per project that we selected to refactor.
 
-1. Project Fitness
+1. Project Fitness (CHECK)
 ```bash
 - [Home(bodyPart), SearchExercises(bodyPart), HorizontalScrollbar(bodyPart (drilled only)), BodyPart] Refactoring with Context
 - [Home(setBodyPart), SearchExercises(setBodyPart (drilled only)), HorizontalScrollbar(setBodyPart (drilled only)), BodyPart] Refactoring with Context
@@ -11,42 +11,42 @@ This markdown document provides the Prop Drillings per project that we selected 
 ```bash
 - [Embed(theme (drilled only)), Page(theme), StylesheetLink] Refactoring with Composition
 - [Embed(copyable (drilled only)), Carbon(copyable (drilled only)), WindowControls] Refactoring with Context
-- [Index(snippet (drilled only)), EditorContainer(snippet), Editor(snippet (drilled only)), SnippetToolbar] Refactoring with Context
-- [Index(enableHeroText (drilled only)), Page(enableHeroText (drilled only)), Header] Refactoring with Composition
-- [Editor(titleBar (drilled only)), Carbon(titleBar (drilled only)), WindowControls(value (drilled only)), TitleBar] Refactoring with Context
+- [Editor(onChange (drilled only), updateWidth (drilled only)), Carbon(onChange (drilled only)), WidthHandler] Refactoring with Context
+- [Editor(updateWidthConfirm (drilled only)), Carbon(onChangeComplete (drilled only)), WidthHandler] Refactoring with Context
+- [Index(enableHeroText (drilled only)), Page(enableHeroText (drilled only)), Header] (Context) (Component Composition) Refactoring with Composition
 ```
 
-3. React Redux realworld example
+3. React Redux realworld example (CHECK)
 ```bash
 - [Article(article (drilled only)), ArticleMeta(article), ArticleActions] Refactoring with Composition
 - [Article(canModify (drilled only)), ArticleMeta(canModify (drilled only)), ArticleActions] Refactoring with Composition
 ```
 
-4. React Proto
+4. React Proto (CHECK)
 ```bash
 - [MainContainer(draggable (drilled only)), KonvaStage(draggable (drilled only)), Rectangle] Refactoring with Context
 - [MainContainer(handleTransform (drilled only)), KonvaStage(handleTransform (drilled only)), Rectangle] Refactoring with Context
 ```
 
-5. Ecommerce React
+5. Ecommerce React (CHECK)
 ```bash
 - [Basket(product), BasketItem(product), BasketItemControl] Refactoring with Context
 - [OrderSummary(product), BasketItem(product), BasketItemControl] Refactoring with Context
 ```
 
-6. Whisper
+6. Whisper (CHECK)
 ```bash
 -[Chat(setMessage), MessageInput(onEmojiPick (drilled only)), EmojiPicker] Refactoring with Context
 ```
 
-7. Prometheus
+7. Prometheus (CHECK)
 ```bash
 - [Panel(data (drilled only)), GraphTabContent(data), Graph] Refactoring with Context
 - [Panel(stacked (drilled only)), GraphTabContent(stacked (drilled only)), Graph] Refactoring with Context
 - [Panel(lastQueryParams (drilled only)), GraphTabContent(queryParams (drilled only)), Graph] Refactoring with Context
 ```
 
-8. TiDB
+8. TiDB (CHECK)
 ```bash
 - [App(paused (drilled only)), TitleBar(paused (drilled only)), PauseButton] Refactoring with Composition
 - [App(onTogglePaused (drilled only)), TitleBar(onTogglePaused (drilled only)), PauseButton] Refactoring with Composition
@@ -66,7 +66,7 @@ This markdown document provides the Prop Drillings per project that we selected 
 - [ConfigScreenComponent(theme (drilled only)), ConfigMenuBar(theme (drilled only)), ConfigMenuBarButton] Refactoring with Context
 ```
 
-11. Conky
+11. Conky (CHECK)
 ```bash
 - [Layout(setDarkMode), Header(setDarkMode (drilled only)), ThemeSwitcher] Refactoring with Composition
 ```
@@ -101,7 +101,6 @@ This markdown document provides the Prop Drillings per project that we selected 
 
 15. Lighthouse
 ```bash
-- [App(onMenuClick (drilled only)), Topbar(onClick (drilled only)), TopbarButton] Refactoring with Context
 - [SummaryNavigationHeader(mode (drilled only)), FlowSegment(mode), FlowStepIcon] Refactoring with Context
 - [SummaryFlowStep(mode), FlowSegment(mode), FlowStepIcon] Refactoring with Context
 ```
