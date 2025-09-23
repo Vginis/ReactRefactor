@@ -8,7 +8,7 @@ import { detectPropDrilling } from './lib/Hierarchy.js';
 import readline from 'readline';
 import { loadAliases } from './lib/Alias.js';
 import { displayMenu,displayPropDrilling } from './lib/cli.js';
-import { countDistinctComponents,calculatePropDrillingDepths,countCompoundPropDrillings,countPathOccurrences,countPropDrillingFamilies,countPropDrillingRefactoringStats } from './lib/statsCalculation.js';
+import { countDistinctComponents,calculatePropDrillingDepths,countCompoundPropDrillings,countPathOccurrences,countPropDrillingFamilies,countPropDrillingRefactoringStats, countPropDrillingsWithDifferentStartCommonEnding } from './lib/statsCalculation.js';
 import { printPropDrillingsWithDetails } from './lib/PropDrilling.js';
 const args = process.argv.slice(2);
 
@@ -146,7 +146,8 @@ const possilbleRefactorings = printPropDrillingsWithDetails(propDrillings, react
 //     console.log(`Number of Prop Drillings with depth ${i}: ${familyDepth}`);
 // }
 
-// console.log(`Number of Compound Prop Drillings: ${countCompoundPropDrillings(propDrillings)}`);
+// const { compoundPropDrillingsCount, totalCompoundPropDrillings } = countCompoundPropDrillings(propDrillings);
+// console.log(`Total Number of Compound Prop Drillings: ${totalCompoundPropDrillings}`);
 // const pathOccurencesMap = countPathOccurrences(propDrillings);
 // console.log(pathOccurencesMap);
 // console.log("Path Occurences Array: " + [...pathOccurencesMap.values()]);
@@ -155,10 +156,16 @@ const possilbleRefactorings = printPropDrillingsWithDetails(propDrillings, react
 // console.log(`Compound Prop Drilling Families with 2 properties: ${compoundPropDrillingFamilies["twos"]}`);
 // console.log(`Compound Prop Drilling Families with 3 properties: ${compoundPropDrillingFamilies["threes"]}`);
 // console.log(`Compound Prop Drilling Families with more than 4 properties: ${compoundPropDrillingFamilies["multiples"]}`);
+// console.log(`Number of compound Prop Drillings: ${compoundPropDrillingsCount}`);
 
-// const {componentCompositionCount, contextCount} = countPropDrillingRefactoringStats(propDrillings);
+// const { componentCompositionCount, contextCount, refactorableCompoundPropDrillingsCount } = countPropDrillingRefactoringStats(propDrillings);
 // console.log(`Allowed Refactorings with Component Composition: ${componentCompositionCount}`);
 // console.log(`Allowed Refactorings with Context: ${contextCount}`);
+// console.log(`Number of refactorable Compound Prop Drillings: ${refactorableCompoundPropDrillingsCount}`);
+
+// const { propDrillingsWithCommonEnding, propDrilllingsWithCommonStart } = countPropDrillingsWithDifferentStartCommonEnding(propDrillings);
+// console.log(`Prop Drillings with common ending: ${propDrillingsWithCommonEnding}`);
+// console.log(`Prop Drillings with common start: ${propDrilllingsWithCommonStart}`);
 
 reactComponents.forEach(comp => {
     comp.writeChanges();
