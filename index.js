@@ -25,6 +25,7 @@ if(!projectPath && !rootFile){
 const {allFiles, isNextJsProject} = getAllFiles(projectPath);
 const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFile);
 const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
+
 console.log(`Number of analyzed files: ${reactFiles.length}`)
 console.log(`Number of found Components: ${reactComponents.length}`);
 
