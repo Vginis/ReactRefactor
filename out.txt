@@ -1,0 +1,2079 @@
+ActionPanel is in ..\benchmark\vitess\web\vtadmin\src\components\ActionPanel.tsx
+App is in ..\benchmark\vitess\web\vtadmin\src\components\App.tsx
+Code is in ..\benchmark\vitess\web\vtadmin\src\components\Code.tsx
+NavRail is in ..\benchmark\vitess\web\vtadmin\src\components\NavRail.tsx
+NavRailLink is in ..\benchmark\vitess\web\vtadmin\src\components\NavRail.tsx
+NumberInput is in ..\benchmark\vitess\web\vtadmin\src\components\NumberInput.tsx
+ReadOnlyGate is in ..\benchmark\vitess\web\vtadmin\src\components\ReadOnlyGate.tsx
+Snackbar is in ..\benchmark\vitess\web\vtadmin\src\components\Snackbar.tsx
+SnackbarContainer is in ..\benchmark\vitess\web\vtadmin\src\components\Snackbar.tsx
+Spinner is in ..\benchmark\vitess\web\vtadmin\src\components\Spinner.tsx
+TextInput is in ..\benchmark\vitess\web\vtadmin\src\components\TextInput.tsx
+ValidationResults is in ..\benchmark\vitess\web\vtadmin\src\components\ValidationResults.tsx
+VitessLogo is in ..\benchmark\vitess\web\vtadmin\src\components\VitessLogo.tsx
+HelpTooltip is in ..\benchmark\vitess\web\vtadmin\src\components\tooltip\HelpTooltip.tsx
+Tooltip is in ..\benchmark\vitess\web\vtadmin\src\components\tooltip\Tooltip.tsx
+Toggle is in ..\benchmark\vitess\web\vtadmin\src\components\toggle\Toggle.tsx
+Tab is in ..\benchmark\vitess\web\vtadmin\src\components\tabs\Tab.tsx
+TabContainer is in ..\benchmark\vitess\web\vtadmin\src\components\tabs\TabContainer.tsx
+Backups is in ..\benchmark\vitess\web\vtadmin\src\components\routes\Backups.tsx
+Clusters is in ..\benchmark\vitess\web\vtadmin\src\components\routes\Clusters.tsx
+Error404 is in ..\benchmark\vitess\web\vtadmin\src\components\routes\Error404.tsx
+Gates is in ..\benchmark\vitess\web\vtadmin\src\components\routes\Gates.tsx
+Keyspaces is in ..\benchmark\vitess\web\vtadmin\src\components\routes\Keyspaces.tsx
+SchemaMigrations is in ..\benchmark\vitess\web\vtadmin\src\components\routes\SchemaMigrations.tsx
+Schemas is in ..\benchmark\vitess\web\vtadmin\src\components\routes\Schemas.tsx
+Settings is in ..\benchmark\vitess\web\vtadmin\src\components\routes\Settings.tsx
+Snackbars is in ..\benchmark\vitess\web\vtadmin\src\components\routes\Settings.tsx
+Tablets is in ..\benchmark\vitess\web\vtadmin\src\components\routes\Tablets.tsx
+Transactions is in ..\benchmark\vitess\web\vtadmin\src\components\routes\Transactions.tsx
+VExplain is in ..\benchmark\vitess\web\vtadmin\src\components\routes\VExplain.tsx
+Vtctlds is in ..\benchmark\vitess\web\vtadmin\src\components\routes\Vtctlds.tsx
+VTExplain is in ..\benchmark\vitess\web\vtadmin\src\components\routes\VTExplain.tsx
+Workflows is in ..\benchmark\vitess\web\vtadmin\src\components\routes\Workflows.tsx
+WorkflowAction is in ..\benchmark\vitess\web\vtadmin\src\components\routes\workflows\WorkflowAction.tsx
+WorkflowActions is in ..\benchmark\vitess\web\vtadmin\src\components\routes\workflows\WorkflowActions.tsx
+Workflow is in ..\benchmark\vitess\web\vtadmin\src\components\routes\workflow\Workflow.tsx
+WorkflowDetails is in ..\benchmark\vitess\web\vtadmin\src\components\routes\workflow\WorkflowDetails.tsx
+WorkflowStreams is in ..\benchmark\vitess\web\vtadmin\src\components\routes\workflow\WorkflowStreams.tsx
+WorkflowVDiff is in ..\benchmark\vitess\web\vtadmin\src\components\routes\workflow\WorkflowVDiff.tsx
+TransactionAction is in ..\benchmark\vitess\web\vtadmin\src\components\routes\transactions\TransactionAction.tsx
+TransactionActions is in ..\benchmark\vitess\web\vtadmin\src\components\routes\transactions\TransactionActions.tsx
+Transaction is in ..\benchmark\vitess\web\vtadmin\src\components\routes\transaction\Transaction.tsx
+Node is in ..\benchmark\vitess\web\vtadmin\src\components\routes\topologyTree\Node.tsx
+TopologyTree is in ..\benchmark\vitess\web\vtadmin\src\components\routes\topologyTree\TopologyTree.tsx
+ClusterTopology is in ..\benchmark\vitess\web\vtadmin\src\components\routes\topology\ClusterTopology.tsx
+TopologyLink is in ..\benchmark\vitess\web\vtadmin\src\components\routes\topology\Topology.tsx
+Topology is in ..\benchmark\vitess\web\vtadmin\src\components\routes\topology\Topology.tsx
+InfoDialog is in ..\benchmark\vitess\web\vtadmin\src\components\routes\tablets\InfoDialog.tsx
+SuccessState is in ..\benchmark\vitess\web\vtadmin\src\components\routes\tablets\InfoDialog.tsx
+FailState is in ..\benchmark\vitess\web\vtadmin\src\components\routes\tablets\InfoDialog.tsx
+InfoDropdown is in ..\benchmark\vitess\web\vtadmin\src\components\routes\tablets\InfoDropdown.tsx
+Advanced is in ..\benchmark\vitess\web\vtadmin\src\components\routes\tablet\Advanced.tsx
+FullStatus is in ..\benchmark\vitess\web\vtadmin\src\components\routes\tablet\FullStatus.tsx
+Tablet is in ..\benchmark\vitess\web\vtadmin\src\components\routes\tablet\Tablet.tsx
+TabletCharts is in ..\benchmark\vitess\web\vtadmin\src\components\routes\tablet\TabletCharts.tsx
+Stream is in ..\benchmark\vitess\web\vtadmin\src\components\routes\stream\Stream.tsx
+Advanced is in ..\benchmark\vitess\web\vtadmin\src\components\routes\shard\Advanced.tsx
+EventLogEntry is in ..\benchmark\vitess\web\vtadmin\src\components\routes\shard\EventLogEntry.tsx
+Shard is in ..\benchmark\vitess\web\vtadmin\src\components\routes\shard\Shard.tsx
+ShardTablets is in ..\benchmark\vitess\web\vtadmin\src\components\routes\shard\ShardTablets.tsx
+Schema is in ..\benchmark\vitess\web\vtadmin\src\components\routes\schema\Schema.tsx
+KeyspaceAction is in ..\benchmark\vitess\web\vtadmin\src\components\routes\keyspaces\KeyspaceAction.tsx
+KeyspaceActions is in ..\benchmark\vitess\web\vtadmin\src\components\routes\keyspaces\KeyspaceActions.tsx
+Advanced is in ..\benchmark\vitess\web\vtadmin\src\components\routes\keyspace\Advanced.tsx
+Keyspace is in ..\benchmark\vitess\web\vtadmin\src\components\routes\keyspace\Keyspace.tsx
+KeyspaceShards is in ..\benchmark\vitess\web\vtadmin\src\components\routes\keyspace\KeyspaceShards.tsx
+KeyspaceVSchema is in ..\benchmark\vitess\web\vtadmin\src\components\routes\keyspace\KeyspaceVSchema.tsx
+CreateMaterialize is in ..\benchmark\vitess\web\vtadmin\src\components\routes\createWorkflow\CreateMaterialize.tsx
+CreateMoveTables is in ..\benchmark\vitess\web\vtadmin\src\components\routes\createWorkflow\CreateMoveTables.tsx
+CreateReshard is in ..\benchmark\vitess\web\vtadmin\src\components\routes\createWorkflow\CreateReshard.tsx
+CreateSchemaMigration is in ..\benchmark\vitess\web\vtadmin\src\components\routes\createSchemaMigration\CreateSchemaMigration.tsx
+CreateKeyspace is in ..\benchmark\vitess\web\vtadmin\src\components\routes\createKeyspace\CreateKeyspace.tsx
+ClusterRow is in ..\benchmark\vitess\web\vtadmin\src\components\routes\clusters\ClusterRow.tsx
+QueryErrorPlaceholder is in ..\benchmark\vitess\web\vtadmin\src\components\placeholders\QueryErrorPlaceholder.tsx
+QueryLoadingPlaceholder is in ..\benchmark\vitess\web\vtadmin\src\components\placeholders\QueryLoadingPlaceholder.tsx
+BackupStatusPip is in ..\benchmark\vitess\web\vtadmin\src\components\pips\BackupStatusPip.tsx
+Pip is in ..\benchmark\vitess\web\vtadmin\src\components\pips\Pip.tsx
+ShardServingPip is in ..\benchmark\vitess\web\vtadmin\src\components\pips\ShardServingPip.tsx
+StreamStatePip is in ..\benchmark\vitess\web\vtadmin\src\components\pips\StreamStatePip.tsx
+TabletServingPip is in ..\benchmark\vitess\web\vtadmin\src\components\pips\TabletServingPip.tsx
+ExternalTabletLink is in ..\benchmark\vitess\web\vtadmin\src\components\links\ExternalTabletLink.tsx
+KeyspaceLink is in ..\benchmark\vitess\web\vtadmin\src\components\links\KeyspaceLink.tsx
+ShardLink is in ..\benchmark\vitess\web\vtadmin\src\components\links\ShardLink.tsx
+TabletLink is in ..\benchmark\vitess\web\vtadmin\src\components\links\TabletLink.tsx
+TransactionLink is in ..\benchmark\vitess\web\vtadmin\src\components\links\TransactionLink.tsx
+ContentContainer is in ..\benchmark\vitess\web\vtadmin\src\components\layout\ContentContainer.tsx
+NavCrumbs is in ..\benchmark\vitess\web\vtadmin\src\components\layout\NavCrumbs.tsx
+WorkspaceHeader is in ..\benchmark\vitess\web\vtadmin\src\components\layout\WorkspaceHeader.tsx
+WorkspaceTitle is in ..\benchmark\vitess\web\vtadmin\src\components\layout\WorkspaceTitle.tsx
+JSONViewTree is in ..\benchmark\vitess\web\vtadmin\src\components\jsonViewTree\JSONViewTree.tsx
+Label is in ..\benchmark\vitess\web\vtadmin\src\components\inputs\Label.tsx
+MultiSelect is in ..\benchmark\vitess\web\vtadmin\src\components\inputs\MultiSelect.tsx
+Select is in ..\benchmark\vitess\web\vtadmin\src\components\inputs\Select.tsx
+FormError is in ..\benchmark\vitess\web\vtadmin\src\components\forms\FormError.tsx
+Divider is in ..\benchmark\vitess\web\vtadmin\src\components\dropdown\Divider.tsx
+DropdownButton is in ..\benchmark\vitess\web\vtadmin\src\components\dropdown\Dropdown.tsx
+Dropdown is in ..\benchmark\vitess\web\vtadmin\src\components\dropdown\Dropdown.tsx
+MenuItem is in ..\benchmark\vitess\web\vtadmin\src\components\dropdown\MenuItem.tsx
+Dialog is in ..\benchmark\vitess\web\vtadmin\src\components\dialog\Dialog.tsx
+ErrorDialog is in ..\benchmark\vitess\web\vtadmin\src\components\dialog\ErrorDialog.tsx
+DataCell is in ..\benchmark\vitess\web\vtadmin\src\components\dataTable\DataCell.tsx
+DataFilter is in ..\benchmark\vitess\web\vtadmin\src\components\dataTable\DataFilter.tsx
+DataTable is in ..\benchmark\vitess\web\vtadmin\src\components\dataTable\DataTable.tsx
+PaginationNav is in ..\benchmark\vitess\web\vtadmin\src\components\dataTable\PaginationNav.tsx
+SortedDataTable is in ..\benchmark\vitess\web\vtadmin\src\components\dataTable\SortedDataTable.tsx
+SortTableHeader is in ..\benchmark\vitess\web\vtadmin\src\components\dataTable\SortedDataTable.tsx
+D3Timeseries is in ..\benchmark\vitess\web\vtadmin\src\components\charts\D3Timeseries.tsx
+Legend is in ..\benchmark\vitess\web\vtadmin\src\components\charts\D3Timeseries.tsx
+Line is in ..\benchmark\vitess\web\vtadmin\src\components\charts\D3Timeseries.tsx
+TabletQPSChart is in ..\benchmark\vitess\web\vtadmin\src\components\charts\TabletQPSChart.tsx
+TabletVReplicationQPSChart is in ..\benchmark\vitess\web\vtadmin\src\components\charts\TabletVReplicationQPSChart.tsx
+WorkflowStreamsLagChart is in ..\benchmark\vitess\web\vtadmin\src\components\charts\WorkflowStreamsLagChart.tsx
+Number of analyzed files: 135
+Number of found Components: 112
+[
+  {
+    "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\App.tsx:App": {
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\NavRail.tsx:NavRail": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\VitessLogo.tsx:VitessLogo": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\NavRail.tsx:NavRailLink": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Snackbar.tsx:SnackbarContainer": [
+        {}
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\Backups.tsx:Backups": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataFilter.tsx:DataFilter": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataTable.tsx:DataTable": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\Clusters.tsx:Clusters": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataTable.tsx:DataTable": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\placeholders\\QueryLoadingPlaceholder.tsx:QueryLoadingPlaceholder": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Spinner.tsx:Spinner": [
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\Gates.tsx:Gates": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataFilter.tsx:DataFilter": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataTable.tsx:DataTable": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\placeholders\\QueryLoadingPlaceholder.tsx:QueryLoadingPlaceholder": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Spinner.tsx:Spinner": [
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\Keyspaces.tsx:Keyspaces": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\ReadOnlyGate.tsx:ReadOnlyGate": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataFilter.tsx:DataFilter": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataTable.tsx:DataTable": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\placeholders\\QueryLoadingPlaceholder.tsx:QueryLoadingPlaceholder": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Spinner.tsx:Spinner": [
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\createKeyspace\\CreateKeyspace.tsx:CreateKeyspace": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\NavCrumbs.tsx:NavCrumbs": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Select.tsx:Select": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\forms\\FormError.tsx:FormError": [
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+            {}
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\shard\\Shard.tsx:Shard": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\links\\KeyspaceLink.tsx:KeyspaceLink": [
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\NavCrumbs.tsx:NavCrumbs": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tabs\\TabContainer.tsx:TabContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tabs\\Tab.tsx:Tab": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\shard\\ShardTablets.tsx:ShardTablets": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataTable.tsx:DataTable": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Code.tsx:Code": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\jsonViewTree\\JSONViewTree.tsx:JSONViewTree": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\shard\\Advanced.tsx:Advanced": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dialog\\Dialog.tsx:Dialog": [
+                {},
+                {}
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\shard\\EventLogEntry.tsx:EventLogEntry": [
+                {}
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\ValidationResults.tsx:ValidationResults": [
+                {}
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\ActionPanel.tsx:ActionPanel": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                }
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\toggle\\Toggle.tsx:Toggle": [
+                {},
+                {},
+                {},
+                {}
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                {}
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\NumberInput.tsx:NumberInput": [
+                {}
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Select.tsx:Select": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                    {
+                      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                        {}
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                    {
+                      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                        {}
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                    {
+                      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                        {}
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\keyspace\\Keyspace.tsx:Keyspace": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\NavCrumbs.tsx:NavCrumbs": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tabs\\TabContainer.tsx:TabContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tabs\\Tab.tsx:Tab": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\ReadOnlyGate.tsx:ReadOnlyGate": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\keyspace\\KeyspaceShards.tsx:KeyspaceShards": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\placeholders\\QueryLoadingPlaceholder.tsx:QueryLoadingPlaceholder": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Spinner.tsx:Spinner": [
+                    {}
+                  ]
+                }
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataFilter.tsx:DataFilter": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                }
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataTable.tsx:DataTable": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\keyspace\\KeyspaceVSchema.tsx:KeyspaceVSchema": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\placeholders\\QueryLoadingPlaceholder.tsx:QueryLoadingPlaceholder": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Spinner.tsx:Spinner": [
+                    {}
+                  ]
+                }
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\placeholders\\QueryErrorPlaceholder.tsx:QueryErrorPlaceholder": [
+                {}
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Code.tsx:Code": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\placeholders\\QueryLoadingPlaceholder.tsx:QueryLoadingPlaceholder": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Spinner.tsx:Spinner": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Spinner.tsx:Spinner": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Code.tsx:Code": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\jsonViewTree\\JSONViewTree.tsx:JSONViewTree": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\keyspace\\Advanced.tsx:Advanced": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\placeholders\\QueryLoadingPlaceholder.tsx:QueryLoadingPlaceholder": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Spinner.tsx:Spinner": [
+                    {}
+                  ]
+                }
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\ActionPanel.tsx:ActionPanel": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                }
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                {},
+                {},
+                {}
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\toggle\\Toggle.tsx:Toggle": [
+                {},
+                {},
+                {},
+                {},
+                {}
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\Schemas.tsx:Schemas": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataFilter.tsx:DataFilter": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\SortedDataTable.tsx:SortedDataTable": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\SortedDataTable.tsx:SortTableHeader": [
+                {}
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\placeholders\\QueryLoadingPlaceholder.tsx:QueryLoadingPlaceholder": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Spinner.tsx:Spinner": [
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\schema\\Schema.tsx:Schema": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\NavCrumbs.tsx:NavCrumbs": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\links\\KeyspaceLink.tsx:KeyspaceLink": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Code.tsx:Code": [
+            {}
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\Tablets.tsx:Tablets": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataFilter.tsx:DataFilter": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataTable.tsx:DataTable": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\placeholders\\QueryLoadingPlaceholder.tsx:QueryLoadingPlaceholder": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Spinner.tsx:Spinner": [
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\tablet\\Tablet.tsx:Tablet": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\NavCrumbs.tsx:NavCrumbs": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\TabletServingPip.tsx:TabletServingPip": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\links\\ExternalTabletLink.tsx:ExternalTabletLink": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tabs\\TabContainer.tsx:TabContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tabs\\Tab.tsx:Tab": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\ReadOnlyGate.tsx:ReadOnlyGate": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\tablet\\TabletCharts.tsx:TabletCharts": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\charts\\TabletQPSChart.tsx:TabletQPSChart": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\charts\\D3Timeseries.tsx:D3Timeseries": [
+                    {
+                      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\charts\\D3Timeseries.tsx:Line": [
+                        {}
+                      ],
+                      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\charts\\D3Timeseries.tsx:Legend": [
+                        {}
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\charts\\TabletVReplicationQPSChart.tsx:TabletVReplicationQPSChart": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\charts\\D3Timeseries.tsx:D3Timeseries": [
+                    {
+                      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\charts\\D3Timeseries.tsx:Line": [
+                        {}
+                      ],
+                      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\charts\\D3Timeseries.tsx:Legend": [
+                        {}
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Code.tsx:Code": [
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\jsonViewTree\\JSONViewTree.tsx:JSONViewTree": [
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\tablet\\FullStatus.tsx:FullStatus": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Code.tsx:Code": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\tablet\\Advanced.tsx:Advanced": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\ActionPanel.tsx:ActionPanel": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\Vtctlds.tsx:Vtctlds": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataFilter.tsx:DataFilter": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataTable.tsx:DataTable": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\placeholders\\QueryLoadingPlaceholder.tsx:QueryLoadingPlaceholder": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Spinner.tsx:Spinner": [
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\VTExplain.tsx:VTExplain": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Select.tsx:Select": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Code.tsx:Code": [
+            {},
+            {}
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\VExplain.tsx:VExplain": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Select.tsx:Select": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Code.tsx:Code": [
+            {},
+            {}
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\Workflows.tsx:Workflows": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\ReadOnlyGate.tsx:ReadOnlyGate": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dropdown\\Dropdown.tsx:Dropdown": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dropdown\\Dropdown.tsx:DropdownButton": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dropdown\\MenuItem.tsx:MenuItem": [
+            {},
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataFilter.tsx:DataFilter": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataTable.tsx:DataTable": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\placeholders\\QueryLoadingPlaceholder.tsx:QueryLoadingPlaceholder": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Spinner.tsx:Spinner": [
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\createWorkflow\\CreateMoveTables.tsx:CreateMoveTables": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\NavCrumbs.tsx:NavCrumbs": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+            {},
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Select.tsx:Select": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\MultiSelect.tsx:MultiSelect": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\toggle\\Toggle.tsx:Toggle": [
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\forms\\FormError.tsx:FormError": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dialog\\ErrorDialog.tsx:ErrorDialog": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dialog\\Dialog.tsx:Dialog": [
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\createWorkflow\\CreateReshard.tsx:CreateReshard": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\NavCrumbs.tsx:NavCrumbs": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+            {},
+            {},
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Select.tsx:Select": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\toggle\\Toggle.tsx:Toggle": [
+            {},
+            {},
+            {},
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\MultiSelect.tsx:MultiSelect": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\forms\\FormError.tsx:FormError": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dialog\\ErrorDialog.tsx:ErrorDialog": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dialog\\Dialog.tsx:Dialog": [
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\createWorkflow\\CreateMaterialize.tsx:CreateMaterialize": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\NavCrumbs.tsx:NavCrumbs": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+            {},
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Select.tsx:Select": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\MultiSelect.tsx:MultiSelect": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\toggle\\Toggle.tsx:Toggle": [
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\forms\\FormError.tsx:FormError": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dialog\\ErrorDialog.tsx:ErrorDialog": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dialog\\Dialog.tsx:Dialog": [
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\stream\\Stream.tsx:Stream": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\NavCrumbs.tsx:NavCrumbs": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tabs\\TabContainer.tsx:TabContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tabs\\Tab.tsx:Tab": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Code.tsx:Code": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\jsonViewTree\\JSONViewTree.tsx:JSONViewTree": [
+            {}
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\workflow\\Workflow.tsx:Workflow": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\NavCrumbs.tsx:NavCrumbs": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Select.tsx:Select": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\links\\KeyspaceLink.tsx:KeyspaceLink": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tabs\\TabContainer.tsx:TabContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tabs\\Tab.tsx:Tab": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\workflow\\WorkflowStreams.tsx:WorkflowStreams": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\charts\\WorkflowStreamsLagChart.tsx:WorkflowStreamsLagChart": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\charts\\D3Timeseries.tsx:D3Timeseries": [
+                    {
+                      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\charts\\D3Timeseries.tsx:Line": [
+                        {}
+                      ],
+                      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\charts\\D3Timeseries.tsx:Legend": [
+                        {}
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\workflow\\WorkflowDetails.tsx:WorkflowDetails": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataTable.tsx:DataTable": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                    {}
+                  ]
+                },
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\workflow\\WorkflowVDiff.tsx:WorkflowVDiff": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataTable.tsx:DataTable": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                    {}
+                  ]
+                }
+              ],
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dialog\\Dialog.tsx:Dialog": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Code.tsx:Code": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\jsonViewTree\\JSONViewTree.tsx:JSONViewTree": [
+            {}
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\SchemaMigrations.tsx:SchemaMigrations": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\ReadOnlyGate.tsx:ReadOnlyGate": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Select.tsx:Select": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataTable.tsx:DataTable": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\placeholders\\QueryLoadingPlaceholder.tsx:QueryLoadingPlaceholder": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Spinner.tsx:Spinner": [
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\createSchemaMigration\\CreateSchemaMigration.tsx:CreateSchemaMigration": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\NavCrumbs.tsx:NavCrumbs": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Select.tsx:Select": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+            {},
+            {},
+            {},
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\forms\\FormError.tsx:FormError": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dialog\\ErrorDialog.tsx:ErrorDialog": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dialog\\Dialog.tsx:Dialog": [
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\Transactions.tsx:Transactions": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Select.tsx:Select": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataTable.tsx:DataTable": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\placeholders\\QueryLoadingPlaceholder.tsx:QueryLoadingPlaceholder": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Spinner.tsx:Spinner": [
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\transaction\\Transaction.tsx:Transaction": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\NavCrumbs.tsx:NavCrumbs": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataTable.tsx:DataTable": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\placeholders\\QueryLoadingPlaceholder.tsx:QueryLoadingPlaceholder": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\Spinner.tsx:Spinner": [
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\topology\\ClusterTopology.tsx:ClusterTopology": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\NavCrumbs.tsx:NavCrumbs": [
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {},
+            {}
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\topologyTree\\TopologyTree.tsx:TopologyTree": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\NavCrumbs.tsx:NavCrumbs": [
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {},
+            {}
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\topology\\Topology.tsx:Topology": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceHeader.tsx:WorkspaceHeader": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\WorkspaceTitle.tsx:WorkspaceTitle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\DataTable.tsx:DataTable": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\dataTable\\PaginationNav.tsx:PaginationNav": [
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\Settings.tsx:Settings": [
+        {
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\layout\\ContentContainer.tsx:ContentContainer": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tabs\\TabContainer.tsx:TabContainer": [
+            {},
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tabs\\Tab.tsx:Tab": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\pips\\Pip.tsx:Pip": [
+                {}
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\toggle\\Toggle.tsx:Toggle": [
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Select.tsx:Select": [
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            },
+            {
+              "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\inputs\\Label.tsx:Label": [
+                {
+                  "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\tooltip\\Tooltip.tsx:Tooltip": [
+                    {}
+                  ]
+                }
+              ]
+            }
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\TextInput.tsx:TextInput": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ],
+          "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\Settings.tsx:Snackbars": [
+            {}
+          ]
+        }
+      ],
+      "..\\benchmark\\vitess\\web\\vtadmin\\src\\components\\routes\\Error404.tsx:Error404": [
+        {}
+      ]
+    }
+  }
+]
+Found: 61 Prop Drilling Occurences
+Prop Drilling 1/61
+[VExplain(helpText (drilled only)), Select(helpText (drilled only)), Label(text), Tooltip] [31m(Context)[0m [31m(Component Composition)[0m
+
+Use UP/DOWN arrows to navigate, or press ENTER for more options, or press Q to quit.
+[VExplain(helpText (drilled only)), Select(helpText (drilled only)), Label(text), Tooltip] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateMoveTables(helpText (drilled only)), Select(helpText (drilled only)), Label(text), Tooltip] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateMoveTables(helpText (drilled only)), MultiSelect(helpText (drilled only)), Label(text), Tooltip] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateReshard(helpText (drilled only)), Select(helpText (drilled only)), Label(text), Tooltip] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateReshard(helpText (drilled only)), MultiSelect(helpText (drilled only)), Label(text), Tooltip] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateMaterialize(helpText (drilled only)), Select(helpText (drilled only)), Label(text), Tooltip] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateMaterialize(helpText (drilled only)), MultiSelect(helpText (drilled only)), Label(text), Tooltip] [31m(Context)[0m [31m(Component Composition)[0m
+[Workflow(helpText (drilled only)), Select(helpText (drilled only)), Label(text), Tooltip] [31m(Context)[0m [31m(Component Composition)[0m
+[Transactions(helpText (drilled only)), Select(helpText (drilled only)), Label(text), Tooltip] [31m(Context)[0m [31m(Component Composition)[0m
+[Backups(onChange (drilled only)), DataFilter(onChange (drilled only)), TextInput] [32m(Context)[0m [31m(Component Composition)[0m
+[Backups(placeholder (drilled only)), DataFilter(placeholder (drilled only)), TextInput] [32m(Context)[0m [31m(Component Composition)[0m
+[Gates(onChange (drilled only)), DataFilter(onChange (drilled only)), TextInput] [32m(Context)[0m [31m(Component Composition)[0m
+[Gates(placeholder (drilled only)), DataFilter(placeholder (drilled only)), TextInput] [32m(Context)[0m [31m(Component Composition)[0m
+[Keyspaces(onChange (drilled only)), DataFilter(onChange (drilled only)), TextInput] [32m(Context)[0m [31m(Component Composition)[0m
+[Keyspaces(placeholder (drilled only)), DataFilter(placeholder (drilled only)), TextInput] [32m(Context)[0m [31m(Component Composition)[0m
+[CreateKeyspace(label (drilled only)), Select(label (drilled only)), Label] [31m(Context)[0m [31m(Component Composition)[0m
+[Advanced(label), Select(label (drilled only)), Label] [31m(Context)[0m [31m(Component Composition)[0m
+[KeyspaceShards(onChange (drilled only)), DataFilter(onChange (drilled only)), TextInput] [32m(Context)[0m [31m(Component Composition)[0m
+[KeyspaceShards(placeholder (drilled only)), DataFilter(placeholder (drilled only)), TextInput] [32m(Context)[0m [31m(Component Composition)[0m
+[Schemas(onChange (drilled only)), DataFilter(onChange (drilled only)), TextInput] [32m(Context)[0m [31m(Component Composition)[0m
+[Schemas(placeholder (drilled only)), DataFilter(placeholder (drilled only)), TextInput] [32m(Context)[0m [31m(Component Composition)[0m
+[Tablets(onChange (drilled only)), DataFilter(onChange (drilled only)), TextInput] [32m(Context)[0m [31m(Component Composition)[0m
+[Tablets(placeholder (drilled only)), DataFilter(placeholder (drilled only)), TextInput] [32m(Context)[0m [31m(Component Composition)[0m
+[Tablet(alias), TabletCharts(alias), TabletQPSChart] [32m(Context)[0m [32m(Component Composition)[0m
+[Tablet(clusterID), TabletCharts(clusterID), TabletQPSChart] [32m(Context)[0m [32m(Component Composition)[0m
+[Tablet(alias), TabletCharts(alias), TabletVReplicationQPSChart] [32m(Context)[0m [32m(Component Composition)[0m
+[Tablet(clusterID), TabletCharts(clusterID), TabletVReplicationQPSChart] [32m(Context)[0m [32m(Component Composition)[0m
+[Tablet(alias), Advanced(confirmationValue (drilled only)), ActionPanel] [32m(Context)[0m [31m(Component Composition)[0m
+[Vtctlds(onChange (drilled only)), DataFilter(onChange (drilled only)), TextInput] [32m(Context)[0m [31m(Component Composition)[0m
+[Vtctlds(placeholder (drilled only)), DataFilter(placeholder (drilled only)), TextInput] [32m(Context)[0m [31m(Component Composition)[0m
+[VTExplain(label), Select(label (drilled only)), Label] [31m(Context)[0m [31m(Component Composition)[0m
+[VExplain(label), Select(label (drilled only)), Label] [31m(Context)[0m [31m(Component Composition)[0m
+[VExplain(required (drilled only)), Select(required (drilled only)), Label] [31m(Context)[0m [31m(Component Composition)[0m
+[Workflows(title (drilled only)), Dropdown(title (drilled only)), DropdownButton] [32m(Context)[0m [31m(Component Composition)[0m
+[Workflows(className (drilled only)), Dropdown(className), DropdownButton] [32m(Context)[0m [31m(Component Composition)[0m
+[Workflows(onChange (drilled only)), DataFilter(onChange (drilled only)), TextInput] [32m(Context)[0m [31m(Component Composition)[0m
+[Workflows(placeholder (drilled only)), DataFilter(placeholder (drilled only)), TextInput] [32m(Context)[0m [31m(Component Composition)[0m
+[CreateMoveTables(label (drilled only)), Select(label (drilled only)), Label] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateMoveTables(label (drilled only)), MultiSelect(label (drilled only)), Label] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateMoveTables(isOpen), ErrorDialog(isOpen (drilled only)), Dialog] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateMoveTables(onClose (drilled only)), ErrorDialog(onConfirm (drilled only), onClose (drilled only)), Dialog] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateReshard(label (drilled only)), Select(label (drilled only)), Label] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateReshard(label (drilled only)), MultiSelect(label (drilled only)), Label] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateReshard(isOpen), ErrorDialog(isOpen (drilled only)), Dialog] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateReshard(onClose (drilled only)), ErrorDialog(onConfirm (drilled only), onClose (drilled only)), Dialog] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateMaterialize(label (drilled only)), Select(label (drilled only)), Label] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateMaterialize(label (drilled only)), MultiSelect(label (drilled only)), Label] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateMaterialize(isOpen), ErrorDialog(isOpen (drilled only)), Dialog] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateMaterialize(onClose (drilled only)), ErrorDialog(onConfirm (drilled only), onClose (drilled only)), Dialog] [31m(Context)[0m [31m(Component Composition)[0m
+[Workflow(label (drilled only)), Select(label (drilled only)), Label] [31m(Context)[0m [31m(Component Composition)[0m
+[Workflow(clusterID), WorkflowStreams(clusterID (drilled only)), WorkflowStreamsLagChart] [32m(Context)[0m [32m(Component Composition)[0m
+[Workflow(keyspace), WorkflowStreams(keyspace (drilled only)), WorkflowStreamsLagChart] [32m(Context)[0m [32m(Component Composition)[0m
+[Workflow(name), WorkflowStreams(workflowName (drilled only)), WorkflowStreamsLagChart] [32m(Context)[0m [32m(Component Composition)[0m
+[SchemaMigrations(label), Select(label (drilled only)), Label] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateSchemaMigration(label (drilled only)), Select(label (drilled only)), Label] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateSchemaMigration(helpText (drilled only)), Label(text), Tooltip] [31m(Context)[0m [32m(Component Composition)[0m
+[CreateSchemaMigration(isOpen), ErrorDialog(isOpen (drilled only)), Dialog] [31m(Context)[0m [31m(Component Composition)[0m
+[CreateSchemaMigration(onClose (drilled only)), ErrorDialog(onConfirm (drilled only), onClose (drilled only)), Dialog] [31m(Context)[0m [31m(Component Composition)[0m
+[Transactions(label (drilled only)), Select(label (drilled only)), Label] [31m(Context)[0m [31m(Component Composition)[0m
+[Settings(status), Tab(state), Pip] [31m(Context)[0m [31m(Component Composition)[0m
+[Settings(label (drilled only)), Select(label (drilled only)), Label] [31m(Context)[0m [31m(Component Composition)[0m
+Execution time: 2:42.249 (m:ss.mmm)
