@@ -132,7 +132,7 @@ rl.on('SIGINT', () => {
     rl.close();
     process.exit();
 });
-const possilbleRefactorings = printPropDrillingsWithDetails(propDrillings, reactComponents);
+const possibleRefactorings = printPropDrillingsWithDetails(propDrillings, reactComponents);
 //USE CASES(TESTING PURPOSES)
 //propDrillings[0].addComponentComposition(reactComponents,propDrillings);
 //propDrillings[0].addUseContext(reactComponents,propDrillings);
@@ -140,7 +140,7 @@ const possilbleRefactorings = printPropDrillingsWithDetails(propDrillings, react
 //StatsModule
 // console.log(`Components participating in Prop Drillings: ${(countDistinctComponents(propDrillings))}`)
 // console.log(`Components participation percentage in Prop Drillings: ${(countDistinctComponents(propDrillings)/reactComponents.length).toFixed(2)}`)
-// console.log(`Possible Refactorings with Context or Composition: ${possilbleRefactorings}`);
+// console.log(`Possible Refactorings with Context or Composition: ${possibleRefactorings}`);
 // const depthsMap = calculatePropDrillingDepths(propDrillings);
 // for(let i=3; i<=5; i++){
 //     const familyDepth = (depthsMap.get(i)) ? depthsMap.get(i) : 0; 
