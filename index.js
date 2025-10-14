@@ -17,6 +17,8 @@ export const rootFile = args[1];
 export const rootComponent = args[2];
 export const fileType = args[3] || rootFile.split(".").pop();
 
+let projectName = projectPath.split(/[\\\/]/)[0]
+
 if(!projectPath && !rootFile){
     console.error("Error: Please provide project path and root file.");
     process.exit(1);
@@ -132,7 +134,10 @@ rl.on('SIGINT', () => {
     rl.close();
     process.exit();
 });
-const possibleRefactorings = printPropDrillingsWithDetails(propDrillings, reactComponents);
+const {possibleRefactorings, allPropDrillings} = printPropDrillingsWithDetails(propDrillings, reactComponents);
+
+fs.writeFileSync(`./stats/${projectName}.json`, JSON.stringify(allPropDrillings, null, 2), 'utf-8');
+
 //USE CASES(TESTING PURPOSES)
 //propDrillings[0].addComponentComposition(reactComponents,propDrillings);
 //propDrillings[0].addUseContext(reactComponents,propDrillings);
