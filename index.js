@@ -1,28 +1,26 @@
 #!/usr/bin/env node
 console.time("Execution time");
 import * as fs from 'fs';
-import { getAllFiles,extractPathsAndHierarchies } from './lib/util.js';
+import { getAllFiles, resolveIfProjectHasMultiplePages, extractPathsAndHierarchies } from './lib/util.js';
 import { loadReactFiles } from './lib/ReactFile.js';
 import { loadReactComponents,addParents,addCompositeKeyReturnedElements } from './lib/loadingFuncs.js';
 import { detectPropDrilling } from './lib/Hierarchy.js';
 import readline from 'readline';
 import { loadAliases } from './lib/Alias.js';
-import { displayMenu,displayPropDrilling } from './lib/cli.js';
+import { displayMenu,displayPropDrilling, extractGlobalCliVariables } from './lib/cli.js';
 import { countDistinctComponents,calculatePropDrillingDepths,countCompoundPropDrillings,countPathOccurrences,countPropDrillingFamilies,countPropDrillingRefactoringStats, countPropDrillingsWithDifferentStartCommonEnding } from './lib/statsCalculation.js';
 import { printPropDrillingsWithDetails } from './lib/PropDrilling.js';
-const args = process.argv.slice(2);
 
-export const projectPath = args[0];
-export const rootFile = args[1];
-export const rootComponent = args[2];
-export const fileType = args[3] || rootFile.split(".").pop();
+const { projectPath, rootFile } = extractGlobalCliVariables(); 
 
 if(!projectPath && !rootFile){
     console.error("Error: Please provide project path and root file.");
     process.exit(1);
 }
 
-const {allFiles, isNextJsProject} = getAllFiles(projectPath);
+const allFiles = getAllFiles(projectPath);
+const hasMultiplePages = resolveIfProjectHasMultiplePages(projectPath);
+
 const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFile);
 const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
 
@@ -33,7 +31,7 @@ loadAliases(reactFiles,reactComponents);
 addParents(reactComponents);
 addCompositeKeyReturnedElements(reactComponents,reactFiles);
 
-const {hierarchyTrees, paths} = extractPathsAndHierarchies(reactFiles,rootFile,reactComponents,isNextJsProject);
+const {hierarchyTrees, paths} = extractPathsAndHierarchies(reactFiles,rootFile,reactComponents,hasMultiplePages);
 
 // Print all hierarchy trees
 fs.writeFileSync('./stats/a.json', JSON.stringify(hierarchyTrees, null, 2), 'utf-8');

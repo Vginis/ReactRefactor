@@ -1,0 +1,54 @@
+import path from 'path';
+import { getAllFiles } from "../../lib/util";
+import * as exportsModule from '../../lib/Export.js';
+import * as importsModule from '../../lib/ImportStatement.js';
+import * as cliModule from '../../lib/cli.js';
+import { loadReactFiles } from '../../lib/ReactFile.js';
+
+describe("Extract all React File objects from a list of files", () => {
+    afterAll(() => {
+        jest.restoreAllMocks();
+    });
+
+    test("scan all files and extract the respective React file objects", () => {
+        const testProjectPath = path.resolve(__dirname,"./resources/atm-banking/src");
+        const allFiles = getAllFiles(testProjectPath);
+        const rootFileName = path.resolve(__dirname,"./resources/atm-banking/src/main.jsx");
+
+        jest.spyOn(exportsModule, 'extractExports').mockImplementation(() => {});
+        jest.spyOn(importsModule, 'extractImportDeclarations').mockImplementation(() => {});
+        jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
+            projectPath: testProjectPath,
+            rootFile: ".//tests//integration//resources//atm-banking//src//main.jsx",
+            rootComponent: "App",
+            fileType: "jsx"
+        });
+        const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, rootFileName);
+
+        expect(reactFiles.length).toBe(15);
+        expect(filteredJsxElements.size).toBe(17);
+        expect([...filteredJsxElements].some(e => e.App)).toBe(true);
+        expect([...filteredJsxElements].some(e => e.TransactionHistory)).toBe(false);
+        expect(reactFiles.some(f => f.isRootFile)).toBe(true);
+    });
+
+    test("scan all files and extract the respective React file objects for multiple page app", () => {
+        const testProjectPath = path.resolve(__dirname,"./resources/e-library/src");
+        const allFiles = getAllFiles(testProjectPath);
+        const rootFileName = path.resolve(__dirname,"./resources/e-library/src/pages/home.tsx");
+
+        jest.spyOn(exportsModule, 'extractExports').mockImplementation(() => {});
+        jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
+            projectPath: testProjectPath,
+            rootFile: ".//tests//integration//resources//e-library//src//pages//home.tsx",
+            rootComponent: "HomePage",
+            fileType: "tsx"
+        });
+        jest.spyOn(importsModule, 'extractImportDeclarations').mockImplementation(() => {});
+        const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, rootFileName);
+
+        expect(reactFiles.length).toBe(43);
+        expect(filteredJsxElements.size).toBe(65);
+        expect(reactFiles.some(f => f.isRootFile)).toBe(true);
+    });
+});
