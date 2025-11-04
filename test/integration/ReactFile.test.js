@@ -3,7 +3,6 @@ import { getAllFiles } from "../../lib/util";
 import * as exportsModule from '../../lib/Export.js';
 import * as importsModule from '../../lib/ImportStatement.js';
 import * as cliModule from '../../lib/cli.js';
-import { loadReactFiles } from '../../lib/ReactFile.js';
 
 describe("Extract all React File objects from a list of files", () => {
     afterAll(() => {
@@ -23,6 +22,8 @@ describe("Extract all React File objects from a list of files", () => {
             rootComponent: "App",
             fileType: "jsx"
         });
+
+        const loadReactFiles = require('../../lib/ReactFile.js').loadReactFiles;
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, rootFileName);
 
         expect(reactFiles.length).toBe(15);
@@ -46,6 +47,8 @@ describe("Extract all React File objects from a list of files", () => {
             fileType: "tsx"
         });
         jest.spyOn(importsModule, 'extractImportDeclarations').mockImplementation(() => {});
+
+        const loadReactFiles = require('../../lib/ReactFile.js').loadReactFiles;
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, rootFileName);
 
         expect(reactFiles.length).toBe(43);
