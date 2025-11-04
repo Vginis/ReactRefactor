@@ -11,15 +11,15 @@ describe("Extract all React File objects from a list of files", () => {
     });
 
     test("scan all files and extract the respective React file objects", () => {
-        const testProjectPath = path.resolve(__dirname,"./resources/atm-banking/src");
+        const testProjectPath = path.resolve(process.cwd(),"test", "resources", "atm-banking", "src");
         const allFiles = getAllFiles(testProjectPath);
-        const rootFileName = path.resolve(__dirname,"./resources/atm-banking/src/main.jsx");
+        const rootFileName = path.resolve(process.cwd(),"test", "resources", "atm-banking", "src", "main.jsx");
 
         jest.spyOn(exportsModule, 'extractExports').mockImplementation(() => {});
         jest.spyOn(importsModule, 'extractImportDeclarations').mockImplementation(() => {});
         jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
             projectPath: testProjectPath,
-            rootFile: ".//tests//integration//resources//atm-banking//src//main.jsx",
+            rootFile: ".//test//resources//atm-banking//src//main.jsx",
             rootComponent: "App",
             fileType: "jsx"
         });
@@ -33,14 +33,15 @@ describe("Extract all React File objects from a list of files", () => {
     });
 
     test("scan all files and extract the respective React file objects for multiple page app", () => {
-        const testProjectPath = path.resolve(__dirname,"./resources/e-library/src");
+        
+        const testProjectPath = path.resolve(process.cwd(),"test", "resources", "e-library", "src");
         const allFiles = getAllFiles(testProjectPath);
-        const rootFileName = path.resolve(__dirname,"./resources/e-library/src/pages/home.tsx");
-
+        const rootFileName = path.resolve(process.cwd(),"test", "resources", "e-library", "src", "pages", "home.tsx");
+        
         jest.spyOn(exportsModule, 'extractExports').mockImplementation(() => {});
         jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
             projectPath: testProjectPath,
-            rootFile: ".//tests//integration//resources//e-library//src//pages//home.tsx",
+            rootFile: ".//test//resources//e-library//src//pages//home.tsx",
             rootComponent: "HomePage",
             fileType: "tsx"
         });
