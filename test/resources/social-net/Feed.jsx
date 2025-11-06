@@ -1,21 +1,24 @@
 import React from "react";
-import Post from "./Post";
+import {Post as MyPost} from "./Post.jsx";
+import Avatar from "./Avatar.jsx";
 
-const Feed = () => {
+const Feed = ({username, name}) => {
   const posts = [
     {
       id: 1,
       author: "Jane Doe",
+      username: "johndoe",
       content: "Just went hiking today! 🌲",
       image: "https://placekitten.com/400/250",
       comments: [
-        { id: 1, author: "Mike", text: "Looks awesome!" },
-        { id: 2, author: "Anna", text: "Where is this?" },
+        { id: 1, author: "Mike", username: "mike", text: "Looks awesome!" },
+        { id: 2, author: "Anna", username: "anna", text: "Where is this?" },
       ],
     },
     {
       id: 2,
       author: "John Smith",
+      username: "johnsmith",
       content: "Coffee is life ☕",
       image: null,
       comments: [],
@@ -25,9 +28,12 @@ const Feed = () => {
   return (
     <div className="feed">
       <h2>Social Feed</h2>
+      <Avatar iconUrl={`https://sn.com/users/${username}/icon`} name={name}/>
+
       {posts.map((post) => (
-        <Post key={post.id} {...post} />
+        <MyPost key={post.id} {...post} />
       ))}
+
     </div>
   );
 };

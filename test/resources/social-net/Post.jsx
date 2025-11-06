@@ -1,10 +1,11 @@
 import React from "react";
 import Comment from "./Comment";
 
-const Post = ({ author, content, image, comments }) => {
+const Post = ({ author, username, content, image, comments }) => {
   return (
     <div className="post">
       <div className="post-header">
+        <Avatar iconUrl={`https://sn.com/user/${username}/icon`} name={author}></Avatar>
         <strong>{author}</strong>
       </div>
       <p>{content}</p>

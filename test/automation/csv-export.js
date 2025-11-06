@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import PropDrillingInfo from '../lib/PropDrillingInfo.js';
+import PropDrillingInfo from '../../lib/PropDrillingInfo.js';
 
 
 let json = fs.readFileSync('./stats/vitess.json', 'utf-8')
