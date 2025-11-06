@@ -1,5 +1,5 @@
 
-import { resolveJscodeshiftParser } from '../lib/util.js';
+import { resolveJscodeshiftParser } from '../../lib/util.js';
 
 describe("Loaded jscodeshift object is singleton", () => {
 

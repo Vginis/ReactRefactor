@@ -1,9 +1,21 @@
 import path from 'path';
 import { getAllFiles } from "../../lib/util";
-import { loadReactFiles } from '../../lib/ReactFile.js';
 import * as exportsModule from '../../lib/Export.js';
 import * as importsModule from '../../lib/ImportStatement.js';
 import * as cliModule from '../../lib/cli.js';
+import { ReactFile } from '../../lib/ReactFile.js';
+
+describe("React file properties", ()=>{
+
+    test("should include file type", ()=>{
+        let reactFile = new ReactFile(null, "/path/to/file/FileName.jsx")
+        expect(reactFile.fileType).toBe("jsx")
+
+        reactFile = new ReactFile(null, "/path/to/file/FileName.tsx")
+        expect(reactFile.fileType).toBe("tsx")
+    })
+
+});
 
 describe("Extract all React File objects from a list of files", () => {
     afterAll(() => {
@@ -48,6 +60,7 @@ describe("Extract all React File objects from a list of files", () => {
         });
         jest.spyOn(importsModule, 'extractImportDeclarations').mockImplementation(() => {});
 
+        const loadReactFiles = require('../../lib/ReactFile.js').loadReactFiles;
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, rootFileName);
 
         expect(reactFiles.length).toBe(43);
