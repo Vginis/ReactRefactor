@@ -54,9 +54,10 @@ describe("Component hierarchy", () => {
 
         const { hierarchyTrees, paths } = analyzeComponentHierarchy(testProjectPath, rootFileName, allFiles, 5, 5)
     
-        expect(paths.length).toBe(2);
+        expect(paths.length).toBe(3);
         expect(paths[0].length).toBe(3)
         expect(paths[1].length).toBe(4)
+        expect(paths[2].length).toBe(4)
 
     });
 });
