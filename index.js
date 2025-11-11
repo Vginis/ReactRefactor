@@ -35,6 +35,9 @@ const {hierarchyTrees, paths} = extractPathsAndHierarchies(reactFiles,rootFile,r
 
 // Print all hierarchy trees
 fs.writeFileSync('./stats/a.json', JSON.stringify(hierarchyTrees, null, 2), 'utf-8');
+
+savePaths(paths);
+
 console.log(JSON.stringify(hierarchyTrees, null, 2));
 const propDrillings = detectPropDrilling(paths,reactComponents);
 console.log("Found: " + propDrillings.length + " Prop Drilling Occurences");
@@ -49,6 +52,19 @@ let inMenu = false;
 let currentMenuIndex = 0;
 const menuOptions = ["Refactor Prop Drilling with Context","Refactor Prop Drilling with Component Composition",
      "View Detailed Path"];
+
+function savePaths(paths, debug=true) {
+    if (!debug) return;
+
+    let csvLines = [];
+    for (let path of paths) {
+        csvLines.push(path.map(item => {
+            let segments = item.split("\\");
+            return segments[segments.length - 1];
+        }).join(","));
+    }
+    fs.writeFileSync('./stats/paths.csv', csvLines.join("\n"), 'utf-8');
+}
 
 function handleUserInput(key){
     if(inMenu){
