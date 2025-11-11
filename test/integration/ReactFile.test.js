@@ -8,10 +8,10 @@ import { ReactFile } from '../../lib/ReactFile.js';
 describe("React file properties", ()=>{
 
     test("should include file type", ()=>{
-        let reactFile = new ReactFile(null, "/path/to/file/FileName.jsx")
+        let reactFile = new ReactFile(null, null, "/path/to/file/FileName.jsx")
         expect(reactFile.fileType).toBe("jsx")
 
-        reactFile = new ReactFile(null, "/path/to/file/FileName.tsx")
+        reactFile = new ReactFile(null, null, "/path/to/file/FileName.tsx")
         expect(reactFile.fileType).toBe("tsx")
     })
 
@@ -22,7 +22,7 @@ describe("Extract all React File objects from a list of files", () => {
         jest.restoreAllMocks();
     });
 
-    test.skip("scan all files and extract the respective React file objects", () => {
+    test("scan all files and extract the respective React file objects for single page app", () => {
         const testProjectPath = path.resolve(process.cwd(),"test", "resources", "atm-banking", "src");
         const allFiles = getAllFiles(testProjectPath);
         const rootFileName = path.resolve(process.cwd(),"test", "resources", "atm-banking", "src", "main.jsx");
@@ -36,6 +36,7 @@ describe("Extract all React File objects from a list of files", () => {
             fileType: "jsx"
         });
 
+        const loadReactFiles = require('../../lib/ReactFile.js').loadReactFiles;
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, rootFileName);
 
         expect(reactFiles.length).toBe(15);
