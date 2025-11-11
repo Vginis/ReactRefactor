@@ -1,4 +1,4 @@
-import path from 'path';
+import path from 'node:path';
 import { getAllFiles } from "../../lib/util";
 import * as exportsModule from '../../lib/Export.js';
 import * as importsModule from '../../lib/ImportStatement.js';
