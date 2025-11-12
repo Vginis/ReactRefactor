@@ -2,13 +2,13 @@ import * as fs from 'fs';
 import PropDrillingInfo from '../../lib/PropDrillingInfo.js';
 
 
-let json = fs.readFileSync('./stats/vitess.json', 'utf-8')
+let json = fs.readFileSync('./stats/candidates.json', 'utf-8')
 let candidates = JSON.parse(json).map(c => getPropDrillingInfo(c))
 
+let csvLines = candidates.map(c => c.toCSVRow())
+csvLines.unshift(candidates[0].csvRowHeader)
 
-
-console.log(candidates.map(c => c.toCSVRow()))
-
+fs.writeFileSync('./stats/candidates.csv', csvLines.join("\n"), 'utf-8')
 
 function getPropDrillingInfo(item){
     let propDrillingInfo = new PropDrillingInfo()

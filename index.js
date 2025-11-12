@@ -63,8 +63,7 @@ function savePaths(paths, debug=true) {
         csvLines.push(path.map(item => {
             let segments = item.split("\\");
             let componentPathSegments = segments.slice(projSegmentCount, segments.length)
-            return componentPathSegments.join(".")
-            //return segments[segments.length - 1];
+            return componentPathSegments.join(":")
         }).join(","));
     }
     fs.writeFileSync('./stats/paths.csv', csvLines.join("\n"), 'utf-8');
