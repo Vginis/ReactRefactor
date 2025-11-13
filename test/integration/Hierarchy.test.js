@@ -31,7 +31,7 @@ describe("Component hierarchy", () => {
             fileType: "jsx"
         });
 
-        const { hierarchyTrees, paths } = analyzeComponentHierarchy(testProjectPath, rootFileName, allFiles, 5, 5)
+        const { hierarchyTrees, paths } = analyzeComponentHierarchy(testProjectPath, rootFileName, allFiles, 6, 6)
     
         expect(paths.length).toBe(2);
         expect(paths[0].length).toBe(3)

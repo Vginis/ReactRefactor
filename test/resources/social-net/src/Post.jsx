@@ -20,4 +20,13 @@ const Post = ({ author, username, content, image, comments }) => {
   );
 };
 
+export const Logo = ({ iconUrl, text }) => {
+  return (
+    <div className="logo">
+      <img src={iconUrl} alt={text}/>
+      <strong>{text}</strong>
+    </div>
+  );
+};
+
 export default Post;

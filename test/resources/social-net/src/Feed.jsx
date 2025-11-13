@@ -1,4 +1,5 @@
 import {default as MyPost} from "./Post.jsx";
+import {Logo} from "./Post.jsx"
 import {Avatar} from "./components.jsx";
 
 const Feed = ({username, name}) => {
@@ -27,6 +28,7 @@ const Feed = ({username, name}) => {
   return (
     <div className="feed">
       <h2>Social Feed</h2>
+      <Logo iconUrl={`https://localhost:8000/logo`} text={"Social net"}></Logo>
       <Avatar iconUrl={`https://localhost:8000/users/${username}/icon`} name={name}/>
 
       {posts.map((post) => (

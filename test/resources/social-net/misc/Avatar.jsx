@@ -1,4 +1,3 @@
-
 const Avatar = ({ iconUrl, name }) => {
   return (
     <div className="avatar">

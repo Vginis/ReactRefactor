@@ -17,5 +17,6 @@ const Comment = ({ author, username, text }) => {
   );
 };
 
+
 export {Comment, Avatar}
 
