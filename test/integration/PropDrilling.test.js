@@ -126,7 +126,7 @@ describe("Context refactoring pre-condition check.", () => {
 
         jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
             projectPath: testProjectPath,
-            rootFile: ".//test//resources//social-netx//App.jsx",
+            rootFile: ".//test//resources//social-netx//src//App.jsx",
             rootComponent: "App",
             fileType: "jsx"
         });
@@ -141,9 +141,9 @@ describe("Context refactoring pre-condition check.", () => {
 
         const paths = [
             [
-                String.raw`test\resources\social-netx\App.jsx:App`,
-                String.raw`test\resources\social-netx\Feed.jsx:Feed`,
-                String.raw`test\resources\social-netx\Avatar.jsx:Avatar`
+                String.raw`test\resources\social-netx\src\App.jsx:App`,
+                String.raw`test\resources\social-netx\src\Feed.jsx:Feed`,
+                String.raw`test\resources\social-netx\src\Avatar.jsx:Avatar`
             ]
         ];
 

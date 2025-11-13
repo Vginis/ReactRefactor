@@ -1,5 +1,5 @@
 import {default as MyPost} from "./Post.jsx";
-import Avatar from "./Avatar.jsx";
+import {Avatar} from "./components.jsx";
 
 const Feed = ({username, name}) => {
   const posts = [

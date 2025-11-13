@@ -1,5 +1,4 @@
-import Comment from "./Comment.jsx";
-import Avatar from "./Avatar.jsx";
+import {Comment, Avatar} from "./components.jsx";
 
 const Post = ({ author, username, content, image, comments }) => {
   return (
