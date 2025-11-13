@@ -20,9 +20,9 @@ describe("Component hierarchy", () => {
 
     test("should load hierarchy without circles", () => {
 
-        const testProjectPath = path.resolve(process.cwd(), "test", "resources", "social-net");
+        const testProjectPath = path.resolve(process.cwd(), "test", "resources", "social-net",  "src");
         const allFiles = getAllFiles(testProjectPath);
-        const rootFileName = path.resolve(process.cwd(), "test", "resources", "social-net", "App.jsx");
+        const rootFileName = path.resolve(process.cwd(), "test", "resources", "social-net", "src", "App.jsx");
 
         jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
             projectPath: testProjectPath,
@@ -31,7 +31,7 @@ describe("Component hierarchy", () => {
             fileType: "jsx"
         });
 
-        const { hierarchyTrees, paths } = analyzeComponentHierarchy(testProjectPath, rootFileName, allFiles, 5, 4)
+        const { hierarchyTrees, paths } = analyzeComponentHierarchy(testProjectPath, rootFileName, allFiles, 5, 5)
     
         expect(paths.length).toBe(2);
         expect(paths[0].length).toBe(3)
@@ -41,9 +41,9 @@ describe("Component hierarchy", () => {
 
     test("should load hierarchy containing circles", () => {
 
-        const testProjectPath = path.resolve(process.cwd(), "test", "resources", "social-netx");
+        const testProjectPath = path.resolve(process.cwd(), "test", "resources", "social-netx", "src");
         const allFiles = getAllFiles(testProjectPath);
-        const rootFileName = path.resolve(process.cwd(), "test", "resources", "social-netx", "App.jsx");
+        const rootFileName = path.resolve(process.cwd(), "test", "resources", "social-netx", "src", "App.jsx");
 
         jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
             projectPath: testProjectPath,
@@ -52,7 +52,7 @@ describe("Component hierarchy", () => {
             fileType: "jsx"
         });
 
-        const { hierarchyTrees, paths } = analyzeComponentHierarchy(testProjectPath, rootFileName, allFiles, 5, 5)
+        const { hierarchyTrees, paths } = analyzeComponentHierarchy(testProjectPath, rootFileName, allFiles, 5, 6)
     
         expect(paths.length).toBe(3);
         expect(paths[0].length).toBe(3)
@@ -67,7 +67,6 @@ function analyzeComponentHierarchy(testProjectPath, rootFileName, allFiles, expe
     const hasMultiplePages = resolveIfProjectHasMultiplePages(testProjectPath);
     const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, rootFileName);
 
-    // App is not used anywhere, it cannot infer that it's a JSX element
     expect(filteredJsxElements.size).toBe(expectedJsxElements);
 
     const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
