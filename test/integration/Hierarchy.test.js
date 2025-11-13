@@ -26,7 +26,7 @@ describe("Component hierarchy", () => {
 
         jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
             projectPath: testProjectPath,
-            rootFile: ".//test//resources//social-net//App.jsx",
+            rootFile: ".//test//resources//social-net//src//App.jsx",
             rootComponent: "App",
             fileType: "jsx"
         });
@@ -47,12 +47,36 @@ describe("Component hierarchy", () => {
 
         jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
             projectPath: testProjectPath,
-            rootFile: ".//test//resources//social-netx//App.jsx",
+            rootFile: ".//test//resources//social-netx//src//App.jsx",
             rootComponent: "App",
             fileType: "jsx"
         });
 
         const { hierarchyTrees, paths } = analyzeComponentHierarchy(testProjectPath, rootFileName, allFiles, 5, 6)
+    
+        expect(paths.length).toBe(3);
+        expect(paths[0].length).toBe(3)
+        expect(paths[1].length).toBe(4)
+        expect(paths[2].length).toBe(4)
+
+    });
+
+
+    test("should load hierarchy containing aliases", () => {
+
+        const testProjectPath = path.resolve(process.cwd(), "test", "resources", "social-net-alias", "src");
+        const allFiles = getAllFiles(testProjectPath);
+        const rootFileName = path.resolve(process.cwd(), "test", "resources", "social-net-alias", "src", "App.jsx");
+
+        jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
+            projectPath: testProjectPath,
+            rootFile: ".//test//resources//social-net-alias//src//App.jsx",
+            rootComponent: "App",
+            fileType: "jsx"
+        });
+
+        // 5 jsx elements, Feed is not used anywhere
+        const { hierarchyTrees, paths } = analyzeComponentHierarchy(testProjectPath, rootFileName, allFiles, 5, 5)
     
         expect(paths.length).toBe(3);
         expect(paths[0].length).toBe(3)
