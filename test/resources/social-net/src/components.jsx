@@ -18,5 +18,5 @@ const Comment = ({ author, username, text }) => {
 };
 
 
-export {Comment, Avatar}
+export {Comment as PostComment, Avatar}
 

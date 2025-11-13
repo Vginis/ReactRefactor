@@ -1,62 +1,38 @@
 import path from 'path';
-import * as cliModule from '../../lib/cli.js';
-import { loadReactFiles } from '../../lib/ReactFile.js';
-import { loadAliases } from '../../lib/Alias.js';
-import {
-    getAllFiles,
-    resolveIfProjectHasMultiplePages,
-    extractPathsAndHierarchies
-} from '../../lib/util.js';
-import {
-    loadReactComponents,
-    addParents,
-    addCompositeKeyReturnedElements
-} from '../../lib/loadingFuncs.js';
+import { parseReactFile, ReactFile } from '../../lib/ReactFile.js';
+import { extractExports } from '../../lib/Export.js'
 
-describe("Component hierarchy", () => {
-    afterAll(() => {
-        jest.restoreAllMocks();
-    });
+describe("Export module", () => {
 
-    test.skip("should load hierarchy without circles", () => {
+    test("should identify named exports", () => {
 
-        const testProjectPath = path.resolve(process.cwd(), "test", "resources", "social-net",  "src");
-        const allFiles = getAllFiles(testProjectPath);
-        const rootFileName = path.resolve(process.cwd(), "test", "resources", "social-net", "src", "App.jsx");
+        let reactFile = loadReactFile("test/resources/social-net/src/components.jsx")
+        let exportList = extractExports(reactFile)
 
-        jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
-            projectPath: testProjectPath,
-            rootFile: ".//test//resources//social-net//src//App.jsx",
-            rootComponent: "App",
-            fileType: "jsx"
-        });
-
-        const { hierarchyTrees, paths } = analyzeComponentHierarchy(testProjectPath, rootFileName, allFiles, 6, 6)
-    
-        expect(paths.length).toBe(2);
-        expect(paths[0].length).toBe(3)
-        expect(paths[1].length).toBe(4)
+        expect(exportList.length).toBeTruthy();
+        expect.arrayContaining["PostComment", "Avatar"]
 
     });
 
-    
+
+    test("should identify default exports", () => {
+
+        let reactFile = loadReactFile("test/resources/social-net/src/Post.jsx")
+        let exportList = extractExports(reactFile)
+
+        expect(exportList.length).toBeTruthy();
+        expect.arrayContaining["Logo", "Post"]
+
+    });
+
 });
 
-function analyzeComponentHierarchy(testProjectPath, rootFileName, allFiles, expectedReactComponents, expectedJsxElements) {
-
-    const hasMultiplePages = resolveIfProjectHasMultiplePages(testProjectPath);
-    const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, rootFileName);
-
-    expect(filteredJsxElements.size).toBe(expectedJsxElements);
-
-    const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
-    expect(reactComponents.length).toBe(expectedReactComponents);
-
-    loadAliases(reactFiles, reactComponents);
-    addParents(reactComponents);
-    addCompositeKeyReturnedElements(reactComponents, reactFiles);
-    const { hierarchyTrees, paths } = extractPathsAndHierarchies(
-        reactFiles, rootFileName, reactComponents, hasMultiplePages);
-
-    return {hierarchyTrees, paths}
+function loadReactFile(relativePath) {
+    let segments = relativePath.split("//")
+    const filePath = path.resolve(process.cwd(), ...segments);
+    let result = parseReactFile(filePath)
+    expect(result).toBeTruthy();
+    let { ast, j, fileLocation } = result;
+    return new ReactFile(ast, j, fileLocation, false)
 }
+

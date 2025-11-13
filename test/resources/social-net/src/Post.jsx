@@ -1,4 +1,4 @@
-import {Comment, Avatar} from "./components.jsx";
+import {PostComment, Avatar} from "./components.jsx";
 
 const Post = ({ author, username, content, image, comments }) => {
   return (
@@ -11,7 +11,7 @@ const Post = ({ author, username, content, image, comments }) => {
       {image && <img src={image} alt="Post" className="post-image" />}
       <div className="comments-section">
         {comments ? (
-          comments.map((c) => <Comment key={c.id} {...c} />)
+          comments.map((c) => <PostComment key={c.id} {...c} />)
         ) : (
           <p className="no-comments">No comments yet.</p>
         )}
