@@ -8,7 +8,7 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
             path: "..\\testing-projects\\react-redux-realworld-example-app-master\\react-redux-realworld-example-app-master\\src",
             mainFile:"..\\testing-projects\\react-redux-realworld-example-app-master\\react-redux-realworld-example-app-master\\src\\index.js",
             expectedComponents: 32,
-            expectedPropDrillings: 14,
+            expectedPropDrillings: 13,
             rootComponent: ""
         },
         {
@@ -36,7 +36,7 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
             path: "..\\testing-projects\\Whisper-main2\\Whisper-main\\client\\src",
             mainFile:"..\\testing-projects\\Whisper-main2\\Whisper-main\\client\\src\\index.jsx",
             expectedComponents: 33,
-            expectedPropDrillings: 1,
+            expectedPropDrillings: 10,
             rootComponent: ""
         }
         ,
@@ -65,14 +65,14 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
             path: "..\\testing-projects\\tidb-release-6.5\\tidb-release-6.5\\br\\web\\src\\",
             mainFile:"..\\testing-projects\\tidb-release-6.5\\tidb-release-6.5\\br\\web\\src\\index.tsx",
             expectedComponents: 17,
-            expectedPropDrillings: 7,
+            expectedPropDrillings: 6,
             rootComponent: "App"
         },
         {
             path: "..\\testing-projects\\mitmproxy-7.0.x\\mitmproxy-7.0.x\\web\\src\\js\\",
             mainFile:"..\\testing-projects\\mitmproxy-7.0.x\\mitmproxy-7.0.x\\web\\src\\js\\app.jsx",
-            expectedComponents: 80,
-            expectedPropDrillings: 10,
+            expectedComponents: 79,
+            expectedPropDrillings: 15,
             rootComponent: "Response,Request"
         },
         {
@@ -93,28 +93,28 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
             path: "..\\testing-projects\\vitess-22.0.0-rc3\\vitess-22.0.0-rc3\\web\\vtadmin\\src\\",
             mainFile:"..\\testing-projects\\vitess-22.0.0-rc3\\vitess-22.0.0-rc3\\web\\vtadmin\\src\\index.tsx",
             expectedComponents: 112,
-            expectedPropDrillings: 34,
+            expectedPropDrillings: 61,
             rootComponent: "App"
         },
         {
             path: "..\\testing-projects\\lossless-cut-master\\lossless-cut-master\\src\\renderer\\src\\",
             mainFile:"..\\testing-projects\\lossless-cut-master\\lossless-cut-master\\src\\renderer\\src\\index.tsx",
             expectedComponents: 65,
-            expectedPropDrillings: 26,
+            expectedPropDrillings: 28,
             rootComponent: "App"
         },
         {
             path: "..\\testing-projects\\superset-2021.41.0\\superset-2021.41.0\\superset-frontend\\src\\",
-            mainFile:"..\\testing-projects\\superset-2021.41.0\\superset-2021.41.0\\superset-frontend\\src\\profile\\index.tsx",
-            expectedComponents: 443,
-            expectedPropDrillings: 73,
+            mainFile:"..\\testing-projects\\superset-2021.41.0\\superset-2021.41.0\\superset-frontend\\src\\views\\App.tsx",
+            expectedComponents: 378,
+            expectedPropDrillings: 75,
             rootComponent: "App"
         },
         {
             path: "..\\testing-projects\\lighthouse-main\\lighthouse-main\\flow-report\\src\\",
             mainFile:"..\\testing-projects\\lighthouse-main\\lighthouse-main\\flow-report\\src\\app.tsx",
             expectedComponents: 46,
-            expectedPropDrillings: 12,
+            expectedPropDrillings: 14,
             rootComponent: "App"
         }
     ];
