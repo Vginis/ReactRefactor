@@ -1,5 +1,4 @@
-import React from "react";
-import Feed from "./Feed";
+import Feed from "./Feed.jsx";
 
 function App() {
   return (

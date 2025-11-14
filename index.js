@@ -56,11 +56,14 @@ const menuOptions = ["Refactor Prop Drilling with Context","Refactor Prop Drilli
 function savePaths(paths, debug=true) {
     if (!debug) return;
 
+    let projSegmentCount = projectPath.split("\\").length;
+
     let csvLines = [];
     for (let path of paths) {
         csvLines.push(path.map(item => {
             let segments = item.split("\\");
-            return segments[segments.length - 1];
+            let componentPathSegments = segments.slice(projSegmentCount, segments.length)
+            return componentPathSegments.join(":")
         }).join(","));
     }
     fs.writeFileSync('./stats/paths.csv', csvLines.join("\n"), 'utf-8');
