@@ -10,18 +10,39 @@ describe("Export module", () => {
         let exportList = extractExports(reactFile)
 
         expect(exportList.length).toBeTruthy();
-        expect.arrayContaining["PostComment", "Avatar"]
+        expect.arrayContaining["PostComment", "Avatar", "AvatarEx", "AvatarClass"]
+        let exportedDeclarations = reactFile.exports.exportedDeclarations
+
+        let commentExport = exportedDeclarations.filter(exp => exp.name === "Comment")[0]
+        expect(commentExport.astNode.type).toBe("ArrowFunctionExpression")
+
 
     });
 
 
-    test("should identify default exports", () => {
+    test("should identify default identifier exports", () => {
 
         let reactFile = loadReactFile("test/resources/social-net/src/Post.jsx")
         let exportList = extractExports(reactFile)
 
         expect(exportList.length).toBeTruthy();
         expect.arrayContaining["Logo", "Post"]
+
+        let exportedDeclarations = reactFile.exports.exportedDeclarations
+        let postExport = exportedDeclarations.filter(exp => exp.name === "Post")[0]
+        expect(postExport.astNode.type).toBe("ArrowFunctionExpression")
+
+    });
+
+    test("should identify default function exports", () => {
+
+        let reactFile = loadReactFile("test/resources/social-net/src/Feed.jsx")
+        let exportList = extractExports(reactFile)
+        let exportedDeclarations = reactFile.exports.exportedDeclarations
+        expect(exportList.length).toBeTruthy();
+        expect(exportedDeclarations.length).toBe(1)
+        let feedExport = exportedDeclarations[0]
+        expect(feedExport.astNode.type).toBe("FunctionDeclaration")
 
     });
 
