@@ -36,6 +36,7 @@ describe("Extract all React File objects from a list of files", () => {
             fileType: "jsx"
         });
 
+        globalThis.projectPath = testProjectPath;
         const loadReactFiles = require('../../lib/ReactFile.js').loadReactFiles;
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, rootFileName);
 
@@ -61,6 +62,7 @@ describe("Extract all React File objects from a list of files", () => {
         });
         jest.spyOn(importsModule, 'extractImportDeclarations').mockImplementation(() => {});
 
+        globalThis.projectPath = testProjectPath;
         const loadReactFiles = require('../../lib/ReactFile.js').loadReactFiles;
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, rootFileName);
 

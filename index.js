@@ -10,8 +10,10 @@ import { loadAliases } from './lib/Alias.js';
 import { displayMenu,displayPropDrilling, extractGlobalCliVariables } from './lib/cli.js';
 import { countDistinctComponents,calculatePropDrillingDepths,countCompoundPropDrillings,countPathOccurrences,countPropDrillingFamilies,countPropDrillingRefactoringStats, countPropDrillingsWithDifferentStartCommonEnding } from './lib/statsCalculation.js';
 import { printPropDrillingsWithDetails } from './lib/PropDrilling.js';
+import assert from "assert"
 
 const { projectPath, rootFile } = extractGlobalCliVariables(); 
+globalThis.projectPath = projectPath
 
 if(!projectPath && !rootFile){
     console.error("Error: Please provide project path and root file.");
@@ -21,7 +23,10 @@ if(!projectPath && !rootFile){
 const allFiles = getAllFiles(projectPath);
 const hasMultiplePages = resolveIfProjectHasMultiplePages(projectPath);
 
-const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFile);
+const { reactFiles, filteredJsxElements, relativePathToReactFileMap } = loadReactFiles(allFiles,rootFile);
+assert(reactFiles.length === relativePathToReactFileMap.size, 
+    "Mapping of relative paths to React Files should be unique")
+
 const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
 
 console.log(`Number of analyzed files: ${reactFiles.length}`)

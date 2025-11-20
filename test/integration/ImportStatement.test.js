@@ -8,7 +8,15 @@ describe("Export module", () => {
     test("should identify static imports", () => {
         let reactFile = loadReactFile("test/resources/social-net/src/Feed.jsx")
         extractImportDeclarations([reactFile]);
-        expect(reactFile.importDeclarations.length).toBe(5)
+        expect(reactFile.importDeclarations.length).toBe(3)
+        expect(reactFile.importDeclarations[0].importSpecifiers.length).toBe(1)
+        expect(reactFile.importDeclarations[1].importSpecifiers.length).toBe(1)
+        expect(reactFile.importDeclarations[2].importSpecifiers.length).toBe(3)
+
+        let defaultSpecifier = reactFile.importDeclarations[0].importSpecifiers[0]
+        // should resolve to the exported component name
+        expect(defaultSpecifier.original).toBe("default")
+
     });
 
 

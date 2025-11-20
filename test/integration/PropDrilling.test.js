@@ -18,6 +18,7 @@ describe("Component composition refactoring pre-condition check.", () => {
             fileType: "tsx"
         });
 
+        globalThis.projectPath = testProjectPath;
         const allFiles = getAllFiles(testProjectPath);
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFileName);
         const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
@@ -62,6 +63,7 @@ describe("Component composition refactoring pre-condition check.", () => {
             fileType: "jsx"
         });
 
+        globalThis.projectPath = testProjectPath;
         const allFiles = getAllFiles(testProjectPath);
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFileName);
         const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
@@ -98,6 +100,7 @@ describe("Context refactoring pre-condition check.", () => {
             fileType: "jsx"
         });
 
+        globalThis.projectPath = testProjectPath;
         const allFiles = getAllFiles(testProjectPath);
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFileName);
         const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
@@ -131,6 +134,7 @@ describe("Context refactoring pre-condition check.", () => {
             fileType: "jsx"
         });
 
+        globalThis.projectPath = testProjectPath;
         const allFiles = getAllFiles(testProjectPath);
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFileName);
         const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
