@@ -14,6 +14,7 @@ import assert from "assert"
 
 const { projectPath, rootFile } = extractGlobalCliVariables(); 
 globalThis.projectPath = projectPath
+globalThis.PATH_SEPARATOR = '\\'
 
 if(!projectPath && !rootFile){
     console.error("Error: Please provide project path and root file.");

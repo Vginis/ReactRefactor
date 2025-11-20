@@ -4,11 +4,13 @@ import { addCompositeKeyReturnedElements, addParents, loadReactComponents } from
 import { loadReactFiles } from "../../lib/ReactFile.js";
 import { getAllFiles } from "../../lib/util.js";
 import * as cliModule from '../../lib/cli.js';
+import { setProjectPath } from "../utils/test-utils.js";
 
 describe("Component composition refactoring pre-condition check.", () => {
     test("should not allow Component composition refactoring", () => {
         
         const testProjectPath = './test/resources/e-library/src';
+        setProjectPath('test//resources//e-library//src')
         const rootFileName = String.raw`test\resources\e-library\src\app\layout.tsx`;
 
         jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
@@ -18,7 +20,6 @@ describe("Component composition refactoring pre-condition check.", () => {
             fileType: "tsx"
         });
 
-        globalThis.projectPath = testProjectPath;
         const allFiles = getAllFiles(testProjectPath);
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFileName);
         const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
@@ -56,6 +57,8 @@ describe("Component composition refactoring pre-condition check.", () => {
         const testProjectPath = './test/resources/atm-banking/src';
         const rootFileName = String.raw`test\resources\atm-banking\src\main.jsx`;
 
+        setProjectPath('test//resources/atm-banking//src')
+
         jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
             projectPath: testProjectPath,
             rootFile: ".//test//resources//atm-banking//src//main.jsx",
@@ -63,7 +66,6 @@ describe("Component composition refactoring pre-condition check.", () => {
             fileType: "jsx"
         });
 
-        globalThis.projectPath = testProjectPath;
         const allFiles = getAllFiles(testProjectPath);
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFileName);
         const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
@@ -92,6 +94,7 @@ describe("Context refactoring pre-condition check.", () => {
     test("should allow Context refactoring", () => {
         const testProjectPath = './test/resources/atm-banking/src';
         const rootFileName = String.raw`test\resources\atm-banking\src\main.jsx`;
+        setProjectPath('test//resources/atm-banking//src')
 
         jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
             projectPath: testProjectPath,
@@ -100,7 +103,6 @@ describe("Context refactoring pre-condition check.", () => {
             fileType: "jsx"
         });
 
-        globalThis.projectPath = testProjectPath;
         const allFiles = getAllFiles(testProjectPath);
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFileName);
         const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
