@@ -4,14 +4,12 @@ import { addCompositeKeyReturnedElements, addParents, loadReactComponents } from
 import { loadReactFiles } from "../../lib/ReactFile.js";
 import { getAllFiles } from "../../lib/util.js";
 import * as cliModule from '../../lib/cli.js';
-import { setProjectPath, getAbsolutePath } from "../utils/test-utils.js";
 
 describe("Component composition refactoring pre-condition check.", () => {
     test("should not allow Component composition refactoring", () => {
-
+        
         const testProjectPath = './test/resources/e-library/src';
-        setProjectPath('test//resources//e-library//src')
-        const rootFileName = getAbsolutePath('test//resources//e-library//src//app//layout.tsx');
+        const rootFileName = String.raw`test\resources\e-library\src\app\layout.tsx`;
 
         jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
             projectPath: testProjectPath,
@@ -20,34 +18,35 @@ describe("Component composition refactoring pre-condition check.", () => {
             fileType: "tsx"
         });
 
+        globalThis.projectPath = testProjectPath
         const allFiles = getAllFiles(testProjectPath);
-        const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, rootFileName);
+        const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFileName);
         const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
 
-        loadAliases(reactFiles, reactComponents);
+        loadAliases(reactFiles,reactComponents);
         addParents(reactComponents);
-        addCompositeKeyReturnedElements(reactComponents, reactFiles);
+        addCompositeKeyReturnedElements(reactComponents,reactFiles);
 
         const paths = [
             [
-                String.raw`test\resources\e-library\src\components\orders\OrdersTable.tsx:OrdersTable`,
-                String.raw`test\resources\e-library\src\components\orders\OrderActionsDropdown.tsx:OrderActionsDropdown`,
+                String.raw`test\resources\e-library\src\components\orders\OrdersTable.tsx:OrdersTable`, 
+                String.raw`test\resources\e-library\src\components\orders\OrderActionsDropdown.tsx:OrderActionsDropdown`, 
                 String.raw`test\resources\e-library\src\components\orders\OrderCartDetailsModal.tsx:OrderCartDetailsModal`
             ],
             [
-                String.raw`test\resources\e-library\src\components\cart\CartModal.tsx:CartModal`,
-                String.raw`test\resources\e-library\src\components\cart\CartPaymentModal.tsx:CartPaymentModal`,
+                String.raw`test\resources\e-library\src\components\cart\CartModal.tsx:CartModal`, 
+                String.raw`test\resources\e-library\src\components\cart\CartPaymentModal.tsx:CartPaymentModal`, 
                 String.raw`test\resources\e-library\src\components\cart\CartPaymentVisaModal.tsx:CartPaymentVisaModal`
             ],
             [
                 String.raw`test\resources\e-library\src\components\cart\CartModal.tsx:CartModal`,
-                String.raw`test\resources\e-library\src\components\cart\CartPaymentModal.tsx:CartPaymentModal`,
+                String.raw`test\resources\e-library\src\components\cart\CartPaymentModal.tsx:CartPaymentModal`, 
                 String.raw`test\resources\e-library\src\components\cart\CartPaymentCashModal.tsx:CartPaymentCashModal`
             ]
         ];
 
-        const groupedProps = [{ order: 'order' }];
-        const propDrillings = detectPropDrilling(paths, reactComponents);
+        const groupedProps = [ {order: 'order'} ];
+        const propDrillings = detectPropDrilling(paths,reactComponents);
         expect(propDrillings.length).toBe(3);
         expect(propDrillings[0].checkForOtherIntermediatePropsInPath(reactComponents, groupedProps))
             .toBe(true);
@@ -55,8 +54,7 @@ describe("Component composition refactoring pre-condition check.", () => {
 
     test("should allow Component composition refactoring", () => {
         const testProjectPath = './test/resources/atm-banking/src';
-        const rootFileName = getAbsolutePath('test//resources//atm-banking//src//main.tsx');
-        setProjectPath('test//resources/atm-banking//src')
+        const rootFileName = String.raw`test\resources\atm-banking\src\main.jsx`;
 
         jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
             projectPath: testProjectPath,
@@ -65,13 +63,14 @@ describe("Component composition refactoring pre-condition check.", () => {
             fileType: "jsx"
         });
 
+        globalThis.projectPath = testProjectPath
         const allFiles = getAllFiles(testProjectPath);
-        const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, rootFileName);
+        const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFileName);
         const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
 
-        loadAliases(reactFiles, reactComponents);
+        loadAliases(reactFiles,reactComponents);
         addParents(reactComponents);
-        addCompositeKeyReturnedElements(reactComponents, reactFiles);
+        addCompositeKeyReturnedElements(reactComponents,reactFiles);
 
         const paths = [
             [
@@ -80,9 +79,9 @@ describe("Component composition refactoring pre-condition check.", () => {
                 String.raw`test\resources\atm-banking\src\Components\Deposit.jsx:Example`,
             ]
         ];
-        const groupedProps = [{ num: 'num' }];
+        const groupedProps = [ { num: 'num' } ];
 
-        const propDrillings = detectPropDrilling(paths, reactComponents);
+        const propDrillings = detectPropDrilling(paths,reactComponents);
         expect(propDrillings.length).toBe(1);
         expect(propDrillings[0].checkForOtherIntermediatePropsInPath(reactComponents, groupedProps))
             .toBe(false);
@@ -91,24 +90,24 @@ describe("Component composition refactoring pre-condition check.", () => {
 
 describe("Context refactoring pre-condition check.", () => {
     test("should allow Context refactoring", () => {
-        const testProjectPath = getAbsolutePath('test//resources//atm-banking//src');
-        const rootFileName = getAbsolutePath('test//resources//atm-banking//src//main.tsx');
-        setProjectPath('test//resources/atm-banking//src')
+        const testProjectPath = './test/resources/atm-banking/src';
+        const rootFileName = String.raw`test\resources\atm-banking\src\main.jsx`;
 
         jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
             projectPath: testProjectPath,
-            rootFile: rootFileName,
+            rootFile: ".//test//resources//atm-banking//src//main.jsx",
             rootComponent: "App",
             fileType: "jsx"
         });
 
+        globalThis.projectPath = testProjectPath
         const allFiles = getAllFiles(testProjectPath);
-        const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, rootFileName);
+        const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFileName);
         const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
 
-        loadAliases(reactFiles, reactComponents);
+        loadAliases(reactFiles,reactComponents);
         addParents(reactComponents);
-        addCompositeKeyReturnedElements(reactComponents, reactFiles);
+        addCompositeKeyReturnedElements(reactComponents,reactFiles);
 
         const paths = [
             [
@@ -118,7 +117,7 @@ describe("Context refactoring pre-condition check.", () => {
             ]
         ];
 
-        const propDrillings = detectPropDrilling(paths, reactComponents);
+        const propDrillings = detectPropDrilling(paths,reactComponents);
         expect(propDrillings.length).toBe(1);
         expect(propDrillings[0].checkIfDestComponentHasOtherParentComponents(propDrillings))
             .toBe(false);
@@ -135,14 +134,15 @@ describe("Context refactoring pre-condition check.", () => {
             fileType: "jsx"
         });
 
-        globalThis.projectPath = testProjectPath;
+        globalThis.projectPath = testProjectPath
+
         const allFiles = getAllFiles(testProjectPath);
-        const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, rootFileName);
+        const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFileName);
         const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
 
-        loadAliases(reactFiles, reactComponents);
+        loadAliases(reactFiles,reactComponents);
         addParents(reactComponents);
-        addCompositeKeyReturnedElements(reactComponents, reactFiles);
+        addCompositeKeyReturnedElements(reactComponents,reactFiles);
 
         const paths = [
             [
@@ -152,7 +152,7 @@ describe("Context refactoring pre-condition check.", () => {
             ]
         ];
 
-        const propDrillings = detectPropDrilling(paths, reactComponents);
+        const propDrillings = detectPropDrilling(paths,reactComponents);
         expect(propDrillings.length).toBe(1);
         expect(propDrillings[0].checkIfDestComponentHasOtherParentComponents(propDrillings))
             .toBe(true);

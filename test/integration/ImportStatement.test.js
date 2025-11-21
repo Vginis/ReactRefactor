@@ -10,7 +10,7 @@ describe("Export module", () => {
 
         setProjectPath('test//resources//social-net//src')
         let reactFile = loadReactFile("test//resources//social-net//src//Feed.jsx")
-        expect(reactFile.relativePath).toBe("Feed")
+        expect(reactFile.relativePath).toBe("Feed.jsx")
 
         extractImportDeclarations([reactFile]);
         expect(reactFile.importDeclarations.length).toBe(3)
@@ -27,7 +27,7 @@ describe("Export module", () => {
         
         setProjectPath("test//resources//e-library//src")
         let reactFile = loadReactFile("test//resources//e-library//src//components//cart//CartModal.tsx")
-        expect(reactFile.relativePath).toBe("components\\cart\\CartModal")
+        expect(reactFile.relativePath).toBe("components\\cart\\CartModal.tsx")
 
         extractImportDeclarations([reactFile]);
 
