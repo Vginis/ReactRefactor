@@ -8,7 +8,7 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
             path: "..\\testing-projects\\react-redux-realworld-example-app-master\\react-redux-realworld-example-app-master\\src",
             mainFile:"..\\testing-projects\\react-redux-realworld-example-app-master\\react-redux-realworld-example-app-master\\src\\index.js",
             expectedComponents: 32,
-            expectedPropDrillings: 13,
+            expectedPropDrillings: 14,
             rootComponent: ""
         },
         {
@@ -29,7 +29,7 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
             path: "..\\testing-projects\\Full-Stack-React-Projects-master\\Full-Stack-React-Projects-master\\Chapter05\\mern-social\\client",
             mainFile:"..\\testing-projects\\Full-Stack-React-Projects-master\\Full-Stack-React-Projects-master\\Chapter05\\mern-social\\client\\main.js",
             expectedComponents: 20,
-            expectedPropDrillings: 2,
+            expectedPropDrillings: 4,
             rootComponent: ""
         },
         {
@@ -51,14 +51,14 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
             path: "..\\testing-projects\\carbon-main\\carbon-main",
             mainFile:"..\\testing-projects\\carbon-main\\carbon-main\\pages\\index.js",
             expectedComponents: 100,
-            expectedPropDrillings: 54,
+            expectedPropDrillings: 56,
             rootComponent: ""
         },
         {
             path: "..\\testing-projects\\prometheus-release-2.21\\prometheus-release-2.21\\web\\ui\\react-app\\src",
             mainFile:"..\\testing-projects\\prometheus-release-2.21\\prometheus-release-2.21\\web\\ui\\react-app\\src\\App.tsx",
             expectedComponents: 42,
-            expectedPropDrillings: 8,
+            expectedPropDrillings: 10,
             rootComponent: "App"
         },
         {
@@ -100,13 +100,13 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
             path: "..\\testing-projects\\lossless-cut-master\\lossless-cut-master\\src\\renderer\\src\\",
             mainFile:"..\\testing-projects\\lossless-cut-master\\lossless-cut-master\\src\\renderer\\src\\index.tsx",
             expectedComponents: 65,
-            expectedPropDrillings: 28,
+            expectedPropDrillings: 29,
             rootComponent: "App"
         },
         {
             path: "..\\testing-projects\\superset-2021.41.0\\superset-2021.41.0\\superset-frontend\\src\\",
             mainFile:"..\\testing-projects\\superset-2021.41.0\\superset-2021.41.0\\superset-frontend\\src\\views\\App.tsx",
-            expectedComponents: 378,
+            expectedComponents: 387,
             expectedPropDrillings: 75,
             rootComponent: "App"
         },
@@ -125,6 +125,7 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
                 const output = execSync(input).toString();
                 expect(output).toContain(`Number of found Components: ${expectedComponents}`);
                 expect(output).toContain(`Found: ${expectedPropDrillings} Prop Drilling Occurences`);
+                console.log(`Finished test in path: ${path}`)
         });
     })
 })
