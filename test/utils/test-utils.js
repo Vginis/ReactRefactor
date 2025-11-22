@@ -10,6 +10,11 @@ function setProjectPath(relativePath) {
     globalThis.projectPath = path.resolve(process.cwd(), ...pathSegments)
 }
 
+function setRootFile(relativePath) {
+    let pathSegments = relativePath.split("//").filter(s => s.trim() !== '')
+    globalThis.rootFile = path.resolve(process.cwd(), ...pathSegments)
+}
+
 /**
  * Returns an absolute path on the basis of a path with // as
  * path segment separator
@@ -19,4 +24,4 @@ function getAbsolutePath(relativePath) {
     let pathSegments = relativePath.split("//").filter(s => s.trim() !== '')
     return path.resolve(process.cwd(), ...pathSegments)
 }
-export { setProjectPath, getAbsolutePath }
+export { setProjectPath, setRootFile, getAbsolutePath }

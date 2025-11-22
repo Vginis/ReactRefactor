@@ -11,10 +11,12 @@ import { displayMenu,displayPropDrilling, extractGlobalCliVariables } from './li
 import { countDistinctComponents,calculatePropDrillingDepths,countCompoundPropDrillings,countPathOccurrences,countPropDrillingFamilies,countPropDrillingRefactoringStats, countPropDrillingsWithDifferentStartCommonEnding } from './lib/statsCalculation.js';
 import { printPropDrillingsWithDetails } from './lib/PropDrilling.js';
 import assert from "assert"
+import FileManager from './lib/FileManager.js';
 
 const { projectPath, rootFile } = extractGlobalCliVariables(); 
 globalThis.projectPath = projectPath
 globalThis.PATH_SEPARATOR = '\\'
+globalThis.rootFile = rootFile
 
 if(!projectPath && !rootFile){
     console.error("Error: Please provide project path and root file.");
@@ -24,9 +26,11 @@ if(!projectPath && !rootFile){
 const allFiles = getAllFiles(projectPath);
 const hasMultiplePages = resolveIfProjectHasMultiplePages(projectPath);
 
-const { reactFiles, filteredJsxElements, relativePathToReactFileMap } = loadReactFiles(allFiles,rootFile);
-assert(reactFiles.length === relativePathToReactFileMap.size, 
+const { reactFiles, filteredJsxElements} = loadReactFiles(allFiles,rootFile);
+assert(reactFiles.length === relativeFilePathToReactFileMap.size, 
     "Mapping of relative paths to React Files should be unique")
+
+globalThis.fileManager = new FileManager(reactFiles)
 
 const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
 
