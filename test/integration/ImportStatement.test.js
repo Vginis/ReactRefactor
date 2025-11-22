@@ -32,8 +32,33 @@ describe("Export module", () => {
         extractImportDeclarations([reactFile]);
 
         expect(reactFile.importDeclarations.length).toBe(10)
-        let import1 = reactFile.importDeclarations[1]
-        expect(import1.relativeModulePath).toBe("components\\books\\BooksTable")
+        let importInOuterFolder = reactFile.importDeclarations[1]
+        expect(importInOuterFolder.relativeModulePath).toBe("components\\books\\BooksTable")
+
+        let importInCurrentFolder = reactFile.importDeclarations[4]
+        expect(importInCurrentFolder.relativeModulePath).toBe("components\\cart\\CartBookModal")
+
+
+    });
+
+    test("should resolve imported external module paths", () => {
+        
+        setProjectPath("test//resources//e-library//src")
+        let reactFile = loadReactFile("test//resources//e-library//src//components//cart//CartModal.tsx")
+        expect(reactFile.relativePath).toBe("components\\cart\\CartModal.tsx")
+
+        extractImportDeclarations([reactFile]);
+
+        expect(reactFile.importDeclarations.length).toBe(10)
+        
+        let externalModuleImport = reactFile.importDeclarations[3]
+        expect(externalModuleImport.relativeModulePath).toBe("react-toastify")
+        expect(externalModuleImport.isExternalModule).toBeTruthy()
+
+        let prefixedModuleImport = reactFile.importDeclarations[2]
+        expect(prefixedModuleImport.relativeModulePath).toBe("@/services/cartService")
+        expect(prefixedModuleImport.isExternalModule).toBeTruthy()
+
     });
 
 });
