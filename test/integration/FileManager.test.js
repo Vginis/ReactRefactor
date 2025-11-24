@@ -8,11 +8,33 @@ import { getAbsolutePath, setProjectPath, setRootFile } from '../utils/test-util
 
 describe("File manager", () => {
 
-    test("should resolve files with extension", () => {
+    test("should resolve file paths with extension", () => {
 
         const fileManager = loadFileManager("test//resources//e-library//src", "test//resources//e-library//src//app//layout.tsx");
 
         let reactFile = fileManager.getReactFile("components\\books\\BooksTable.tsx")
+        expect(reactFile).toBeTruthy()
+
+    });
+
+    test("should resolve file paths without extension", () => {
+
+        const fileManager = loadFileManager("test//resources//e-library//src", "test//resources//e-library//src//app//layout.tsx");
+
+        let reactFile = fileManager.getReactFile("components\\books\\BooksTable")
+        expect(reactFile).toBeTruthy()
+
+    });
+
+    test("should resolve file paths without extension in root dir", () => {
+
+        const fileManager = loadFileManager("test//resources//atm-banking//src",
+            "test//resources//atm-banking//src//main.tsx");
+
+        let reactFile = fileManager.getReactFile("main")
+        expect(reactFile).toBeTruthy()
+
+        reactFile = fileManager.getReactFile("App")
         expect(reactFile).toBeTruthy()
 
     });
