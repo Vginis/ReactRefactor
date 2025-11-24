@@ -1,6 +1,7 @@
 import path from 'path';
 import { getAllFiles, resolveIfProjectHasMultiplePages } from '../../lib/util';
 import * as cliModule from '../../lib/cli.js';
+import {getAbsolutePath, setProjectPath, setRootFile} from "../utils/test-utils.js";
 
 describe("getAllFiles integration test", () => {
     const testProjectPath = path.resolve(process.cwd(),"test", "resources", "e-library", "src");
@@ -27,6 +28,8 @@ describe("resolve if project has multiple pages integration test", () => {
             rootFile: ".//test//resources//e-library//src//pages//home.tsx",
             rootComponent: "HomePage"
         });
+        setProjectPath("test//resources//e-library//src")
+        setRootFile("test//resources//e-library//src//pages//home.tsx")
         const hasMultiplePages = resolveIfProjectHasMultiplePages(testProjectPath);
         expect(hasMultiplePages).toBe(true);
     })
@@ -38,6 +41,9 @@ describe("resolve if project has multiple pages integration test", () => {
             rootFile: ".//test//resources//atm-banking//src//main.jsx",
             rootComponent: "App"
         });
+
+        setProjectPath("test//resources//atm-banking//src")
+        setRootFile("test//resources//atm-banking//src//main.jsx")
         const hasMultiplePages = resolveIfProjectHasMultiplePages(testProjectPath);
         expect(hasMultiplePages).toBe(false);
     })
