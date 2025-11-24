@@ -1,4 +1,9 @@
 import path from 'path';
+import { loadReactFiles } from '../../lib/ReactFile.js';
+import {
+    getAllFiles,
+    resolveIfProjectHasMultiplePages,
+} from '../../lib/util.js';
 
 /**
  * Sets the globalThis.projectPath variable on the basis of a path with // 
@@ -24,4 +29,20 @@ function getAbsolutePath(relativePath) {
     let pathSegments = relativePath.split("//").filter(s => s.trim() !== '')
     return path.resolve(process.cwd(), ...pathSegments)
 }
-export { setProjectPath, setRootFile, getAbsolutePath }
+
+function getFileManager(testProjectPath, rootFilePath) {
+    setProjectPath(testProjectPath)
+    setRootFile(rootFilePath)
+
+    const allFiles = getAllFiles(globalThis.projectPath);
+    const hasMultiplePages = resolveIfProjectHasMultiplePages(globalThis.projectPath);
+    const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, globalThis.rootFile);
+
+    const fileManager = globalThis.fileManager
+
+    expect(fileManager.filePathToReactFileMap.size).toBe(reactFiles.length);
+
+    return fileManager
+}
+
+export { setProjectPath, setRootFile, getAbsolutePath, getFileManager }

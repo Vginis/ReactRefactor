@@ -1,18 +1,16 @@
-import path from 'path';
-import { parseReactFile, ReactFile } from '../../lib/ReactFile.js';
-import { extractExports } from '../../lib/Export.js'
 import { extractImportDeclarations } from '../../lib/ImportStatement.js';
-import { setProjectPath} from '../utils/test-utils.js'
+import { getFileManager} from '../utils/test-utils.js'
 
-describe("Export module", () => {
+describe("ImportStatement module", () => {
 
     test("should identify static imports", () => {
 
-        setProjectPath('test//resources//social-net//src')
-        let reactFile = loadReactFile("test//resources//social-net//src//Feed.jsx")
+        const fileManager = getFileManager('test//resources//social-net//src', "test//resources//social-net//src//App.jsx")
+
+        let reactFile = fileManager.getReactFile("Feed.jsx")
+
         expect(reactFile.relativePath).toBe("Feed.jsx")
 
-        extractImportDeclarations([reactFile]);
         expect(reactFile.importDeclarations.length).toBe(3)
         expect(reactFile.importDeclarations[0].importSpecifiers.length).toBe(1)
         expect(reactFile.importDeclarations[1].importSpecifiers.length).toBe(1)
@@ -25,11 +23,13 @@ describe("Export module", () => {
 
     test("should resolve imported inner module paths", () => {
         
-        setProjectPath("test//resources//e-library//src")
-        let reactFile = loadReactFile("test//resources//e-library//src//components//cart//CartModal.tsx")
-        expect(reactFile.relativePath).toBe("components\\cart\\CartModal.tsx")
+        const fileManager = getFileManager("test//resources//e-library//src", 
+                                    "test//resources//e-library//src//app//layout.jsx")
 
-        extractImportDeclarations([reactFile]);
+        
+        let reactFile = fileManager.getReactFile("components\\cart\\CartModal.tsx")
+        
+        expect(reactFile.relativePath).toBe("components\\cart\\CartModal.tsx")
 
         expect(reactFile.importDeclarations.length).toBe(10)
         let importInOuterFolder = reactFile.importDeclarations[1]
@@ -43,8 +43,12 @@ describe("Export module", () => {
 
     test("should resolve imported external module paths", () => {
         
-        setProjectPath("test//resources//e-library//src")
-        let reactFile = loadReactFile("test//resources//e-library//src//components//cart//CartModal.tsx")
+        const fileManager = getFileManager("test//resources//e-library//src", 
+                                    "test//resources//e-library//src//app//layout.jsx")
+
+        
+        let reactFile = fileManager.getReactFile("components\\cart\\CartModal.tsx")
+
         expect(reactFile.relativePath).toBe("components\\cart\\CartModal.tsx")
 
         extractImportDeclarations([reactFile]);
@@ -64,14 +68,6 @@ describe("Export module", () => {
 });
 
 
-function loadReactFile(relativePath) {
-    let segments = relativePath.split("//")
-    const absolutefilePath = path.resolve(process.cwd(), ...segments);
-    let result = parseReactFile(absolutefilePath)
-    expect(result).toBeTruthy();
-    let { ast, j, filePath } = result;
-    let reactFile = new ReactFile(ast, j, filePath, false)
-    extractExports(reactFile);
-    return reactFile;
-}
+
+
 
