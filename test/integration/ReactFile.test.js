@@ -8,12 +8,21 @@ import { ReactFile } from '../../lib/ReactFile.js';
 describe("React file properties", ()=>{
 
     test("should include file type", ()=>{
-        let reactFile = new ReactFile(null, null, "/path/to/file/FileName.jsx")
+        let reactFile = new ReactFile(null, null, "\\path\\to\\file\\FileName.jsx")
         expect(reactFile.fileType).toBe("jsx")
 
-        reactFile = new ReactFile(null, null, "/path/to/file/FileName.tsx")
+        reactFile = new ReactFile(null, null, "\\path\\to\\file\\FileName.tsx")
         expect(reactFile.fileType).toBe("tsx")
     })
+
+        test("should return filenames without extensions", ()=>{
+        let reactFile = new ReactFile(null, null, "\\path\\to\\file\\FileName.other.jsx")
+        expect(reactFile.fileNameNoExtension).toBe("FileName.other")
+
+        reactFile = new ReactFile(null, null, "\\path\\to\\file\\FileName.tsx")
+        expect(reactFile.fileNameNoExtension).toBe("FileName")
+    })
+
 
 });
 
