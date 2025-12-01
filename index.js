@@ -12,6 +12,9 @@ import { countDistinctComponents,calculatePropDrillingDepths,countCompoundPropDr
 import { printPropDrillingsWithDetails } from './lib/PropDrilling.js';
 
 const { projectPath, rootFile } = extractGlobalCliVariables(); 
+globalThis.projectPath = projectPath
+globalThis.PATH_SEPARATOR = '\\'
+globalThis.rootFile = rootFile
 
 if(!projectPath && !rootFile){
     console.error("Error: Please provide project path and root file.");
@@ -21,25 +24,42 @@ if(!projectPath && !rootFile){
 const allFiles = getAllFiles(projectPath);
 const hasMultiplePages = resolveIfProjectHasMultiplePages(projectPath);
 
+console.time("React file loading")
 const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFile);
+console.timeEnd("React file loading")
+
+console.time("Component identification")
 const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
+console.timeEnd("Component identification")
 
 console.log(`Number of analyzed files: ${reactFiles.length}`)
 console.log(`Number of found Components: ${reactComponents.length}`);
 
+console.time("Alias resolution")
 loadAliases(reactFiles,reactComponents);
+console.timeEnd("Alias resolution")
+
+console.time("Add parents")
 addParents(reactComponents);
+console.timeEnd("Add parents")
+
 addCompositeKeyReturnedElements(reactComponents,reactFiles);
 
+console.time("Hierarchy resolution")
 const {hierarchyTrees, paths} = extractPathsAndHierarchies(reactFiles,rootFile,reactComponents,hasMultiplePages);
+console.timeEnd("Hierarchy resolution")
 
 // Print all hierarchy trees
 fs.writeFileSync('./stats/a.json', JSON.stringify(hierarchyTrees, null, 2), 'utf-8');
 
 savePaths(paths);
 
-console.log(JSON.stringify(hierarchyTrees, null, 2));
+//console.log(JSON.stringify(hierarchyTrees, null, 2));
+
+console.time("PD detection")
 const propDrillings = detectPropDrilling(paths,reactComponents);
+console.timeEnd("PD detection")
+
 console.log("Found: " + propDrillings.length + " Prop Drilling Occurences");
 
 const rl = readline.createInterface({

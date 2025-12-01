@@ -1,8 +1,8 @@
 import {default as MyPost} from "./Post.jsx";
 import {Logo} from "./Post.jsx"
-import {Avatar} from "./components.jsx";
+import {Avatar, AvatarEx, AvatarClass} from "./components.jsx";
 
-const Feed = ({username, name}) => {
+export default function Feed({username, name}){
   const posts = [
     {
       id: 1,
@@ -38,5 +38,3 @@ const Feed = ({username, name}) => {
     </div>
   );
 };
-
-export default Feed;

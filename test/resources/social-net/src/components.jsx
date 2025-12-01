@@ -1,4 +1,30 @@
-const Avatar = ({ iconUrl, name }) => {
+const AvatarEx = class extends React.Component {
+  render() {
+    const { iconUrl, name } = this.props;
+
+    return (
+      <div className="avatarex">
+        <img src={iconUrl} alt={name} />
+        <em>{name}</em>
+      </div>
+    );
+  }
+}
+
+class AvatarClass extends React.Component {
+  render() {
+    const { iconUrl, name } = this.props;
+
+    return (
+      <div className="avatarex">
+        <img src={iconUrl} alt={name} />
+        <em>{name}</em>
+      </div>
+    );
+  }
+}
+
+function Avatar({ iconUrl, name }){
   return (
     <div className="avatar">
       <img src={iconUrl} alt={name}/>
@@ -18,5 +44,5 @@ const Comment = ({ author, username, text }) => {
 };
 
 
-export {Comment as PostComment, Avatar}
+export {Comment as PostComment, Avatar, AvatarEx, AvatarClass}
 

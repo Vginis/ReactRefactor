@@ -3,7 +3,7 @@ import Feed from "./Feed.jsx";
 function App() {
   return (
     <div className="App">
-      <Feed />
+      <Feed name="Mary Jones" username="maryj" />
     </div>
   );
 }

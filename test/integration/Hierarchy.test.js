@@ -1,4 +1,5 @@
 import path from 'path';
+import { setProjectPath } from '../utils/test-utils.js';
 import * as cliModule from '../../lib/cli.js';
 import { loadReactFiles } from '../../lib/ReactFile.js';
 import { loadAliases } from '../../lib/Alias.js';
@@ -21,6 +22,7 @@ describe("Component hierarchy", () => {
     test("should load hierarchy without circles", () => {
 
         const testProjectPath = path.resolve(process.cwd(), "test", "resources", "social-net",  "src");
+        setProjectPath('test//resources//social-net//src')
         const allFiles = getAllFiles(testProjectPath);
         const rootFileName = path.resolve(process.cwd(), "test", "resources", "social-net", "src", "App.jsx");
 
@@ -31,6 +33,7 @@ describe("Component hierarchy", () => {
             fileType: "jsx"
         });
 
+        
         const { hierarchyTrees, paths } = analyzeComponentHierarchy(testProjectPath, rootFileName, allFiles, 6, 6)
     
         expect(paths.length).toBe(2);
@@ -52,6 +55,7 @@ describe("Component hierarchy", () => {
             fileType: "jsx"
         });
 
+        globalThis.projectPath = testProjectPath;
         const { hierarchyTrees, paths } = analyzeComponentHierarchy(testProjectPath, rootFileName, allFiles, 5, 6)
     
         expect(paths.length).toBe(3);
@@ -75,6 +79,7 @@ describe("Component hierarchy", () => {
             fileType: "jsx"
         });
 
+        globalThis.projectPath = testProjectPath;
         // 5 jsx elements, Feed is not used anywhere
         const { hierarchyTrees, paths } = analyzeComponentHierarchy(testProjectPath, rootFileName, allFiles, 5, 5)
     
