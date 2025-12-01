@@ -6,7 +6,7 @@ describe("ImportStatement module", () => {
 
     test("should identify static imports", () => {
 
-        const fileManager = getFileManager('test//resources//social-net//src', "test//resources//social-net//src//App.jsx")
+        const {fileManager} = getFileManager('test//resources//social-net//src', "test//resources//social-net//src//App.jsx")
 
         let reactFile = fileManager.getReactFile("Feed.jsx")
 
@@ -34,7 +34,7 @@ describe("ImportStatement module", () => {
 
     test("should resolve imported inner module paths", () => {
         
-        const fileManager = getFileManager("test//resources//e-library//src", 
+        const {fileManager} = getFileManager("test//resources//e-library//src", 
                                     "test//resources//e-library//src//app//layout.jsx")
 
         
@@ -58,7 +58,7 @@ describe("ImportStatement module", () => {
 
     test("should resolve imported external module paths", () => {
         
-        const fileManager = getFileManager("test//resources//e-library//src", 
+        const {fileManager} = getFileManager("test//resources//e-library//src", 
                                     "test//resources//e-library//src//app//layout.jsx")
 
         

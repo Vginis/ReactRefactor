@@ -42,7 +42,7 @@ function getFileManager(testProjectPath, rootFilePath) {
 
     expect(fileManager.filePathToReactFileMap.size).toBe(reactFiles.length);
 
-    return fileManager
+    return {fileManager, filteredJsxElements}
 }
 
 export { setProjectPath, setRootFile, getAbsolutePath, getFileManager }
