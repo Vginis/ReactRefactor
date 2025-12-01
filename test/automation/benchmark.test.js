@@ -8,7 +8,7 @@ describe("Benchmark tests for RefactoringReact's Prop Drilling and component det
             name: "redux-app",
             path: "..\\benchmark\\redux-app\\src",
             mainFile: "..\\benchmark\\redux-app\\src\\index.js",
-            expectedComponents: 32,
+            expectedComponents: 31,
             expectedPropDrillings: 14,
             rootComponent: ""
         },
@@ -16,7 +16,7 @@ describe("Benchmark tests for RefactoringReact's Prop Drilling and component det
             name: "react-proto",
             path: "..\\benchmark\\react-proto\\src",
             mainFile: "..\\benchmark\\react-proto\\src\\index.js",
-            expectedComponents: 20,
+            expectedComponents: 19,
             expectedPropDrillings: 5,
             rootComponent: ""
         },
@@ -49,7 +49,7 @@ describe("Benchmark tests for RefactoringReact's Prop Drilling and component det
             name: "carbon",
             path: "..\\benchmark\\carbon",
             mainFile: "..\\benchmark\\carbon\\pages\\index.js",
-            expectedComponents: 100,
+            expectedComponents: 102,
             expectedPropDrillings: 56,
             rootComponent: ""
         },
@@ -57,7 +57,7 @@ describe("Benchmark tests for RefactoringReact's Prop Drilling and component det
             name: "prometheus",
             path: "..\\benchmark\\prometheus\\web\\ui\\react-app\\src",
             mainFile: "..\\benchmark\\prometheus\\web\\ui\\react-app\\src\\App.tsx",
-            expectedComponents: 42,
+            expectedComponents: 43,
             expectedPropDrillings: 10,
             rootComponent: "App"
         },
@@ -73,7 +73,7 @@ describe("Benchmark tests for RefactoringReact's Prop Drilling and component det
             name: "mitmproxy",
             path: "..\\benchmark\\mitmproxy\\web\\src\\js\\",
             mainFile: "..\\benchmark\\mitmproxy\\web\\src\\js\\app.jsx",
-            expectedComponents: 79,
+            expectedComponents: 83,
             expectedPropDrillings: 15,
             rootComponent: "Response,Request"
         },
@@ -113,7 +113,7 @@ describe("Benchmark tests for RefactoringReact's Prop Drilling and component det
             name: "superset",
             path: "..\\benchmark\\superset\\superset-frontend\\src\\",
             mainFile: "..\\benchmark\\superset\\superset-frontend\\src\\profile\\index.tsx",
-            expectedComponents: 387,
+            expectedComponents: 395,
             expectedPropDrillings: 75,
             rootComponent: "App"
         },
