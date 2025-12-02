@@ -7,14 +7,14 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
         {
             path: "..\\testing-projects\\react-redux-realworld-example-app-master\\react-redux-realworld-example-app-master\\src",
             mainFile:"..\\testing-projects\\react-redux-realworld-example-app-master\\react-redux-realworld-example-app-master\\src\\index.js",
-            expectedComponents: 32,
+            expectedComponents: 31,
             expectedPropDrillings: 14,
             rootComponent: ""
         },
         {
             path: "..\\testing-projects\\react-proto-master_v2\\react-proto-master_v2\\src",
             mainFile:"..\\testing-projects\\react-proto-master_v2\\react-proto-master_v2\\src\\index.js",
-            expectedComponents: 20,
+            expectedComponents: 19,
             expectedPropDrillings: 5,
             rootComponent: ""
         },
@@ -50,14 +50,14 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
         {
             path: "..\\testing-projects\\carbon-main\\carbon-main",
             mainFile:"..\\testing-projects\\carbon-main\\carbon-main\\pages\\index.js",
-            expectedComponents: 100,
+            expectedComponents: 102,
             expectedPropDrillings: 56,
             rootComponent: ""
         },
         {
             path: "..\\testing-projects\\prometheus-release-2.21\\prometheus-release-2.21\\web\\ui\\react-app\\src",
             mainFile:"..\\testing-projects\\prometheus-release-2.21\\prometheus-release-2.21\\web\\ui\\react-app\\src\\App.tsx",
-            expectedComponents: 42,
+            expectedComponents: 43,
             expectedPropDrillings: 10,
             rootComponent: "App"
         },
@@ -71,7 +71,7 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
         {
             path: "..\\testing-projects\\mitmproxy-7.0.x\\mitmproxy-7.0.x\\web\\src\\js\\",
             mainFile:"..\\testing-projects\\mitmproxy-7.0.x\\mitmproxy-7.0.x\\web\\src\\js\\app.jsx",
-            expectedComponents: 79,
+            expectedComponents: 83,
             expectedPropDrillings: 15,
             rootComponent: "Response,Request"
         },
@@ -106,7 +106,7 @@ describe("Automation tests for RefactoringReact's Prop Drilling and component de
         {
             path: "..\\testing-projects\\superset-2021.41.0\\superset-2021.41.0\\superset-frontend\\src\\",
             mainFile:"..\\testing-projects\\superset-2021.41.0\\superset-2021.41.0\\superset-frontend\\src\\views\\App.tsx",
-            expectedComponents: 387,
+            expectedComponents: 395,
             expectedPropDrillings: 75,
             rootComponent: "App"
         },
