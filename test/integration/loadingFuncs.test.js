@@ -19,7 +19,7 @@ describe("loadReactComponents", () => {
         expectAllExportedComponentsResolved(fileManager, ["AvatarEx"])
     });
 
-    test("associates all exported declarations with components", () => {
+    test("should associate all exported declarations with components", () => {
         const { fileManager, filteredJsxElements } = 
             getFileManager("test//resources//atm-banking//src", "test//resources//atm-banking//src//App.jsx");
 
@@ -28,6 +28,31 @@ describe("loadReactComponents", () => {
         expectAllExportedComponentsResolved(fileManager, ["Endpoints", "getBalance", "makeADeposit",
             "makeAWithdrawal"
         ])
+    })
+
+    test("should resolve aliases/exported names to exported components", () => {
+        const { fileManager, filteredJsxElements } = getFileManager("test//resources//social-net//src", "test//resources//social-net//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+
+        const feedFile = fileManager.getReactFile("Feed.jsx")
+        const feedComponent = feedFile.getExportedComponentDeclaration("default")
+        expect(feedComponent).toBeTruthy()
+        // filename without suffix
+        expect(feedComponent.name).toBe("Feed")
+
+        const postFile = fileManager.getReactFile("Post.jsx")
+        const postComponent = postFile.getExportedComponentDeclaration("default")
+        expect(postComponent).toBeTruthy()
+        expect(postComponent.name).toBe("Post")
+
+        const componentsFile = fileManager.getReactFile("components.jsx")
+        expect(componentsFile.getExportedComponentDeclaration("PostComment")).toBeTruthy()
+        expect(componentsFile.getExportedComponentDeclaration("Avatar")).toBeTruthy()
+        // FIXME: currently class expressions are not supported
+        expect(componentsFile.getExportedComponentDeclaration("AvatarEx")).toBeFalsy()
+        expect(componentsFile.getExportedComponentDeclaration("AvatarClass")).toBeTruthy()
+    
     })
 
     function expectAllExportedComponentsResolved(fileManager, exceptions) {

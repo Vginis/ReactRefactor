@@ -2,7 +2,7 @@ import {default as MyPost} from "./Post.jsx";
 import {Logo} from "./Post.jsx"
 import {Avatar, AvatarEx, AvatarClass} from "./components.jsx";
 
-export default function Feed({username, name}){
+export default function({username, name}){
   const posts = [
     {
       id: 1,
