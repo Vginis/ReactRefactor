@@ -20,7 +20,7 @@ describe("loadReactComponents", () => {
     });
 
     test("should associate all exported declarations with components", () => {
-        const { fileManager, filteredJsxElements } = 
+        const { fileManager, filteredJsxElements } =
             getFileManager("test//resources//atm-banking//src", "test//resources//atm-banking//src//App.jsx");
 
         const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
@@ -52,8 +52,34 @@ describe("loadReactComponents", () => {
         // FIXME: currently class expressions are not supported
         expect(componentsFile.getExportedComponentDeclaration("AvatarEx")).toBeFalsy()
         expect(componentsFile.getExportedComponentDeclaration("AvatarClass")).toBeTruthy()
-    
+
     })
+
+    test("should associate all imported declarations to components", () => {
+        const { fileManager, filteredJsxElements } = getFileManager(
+            "test//resources//social-net//src", 
+            "test//resources//social-net//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+
+        const feedFile = fileManager.getReactFile("Feed.jsx")
+        // import MyPost, {Logo} from "./Post.jsx";
+        const postComponent = feedFile.getImportedComponentDeclaration("MyPost")
+        expect(postComponent).toBeTruthy()
+        expect(feedFile.getImportedComponentDeclaration("Logo")).toBeTruthy()
+
+        // import * as name from "./components"
+        const avatarComponent = feedFile.getImportedComponentDeclaration("components.Avatar")
+        expect(avatarComponent).toBeTruthy()
+
+        // import {default as Feed} from "./Feed.jsx"
+        const appFile = fileManager.getReactFile("App.jsx")
+        const feedComponent = appFile.getImportedComponentDeclaration("Feed")
+        expect(feedComponent).toBeTruthy()
+        
+        
+    })
+
 
     function expectAllExportedComponentsResolved(fileManager, exceptions) {
         fileManager.reactFiles.forEach(reactFile => {

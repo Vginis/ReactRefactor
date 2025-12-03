@@ -12,24 +12,25 @@ describe("ImportStatement module", () => {
 
         expect(reactFile.relativePath).toBe("Feed.jsx")
 
-        expect(reactFile.importDeclarations.length).toBe(3)
+        expect(reactFile.importDeclarations.length).toBe(2)
 
         const importFromPost = reactFile.importDeclarations[0];
-        expect(importFromPost.importSpecifiers.length).toBe(1)
+        expect(importFromPost.importSpecifiers.length).toBe(2)
         expect(importFromPost.importedReactFile).toBeTruthy()
         expect(importFromPost.importedReactFile.fileName).toBe("Post.jsx")
 
-        expect(reactFile.importDeclarations[1].importSpecifiers.length).toBe(1)
-        expect(reactFile.importDeclarations[1].importedReactFile).toBe(importFromPost.importedReactFile)
+        // expect(reactFile.importDeclarations[1].importSpecifiers.length).toBe(1)
+        // expect(reactFile.importDeclarations[1].importedReactFile).toBe(importFromPost.importedReactFile)
 
-        const importFromComponents = reactFile.importDeclarations[2]
-        expect(importFromComponents.importSpecifiers.length).toBe(3)
+        const importFromComponents = reactFile.importDeclarations[1]
+        expect(importFromComponents.importSpecifiers.length).toBe(1)
         expect(importFromComponents.importedReactFile).toBeTruthy()
         expect(importFromComponents.importedReactFile.fileName).toBe("components.jsx")
 
         let defaultSpecifier = importFromPost.importSpecifiers[0]
         // should resolve to the exported component name
-        expect(defaultSpecifier.original).toBe("default")
+        expect(defaultSpecifier.original).toBe("MyPost")
+        expect(defaultSpecifier.isDefault).toBe(true)
     });
 
     test("should resolve imported inner module paths", () => {

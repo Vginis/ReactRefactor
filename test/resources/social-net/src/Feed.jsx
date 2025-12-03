@@ -1,6 +1,5 @@
-import {default as MyPost} from "./Post.jsx";
-import {Logo} from "./Post.jsx"
-import {Avatar, AvatarEx, AvatarClass} from "./components.jsx";
+import MyPost, {Logo} from "./Post.jsx";
+import * as components from "./components.jsx";
 
 export default function({username, name}){
   const posts = [
@@ -29,7 +28,7 @@ export default function({username, name}){
     <div className="feed">
       <h2>Social Feed</h2>
       <Logo iconUrl={`https://localhost:8000/logo`} text={"Social net"}></Logo>
-      <Avatar iconUrl={`https://localhost:8000/users/${username}/icon`} name={name}/>
+      <components.Avatar iconUrl={`https://localhost:8000/users/${username}/icon`} name={name}/>
 
       {posts.map((post) => (
         <MyPost key={post.id} {...post} />

@@ -1,4 +1,4 @@
-import Feed from "./Feed.jsx";
+import {default as Feed} from "./Feed.jsx";
 
 function App() {
   return (
