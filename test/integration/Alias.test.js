@@ -22,6 +22,16 @@ describe("Alias", () => {
         expectAllExportedComponentsResolved(fileManager, ["AvatarEx"])
     });
 
+    test("should resolve aliases from wrapper functions", ()=> {
+        const { fileManager, filteredJsxElements } = getFileManager("test//resources//social-net//src", "test//resources//social-net-alias//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+        
+        loadAliases(fileManager.reactFiles, reactComponents)
+
+        expect(reactComponents.length).toBe(7)
+    })
+
     
     function expectAllExportedComponentsResolved(fileManager, exceptions) {
         fileManager.reactFiles.forEach(reactFile => {

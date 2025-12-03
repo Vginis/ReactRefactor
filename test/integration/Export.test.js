@@ -1,7 +1,10 @@
 import path from 'path';
 import { parseReactFile, ReactFile } from '../../lib/ReactFile.js';
 import { extractExports } from '../../lib/Export.js'
+import { loadReactComponents } from '../../lib/loadingFuncs.js';
+import { getFileManager } from '../utils/test-utils.js';
 import exp from 'constants';
+
 
 describe("Export module", () => {
 
@@ -17,9 +20,43 @@ describe("Export module", () => {
         let commentExport = exportedDeclarations.filter(exp => exp.name === "Comment")[0]
         expect(commentExport.astNode.type).toBe("ArrowFunctionExpression")
 
-
     });
 
+    test("should identify wrapped exports", () => {
+        const { fileManager, filteredJsxElements } = getFileManager(
+                "test//resources//social-net-alias//src",
+                 "test//resources//social-net//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+        expect(reactComponents.length).toBe(5)
+
+        const feedFile = fileManager.getReactFile("Feed.jsx")
+        expect(feedFile).toBeTruthy()
+
+        // default export wrapped by function call like connect
+        const feedComponent = feedFile.getExportedComponentDeclaration("default")
+        expect(feedComponent).toBeTruthy()
+        expect(feedComponent.name).toBe("Feed")
+
+        // default export wrapped by wrapper component e.g. Wrapper(Post)
+        const postFile = fileManager.getReactFile("Post.jsx")
+        expect(postFile).toBeTruthy()
+        // named export, wrapped component in variable declaration
+        const postComponent = postFile.getExportedComponentDeclaration("default")
+        expect(postComponent).toBeTruthy()
+        expect(postComponent.name).toBe("Post")
+        const wrappedPostComponent = postFile.getExportedComponentDeclaration("WrappedPost")
+        expect(wrappedPostComponent).toBeTruthy()
+        expect(wrappedPostComponent.name).toBe("Post")
+
+        const commentFile = fileManager.getReactFile("Comment.jsx")
+        expect(commentFile).toBeTruthy()
+        // named export, wrapped component in variable declaration
+        const commentComponent = commentFile.getExportedComponentDeclaration("WrappedComment")
+        expect(commentComponent).toBeTruthy()
+        expect(commentComponent.name).toBe("Comment")
+
+    })
 
     test("should identify default identifier exports", () => {
 

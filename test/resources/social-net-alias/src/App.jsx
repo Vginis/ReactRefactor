@@ -1,4 +1,4 @@
-import {Feed as Component} from "./Feed.jsx";
+import {default as Component} from "./Feed.jsx";
 
 function App() {
   return (

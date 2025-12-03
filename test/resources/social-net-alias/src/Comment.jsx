@@ -18,4 +18,15 @@ const Comment = ({ author, username, text, embeddedPost }) => {
   );
 };
 
-export default Comment;
+function connect(params){
+  console.log('do nothing')
+
+  function otherFunction(component){
+    return component
+  }
+  return otherFunction
+}
+
+const WrappedComment = connect({x: 0, y:0})(Comment)
+
+export  { WrappedComment };

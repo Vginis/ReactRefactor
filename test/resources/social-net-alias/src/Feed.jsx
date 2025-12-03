@@ -46,4 +46,13 @@ const Feed = ({ username, name }) => {
   );
 };
 
-export default Feed;
+function connect(params){
+  console.log('do nothing')
+
+  function otherFunction(component){
+    return component
+  }
+  return otherFunction
+}
+
+export default connect()(Feed);

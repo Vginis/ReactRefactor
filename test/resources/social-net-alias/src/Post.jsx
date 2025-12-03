@@ -1,4 +1,4 @@
-import Comment from "./Comment.jsx";
+import { WrappedComment as Comment } from "./Comment.jsx";
 import Avatar from "./Avatar.jsx";
 
 const Post = ({ author, username, content, image, comments }) => {
@@ -21,4 +21,12 @@ const Post = ({ author, username, content, image, comments }) => {
   );
 };
 
-export default Post;
+function Wrapper(component, optionalParams){
+  return component
+}
+
+const WrappedPost = Wrapper(Post, "param")
+
+export {WrappedPost}
+
+export default Wrapper(Post);
