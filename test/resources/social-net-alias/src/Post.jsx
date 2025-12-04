@@ -25,6 +25,19 @@ function Wrapper(component, optionalParams){
   return component
 }
 
+function connect(params){
+  console.log('do nothing')
+
+  function otherFunction(component){
+    return component
+  }
+  return otherFunction
+}
+
+const ConnectedPost = connect({x: 0, y:0})(Post)
+
+const LocalWrappedPost = Wrapper(Post, "param")
+
 const WrappedPost = Wrapper(Post, "param")
 
 export {WrappedPost}

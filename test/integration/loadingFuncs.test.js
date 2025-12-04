@@ -76,8 +76,30 @@ describe("loadReactComponents", () => {
         const appFile = fileManager.getReactFile("App.jsx")
         const feedComponent = appFile.getImportedComponentDeclaration("Feed")
         expect(feedComponent).toBeTruthy()
-        
-        
+    })
+
+    test("should associate wrapped components to their implementation", () => {
+        const { fileManager, filteredJsxElements } = getFileManager(
+            "test//resources//social-net-alias//src", 
+            "test//resources//social-net-alias//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+
+        const commentFile = fileManager.getReactFile("Comment.jsx")
+        const WrappedComment = commentFile.getLocalComponent("WrappedComment")
+        expect(WrappedComment).toBeTruthy()
+        expect(commentFile.getExportedComponentDeclaration("WrappedComment")).toBe(WrappedComment)
+        expect(commentFile.getLocalComponent("Comment")).toBe(WrappedComment)
+
+        const postFile = fileManager.getReactFile("Post.jsx")
+        const Post = postFile.getLocalComponent("Post")
+        expect(Post).toBeTruthy()
+        const WrappedPost = postFile.getLocalComponent("WrappedPost")
+        expect(WrappedPost).toBeTruthy()
+        expect(postFile.getExportedComponentDeclaration("default")).toBe(Post)
+        expect(postFile.getLocalComponent("ConnectedPost")).toBe(Post)
+        expect(postFile.getLocalComponent("LocalWrappedPost")).toBe(Post)
+
     })
 
 
