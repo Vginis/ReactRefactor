@@ -81,7 +81,7 @@ describe("Component hierarchy", () => {
 
         globalThis.projectPath = testProjectPath;
         // 5 jsx elements, Feed is not used anywhere
-        const { hierarchyTrees, paths } = analyzeComponentHierarchy(testProjectPath, rootFileName, allFiles, 5, 5)
+        const { hierarchyTrees, paths } = analyzeComponentHierarchy(testProjectPath, rootFileName, allFiles, 6, 6)
     
         expect(paths.length).toBe(3);
         expect(paths[0].length).toBe(3)

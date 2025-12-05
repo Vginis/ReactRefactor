@@ -28,7 +28,7 @@ describe("Export module", () => {
                  "test//resources//social-net//src//App.jsx");
 
         const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
-        expect(reactComponents.length).toBe(5)
+        expect(reactComponents.length).toBe(6)
 
         const feedFile = fileManager.getReactFile("Feed.jsx")
         expect(feedFile).toBeTruthy()
