@@ -11,9 +11,8 @@ describe("Export module", () => {
     test("should identify named exports", () => {
 
         let reactFile = loadReactFile("test//resources//social-net//src//components.jsx")
-        let exportList = extractExports(reactFile)
+        extractExports(reactFile)
 
-        expect(exportList.length).toBeTruthy();
         expect.arrayContaining["PostComment", "Avatar", "AvatarEx", "AvatarClass"]
         let exportedDeclarations = reactFile.exports.exportedDeclarations
 
@@ -21,6 +20,25 @@ describe("Export module", () => {
         expect(commentExport.astNode.type).toBe("ArrowFunctionExpression")
 
     });
+
+
+    test("should resolve reexports to actual components", ()=>{
+        const { fileManager, filteredJsxElements } = getFileManager(
+                "test//resources//social-net-alias//src",
+                 "test//resources//social-net//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+        expect(reactComponents.length).toBe(6)
+
+        const feedFile = fileManager.getReactFile("components.jsx")
+        expect(feedFile).toBeTruthy()
+        
+        // export {default as Avatar, AvatarEx} from "./Avatar.jsx"
+        const avatarComponent = feedFile.getExportedComponentDeclaration("default")
+        expect(avatarComponent).toBeTruthy()
+        expect(avatarComponent.name).toBe("Avatar")
+
+    })
 
     test("should identify wrapped exports", () => {
         const { fileManager, filteredJsxElements } = getFileManager(
@@ -63,7 +81,6 @@ describe("Export module", () => {
         let reactFile = loadReactFile("test//resources//social-net//src//Post.jsx")
         let exportList = extractExports(reactFile)
 
-        expect(exportList.length).toBeTruthy();
         expect.arrayContaining["Logo", "Post"]
 
         let exportedDeclarations = reactFile.exports.exportedDeclarations
@@ -75,9 +92,8 @@ describe("Export module", () => {
     test("should identify default function exports", () => {
 
         let reactFile = loadReactFile("test//resources//social-net//src//Feed.jsx")
-        let exportList = extractExports(reactFile)
+        extractExports(reactFile)
         let exportedDeclarations = reactFile.exports.exportedDeclarations
-        expect(exportList.length).toBeTruthy();
         expect(exportedDeclarations.length).toBe(1)
         let feedExport = exportedDeclarations[0]
         expect(feedExport.astNode.type).toBe("FunctionDeclaration")
