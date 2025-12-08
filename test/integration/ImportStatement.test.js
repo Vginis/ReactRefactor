@@ -19,8 +19,8 @@ describe("ImportStatement module", () => {
         expect(importFromPost.importedReactFile).toBeTruthy()
         expect(importFromPost.importedReactFile.fileName).toBe("Post.jsx")
 
-        // expect(reactFile.importDeclarations[1].importSpecifiers.length).toBe(1)
-        // expect(reactFile.importDeclarations[1].importedReactFile).toBe(importFromPost.importedReactFile)
+        // expect(reactFile.importStatements[1].importSpecifiers.length).toBe(1)
+        // expect(reactFile.importStatements[1].importedReactFile).toBe(importFromPost.importedReactFile)
 
         const importFromComponents = reactFile.importStatements[1]
         expect(importFromComponents.importSpecifiers.length).toBe(1)
