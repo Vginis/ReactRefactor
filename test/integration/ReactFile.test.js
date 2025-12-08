@@ -4,6 +4,8 @@ import * as exportsModule from '../../lib/Export.js';
 import * as importsModule from '../../lib/ImportStatement.js';
 import * as cliModule from '../../lib/cli.js';
 import { ReactFile } from '../../lib/ReactFile.js';
+import { getFileManager } from '../utils/test-utils.js';
+import { loadReactComponents } from '../../lib/loadingFuncs.js';
 
 describe("React file properties", ()=>{
 
@@ -25,6 +27,60 @@ describe("React file properties", ()=>{
 
 
 });
+
+function expectExportedComponent(reactFile, exportedName, componentName){
+    const component = reactFile.getExportedComponentDeclaration(exportedName)
+    expect(component).toBeTruthy()
+    expect(component.name).toBe(componentName)
+}
+
+describe("ReactFile component resolution", ()=>{
+
+    test("should identify components exported by name", () =>{
+        const { fileManager, filteredJsxElements } = getFileManager(
+            "test//resources//social-net//src",
+            "test//resources//social-net//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+        expect(reactComponents.length).toBe(8)
+
+        const componentsFile = fileManager.getReactFile("components.jsx")
+        expect(componentsFile).toBeTruthy()
+
+        expectExportedComponent(componentsFile, "Icon", "Icon")
+        expectExportedComponent(componentsFile, "PostComment", "Comment")
+        expectExportedComponent(componentsFile, "Avatar", "Avatar")
+        expectExportedComponent(componentsFile, "AvatarClass", "AvatarClass")
+
+    })
+
+    test("should identify wrapped exported components", () => {
+        const { fileManager, filteredJsxElements } = getFileManager(
+            "test//resources//social-net-alias//src",
+            "test//resources//social-net-alias//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+        expect(reactComponents.length).toBe(6)
+
+        const feedFile = fileManager.getReactFile("Feed.jsx")
+        expect(feedFile).toBeTruthy()
+
+        expectExportedComponent(feedFile, "default", "Feed")
+        
+        // default export wrapped by wrapper component e.g. Wrapper(Post)
+        const postFile = fileManager.getReactFile("Post.jsx")
+        expect(postFile).toBeTruthy()
+        expectExportedComponent(postFile, "default", "Post")
+        expectExportedComponent(postFile, "WrappedPost", "Post")
+
+        const commentFile = fileManager.getReactFile("Comment.jsx")
+        expect(commentFile).toBeTruthy()
+
+        expectExportedComponent(commentFile, "WrappedComment", "Comment")
+
+    });
+
+})
 
 describe("Extract all React File objects from a list of files", () => {
     afterAll(() => {
