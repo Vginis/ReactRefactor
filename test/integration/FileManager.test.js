@@ -31,7 +31,22 @@ describe("FileManager relative module path resolution", () => {
 describe("FileManager", () => {
 
     test("should resolve directory path to index file", () => {
-        
+
+        const {fileManager} = getFileManager(
+            "test//resources//ecommerce-react//src", 
+            "test//resources//ecommerce-react//src//App.jsx");
+
+        let reactFile = fileManager.getReactFile("components\\basket")
+        expect(reactFile).toBeTruthy()
+        expect(reactFile.fileName).toBe("index.js")
+
+        reactFile = fileManager.getReactFile("components\\common\\PriceRange")
+        expect(reactFile).toBeTruthy()
+        expect(reactFile.fileName).toBe("index.jsx")
+
+        reactFile = fileManager.getReactFile("views\\auth\\forgot_password")
+        expect(reactFile).toBeTruthy()
+        expect(reactFile.fileName).toBe("index.jsx")
     })
 
     test("should resolve directory path to file with same name", () => {
