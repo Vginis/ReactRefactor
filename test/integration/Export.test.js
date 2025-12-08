@@ -30,11 +30,13 @@ describe("Export module", () => {
         const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
         expect(reactComponents.length).toBe(6)
 
-        const feedFile = fileManager.getReactFile("components.jsx")
-        expect(feedFile).toBeTruthy()
+        const componentsFile = fileManager.getReactFile("components.jsx")
+        expect(componentsFile).toBeTruthy()
+
+        expect(componentsFile.reexportDeclarations.length).toBe(2)
         
         // export {default as Avatar, AvatarEx} from "./Avatar.jsx"
-        const avatarComponent = feedFile.getExportedComponentDeclaration("default")
+        const avatarComponent = componentsFile.getExportedComponentDeclaration("default")
         expect(avatarComponent).toBeTruthy()
         expect(avatarComponent.name).toBe("Avatar")
 
