@@ -7,9 +7,9 @@ import { ReactFile } from '../../lib/ReactFile.js';
 import { getFileManager } from '../utils/test-utils.js';
 import { loadReactComponents } from '../../lib/loadingFuncs.js';
 
-describe("React file properties", ()=>{
+describe("React file properties", () => {
 
-    test("should include file type", ()=>{
+    test("should include file type", () => {
         let reactFile = new ReactFile(null, null, "\\path\\to\\file\\FileName.jsx")
         expect(reactFile.fileType).toBe("jsx")
 
@@ -17,7 +17,7 @@ describe("React file properties", ()=>{
         expect(reactFile.fileType).toBe("tsx")
     })
 
-        test("should return filenames without extensions", ()=>{
+    test("should return filenames without extensions", () => {
         let reactFile = new ReactFile(null, null, "\\path\\to\\file\\FileName.other.jsx")
         expect(reactFile.fileNameNoExtension).toBe("FileName.other")
 
@@ -28,15 +28,117 @@ describe("React file properties", ()=>{
 
 });
 
-function expectExportedComponent(reactFile, exportedName, componentName){
+function expectExportedComponent(reactFile, exportedName, componentName) {
     const component = reactFile.getExportedComponentDeclaration(exportedName)
     expect(component).toBeTruthy()
     expect(component.name).toBe(componentName)
 }
 
-describe("ReactFile component resolution", ()=>{
+function expectImportedComponent(reactFile, localName, componentName) {
+    const component = reactFile.getImportedComponentDeclaration(localName)
+    expect(component).toBeTruthy()
+    expect(component.name).toBe(componentName)
+}
 
-    test("should identify components exported by name", () =>{
+function expectLocalComponent(reactFile, localName, componentName) {
+    const component = reactFile.getLocalComponent(localName)
+    expect(component).toBeTruthy()
+    expect(component.name).toBe(componentName)
+}
+
+describe("ReactFile component resolution", () => {
+
+    test("should identify local components from default functio exports", () => {
+        const { fileManager, filteredJsxElements } = getFileManager(
+            "test//resources//social-net//src",
+            "test//resources//social-net//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+        expect(reactComponents.length).toBe(8)
+
+        const feedFile = fileManager.getReactFile("Feed.jsx")
+        expect(feedFile).toBeTruthy()
+        // named after the file name
+        expectLocalComponent(feedFile, "Feed", "Feed")
+    })
+
+    test("should identify local wrapped components", () => {
+        const { fileManager, filteredJsxElements } = getFileManager(
+            "test//resources//social-net-alias//src",
+            "test//resources//social-net-alias//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+        expect(reactComponents.length).toBe(6)
+
+        const postFile = fileManager.getReactFile("Post.jsx")
+        expect(postFile).toBeTruthy()
+        
+        // aliases through function calls
+        expectLocalComponent(postFile, "Post", "Post")
+        expectLocalComponent(postFile, "ConnectedPost", "Post")
+        expectLocalComponent(postFile, "LocalWrappedPost", "Post")
+        expectLocalComponent(postFile, "WrappedPost", "Post")
+
+        const feedFile = fileManager.getReactFile("Feed.jsx")
+        expectLocalComponent(feedFile, "Feed", "Feed")
+
+        const commentFile = fileManager.getReactFile("Comment.jsx")
+        expectLocalComponent(commentFile, "Comment", "Comment")
+        expectLocalComponent(commentFile, "WrappedComment", "Comment")
+    })
+
+
+    test("should identify components imported with import * syntax", () => {
+
+        const { fileManager, filteredJsxElements } = getFileManager(
+            "test//resources//social-net//src",
+            "test//resources//social-net//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+        expect(reactComponents.length).toBe(8)
+
+        const feedFile = fileManager.getReactFile("Feed.jsx")
+        expect(feedFile).toBeTruthy()
+
+        expectImportedComponent(feedFile, "components.Avatar", "Avatar")
+        expectImportedComponent(feedFile, "components.PostComment", "Comment")
+        expectImportedComponent(feedFile, "components.Icon", "Icon")
+        expectImportedComponent(feedFile, "components.AvatarClass", "AvatarClass")
+
+    })
+
+    test("should identify components imported by name", () => {
+        const { fileManager, filteredJsxElements } = getFileManager(
+            "test//resources//social-net//src",
+            "test//resources//social-net//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+        expect(reactComponents.length).toBe(8)
+
+        const postFile = fileManager.getReactFile("Post.jsx")
+        expect(postFile).toBeTruthy()
+
+        // named import with alias
+        expectImportedComponent(postFile, "XComment", "Comment")
+        expectImportedComponent(postFile, "Avatar", "Avatar")
+
+        const feedFile = fileManager.getReactFile("Feed.jsx")
+        expect(feedFile).toBeTruthy()
+
+        // combined default and named import
+        expectImportedComponent(feedFile, "MyPost", "Post")
+        expectImportedComponent(feedFile, "Logo", "Logo")
+
+
+        const appFile = fileManager.getReactFile("App.jsx")
+        expect(appFile).toBeTruthy()
+
+        // default as Feed import
+        expectImportedComponent(appFile, "Feed", "Feed")
+
+    })
+
+    test("should identify components exported by name", () => {
         const { fileManager, filteredJsxElements } = getFileManager(
             "test//resources//social-net//src",
             "test//resources//social-net//src//App.jsx");
@@ -66,7 +168,7 @@ describe("ReactFile component resolution", ()=>{
         expect(feedFile).toBeTruthy()
 
         expectExportedComponent(feedFile, "default", "Feed")
-        
+
         // default export wrapped by wrapper component e.g. Wrapper(Post)
         const postFile = fileManager.getReactFile("Post.jsx")
         expect(postFile).toBeTruthy()
@@ -88,12 +190,12 @@ describe("Extract all React File objects from a list of files", () => {
     });
 
     test("scan all files and extract the respective React file objects for single page app", () => {
-        const testProjectPath = path.resolve(process.cwd(),"test", "resources", "atm-banking", "src");
+        const testProjectPath = path.resolve(process.cwd(), "test", "resources", "atm-banking", "src");
         const allFiles = getAllFiles(testProjectPath);
-        const rootFileName = path.resolve(process.cwd(),"test", "resources", "atm-banking", "src", "main.jsx");
+        const rootFileName = path.resolve(process.cwd(), "test", "resources", "atm-banking", "src", "main.jsx");
 
-        jest.spyOn(exportsModule, 'extractExports').mockImplementation(() => {});
-        jest.spyOn(importsModule, 'extractImportDeclarations').mockImplementation(() => {});
+        jest.spyOn(exportsModule, 'extractExports').mockImplementation(() => { });
+        jest.spyOn(importsModule, 'extractImportDeclarations').mockImplementation(() => { });
         jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
             projectPath: testProjectPath,
             rootFile: ".//test//resources//atm-banking//src//main.jsx",
@@ -113,19 +215,19 @@ describe("Extract all React File objects from a list of files", () => {
     });
 
     test("scan all files and extract the respective React file objects for multiple page app", () => {
-        
-        const testProjectPath = path.resolve(process.cwd(),"test", "resources", "e-library", "src");
+
+        const testProjectPath = path.resolve(process.cwd(), "test", "resources", "e-library", "src");
         const allFiles = getAllFiles(testProjectPath);
-        const rootFileName = path.resolve(process.cwd(),"test", "resources", "e-library", "src", "pages", "home.tsx");
-        
-        jest.spyOn(exportsModule, 'extractExports').mockImplementation(() => {});
+        const rootFileName = path.resolve(process.cwd(), "test", "resources", "e-library", "src", "pages", "home.tsx");
+
+        jest.spyOn(exportsModule, 'extractExports').mockImplementation(() => { });
         jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
             projectPath: testProjectPath,
             rootFile: ".//test//resources//e-library//src//pages//home.tsx",
             rootComponent: "HomePage",
             fileType: "tsx"
         });
-        jest.spyOn(importsModule, 'extractImportDeclarations').mockImplementation(() => {});
+        jest.spyOn(importsModule, 'extractImportDeclarations').mockImplementation(() => { });
 
         globalThis.projectPath = testProjectPath;
         const loadReactFiles = require('../../lib/ReactFile.js').loadReactFiles;
