@@ -8,6 +8,20 @@ import exp from 'constants';
 
 describe("Export module", () => {
 
+    // same implementation with expectExportDeclaration
+    function expectReExportDeclaration(reexportedDeclarations, localName, alias, isDefault, astNodeType, 
+        isComponentResolved = true) {
+        const reexportedDeclaration = reexportedDeclarations.filter(exp => exp.name === localName)[0]
+        expect(reexportedDeclaration.alias).toBe(alias)
+        expect(reexportedDeclaration.isDefault).toBe(isDefault)
+        expect(reexportedDeclaration.astNode.type).toBe(astNodeType)
+        if (isComponentResolved){
+            expect(reexportedDeclaration.component).toBeTruthy()
+        } else {
+            expect(reexportedDeclaration.component).toBe(null)    
+        }
+    }
+
     test("should identify named exports", () => {
 
         const { fileManager, filteredJsxElements } = getFileManager(
@@ -103,8 +117,6 @@ describe("Export module", () => {
         expectExportDeclaration(exportedDeclarations, "Post", "Post", true, "ArrowFunctionExpression")
 
     });
-
-
 
     test("should identify default anonymous function exports", () => {
 

@@ -195,7 +195,7 @@ describe("Extract all React File objects from a list of files", () => {
         const rootFileName = path.resolve(process.cwd(), "test", "resources", "atm-banking", "src", "main.jsx");
 
         jest.spyOn(exportsModule, 'extractExports').mockImplementation(() => { });
-        jest.spyOn(importsModule, 'extractImportDeclarations').mockImplementation(() => { });
+        jest.spyOn(importsModule, 'extractImportStatements').mockImplementation(() => { });
         jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
             projectPath: testProjectPath,
             rootFile: ".//test//resources//atm-banking//src//main.jsx",
@@ -227,7 +227,7 @@ describe("Extract all React File objects from a list of files", () => {
             rootComponent: "HomePage",
             fileType: "tsx"
         });
-        jest.spyOn(importsModule, 'extractImportDeclarations').mockImplementation(() => { });
+        jest.spyOn(importsModule, 'extractImportStatements').mockImplementation(() => { });
 
         globalThis.projectPath = testProjectPath;
         const loadReactFiles = require('../../lib/ReactFile.js').loadReactFiles;
