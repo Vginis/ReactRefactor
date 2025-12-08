@@ -1,6 +1,42 @@
 import { getFileManager } from '../utils/test-utils.js';
 
-describe("File manager", () => {
+describe("FileManager relative module path resolution", () => {
+
+    test("should handle relative specifiers", () => {
+
+        const {fileManager} = getFileManager(
+            "test//resources//e-library//src", 
+            "test//resources//e-library//src//app//layout.tsx");
+
+        let reactFile = fileManager.getReactFile("components\\books\\BooksTable.tsx")
+        expect(reactFile).toBeTruthy()
+
+        expectSpecifierToPathResolution("./BookCartModal.tsx", reactFile, "components\\books\\BookCartModal.tsx")
+        expectSpecifierToPathResolution("./BookCartModal", reactFile, "components\\books\\BookCartModal")
+
+        expectSpecifierToPathResolution("../common/LoadingSpinner.tsx", reactFile, "components\\common\\LoadingSpinner.tsx")
+        expectSpecifierToPathResolution("../common/LoadingSpinner", reactFile, "components\\common\\LoadingSpinner")
+    })
+
+
+
+    function expectSpecifierToPathResolution(specifier, reactFile, expectedModulePath){
+        let modulePath = globalThis.fileManager.getRelativeModulePath(specifier, reactFile)
+        expect(modulePath).toBe(expectedModulePath)
+        expect(globalThis.fileManager.getReactFile(modulePath)).toBeTruthy()
+    }
+
+})
+
+describe("FileManager", () => {
+
+    test("should resolve directory path to index file", () => {
+        
+    })
+
+    test("should resolve directory path to file with same name", () => {
+
+    })
 
     test("should resolve file paths with extension", () => {
 
@@ -32,6 +68,7 @@ describe("File manager", () => {
         expect(reactFile).toBeTruthy()
 
     });
+
 
 
 
