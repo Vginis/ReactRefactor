@@ -24,15 +24,24 @@ class AvatarClass extends React.Component {
   }
 }
 
-function Avatar({ iconUrl, name }){
+class Avatar extends React.Component {
+  render() {
+    const { iconUrl, name } = this.props;
+
+    return (
+      <div className="avatar">
+        <Icon iconUrl={iconUrl} text={name} />
+        <strong>{name}</strong>
+      </div>
+    );
+  }
+}
+
+export const Icon = ({ iconUrl, text }) => {
   return (
-    <div className="avatar">
-      <img src={iconUrl} alt={name}/>
-      <strong>{name}</strong>
-    </div>
+    <img src={iconUrl} alt={text} />
   );
 };
-
 
 const Comment = ({ author, username, text }) => {
   return (
@@ -44,5 +53,5 @@ const Comment = ({ author, username, text }) => {
 };
 
 
-export {Comment as PostComment, Avatar, AvatarEx, AvatarClass}
+export { Comment as PostComment, Avatar, AvatarEx, AvatarClass }
 
