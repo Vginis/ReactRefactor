@@ -1,10 +1,10 @@
-import {PostComment as XComment, Avatar} from "./components.jsx";
+import {PostComment as XComment, Avatar as XAvatar} from "./components.jsx";
 
 const Post = ({ author, username, content, image, comments }) => {
   return (
     <div className="post">
       <div className="post-header">
-        <Avatar iconUrl={`https://localhost:8000/user/${username}/icon`} name={author}></Avatar>
+        <XAvatar iconUrl={`https://localhost:8000/user/${username}/icon`} name={author}></XAvatar>
         <strong>{author}</strong>
       </div>
       <p>{content}</p>

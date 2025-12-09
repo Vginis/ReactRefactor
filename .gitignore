@@ -2,3 +2,4 @@
 /stats
 /tests/integration/resources
 **/dist/
+*.log

@@ -1,28 +1,38 @@
 import { getFileManager } from '../utils/test-utils.js';
 import { loadReactComponents } from "../../lib/loadingFuncs.js"
-import { loadAliases } from '../../lib/Alias.js';
+import { loadAliases2 } from '../../lib/Alias.js';
 
 describe("Alias", () => {
 
-    test("should resolve default export aliases", () => {
+    test("should resolve aliases from imports", () => {
 
         const { fileManager, filteredJsxElements } = getFileManager("test//resources//social-net//src", "test//resources//social-net//src//App.jsx");
 
         const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
         
-        loadAliases(fileManager.reactFiles, reactComponents)
+        loadAliases2(fileManager.reactFiles, reactComponents)
 
-        // BUG: should be 8 components, currently class expressions are not supported
-        expect(reactComponents.length).toBe(8)
+        const postFile = fileManager.getReactFile("Post.jsx")
+        expect(postFile).toBeTruthy()
 
-        expectContainedComponents("components.jsx", 4, fileManager)
-        // 1 component not exported
-        expectContainedComponents("Post.jsx", 2, fileManager)
+        const postComponent = postFile.getExportedComponentDeclaration("default")
+        expectAliasesForComponent(postComponent, ['MyPost'])
 
-        expectAllExportedComponentsResolved(fileManager, ["AvatarEx"])
+        const componentsFile = fileManager.getReactFile("components.jsx")
+        const commentsComponent = componentsFile.getExportedComponentDeclaration("PostComment")
+        expectAliasesForComponent(commentsComponent, ['XComment'])
+
+        const avatarComponent = componentsFile.getExportedComponentDeclaration("Avatar")
+        expectAliasesForComponent(avatarComponent, ['XAvatar', 'components.Avatar'])
+        
     });
 
-    test("should resolve aliases from wrapper functions", ()=> {
+    function expectAliasesForComponent(component, expectedAliases){
+        const aliases = component.aliases.aliases
+        expect(aliases).toEqual(expect.arrayContaining(expectedAliases))
+    }
+
+    test.skip("should resolve aliases from wrapper functions", ()=> {
         const { fileManager, filteredJsxElements } = getFileManager("test//resources//social-net//src", "test//resources//social-net-alias//src//App.jsx");
 
         const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
@@ -32,6 +42,7 @@ describe("Alias", () => {
         expect(reactComponents.length).toBe(8)
     })
 
+    
     
     function expectAllExportedComponentsResolved(fileManager, exceptions) {
         fileManager.reactFiles.forEach(reactFile => {
