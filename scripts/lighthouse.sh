@@ -1,2 +1,2 @@
 #!/bin/bash
-node index.js ../benchmark/lighthouse/flow-report/src/ ../benchmark/lighthouse/flow-report/src/app.tsx App
+node --max-old-space-size=8192 index.js ../benchmark/lighthouse/flow-report/src/ ../benchmark/lighthouse/flow-report/src/app.tsx App
