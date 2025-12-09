@@ -5,10 +5,8 @@ import { loadReactComponents } from '../../lib/loadingFuncs.js';
 import { getFileManager } from '../utils/test-utils.js';
 import exp from 'constants';
 
-
-describe("Export module", () => {
-
-    // same implementation with expectExportDeclaration
+describe("Reexporting", ()=> {
+// same implementation with expectExportDeclaration
     function expectReExportDeclaration(reexportedDeclarations, localName, alias, isDefault, astNodeType, 
         isComponentResolved = true) {
         const reexportedDeclaration = reexportedDeclarations.filter(exp => exp.name === localName)[0]
@@ -21,6 +19,35 @@ describe("Export module", () => {
             expect(reexportedDeclaration.component).toBe(null)    
         }
     }
+
+    test("should resolve reexports to actual components", () => {
+        const { fileManager, filteredJsxElements } = getFileManager(
+            "test//resources//social-net-alias//src",
+            "test//resources//social-net-alias//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+        expect(reactComponents.length).toBe(6)
+
+        const componentsFile = fileManager.getReactFile("components.jsx")
+        expect(componentsFile).toBeTruthy()
+
+        expect(componentsFile.reexportStatements.length).toBe(2)
+        
+        // export {default as Avatar, AvatarEx} from "./Avatar.jsx"
+        const avatarComponent = componentsFile.getExportedComponentDeclaration("Avatar")
+        expect(avatarComponent).toBeTruthy()
+        expect(avatarComponent.name).toBe("Avatar")
+
+        const wrappedCommentComponent = componentsFile.getExportedComponentDeclaration("WrappedComment")
+        expect(wrappedCommentComponent).toBeTruthy()
+        expect(wrappedCommentComponent.name).toBe("Comment")
+
+    })
+
+})
+
+describe("Export module", () => {
+
 
     test("should identify named exports", () => {
 
@@ -45,27 +72,6 @@ describe("Export module", () => {
         expectExportDeclaration(exportedDeclarations, "AvatarEx", "AvatarEx", false, "ClassExpression", false)
 
     });
-
-
-    test("should resolve reexports to actual components", () => {
-        const { fileManager, filteredJsxElements } = getFileManager(
-            "test//resources//social-net-alias//src",
-            "test//resources//social-net-alias//src//App.jsx");
-
-        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
-        expect(reactComponents.length).toBe(6)
-
-        const componentsFile = fileManager.getReactFile("components.jsx")
-        expect(componentsFile).toBeTruthy()
-
-        expect(componentsFile.reexportStatements.length).toBe(2)
-        
-        // export {default as Avatar, AvatarEx} from "./Avatar.jsx"
-        const avatarComponent = componentsFile.getExportedComponentDeclaration("default")
-        expect(avatarComponent).toBeTruthy()
-        expect(avatarComponent.name).toBe("Avatar")
-
-    })
 
     test("should identify wrapped exports", () => {
         const { fileManager, filteredJsxElements } = getFileManager(
