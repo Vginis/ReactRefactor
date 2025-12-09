@@ -48,7 +48,25 @@ function expectLocalComponent(reactFile, localName, componentName) {
 
 describe("ReactFile component resolution", () => {
 
-    test("should identify local components from default functio exports", () => {
+    test("should identify components imported from reexporting statements", () => {
+
+        const { fileManager, filteredJsxElements } = getFileManager(
+            "test//resources//social-net-alias//src",
+            "test//resources//social-net-alias//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+        expect(reactComponents.length).toBe(6)
+
+        const feedFile = fileManager.getReactFile("Feed.jsx")
+        expect(feedFile).toBeTruthy()
+
+        expectImportedComponent(feedFile, "AvatarEx2", "AvatarEx")
+        expectImportedComponent(feedFile, "Avatar2", "Avatar")
+        expectImportedComponent(feedFile, "Comment", "Comment")
+
+    })
+
+    test("should identify local components from default function exports", () => {
         const { fileManager, filteredJsxElements } = getFileManager(
             "test//resources//social-net//src",
             "test//resources//social-net//src//App.jsx");
@@ -72,7 +90,7 @@ describe("ReactFile component resolution", () => {
 
         const postFile = fileManager.getReactFile("Post.jsx")
         expect(postFile).toBeTruthy()
-        
+
         // aliases through function calls
         expectLocalComponent(postFile, "Post", "Post")
         expectLocalComponent(postFile, "ConnectedPost", "Post")

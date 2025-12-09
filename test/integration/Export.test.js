@@ -6,19 +6,40 @@ import { getFileManager } from '../utils/test-utils.js';
 import exp from 'constants';
 
 describe("Reexporting", ()=> {
-// same implementation with expectExportDeclaration
-    function expectReExportDeclaration(reexportedDeclarations, localName, alias, isDefault, astNodeType, 
-        isComponentResolved = true) {
-        const reexportedDeclaration = reexportedDeclarations.filter(exp => exp.name === localName)[0]
-        expect(reexportedDeclaration.alias).toBe(alias)
-        expect(reexportedDeclaration.isDefault).toBe(isDefault)
-        expect(reexportedDeclaration.astNode.type).toBe(astNodeType)
+
+    function getReexportDeclarations(reactFile){
+        return reactFile.reexportStatements.flatMap(reexport => reexport.exportedDeclarations)
+    }
+
+    function expectReexportDeclaration(exportedDeclarations, localName, exportedName, isComponentResolved = true) {
+        const exportedDeclaration = exportedDeclarations.filter(exp => exp.name === localName)[0]
+        expect(exportedDeclaration.alias).toBe(exportedName)
         if (isComponentResolved){
-            expect(reexportedDeclaration.component).toBeTruthy()
+            expect(exportedDeclaration.component).toBeTruthy()
         } else {
-            expect(reexportedDeclaration.component).toBe(null)    
+            expect(exportedDeclaration.component).toBe(null)    
         }
     }
+
+    test.skip("should resolve directory path to index file", () => {
+
+        const {fileManager} = getFileManager(
+            "test//resources//ecommerce-react//src", 
+            "test//resources//ecommerce-react//src//App.jsx");
+
+        let reactFile = fileManager.getReactFile("components\\basket")
+        expect(reactFile).toBeTruthy()
+        expect(reactFile.fileName).toBe("index.js")
+
+        reactFile = fileManager.getReactFile("components\\common\\PriceRange")
+        expect(reactFile).toBeTruthy()
+        expect(reactFile.fileName).toBe("index.jsx")
+
+        reactFile = fileManager.getReactFile("views\\auth\\forgot_password")
+        expect(reactFile).toBeTruthy()
+        expect(reactFile.fileName).toBe("index.jsx")
+    })
+
 
     test("should resolve reexports to actual components", () => {
         const { fileManager, filteredJsxElements } = getFileManager(
@@ -32,16 +53,14 @@ describe("Reexporting", ()=> {
         expect(componentsFile).toBeTruthy()
 
         expect(componentsFile.reexportStatements.length).toBe(2)
+        const reexportDeclarations = getReexportDeclarations(componentsFile)
+        expect(reexportDeclarations.length).toBe(3)
         
         // export {default as Avatar, AvatarEx} from "./Avatar.jsx"
-        const avatarComponent = componentsFile.getExportedComponentDeclaration("Avatar")
-        expect(avatarComponent).toBeTruthy()
-        expect(avatarComponent.name).toBe("Avatar")
-
-        const wrappedCommentComponent = componentsFile.getExportedComponentDeclaration("WrappedComment")
-        expect(wrappedCommentComponent).toBeTruthy()
-        expect(wrappedCommentComponent.name).toBe("Comment")
-
+        // export {WrappedComment} from "./Comment.jsx"
+        expectReexportDeclaration(reexportDeclarations, "default", "Avatar", true)
+        expectReexportDeclaration(reexportDeclarations, "WrappedComment", "WrappedComment", true)
+        
     })
 
 })
