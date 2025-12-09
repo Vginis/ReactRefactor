@@ -18,7 +18,7 @@ describe("ReactComponent", () => {
         const postFile = fileManager.getReactFile("Post.jsx")
         expect(postFile).toBeTruthy()
 
-        expectReturnedElements(postFile, "Post", ["Avatar", "XComment"])
+        expectReturnedElements(postFile, "Post", ["XAvatar", "XComment"])
         expectChildComponentsWithName(postFile, "Post", ["Comment", "Avatar"])
 
         // expectContainedComponents("components.jsx", 4, fileManager)

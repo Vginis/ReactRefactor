@@ -49,7 +49,7 @@ function expectLocalComponent(reactFile, localName, componentName) {
 describe("ReactFile component resolution", () => {
 
     test("should identify components imported from barrel modules", () => {
-        
+
     })
 
     test("should identify components imported from reexporting statements", () => {
@@ -142,7 +142,7 @@ describe("ReactFile component resolution", () => {
 
         // named import with alias
         expectImportedComponent(postFile, "XComment", "Comment")
-        expectImportedComponent(postFile, "Avatar", "Avatar")
+        expectImportedComponent(postFile, "XAvatar", "Avatar")
 
         const feedFile = fileManager.getReactFile("Feed.jsx")
         expect(feedFile).toBeTruthy()

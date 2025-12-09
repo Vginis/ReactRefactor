@@ -6,7 +6,7 @@ import { loadReactFiles } from './lib/ReactFile.js';
 import { loadReactComponents,addParents,addCompositeKeyReturnedElements } from './lib/loadingFuncs.js';
 import { detectPropDrilling } from './lib/Hierarchy.js';
 import readline from 'readline';
-import { loadAliases } from './lib/Alias.js';
+import { loadAliases, loadAliases2 } from './lib/Alias.js';
 import { displayMenu,displayPropDrilling, extractGlobalCliVariables } from './lib/cli.js';
 import { countDistinctComponents,calculatePropDrillingDepths,countCompoundPropDrillings,countPathOccurrences,countPropDrillingFamilies,countPropDrillingRefactoringStats, countPropDrillingsWithDifferentStartCommonEnding } from './lib/statsCalculation.js';
 import { printPropDrillingsWithDetails } from './lib/PropDrilling.js';
