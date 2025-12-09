@@ -48,6 +48,10 @@ function expectLocalComponent(reactFile, localName, componentName) {
 
 describe("ReactFile component resolution", () => {
 
+    test("should identify components imported from barrel modules", () => {
+        
+    })
+
     test("should identify components imported from reexporting statements", () => {
 
         const { fileManager, filteredJsxElements } = getFileManager(

@@ -5,39 +5,73 @@ import { loadReactComponents } from '../../lib/loadingFuncs.js';
 import { getFileManager } from '../utils/test-utils.js';
 import exp from 'constants';
 
-describe("Reexporting", ()=> {
+describe("Reexporting", () => {
 
-    function getReexportDeclarations(reactFile){
+    function getReexportDeclarations(reactFile) {
         return reactFile.reexportStatements.flatMap(reexport => reexport.exportedDeclarations)
     }
 
-    function expectReexportDeclaration(exportedDeclarations, localName, exportedName, isComponentResolved = true) {
-        const exportedDeclaration = exportedDeclarations.filter(exp => exp.name === localName)[0]
+    function expectReexportDeclaration(exportedDeclaration, exportedName, componentName, isComponentResolved = true) {
         expect(exportedDeclaration.alias).toBe(exportedName)
-        if (isComponentResolved){
+        if (isComponentResolved) {
             expect(exportedDeclaration.component).toBeTruthy()
+            expect(exportedDeclaration.component.name).toBe(componentName)
         } else {
-            expect(exportedDeclaration.component).toBe(null)    
+            expect(exportedDeclaration.component).toBeFalsy()
         }
     }
 
-    test.skip("should resolve directory path to index file", () => {
-
-        const {fileManager} = getFileManager(
-            "test//resources//ecommerce-react//src", 
+    test("should resolve reexports from central barrel file", () => {
+        const { fileManager, filteredJsxElements } = getFileManager(
+            "test//resources//ecommerce-react//src",
             "test//resources//ecommerce-react//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+        expect(reactComponents.length).toBe(81)
+
+        let reactFile = fileManager.getReactFile("components\\common")
+        expect(reactFile).toBeTruthy()
+        expect(reactFile.fileName).toBe("index.js")
+
+        expect(reactFile.reexportStatements.length).toBe(17)
+        const reexportDeclarations = getReexportDeclarations(reactFile)
+        expect(reexportDeclarations.length).toBe(17)
+
+        expectReexportDeclaration(reexportDeclarations[14], "PriceRange", "PriceRange", true)
+    })
+
+    test("should resolve reexports from index file", () => {
+
+        const { fileManager, filteredJsxElements } = getFileManager(
+            "test//resources//ecommerce-react//src",
+            "test//resources//ecommerce-react//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+        expect(reactComponents.length).toBe(81)
 
         let reactFile = fileManager.getReactFile("components\\basket")
         expect(reactFile).toBeTruthy()
         expect(reactFile.fileName).toBe("index.js")
 
-        reactFile = fileManager.getReactFile("components\\common\\PriceRange")
-        expect(reactFile).toBeTruthy()
-        expect(reactFile.fileName).toBe("index.jsx")
+        expect(reactFile.reexportStatements.length).toBe(4)
+        const reexportDeclarations = getReexportDeclarations(reactFile)
+        expect(reexportDeclarations.length).toBe(4)
 
-        reactFile = fileManager.getReactFile("views\\auth\\forgot_password")
-        expect(reactFile).toBeTruthy()
-        expect(reactFile.fileName).toBe("index.jsx")
+        expectReexportDeclaration(reexportDeclarations[0], "Basket", "Basket", true)
+        expectReexportDeclaration(reexportDeclarations[1], "BasketItem", "BasketItem", true)
+        expectReexportDeclaration(reexportDeclarations[2], "BasketItemControl", "BasketItemControl", true)
+        // BasketToggle is cannot be identified as component
+        expectReexportDeclaration(reexportDeclarations[3], "BasketToggle", undefined, false)
+
+
+
+        // reactFile = fileManager.getReactFile("components\\common\\PriceRange")
+        // expect(reactFile).toBeTruthy()
+        // expect(reactFile.fileName).toBe("index.jsx")
+
+        // reactFile = fileManager.getReactFile("views\\auth\\forgot_password")
+        // expect(reactFile).toBeTruthy()
+        // expect(reactFile.fileName).toBe("index.jsx")
     })
 
 
@@ -55,12 +89,13 @@ describe("Reexporting", ()=> {
         expect(componentsFile.reexportStatements.length).toBe(2)
         const reexportDeclarations = getReexportDeclarations(componentsFile)
         expect(reexportDeclarations.length).toBe(3)
-        
+
         // export {default as Avatar, AvatarEx} from "./Avatar.jsx"
         // export {WrappedComment} from "./Comment.jsx"
-        expectReexportDeclaration(reexportDeclarations, "default", "Avatar", true)
-        expectReexportDeclaration(reexportDeclarations, "WrappedComment", "WrappedComment", true)
-        
+        expectReexportDeclaration(reexportDeclarations[0], "Avatar", "Avatar", true)
+        expectReexportDeclaration(reexportDeclarations[1], "AvatarEx", "AvatarEx", true)
+        expectReexportDeclaration(reexportDeclarations[2], "WrappedComment", "Comment", true)
+
     })
 
 })
@@ -167,10 +202,10 @@ describe("Export module", () => {
         expect(exportedDeclaration.alias).toBe(alias)
         expect(exportedDeclaration.isDefault).toBe(isDefault)
         expect(exportedDeclaration.astNode.type).toBe(astNodeType)
-        if (isComponentResolved){
+        if (isComponentResolved) {
             expect(exportedDeclaration.component).toBeTruthy()
         } else {
-            expect(exportedDeclaration.component).toBe(null)    
+            expect(exportedDeclaration.component).toBe(null)
         }
     }
 
