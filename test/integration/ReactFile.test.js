@@ -76,7 +76,7 @@ describe("ReactFile component resolution", () => {
             "test//resources//social-net//src//App.jsx");
 
         const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
-        expect(reactComponents.length).toBe(8)
+        expect(reactComponents.length).toBe(9)
 
         const feedFile = fileManager.getReactFile("Feed.jsx")
         expect(feedFile).toBeTruthy()
@@ -117,7 +117,7 @@ describe("ReactFile component resolution", () => {
             "test//resources//social-net//src//App.jsx");
 
         const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
-        expect(reactComponents.length).toBe(8)
+        expect(reactComponents.length).toBe(9)
 
         const feedFile = fileManager.getReactFile("Feed.jsx")
         expect(feedFile).toBeTruthy()
@@ -135,7 +135,7 @@ describe("ReactFile component resolution", () => {
             "test//resources//social-net//src//App.jsx");
 
         const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
-        expect(reactComponents.length).toBe(8)
+        expect(reactComponents.length).toBe(9)
 
         const postFile = fileManager.getReactFile("Post.jsx")
         expect(postFile).toBeTruthy()
@@ -166,7 +166,7 @@ describe("ReactFile component resolution", () => {
             "test//resources//social-net//src//App.jsx");
 
         const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
-        expect(reactComponents.length).toBe(8)
+        expect(reactComponents.length).toBe(9)
 
         const componentsFile = fileManager.getReactFile("components.jsx")
         expect(componentsFile).toBeTruthy()

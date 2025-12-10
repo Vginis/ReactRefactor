@@ -30,9 +30,10 @@ function getAbsolutePath(relativePath) {
     return path.resolve(process.cwd(), ...pathSegments)
 }
 
-function getFileManager(testProjectPath, rootFilePath) {
+function getFileManager(testProjectPath, rootFilePath, rootComponent) {
     setProjectPath(testProjectPath)
     setRootFile(rootFilePath)
+    globalThis.rootComponent = rootComponent
 
     const allFiles = getAllFiles(globalThis.projectPath);
     const hasMultiplePages = resolveIfProjectHasMultiplePages(globalThis.projectPath);

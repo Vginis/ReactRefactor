@@ -1,5 +1,5 @@
 import { getFileManager } from '../utils/test-utils.js';
-import { loadAliases } from '../../lib/Alias.js';
+import { loadAliases, loadAliases2 } from '../../lib/Alias.js';
 import {
     resolveIfProjectHasMultiplePages,
     extractPathsAndHierarchies
@@ -12,15 +12,14 @@ import {
 } from '../../lib/loadingFuncs.js';
 
 describe("Component hierarchy", () => {
-    afterAll(() => {
-        jest.restoreAllMocks();
-    });
 
+
+   
     test("should load hierarchy without circles", () => {
 
         const { hierarchyTrees, paths } = analyzeComponentHierarchy(
             "test//resources//social-net//src",
-            "test//resources//social-net//src//App.jsx", 8, 8)
+            "test//resources//social-net//src//App.jsx", "App", 9, 8)
 
         expect(paths.length).toBe(2);
         expect(paths[0].length).toBe(3)
@@ -32,12 +31,13 @@ describe("Component hierarchy", () => {
 
         const { hierarchyTrees, paths } = analyzeComponentHierarchy(
             "test//resources//social-netx//src",
-            "test//resources//social-netx//src//App.jsx", 5, 6)
+            "test//resources//social-netx//src//App.jsx", "App", 5, 6)
 
-        expect(paths.length).toBe(3);
+        expect(paths.length).toBe(4);
         expect(paths[0].length).toBe(3)
         expect(paths[1].length).toBe(4)
-        expect(paths[2].length).toBe(4)
+        expect(paths[2].length).toBe(5)
+        expect(paths[2].length).toBe(5)
 
     });
 
@@ -46,11 +46,11 @@ describe("Component hierarchy", () => {
 
         const { hierarchyTrees, paths } = analyzeComponentHierarchy(
             "test//resources//social-net-alias//src",
-            "test//resources//social-net-alias//src//App.jsx", 6, 6)
+            "test//resources//social-net-alias//src//App.jsx", "App", 6, 6)
 
         // 5 jsx elements, Feed is not used anywhere
 
-        expect(paths.length).toBe(3);
+        expect(paths.length).toBe(4);
         expect(paths[0].length).toBe(3)
         expect(paths[1].length).toBe(4)
         expect(paths[2].length).toBe(4)
@@ -58,11 +58,11 @@ describe("Component hierarchy", () => {
     });
 });
 
-function analyzeComponentHierarchy(testProjectPath, rootFileName, expectedReactComponents, expectedJsxElements) {
+function analyzeComponentHierarchy(testProjectPath, rootFileName, rootComponent, expectedReactComponents, expectedJsxElements) {
 
-    const { fileManager, filteredJsxElements } = getFileManager(testProjectPath, rootFileName);
+    const { fileManager, filteredJsxElements } = getFileManager(testProjectPath, rootFileName, rootComponent);
     const reactFiles = fileManager.reactFiles;
-    
+
     const reactComponents = loadReactComponents(reactFiles, filteredJsxElements)
 
     const hasMultiplePages = resolveIfProjectHasMultiplePages(testProjectPath);

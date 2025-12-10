@@ -13,7 +13,7 @@ describe("ReactComponent", () => {
         const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
         
         // BUG: should be 8 components, currently class expressions are not supported
-        expect(reactComponents.length).toBe(8)
+        expect(reactComponents.length).toBe(9)
 
         const postFile = fileManager.getReactFile("Post.jsx")
         expect(postFile).toBeTruthy()

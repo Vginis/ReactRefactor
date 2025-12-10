@@ -43,7 +43,7 @@ console.log(`Number of analyzed files: ${reactFiles.length}`)
 console.log(`Number of found Components: ${reactComponents.length}`);
 
 console.time("Alias resolution")
-loadAliases(reactFiles, reactComponents);
+loadAliases2(reactFiles, reactComponents);
 console.timeEnd("Alias resolution")
 
 console.time("Add parents")
