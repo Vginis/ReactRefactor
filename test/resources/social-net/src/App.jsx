@@ -8,4 +8,8 @@ function App() {
   );
 }
 
-export default App;
+function WrapperComponent(props){
+  return <App {...props}/>
+}
+
+export default React.memo(WrapperComponent);

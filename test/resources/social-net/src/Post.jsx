@@ -29,4 +29,8 @@ export const Logo = ({ iconUrl, text }) => {
   );
 };
 
-export default Post;
+function wrapper(component){
+  return component;
+}
+
+export default wrapper(React.memo(Post));
