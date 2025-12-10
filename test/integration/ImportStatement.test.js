@@ -6,7 +6,8 @@ describe("ImportStatement module", () => {
 
     test("should identify static imports", () => {
 
-        const {fileManager} = getFileManager('test//resources//social-net//src', "test//resources//social-net//src//App.jsx")
+        const {fileManager} = getFileManager('test//resources//social-net//src', 
+                                "test//resources//social-net//src//App.jsx")
 
         let reactFile = fileManager.getReactFile("Feed.jsx")
 

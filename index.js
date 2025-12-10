@@ -3,20 +3,27 @@ console.time("Execution time");
 import * as fs from 'fs';
 import { getAllFiles, resolveIfProjectHasMultiplePages, extractPathsAndHierarchies } from './lib/util.js';
 import { loadReactFiles } from './lib/ReactFile.js';
-import { loadReactComponents,addParents,addCompositeKeyReturnedElements } from './lib/loadingFuncs.js';
+import { loadReactComponents, addParents, addCompositeKeyReturnedElements } from './lib/loadingFuncs.js';
 import { detectPropDrilling } from './lib/Hierarchy.js';
 import readline from 'readline';
 import { loadAliases, loadAliases2 } from './lib/Alias.js';
-import { displayMenu,displayPropDrilling, extractGlobalCliVariables } from './lib/cli.js';
-import { countDistinctComponents,calculatePropDrillingDepths,countCompoundPropDrillings,countPathOccurrences,countPropDrillingFamilies,countPropDrillingRefactoringStats, countPropDrillingsWithDifferentStartCommonEnding } from './lib/statsCalculation.js';
+import { displayMenu, displayPropDrilling} from './lib/cli.js';
+import { countDistinctComponents, calculatePropDrillingDepths, countCompoundPropDrillings, countPathOccurrences, countPropDrillingFamilies, countPropDrillingRefactoringStats, countPropDrillingsWithDifferentStartCommonEnding } from './lib/statsCalculation.js';
 import { printPropDrillingsWithDetails } from './lib/PropDrilling.js';
 
-const { projectPath, rootFile } = extractGlobalCliVariables(); 
-globalThis.projectPath = projectPath
-globalThis.PATH_SEPARATOR = '\\'
-globalThis.rootFile = rootFile
+const args = process.argv.slice(2);
+const projectPath = args[0];
+const rootFile = args[1];
+const rootComponent = args[2];
+const fileType = args[3] || rootFile?.split(".").pop();
 
-if(!projectPath && !rootFile){
+globalThis.projectPath = projectPath
+globalThis.rootFile = rootFile
+globalThis.rootComponent = rootComponent
+globalThis.fileType = fileType
+
+
+if (!projectPath && !rootFile) {
     console.error("Error: Please provide project path and root file.");
     process.exit(1);
 }
@@ -25,7 +32,7 @@ const allFiles = getAllFiles(projectPath);
 const hasMultiplePages = resolveIfProjectHasMultiplePages(projectPath);
 
 console.time("React file loading")
-const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFile);
+const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, rootFile);
 console.timeEnd("React file loading")
 
 console.time("Component identification")
@@ -36,17 +43,17 @@ console.log(`Number of analyzed files: ${reactFiles.length}`)
 console.log(`Number of found Components: ${reactComponents.length}`);
 
 console.time("Alias resolution")
-loadAliases(reactFiles,reactComponents);
+loadAliases(reactFiles, reactComponents);
 console.timeEnd("Alias resolution")
 
 console.time("Add parents")
 addParents(reactComponents);
 console.timeEnd("Add parents")
 
-addCompositeKeyReturnedElements(reactComponents,reactFiles);
+addCompositeKeyReturnedElements(reactComponents, reactFiles);
 
 console.time("Hierarchy resolution")
-const {hierarchyTrees, paths} = extractPathsAndHierarchies(reactFiles,rootFile,reactComponents,hasMultiplePages);
+const { hierarchyTrees, paths } = extractPathsAndHierarchies(reactFiles, rootFile, reactComponents, hasMultiplePages);
 console.timeEnd("Hierarchy resolution")
 
 // Print all hierarchy trees
@@ -57,7 +64,7 @@ savePaths(paths);
 //console.log(JSON.stringify(hierarchyTrees, null, 2));
 
 console.time("PD detection")
-const propDrillings = detectPropDrilling(paths,reactComponents);
+const propDrillings = detectPropDrilling(paths, reactComponents);
 console.timeEnd("PD detection")
 
 console.log("Found: " + propDrillings.length + " Prop Drilling Occurences");
@@ -70,10 +77,10 @@ const rl = readline.createInterface({
 let currentIndex = 0;
 let inMenu = false;
 let currentMenuIndex = 0;
-const menuOptions = ["Refactor Prop Drilling with Context","Refactor Prop Drilling with Component Composition",
-     "View Detailed Path"];
+const menuOptions = ["Refactor Prop Drilling with Context", "Refactor Prop Drilling with Component Composition",
+    "View Detailed Path"];
 
-function savePaths(paths, debug=true) {
+function savePaths(paths, debug = true) {
     if (!debug) return;
 
     let projSegmentCount = projectPath.split("\\").length;
@@ -89,77 +96,77 @@ function savePaths(paths, debug=true) {
     fs.writeFileSync('./stats/paths.csv', csvLines.join("\n"), 'utf-8');
 }
 
-function handleUserInput(key){
-    if(inMenu){
-        handleMenuInput(key,propDrillings,reactComponents,currentIndex,currentMenuIndex,menuOptions);
+function handleUserInput(key) {
+    if (inMenu) {
+        handleMenuInput(key, propDrillings, reactComponents, currentIndex, currentMenuIndex, menuOptions);
         return;
     }
-    if(key === '\u0003' || key.toLowerCase()==='q'){ // Ctrl+C or 'Q'
+    if (key === '\u0003' || key.toLowerCase() === 'q') { // Ctrl+C or 'Q'
         rl.close();
         process.exit();
-    } else if(key === '\u001b[A'){ //UP arrow
-        if(currentIndex > 0){
+    } else if (key === '\u001b[A') { //UP arrow
+        if (currentIndex > 0) {
             currentIndex -= 1;
-            displayPropDrilling(currentIndex,propDrillings,reactComponents);
+            displayPropDrilling(currentIndex, propDrillings, reactComponents);
         }
-    } else if(key === '\u001b[B'){ //DOWN arrow
-        if(currentIndex <propDrillings.length-1){
+    } else if (key === '\u001b[B') { //DOWN arrow
+        if (currentIndex < propDrillings.length - 1) {
             currentIndex += 1;
-            displayPropDrilling(currentIndex,propDrillings,reactComponents);
+            displayPropDrilling(currentIndex, propDrillings, reactComponents);
         }
-    } else if(key === '\r'){//Enter
+    } else if (key === '\r') {//Enter
         inMenu = true;
         currentMenuIndex = 0;
-        displayMenu(currentIndex,currentMenuIndex,menuOptions);
+        displayMenu(currentIndex, currentMenuIndex, menuOptions);
     }
 }
-function handleMenuInput(key){
-     if (key === '\u0003' || key.toLowerCase() === 'q') { // Ctrl+C or 'Q'
-         inMenu = false;
-         displayPropDrilling(currentIndex,propDrillings,reactComponents);
-     } else if (key === '\u001b[A') { // UP arrow
-         if (currentMenuIndex > 0) {
-             currentMenuIndex -= 1;
-             displayMenu(currentIndex,currentMenuIndex,menuOptions);
-         }
-     } else if (key === '\u001b[B') { // DOWN arrow
-         if (currentMenuIndex < menuOptions.length - 1) {
-             currentMenuIndex += 1;
-             displayMenu(currentIndex,currentMenuIndex,menuOptions);
-         }
-     } else if (key === '\r') { // Enter
-         const selectedOption = menuOptions[currentMenuIndex];
-         inMenu = false;
-         console.clear();
-         console.log(`You selected: ${selectedOption}`);
-         // Placeholder actions for menu options
-         if (selectedOption === "Refactor Prop Drilling with Context") {
-             console.log("Initiating context refactoring for prop drilling...");
-             propDrillings[currentIndex].addUseContext(reactComponents,propDrillings);
-         } else if(selectedOption === "Refactor Prop Drilling with Component Composition"){
-             console.log("Initiating component composition for prop drilling...")
-             propDrillings[currentIndex].addComponentComposition(reactComponents,propDrillings);
-         } else if (selectedOption === "View Detailed Path") {
-             console.log("Displaying detailed path...");           
-             console.log(propDrillings[currentIndex].giveDetailedPropDrillingPath(propDrillings,reactComponents,propDrillings[currentIndex].getGroupedProps(propDrillings)));
-         }
-         reactComponents.forEach(comp => {
-             comp.writeChanges();
-         });
-         console.log("\nPress any key to go back.");
-         process.stdin.once("keypress", () => {
-             displayPropDrilling(currentIndex,propDrillings,reactComponents);
-         });
-     }
- }
+function handleMenuInput(key) {
+    if (key === '\u0003' || key.toLowerCase() === 'q') { // Ctrl+C or 'Q'
+        inMenu = false;
+        displayPropDrilling(currentIndex, propDrillings, reactComponents);
+    } else if (key === '\u001b[A') { // UP arrow
+        if (currentMenuIndex > 0) {
+            currentMenuIndex -= 1;
+            displayMenu(currentIndex, currentMenuIndex, menuOptions);
+        }
+    } else if (key === '\u001b[B') { // DOWN arrow
+        if (currentMenuIndex < menuOptions.length - 1) {
+            currentMenuIndex += 1;
+            displayMenu(currentIndex, currentMenuIndex, menuOptions);
+        }
+    } else if (key === '\r') { // Enter
+        const selectedOption = menuOptions[currentMenuIndex];
+        inMenu = false;
+        console.clear();
+        console.log(`You selected: ${selectedOption}`);
+        // Placeholder actions for menu options
+        if (selectedOption === "Refactor Prop Drilling with Context") {
+            console.log("Initiating context refactoring for prop drilling...");
+            propDrillings[currentIndex].addUseContext(reactComponents, propDrillings);
+        } else if (selectedOption === "Refactor Prop Drilling with Component Composition") {
+            console.log("Initiating component composition for prop drilling...")
+            propDrillings[currentIndex].addComponentComposition(reactComponents, propDrillings);
+        } else if (selectedOption === "View Detailed Path") {
+            console.log("Displaying detailed path...");
+            console.log(propDrillings[currentIndex].giveDetailedPropDrillingPath(propDrillings, reactComponents, propDrillings[currentIndex].getGroupedProps(propDrillings)));
+        }
+        reactComponents.forEach(comp => {
+            comp.writeChanges();
+        });
+        console.log("\nPress any key to go back.");
+        process.stdin.once("keypress", () => {
+            displayPropDrilling(currentIndex, propDrillings, reactComponents);
+        });
+    }
+}
 
-if(propDrillings.length > 0){
+if (propDrillings.length > 0) {
     console.clear();
-    displayPropDrilling(currentIndex,propDrillings,reactComponents);
+    displayPropDrilling(currentIndex, propDrillings, reactComponents);
     const propDrillingInformation = {
-        propDrillings,reactComponents,rl,currentIndex
+        propDrillings, reactComponents, rl, currentIndex
     };
-    process.stdin.on('keypress', (chunk,key) => handleUserInput(key.sequence,propDrillingInformation));
+    process.stdin.on('keypress', (chunk, key) => handleUserInput(key.sequence, propDrillingInformation));
 } else {
     console.log("No Prop Drilling occurences found.");
     process.exit();
@@ -169,7 +176,7 @@ rl.on('SIGINT', () => {
     rl.close();
     process.exit();
 });
-const {possibleRefactorings, allPropDrillings} = printPropDrillingsWithDetails(propDrillings, reactComponents);
+const { possibleRefactorings, allPropDrillings } = printPropDrillingsWithDetails(propDrillings, reactComponents);
 
 fs.writeFileSync(`./stats/candidates.json`, JSON.stringify(allPropDrillings, null, 2), 'utf-8');
 
