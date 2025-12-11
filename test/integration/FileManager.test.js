@@ -1,11 +1,48 @@
 import { getFileManager } from '../utils/test-utils.js';
+import { getModulePathRelativeToProjectRoot } from '../../lib/FileManager.js';
+
+
+describe("Module path alignment to project root", () => {
+
+    test("should handle specifiers starting from project root", () => {
+
+        const sourcePathSegments = "src/components/common/LoadingSpinner".split(/[\\\/]/)
+        const projectPathSegments = "e-library/src".split(/[\\\/]/)
+
+        const relativeModulePath = getModulePathRelativeToProjectRoot(sourcePathSegments, projectPathSegments)
+        expect(relativeModulePath).toBe('components\\common\\LoadingSpinner')
+
+    })
+
+    test("should handle specifiers starting before project root", () => {
+
+        const sourcePathSegments = "src/pages/common/LoadingSpinner".split(/[\\\/]/)
+        const projectPathSegments = "e-library/src/pages".split(/[\\\/]/)
+
+        const relativeModulePath = getModulePathRelativeToProjectRoot(sourcePathSegments, projectPathSegments)
+        expect(relativeModulePath).toBe('common\\LoadingSpinner')
+
+    })
+
+    test("should handle specifiers with segments repeating in project root", () => {
+
+        const sourcePathSegments = "src/pages/common/LoadingSpinner".split(/[\\\/]/)
+        const projectPathSegments = "e-library/src/react/app/src/pages".split(/[\\\/]/)
+
+        const relativeModulePath = getModulePathRelativeToProjectRoot(sourcePathSegments, projectPathSegments)
+        expect(relativeModulePath).toBe('common\\LoadingSpinner')
+
+    })
+
+
+})
 
 describe("FileManager relative module path resolution", () => {
 
-    test("should handle relative specifiers", () => {
+    test("should handle relative specifiers to current file", () => {
 
-        const {fileManager} = getFileManager(
-            "test//resources//e-library//src", 
+        const { fileManager } = getFileManager(
+            "test//resources//e-library//src",
             "test//resources//e-library//src//app//layout.tsx");
 
         let reactFile = fileManager.getReactFile("components\\books\\BooksTable.tsx")
@@ -18,9 +55,19 @@ describe("FileManager relative module path resolution", () => {
         expectSpecifierToPathResolution("../common/LoadingSpinner", reactFile, "components\\common\\LoadingSpinner")
     })
 
+    test("should handle relative specifiers to project directory", () => {
+        const { fileManager } = getFileManager(
+            "test//resources//e-library//src",
+            "test//resources//e-library//src//app//layout.tsx");
 
+        let reactFile = fileManager.getReactFile("components\\books\\BookCartModal.tsx")
+        expect(reactFile).toBeTruthy()
 
-    function expectSpecifierToPathResolution(specifier, reactFile, expectedModulePath){
+        expectSpecifierToPathResolution("src/components/common/LoadingSpinner", reactFile, "components\\common\\LoadingSpinner" )
+
+    })
+
+    function expectSpecifierToPathResolution(specifier, reactFile, expectedModulePath) {
         let modulePath = globalThis.fileManager.getRelativeModulePath(specifier, reactFile)
         expect(modulePath).toBe(expectedModulePath)
         expect(globalThis.fileManager.getReactFile(modulePath)).toBeTruthy()
@@ -32,8 +79,8 @@ describe("FileManager", () => {
 
     test("should resolve directory path to index file", () => {
 
-        const {fileManager} = getFileManager(
-            "test//resources//ecommerce-react//src", 
+        const { fileManager } = getFileManager(
+            "test//resources//ecommerce-react//src",
             "test//resources//ecommerce-react//src//App.jsx");
 
         let reactFile = fileManager.getReactFile("components\\basket")
@@ -55,7 +102,7 @@ describe("FileManager", () => {
 
     test("should resolve file paths with extension", () => {
 
-        const {fileManager} = getFileManager("test//resources//e-library//src", "test//resources//e-library//src//app//layout.tsx");
+        const { fileManager } = getFileManager("test//resources//e-library//src", "test//resources//e-library//src//app//layout.tsx");
 
         let reactFile = fileManager.getReactFile("components\\books\\BooksTable.tsx")
         expect(reactFile).toBeTruthy()
@@ -64,7 +111,7 @@ describe("FileManager", () => {
 
     test("should resolve file paths without extension", () => {
 
-        const {fileManager} = getFileManager("test//resources//e-library//src", "test//resources//e-library//src//app//layout.tsx");
+        const { fileManager } = getFileManager("test//resources//e-library//src", "test//resources//e-library//src//app//layout.tsx");
 
         let reactFile = fileManager.getReactFile("components\\books\\BooksTable")
         expect(reactFile).toBeTruthy()
@@ -73,7 +120,7 @@ describe("FileManager", () => {
 
     test("should resolve file paths without extension in root dir", () => {
 
-        const {fileManager} = getFileManager("test//resources//atm-banking//src",
+        const { fileManager } = getFileManager("test//resources//atm-banking//src",
             "test//resources//atm-banking//src//main.tsx");
 
         let reactFile = fileManager.getReactFile("main")

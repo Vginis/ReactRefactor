@@ -4,6 +4,25 @@ import { getFileManager} from '../utils/test-utils.js'
 
 describe("ImportStatement module", () => {
 
+    test("should resolve import sources relative to project directory", () => {
+        
+        const {fileManager} = getFileManager("test//resources//e-library//src", 
+                                    "test//resources//e-library//src//app//layout.jsx")
+
+        
+        let reactFile = fileManager.getReactFile("components\\books\\BookCartModal.tsx")
+        
+        expect(reactFile.relativePath).toBe("components\\books\\BookCartModal.tsx")
+
+        expect(reactFile.importStatements.length).toBe(7)
+
+        let projRelativeImport = reactFile.importStatements[5]
+        expect(projRelativeImport.relativeModulePath).toBe("components\\common\\LoadingSpinner")
+        expect(projRelativeImport.importedReactFile).toBeTruthy()
+        expect(projRelativeImport.importedReactFile.fileName).toBe("LoadingSpinner.tsx")
+
+    });
+
     test("should identify static imports", () => {
 
         const {fileManager} = getFileManager('test//resources//social-net//src', 
@@ -34,7 +53,7 @@ describe("ImportStatement module", () => {
         expect(defaultSpecifier.isDefault).toBe(true)
     });
 
-    test("should resolve imported inner module paths", () => {
+    test("should resolve import sources relative to current module", () => {
         
         const {fileManager} = getFileManager("test//resources//e-library//src", 
                                     "test//resources//e-library//src//app//layout.jsx")

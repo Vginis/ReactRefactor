@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Dialog,DialogTitle,DialogActions,Button,Slide, DialogContent,DialogContentText,TextField } from "@mui/material";
 import { TransitionProps } from '@mui/material/transitions';
 import { getBookFromCart, addBookToCartService } from "@/services/cartService";
-import { LoadingSpinner } from "../common/LoadingSpinner";
+import { LoadingSpinner } from "src/components/common/LoadingSpinner";
 import { toast } from "react-toastify";
 
 interface BookToCartProps {
