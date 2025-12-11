@@ -1,9 +1,6 @@
 const { execSync } = require("child_process"); // Works in Jest
 
-
-
-describe("Benchmark tests for RefactoringReact's Prop Drilling and component detection", () => {
-    const testProjects = [
+const testProjects = [
         {
             name: "redux-app",
             path: "..\\benchmark\\redux-app\\src",
@@ -127,14 +124,31 @@ describe("Benchmark tests for RefactoringReact's Prop Drilling and component det
         }
     ];
 
+describe("Component detection benchmark tests", () => {
+    
     testProjects.forEach(({ name, path, mainFile, expectedComponents, expectedPropDrillings, rootComponent }) => {
-        test(`Checking project: ${name}`, () => {
+        test(`Checking project: ${name} components`, () => {
             const input = `node index.js ${path} ${mainFile} ${rootComponent}`;
             const output = execSync(input).toString();
             const outputLines = output.split("\n");
             const actualComponentsLog = outputLines.find(l => l.includes("Number of found"))
-            const actualPropDrillingsLog = outputLines.find(l => l.includes("Prop Drilling Occurences"))
+            //const actualPropDrillingsLog = outputLines.find(l => l.includes("Prop Drilling Occurences"))
             expect(actualComponentsLog).toContain(`Number of found Components: ${expectedComponents}`);
+            //expect(actualPropDrillingsLog).toContain(`Found: ${expectedPropDrillings} Prop Drilling Occurences`);
+        });
+    })
+})
+
+describe("Prop drilling detection benchmark tests", () => {
+    
+    testProjects.forEach(({ name, path, mainFile, expectedComponents, expectedPropDrillings, rootComponent }) => {
+        test(`Checking project: ${name} pds`, () => {
+            const input = `node index.js ${path} ${mainFile} ${rootComponent}`;
+            const output = execSync(input).toString();
+            const outputLines = output.split("\n");
+            //const actualComponentsLog = outputLines.find(l => l.includes("Number of found"))
+            const actualPropDrillingsLog = outputLines.find(l => l.includes("Prop Drilling Occurences"))
+            //expect(actualComponentsLog).toContain(`Number of found Components: ${expectedComponents}`);
             expect(actualPropDrillingsLog).toContain(`Found: ${expectedPropDrillings} Prop Drilling Occurences`);
         });
     })
