@@ -11,7 +11,7 @@ describe("getAllFiles integration test", () => {
         expect(Array.isArray(allFiles)).toBe(true);
         expect(allFiles.every(f => f.endsWith('.js') || f.endsWith('.jsx') || f.endsWith('.ts') || f.endsWith('.tsx')))
         .toBe(true);
-        expect(allFiles.length).toBe(43);
+        expect(allFiles.length).toBe(45);
     })
 });
 

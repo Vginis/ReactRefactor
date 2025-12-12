@@ -18,6 +18,44 @@ describe("Reexporting", () => {
         }
     }
 
+    test("should resolve export-all reexports", () => {
+        const { fileManager, filteredJsxElements } = getFileManager("test//resources//e-library//src", 
+                                    "test//resources//e-library//src//app//layout.jsx")
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+
+        expect(reactComponents.length).toBe(30)
+
+        let reactFile = fileManager.getReactFile("components\\administration")
+        expect(reactFile).toBeTruthy()
+        expect(reactFile.fileName).toBe("index.ts")
+
+        expect(reactFile.reexportStatements.length).toBe(3)
+        const reexportDeclarations = getReexportDeclarations(reactFile)
+        expect(reexportDeclarations.length).toBe(3)
+
+        expectReexportDeclaration(reexportDeclarations[0], "*", "DeleteUserModal", true)
+
+    })
+
+    test("should resolve default reexports", () => {
+        const { fileManager, filteredJsxElements } = getFileManager("test//resources//e-library//src", 
+                                    "test//resources//e-library//src//app//layout.jsx")
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+
+        let reactFile = fileManager.getReactFile("components\\auth")
+        expect(reactFile).toBeTruthy()
+        expect(reactFile.fileName).toBe("index.ts")
+
+        const reexportDeclarations = getReexportDeclarations(reactFile)
+        expect(reexportDeclarations.length).toBe(2)
+
+        expectReexportDeclaration(reexportDeclarations[0], "default", "LoginForm", true)
+        expectReexportDeclaration(reexportDeclarations[1], "*", undefined, false)
+
+    })
+
     test("should resolve reexports from central barrel file", () => {
         const { fileManager, filteredJsxElements } = getFileManager(
             "test//resources//ecommerce-react//src",

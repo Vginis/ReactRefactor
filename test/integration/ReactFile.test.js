@@ -229,7 +229,7 @@ describe("Extract all React File objects from a list of files", () => {
         const loadReactFiles = require('../../lib/ReactFile.js').loadReactFiles;
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, rootFileName);
 
-        expect(reactFiles.length).toBe(15);
+        expect(reactFiles.length).toBe(16);
         expect(filteredJsxElements.size).toBe(17);
         expect([...filteredJsxElements].some(e => e.App)).toBe(true);
         expect([...filteredJsxElements].some(e => e.TransactionHistory)).toBe(false);
@@ -255,7 +255,7 @@ describe("Extract all React File objects from a list of files", () => {
         const loadReactFiles = require('../../lib/ReactFile.js').loadReactFiles;
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles, rootFileName);
 
-        expect(reactFiles.length).toBe(43);
+        expect(reactFiles.length).toBe(45);
         expect(filteredJsxElements.size).toBe(65);
         expect(reactFiles.some(f => f.isRootFile)).toBe(true);
     });

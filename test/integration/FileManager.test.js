@@ -57,7 +57,7 @@ describe("FileManager relative module path resolution", () => {
 
     test("should handle relative specifiers to project directory", () => {
         const { fileManager } = getFileManager(
-            "test//resources//e-library//src",
+            "test//resources//e-library//src/",
             "test//resources//e-library//src//app//layout.tsx");
 
         let reactFile = fileManager.getReactFile("components\\books\\BookCartModal.tsx")
