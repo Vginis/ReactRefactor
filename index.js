@@ -64,7 +64,7 @@ savePaths(paths);
 //console.log(JSON.stringify(hierarchyTrees, null, 2));
 
 console.time("PD detection")
-const propDrillings = detectPropDrilling(paths, reactComponents);
+const propDrillings = detectPropDrilling(paths);
 console.timeEnd("PD detection")
 
 console.log("Found: " + propDrillings.length + " Prop Drilling Occurences");

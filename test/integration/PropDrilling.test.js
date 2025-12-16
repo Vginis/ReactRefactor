@@ -46,7 +46,7 @@ describe("Component composition refactoring pre-condition check.", () => {
         ];
 
         const groupedProps = [ {order: 'order'} ];
-        const propDrillings = detectPropDrilling(paths,reactComponents);
+        const propDrillings = detectPropDrilling(paths);
         expect(propDrillings.length).toBe(3);
         expect(propDrillings[0].checkForOtherIntermediatePropsInPath(reactComponents, groupedProps))
             .toBe(true);
@@ -81,7 +81,7 @@ describe("Component composition refactoring pre-condition check.", () => {
         ];
         const groupedProps = [ { num: 'num' } ];
 
-        const propDrillings = detectPropDrilling(paths,reactComponents);
+        const propDrillings = detectPropDrilling(paths);
         expect(propDrillings.length).toBe(1);
         expect(propDrillings[0].checkForOtherIntermediatePropsInPath(reactComponents, groupedProps))
             .toBe(false);
@@ -117,7 +117,7 @@ describe("Context refactoring pre-condition check.", () => {
             ]
         ];
 
-        const propDrillings = detectPropDrilling(paths,reactComponents);
+        const propDrillings = detectPropDrilling(paths);
         expect(propDrillings.length).toBe(1);
         expect(propDrillings[0].checkIfDestComponentHasOtherParentComponents(propDrillings))
             .toBe(false);
@@ -152,7 +152,7 @@ describe("Context refactoring pre-condition check.", () => {
             ]
         ];
 
-        const propDrillings = detectPropDrilling(paths,reactComponents);
+        const propDrillings = detectPropDrilling(paths);
         expect(propDrillings.length).toBe(1);
         expect(propDrillings[0].checkIfDestComponentHasOtherParentComponents(propDrillings))
             .toBe(true);
