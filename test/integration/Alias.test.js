@@ -10,7 +10,7 @@ describe("Alias", () => {
 
         const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
         
-        loadAliases2(fileManager.reactFiles, reactComponents)
+        loadAliases2(fileManager.reactFiles)
 
         const postFile = fileManager.getReactFile("Post.jsx")
         expect(postFile).toBeTruthy()
@@ -37,7 +37,7 @@ describe("Alias", () => {
 
         const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
         
-        loadAliases(fileManager.reactFiles, reactComponents)
+        loadAliases(fileManager.reactFiles)
 
         expect(reactComponents.length).toBe(8)
     })

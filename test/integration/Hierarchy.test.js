@@ -70,11 +70,11 @@ function analyzeComponentHierarchy(testProjectPath, rootFileName, rootComponent,
     expect(filteredJsxElements.size).toBe(expectedJsxElements);
     expect(reactComponents.length).toBe(expectedReactComponents);
 
-    loadAliases(reactFiles, reactComponents);
-    addParents(reactComponents);
-    addCompositeKeyReturnedElements(reactComponents, reactFiles);
+    loadAliases(reactFiles);
+    addParents();
+    addCompositeKeyReturnedElements(reactFiles);
     const { hierarchyTrees, paths } = extractPathsAndHierarchies(
-        reactFiles, rootFileName, reactComponents, hasMultiplePages);
+        reactFiles, rootFileName, hasMultiplePages);
 
     return { hierarchyTrees, paths }
 }

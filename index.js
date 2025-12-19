@@ -43,17 +43,17 @@ console.log(`Number of analyzed files: ${reactFiles.length}`)
 console.log(`Number of found Components: ${reactComponents.length}`);
 
 console.time("Alias resolution")
-loadAliases2(reactFiles, reactComponents);
+loadAliases2(reactFiles);
 console.timeEnd("Alias resolution")
 
 console.time("Add parents")
-addParents(reactComponents);
+addParents();
 console.timeEnd("Add parents")
 
-addCompositeKeyReturnedElements(reactComponents, reactFiles);
+addCompositeKeyReturnedElements(reactFiles);
 
 console.time("Hierarchy resolution")
-const { hierarchyTrees, paths } = extractPathsAndHierarchies(reactFiles, rootFile, reactComponents, hasMultiplePages);
+const { hierarchyTrees, paths } = extractPathsAndHierarchies(reactFiles, rootFile, hasMultiplePages);
 console.timeEnd("Hierarchy resolution")
 
 // Print all hierarchy trees
@@ -97,8 +97,9 @@ function savePaths(paths, debug = true) {
 }
 
 function handleUserInput(key) {
+    const reactComponents = globalThis.reactComponentManager.getAllReactComponents();
     if (inMenu) {
-        handleMenuInput(key, propDrillings, reactComponents, currentIndex, currentMenuIndex, menuOptions);
+        handleMenuInput(key, propDrillings, currentIndex, currentMenuIndex, menuOptions);
         return;
     }
     if (key === '\u0003' || key.toLowerCase() === 'q') { // Ctrl+C or 'Q'
@@ -107,12 +108,12 @@ function handleUserInput(key) {
     } else if (key === '\u001b[A') { //UP arrow
         if (currentIndex > 0) {
             currentIndex -= 1;
-            displayPropDrilling(currentIndex, propDrillings, reactComponents);
+            displayPropDrilling(currentIndex, propDrillings);
         }
     } else if (key === '\u001b[B') { //DOWN arrow
         if (currentIndex < propDrillings.length - 1) {
             currentIndex += 1;
-            displayPropDrilling(currentIndex, propDrillings, reactComponents);
+            displayPropDrilling(currentIndex, propDrillings);
         }
     } else if (key === '\r') {//Enter
         inMenu = true;
@@ -121,9 +122,10 @@ function handleUserInput(key) {
     }
 }
 function handleMenuInput(key) {
-    if (key === '\u0003' || key.toLowerCase() === 'q') { // Ctrl+C or 'Q'
+     const reactComponents = globalThis.reactComponentManager.getAllReactComponents();
+     if (key === '\u0003' || key.toLowerCase() === 'q') { // Ctrl+C or 'Q'
         inMenu = false;
-        displayPropDrilling(currentIndex, propDrillings, reactComponents);
+        displayPropDrilling(currentIndex, propDrillings);
     } else if (key === '\u001b[A') { // UP arrow
         if (currentMenuIndex > 0) {
             currentMenuIndex -= 1;
@@ -142,27 +144,27 @@ function handleMenuInput(key) {
         // Placeholder actions for menu options
         if (selectedOption === "Refactor Prop Drilling with Context") {
             console.log("Initiating context refactoring for prop drilling...");
-            propDrillings[currentIndex].addUseContext(reactComponents, propDrillings);
+            propDrillings[currentIndex].addUseContext(propDrillings);
         } else if (selectedOption === "Refactor Prop Drilling with Component Composition") {
             console.log("Initiating component composition for prop drilling...")
-            propDrillings[currentIndex].addComponentComposition(reactComponents, propDrillings);
+            propDrillings[currentIndex].addComponentComposition(propDrillings);
         } else if (selectedOption === "View Detailed Path") {
             console.log("Displaying detailed path...");
-            console.log(propDrillings[currentIndex].giveDetailedPropDrillingPath(propDrillings, reactComponents, propDrillings[currentIndex].getGroupedProps(propDrillings)));
+            console.log(propDrillings[currentIndex].giveDetailedPropDrillingPath(propDrillings, propDrillings[currentIndex].getGroupedProps(propDrillings)));
         }
         reactComponents.forEach(comp => {
             comp.writeChanges();
         });
         console.log("\nPress any key to go back.");
         process.stdin.once("keypress", () => {
-            displayPropDrilling(currentIndex, propDrillings, reactComponents);
+            displayPropDrilling(currentIndex, propDrillings);
         });
     }
 }
 
 if (propDrillings.length > 0) {
     console.clear();
-    displayPropDrilling(currentIndex, propDrillings, reactComponents);
+    displayPropDrilling(currentIndex, propDrillings);
     const propDrillingInformation = {
         propDrillings, reactComponents, rl, currentIndex
     };

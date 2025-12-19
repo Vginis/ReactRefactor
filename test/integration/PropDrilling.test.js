@@ -23,9 +23,9 @@ describe("Component composition refactoring pre-condition check.", () => {
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFileName);
         const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
 
-        loadAliases(reactFiles,reactComponents);
-        addParents(reactComponents);
-        addCompositeKeyReturnedElements(reactComponents,reactFiles);
+        loadAliases(reactFiles);
+        addParents();
+        addCompositeKeyReturnedElements(reactFiles);
 
         const paths = [
             [
@@ -68,9 +68,9 @@ describe("Component composition refactoring pre-condition check.", () => {
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFileName);
         const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
 
-        loadAliases(reactFiles,reactComponents);
-        addParents(reactComponents);
-        addCompositeKeyReturnedElements(reactComponents,reactFiles);
+        loadAliases(reactFiles);
+        addParents();
+        addCompositeKeyReturnedElements(reactFiles);
 
         const paths = [
             [
@@ -105,9 +105,9 @@ describe("Context refactoring pre-condition check.", () => {
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFileName);
         const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
 
-        loadAliases(reactFiles,reactComponents);
-        addParents(reactComponents);
-        addCompositeKeyReturnedElements(reactComponents,reactFiles);
+        loadAliases(reactFiles);
+        addParents();
+        addCompositeKeyReturnedElements(reactFiles);
 
         const paths = [
             [
@@ -140,9 +140,9 @@ describe("Context refactoring pre-condition check.", () => {
         const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFileName);
         const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
 
-        loadAliases(reactFiles,reactComponents);
-        addParents(reactComponents);
-        addCompositeKeyReturnedElements(reactComponents,reactFiles);
+        loadAliases(reactFiles);
+        addParents();
+        addCompositeKeyReturnedElements(reactFiles);
 
         const paths = [
             [
