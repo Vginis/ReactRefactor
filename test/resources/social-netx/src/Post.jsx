@@ -1,7 +1,11 @@
 import Comment from "./Comment.jsx";
 import Avatar from "./Avatar.jsx";
 
-const Post = ({ author, username, content, image, comments }) => {
+function forwardRef(component){
+  return component
+}
+
+const Post = forwardRef(function Post({ author, username, content, image, comments }) {
   return (
     <div className="post">
       <div className="post-header">
@@ -19,6 +23,6 @@ const Post = ({ author, username, content, image, comments }) => {
       </div>
     </div>
   );
-};
+});
 
 export default Post;

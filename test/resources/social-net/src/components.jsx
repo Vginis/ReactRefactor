@@ -52,6 +52,5 @@ const Comment = ({ author, username, text }) => {
   );
 };
 
-
 export { Comment as PostComment, Avatar, AvatarEx, AvatarClass }
 

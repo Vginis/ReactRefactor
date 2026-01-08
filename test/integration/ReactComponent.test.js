@@ -27,6 +27,23 @@ describe("ReactComponent", () => {
 
     });
 
+    test("should resolve components declared as wrapper function params", () => {
+
+        const { fileManager, filteredJsxElements } = getFileManager(
+            "test//resources//social-netx//src", 
+            "test//resources//social-netx//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+        
+        expect(reactComponents.length).toBe(5)
+
+        const postFile = fileManager.getReactFile("Post.jsx")
+        expect(postFile).toBeTruthy()
+
+        expectReturnedElements(postFile, "Post", ["Avatar", "Comment"])
+        expectChildComponentsWithName(postFile, "Post", ["Comment", "Avatar"])
+
+    });
     
     function expectContainedComponents(relativeFileName, componentCount, fileManager) {
         const reactFile = fileManager.getReactFile(relativeFileName)
