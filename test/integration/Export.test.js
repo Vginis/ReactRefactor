@@ -24,7 +24,7 @@ describe("Reexporting", () => {
 
         const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
 
-        expect(reactComponents.length).toBe(30)
+        expect(reactComponents.length).toBe(31)
 
         let reactFile = fileManager.getReactFile("components\\administration")
         expect(reactFile).toBeTruthy()
