@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 console.time("Execution time");
 import * as fs from 'fs';
-import { getAllFiles, resolveIfProjectHasMultiplePages, extractPathsAndHierarchies } from './lib/util.js';
+import { getAllFiles, resolveIfProjectHasMultiplePages, extractPathsAndHierarchies,
+    extractPathsAndHierarchies2
+ } from './lib/util.js';
 import { loadReactFiles } from './lib/ReactFile.js';
 import { loadReactComponents, addParents, addCompositeKeyReturnedElements } from './lib/loadingFuncs.js';
 import { detectPropDrilling } from './lib/Hierarchy.js';
@@ -46,14 +48,15 @@ console.time("Alias resolution")
 loadAliases2(reactFiles);
 console.timeEnd("Alias resolution")
 
-console.time("Add parents")
+// console.time("Add parents")
 addParents();
-console.timeEnd("Add parents")
+// console.timeEnd("Add parents")
 
 //addCompositeKeyReturnedElements(reactFiles);
 
 console.time("Hierarchy resolution")
-const { hierarchyTrees, paths } = extractPathsAndHierarchies(reactFiles, rootFile, hasMultiplePages);
+//const { hierarchyTrees, paths } = extractPathsAndHierarchies(reactFiles, rootFile, hasMultiplePages);
+const { hierarchyTrees, paths } = extractPathsAndHierarchies2();
 console.timeEnd("Hierarchy resolution")
 
 // Print all hierarchy trees
