@@ -50,7 +50,7 @@ console.time("Add parents")
 addParents();
 console.timeEnd("Add parents")
 
-addCompositeKeyReturnedElements(reactFiles);
+//addCompositeKeyReturnedElements(reactFiles);
 
 console.time("Hierarchy resolution")
 const { hierarchyTrees, paths } = extractPathsAndHierarchies(reactFiles, rootFile, hasMultiplePages);
