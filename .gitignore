@@ -3,3 +3,4 @@
 /tests/integration/resources
 **/dist/
 *.log
+*.txt
