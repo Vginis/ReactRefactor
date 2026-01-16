@@ -1,0 +1,1714 @@
+[
+  {
+    "sourceComponent": "components\\EditorContainer.js:EditorContainer",
+    "targetComponent": "components\\ListSetting.js:ListSetting",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\EditorContainer.js:EditorContainer",
+        "target": "components\\Editor.js:Editor",
+        "targetAlias": "Editor",
+        "targetProp": "themes",
+        "isPure": false
+      },
+      {
+        "source": "components\\Editor.js:Editor",
+        "target": "components\\Themes\\index.js:Themes",
+        "targetAlias": "Themes",
+        "targetProp": "themes",
+        "isPure": true
+      },
+      {
+        "source": "components\\Themes\\index.js:Themes",
+        "target": "components\\Themes\\ThemeCreate.js:ThemeCreate",
+        "targetAlias": "ThemeCreate",
+        "targetProp": "themes",
+        "isPure": true
+      },
+      {
+        "source": "components\\Themes\\ThemeCreate.js:ThemeCreate",
+        "target": "components\\ListSetting.js:ListSetting",
+        "targetAlias": "ListSetting",
+        "targetProp": "items",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Toggle.js:Toggle",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:WindowSettings",
+        "targetAlias": "WindowSettings",
+        "targetProp": "windowControls",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:WindowSettings",
+        "target": "components\\ThemeSelect.js:ThemeSelect",
+        "targetAlias": "ThemeSelect",
+        "targetProp": "windowControls",
+        "isPure": true
+      },
+      {
+        "source": "components\\ThemeSelect.js:ThemeSelect",
+        "target": "components\\Toggle.js:Toggle",
+        "targetAlias": "Toggle",
+        "targetProp": "enabled",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Carbon.js:CarbonContainer",
+    "targetComponent": "components\\WindowControls.js:TitleBar",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Carbon.js:CarbonContainer",
+        "target": "components\\Carbon.js:Carbon",
+        "targetAlias": "Carbon",
+        "targetProp": "titleBar",
+        "isPure": true
+      },
+      {
+        "source": "components\\Carbon.js:Carbon",
+        "target": "components\\WindowControls.js:WindowControls",
+        "targetAlias": "WindowControls",
+        "targetProp": "titleBar",
+        "isPure": true
+      },
+      {
+        "source": "components\\WindowControls.js:WindowControls",
+        "target": "components\\WindowControls.js:TitleBar",
+        "targetAlias": "TitleBar",
+        "targetProp": "value",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Carbon.js:CarbonContainer",
+    "targetComponent": "components\\WindowControls.js:TitleBar",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Carbon.js:CarbonContainer",
+        "target": "components\\Carbon.js:Carbon",
+        "targetAlias": "Carbon",
+        "targetProp": "onTitleBarChange",
+        "isPure": true
+      },
+      {
+        "source": "components\\Carbon.js:Carbon",
+        "target": "components\\WindowControls.js:WindowControls",
+        "targetAlias": "WindowControls",
+        "targetProp": "onTitleBarChange",
+        "isPure": true
+      },
+      {
+        "source": "components\\WindowControls.js:WindowControls",
+        "target": "components\\WindowControls.js:TitleBar",
+        "targetAlias": "TitleBar",
+        "targetProp": "onChange",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Carbon.js:CarbonContainer",
+    "targetComponent": "components\\WindowControls.js:CopyButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Carbon.js:CarbonContainer",
+        "target": "components\\Carbon.js:Carbon",
+        "targetAlias": "Carbon",
+        "targetProp": "children",
+        "isPure": true
+      },
+      {
+        "source": "components\\Carbon.js:Carbon",
+        "target": "components\\WindowControls.js:WindowControls",
+        "targetAlias": "WindowControls",
+        "targetProp": "code",
+        "isPure": true
+      },
+      {
+        "source": "components\\WindowControls.js:WindowControls",
+        "target": "components\\WindowControls.js:CopyButton",
+        "targetAlias": "CopyButton",
+        "targetProp": "text",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\index.js:Index",
+    "targetComponent": "components\\SnippetToolbar.js:SnippetToolbar",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\index.js:Index",
+        "target": "components\\EditorContainer.js:EditorContainer",
+        "targetAlias": "EditorContainer",
+        "targetProp": "snippet",
+        "isPure": true
+      },
+      {
+        "source": "components\\EditorContainer.js:EditorContainer",
+        "target": "components\\Editor.js:Editor",
+        "targetAlias": "Editor",
+        "targetProp": "snippet",
+        "isPure": false
+      },
+      {
+        "source": "components\\Editor.js:Editor",
+        "target": "components\\SnippetToolbar.js:SnippetToolbar",
+        "targetAlias": "SnippetToolbar",
+        "targetProp": "snippet",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\SnippetToolbar.js:SnippetToolbar",
+    "targetComponent": "components\\Button.js:Button",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\SnippetToolbar.js:SnippetToolbar",
+        "target": "components\\SnippetToolbar.js:DeleteButton",
+        "targetAlias": "DeleteButton",
+        "targetProp": "onClick",
+        "isPure": true
+      },
+      {
+        "source": "components\\SnippetToolbar.js:DeleteButton",
+        "target": "components\\ConfirmButton.js:ConfirmButton",
+        "targetAlias": "ConfirmButton",
+        "targetProp": "onClick",
+        "isPure": false
+      },
+      {
+        "source": "components\\ConfirmButton.js:ConfirmButton",
+        "target": "components\\Button.js:Button",
+        "targetAlias": "Button",
+        "targetProp": "onClick",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\LoginButton.js:Drawer",
+    "targetComponent": "components\\WindowPointer.js:WindowPointer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\LoginButton.js:Drawer",
+        "target": "components\\Popout.js:Popout",
+        "targetAlias": "Popout",
+        "targetProp": "pointerRight",
+        "isPure": true
+      },
+      {
+        "source": "components\\Popout.js:Popout",
+        "target": "components\\WindowPointer.js:WindowPointer",
+        "targetAlias": "WindowPointer",
+        "targetProp": "fromRight",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\index.js:Index",
+    "targetComponent": "components\\Header.js:Header",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "pages\\index.js:Index",
+        "target": "components\\Page.js:Page",
+        "targetAlias": "Page",
+        "targetProp": "enableHeroText",
+        "isPure": true
+      },
+      {
+        "source": "components\\Page.js:Page",
+        "target": "components\\Header.js:Header",
+        "targetAlias": "Header",
+        "targetProp": "enableHeroText",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "components\\Editor.js:Editor",
+    "targetComponent": "components\\Themes\\ThemeCreate.js:ThemeCreate",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Editor.js:Editor",
+        "target": "components\\Themes\\index.js:Themes",
+        "targetAlias": "Themes",
+        "targetProp": "theme",
+        "isPure": true
+      },
+      {
+        "source": "components\\Themes\\index.js:Themes",
+        "target": "components\\Themes\\ThemeCreate.js:ThemeCreate",
+        "targetAlias": "ThemeCreate",
+        "targetProp": "theme",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Editor.js:Editor",
+    "targetComponent": "components\\Themes\\ThemeCreate.js:ThemeCreate",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Editor.js:Editor",
+        "target": "components\\Themes\\index.js:Themes",
+        "targetAlias": "Themes",
+        "targetProp": "highlights",
+        "isPure": true
+      },
+      {
+        "source": "components\\Themes\\index.js:Themes",
+        "target": "components\\Themes\\ThemeCreate.js:ThemeCreate",
+        "targetAlias": "ThemeCreate",
+        "targetProp": "highlights",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Editor.js:Editor",
+    "targetComponent": "components\\Themes\\ThemeCreate.js:ThemeCreate",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Editor.js:Editor",
+        "target": "components\\Themes\\index.js:Themes",
+        "targetAlias": "Themes",
+        "targetProp": "updateHighlights",
+        "isPure": true
+      },
+      {
+        "source": "components\\Themes\\index.js:Themes",
+        "target": "components\\Themes\\ThemeCreate.js:ThemeCreate",
+        "targetAlias": "ThemeCreate",
+        "targetProp": "updateHighlights",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Themes\\ThemeCreate.js:ThemeCreate",
+    "targetComponent": "components\\WindowPointer.js:WindowPointer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Themes\\ThemeCreate.js:ThemeCreate",
+        "target": "components\\Popout.js:Popout",
+        "targetAlias": "Popout",
+        "targetProp": "pointerLeft",
+        "isPure": true
+      },
+      {
+        "source": "components\\Popout.js:Popout",
+        "target": "components\\WindowPointer.js:WindowPointer",
+        "targetAlias": "WindowPointer",
+        "targetProp": "fromLeft",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Themes\\ThemeCreate.js:ThemeCreate",
+    "targetComponent": "components\\ColorPicker.js:ColorPicker",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Themes\\ThemeCreate.js:ThemeCreate",
+        "target": "components\\Themes\\ThemeCreate.js:HighlightPicker",
+        "targetAlias": "HighlightPicker",
+        "targetProp": "title",
+        "isPure": false
+      },
+      {
+        "source": "components\\Themes\\ThemeCreate.js:HighlightPicker",
+        "target": "components\\ColorPicker.js:ColorPicker",
+        "targetAlias": "ColorPicker",
+        "targetProp": "key",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Themes\\ThemeCreate.js:ThemeCreate",
+    "targetComponent": "components\\ColorPicker.js:ColorPicker",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Themes\\ThemeCreate.js:ThemeCreate",
+        "target": "components\\Themes\\ThemeCreate.js:HighlightPicker",
+        "targetAlias": "HighlightPicker",
+        "targetProp": "color",
+        "isPure": false
+      },
+      {
+        "source": "components\\Themes\\ThemeCreate.js:HighlightPicker",
+        "target": "components\\ColorPicker.js:ColorPicker",
+        "targetAlias": "ColorPicker",
+        "targetProp": "color",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Themes\\ThemeCreate.js:ThemeCreate",
+    "targetComponent": "components\\ColorPicker.js:ColorPicker",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Themes\\ThemeCreate.js:ThemeCreate",
+        "target": "components\\Themes\\ThemeCreate.js:HighlightPicker",
+        "targetAlias": "HighlightPicker",
+        "targetProp": "onChange",
+        "isPure": true
+      },
+      {
+        "source": "components\\Themes\\ThemeCreate.js:HighlightPicker",
+        "target": "components\\ColorPicker.js:ColorPicker",
+        "targetAlias": "ColorPicker",
+        "targetProp": "onChange",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Editor.js:Editor",
+    "targetComponent": "components\\Themes\\GlobalHighlights.js:GlobalHighlights",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "components\\Editor.js:Editor",
+        "target": "components\\Themes\\index.js:Themes",
+        "targetAlias": "Themes",
+        "targetProp": "highlights",
+        "isPure": true
+      },
+      {
+        "source": "components\\Themes\\index.js:Themes",
+        "target": "components\\Themes\\GlobalHighlights.js:GlobalHighlights",
+        "targetAlias": "GlobalHighlights",
+        "targetProp": "highlights",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "components\\BackgroundSelect.js:BackgroundSelect",
+    "targetComponent": "components\\WindowPointer.js:WindowPointer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\BackgroundSelect.js:BackgroundSelect",
+        "target": "components\\Popout.js:Popout",
+        "targetAlias": "Popout",
+        "targetProp": "pointerLeft",
+        "isPure": true
+      },
+      {
+        "source": "components\\Popout.js:Popout",
+        "target": "components\\WindowPointer.js:WindowPointer",
+        "targetAlias": "WindowPointer",
+        "targetProp": "fromLeft",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Editor.js:Editor",
+    "targetComponent": "components\\ColorPicker.js:ColorPicker",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Editor.js:Editor",
+        "target": "components\\BackgroundSelect.js:BackgroundSelect",
+        "targetAlias": "BackgroundSelect",
+        "targetProp": "color",
+        "isPure": true
+      },
+      {
+        "source": "components\\BackgroundSelect.js:BackgroundSelect",
+        "target": "components\\ColorPicker.js:ColorPicker",
+        "targetAlias": "ColorPicker",
+        "targetProp": "color",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\ThemeSelect.js:ThemeSelect",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:WindowSettings",
+        "targetAlias": "WindowSettings",
+        "targetProp": "onChange",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:WindowSettings",
+        "target": "components\\ThemeSelect.js:ThemeSelect",
+        "targetAlias": "ThemeSelect",
+        "targetProp": "onChange",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Slider.js:Slider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:WindowSettings",
+        "targetAlias": "WindowSettings",
+        "targetProp": "onWidthChanging",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:WindowSettings",
+        "target": "components\\Slider.js:Slider",
+        "targetAlias": "Slider",
+        "targetProp": "onMouseDown",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Slider.js:Slider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:WindowSettings",
+        "targetAlias": "WindowSettings",
+        "targetProp": "onWidthChanged",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:WindowSettings",
+        "target": "components\\Slider.js:Slider",
+        "targetAlias": "Slider",
+        "targetProp": "onMouseUp",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Slider.js:Slider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:WindowSettings",
+        "targetAlias": "WindowSettings",
+        "targetProp": "paddingHorizontal",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:WindowSettings",
+        "target": "components\\Slider.js:Slider",
+        "targetAlias": "Slider",
+        "targetProp": "value",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Slider.js:Slider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:WindowSettings",
+        "targetAlias": "WindowSettings",
+        "targetProp": "paddingVertical",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:WindowSettings",
+        "target": "components\\Slider.js:Slider",
+        "targetAlias": "Slider",
+        "targetProp": "value",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Slider.js:Slider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:WindowSettings",
+        "targetAlias": "WindowSettings",
+        "targetProp": "dropShadowBlurRadius",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:WindowSettings",
+        "target": "components\\Slider.js:Slider",
+        "targetAlias": "Slider",
+        "targetProp": "value",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Slider.js:Slider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:WindowSettings",
+        "targetAlias": "WindowSettings",
+        "targetProp": "dropShadowOffsetY",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:WindowSettings",
+        "target": "components\\Slider.js:Slider",
+        "targetAlias": "Slider",
+        "targetProp": "value",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Toggle.js:Toggle",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:WindowSettings",
+        "targetAlias": "WindowSettings",
+        "targetProp": "dropShadow",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:WindowSettings",
+        "target": "components\\Toggle.js:Toggle",
+        "targetAlias": "Toggle",
+        "targetProp": "enabled",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Toggle.js:Toggle",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:WindowSettings",
+        "targetAlias": "WindowSettings",
+        "targetProp": "widthAdjustment",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:WindowSettings",
+        "target": "components\\Toggle.js:Toggle",
+        "targetAlias": "Toggle",
+        "targetProp": "enabled",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Toggle.js:Toggle",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:WindowSettings",
+        "targetAlias": "WindowSettings",
+        "targetProp": "watermark",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:WindowSettings",
+        "target": "components\\Toggle.js:Toggle",
+        "targetAlias": "Toggle",
+        "targetProp": "enabled",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Input.js:Input",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:WindowSettings",
+        "targetAlias": "WindowSettings",
+        "targetProp": "width",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:WindowSettings",
+        "target": "components\\Input.js:Input",
+        "targetAlias": "Input",
+        "targetProp": "value",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\FontSelect.js:FontSelect",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:EditorSettings",
+        "targetAlias": "EditorSettings",
+        "targetProp": "onUpload",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:EditorSettings",
+        "target": "components\\FontSelect.js:FontSelect",
+        "targetAlias": "FontSelect",
+        "targetProp": "onUpload",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\FontSelect.js:FontSelect",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:EditorSettings",
+        "targetAlias": "EditorSettings",
+        "targetProp": "font",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:EditorSettings",
+        "target": "components\\FontSelect.js:FontSelect",
+        "targetAlias": "FontSelect",
+        "targetProp": "selected",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:EditorSettings",
+    "targetComponent": "components\\ListSetting.js:ListSetting",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:EditorSettings",
+        "target": "components\\FontSelect.js:FontSelect",
+        "targetAlias": "FontSelect",
+        "targetProp": "onChange",
+        "isPure": true
+      },
+      {
+        "source": "components\\FontSelect.js:FontSelect",
+        "target": "components\\ListSetting.js:ListSetting",
+        "targetAlias": "ListSetting",
+        "targetProp": "onChange",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Slider.js:Slider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:EditorSettings",
+        "targetAlias": "EditorSettings",
+        "targetProp": "onWidthChanging",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:EditorSettings",
+        "target": "components\\Slider.js:Slider",
+        "targetAlias": "Slider",
+        "targetProp": "onMouseDown",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Slider.js:Slider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:EditorSettings",
+        "targetAlias": "EditorSettings",
+        "targetProp": "onWidthChanged",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:EditorSettings",
+        "target": "components\\Slider.js:Slider",
+        "targetAlias": "Slider",
+        "targetProp": "onMouseUp",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Slider.js:Slider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:EditorSettings",
+        "targetAlias": "EditorSettings",
+        "targetProp": "size",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:EditorSettings",
+        "target": "components\\Slider.js:Slider",
+        "targetAlias": "Slider",
+        "targetProp": "value",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Slider.js:Slider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:EditorSettings",
+        "targetAlias": "EditorSettings",
+        "targetProp": "lineHeight",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:EditorSettings",
+        "target": "components\\Slider.js:Slider",
+        "targetAlias": "Slider",
+        "targetProp": "value",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Toggle.js:Toggle",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:EditorSettings",
+        "targetAlias": "EditorSettings",
+        "targetProp": "lineNumbers",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:EditorSettings",
+        "target": "components\\Toggle.js:Toggle",
+        "targetAlias": "Toggle",
+        "targetProp": "enabled",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Toggle.js:Toggle",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:EditorSettings",
+        "targetAlias": "EditorSettings",
+        "targetProp": "hiddenCharacters",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:EditorSettings",
+        "target": "components\\Toggle.js:Toggle",
+        "targetAlias": "Toggle",
+        "targetProp": "enabled",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Input.js:Input",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Settings.js:EditorSettings",
+        "targetAlias": "EditorSettings",
+        "targetProp": "firstLineNumber",
+        "isPure": true
+      },
+      {
+        "source": "components\\Settings.js:EditorSettings",
+        "target": "components\\Input.js:Input",
+        "targetAlias": "Input",
+        "targetProp": "value",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\WindowPointer.js:WindowPointer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Popout.js:Popout",
+        "targetAlias": "Popout",
+        "targetProp": "pointerLeft",
+        "isPure": true
+      },
+      {
+        "source": "components\\Popout.js:Popout",
+        "target": "components\\WindowPointer.js:WindowPointer",
+        "targetAlias": "WindowPointer",
+        "targetProp": "fromLeft",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Button.js:Button",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Presets.js:Presets",
+        "targetAlias": "Presets",
+        "targetProp": "toggle",
+        "isPure": true
+      },
+      {
+        "source": "components\\Presets.js:Presets",
+        "target": "components\\Button.js:Button",
+        "targetAlias": "Button",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Button.js:Button",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Presets.js:Presets",
+        "targetAlias": "Presets",
+        "targetProp": "undo",
+        "isPure": true
+      },
+      {
+        "source": "components\\Presets.js:Presets",
+        "target": "components\\Button.js:Button",
+        "targetAlias": "Button",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Button.js:Button",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Presets.js:Presets",
+        "targetAlias": "Presets",
+        "targetProp": "create",
+        "isPure": true
+      },
+      {
+        "source": "components\\Presets.js:Presets",
+        "target": "components\\Button.js:Button",
+        "targetAlias": "Button",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Presets.js:Preset",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Presets.js:Presets",
+        "targetAlias": "Presets",
+        "targetProp": "selected",
+        "isPure": true
+      },
+      {
+        "source": "components\\Presets.js:Presets",
+        "target": "components\\Presets.js:Preset",
+        "targetAlias": "Preset",
+        "targetProp": "preset",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Presets.js:Preset",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Presets.js:Presets",
+        "targetAlias": "Presets",
+        "targetProp": "apply",
+        "isPure": true
+      },
+      {
+        "source": "components\\Presets.js:Presets",
+        "target": "components\\Presets.js:Preset",
+        "targetAlias": "Preset",
+        "targetProp": "apply",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Settings.js:Settings",
+    "targetComponent": "components\\Presets.js:Preset",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Settings.js:Settings",
+        "target": "components\\Presets.js:Presets",
+        "targetAlias": "Presets",
+        "targetProp": "remove",
+        "isPure": true
+      },
+      {
+        "source": "components\\Presets.js:Presets",
+        "target": "components\\Presets.js:Preset",
+        "targetAlias": "Preset",
+        "targetProp": "remove",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\CopyMenu.js:CopyMenu",
+    "targetComponent": "components\\WindowPointer.js:WindowPointer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\CopyMenu.js:CopyMenu",
+        "target": "components\\Popout.js:Popout",
+        "targetAlias": "Popout",
+        "targetProp": "borderColor",
+        "isPure": false
+      },
+      {
+        "source": "components\\Popout.js:Popout",
+        "target": "components\\WindowPointer.js:WindowPointer",
+        "targetAlias": "WindowPointer",
+        "targetProp": "color",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\CopyMenu.js:CopyMenu",
+    "targetComponent": "components\\WindowPointer.js:WindowPointer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\CopyMenu.js:CopyMenu",
+        "target": "components\\Popout.js:Popout",
+        "targetAlias": "Popout",
+        "targetProp": "pointerRight",
+        "isPure": true
+      },
+      {
+        "source": "components\\Popout.js:Popout",
+        "target": "components\\WindowPointer.js:WindowPointer",
+        "targetAlias": "WindowPointer",
+        "targetProp": "fromRight",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\ShareMenu.js:ShareMenu",
+    "targetComponent": "components\\WindowPointer.js:WindowPointer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\ShareMenu.js:ShareMenu",
+        "target": "components\\Popout.js:Popout",
+        "targetAlias": "Popout",
+        "targetProp": "borderColor",
+        "isPure": false
+      },
+      {
+        "source": "components\\Popout.js:Popout",
+        "target": "components\\WindowPointer.js:WindowPointer",
+        "targetAlias": "WindowPointer",
+        "targetProp": "color",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\ShareMenu.js:ShareMenu",
+    "targetComponent": "components\\WindowPointer.js:WindowPointer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\ShareMenu.js:ShareMenu",
+        "target": "components\\Popout.js:Popout",
+        "targetAlias": "Popout",
+        "targetProp": "pointerRight",
+        "isPure": true
+      },
+      {
+        "source": "components\\Popout.js:Popout",
+        "target": "components\\WindowPointer.js:WindowPointer",
+        "targetAlias": "WindowPointer",
+        "targetProp": "fromRight",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\ExportMenu.js:ExportMenu",
+    "targetComponent": "components\\WindowPointer.js:WindowPointer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\ExportMenu.js:ExportMenu",
+        "target": "components\\Popout.js:Popout",
+        "targetAlias": "Popout",
+        "targetProp": "borderColor",
+        "isPure": false
+      },
+      {
+        "source": "components\\Popout.js:Popout",
+        "target": "components\\WindowPointer.js:WindowPointer",
+        "targetAlias": "WindowPointer",
+        "targetProp": "color",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\ExportMenu.js:ExportMenu",
+    "targetComponent": "components\\WindowPointer.js:WindowPointer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\ExportMenu.js:ExportMenu",
+        "target": "components\\Popout.js:Popout",
+        "targetAlias": "Popout",
+        "targetProp": "pointerRight",
+        "isPure": true
+      },
+      {
+        "source": "components\\Popout.js:Popout",
+        "target": "components\\WindowPointer.js:WindowPointer",
+        "targetAlias": "WindowPointer",
+        "targetProp": "fromRight",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Carbon.js:CarbonContainer",
+    "targetComponent": "components\\WindowControls.js:WindowControls",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Carbon.js:CarbonContainer",
+        "target": "components\\Carbon.js:Carbon",
+        "targetAlias": "Carbon",
+        "targetProp": "copyable",
+        "isPure": true
+      },
+      {
+        "source": "components\\Carbon.js:Carbon",
+        "target": "components\\WindowControls.js:WindowControls",
+        "targetAlias": "WindowControls",
+        "targetProp": "copyable",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Carbon.js:Carbon",
+    "targetComponent": "components\\WindowControls.js:TitleBar",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Carbon.js:Carbon",
+        "target": "components\\WindowControls.js:WindowControls",
+        "targetAlias": "WindowControls",
+        "targetProp": "light",
+        "isPure": true
+      },
+      {
+        "source": "components\\WindowControls.js:WindowControls",
+        "target": "components\\WindowControls.js:TitleBar",
+        "targetAlias": "TitleBar",
+        "targetProp": "light",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Carbon.js:Carbon",
+    "targetComponent": "components\\WindowControls.js:CopyButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "components\\Carbon.js:Carbon",
+        "target": "components\\WindowControls.js:WindowControls",
+        "targetAlias": "WindowControls",
+        "targetProp": "code",
+        "isPure": true
+      },
+      {
+        "source": "components\\WindowControls.js:WindowControls",
+        "target": "components\\WindowControls.js:CopyButton",
+        "targetAlias": "CopyButton",
+        "targetProp": "text",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "components\\Carbon.js:CarbonContainer",
+    "targetComponent": "components\\WidthHandler.js:WidthHandler",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Carbon.js:CarbonContainer",
+        "target": "components\\Carbon.js:Carbon",
+        "targetAlias": "Carbon",
+        "targetProp": "innerRef",
+        "isPure": true
+      },
+      {
+        "source": "components\\Carbon.js:Carbon",
+        "target": "components\\WidthHandler.js:WidthHandler",
+        "targetAlias": "WidthHandler",
+        "targetProp": "innerRef",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Carbon.js:CarbonContainer",
+    "targetComponent": "components\\WidthHandler.js:WidthHandler",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Carbon.js:CarbonContainer",
+        "target": "components\\Carbon.js:Carbon",
+        "targetAlias": "Carbon",
+        "targetProp": "updateWidth",
+        "isPure": true
+      },
+      {
+        "source": "components\\Carbon.js:Carbon",
+        "target": "components\\WidthHandler.js:WidthHandler",
+        "targetAlias": "WidthHandler",
+        "targetProp": "onChange",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\Carbon.js:CarbonContainer",
+    "targetComponent": "components\\WidthHandler.js:WidthHandler",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\Carbon.js:CarbonContainer",
+        "target": "components\\Carbon.js:Carbon",
+        "targetAlias": "Carbon",
+        "targetProp": "updateWidthConfirm",
+        "isPure": true
+      },
+      {
+        "source": "components\\Carbon.js:Carbon",
+        "target": "components\\WidthHandler.js:WidthHandler",
+        "targetAlias": "WidthHandler",
+        "targetProp": "onChangeComplete",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\SelectionEditor.js:SelectionEditor",
+    "targetComponent": "components\\Button.js:Button",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\SelectionEditor.js:SelectionEditor",
+        "target": "components\\SelectionEditor.js:ModifierButton",
+        "targetAlias": "ModifierButton",
+        "targetProp": "onClick",
+        "isPure": true
+      },
+      {
+        "source": "components\\SelectionEditor.js:ModifierButton",
+        "target": "components\\Button.js:Button",
+        "targetAlias": "Button",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\SelectionEditor.js:SelectionEditor",
+    "targetComponent": "components\\WindowPointer.js:WindowPointer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\SelectionEditor.js:SelectionEditor",
+        "target": "components\\Popout.js:Popout",
+        "targetAlias": "Popout",
+        "targetProp": "pointerLeft",
+        "isPure": true
+      },
+      {
+        "source": "components\\Popout.js:Popout",
+        "target": "components\\WindowPointer.js:WindowPointer",
+        "targetAlias": "WindowPointer",
+        "targetProp": "fromLeft",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\SnippetToolbar.js:SnippetToolbar",
+    "targetComponent": "components\\WindowPointer.js:WindowPointer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\SnippetToolbar.js:SnippetToolbar",
+        "target": "components\\Popout.js:Popout",
+        "targetAlias": "Popout",
+        "targetProp": "borderColor",
+        "isPure": false
+      },
+      {
+        "source": "components\\Popout.js:Popout",
+        "target": "components\\WindowPointer.js:WindowPointer",
+        "targetAlias": "WindowPointer",
+        "targetProp": "color",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\SnippetToolbar.js:SnippetToolbar",
+    "targetComponent": "components\\WindowPointer.js:WindowPointer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\SnippetToolbar.js:SnippetToolbar",
+        "target": "components\\Popout.js:Popout",
+        "targetAlias": "Popout",
+        "targetProp": "pointerRight",
+        "isPure": true
+      },
+      {
+        "source": "components\\Popout.js:Popout",
+        "target": "components\\WindowPointer.js:WindowPointer",
+        "targetAlias": "WindowPointer",
+        "targetProp": "fromRight",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\SnippetToolbar.js:SnippetToolbar",
+    "targetComponent": "components\\Button.js:Button",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\SnippetToolbar.js:SnippetToolbar",
+        "target": "components\\SnippetToolbar.js:DuplicateButton",
+        "targetAlias": "DuplicateButton",
+        "targetProp": "onClick",
+        "isPure": false
+      },
+      {
+        "source": "components\\SnippetToolbar.js:DuplicateButton",
+        "target": "components\\Button.js:Button",
+        "targetAlias": "Button",
+        "targetProp": "onClick",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\SnippetToolbar.js:SnippetToolbar",
+    "targetComponent": "components\\Button.js:Button",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\SnippetToolbar.js:SnippetToolbar",
+        "target": "components\\SnippetToolbar.js:SaveButton",
+        "targetAlias": "SaveButton",
+        "targetProp": "loading",
+        "isPure": true
+      },
+      {
+        "source": "components\\SnippetToolbar.js:SaveButton",
+        "target": "components\\Button.js:Button",
+        "targetAlias": "Button",
+        "targetProp": "disabled",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\SnippetToolbar.js:SnippetToolbar",
+    "targetComponent": "components\\Button.js:Button",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\SnippetToolbar.js:SnippetToolbar",
+        "target": "components\\SnippetToolbar.js:SaveButton",
+        "targetAlias": "SaveButton",
+        "targetProp": "onClick",
+        "isPure": false
+      },
+      {
+        "source": "components\\SnippetToolbar.js:SaveButton",
+        "target": "components\\Button.js:Button",
+        "targetAlias": "Button",
+        "targetProp": "onClick",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\snippets.js:Snippets",
+    "targetComponent": "components\\Header.js:Header",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "pages\\snippets.js:Snippets",
+        "target": "components\\Page.js:Page",
+        "targetAlias": "Page",
+        "targetProp": "enableHeroText",
+        "isPure": true
+      },
+      {
+        "source": "components\\Page.js:Page",
+        "target": "components\\Header.js:Header",
+        "targetAlias": "Header",
+        "targetProp": "enableHeroText",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "pages\\snippets.js:Snippet",
+    "targetComponent": "components\\Button.js:Button",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\snippets.js:Snippet",
+        "target": "components\\ConfirmButton.js:ConfirmButton",
+        "targetAlias": "ConfirmButton",
+        "targetProp": "onClick",
+        "isPure": true
+      },
+      {
+        "source": "components\\ConfirmButton.js:ConfirmButton",
+        "target": "components\\Button.js:Button",
+        "targetAlias": "Button",
+        "targetProp": "onClick",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\embed\\index.js:Embed",
+    "targetComponent": "components\\Meta.js:StylesheetLink",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "pages\\embed\\index.js:Embed",
+        "target": "pages\\embed\\index.js:Page",
+        "targetAlias": "Page",
+        "targetProp": "theme",
+        "isPure": true
+      },
+      {
+        "source": "pages\\embed\\index.js:Page",
+        "target": "components\\Meta.js:StylesheetLink",
+        "targetAlias": "StylesheetLink",
+        "targetProp": "theme",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  }
+]

@@ -1,0 +1,4666 @@
+[
+  {
+    "sourceComponent": "components\\display_name\\index.tsx:DisplayName",
+    "targetComponent": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\display_name\\index.tsx:DisplayName",
+        "target": "components\\display_name\\default.tsx:DisplayNameDefault",
+        "targetAlias": "DisplayNameDefault",
+        "targetProp": "className",
+        "isPure": true
+      },
+      {
+        "source": "components\\display_name\\default.tsx:DisplayNameDefault",
+        "target": "components\\display_name\\no-domain.tsx:DisplayNameWithoutDomain",
+        "targetAlias": "DisplayNameWithoutDomain",
+        "targetProp": "className",
+        "isPure": false
+      },
+      {
+        "source": "components\\display_name\\no-domain.tsx:DisplayNameWithoutDomain",
+        "target": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+        "targetAlias": "AnimateEmojiProvider",
+        "targetProp": "className",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications\\components\\policy_controls.tsx:PolicyControls",
+    "targetComponent": "components\\dropdown_selector.tsx:DropdownSelector",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications\\components\\policy_controls.tsx:PolicyControls",
+        "target": "features\\notifications\\components\\select_with_label.tsx:SelectWithLabel",
+        "targetAlias": "SelectWithLabel",
+        "targetProp": "value",
+        "isPure": false
+      },
+      {
+        "source": "features\\notifications\\components\\select_with_label.tsx:SelectWithLabel",
+        "target": "features\\notifications\\components\\select_with_label.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "value",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications\\components\\select_with_label.tsx:Dropdown",
+        "target": "components\\dropdown_selector.tsx:DropdownSelector",
+        "targetAlias": "DropdownSelector",
+        "targetProp": "value",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications\\components\\policy_controls.tsx:PolicyControls",
+    "targetComponent": "components\\dropdown_selector.tsx:DropdownSelector",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications\\components\\policy_controls.tsx:PolicyControls",
+        "target": "features\\notifications\\components\\select_with_label.tsx:SelectWithLabel",
+        "targetAlias": "SelectWithLabel",
+        "targetProp": "onChange",
+        "isPure": false
+      },
+      {
+        "source": "features\\notifications\\components\\select_with_label.tsx:SelectWithLabel",
+        "target": "features\\notifications\\components\\select_with_label.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "onChange",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications\\components\\select_with_label.tsx:Dropdown",
+        "target": "components\\dropdown_selector.tsx:DropdownSelector",
+        "targetAlias": "DropdownSelector",
+        "targetProp": "onChange",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications\\components\\policy_controls.tsx:PolicyControls",
+    "targetComponent": "components\\dropdown_selector.tsx:DropdownSelector",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications\\components\\policy_controls.tsx:PolicyControls",
+        "target": "features\\notifications\\components\\select_with_label.tsx:SelectWithLabel",
+        "targetAlias": "SelectWithLabel",
+        "targetProp": "options",
+        "isPure": false
+      },
+      {
+        "source": "features\\notifications\\components\\select_with_label.tsx:SelectWithLabel",
+        "target": "features\\notifications\\components\\select_with_label.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "options",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications\\components\\select_with_label.tsx:Dropdown",
+        "target": "components\\dropdown_selector.tsx:DropdownSelector",
+        "targetAlias": "DropdownSelector",
+        "targetProp": "items",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\account_featured\\index.tsx:AccountFeatured",
+    "targetComponent": "components\\follow_button.tsx:FollowButton",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\account_featured\\index.tsx:AccountFeatured",
+        "target": "features\\account_featured\\index.tsx:AccountFeaturedWrapper",
+        "targetAlias": "AccountFeaturedWrapper",
+        "targetProp": "accountId",
+        "isPure": false
+      },
+      {
+        "source": "features\\account_featured\\index.tsx:AccountFeaturedWrapper",
+        "target": "features\\account_timeline\\components\\account_header.tsx:AccountHeader",
+        "targetAlias": "AccountHeader",
+        "targetProp": "accountId",
+        "isPure": false
+      },
+      {
+        "source": "features\\account_timeline\\components\\account_header.tsx:AccountHeader",
+        "target": "components\\follow_button.tsx:FollowButton",
+        "targetAlias": "FollowButton",
+        "targetProp": "accountId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\account_featured\\index.tsx:AccountFeatured",
+    "targetComponent": "features\\account_timeline\\components\\familiar_followers.tsx:FamiliarFollowers",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\account_featured\\index.tsx:AccountFeatured",
+        "target": "features\\account_featured\\index.tsx:AccountFeaturedWrapper",
+        "targetAlias": "AccountFeaturedWrapper",
+        "targetProp": "accountId",
+        "isPure": false
+      },
+      {
+        "source": "features\\account_featured\\index.tsx:AccountFeaturedWrapper",
+        "target": "features\\account_timeline\\components\\account_header.tsx:AccountHeader",
+        "targetAlias": "AccountHeader",
+        "targetProp": "accountId",
+        "isPure": false
+      },
+      {
+        "source": "features\\account_timeline\\components\\account_header.tsx:AccountHeader",
+        "target": "features\\account_timeline\\components\\familiar_followers.tsx:FamiliarFollowers",
+        "targetAlias": "FamiliarFollowers",
+        "targetProp": "accountId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\account_featured\\index.tsx:AccountFeatured",
+    "targetComponent": "features\\account\\components\\account_note.tsx:AccountNote",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\account_featured\\index.tsx:AccountFeatured",
+        "target": "features\\account_featured\\index.tsx:AccountFeaturedWrapper",
+        "targetAlias": "AccountFeaturedWrapper",
+        "targetProp": "accountId",
+        "isPure": false
+      },
+      {
+        "source": "features\\account_featured\\index.tsx:AccountFeaturedWrapper",
+        "target": "features\\account_timeline\\components\\account_header.tsx:AccountHeader",
+        "targetAlias": "AccountHeader",
+        "targetProp": "accountId",
+        "isPure": false
+      },
+      {
+        "source": "features\\account_timeline\\components\\account_header.tsx:AccountHeader",
+        "target": "features\\account\\components\\account_note.tsx:AccountNote",
+        "targetAlias": "AccountNote",
+        "targetProp": "accountId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\hover_card_account.tsx:HoverCardAccount",
+    "targetComponent": "components\\emoji\\context.tsx:CustomEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\hover_card_account.tsx:HoverCardAccount",
+        "target": "components\\account_fields.tsx:AccountFields",
+        "targetAlias": "AccountFields",
+        "targetProp": "emojis",
+        "isPure": true
+      },
+      {
+        "source": "components\\account_fields.tsx:AccountFields",
+        "target": "components\\emoji\\html.tsx:EmojiHTML",
+        "targetAlias": "EmojiHTML",
+        "targetProp": "extraEmojis",
+        "isPure": true
+      },
+      {
+        "source": "components\\emoji\\html.tsx:EmojiHTML",
+        "target": "components\\emoji\\context.tsx:CustomEmojiProvider",
+        "targetAlias": "CustomEmojiProvider",
+        "targetProp": "emojis",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\display_name\\simple.tsx:DisplayNameSimple",
+    "targetComponent": "components\\emoji\\context.tsx:CustomEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "components\\display_name\\simple.tsx:DisplayNameSimple",
+        "target": "components\\emoji\\html.tsx:EmojiHTML",
+        "targetAlias": "EmojiHTML",
+        "targetProp": "extraEmojis",
+        "isPure": true
+      },
+      {
+        "source": "components\\emoji\\html.tsx:EmojiHTML",
+        "target": "components\\emoji\\context.tsx:CustomEmojiProvider",
+        "targetAlias": "CustomEmojiProvider",
+        "targetProp": "emojis",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "components\\display_name\\simple.tsx:DisplayNameSimple",
+    "targetComponent": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\display_name\\simple.tsx:DisplayNameSimple",
+        "target": "components\\emoji\\html.tsx:EmojiHTML",
+        "targetAlias": "EmojiHTML",
+        "targetProp": "as",
+        "isPure": true
+      },
+      {
+        "source": "components\\emoji\\html.tsx:EmojiHTML",
+        "target": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+        "targetAlias": "AnimateEmojiProvider",
+        "targetProp": "as",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\display_name\\simple.tsx:DisplayNameSimple",
+    "targetComponent": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\display_name\\simple.tsx:DisplayNameSimple",
+        "target": "components\\emoji\\html.tsx:EmojiHTML",
+        "targetAlias": "EmojiHTML",
+        "targetProp": "className",
+        "isPure": true
+      },
+      {
+        "source": "components\\emoji\\html.tsx:EmojiHTML",
+        "target": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+        "targetAlias": "AnimateEmojiProvider",
+        "targetProp": "className",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\display_name\\index.tsx:DisplayName",
+    "targetComponent": "components\\display_name\\no-domain.tsx:DisplayNameWithoutDomain",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\display_name\\index.tsx:DisplayName",
+        "target": "components\\display_name\\default.tsx:DisplayNameDefault",
+        "targetAlias": "DisplayNameDefault",
+        "targetProp": "account",
+        "isPure": true
+      },
+      {
+        "source": "components\\display_name\\default.tsx:DisplayNameDefault",
+        "target": "components\\display_name\\no-domain.tsx:DisplayNameWithoutDomain",
+        "targetAlias": "DisplayNameWithoutDomain",
+        "targetProp": "account",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\display_name\\index.tsx:DisplayName",
+    "targetComponent": "components\\display_name\\no-domain.tsx:DisplayNameWithoutDomain",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\display_name\\index.tsx:DisplayName",
+        "target": "components\\display_name\\default.tsx:DisplayNameDefault",
+        "targetAlias": "DisplayNameDefault",
+        "targetProp": "localDomain",
+        "isPure": true
+      },
+      {
+        "source": "components\\display_name\\default.tsx:DisplayNameDefault",
+        "target": "components\\display_name\\no-domain.tsx:DisplayNameWithoutDomain",
+        "targetAlias": "DisplayNameWithoutDomain",
+        "targetProp": "localDomain",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\display_name\\default.tsx:DisplayNameDefault",
+    "targetComponent": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\display_name\\default.tsx:DisplayNameDefault",
+        "target": "components\\display_name\\no-domain.tsx:DisplayNameWithoutDomain",
+        "targetAlias": "DisplayNameWithoutDomain",
+        "targetProp": "children",
+        "isPure": true
+      },
+      {
+        "source": "components\\display_name\\no-domain.tsx:DisplayNameWithoutDomain",
+        "target": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+        "targetAlias": "AnimateEmojiProvider",
+        "targetProp": "children",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\display_name\\no-domain.tsx:DisplayNameWithoutDomain",
+    "targetComponent": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\display_name\\no-domain.tsx:DisplayNameWithoutDomain",
+        "target": "components\\emoji\\html.tsx:EmojiHTML",
+        "targetAlias": "EmojiHTML",
+        "targetProp": "className",
+        "isPure": true
+      },
+      {
+        "source": "components\\emoji\\html.tsx:EmojiHTML",
+        "target": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+        "targetAlias": "AnimateEmojiProvider",
+        "targetProp": "className",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\display_name\\no-domain.tsx:DisplayNameWithoutDomain",
+    "targetComponent": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\display_name\\no-domain.tsx:DisplayNameWithoutDomain",
+        "target": "components\\emoji\\html.tsx:EmojiHTML",
+        "targetAlias": "EmojiHTML",
+        "targetProp": "as",
+        "isPure": false
+      },
+      {
+        "source": "components\\emoji\\html.tsx:EmojiHTML",
+        "target": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+        "targetAlias": "AnimateEmojiProvider",
+        "targetProp": "as",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\status\\components\\detailed_status.tsx:DetailedStatus",
+    "targetComponent": "components\\status_banner.tsx:StatusBanner",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\status\\components\\detailed_status.tsx:DetailedStatus",
+        "target": "components\\filter_warning.tsx:FilterWarning",
+        "targetAlias": "FilterWarning",
+        "targetProp": "expanded",
+        "isPure": false
+      },
+      {
+        "source": "components\\filter_warning.tsx:FilterWarning",
+        "target": "components\\status_banner.tsx:StatusBanner",
+        "targetAlias": "StatusBanner",
+        "targetProp": "expanded",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\status\\components\\detailed_status.tsx:DetailedStatus",
+    "targetComponent": "components\\status_banner.tsx:StatusBanner",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\status\\components\\detailed_status.tsx:DetailedStatus",
+        "target": "components\\filter_warning.tsx:FilterWarning",
+        "targetAlias": "FilterWarning",
+        "targetProp": "onClick",
+        "isPure": false
+      },
+      {
+        "source": "components\\filter_warning.tsx:FilterWarning",
+        "target": "components\\status_banner.tsx:StatusBanner",
+        "targetAlias": "StatusBanner",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\annual_report\\highlighted_post.tsx:HighlightedPost",
+    "targetComponent": "components\\content_warning.tsx:ContentWarning",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\annual_report\\highlighted_post.tsx:HighlightedPost",
+        "target": "features\\status\\components\\detailed_status.tsx:DetailedStatus",
+        "targetAlias": "DetailedStatus",
+        "targetProp": "status",
+        "isPure": false
+      },
+      {
+        "source": "features\\status\\components\\detailed_status.tsx:DetailedStatus",
+        "target": "components\\content_warning.tsx:ContentWarning",
+        "targetAlias": "ContentWarning",
+        "targetProp": "status",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\status\\components\\detailed_status.tsx:DetailedStatus",
+    "targetComponent": "components\\status_banner.tsx:StatusBanner",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\status\\components\\detailed_status.tsx:DetailedStatus",
+        "target": "components\\content_warning.tsx:ContentWarning",
+        "targetAlias": "ContentWarning",
+        "targetProp": "expanded",
+        "isPure": false
+      },
+      {
+        "source": "components\\content_warning.tsx:ContentWarning",
+        "target": "components\\status_banner.tsx:StatusBanner",
+        "targetAlias": "StatusBanner",
+        "targetProp": "expanded",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\status\\components\\detailed_status.tsx:DetailedStatus",
+    "targetComponent": "components\\status_banner.tsx:StatusBanner",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\status\\components\\detailed_status.tsx:DetailedStatus",
+        "target": "components\\content_warning.tsx:ContentWarning",
+        "targetAlias": "ContentWarning",
+        "targetProp": "onClick",
+        "isPure": false
+      },
+      {
+        "source": "components\\content_warning.tsx:ContentWarning",
+        "target": "components\\status_banner.tsx:StatusBanner",
+        "targetAlias": "StatusBanner",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\content_warning.tsx:ContentWarning",
+    "targetComponent": "components\\emoji\\context.tsx:CustomEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "components\\content_warning.tsx:ContentWarning",
+        "target": "components\\emoji\\html.tsx:EmojiHTML",
+        "targetAlias": "EmojiHTML",
+        "targetProp": "extraEmojis",
+        "isPure": true
+      },
+      {
+        "source": "components\\emoji\\html.tsx:EmojiHTML",
+        "target": "components\\emoji\\context.tsx:CustomEmojiProvider",
+        "targetAlias": "CustomEmojiProvider",
+        "targetProp": "emojis",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "components\\content_warning.tsx:ContentWarning",
+    "targetComponent": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\content_warning.tsx:ContentWarning",
+        "target": "components\\emoji\\html.tsx:EmojiHTML",
+        "targetAlias": "EmojiHTML",
+        "targetProp": "as",
+        "isPure": true
+      },
+      {
+        "source": "components\\emoji\\html.tsx:EmojiHTML",
+        "target": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+        "targetAlias": "AnimateEmojiProvider",
+        "targetProp": "as",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\annual_report\\highlighted_post.tsx:HighlightedPost",
+    "targetComponent": "components\\status_content.jsx:StatusContent",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\annual_report\\highlighted_post.tsx:HighlightedPost",
+        "target": "features\\status\\components\\detailed_status.tsx:DetailedStatus",
+        "targetAlias": "DetailedStatus",
+        "targetProp": "status",
+        "isPure": false
+      },
+      {
+        "source": "features\\status\\components\\detailed_status.tsx:DetailedStatus",
+        "target": "components\\status_content.jsx:StatusContent",
+        "targetAlias": "StatusContent",
+        "targetProp": "status",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\status_content.jsx:StatusContent",
+    "targetComponent": "components\\emoji\\context.tsx:CustomEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "components\\status_content.jsx:StatusContent",
+        "target": "components\\emoji\\html.tsx:EmojiHTML",
+        "targetAlias": "EmojiHTML",
+        "targetProp": "extraEmojis",
+        "isPure": true
+      },
+      {
+        "source": "components\\emoji\\html.tsx:EmojiHTML",
+        "target": "components\\emoji\\context.tsx:CustomEmojiProvider",
+        "targetAlias": "CustomEmojiProvider",
+        "targetProp": "emojis",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "components\\status_content.jsx:StatusContent",
+    "targetComponent": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\status_content.jsx:StatusContent",
+        "target": "components\\emoji\\html.tsx:EmojiHTML",
+        "targetAlias": "EmojiHTML",
+        "targetProp": "className",
+        "isPure": true
+      },
+      {
+        "source": "components\\emoji\\html.tsx:EmojiHTML",
+        "target": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+        "targetAlias": "AnimateEmojiProvider",
+        "targetProp": "className",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\edited_timestamp\\index.tsx:EditedTimestamp",
+    "targetComponent": "components\\dropdown_menu.tsx:DropdownMenu",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\edited_timestamp\\index.tsx:EditedTimestamp",
+        "target": "components\\dropdown_menu.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "items",
+        "isPure": false
+      },
+      {
+        "source": "components\\dropdown_menu.tsx:Dropdown",
+        "target": "components\\dropdown_menu.tsx:DropdownMenu",
+        "targetAlias": "DropdownMenu",
+        "targetProp": "items",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\edited_timestamp\\index.tsx:EditedTimestamp",
+    "targetComponent": "components\\dropdown_menu.tsx:DropdownMenu",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\edited_timestamp\\index.tsx:EditedTimestamp",
+        "target": "components\\dropdown_menu.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "loading",
+        "isPure": false
+      },
+      {
+        "source": "components\\dropdown_menu.tsx:Dropdown",
+        "target": "components\\dropdown_menu.tsx:DropdownMenu",
+        "targetAlias": "DropdownMenu",
+        "targetProp": "loading",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\edited_timestamp\\index.tsx:EditedTimestamp",
+    "targetComponent": "components\\dropdown_menu.tsx:DropdownMenu",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\edited_timestamp\\index.tsx:EditedTimestamp",
+        "target": "components\\dropdown_menu.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "renderItem",
+        "isPure": false
+      },
+      {
+        "source": "components\\dropdown_menu.tsx:Dropdown",
+        "target": "components\\dropdown_menu.tsx:DropdownMenu",
+        "targetAlias": "DropdownMenu",
+        "targetProp": "renderItem",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\edited_timestamp\\index.tsx:EditedTimestamp",
+    "targetComponent": "components\\dropdown_menu.tsx:DropdownMenu",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\edited_timestamp\\index.tsx:EditedTimestamp",
+        "target": "components\\dropdown_menu.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "renderHeader",
+        "isPure": false
+      },
+      {
+        "source": "components\\dropdown_menu.tsx:Dropdown",
+        "target": "components\\dropdown_menu.tsx:DropdownMenu",
+        "targetAlias": "DropdownMenu",
+        "targetProp": "renderHeader",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\edited_timestamp\\index.tsx:EditedTimestamp",
+    "targetComponent": "components\\dropdown_menu.tsx:DropdownMenu",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\edited_timestamp\\index.tsx:EditedTimestamp",
+        "target": "components\\dropdown_menu.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "onItemClick",
+        "isPure": false
+      },
+      {
+        "source": "components\\dropdown_menu.tsx:Dropdown",
+        "target": "components\\dropdown_menu.tsx:DropdownMenu",
+        "targetAlias": "DropdownMenu",
+        "targetProp": "onItemClick",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\embedded_status.tsx:EmbeddedStatus",
+    "targetComponent": "components\\status_banner.tsx:StatusBanner",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\embedded_status.tsx:EmbeddedStatus",
+        "target": "components\\content_warning.tsx:ContentWarning",
+        "targetAlias": "ContentWarning",
+        "targetProp": "onClick",
+        "isPure": false
+      },
+      {
+        "source": "components\\content_warning.tsx:ContentWarning",
+        "target": "components\\status_banner.tsx:StatusBanner",
+        "targetAlias": "StatusBanner",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\embedded_status.tsx:EmbeddedStatus",
+    "targetComponent": "components\\status_banner.tsx:StatusBanner",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\embedded_status.tsx:EmbeddedStatus",
+        "target": "components\\content_warning.tsx:ContentWarning",
+        "targetAlias": "ContentWarning",
+        "targetProp": "expanded",
+        "isPure": false
+      },
+      {
+        "source": "components\\content_warning.tsx:ContentWarning",
+        "target": "components\\status_banner.tsx:StatusBanner",
+        "targetAlias": "StatusBanner",
+        "targetProp": "expanded",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ui\\components\\boost_modal.tsx:BoostModal",
+    "targetComponent": "components\\dropdown_selector.tsx:DropdownSelector",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ui\\components\\boost_modal.tsx:BoostModal",
+        "target": "features\\compose\\components\\privacy_dropdown.jsx:PrivacyDropdown",
+        "targetAlias": "PrivacyDropdown",
+        "targetProp": "value",
+        "isPure": false
+      },
+      {
+        "source": "features\\compose\\components\\privacy_dropdown.jsx:PrivacyDropdown",
+        "target": "components\\dropdown_selector.tsx:DropdownSelector",
+        "targetAlias": "DropdownSelector",
+        "targetProp": "value",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\server_banner.jsx:ServerBanner",
+    "targetComponent": "components\\blurhash.tsx:Blurhash",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\server_banner.jsx:ServerBanner",
+        "target": "components\\server_hero_image.tsx:ServerHeroImage",
+        "targetAlias": "ServerHeroImage",
+        "targetProp": "blurhash",
+        "isPure": true
+      },
+      {
+        "source": "components\\server_hero_image.tsx:ServerHeroImage",
+        "target": "components\\blurhash.tsx:Blurhash",
+        "targetAlias": "Blurhash",
+        "targetProp": "hash",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\account\\index.tsx:Account",
+    "targetComponent": "components\\dropdown_menu.tsx:DropdownMenu",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\account\\index.tsx:Account",
+        "target": "components\\dropdown_menu.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "items",
+        "isPure": false
+      },
+      {
+        "source": "components\\dropdown_menu.tsx:Dropdown",
+        "target": "components\\dropdown_menu.tsx:DropdownMenu",
+        "targetAlias": "DropdownMenu",
+        "targetProp": "items",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\server_banner.jsx:ServerBanner",
+    "targetComponent": "components\\avatar.tsx:Avatar",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\server_banner.jsx:ServerBanner",
+        "target": "components\\account\\index.tsx:Account",
+        "targetAlias": "Account",
+        "targetProp": "size",
+        "isPure": true
+      },
+      {
+        "source": "components\\account\\index.tsx:Account",
+        "target": "components\\avatar.tsx:Avatar",
+        "targetAlias": "Avatar",
+        "targetProp": "size",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\server_banner.jsx:ServerBanner",
+    "targetComponent": "components\\skeleton.tsx:Skeleton",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\server_banner.jsx:ServerBanner",
+        "target": "components\\account\\index.tsx:Account",
+        "targetAlias": "Account",
+        "targetProp": "size",
+        "isPure": true
+      },
+      {
+        "source": "components\\account\\index.tsx:Account",
+        "target": "components\\skeleton.tsx:Skeleton",
+        "targetAlias": "Skeleton",
+        "targetProp": "width",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ui\\components\\mute_modal.jsx:MuteModal",
+    "targetComponent": "components\\radio_button.tsx:RadioButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ui\\components\\mute_modal.jsx:MuteModal",
+        "target": "features\\ui\\components\\mute_modal.jsx:RadioButtonLabel",
+        "targetAlias": "RadioButtonLabel",
+        "targetProp": "name",
+        "isPure": true
+      },
+      {
+        "source": "features\\ui\\components\\mute_modal.jsx:RadioButtonLabel",
+        "target": "components\\radio_button.tsx:RadioButton",
+        "targetAlias": "RadioButton",
+        "targetProp": "name",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ui\\components\\mute_modal.jsx:MuteModal",
+    "targetComponent": "components\\radio_button.tsx:RadioButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ui\\components\\mute_modal.jsx:MuteModal",
+        "target": "features\\ui\\components\\mute_modal.jsx:RadioButtonLabel",
+        "targetAlias": "RadioButtonLabel",
+        "targetProp": "value",
+        "isPure": true
+      },
+      {
+        "source": "features\\ui\\components\\mute_modal.jsx:RadioButtonLabel",
+        "target": "components\\radio_button.tsx:RadioButton",
+        "targetAlias": "RadioButton",
+        "targetProp": "value",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ui\\components\\mute_modal.jsx:MuteModal",
+    "targetComponent": "components\\radio_button.tsx:RadioButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ui\\components\\mute_modal.jsx:MuteModal",
+        "target": "features\\ui\\components\\mute_modal.jsx:RadioButtonLabel",
+        "targetAlias": "RadioButtonLabel",
+        "targetProp": "label",
+        "isPure": true
+      },
+      {
+        "source": "features\\ui\\components\\mute_modal.jsx:RadioButtonLabel",
+        "target": "components\\radio_button.tsx:RadioButton",
+        "targetAlias": "RadioButton",
+        "targetProp": "label",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ui\\components\\mute_modal.jsx:MuteModal",
+    "targetComponent": "components\\radio_button.tsx:RadioButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ui\\components\\mute_modal.jsx:MuteModal",
+        "target": "features\\ui\\components\\mute_modal.jsx:RadioButtonLabel",
+        "targetAlias": "RadioButtonLabel",
+        "targetProp": "onChange",
+        "isPure": false
+      },
+      {
+        "source": "features\\ui\\components\\mute_modal.jsx:RadioButtonLabel",
+        "target": "components\\radio_button.tsx:RadioButton",
+        "targetAlias": "RadioButton",
+        "targetProp": "onChange",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ui\\components\\confirmation_modals\\discard_draft_confirmation.tsx:ConfirmReplyModal",
+    "targetComponent": "features\\ui\\components\\confirmation_modals\\confirmation_modal.tsx:ConfirmationModal",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ui\\components\\confirmation_modals\\discard_draft_confirmation.tsx:ConfirmReplyModal",
+        "target": "features\\ui\\components\\confirmation_modals\\discard_draft_confirmation.tsx:DiscardDraftConfirmationModal",
+        "targetAlias": "DiscardDraftConfirmationModal",
+        "targetProp": "onConfirm",
+        "isPure": false
+      },
+      {
+        "source": "features\\ui\\components\\confirmation_modals\\discard_draft_confirmation.tsx:DiscardDraftConfirmationModal",
+        "target": "features\\ui\\components\\confirmation_modals\\confirmation_modal.tsx:ConfirmationModal",
+        "targetAlias": "ConfirmationModal",
+        "targetProp": "onConfirm",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ui\\components\\confirmation_modals\\discard_draft_confirmation.tsx:ConfirmReplyModal",
+    "targetComponent": "features\\ui\\components\\confirmation_modals\\confirmation_modal.tsx:ConfirmationModal",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ui\\components\\confirmation_modals\\discard_draft_confirmation.tsx:ConfirmReplyModal",
+        "target": "features\\ui\\components\\confirmation_modals\\discard_draft_confirmation.tsx:DiscardDraftConfirmationModal",
+        "targetAlias": "DiscardDraftConfirmationModal",
+        "targetProp": "onClose",
+        "isPure": true
+      },
+      {
+        "source": "features\\ui\\components\\confirmation_modals\\discard_draft_confirmation.tsx:DiscardDraftConfirmationModal",
+        "target": "features\\ui\\components\\confirmation_modals\\confirmation_modal.tsx:ConfirmationModal",
+        "targetAlias": "ConfirmationModal",
+        "targetProp": "onClose",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ui\\components\\confirmation_modals\\discard_draft_confirmation.tsx:ConfirmEditStatusModal",
+    "targetComponent": "features\\ui\\components\\confirmation_modals\\confirmation_modal.tsx:ConfirmationModal",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ui\\components\\confirmation_modals\\discard_draft_confirmation.tsx:ConfirmEditStatusModal",
+        "target": "features\\ui\\components\\confirmation_modals\\discard_draft_confirmation.tsx:DiscardDraftConfirmationModal",
+        "targetAlias": "DiscardDraftConfirmationModal",
+        "targetProp": "onConfirm",
+        "isPure": false
+      },
+      {
+        "source": "features\\ui\\components\\confirmation_modals\\discard_draft_confirmation.tsx:DiscardDraftConfirmationModal",
+        "target": "features\\ui\\components\\confirmation_modals\\confirmation_modal.tsx:ConfirmationModal",
+        "targetAlias": "ConfirmationModal",
+        "targetProp": "onConfirm",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ui\\components\\confirmation_modals\\discard_draft_confirmation.tsx:ConfirmEditStatusModal",
+    "targetComponent": "features\\ui\\components\\confirmation_modals\\confirmation_modal.tsx:ConfirmationModal",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ui\\components\\confirmation_modals\\discard_draft_confirmation.tsx:ConfirmEditStatusModal",
+        "target": "features\\ui\\components\\confirmation_modals\\discard_draft_confirmation.tsx:DiscardDraftConfirmationModal",
+        "targetAlias": "DiscardDraftConfirmationModal",
+        "targetProp": "onClose",
+        "isPure": true
+      },
+      {
+        "source": "features\\ui\\components\\confirmation_modals\\discard_draft_confirmation.tsx:DiscardDraftConfirmationModal",
+        "target": "features\\ui\\components\\confirmation_modals\\confirmation_modal.tsx:ConfirmationModal",
+        "targetAlias": "ConfirmationModal",
+        "targetProp": "onClose",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\status\\components\\action_bar.jsx:ActionBar",
+    "targetComponent": "components\\dropdown_menu.tsx:DropdownMenu",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\status\\components\\action_bar.jsx:ActionBar",
+        "target": "components\\dropdown_menu.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "items",
+        "isPure": true
+      },
+      {
+        "source": "components\\dropdown_menu.tsx:Dropdown",
+        "target": "components\\dropdown_menu.tsx:DropdownMenu",
+        "targetAlias": "DropdownMenu",
+        "targetProp": "items",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\status\\components\\refresh_controller.tsx:RefreshController",
+    "targetComponent": "components\\alert\\index.tsx:Alert",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\status\\components\\refresh_controller.tsx:RefreshController",
+        "target": "features\\status\\components\\refresh_controller.tsx:AnimatedAlert",
+        "targetAlias": "AnimatedAlert",
+        "targetProp": "isActive",
+        "isPure": true
+      },
+      {
+        "source": "features\\status\\components\\refresh_controller.tsx:AnimatedAlert",
+        "target": "components\\alert\\index.tsx:Alert",
+        "targetAlias": "Alert",
+        "targetProp": "isActive",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\status\\components\\refresh_controller.tsx:AnimatedAlert",
+    "targetComponent": "components\\icon_button.tsx:IconButton",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\status\\components\\refresh_controller.tsx:AnimatedAlert",
+        "target": "components\\alert\\index.tsx:Alert",
+        "targetAlias": "Alert",
+        "targetProp": "onDismiss",
+        "isPure": true
+      },
+      {
+        "source": "components\\alert\\index.tsx:Alert",
+        "target": "components\\icon_button.tsx:IconButton",
+        "targetAlias": "IconButton",
+        "targetProp": "onClick",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\standalone\\status\\index.tsx:Embed",
+    "targetComponent": "components\\content_warning.tsx:ContentWarning",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\standalone\\status\\index.tsx:Embed",
+        "target": "features\\status\\components\\detailed_status.tsx:DetailedStatus",
+        "targetAlias": "DetailedStatus",
+        "targetProp": "status",
+        "isPure": false
+      },
+      {
+        "source": "features\\status\\components\\detailed_status.tsx:DetailedStatus",
+        "target": "components\\content_warning.tsx:ContentWarning",
+        "targetAlias": "ContentWarning",
+        "targetProp": "status",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\standalone\\status\\index.tsx:Embed",
+    "targetComponent": "components\\status_content.jsx:StatusContent",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\standalone\\status\\index.tsx:Embed",
+        "target": "features\\status\\components\\detailed_status.tsx:DetailedStatus",
+        "targetAlias": "DetailedStatus",
+        "targetProp": "status",
+        "isPure": false
+      },
+      {
+        "source": "features\\status\\components\\detailed_status.tsx:DetailedStatus",
+        "target": "components\\status_content.jsx:StatusContent",
+        "targetAlias": "StatusContent",
+        "targetProp": "status",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\search\\index.tsx:SearchResults",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\search\\index.tsx:SearchResults",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": false
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\search\\index.tsx:SearchResults",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\search\\index.tsx:SearchResults",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": false
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\report\\statuses.jsx:Statuses",
+    "targetComponent": "features\\report\\components\\option.jsx:Option",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\report\\statuses.jsx:Statuses",
+        "target": "features\\report\\components\\status_check_box.jsx:StatusCheckBox",
+        "targetAlias": "StatusCheckBox",
+        "targetProp": "checked",
+        "isPure": true
+      },
+      {
+        "source": "features\\report\\components\\status_check_box.jsx:StatusCheckBox",
+        "target": "features\\report\\components\\option.jsx:Option",
+        "targetAlias": "Option",
+        "targetProp": "checked",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\public_timeline\\index.jsx:PublicTimeline",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\public_timeline\\index.jsx:PublicTimeline",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\public_timeline\\index.jsx:PublicTimeline",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\public_timeline\\index.jsx:PublicTimeline",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\onboarding\\follows.tsx:Follows",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\onboarding\\follows.tsx:Follows",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\onboarding\\follows.tsx:Follows",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\onboarding\\follows.tsx:Follows",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\onboarding\\profile.tsx:Profile",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\onboarding\\profile.tsx:Profile",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\onboarding\\profile.tsx:Profile",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\onboarding\\profile.tsx:Profile",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\index.tsx:Notifications",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\index.tsx:Notifications",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\index.tsx:Notifications",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\index.tsx:Notifications",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_admin_sign_up.tsx:NotificationAdminSignUp",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_admin_sign_up.tsx:NotificationAdminSignUp",
+        "target": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "targetAlias": "NotificationGroupWithStatus",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "icon",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_admin_sign_up.tsx:NotificationAdminSignUp",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_admin_sign_up.tsx:NotificationAdminSignUp",
+        "target": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "targetAlias": "NotificationGroupWithStatus",
+        "targetProp": "iconId",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_admin_sign_up.tsx:NotificationAdminSignUp",
+    "targetComponent": "components\\relative_timestamp.tsx:RelativeTimestamp",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_admin_sign_up.tsx:NotificationAdminSignUp",
+        "target": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "targetAlias": "NotificationGroupWithStatus",
+        "targetProp": "timestamp",
+        "isPure": false
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "target": "components\\relative_timestamp.tsx:RelativeTimestamp",
+        "targetAlias": "RelativeTimestamp",
+        "targetProp": "timestamp",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_favourite.tsx:NotificationFavourite",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_favourite.tsx:NotificationFavourite",
+        "target": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "targetAlias": "NotificationGroupWithStatus",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "icon",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_favourite.tsx:NotificationFavourite",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_favourite.tsx:NotificationFavourite",
+        "target": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "targetAlias": "NotificationGroupWithStatus",
+        "targetProp": "iconId",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_favourite.tsx:NotificationFavourite",
+    "targetComponent": "components\\relative_timestamp.tsx:RelativeTimestamp",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_favourite.tsx:NotificationFavourite",
+        "target": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "targetAlias": "NotificationGroupWithStatus",
+        "targetProp": "timestamp",
+        "isPure": false
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "target": "components\\relative_timestamp.tsx:RelativeTimestamp",
+        "targetAlias": "RelativeTimestamp",
+        "targetProp": "timestamp",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_favourite.tsx:NotificationFavourite",
+    "targetComponent": "features\\notifications_v2\\components\\embedded_status.tsx:EmbeddedStatus",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_favourite.tsx:NotificationFavourite",
+        "target": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "targetAlias": "NotificationGroupWithStatus",
+        "targetProp": "statusId",
+        "isPure": false
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "target": "features\\notifications_v2\\components\\embedded_status.tsx:EmbeddedStatus",
+        "targetAlias": "EmbeddedStatus",
+        "targetProp": "statusId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_follow.tsx:NotificationFollow",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_follow.tsx:NotificationFollow",
+        "target": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "targetAlias": "NotificationGroupWithStatus",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "icon",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_follow.tsx:NotificationFollow",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_follow.tsx:NotificationFollow",
+        "target": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "targetAlias": "NotificationGroupWithStatus",
+        "targetProp": "iconId",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_follow.tsx:NotificationFollow",
+    "targetComponent": "components\\relative_timestamp.tsx:RelativeTimestamp",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_follow.tsx:NotificationFollow",
+        "target": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "targetAlias": "NotificationGroupWithStatus",
+        "targetProp": "timestamp",
+        "isPure": false
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "target": "components\\relative_timestamp.tsx:RelativeTimestamp",
+        "targetAlias": "RelativeTimestamp",
+        "targetProp": "timestamp",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_follow_request.tsx:NotificationFollowRequest",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_follow_request.tsx:NotificationFollowRequest",
+        "target": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "targetAlias": "NotificationGroupWithStatus",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "icon",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_follow_request.tsx:NotificationFollowRequest",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_follow_request.tsx:NotificationFollowRequest",
+        "target": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "targetAlias": "NotificationGroupWithStatus",
+        "targetProp": "iconId",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_follow_request.tsx:NotificationFollowRequest",
+    "targetComponent": "components\\relative_timestamp.tsx:RelativeTimestamp",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_follow_request.tsx:NotificationFollowRequest",
+        "target": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "targetAlias": "NotificationGroupWithStatus",
+        "targetProp": "timestamp",
+        "isPure": false
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "target": "components\\relative_timestamp.tsx:RelativeTimestamp",
+        "targetAlias": "RelativeTimestamp",
+        "targetProp": "timestamp",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_mention.tsx:NotificationMention",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_mention.tsx:NotificationMention",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "icon",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_mention.tsx:NotificationMention",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_mention.tsx:NotificationMention",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "iconId",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_mention.tsx:NotificationMention",
+    "targetComponent": "components\\status_quoted.tsx:StatusQuoteManager",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_mention.tsx:NotificationMention",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "statusId",
+        "isPure": false
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\status_quoted.tsx:StatusQuoteManager",
+        "targetAlias": "StatusQuoteManager",
+        "targetProp": "id",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+    "targetComponent": "components\\status_quoted.tsx:QuotedStatus",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\status_quoted.tsx:StatusQuoteManager",
+        "targetAlias": "StatusQuoteManager",
+        "targetProp": "contextType",
+        "isPure": true
+      },
+      {
+        "source": "components\\status_quoted.tsx:StatusQuoteManager",
+        "target": "components\\status_quoted.tsx:QuotedStatus",
+        "targetAlias": "QuotedStatus",
+        "targetProp": "contextType",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_poll.tsx:NotificationPoll",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_poll.tsx:NotificationPoll",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "icon",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_poll.tsx:NotificationPoll",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_poll.tsx:NotificationPoll",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "iconId",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_poll.tsx:NotificationPoll",
+    "targetComponent": "components\\status_quoted.tsx:StatusQuoteManager",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_poll.tsx:NotificationPoll",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "statusId",
+        "isPure": false
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\status_quoted.tsx:StatusQuoteManager",
+        "targetAlias": "StatusQuoteManager",
+        "targetProp": "id",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_quote.tsx:NotificationQuote",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_quote.tsx:NotificationQuote",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "icon",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_quote.tsx:NotificationQuote",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_quote.tsx:NotificationQuote",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "iconId",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_quote.tsx:NotificationQuote",
+    "targetComponent": "components\\status_quoted.tsx:StatusQuoteManager",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_quote.tsx:NotificationQuote",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "statusId",
+        "isPure": false
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\status_quoted.tsx:StatusQuoteManager",
+        "targetAlias": "StatusQuoteManager",
+        "targetProp": "id",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_quoted_update.tsx:NotificationQuotedUpdate",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_quoted_update.tsx:NotificationQuotedUpdate",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "icon",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_quoted_update.tsx:NotificationQuotedUpdate",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_quoted_update.tsx:NotificationQuotedUpdate",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "iconId",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_quoted_update.tsx:NotificationQuotedUpdate",
+    "targetComponent": "components\\status_quoted.tsx:StatusQuoteManager",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_quoted_update.tsx:NotificationQuotedUpdate",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "statusId",
+        "isPure": false
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\status_quoted.tsx:StatusQuoteManager",
+        "targetAlias": "StatusQuoteManager",
+        "targetProp": "id",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_reblog.tsx:NotificationReblog",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_reblog.tsx:NotificationReblog",
+        "target": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "targetAlias": "NotificationGroupWithStatus",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "icon",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_reblog.tsx:NotificationReblog",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_reblog.tsx:NotificationReblog",
+        "target": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "targetAlias": "NotificationGroupWithStatus",
+        "targetProp": "iconId",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_reblog.tsx:NotificationReblog",
+    "targetComponent": "components\\relative_timestamp.tsx:RelativeTimestamp",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_reblog.tsx:NotificationReblog",
+        "target": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "targetAlias": "NotificationGroupWithStatus",
+        "targetProp": "timestamp",
+        "isPure": false
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "target": "components\\relative_timestamp.tsx:RelativeTimestamp",
+        "targetAlias": "RelativeTimestamp",
+        "targetProp": "timestamp",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_reblog.tsx:NotificationReblog",
+    "targetComponent": "features\\notifications_v2\\components\\embedded_status.tsx:EmbeddedStatus",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_reblog.tsx:NotificationReblog",
+        "target": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "targetAlias": "NotificationGroupWithStatus",
+        "targetProp": "statusId",
+        "isPure": false
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_group_with_status.tsx:NotificationGroupWithStatus",
+        "target": "features\\notifications_v2\\components\\embedded_status.tsx:EmbeddedStatus",
+        "targetAlias": "EmbeddedStatus",
+        "targetProp": "statusId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_status.tsx:NotificationStatus",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_status.tsx:NotificationStatus",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "icon",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_status.tsx:NotificationStatus",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_status.tsx:NotificationStatus",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "iconId",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_status.tsx:NotificationStatus",
+    "targetComponent": "components\\status_quoted.tsx:StatusQuoteManager",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_status.tsx:NotificationStatus",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "statusId",
+        "isPure": false
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\status_quoted.tsx:StatusQuoteManager",
+        "targetAlias": "StatusQuoteManager",
+        "targetProp": "id",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_update.tsx:NotificationUpdate",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_update.tsx:NotificationUpdate",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "icon",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_update.tsx:NotificationUpdate",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_update.tsx:NotificationUpdate",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "iconId",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications_v2\\components\\notification_update.tsx:NotificationUpdate",
+    "targetComponent": "components\\status_quoted.tsx:StatusQuoteManager",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications_v2\\components\\notification_update.tsx:NotificationUpdate",
+        "target": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "targetAlias": "NotificationWithStatus",
+        "targetProp": "statusId",
+        "isPure": false
+      },
+      {
+        "source": "features\\notifications_v2\\components\\notification_with_status.tsx:NotificationWithStatus",
+        "target": "components\\status_quoted.tsx:StatusQuoteManager",
+        "targetAlias": "StatusQuoteManager",
+        "targetProp": "id",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications\\request.jsx:NotificationRequest",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications\\request.jsx:NotificationRequest",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications\\request.jsx:NotificationRequest",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications\\request.jsx:NotificationRequest",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications\\requests.jsx:NotificationRequests",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications\\requests.jsx:NotificationRequests",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications\\requests.jsx:NotificationRequests",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications\\requests.jsx:NotificationRequests",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications\\requests.jsx:NotificationRequests",
+    "targetComponent": "components\\check_box.tsx:CheckBox",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications\\requests.jsx:NotificationRequests",
+        "target": "features\\notifications\\requests.jsx:SelectRow",
+        "targetAlias": "SelectRow",
+        "targetProp": "selectAllChecked",
+        "isPure": false
+      },
+      {
+        "source": "features\\notifications\\requests.jsx:SelectRow",
+        "target": "components\\check_box.tsx:CheckBox",
+        "targetAlias": "CheckBox",
+        "targetProp": "checked",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications\\requests.jsx:SelectRow",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications\\requests.jsx:SelectRow",
+        "target": "components\\check_box.tsx:CheckBox",
+        "targetAlias": "CheckBox",
+        "targetProp": "indeterminate",
+        "isPure": true
+      },
+      {
+        "source": "components\\check_box.tsx:CheckBox",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications\\requests.jsx:SelectRow",
+    "targetComponent": "components\\dropdown_menu.tsx:DropdownMenu",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications\\requests.jsx:SelectRow",
+        "target": "components\\dropdown_menu.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "items",
+        "isPure": false
+      },
+      {
+        "source": "components\\dropdown_menu.tsx:Dropdown",
+        "target": "components\\dropdown_menu.tsx:DropdownMenu",
+        "targetAlias": "DropdownMenu",
+        "targetProp": "items",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications\\requests.jsx:NotificationRequests",
+    "targetComponent": "components\\check_box.tsx:CheckBox",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications\\requests.jsx:NotificationRequests",
+        "target": "features\\notifications\\components\\notification_request.jsx:NotificationRequest",
+        "targetAlias": "NotificationRequest",
+        "targetProp": "checked",
+        "isPure": true
+      },
+      {
+        "source": "features\\notifications\\components\\notification_request.jsx:NotificationRequest",
+        "target": "components\\check_box.tsx:CheckBox",
+        "targetAlias": "CheckBox",
+        "targetProp": "checked",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\notifications\\components\\notification_request.jsx:NotificationRequest",
+    "targetComponent": "components\\dropdown_menu.tsx:DropdownMenu",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\notifications\\components\\notification_request.jsx:NotificationRequest",
+        "target": "components\\dropdown_menu.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "items",
+        "isPure": false
+      },
+      {
+        "source": "components\\dropdown_menu.tsx:Dropdown",
+        "target": "components\\dropdown_menu.tsx:DropdownMenu",
+        "targetAlias": "DropdownMenu",
+        "targetProp": "items",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\index.tsx:ProfileCard",
+    "targetComponent": "components\\avatar.tsx:Avatar",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\index.tsx:ProfileCard",
+        "target": "components\\account\\index.tsx:Account",
+        "targetAlias": "Account",
+        "targetProp": "size",
+        "isPure": true
+      },
+      {
+        "source": "components\\account\\index.tsx:Account",
+        "target": "components\\avatar.tsx:Avatar",
+        "targetAlias": "Avatar",
+        "targetProp": "size",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\index.tsx:ProfileCard",
+    "targetComponent": "components\\skeleton.tsx:Skeleton",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\index.tsx:ProfileCard",
+        "target": "components\\account\\index.tsx:Account",
+        "targetAlias": "Account",
+        "targetProp": "size",
+        "isPure": true
+      },
+      {
+        "source": "components\\account\\index.tsx:Account",
+        "target": "components\\skeleton.tsx:Skeleton",
+        "targetAlias": "Skeleton",
+        "targetProp": "width",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\index.tsx:NotificationsLink",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\index.tsx:NotificationsLink",
+        "target": "components\\icon_with_badge.tsx:IconWithBadge",
+        "targetAlias": "IconWithBadge",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "components\\icon_with_badge.tsx:IconWithBadge",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\index.tsx:NotificationsLink",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\index.tsx:NotificationsLink",
+        "target": "components\\icon_with_badge.tsx:IconWithBadge",
+        "targetAlias": "IconWithBadge",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\icon_with_badge.tsx:IconWithBadge",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "icon",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\index.tsx:NotificationsLink",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\index.tsx:NotificationsLink",
+        "target": "components\\icon_with_badge.tsx:IconWithBadge",
+        "targetAlias": "IconWithBadge",
+        "targetProp": "className",
+        "isPure": true
+      },
+      {
+        "source": "components\\icon_with_badge.tsx:IconWithBadge",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "className",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\index.tsx:FollowRequestsLink",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\index.tsx:FollowRequestsLink",
+        "target": "components\\icon_with_badge.tsx:IconWithBadge",
+        "targetAlias": "IconWithBadge",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "components\\icon_with_badge.tsx:IconWithBadge",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\index.tsx:FollowRequestsLink",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\index.tsx:FollowRequestsLink",
+        "target": "components\\icon_with_badge.tsx:IconWithBadge",
+        "targetAlias": "IconWithBadge",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\icon_with_badge.tsx:IconWithBadge",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "icon",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\index.tsx:FollowRequestsLink",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\index.tsx:FollowRequestsLink",
+        "target": "components\\icon_with_badge.tsx:IconWithBadge",
+        "targetAlias": "IconWithBadge",
+        "targetProp": "className",
+        "isPure": true
+      },
+      {
+        "source": "components\\icon_with_badge.tsx:IconWithBadge",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "className",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\components\\list_panel.tsx:ListPanel",
+    "targetComponent": "features\\ui\\components\\column_link.tsx:ColumnLink",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\components\\list_panel.tsx:ListPanel",
+        "target": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "targetAlias": "CollapsiblePanel",
+        "targetProp": "to",
+        "isPure": true
+      },
+      {
+        "source": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "target": "features\\ui\\components\\column_link.tsx:ColumnLink",
+        "targetAlias": "ColumnLink",
+        "targetProp": "to",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\components\\list_panel.tsx:ListPanel",
+    "targetComponent": "features\\ui\\components\\column_link.tsx:ColumnLink",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\components\\list_panel.tsx:ListPanel",
+        "target": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "targetAlias": "CollapsiblePanel",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "target": "features\\ui\\components\\column_link.tsx:ColumnLink",
+        "targetAlias": "ColumnLink",
+        "targetProp": "icon",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\components\\list_panel.tsx:ListPanel",
+    "targetComponent": "features\\ui\\components\\column_link.tsx:ColumnLink",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\components\\list_panel.tsx:ListPanel",
+        "target": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "targetAlias": "CollapsiblePanel",
+        "targetProp": "iconComponent",
+        "isPure": false
+      },
+      {
+        "source": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "target": "features\\ui\\components\\column_link.tsx:ColumnLink",
+        "targetAlias": "ColumnLink",
+        "targetProp": "iconComponent",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\components\\list_panel.tsx:ListPanel",
+    "targetComponent": "features\\ui\\components\\column_link.tsx:ColumnLink",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\components\\list_panel.tsx:ListPanel",
+        "target": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "targetAlias": "CollapsiblePanel",
+        "targetProp": "activeIconComponent",
+        "isPure": false
+      },
+      {
+        "source": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "target": "features\\ui\\components\\column_link.tsx:ColumnLink",
+        "targetAlias": "ColumnLink",
+        "targetProp": "activeIconComponent",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\components\\list_panel.tsx:ListPanel",
+    "targetComponent": "features\\ui\\components\\column_link.tsx:ColumnLink",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\components\\list_panel.tsx:ListPanel",
+        "target": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "targetAlias": "CollapsiblePanel",
+        "targetProp": "title",
+        "isPure": true
+      },
+      {
+        "source": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "target": "features\\ui\\components\\column_link.tsx:ColumnLink",
+        "targetAlias": "ColumnLink",
+        "targetProp": "text",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\components\\followed_tags_panel.tsx:FollowedTagsPanel",
+    "targetComponent": "features\\ui\\components\\column_link.tsx:ColumnLink",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\components\\followed_tags_panel.tsx:FollowedTagsPanel",
+        "target": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "targetAlias": "CollapsiblePanel",
+        "targetProp": "to",
+        "isPure": true
+      },
+      {
+        "source": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "target": "features\\ui\\components\\column_link.tsx:ColumnLink",
+        "targetAlias": "ColumnLink",
+        "targetProp": "to",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\components\\followed_tags_panel.tsx:FollowedTagsPanel",
+    "targetComponent": "features\\ui\\components\\column_link.tsx:ColumnLink",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\components\\followed_tags_panel.tsx:FollowedTagsPanel",
+        "target": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "targetAlias": "CollapsiblePanel",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "target": "features\\ui\\components\\column_link.tsx:ColumnLink",
+        "targetAlias": "ColumnLink",
+        "targetProp": "icon",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\components\\followed_tags_panel.tsx:FollowedTagsPanel",
+    "targetComponent": "features\\ui\\components\\column_link.tsx:ColumnLink",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\components\\followed_tags_panel.tsx:FollowedTagsPanel",
+        "target": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "targetAlias": "CollapsiblePanel",
+        "targetProp": "iconComponent",
+        "isPure": false
+      },
+      {
+        "source": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "target": "features\\ui\\components\\column_link.tsx:ColumnLink",
+        "targetAlias": "ColumnLink",
+        "targetProp": "iconComponent",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\components\\followed_tags_panel.tsx:FollowedTagsPanel",
+    "targetComponent": "features\\ui\\components\\column_link.tsx:ColumnLink",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\components\\followed_tags_panel.tsx:FollowedTagsPanel",
+        "target": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "targetAlias": "CollapsiblePanel",
+        "targetProp": "title",
+        "isPure": true
+      },
+      {
+        "source": "features\\navigation_panel\\components\\collapsible_panel.tsx:CollapsiblePanel",
+        "target": "features\\ui\\components\\column_link.tsx:ColumnLink",
+        "targetAlias": "ColumnLink",
+        "targetProp": "text",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\navigation_panel\\components\\more_link.tsx:MoreLink",
+    "targetComponent": "components\\dropdown_menu.tsx:DropdownMenu",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\navigation_panel\\components\\more_link.tsx:MoreLink",
+        "target": "components\\dropdown_menu.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "items",
+        "isPure": false
+      },
+      {
+        "source": "components\\dropdown_menu.tsx:Dropdown",
+        "target": "components\\dropdown_menu.tsx:DropdownMenu",
+        "targetAlias": "DropdownMenu",
+        "targetProp": "items",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\list_timeline\\index.jsx:ListTimeline",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\list_timeline\\index.jsx:ListTimeline",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\list_timeline\\index.jsx:ListTimeline",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\list_timeline\\index.jsx:ListTimeline",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\list_adder\\index.tsx:ListAdder",
+    "targetComponent": "components\\check_box.tsx:CheckBox",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\list_adder\\index.tsx:ListAdder",
+        "target": "features\\list_adder\\index.tsx:ListItem",
+        "targetAlias": "ListItem",
+        "targetProp": "key",
+        "isPure": false
+      },
+      {
+        "source": "features\\list_adder\\index.tsx:ListItem",
+        "target": "components\\check_box.tsx:CheckBox",
+        "targetAlias": "CheckBox",
+        "targetProp": "value",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\list_adder\\index.tsx:ListAdder",
+    "targetComponent": "components\\check_box.tsx:CheckBox",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\list_adder\\index.tsx:ListAdder",
+        "target": "features\\list_adder\\index.tsx:ListItem",
+        "targetAlias": "ListItem",
+        "targetProp": "checked",
+        "isPure": true
+      },
+      {
+        "source": "features\\list_adder\\index.tsx:ListItem",
+        "target": "components\\check_box.tsx:CheckBox",
+        "targetAlias": "CheckBox",
+        "targetProp": "checked",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\lists\\index.tsx:Lists",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\lists\\index.tsx:Lists",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\lists\\index.tsx:Lists",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\lists\\index.tsx:Lists",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\lists\\index.tsx:ListItem",
+    "targetComponent": "components\\dropdown_menu.tsx:DropdownMenu",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\lists\\index.tsx:ListItem",
+        "target": "components\\dropdown_menu.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "items",
+        "isPure": false
+      },
+      {
+        "source": "components\\dropdown_menu.tsx:Dropdown",
+        "target": "components\\dropdown_menu.tsx:DropdownMenu",
+        "targetAlias": "DropdownMenu",
+        "targetProp": "items",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\lists\\members.tsx:ListMembers",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\lists\\members.tsx:ListMembers",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\lists\\members.tsx:ListMembers",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\lists\\members.tsx:ListMembers",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\lists\\members.tsx:ListMembers",
+    "targetComponent": "components\\button\\index.tsx:Button",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\lists\\members.tsx:ListMembers",
+        "target": "features\\lists\\members.tsx:AccountItem",
+        "targetAlias": "AccountItem",
+        "targetProp": "partOfList",
+        "isPure": true
+      },
+      {
+        "source": "features\\lists\\members.tsx:AccountItem",
+        "target": "components\\button\\index.tsx:Button",
+        "targetAlias": "Button",
+        "targetProp": "secondary",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\lists\\new.tsx:NewList",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\lists\\new.tsx:NewList",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\lists\\new.tsx:NewList",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\lists\\new.tsx:NewList",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\lists\\new.tsx:NewList",
+    "targetComponent": "components\\avatar.tsx:Avatar",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\lists\\new.tsx:NewList",
+        "target": "features\\lists\\new.tsx:MembersLink",
+        "targetAlias": "MembersLink",
+        "targetProp": "id",
+        "isPure": false
+      },
+      {
+        "source": "features\\lists\\new.tsx:MembersLink",
+        "target": "components\\avatar.tsx:Avatar",
+        "targetAlias": "Avatar",
+        "targetProp": "key",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\link_timeline\\index.tsx:LinkTimeline",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\link_timeline\\index.tsx:LinkTimeline",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\link_timeline\\index.tsx:LinkTimeline",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\link_timeline\\index.tsx:LinkTimeline",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\home_timeline\\index.jsx:HomeTimeline",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\home_timeline\\index.jsx:HomeTimeline",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\home_timeline\\index.jsx:HomeTimeline",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\home_timeline\\index.jsx:HomeTimeline",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\home_timeline\\components\\inline_follow_suggestions.tsx:InlineFollowSuggestions",
+    "targetComponent": "components\\follow_button.tsx:FollowButton",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\home_timeline\\components\\inline_follow_suggestions.tsx:InlineFollowSuggestions",
+        "target": "features\\home_timeline\\components\\inline_follow_suggestions.tsx:Card",
+        "targetAlias": "Card",
+        "targetProp": "id",
+        "isPure": false
+      },
+      {
+        "source": "features\\home_timeline\\components\\inline_follow_suggestions.tsx:Card",
+        "target": "components\\follow_button.tsx:FollowButton",
+        "targetAlias": "FollowButton",
+        "targetProp": "accountId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "features\\home_timeline\\components\\announcements\\announcement.tsx:Announcement",
+    "targetComponent": "features\\home_timeline\\components\\announcements\\reactions.tsx:Reaction",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\home_timeline\\components\\announcements\\announcement.tsx:Announcement",
+        "target": "features\\home_timeline\\components\\announcements\\reactions.tsx:ReactionsBar",
+        "targetAlias": "ReactionsBar",
+        "targetProp": "id",
+        "isPure": false
+      },
+      {
+        "source": "features\\home_timeline\\components\\announcements\\reactions.tsx:ReactionsBar",
+        "target": "features\\home_timeline\\components\\announcements\\reactions.tsx:Reaction",
+        "targetAlias": "Reaction",
+        "targetProp": "id",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\hashtag_timeline\\index.jsx:HashtagTimeline",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\hashtag_timeline\\index.jsx:HashtagTimeline",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\hashtag_timeline\\index.jsx:HashtagTimeline",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\hashtag_timeline\\index.jsx:HashtagTimeline",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\hashtag_timeline\\components\\hashtag_header.tsx:HashtagHeader",
+    "targetComponent": "components\\dropdown_menu.tsx:DropdownMenu",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\hashtag_timeline\\components\\hashtag_header.tsx:HashtagHeader",
+        "target": "components\\dropdown_menu.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "items",
+        "isPure": false
+      },
+      {
+        "source": "components\\dropdown_menu.tsx:Dropdown",
+        "target": "components\\dropdown_menu.tsx:DropdownMenu",
+        "targetAlias": "DropdownMenu",
+        "targetProp": "items",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\followed_tags\\index.tsx:FollowedTags",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\followed_tags\\index.tsx:FollowedTags",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\followed_tags\\index.tsx:FollowedTags",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\followed_tags\\index.tsx:FollowedTags",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\firehose\\index.jsx:Firehose",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\firehose\\index.jsx:Firehose",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\firehose\\index.jsx:Firehose",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\firehose\\index.jsx:Firehose",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\favourited_statuses\\index.tsx:Favourites",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\favourited_statuses\\index.tsx:Favourites",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\favourited_statuses\\index.tsx:Favourites",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\favourited_statuses\\index.tsx:Favourites",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\index.tsx:Explore",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\index.tsx:Explore",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\index.tsx:Explore",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\index.tsx:Explore",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\domain_blocks\\index.tsx:Blocks",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\domain_blocks\\index.tsx:Blocks",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\domain_blocks\\index.tsx:Blocks",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\domain_blocks\\index.tsx:Blocks",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\direct_timeline\\index.jsx:DirectTimeline",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\direct_timeline\\index.jsx:DirectTimeline",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\direct_timeline\\index.jsx:DirectTimeline",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\direct_timeline\\index.jsx:DirectTimeline",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\direct_timeline\\components\\conversations_list.jsx:ConversationsList",
+    "targetComponent": "components\\dropdown_menu.tsx:Dropdown",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\direct_timeline\\components\\conversations_list.jsx:ConversationsList",
+        "target": "features\\direct_timeline\\components\\conversation.jsx:Conversation",
+        "targetAlias": "Conversation",
+        "targetProp": "scrollKey",
+        "isPure": false
+      },
+      {
+        "source": "features\\direct_timeline\\components\\conversation.jsx:Conversation",
+        "target": "components\\dropdown_menu.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "scrollKey",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\direct_timeline\\components\\conversation.jsx:Conversation",
+    "targetComponent": "components\\dropdown_menu.tsx:DropdownMenu",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\direct_timeline\\components\\conversation.jsx:Conversation",
+        "target": "components\\dropdown_menu.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "items",
+        "isPure": false
+      },
+      {
+        "source": "components\\dropdown_menu.tsx:Dropdown",
+        "target": "components\\dropdown_menu.tsx:DropdownMenu",
+        "targetAlias": "DropdownMenu",
+        "targetProp": "items",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\directory\\index.tsx:Directory",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\directory\\index.tsx:Directory",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\directory\\index.tsx:Directory",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\directory\\index.tsx:Directory",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\compose\\index.tsx:Compose",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\compose\\index.tsx:Compose",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\compose\\index.tsx:Compose",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\compose\\index.tsx:Compose",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\compose\\components\\emoji_picker_dropdown.jsx:EmojiPickerMenuImpl",
+    "targetComponent": "features\\compose\\components\\emoji_picker_dropdown.jsx:ModifierPickerMenu",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\compose\\components\\emoji_picker_dropdown.jsx:EmojiPickerMenuImpl",
+        "target": "features\\compose\\components\\emoji_picker_dropdown.jsx:ModifierPicker",
+        "targetAlias": "ModifierPicker",
+        "targetProp": "active",
+        "isPure": true
+      },
+      {
+        "source": "features\\compose\\components\\emoji_picker_dropdown.jsx:ModifierPicker",
+        "target": "features\\compose\\components\\emoji_picker_dropdown.jsx:ModifierPickerMenu",
+        "targetAlias": "ModifierPickerMenu",
+        "targetProp": "active",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\compose\\components\\emoji_picker_dropdown.jsx:EmojiPickerMenuImpl",
+    "targetComponent": "features\\compose\\components\\emoji_picker_dropdown.jsx:ModifierPickerMenu",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\compose\\components\\emoji_picker_dropdown.jsx:EmojiPickerMenuImpl",
+        "target": "features\\compose\\components\\emoji_picker_dropdown.jsx:ModifierPicker",
+        "targetAlias": "ModifierPicker",
+        "targetProp": "onClose",
+        "isPure": true
+      },
+      {
+        "source": "features\\compose\\components\\emoji_picker_dropdown.jsx:ModifierPicker",
+        "target": "features\\compose\\components\\emoji_picker_dropdown.jsx:ModifierPickerMenu",
+        "targetAlias": "ModifierPickerMenu",
+        "targetProp": "onClose",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\community_timeline\\index.jsx:CommunityTimeline",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\community_timeline\\index.jsx:CommunityTimeline",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\community_timeline\\index.jsx:CommunityTimeline",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\community_timeline\\index.jsx:CommunityTimeline",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\bookmarked_statuses\\index.tsx:Bookmarks",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\bookmarked_statuses\\index.tsx:Bookmarks",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\bookmarked_statuses\\index.tsx:Bookmarks",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\bookmarked_statuses\\index.tsx:Bookmarks",
+        "target": "components\\column_header.tsx:ColumnHeader",
+        "targetAlias": "ColumnHeader",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\column_header.tsx:ColumnHeader",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\account_timeline\\components\\account_header.tsx:AccountHeader",
+    "targetComponent": "components\\icon_button.tsx:IconButton",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\account_timeline\\components\\account_header.tsx:AccountHeader",
+        "target": "components\\copy_icon_button.tsx:CopyIconButton",
+        "targetAlias": "CopyIconButton",
+        "targetProp": "title",
+        "isPure": true
+      },
+      {
+        "source": "components\\copy_icon_button.tsx:CopyIconButton",
+        "target": "components\\icon_button.tsx:IconButton",
+        "targetAlias": "IconButton",
+        "targetProp": "title",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\account_gallery\\index.tsx:AccountGallery",
+    "targetComponent": "components\\follow_button.tsx:FollowButton",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\account_gallery\\index.tsx:AccountGallery",
+        "target": "features\\account_timeline\\components\\account_header.tsx:AccountHeader",
+        "targetAlias": "AccountHeader",
+        "targetProp": "accountId",
+        "isPure": false
+      },
+      {
+        "source": "features\\account_timeline\\components\\account_header.tsx:AccountHeader",
+        "target": "components\\follow_button.tsx:FollowButton",
+        "targetAlias": "FollowButton",
+        "targetProp": "accountId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\account_gallery\\index.tsx:AccountGallery",
+    "targetComponent": "features\\account_timeline\\components\\familiar_followers.tsx:FamiliarFollowers",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\account_gallery\\index.tsx:AccountGallery",
+        "target": "features\\account_timeline\\components\\account_header.tsx:AccountHeader",
+        "targetAlias": "AccountHeader",
+        "targetProp": "accountId",
+        "isPure": false
+      },
+      {
+        "source": "features\\account_timeline\\components\\account_header.tsx:AccountHeader",
+        "target": "features\\account_timeline\\components\\familiar_followers.tsx:FamiliarFollowers",
+        "targetAlias": "FamiliarFollowers",
+        "targetProp": "accountId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "features\\account_gallery\\index.tsx:AccountGallery",
+    "targetComponent": "features\\account\\components\\account_note.tsx:AccountNote",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\account_gallery\\index.tsx:AccountGallery",
+        "target": "features\\account_timeline\\components\\account_header.tsx:AccountHeader",
+        "targetAlias": "AccountHeader",
+        "targetProp": "accountId",
+        "isPure": false
+      },
+      {
+        "source": "features\\account_timeline\\components\\account_header.tsx:AccountHeader",
+        "target": "features\\account\\components\\account_note.tsx:AccountNote",
+        "targetAlias": "AccountNote",
+        "targetProp": "accountId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "features\\about\\index.jsx:About",
+    "targetComponent": "components\\blurhash.tsx:Blurhash",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\about\\index.jsx:About",
+        "target": "components\\server_hero_image.tsx:ServerHeroImage",
+        "targetAlias": "ServerHeroImage",
+        "targetProp": "blurhash",
+        "isPure": true
+      },
+      {
+        "source": "components\\server_hero_image.tsx:ServerHeroImage",
+        "target": "components\\blurhash.tsx:Blurhash",
+        "targetAlias": "Blurhash",
+        "targetProp": "hash",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\about\\index.jsx:About",
+    "targetComponent": "components\\avatar.tsx:Avatar",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\about\\index.jsx:About",
+        "target": "components\\account\\index.tsx:Account",
+        "targetAlias": "Account",
+        "targetProp": "size",
+        "isPure": true
+      },
+      {
+        "source": "components\\account\\index.tsx:Account",
+        "target": "components\\avatar.tsx:Avatar",
+        "targetAlias": "Avatar",
+        "targetProp": "size",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\about\\index.jsx:About",
+    "targetComponent": "components\\skeleton.tsx:Skeleton",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\about\\index.jsx:About",
+        "target": "components\\account\\index.tsx:Account",
+        "targetAlias": "Account",
+        "targetProp": "size",
+        "isPure": true
+      },
+      {
+        "source": "components\\account\\index.tsx:Account",
+        "target": "components\\skeleton.tsx:Skeleton",
+        "targetAlias": "Skeleton",
+        "targetProp": "width",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ui\\components\\navigation_bar.tsx:NotificationsButton",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ui\\components\\navigation_bar.tsx:NotificationsButton",
+        "target": "components\\icon_with_badge.tsx:IconWithBadge",
+        "targetAlias": "IconWithBadge",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "components\\icon_with_badge.tsx:IconWithBadge",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ui\\components\\navigation_bar.tsx:NotificationsButton",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ui\\components\\navigation_bar.tsx:NotificationsButton",
+        "target": "components\\icon_with_badge.tsx:IconWithBadge",
+        "targetAlias": "IconWithBadge",
+        "targetProp": "icon",
+        "isPure": true
+      },
+      {
+        "source": "components\\icon_with_badge.tsx:IconWithBadge",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "icon",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ui\\components\\navigation_bar.tsx:NotificationsButton",
+    "targetComponent": "components\\icon.tsx:Icon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ui\\components\\navigation_bar.tsx:NotificationsButton",
+        "target": "components\\icon_with_badge.tsx:IconWithBadge",
+        "targetAlias": "IconWithBadge",
+        "targetProp": "className",
+        "isPure": true
+      },
+      {
+        "source": "components\\icon_with_badge.tsx:IconWithBadge",
+        "target": "components\\icon.tsx:Icon",
+        "targetAlias": "Icon",
+        "targetProp": "className",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\picture_in_picture\\index.tsx:PictureInPicture",
+    "targetComponent": "components\\icon_button.tsx:IconButton",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\picture_in_picture\\index.tsx:PictureInPicture",
+        "target": "features\\picture_in_picture\\components\\header.tsx:Header",
+        "targetAlias": "Header",
+        "targetProp": "onClose",
+        "isPure": false
+      },
+      {
+        "source": "features\\picture_in_picture\\components\\header.tsx:Header",
+        "target": "components\\icon_button.tsx:IconButton",
+        "targetAlias": "IconButton",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\account_bio.tsx:AccountBio",
+    "targetComponent": "components\\emoji\\context.tsx:CustomEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "components\\account_bio.tsx:AccountBio",
+        "target": "components\\emoji\\html.tsx:EmojiHTML",
+        "targetAlias": "EmojiHTML",
+        "targetProp": "extraEmojis",
+        "isPure": false
+      },
+      {
+        "source": "components\\emoji\\html.tsx:EmojiHTML",
+        "target": "components\\emoji\\context.tsx:CustomEmojiProvider",
+        "targetAlias": "CustomEmojiProvider",
+        "targetProp": "emojis",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "components\\account_bio.tsx:AccountBio",
+    "targetComponent": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\account_bio.tsx:AccountBio",
+        "target": "components\\emoji\\html.tsx:EmojiHTML",
+        "targetAlias": "EmojiHTML",
+        "targetProp": "className",
+        "isPure": true
+      },
+      {
+        "source": "components\\emoji\\html.tsx:EmojiHTML",
+        "target": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+        "targetAlias": "AnimateEmojiProvider",
+        "targetProp": "className",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\account_fields.tsx:AccountFields",
+    "targetComponent": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\account_fields.tsx:AccountFields",
+        "target": "components\\emoji\\html.tsx:EmojiHTML",
+        "targetAlias": "EmojiHTML",
+        "targetProp": "as",
+        "isPure": true
+      },
+      {
+        "source": "components\\emoji\\html.tsx:EmojiHTML",
+        "target": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+        "targetAlias": "AnimateEmojiProvider",
+        "targetProp": "as",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\account_fields.tsx:AccountFields",
+    "targetComponent": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\account_fields.tsx:AccountFields",
+        "target": "components\\emoji\\html.tsx:EmojiHTML",
+        "targetAlias": "EmojiHTML",
+        "targetProp": "className",
+        "isPure": true
+      },
+      {
+        "source": "components\\emoji\\html.tsx:EmojiHTML",
+        "target": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+        "targetAlias": "AnimateEmojiProvider",
+        "targetProp": "className",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\hover_card_controller.tsx:HoverCardController",
+    "targetComponent": "components\\follow_button.tsx:FollowButton",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "components\\hover_card_controller.tsx:HoverCardController",
+        "target": "components\\hover_card_account.tsx:HoverCardAccount",
+        "targetAlias": "HoverCardAccount",
+        "targetProp": "accountId",
+        "isPure": false
+      },
+      {
+        "source": "components\\hover_card_account.tsx:HoverCardAccount",
+        "target": "components\\follow_button.tsx:FollowButton",
+        "targetAlias": "FollowButton",
+        "targetProp": "accountId",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "components\\status\\boost_button.tsx:BoostOrQuoteMenu",
+    "targetComponent": "components\\dropdown_menu.tsx:DropdownMenu",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\status\\boost_button.tsx:BoostOrQuoteMenu",
+        "target": "components\\dropdown_menu.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "items",
+        "isPure": false
+      },
+      {
+        "source": "components\\dropdown_menu.tsx:Dropdown",
+        "target": "components\\dropdown_menu.tsx:DropdownMenu",
+        "targetAlias": "DropdownMenu",
+        "targetProp": "items",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\status\\boost_button.tsx:BoostOrQuoteMenu",
+    "targetComponent": "components\\dropdown_menu.tsx:DropdownMenu",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\status\\boost_button.tsx:BoostOrQuoteMenu",
+        "target": "components\\dropdown_menu.tsx:Dropdown",
+        "targetAlias": "Dropdown",
+        "targetProp": "renderItem",
+        "isPure": true
+      },
+      {
+        "source": "components\\dropdown_menu.tsx:Dropdown",
+        "target": "components\\dropdown_menu.tsx:DropdownMenu",
+        "targetAlias": "DropdownMenu",
+        "targetProp": "renderItem",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\html_block\\index.tsx:HTMLBlock",
+    "targetComponent": "components\\emoji\\context.tsx:CustomEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "components\\html_block\\index.tsx:HTMLBlock",
+        "target": "components\\emoji\\html.tsx:EmojiHTML",
+        "targetAlias": "EmojiHTML",
+        "targetProp": "extraEmojis",
+        "isPure": true
+      },
+      {
+        "source": "components\\emoji\\html.tsx:EmojiHTML",
+        "target": "components\\emoji\\context.tsx:CustomEmojiProvider",
+        "targetAlias": "CustomEmojiProvider",
+        "targetProp": "emojis",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "components\\html_block\\index.tsx:HTMLBlock",
+    "targetComponent": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\html_block\\index.tsx:HTMLBlock",
+        "target": "components\\emoji\\html.tsx:EmojiHTML",
+        "targetAlias": "EmojiHTML",
+        "targetProp": "as",
+        "isPure": true
+      },
+      {
+        "source": "components\\emoji\\html.tsx:EmojiHTML",
+        "target": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+        "targetAlias": "AnimateEmojiProvider",
+        "targetProp": "as",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\html_block\\index.tsx:HTMLBlock",
+    "targetComponent": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\html_block\\index.tsx:HTMLBlock",
+        "target": "components\\emoji\\html.tsx:EmojiHTML",
+        "targetAlias": "EmojiHTML",
+        "targetProp": "className",
+        "isPure": true
+      },
+      {
+        "source": "components\\emoji\\html.tsx:EmojiHTML",
+        "target": "components\\emoji\\context.tsx:AnimateEmojiProvider",
+        "targetAlias": "AnimateEmojiProvider",
+        "targetProp": "className",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "sourceComponent": "modal\\ConfirmDialog.tsx:ConfirmDialogWrapper",
+    "targetComponent": "modal\\Modal.tsx:Modal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "modal\\ConfirmDialog.tsx:ConfirmDialogWrapper",
+        "target": "modal\\ConfirmDialog.tsx:ConfirmDialog",
+        "targetAlias": "ConfirmDialog",
+        "targetProp": "width",
+        "isPure": true
+      },
+      {
+        "source": "modal\\ConfirmDialog.tsx:ConfirmDialog",
+        "target": "modal\\Modal.tsx:Modal",
+        "targetAlias": "Modal",
+        "targetProp": "width",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "modal\\ConfirmDialog.tsx:ConfirmDialogWrapper",
+    "targetComponent": "modal\\Modal.tsx:Modal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "modal\\ConfirmDialog.tsx:ConfirmDialogWrapper",
+        "target": "modal\\ConfirmDialog.tsx:ConfirmDialog",
+        "targetAlias": "ConfirmDialog",
+        "targetProp": "style",
+        "isPure": true
+      },
+      {
+        "source": "modal\\ConfirmDialog.tsx:ConfirmDialog",
+        "target": "modal\\Modal.tsx:Modal",
+        "targetAlias": "Modal",
+        "targetProp": "style",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "modal\\ConfirmDialog.tsx:ConfirmDialogWrapper",
+    "targetComponent": "modal\\Modal.tsx:Modal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "modal\\ConfirmDialog.tsx:ConfirmDialogWrapper",
+        "target": "modal\\ConfirmDialog.tsx:ConfirmDialog",
+        "targetAlias": "ConfirmDialog",
+        "targetProp": "maskClosable",
+        "isPure": true
+      },
+      {
+        "source": "modal\\ConfirmDialog.tsx:ConfirmDialog",
+        "target": "modal\\Modal.tsx:Modal",
+        "targetAlias": "Modal",
+        "targetProp": "maskClosable",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "modal\\ConfirmDialog.tsx:ConfirmDialogWrapper",
+    "targetComponent": "modal\\Modal.tsx:Modal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "modal\\ConfirmDialog.tsx:ConfirmDialogWrapper",
+        "target": "modal\\ConfirmDialog.tsx:ConfirmDialog",
+        "targetAlias": "ConfirmDialog",
+        "targetProp": "transitionName",
+        "isPure": true
+      },
+      {
+        "source": "modal\\ConfirmDialog.tsx:ConfirmDialog",
+        "target": "modal\\Modal.tsx:Modal",
+        "targetAlias": "Modal",
+        "targetProp": "transitionName",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "modal\\ConfirmDialog.tsx:ConfirmDialogWrapper",
+    "targetComponent": "modal\\Modal.tsx:Modal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "modal\\ConfirmDialog.tsx:ConfirmDialogWrapper",
+        "target": "modal\\ConfirmDialog.tsx:ConfirmDialog",
+        "targetAlias": "ConfirmDialog",
+        "targetProp": "maskTransitionName",
+        "isPure": true
+      },
+      {
+        "source": "modal\\ConfirmDialog.tsx:ConfirmDialog",
+        "target": "modal\\Modal.tsx:Modal",
+        "targetAlias": "Modal",
+        "targetProp": "maskTransitionName",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "color-picker\\components\\ColorInput.tsx:ColorInput",
+    "targetComponent": "color-picker\\components\\ColorSteppers.tsx:ColorSteppers",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "color-picker\\components\\ColorInput.tsx:ColorInput",
+        "target": "color-picker\\components\\ColorAlphaInput.tsx:ColorAlphaInput",
+        "targetAlias": "ColorAlphaInput",
+        "targetProp": "prefixCls",
+        "isPure": false
+      },
+      {
+        "source": "color-picker\\components\\ColorAlphaInput.tsx:ColorAlphaInput",
+        "target": "color-picker\\components\\ColorSteppers.tsx:ColorSteppers",
+        "targetAlias": "ColorSteppers",
+        "targetProp": "prefixCls",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  }
+]
