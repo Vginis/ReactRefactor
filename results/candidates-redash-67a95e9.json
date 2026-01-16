@@ -1,0 +1,534 @@
+[
+  {
+    "sourceComponent": "pages\\users\\UserProfile.jsx:UserProfile",
+    "targetComponent": "pages\\users\\components\\PasswordForm\\PasswordLinkAlert.jsx:PasswordLinkAlert",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\users\\UserProfile.jsx:UserProfile",
+        "target": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
+        "targetAlias": "EditableUserProfile",
+        "targetProp": "user",
+        "isPure": false
+      },
+      {
+        "source": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
+        "target": "pages\\users\\components\\PasswordForm\\index.jsx:PasswordForm",
+        "targetAlias": "PasswordForm",
+        "targetProp": "user",
+        "isPure": false
+      },
+      {
+        "source": "pages\\users\\components\\PasswordForm\\index.jsx:PasswordForm",
+        "target": "pages\\users\\components\\PasswordForm\\ResendInvitationForm.jsx:ResendInvitationForm",
+        "targetAlias": "ResendInvitationForm",
+        "targetProp": "user",
+        "isPure": false
+      },
+      {
+        "source": "pages\\users\\components\\PasswordForm\\ResendInvitationForm.jsx:ResendInvitationForm",
+        "target": "pages\\users\\components\\PasswordForm\\PasswordLinkAlert.jsx:PasswordLinkAlert",
+        "targetAlias": "PasswordLinkAlert",
+        "targetProp": "user",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\users\\UserProfile.jsx:UserProfile",
+    "targetComponent": "pages\\users\\components\\PasswordForm\\PasswordLinkAlert.jsx:PasswordLinkAlert",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\users\\UserProfile.jsx:UserProfile",
+        "target": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
+        "targetAlias": "EditableUserProfile",
+        "targetProp": "user",
+        "isPure": false
+      },
+      {
+        "source": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
+        "target": "pages\\users\\components\\PasswordForm\\index.jsx:PasswordForm",
+        "targetAlias": "PasswordForm",
+        "targetProp": "user",
+        "isPure": false
+      },
+      {
+        "source": "pages\\users\\components\\PasswordForm\\index.jsx:PasswordForm",
+        "target": "pages\\users\\components\\PasswordForm\\PasswordResetForm.jsx:PasswordResetForm",
+        "targetAlias": "PasswordResetForm",
+        "targetProp": "user",
+        "isPure": false
+      },
+      {
+        "source": "pages\\users\\components\\PasswordForm\\PasswordResetForm.jsx:PasswordResetForm",
+        "target": "pages\\users\\components\\PasswordForm\\PasswordLinkAlert.jsx:PasswordLinkAlert",
+        "targetAlias": "PasswordLinkAlert",
+        "targetProp": "user",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\users\\UserProfile.jsx:UserProfile",
+    "targetComponent": "pages\\users\\components\\UserInfoForm.jsx:UserInfoForm",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\users\\UserProfile.jsx:UserProfile",
+        "target": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
+        "targetAlias": "EditableUserProfile",
+        "targetProp": "user",
+        "isPure": false
+      },
+      {
+        "source": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
+        "target": "pages\\users\\components\\UserInfoForm.jsx:UserInfoForm",
+        "targetAlias": "UserInfoForm",
+        "targetProp": "user",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\users\\UserProfile.jsx:UserProfile",
+    "targetComponent": "pages\\users\\components\\ApiKeyForm.jsx:ApiKeyForm",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\users\\UserProfile.jsx:UserProfile",
+        "target": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
+        "targetAlias": "EditableUserProfile",
+        "targetProp": "user",
+        "isPure": false
+      },
+      {
+        "source": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
+        "target": "pages\\users\\components\\ApiKeyForm.jsx:ApiKeyForm",
+        "targetAlias": "ApiKeyForm",
+        "targetProp": "user",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\users\\UserProfile.jsx:UserProfile",
+    "targetComponent": "pages\\users\\components\\ToggleUserForm.jsx:ToggleUserForm",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\users\\UserProfile.jsx:UserProfile",
+        "target": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
+        "targetAlias": "EditableUserProfile",
+        "targetProp": "user",
+        "isPure": false
+      },
+      {
+        "source": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
+        "target": "pages\\users\\components\\ToggleUserForm.jsx:ToggleUserForm",
+        "targetAlias": "ToggleUserForm",
+        "targetProp": "user",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+    "targetComponent": "pages\\settings\\components\\AuthSettings\\PasswordLoginSettings.jsx:PasswordLoginSettings",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "targetAlias": "AuthSettings",
+        "targetProp": "values",
+        "isPure": false
+      },
+      {
+        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\PasswordLoginSettings.jsx:PasswordLoginSettings",
+        "targetAlias": "PasswordLoginSettings",
+        "targetProp": "values",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+    "targetComponent": "pages\\settings\\components\\AuthSettings\\PasswordLoginSettings.jsx:PasswordLoginSettings",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "targetAlias": "AuthSettings",
+        "targetProp": "onChange",
+        "isPure": false
+      },
+      {
+        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\PasswordLoginSettings.jsx:PasswordLoginSettings",
+        "targetAlias": "PasswordLoginSettings",
+        "targetProp": "onChange",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+    "targetComponent": "pages\\settings\\components\\AuthSettings\\GoogleLoginSettings.jsx:GoogleLoginSettings",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "targetAlias": "AuthSettings",
+        "targetProp": "values",
+        "isPure": false
+      },
+      {
+        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\GoogleLoginSettings.jsx:GoogleLoginSettings",
+        "targetAlias": "GoogleLoginSettings",
+        "targetProp": "values",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+    "targetComponent": "pages\\settings\\components\\AuthSettings\\GoogleLoginSettings.jsx:GoogleLoginSettings",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "targetAlias": "AuthSettings",
+        "targetProp": "onChange",
+        "isPure": false
+      },
+      {
+        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\GoogleLoginSettings.jsx:GoogleLoginSettings",
+        "targetAlias": "GoogleLoginSettings",
+        "targetProp": "onChange",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+    "targetComponent": "pages\\settings\\components\\AuthSettings\\SAMLSettings.jsx:SAMLSettings",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "targetAlias": "AuthSettings",
+        "targetProp": "values",
+        "isPure": false
+      },
+      {
+        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\SAMLSettings.jsx:SAMLSettings",
+        "targetAlias": "SAMLSettings",
+        "targetProp": "values",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+    "targetComponent": "pages\\settings\\components\\AuthSettings\\SAMLSettings.jsx:SAMLSettings",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "targetAlias": "AuthSettings",
+        "targetProp": "onChange",
+        "isPure": false
+      },
+      {
+        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\SAMLSettings.jsx:SAMLSettings",
+        "targetAlias": "SAMLSettings",
+        "targetProp": "onChange",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\dashboards\\DashboardPage.jsx:DashboardComponent",
+    "targetComponent": "pages\\dashboards\\components\\DashboardHeader.jsx:DashboardPageTitle",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "pages\\dashboards\\DashboardPage.jsx:DashboardComponent",
+        "target": "pages\\dashboards\\components\\DashboardHeader.jsx:DashboardHeader",
+        "targetAlias": "DashboardHeader",
+        "targetProp": "dashboardConfiguration",
+        "isPure": false
+      },
+      {
+        "source": "pages\\dashboards\\components\\DashboardHeader.jsx:DashboardHeader",
+        "target": "pages\\dashboards\\components\\DashboardHeader.jsx:DashboardPageTitle",
+        "targetAlias": "DashboardPageTitle",
+        "targetProp": "dashboardConfiguration",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "pages\\alert\\components\\Rearm.jsx:Rearm",
+    "targetComponent": "pages\\alert\\components\\Rearm.jsx:RearmByDuration",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\alert\\components\\Rearm.jsx:Rearm",
+        "target": "pages\\alert\\components\\Rearm.jsx:RearmEditor",
+        "targetAlias": "RearmEditor",
+        "targetProp": "value",
+        "isPure": true
+      },
+      {
+        "source": "pages\\alert\\components\\Rearm.jsx:RearmEditor",
+        "target": "pages\\alert\\components\\Rearm.jsx:RearmByDuration",
+        "targetAlias": "RearmByDuration",
+        "targetProp": "value",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\alert\\components\\Rearm.jsx:Rearm",
+    "targetComponent": "pages\\alert\\components\\Rearm.jsx:RearmByDuration",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\alert\\components\\Rearm.jsx:Rearm",
+        "target": "pages\\alert\\components\\Rearm.jsx:RearmEditor",
+        "targetAlias": "RearmEditor",
+        "targetProp": "onChange",
+        "isPure": true
+      },
+      {
+        "source": "pages\\alert\\components\\Rearm.jsx:RearmEditor",
+        "target": "pages\\alert\\components\\Rearm.jsx:RearmByDuration",
+        "targetAlias": "RearmByDuration",
+        "targetProp": "onChange",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dynamic-form\\DynamicForm.jsx:DynamicForm",
+    "targetComponent": "components\\dynamic-form\\DynamicFormField.jsx:DynamicFormField",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\dynamic-form\\DynamicForm.jsx:DynamicForm",
+        "target": "components\\dynamic-form\\DynamicForm.jsx:DynamicFormFields",
+        "targetAlias": "DynamicFormFields",
+        "targetProp": "form",
+        "isPure": false
+      },
+      {
+        "source": "components\\dynamic-form\\DynamicForm.jsx:DynamicFormFields",
+        "target": "components\\dynamic-form\\DynamicFormField.jsx:DynamicFormField",
+        "targetAlias": "DynamicFormField",
+        "targetProp": "form",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dashboards\\dashboard-widget\\RestrictedWidget.jsx:RestrictedWidget",
+    "targetComponent": "components\\dashboards\\dashboard-widget\\Widget.jsx:WidgetDropdownButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\dashboards\\dashboard-widget\\RestrictedWidget.jsx:RestrictedWidget",
+        "target": "components\\dashboards\\dashboard-widget\\Widget.jsx:Widget",
+        "targetAlias": "Widget",
+        "targetProp": "canEdit",
+        "isPure": true
+      },
+      {
+        "source": "components\\dashboards\\dashboard-widget\\Widget.jsx:Widget",
+        "target": "components\\dashboards\\dashboard-widget\\Widget.jsx:WidgetDropdownButton",
+        "targetAlias": "WidgetDropdownButton",
+        "targetProp": "showDeleteOption",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dashboards\\dashboard-widget\\RestrictedWidget.jsx:RestrictedWidget",
+    "targetComponent": "components\\dashboards\\dashboard-widget\\Widget.jsx:WidgetDropdownButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\dashboards\\dashboard-widget\\RestrictedWidget.jsx:RestrictedWidget",
+        "target": "components\\dashboards\\dashboard-widget\\Widget.jsx:Widget",
+        "targetAlias": "Widget",
+        "targetProp": "menuOptions",
+        "isPure": true
+      },
+      {
+        "source": "components\\dashboards\\dashboard-widget\\Widget.jsx:Widget",
+        "target": "components\\dashboards\\dashboard-widget\\Widget.jsx:WidgetDropdownButton",
+        "targetAlias": "WidgetDropdownButton",
+        "targetProp": "extraOptions",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dashboards\\dashboard-widget\\TextboxWidget.jsx:TextboxWidget",
+    "targetComponent": "components\\dashboards\\dashboard-widget\\Widget.jsx:WidgetDropdownButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\dashboards\\dashboard-widget\\TextboxWidget.jsx:TextboxWidget",
+        "target": "components\\dashboards\\dashboard-widget\\Widget.jsx:Widget",
+        "targetAlias": "Widget",
+        "targetProp": "canEdit",
+        "isPure": false
+      },
+      {
+        "source": "components\\dashboards\\dashboard-widget\\Widget.jsx:Widget",
+        "target": "components\\dashboards\\dashboard-widget\\Widget.jsx:WidgetDropdownButton",
+        "targetAlias": "WidgetDropdownButton",
+        "targetProp": "showDeleteOption",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dashboards\\dashboard-widget\\TextboxWidget.jsx:TextboxWidget",
+    "targetComponent": "components\\dashboards\\dashboard-widget\\Widget.jsx:WidgetDropdownButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\dashboards\\dashboard-widget\\TextboxWidget.jsx:TextboxWidget",
+        "target": "components\\dashboards\\dashboard-widget\\Widget.jsx:Widget",
+        "targetAlias": "Widget",
+        "targetProp": "menuOptions",
+        "isPure": true
+      },
+      {
+        "source": "components\\dashboards\\dashboard-widget\\Widget.jsx:Widget",
+        "target": "components\\dashboards\\dashboard-widget\\Widget.jsx:WidgetDropdownButton",
+        "targetAlias": "WidgetDropdownButton",
+        "targetProp": "extraOptions",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
+    "targetComponent": "components\\dashboards\\dashboard-widget\\Widget.jsx:WidgetDropdownButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
+        "target": "components\\dashboards\\dashboard-widget\\Widget.jsx:Widget",
+        "targetAlias": "Widget",
+        "targetProp": "menuOptions",
+        "isPure": true
+      },
+      {
+        "source": "components\\dashboards\\dashboard-widget\\Widget.jsx:Widget",
+        "target": "components\\dashboards\\dashboard-widget\\Widget.jsx:WidgetDropdownButton",
+        "targetAlias": "WidgetDropdownButton",
+        "targetProp": "extraOptions",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
+    "targetComponent": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:RefreshIndicator",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
+        "target": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidgetHeader",
+        "targetAlias": "VisualizationWidgetHeader",
+        "targetProp": "refreshStartedAt",
+        "isPure": true
+      },
+      {
+        "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidgetHeader",
+        "target": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:RefreshIndicator",
+        "targetAlias": "RefreshIndicator",
+        "targetProp": "refreshStartedAt",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  }
+]
