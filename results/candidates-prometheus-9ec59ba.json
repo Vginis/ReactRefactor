@@ -1,0 +1,559 @@
+[
+  {
+    "sourceComponent": "pages\\graph\\PanelList.tsx:PanelList",
+    "targetComponent": "pages\\graph\\MetricsExplorer.tsx:MetricsExplorer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\graph\\PanelList.tsx:PanelList",
+        "target": "pages\\graph\\PanelList.tsx:PanelListContent",
+        "targetAlias": "PanelListContent",
+        "targetProp": "metrics",
+        "isPure": false
+      },
+      {
+        "source": "pages\\graph\\PanelList.tsx:PanelListContent",
+        "target": "pages\\graph\\Panel.tsx:Panel",
+        "targetAlias": "Panel",
+        "targetProp": "metricNames",
+        "isPure": false
+      },
+      {
+        "source": "pages\\graph\\Panel.tsx:Panel",
+        "target": "pages\\graph\\ExpressionInput.tsx:ExpressionInput",
+        "targetAlias": "ExpressionInput",
+        "targetProp": "metricNames",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\ExpressionInput.tsx:ExpressionInput",
+        "target": "pages\\graph\\MetricsExplorer.tsx:MetricsExplorer",
+        "targetAlias": "MetricsExplorer",
+        "targetProp": "metrics",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\graph\\PanelList.tsx:PanelList",
+    "targetComponent": "pages\\graph\\TimeInput.tsx:TimeInput",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\graph\\PanelList.tsx:PanelList",
+        "target": "pages\\graph\\PanelList.tsx:PanelListContent",
+        "targetAlias": "PanelListContent",
+        "targetProp": "useLocalTime",
+        "isPure": false
+      },
+      {
+        "source": "pages\\graph\\PanelList.tsx:PanelListContent",
+        "target": "pages\\graph\\Panel.tsx:Panel",
+        "targetAlias": "Panel",
+        "targetProp": "useLocalTime",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\Panel.tsx:Panel",
+        "target": "pages\\graph\\GraphControls.tsx:GraphControls",
+        "targetAlias": "GraphControls",
+        "targetProp": "useLocalTime",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\GraphControls.tsx:GraphControls",
+        "target": "pages\\graph\\TimeInput.tsx:TimeInput",
+        "targetAlias": "TimeInput",
+        "targetProp": "useLocalTime",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\graph\\PanelList.tsx:PanelList",
+    "targetComponent": "pages\\graph\\Graph.tsx:Graph",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\graph\\PanelList.tsx:PanelList",
+        "target": "pages\\graph\\PanelList.tsx:PanelListContent",
+        "targetAlias": "PanelListContent",
+        "targetProp": "useLocalTime",
+        "isPure": false
+      },
+      {
+        "source": "pages\\graph\\PanelList.tsx:PanelListContent",
+        "target": "pages\\graph\\Panel.tsx:Panel",
+        "targetAlias": "Panel",
+        "targetProp": "useLocalTime",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\Panel.tsx:Panel",
+        "target": "pages\\graph\\GraphTabContent.tsx:GraphTabContent",
+        "targetAlias": "GraphTabContent",
+        "targetProp": "useLocalTime",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\GraphTabContent.tsx:GraphTabContent",
+        "target": "pages\\graph\\Graph.tsx:Graph",
+        "targetAlias": "Graph",
+        "targetProp": "useLocalTime",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\graph\\PanelList.tsx:PanelList",
+    "targetComponent": "pages\\graph\\ExpressionInput.tsx:ExpressionInput",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\graph\\PanelList.tsx:PanelList",
+        "target": "pages\\graph\\PanelList.tsx:PanelListContent",
+        "targetAlias": "PanelListContent",
+        "targetProp": "enableAutocomplete",
+        "isPure": false
+      },
+      {
+        "source": "pages\\graph\\PanelList.tsx:PanelListContent",
+        "target": "pages\\graph\\Panel.tsx:Panel",
+        "targetAlias": "Panel",
+        "targetProp": "enableAutocomplete",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\Panel.tsx:Panel",
+        "target": "pages\\graph\\ExpressionInput.tsx:ExpressionInput",
+        "targetAlias": "ExpressionInput",
+        "targetProp": "enableAutocomplete",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\graph\\PanelList.tsx:PanelList",
+    "targetComponent": "pages\\graph\\ExpressionInput.tsx:ExpressionInput",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\graph\\PanelList.tsx:PanelList",
+        "target": "pages\\graph\\PanelList.tsx:PanelListContent",
+        "targetAlias": "PanelListContent",
+        "targetProp": "enableHighlighting",
+        "isPure": false
+      },
+      {
+        "source": "pages\\graph\\PanelList.tsx:PanelListContent",
+        "target": "pages\\graph\\Panel.tsx:Panel",
+        "targetAlias": "Panel",
+        "targetProp": "enableHighlighting",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\Panel.tsx:Panel",
+        "target": "pages\\graph\\ExpressionInput.tsx:ExpressionInput",
+        "targetAlias": "ExpressionInput",
+        "targetProp": "enableHighlighting",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\graph\\PanelList.tsx:PanelList",
+    "targetComponent": "pages\\graph\\ExpressionInput.tsx:ExpressionInput",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\graph\\PanelList.tsx:PanelList",
+        "target": "pages\\graph\\PanelList.tsx:PanelListContent",
+        "targetAlias": "PanelListContent",
+        "targetProp": "enableLinter",
+        "isPure": false
+      },
+      {
+        "source": "pages\\graph\\PanelList.tsx:PanelListContent",
+        "target": "pages\\graph\\Panel.tsx:Panel",
+        "targetAlias": "Panel",
+        "targetProp": "enableLinter",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\Panel.tsx:Panel",
+        "target": "pages\\graph\\ExpressionInput.tsx:ExpressionInput",
+        "targetAlias": "ExpressionInput",
+        "targetProp": "enableLinter",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\graph\\PanelList.tsx:PanelList",
+    "targetComponent": "pages\\graph\\DataTable.tsx:DataTable",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\graph\\PanelList.tsx:PanelList",
+        "target": "pages\\graph\\PanelList.tsx:PanelListContent",
+        "targetAlias": "PanelListContent",
+        "targetProp": "useLocalTime",
+        "isPure": false
+      },
+      {
+        "source": "pages\\graph\\PanelList.tsx:PanelListContent",
+        "target": "pages\\graph\\Panel.tsx:Panel",
+        "targetAlias": "Panel",
+        "targetProp": "useLocalTime",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\Panel.tsx:Panel",
+        "target": "pages\\graph\\DataTable.tsx:DataTable",
+        "targetAlias": "DataTable",
+        "targetProp": "useLocalTime",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\graph\\PanelList.tsx:PanelListContent",
+    "targetComponent": "pages\\graph\\Graph.tsx:Graph",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\graph\\PanelList.tsx:PanelListContent",
+        "target": "pages\\graph\\Panel.tsx:Panel",
+        "targetAlias": "Panel",
+        "targetProp": "key",
+        "isPure": false
+      },
+      {
+        "source": "pages\\graph\\Panel.tsx:Panel",
+        "target": "pages\\graph\\GraphTabContent.tsx:GraphTabContent",
+        "targetAlias": "GraphTabContent",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\GraphTabContent.tsx:GraphTabContent",
+        "target": "pages\\graph\\Graph.tsx:Graph",
+        "targetAlias": "Graph",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolListContent",
+    "targetComponent": "components\\ToggleMoreLess.tsx:ToggleMoreLess",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolListContent",
+        "target": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolPanel",
+        "targetAlias": "ScrapePoolPanel",
+        "targetProp": "expanded",
+        "isPure": false
+      },
+      {
+        "source": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolPanel",
+        "target": "components\\ToggleMoreLess.tsx:ToggleMoreLess",
+        "targetAlias": "ToggleMoreLess",
+        "targetProp": "showMore",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolPanel",
+    "targetComponent": "components\\CustomInfiniteScroll.tsx:CustomInfiniteScroll",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolPanel",
+        "target": "pages\\targets\\ScrapePoolContent.tsx:ScrapePoolContent",
+        "targetAlias": "ScrapePoolContent",
+        "targetProp": "targets",
+        "isPure": false
+      },
+      {
+        "source": "pages\\targets\\ScrapePoolContent.tsx:ScrapePoolContent",
+        "target": "components\\CustomInfiniteScroll.tsx:CustomInfiniteScroll",
+        "targetAlias": "CustomInfiniteScroll",
+        "targetProp": "allItems",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\serviceDiscovery\\Services.tsx:ServiceDiscoveryContent",
+    "targetComponent": "components\\CustomInfiniteScroll.tsx:CustomInfiniteScroll",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\serviceDiscovery\\Services.tsx:ServiceDiscoveryContent",
+        "target": "pages\\serviceDiscovery\\LabelsTable.tsx:LabelsTable",
+        "targetAlias": "LabelsTable",
+        "targetProp": "value",
+        "isPure": false
+      },
+      {
+        "source": "pages\\serviceDiscovery\\LabelsTable.tsx:LabelsTable",
+        "target": "components\\CustomInfiniteScroll.tsx:CustomInfiniteScroll",
+        "targetAlias": "CustomInfiniteScroll",
+        "targetProp": "allItems",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\graph\\Panel.tsx:Panel",
+    "targetComponent": "pages\\graph\\TimeInput.tsx:TimeInput",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\graph\\Panel.tsx:Panel",
+        "target": "pages\\graph\\GraphControls.tsx:GraphControls",
+        "targetAlias": "GraphControls",
+        "targetProp": "range",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\GraphControls.tsx:GraphControls",
+        "target": "pages\\graph\\TimeInput.tsx:TimeInput",
+        "targetAlias": "TimeInput",
+        "targetProp": "range",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\graph\\Panel.tsx:Panel",
+    "targetComponent": "pages\\graph\\TimeInput.tsx:TimeInput",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\graph\\Panel.tsx:Panel",
+        "target": "pages\\graph\\GraphControls.tsx:GraphControls",
+        "targetAlias": "GraphControls",
+        "targetProp": "endTime",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\GraphControls.tsx:GraphControls",
+        "target": "pages\\graph\\TimeInput.tsx:TimeInput",
+        "targetAlias": "TimeInput",
+        "targetProp": "time",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\graph\\Panel.tsx:Panel",
+    "targetComponent": "pages\\graph\\TimeInput.tsx:TimeInput",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\graph\\Panel.tsx:Panel",
+        "target": "pages\\graph\\GraphControls.tsx:GraphControls",
+        "targetAlias": "GraphControls",
+        "targetProp": "onChangeEndTime",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\GraphControls.tsx:GraphControls",
+        "target": "pages\\graph\\TimeInput.tsx:TimeInput",
+        "targetAlias": "TimeInput",
+        "targetProp": "onChangeTime",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\graph\\Panel.tsx:Panel",
+    "targetComponent": "pages\\graph\\Graph.tsx:Graph",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\graph\\Panel.tsx:Panel",
+        "target": "pages\\graph\\GraphTabContent.tsx:GraphTabContent",
+        "targetAlias": "GraphTabContent",
+        "targetProp": "data",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\GraphTabContent.tsx:GraphTabContent",
+        "target": "pages\\graph\\Graph.tsx:Graph",
+        "targetAlias": "Graph",
+        "targetProp": "data",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\graph\\Panel.tsx:Panel",
+    "targetComponent": "pages\\graph\\Graph.tsx:Graph",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\graph\\Panel.tsx:Panel",
+        "target": "pages\\graph\\GraphTabContent.tsx:GraphTabContent",
+        "targetAlias": "GraphTabContent",
+        "targetProp": "exemplars",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\GraphTabContent.tsx:GraphTabContent",
+        "target": "pages\\graph\\Graph.tsx:Graph",
+        "targetAlias": "Graph",
+        "targetProp": "exemplars",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\graph\\Panel.tsx:Panel",
+    "targetComponent": "pages\\graph\\Graph.tsx:Graph",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\graph\\Panel.tsx:Panel",
+        "target": "pages\\graph\\GraphTabContent.tsx:GraphTabContent",
+        "targetAlias": "GraphTabContent",
+        "targetProp": "displayMode",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\GraphTabContent.tsx:GraphTabContent",
+        "target": "pages\\graph\\Graph.tsx:Graph",
+        "targetAlias": "Graph",
+        "targetProp": "displayMode",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\graph\\Panel.tsx:Panel",
+    "targetComponent": "pages\\graph\\Graph.tsx:Graph",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\graph\\Panel.tsx:Panel",
+        "target": "pages\\graph\\GraphTabContent.tsx:GraphTabContent",
+        "targetAlias": "GraphTabContent",
+        "targetProp": "showExemplars",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\GraphTabContent.tsx:GraphTabContent",
+        "target": "pages\\graph\\Graph.tsx:Graph",
+        "targetAlias": "Graph",
+        "targetProp": "showExemplars",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\graph\\Panel.tsx:Panel",
+    "targetComponent": "pages\\graph\\Graph.tsx:Graph",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\graph\\Panel.tsx:Panel",
+        "target": "pages\\graph\\GraphTabContent.tsx:GraphTabContent",
+        "targetAlias": "GraphTabContent",
+        "targetProp": "lastQueryParams",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\GraphTabContent.tsx:GraphTabContent",
+        "target": "pages\\graph\\Graph.tsx:Graph",
+        "targetAlias": "Graph",
+        "targetProp": "queryParams",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\graph\\Panel.tsx:Panel",
+    "targetComponent": "pages\\graph\\Graph.tsx:Graph",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\graph\\Panel.tsx:Panel",
+        "target": "pages\\graph\\GraphTabContent.tsx:GraphTabContent",
+        "targetAlias": "GraphTabContent",
+        "targetProp": "handleTimeRangeSelection",
+        "isPure": true
+      },
+      {
+        "source": "pages\\graph\\GraphTabContent.tsx:GraphTabContent",
+        "target": "pages\\graph\\Graph.tsx:Graph",
+        "targetAlias": "Graph",
+        "targetProp": "handleTimeRangeSelection",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  }
+]
