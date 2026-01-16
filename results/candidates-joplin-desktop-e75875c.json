@@ -1,0 +1,345 @@
+[
+  {
+    "sourceComponent": "gui\\WindowCommandsAndDialogs\\WindowCommandsAndDialogs.tsx:WindowCommandsAndDialogs",
+    "targetComponent": "services\\plugins\\UserWebview.tsx:UserWebview",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "gui\\WindowCommandsAndDialogs\\WindowCommandsAndDialogs.tsx:WindowCommandsAndDialogs",
+        "target": "gui\\WindowCommandsAndDialogs\\PluginDialogs.tsx:PluginDialogs",
+        "targetAlias": "PluginDialogs",
+        "targetProp": "themeId",
+        "isPure": false
+      },
+      {
+        "source": "gui\\WindowCommandsAndDialogs\\PluginDialogs.tsx:PluginDialogs",
+        "target": "services\\plugins\\UserWebviewDialog.tsx:UserWebviewDialog",
+        "targetAlias": "UserWebviewDialog",
+        "targetProp": "themeId",
+        "isPure": true
+      },
+      {
+        "source": "services\\plugins\\UserWebviewDialog.tsx:UserWebviewDialog",
+        "target": "services\\plugins\\UserWebview.tsx:UserWebview",
+        "targetAlias": "UserWebview",
+        "targetProp": "themeId",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "gui\\WindowCommandsAndDialogs\\PluginDialogs.tsx:PluginDialogs",
+    "targetComponent": "services\\plugins\\UserWebview.tsx:UserWebview",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "gui\\WindowCommandsAndDialogs\\PluginDialogs.tsx:PluginDialogs",
+        "target": "services\\plugins\\UserWebviewDialog.tsx:UserWebviewDialog",
+        "targetAlias": "UserWebviewDialog",
+        "targetProp": "viewId",
+        "isPure": false
+      },
+      {
+        "source": "services\\plugins\\UserWebviewDialog.tsx:UserWebviewDialog",
+        "target": "services\\plugins\\UserWebview.tsx:UserWebview",
+        "targetAlias": "UserWebview",
+        "targetProp": "viewId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "gui\\WindowCommandsAndDialogs\\PluginDialogs.tsx:PluginDialogs",
+    "targetComponent": "services\\plugins\\UserWebview.tsx:UserWebview",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "gui\\WindowCommandsAndDialogs\\PluginDialogs.tsx:PluginDialogs",
+        "target": "services\\plugins\\UserWebviewDialog.tsx:UserWebviewDialog",
+        "targetAlias": "UserWebviewDialog",
+        "targetProp": "html",
+        "isPure": false
+      },
+      {
+        "source": "services\\plugins\\UserWebviewDialog.tsx:UserWebviewDialog",
+        "target": "services\\plugins\\UserWebview.tsx:UserWebview",
+        "targetAlias": "UserWebview",
+        "targetProp": "html",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "gui\\WindowCommandsAndDialogs\\PluginDialogs.tsx:PluginDialogs",
+    "targetComponent": "services\\plugins\\UserWebview.tsx:UserWebview",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "gui\\WindowCommandsAndDialogs\\PluginDialogs.tsx:PluginDialogs",
+        "target": "services\\plugins\\UserWebviewDialog.tsx:UserWebviewDialog",
+        "targetAlias": "UserWebviewDialog",
+        "targetProp": "scripts",
+        "isPure": false
+      },
+      {
+        "source": "services\\plugins\\UserWebviewDialog.tsx:UserWebviewDialog",
+        "target": "services\\plugins\\UserWebview.tsx:UserWebview",
+        "targetAlias": "UserWebview",
+        "targetProp": "scripts",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "gui\\WindowCommandsAndDialogs\\PluginDialogs.tsx:PluginDialogs",
+    "targetComponent": "services\\plugins\\UserWebview.tsx:UserWebview",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "gui\\WindowCommandsAndDialogs\\PluginDialogs.tsx:PluginDialogs",
+        "target": "services\\plugins\\UserWebviewDialog.tsx:UserWebviewDialog",
+        "targetAlias": "UserWebviewDialog",
+        "targetProp": "pluginId",
+        "isPure": false
+      },
+      {
+        "source": "services\\plugins\\UserWebviewDialog.tsx:UserWebviewDialog",
+        "target": "services\\plugins\\UserWebview.tsx:UserWebview",
+        "targetAlias": "UserWebview",
+        "targetProp": "pluginId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "gui\\WindowCommandsAndDialogs\\PluginDialogs.tsx:PluginDialogs",
+    "targetComponent": "services\\plugins\\UserWebview.tsx:UserWebview",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "gui\\WindowCommandsAndDialogs\\PluginDialogs.tsx:PluginDialogs",
+        "target": "services\\plugins\\UserWebviewDialog.tsx:UserWebviewDialog",
+        "targetAlias": "UserWebviewDialog",
+        "targetProp": "fitToContent",
+        "isPure": false
+      },
+      {
+        "source": "services\\plugins\\UserWebviewDialog.tsx:UserWebviewDialog",
+        "target": "services\\plugins\\UserWebview.tsx:UserWebview",
+        "targetAlias": "UserWebview",
+        "targetProp": "fitToContent",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "gui\\WindowCommandsAndDialogs\\PluginDialogs.tsx:PluginDialogs",
+    "targetComponent": "services\\plugins\\UserWebviewDialogButtonBar.tsx:UserWebviewDialogButtonBar",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "gui\\WindowCommandsAndDialogs\\PluginDialogs.tsx:PluginDialogs",
+        "target": "services\\plugins\\UserWebviewDialog.tsx:UserWebviewDialog",
+        "targetAlias": "UserWebviewDialog",
+        "targetProp": "buttons",
+        "isPure": false
+      },
+      {
+        "source": "services\\plugins\\UserWebviewDialog.tsx:UserWebviewDialog",
+        "target": "services\\plugins\\UserWebviewDialogButtonBar.tsx:UserWebviewDialogButtonBar",
+        "targetAlias": "UserWebviewDialogButtonBar",
+        "targetProp": "buttons",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "gui\\WindowCommandsAndDialogs\\WindowCommandsAndDialogs.tsx:WindowCommandsAndDialogs",
+    "targetComponent": "gui\\Dialog.tsx:Dialog",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "gui\\WindowCommandsAndDialogs\\WindowCommandsAndDialogs.tsx:WindowCommandsAndDialogs",
+        "target": "gui\\NoteContentPropertiesDialog.tsx:NoteContentPropertiesDialog",
+        "targetAlias": "NoteContentPropertiesDialog",
+        "targetProp": "onClose",
+        "isPure": false
+      },
+      {
+        "source": "gui\\NoteContentPropertiesDialog.tsx:NoteContentPropertiesDialog",
+        "target": "gui\\Dialog.tsx:Dialog",
+        "targetAlias": "Dialog",
+        "targetProp": "onCancel",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "gui\\WindowCommandsAndDialogs\\WindowCommandsAndDialogs.tsx:WindowCommandsAndDialogs",
+    "targetComponent": "gui\\DialogButtonRow.tsx:DialogButtonRow",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "gui\\WindowCommandsAndDialogs\\WindowCommandsAndDialogs.tsx:WindowCommandsAndDialogs",
+        "target": "gui\\NoteContentPropertiesDialog.tsx:NoteContentPropertiesDialog",
+        "targetAlias": "NoteContentPropertiesDialog",
+        "targetProp": "themeId",
+        "isPure": false
+      },
+      {
+        "source": "gui\\NoteContentPropertiesDialog.tsx:NoteContentPropertiesDialog",
+        "target": "gui\\DialogButtonRow.tsx:DialogButtonRow",
+        "targetAlias": "DialogButtonRow",
+        "targetProp": "themeId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "gui\\WindowCommandsAndDialogs\\WindowCommandsAndDialogs.tsx:WindowCommandsAndDialogs",
+    "targetComponent": "gui\\Dialog.tsx:Dialog",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "gui\\WindowCommandsAndDialogs\\WindowCommandsAndDialogs.tsx:WindowCommandsAndDialogs",
+        "target": "gui\\NotePropertiesDialog.tsx:NotePropertiesDialog",
+        "targetAlias": "NotePropertiesDialog",
+        "targetProp": "onClose",
+        "isPure": false
+      },
+      {
+        "source": "gui\\NotePropertiesDialog.tsx:NotePropertiesDialog",
+        "target": "gui\\Dialog.tsx:Dialog",
+        "targetAlias": "Dialog",
+        "targetProp": "onCancel",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "gui\\WindowCommandsAndDialogs\\WindowCommandsAndDialogs.tsx:WindowCommandsAndDialogs",
+    "targetComponent": "gui\\DialogButtonRow.tsx:DialogButtonRow",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "gui\\WindowCommandsAndDialogs\\WindowCommandsAndDialogs.tsx:WindowCommandsAndDialogs",
+        "target": "gui\\NotePropertiesDialog.tsx:NotePropertiesDialog",
+        "targetAlias": "NotePropertiesDialog",
+        "targetProp": "themeId",
+        "isPure": false
+      },
+      {
+        "source": "gui\\NotePropertiesDialog.tsx:NotePropertiesDialog",
+        "target": "gui\\DialogButtonRow.tsx:DialogButtonRow",
+        "targetAlias": "DialogButtonRow",
+        "targetProp": "themeId",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "gui\\Sidebar\\listItemComponents\\FolderItem.tsx:FolderItem",
+    "targetComponent": "gui\\Sidebar\\listItemComponents\\ExpandIcon.tsx:ExpandIcon",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "gui\\Sidebar\\listItemComponents\\FolderItem.tsx:FolderItem",
+        "target": "gui\\Sidebar\\listItemComponents\\ExpandLink.tsx:ExpandLink",
+        "targetAlias": "ExpandLink",
+        "targetProp": "isExpanded",
+        "isPure": false
+      },
+      {
+        "source": "gui\\Sidebar\\listItemComponents\\ExpandLink.tsx:ExpandLink",
+        "target": "gui\\Sidebar\\listItemComponents\\ExpandIcon.tsx:ExpandIcon",
+        "targetAlias": "ExpandIcon",
+        "targetProp": "isExpanded",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "gui\\Sidebar\\listItemComponents\\FolderItem.tsx:FolderItem",
+    "targetComponent": "gui\\Sidebar\\listItemComponents\\EmptyExpandLink.tsx:EmptyExpandLink",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "gui\\Sidebar\\listItemComponents\\FolderItem.tsx:FolderItem",
+        "target": "gui\\Sidebar\\listItemComponents\\ExpandLink.tsx:ExpandLink",
+        "targetAlias": "ExpandLink",
+        "targetProp": "className",
+        "isPure": true
+      },
+      {
+        "source": "gui\\Sidebar\\listItemComponents\\ExpandLink.tsx:ExpandLink",
+        "target": "gui\\Sidebar\\listItemComponents\\EmptyExpandLink.tsx:EmptyExpandLink",
+        "targetAlias": "EmptyExpandLink",
+        "targetProp": "className",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "gui\\NoteListControls\\NoteListControls.tsx:NoteListControls",
+    "targetComponent": "gui\\lib\\SearchInput\\SearchInput.tsx:SearchInput",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "gui\\NoteListControls\\NoteListControls.tsx:NoteListControls",
+        "target": "gui\\SearchBar\\SearchBar.tsx:SearchBar",
+        "targetAlias": "SearchBar",
+        "targetProp": "inputRef",
+        "isPure": false
+      },
+      {
+        "source": "gui\\SearchBar\\SearchBar.tsx:SearchBar",
+        "target": "gui\\lib\\SearchInput\\SearchInput.tsx:SearchInput",
+        "targetAlias": "SearchInput",
+        "targetProp": "inputRef",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  }
+]
