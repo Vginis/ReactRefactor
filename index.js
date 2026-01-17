@@ -1,16 +1,17 @@
 #!/usr/bin/env node
 console.time("Execution time");
 import * as fs from 'fs';
-import { getAllFiles, resolveIfProjectHasMultiplePages, extractPathsAndHierarchies,
+import { 
+    getAllFiles, 
+    resolveIfProjectHasMultiplePages,
     extractPathsAndHierarchies2
- } from './lib/util.js';
+} from './lib/util.js';
 import { loadReactFiles } from './lib/ReactFile.js';
-import { loadReactComponents, addParents, addCompositeKeyReturnedElements } from './lib/loadingFuncs.js';
+import { loadReactComponents, addParents } from './lib/loadingFuncs.js';
 import { detectPropDrilling } from './lib/Hierarchy.js';
 import readline from 'readline';
-import { loadAliases, loadAliases2 } from './lib/Alias.js';
+import { loadAliases2 } from './lib/Alias.js';
 import { displayMenu, displayPropDrilling} from './lib/cli.js';
-import { countDistinctComponents, calculatePropDrillingDepths, countCompoundPropDrillings, countPathOccurrences, countPropDrillingFamilies, countPropDrillingRefactoringStats, countPropDrillingsWithDifferentStartCommonEnding } from './lib/statsCalculation.js';
 import { printPropDrillingsWithDetails } from './lib/PropDrilling.js';
 
 const args = process.argv.slice(2);
@@ -184,41 +185,6 @@ rl.on('SIGINT', () => {
 const { possibleRefactorings, allPropDrillings } = printPropDrillingsWithDetails(propDrillings, reactComponents);
 
 fs.writeFileSync(`./stats/candidates.json`, JSON.stringify(allPropDrillings, null, 2), 'utf-8');
-
-//USE CASES(TESTING PURPOSES)
-//propDrillings[0].addComponentComposition(reactComponents,propDrillings);
-//propDrillings[0].addUseContext(reactComponents,propDrillings);
-
-//StatsModule
-// console.log(`Components participating in Prop Drillings: ${(countDistinctComponents(propDrillings))}`)
-// console.log(`Components participation percentage in Prop Drillings: ${(countDistinctComponents(propDrillings)/reactComponents.length).toFixed(2)}`)
-// console.log(`Possible Refactorings with Context or Composition: ${possibleRefactorings}`);
-// const depthsMap = calculatePropDrillingDepths(propDrillings);
-// for(let i=3; i<=5; i++){
-//     const familyDepth = (depthsMap.get(i)) ? depthsMap.get(i) : 0; 
-//     console.log(`Number of Prop Drillings with depth ${i}: ${familyDepth}`);
-// }
-
-// const { compoundPropDrillingsCount, totalCompoundPropDrillings } = countCompoundPropDrillings(propDrillings);
-// console.log(`Total Number of Compound Prop Drillings: ${totalCompoundPropDrillings}`);
-// const pathOccurencesMap = countPathOccurrences(propDrillings);
-// console.log(pathOccurencesMap);
-// console.log("Path Occurences Array: " + [...pathOccurencesMap.values()]);
-// const compoundPropDrillingFamilies = countPropDrillingFamilies(propDrillings);
-
-// console.log(`Compound Prop Drilling Families with 2 properties: ${compoundPropDrillingFamilies["twos"]}`);
-// console.log(`Compound Prop Drilling Families with 3 properties: ${compoundPropDrillingFamilies["threes"]}`);
-// console.log(`Compound Prop Drilling Families with more than 4 properties: ${compoundPropDrillingFamilies["multiples"]}`);
-// console.log(`Number of compound Prop Drillings: ${compoundPropDrillingsCount}`);
-
-// const { componentCompositionCount, contextCount, refactorableCompoundPropDrillingsCount } = countPropDrillingRefactoringStats(propDrillings);
-// console.log(`Allowed Refactorings with Component Composition: ${componentCompositionCount}`);
-// console.log(`Allowed Refactorings with Context: ${contextCount}`);
-// console.log(`Number of refactorable Compound Prop Drillings: ${refactorableCompoundPropDrillingsCount}`);
-
-// const { propDrillingsWithCommonEnding, propDrilllingsWithCommonStart } = countPropDrillingsWithDifferentStartCommonEnding(propDrillings);
-// console.log(`Prop Drillings with common ending: ${propDrillingsWithCommonEnding}`);
-// console.log(`Prop Drillings with common start: ${propDrilllingsWithCommonStart}`);
 
 reactComponents.forEach(comp => {
     comp.writeChanges();
