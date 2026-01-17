@@ -1,4 +1,7 @@
 //module for stats calculation
+/*
+Deprecated module
+*/
 function countDistinctComponents(propDrillings) {
     const uniqueComponents = new Set();
     
