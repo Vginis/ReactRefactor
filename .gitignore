@@ -1,5 +1,6 @@
 **/node_modules/
 /stats
+/stats/latex
 /tests/integration/resources
 **/dist/
 *.log
