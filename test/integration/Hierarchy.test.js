@@ -1,14 +1,13 @@
 import { getFileManager } from '../utils/test-utils.js';
-import { loadAliases, loadAliases2 } from '../../lib/Alias.js';
+import { loadAliases2 } from '../../lib/Alias.js';
 import {
     resolveIfProjectHasMultiplePages,
-    extractPathsAndHierarchies
+    extractPathsAndHierarchies2
 } from '../../lib/util.js';
 
 import {
     loadReactComponents,
-    addParents,
-    addCompositeKeyReturnedElements
+    addParents
 } from '../../lib/loadingFuncs.js';
 
 describe("Component hierarchy", () => {
@@ -21,10 +20,10 @@ describe("Component hierarchy", () => {
             "test//resources//social-net//src",
             "test//resources//social-net//src//App.jsx", "App", 9, 8)
 
-        expect(paths.length).toBe(2);
-        expect(paths[0].length).toBe(3)
-        expect(paths[1].length).toBe(4)
-
+        expect(paths.length).toBe(3);
+        expect(paths[0].length).toBe(4);
+        expect(paths[1].length).toBe(6);
+        expect(paths[2].length).toBe(7);
     });
 
     test("should load hierarchy containing circles", () => {
@@ -52,7 +51,7 @@ describe("Component hierarchy", () => {
 
         expect(paths.length).toBe(5);
         expect(paths[0].length).toBe(3)
-        expect(paths[1].length).toBe(4)
+        expect(paths[1].length).toBe(3)
         expect(paths[2].length).toBe(4)
 
     });
@@ -70,11 +69,10 @@ function analyzeComponentHierarchy(testProjectPath, rootFileName, rootComponent,
     expect(filteredJsxElements.size).toBe(expectedJsxElements);
     expect(reactComponents.length).toBe(expectedReactComponents);
 
-    loadAliases(reactFiles);
+    loadAliases2(reactFiles);
     addParents();
-    addCompositeKeyReturnedElements(reactFiles);
-    const { hierarchyTrees, paths } = extractPathsAndHierarchies(
-        reactFiles, rootFileName, hasMultiplePages);
+    //addCompositeKeyReturnedElements(reactFiles);
+    const { hierarchyTrees, paths } = extractPathsAndHierarchies2();
 
     return { hierarchyTrees, paths }
 }
