@@ -53,6 +53,11 @@ let projects = [
         projectName: 'Rocket chat',
         projectResultsPath: './results/candidates-rocketchat-7137ec8.json',
         totalComponents: 1391  
+    },
+    {
+        projectName: 'MitmProxy',
+        projectResultsPath: './results/candidates-mitmproxy-d9d5878.json',
+        totalComponents: 116  
     }
 ];
 
