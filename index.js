@@ -60,7 +60,7 @@ const { hierarchyTrees, paths } = extractPathsAndHierarchies2();
 console.timeEnd("Hierarchy resolution")
 
 // Print all hierarchy trees
-fs.writeFileSync('./stats/a.json', JSON.stringify(hierarchyTrees, null, 2), 'utf-8');
+fs.writeFileSync('./stats/tmp/a.json', JSON.stringify(hierarchyTrees, null, 2), 'utf-8');
 
 savePaths(paths);
 
@@ -96,7 +96,7 @@ function savePaths(paths, debug = true) {
             return componentPathSegments.join(":")
         }).join(","));
     }
-    fs.writeFileSync('./stats/paths.csv', csvLines.join("\n"), 'utf-8');
+    fs.writeFileSync('./stats/tmp/paths.csv', csvLines.join("\n"), 'utf-8');
 }
 
 function handleUserInput(key) {
@@ -183,7 +183,7 @@ rl.on('SIGINT', () => {
 });
 const { possibleRefactorings, allPropDrillings } = printPropDrillingsWithDetails(propDrillings, reactComponents);
 
-fs.writeFileSync(`./stats/candidates.json`, JSON.stringify(allPropDrillings, null, 2), 'utf-8');
+fs.writeFileSync(`./stats/tmp/candidates.json`, JSON.stringify(allPropDrillings, null, 2), 'utf-8');
 
 reactComponents.forEach(comp => {
     comp.writeChanges();
