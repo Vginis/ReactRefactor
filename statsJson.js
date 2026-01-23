@@ -47,7 +47,7 @@ let projects = [
     {
         projectName: 'Prometheus',
         projectResultsPath: './results/candidates-prometheus-9ec59ba.json',
-        totalComponents: 58  
+        totalComponents: 59  
     },
     {
         projectName: 'Rocket chat',
