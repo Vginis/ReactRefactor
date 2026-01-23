@@ -1136,6 +1136,30 @@
   },
   {
     "sourceComponent": "pages\\UsersList\\index.tsx:UsersList",
+    "targetComponent": "components\\ListView\\Filters\\index.tsx:UIFilters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\UsersList\\index.tsx:UsersList",
+        "target": "components\\ListView\\ListView.tsx:ListView",
+        "targetAlias": "ListView",
+        "targetProp": "filters",
+        "isPure": false
+      },
+      {
+        "source": "components\\ListView\\ListView.tsx:ListView",
+        "target": "components\\ListView\\Filters\\index.tsx:UIFilters",
+        "targetAlias": "FilterControls",
+        "targetProp": "filters",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\UsersList\\index.tsx:UsersList",
     "targetComponent": "components\\ListView\\CardCollection.tsx:CardCollection",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
@@ -1249,6 +1273,30 @@
         "targetAlias": "BulkTagModal",
         "targetProp": "addSuccessToast",
         "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\UserRegistrations\\index.tsx:UserRegistrations",
+    "targetComponent": "components\\ListView\\Filters\\index.tsx:UIFilters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\UserRegistrations\\index.tsx:UserRegistrations",
+        "target": "components\\ListView\\ListView.tsx:ListView",
+        "targetAlias": "ListView",
+        "targetProp": "filters",
+        "isPure": false
+      },
+      {
+        "source": "components\\ListView\\ListView.tsx:ListView",
+        "target": "components\\ListView\\Filters\\index.tsx:UIFilters",
+        "targetAlias": "FilterControls",
+        "targetProp": "filters",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -1376,6 +1424,30 @@
   },
   {
     "sourceComponent": "pages\\ThemeList\\index.tsx:ThemesList",
+    "targetComponent": "components\\ListView\\Filters\\index.tsx:UIFilters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\ThemeList\\index.tsx:ThemesList",
+        "target": "components\\ListView\\ListView.tsx:ListView",
+        "targetAlias": "ListView",
+        "targetProp": "filters",
+        "isPure": false
+      },
+      {
+        "source": "components\\ListView\\ListView.tsx:ListView",
+        "target": "components\\ListView\\Filters\\index.tsx:UIFilters",
+        "targetAlias": "FilterControls",
+        "targetProp": "filters",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\ThemeList\\index.tsx:ThemesList",
     "targetComponent": "components\\ListView\\CardCollection.tsx:CardCollection",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
@@ -1489,6 +1561,30 @@
         "targetAlias": "BulkTagModal",
         "targetProp": "addSuccessToast",
         "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\Tags\\index.tsx:TagList",
+    "targetComponent": "components\\ListView\\Filters\\index.tsx:UIFilters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\Tags\\index.tsx:TagList",
+        "target": "components\\ListView\\ListView.tsx:ListView",
+        "targetAlias": "ListView",
+        "targetProp": "filters",
+        "isPure": false
+      },
+      {
+        "source": "components\\ListView\\ListView.tsx:ListView",
+        "target": "components\\ListView\\Filters\\index.tsx:UIFilters",
+        "targetAlias": "FilterControls",
+        "targetProp": "filters",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -1688,6 +1784,30 @@
   },
   {
     "sourceComponent": "pages\\SavedQueryList\\index.tsx:SavedQueryList",
+    "targetComponent": "components\\ListView\\Filters\\index.tsx:UIFilters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\SavedQueryList\\index.tsx:SavedQueryList",
+        "target": "components\\ListView\\ListView.tsx:ListView",
+        "targetAlias": "ListView",
+        "targetProp": "filters",
+        "isPure": false
+      },
+      {
+        "source": "components\\ListView\\ListView.tsx:ListView",
+        "target": "components\\ListView\\Filters\\index.tsx:UIFilters",
+        "targetAlias": "FilterControls",
+        "targetProp": "filters",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\SavedQueryList\\index.tsx:SavedQueryList",
     "targetComponent": "components\\ListView\\CardCollection.tsx:CardCollection",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
@@ -1801,6 +1921,30 @@
         "targetAlias": "BulkTagModal",
         "targetProp": "refreshData",
         "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\RowLevelSecurityList\\index.tsx:RowLevelSecurityList",
+    "targetComponent": "components\\ListView\\Filters\\index.tsx:UIFilters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\RowLevelSecurityList\\index.tsx:RowLevelSecurityList",
+        "target": "components\\ListView\\ListView.tsx:ListView",
+        "targetAlias": "ListView",
+        "targetProp": "filters",
+        "isPure": false
+      },
+      {
+        "source": "components\\ListView\\ListView.tsx:ListView",
+        "target": "components\\ListView\\Filters\\index.tsx:UIFilters",
+        "targetAlias": "FilterControls",
+        "targetProp": "filters",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -2000,6 +2144,30 @@
   },
   {
     "sourceComponent": "pages\\RolesList\\index.tsx:RolesList",
+    "targetComponent": "components\\ListView\\Filters\\index.tsx:UIFilters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\RolesList\\index.tsx:RolesList",
+        "target": "components\\ListView\\ListView.tsx:ListView",
+        "targetAlias": "ListView",
+        "targetProp": "filters",
+        "isPure": false
+      },
+      {
+        "source": "components\\ListView\\ListView.tsx:ListView",
+        "target": "components\\ListView\\Filters\\index.tsx:UIFilters",
+        "targetAlias": "FilterControls",
+        "targetProp": "filters",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\RolesList\\index.tsx:RolesList",
     "targetComponent": "components\\ListView\\CardCollection.tsx:CardCollection",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
@@ -2168,6 +2336,30 @@
   },
   {
     "sourceComponent": "pages\\GroupsList\\index.tsx:GroupsList",
+    "targetComponent": "components\\ListView\\Filters\\index.tsx:UIFilters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\GroupsList\\index.tsx:GroupsList",
+        "target": "components\\ListView\\ListView.tsx:ListView",
+        "targetAlias": "ListView",
+        "targetProp": "filters",
+        "isPure": false
+      },
+      {
+        "source": "components\\ListView\\ListView.tsx:ListView",
+        "target": "components\\ListView\\Filters\\index.tsx:UIFilters",
+        "targetAlias": "FilterControls",
+        "targetProp": "filters",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\GroupsList\\index.tsx:GroupsList",
     "targetComponent": "components\\ListView\\CardCollection.tsx:CardCollection",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
@@ -2384,6 +2576,30 @@
   },
   {
     "sourceComponent": "pages\\DatasetList\\index.tsx:DatasetList",
+    "targetComponent": "components\\ListView\\Filters\\index.tsx:UIFilters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\DatasetList\\index.tsx:DatasetList",
+        "target": "components\\ListView\\ListView.tsx:ListView",
+        "targetAlias": "ListView",
+        "targetProp": "filters",
+        "isPure": false
+      },
+      {
+        "source": "components\\ListView\\ListView.tsx:ListView",
+        "target": "components\\ListView\\Filters\\index.tsx:UIFilters",
+        "targetAlias": "FilterControls",
+        "targetProp": "filters",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\DatasetList\\index.tsx:DatasetList",
     "targetComponent": "components\\ListView\\CardCollection.tsx:CardCollection",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
@@ -2503,6 +2719,54 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "pages\\DatasetCreation\\index.tsx:DatasetPanelComponent",
+    "targetComponent": "features\\datasets\\AddDataset\\DatasetPanel\\DatasetPanel.tsx:DatasetPanel",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\DatasetCreation\\index.tsx:DatasetPanelComponent",
+        "target": "features\\datasets\\AddDataset\\DatasetPanel\\index.tsx:DatasetPanelWrapper",
+        "targetAlias": "DatasetPanel",
+        "targetProp": "tableName",
+        "isPure": true
+      },
+      {
+        "source": "features\\datasets\\AddDataset\\DatasetPanel\\index.tsx:DatasetPanelWrapper",
+        "target": "features\\datasets\\AddDataset\\DatasetPanel\\DatasetPanel.tsx:DatasetPanel",
+        "targetAlias": "DatasetPanel",
+        "targetProp": "tableName",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\DatasetCreation\\index.tsx:DatasetPanelComponent",
+    "targetComponent": "features\\datasets\\AddDataset\\DatasetPanel\\DatasetPanel.tsx:DatasetPanel",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\DatasetCreation\\index.tsx:DatasetPanelComponent",
+        "target": "features\\datasets\\AddDataset\\DatasetPanel\\index.tsx:DatasetPanelWrapper",
+        "targetAlias": "DatasetPanel",
+        "targetProp": "datasets",
+        "isPure": true
+      },
+      {
+        "source": "features\\datasets\\AddDataset\\DatasetPanel\\index.tsx:DatasetPanelWrapper",
+        "target": "features\\datasets\\AddDataset\\DatasetPanel\\DatasetPanel.tsx:DatasetPanel",
+        "targetAlias": "DatasetPanel",
+        "targetProp": "datasets",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "pages\\DatabaseList\\index.tsx:DatabaseList",
     "targetComponent": "features\\tags\\BulkTagModal.tsx:BulkTagModal",
     "canRefactorWithContext": true,
@@ -2569,6 +2833,30 @@
         "targetAlias": "BulkTagModal",
         "targetProp": "refreshData",
         "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\DatabaseList\\index.tsx:DatabaseList",
+    "targetComponent": "components\\ListView\\Filters\\index.tsx:UIFilters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\DatabaseList\\index.tsx:DatabaseList",
+        "target": "components\\ListView\\ListView.tsx:ListView",
+        "targetAlias": "ListView",
+        "targetProp": "filters",
+        "isPure": false
+      },
+      {
+        "source": "components\\ListView\\ListView.tsx:ListView",
+        "target": "components\\ListView\\Filters\\index.tsx:UIFilters",
+        "targetAlias": "FilterControls",
+        "targetProp": "filters",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -2688,6 +2976,30 @@
         "target": "features\\tags\\BulkTagModal.tsx:BulkTagModal",
         "targetAlias": "BulkTagModal",
         "targetProp": "resourceName",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\DashboardList\\index.tsx:DashboardList",
+    "targetComponent": "components\\ListView\\Filters\\index.tsx:UIFilters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\DashboardList\\index.tsx:DashboardList",
+        "target": "components\\ListView\\ListView.tsx:ListView",
+        "targetAlias": "ListView",
+        "targetProp": "filters",
+        "isPure": false
+      },
+      {
+        "source": "components\\ListView\\ListView.tsx:ListView",
+        "target": "components\\ListView\\Filters\\index.tsx:UIFilters",
+        "targetAlias": "FilterControls",
+        "targetProp": "filters",
         "isPure": false
       }
     ],
@@ -2888,6 +3200,30 @@
   },
   {
     "sourceComponent": "pages\\CssTemplateList\\index.tsx:CssTemplatesList",
+    "targetComponent": "components\\ListView\\Filters\\index.tsx:UIFilters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\CssTemplateList\\index.tsx:CssTemplatesList",
+        "target": "components\\ListView\\ListView.tsx:ListView",
+        "targetAlias": "ListView",
+        "targetProp": "filters",
+        "isPure": false
+      },
+      {
+        "source": "components\\ListView\\ListView.tsx:ListView",
+        "target": "components\\ListView\\Filters\\index.tsx:UIFilters",
+        "targetAlias": "FilterControls",
+        "targetProp": "filters",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\CssTemplateList\\index.tsx:CssTemplatesList",
     "targetComponent": "components\\ListView\\CardCollection.tsx:CardCollection",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
@@ -3025,6 +3361,30 @@
         "targetAlias": "BulkTagModal",
         "targetProp": "addDangerToast",
         "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\ChartList\\index.tsx:ChartList",
+    "targetComponent": "components\\ListView\\Filters\\index.tsx:UIFilters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\ChartList\\index.tsx:ChartList",
+        "target": "components\\ListView\\ListView.tsx:ListView",
+        "targetAlias": "ListView",
+        "targetProp": "filters",
+        "isPure": false
+      },
+      {
+        "source": "components\\ListView\\ListView.tsx:ListView",
+        "target": "components\\ListView\\Filters\\index.tsx:UIFilters",
+        "targetAlias": "FilterControls",
+        "targetProp": "filters",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -3224,6 +3584,78 @@
   },
   {
     "sourceComponent": "explore\\components\\ExploreViewContainer\\index.jsx:ExploreViewContainer",
+    "targetComponent": "explore\\components\\PropertiesModal\\index.tsx:PropertiesModal",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "explore\\components\\ExploreViewContainer\\index.jsx:ExploreViewContainer",
+        "target": "explore\\components\\ExploreChartHeader\\index.jsx:ExploreChartHeader",
+        "targetAlias": "ConnectedExploreChartHeader",
+        "targetProp": "slice",
+        "isPure": false
+      },
+      {
+        "source": "explore\\components\\ExploreChartHeader\\index.jsx:ExploreChartHeader",
+        "target": "explore\\components\\PropertiesModal\\index.tsx:PropertiesModal",
+        "targetAlias": "PropertiesModal",
+        "targetProp": "slice",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "explore\\components\\ExploreViewContainer\\index.jsx:ExploreViewContainer",
+    "targetComponent": "features\\reports\\ReportModal\\index.tsx:ReportModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "explore\\components\\ExploreViewContainer\\index.jsx:ExploreViewContainer",
+        "target": "explore\\components\\ExploreChartHeader\\index.jsx:ExploreChartHeader",
+        "targetAlias": "ConnectedExploreChartHeader",
+        "targetProp": "dashboardId",
+        "isPure": false
+      },
+      {
+        "source": "explore\\components\\ExploreChartHeader\\index.jsx:ExploreChartHeader",
+        "target": "features\\reports\\ReportModal\\index.tsx:ReportModal",
+        "targetAlias": "ReportModal",
+        "targetProp": "dashboardId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "explore\\components\\ExploreViewContainer\\index.jsx:ExploreViewContainer",
+    "targetComponent": "features\\reports\\ReportModal\\index.tsx:ReportModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "explore\\components\\ExploreViewContainer\\index.jsx:ExploreViewContainer",
+        "target": "explore\\components\\ExploreChartHeader\\index.jsx:ExploreChartHeader",
+        "targetAlias": "ConnectedExploreChartHeader",
+        "targetProp": "chart",
+        "isPure": false
+      },
+      {
+        "source": "explore\\components\\ExploreChartHeader\\index.jsx:ExploreChartHeader",
+        "target": "features\\reports\\ReportModal\\index.tsx:ReportModal",
+        "targetAlias": "ReportModal",
+        "targetProp": "chart",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "explore\\components\\ExploreViewContainer\\index.jsx:ExploreViewContainer",
     "targetComponent": "SqlLab\\components\\SaveDatasetModal\\index.tsx:SaveDatasetModal",
     "canRefactorWithContext": false,
     "canRefactorWithComposition": false,
@@ -3247,6 +3679,126 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "explore\\components\\ExploreViewContainer\\index.jsx:ExploreViewContainer",
+    "targetComponent": "explore\\components\\RunQueryButton\\index.tsx:RunQueryButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "explore\\components\\ExploreViewContainer\\index.jsx:ExploreViewContainer",
+        "target": "explore\\components\\ControlPanelsContainer.tsx:ControlPanelsContainer",
+        "targetAlias": "ConnectedControlPanelsContainer",
+        "targetProp": "onQuery",
+        "isPure": false
+      },
+      {
+        "source": "explore\\components\\ControlPanelsContainer.tsx:ControlPanelsContainer",
+        "target": "explore\\components\\RunQueryButton\\index.tsx:RunQueryButton",
+        "targetAlias": "RunQueryButton",
+        "targetProp": "onQuery",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "explore\\components\\ExploreViewContainer\\index.jsx:ExploreViewContainer",
+    "targetComponent": "explore\\components\\RunQueryButton\\index.tsx:RunQueryButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "explore\\components\\ExploreViewContainer\\index.jsx:ExploreViewContainer",
+        "target": "explore\\components\\ControlPanelsContainer.tsx:ControlPanelsContainer",
+        "targetAlias": "ConnectedControlPanelsContainer",
+        "targetProp": "onStop",
+        "isPure": false
+      },
+      {
+        "source": "explore\\components\\ControlPanelsContainer.tsx:ControlPanelsContainer",
+        "target": "explore\\components\\RunQueryButton\\index.tsx:RunQueryButton",
+        "targetAlias": "RunQueryButton",
+        "targetProp": "onStop",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "explore\\components\\ExploreViewContainer\\index.jsx:ExploreViewContainer",
+    "targetComponent": "explore\\components\\RunQueryButton\\index.tsx:RunQueryButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "explore\\components\\ExploreViewContainer\\index.jsx:ExploreViewContainer",
+        "target": "explore\\components\\ControlPanelsContainer.tsx:ControlPanelsContainer",
+        "targetAlias": "ConnectedControlPanelsContainer",
+        "targetProp": "canStopQuery",
+        "isPure": true
+      },
+      {
+        "source": "explore\\components\\ControlPanelsContainer.tsx:ControlPanelsContainer",
+        "target": "explore\\components\\RunQueryButton\\index.tsx:RunQueryButton",
+        "targetAlias": "RunQueryButton",
+        "targetProp": "canStopQuery",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "explore\\components\\ExploreViewContainer\\index.jsx:ExploreViewContainer",
+    "targetComponent": "explore\\components\\RunQueryButton\\index.tsx:RunQueryButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "explore\\components\\ExploreViewContainer\\index.jsx:ExploreViewContainer",
+        "target": "explore\\components\\ControlPanelsContainer.tsx:ControlPanelsContainer",
+        "targetAlias": "ConnectedControlPanelsContainer",
+        "targetProp": "errorMessage",
+        "isPure": false
+      },
+      {
+        "source": "explore\\components\\ControlPanelsContainer.tsx:ControlPanelsContainer",
+        "target": "explore\\components\\RunQueryButton\\index.tsx:RunQueryButton",
+        "targetAlias": "RunQueryButton",
+        "targetProp": "errorMessage",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "explore\\components\\ExploreViewContainer\\index.jsx:ExploreViewContainer",
+    "targetComponent": "explore\\components\\RunQueryButton\\index.tsx:RunQueryButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "explore\\components\\ExploreViewContainer\\index.jsx:ExploreViewContainer",
+        "target": "explore\\components\\ControlPanelsContainer.tsx:ControlPanelsContainer",
+        "targetAlias": "ConnectedControlPanelsContainer",
+        "targetProp": "chartIsStale",
+        "isPure": false
+      },
+      {
+        "source": "explore\\components\\ControlPanelsContainer.tsx:ControlPanelsContainer",
+        "target": "explore\\components\\RunQueryButton\\index.tsx:RunQueryButton",
+        "targetAlias": "RunQueryButton",
+        "targetProp": "chartIsStale",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "pages\\AnnotationList\\index.tsx:AnnotationList",
     "targetComponent": "features\\tags\\BulkTagModal.tsx:BulkTagModal",
     "canRefactorWithContext": true,
@@ -3433,6 +3985,30 @@
         "targetAlias": "BulkTagModal",
         "targetProp": "refreshData",
         "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\AnnotationLayerList\\index.tsx:AnnotationLayersList",
+    "targetComponent": "components\\ListView\\Filters\\index.tsx:UIFilters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\AnnotationLayerList\\index.tsx:AnnotationLayersList",
+        "target": "components\\ListView\\ListView.tsx:ListView",
+        "targetAlias": "ListView",
+        "targetProp": "filters",
+        "isPure": false
+      },
+      {
+        "source": "components\\ListView\\ListView.tsx:ListView",
+        "target": "components\\ListView\\Filters\\index.tsx:UIFilters",
+        "targetAlias": "FilterControls",
+        "targetProp": "filters",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -3553,6 +4129,30 @@
         "targetAlias": "BulkTagModal",
         "targetProp": "addSuccessToast",
         "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\AlertReportList\\index.tsx:AlertList",
+    "targetComponent": "components\\ListView\\Filters\\index.tsx:UIFilters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\AlertReportList\\index.tsx:AlertList",
+        "target": "components\\ListView\\ListView.tsx:ListView",
+        "targetAlias": "ListView",
+        "targetProp": "filters",
+        "isPure": false
+      },
+      {
+        "source": "components\\ListView\\ListView.tsx:ListView",
+        "target": "components\\ListView\\Filters\\index.tsx:UIFilters",
+        "targetAlias": "FilterControls",
+        "targetProp": "filters",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -3673,6 +4273,30 @@
         "targetAlias": "BulkTagModal",
         "targetProp": "refreshData",
         "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\ActionLog\\index.tsx:ActionLogList",
+    "targetComponent": "components\\ListView\\Filters\\index.tsx:UIFilters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\ActionLog\\index.tsx:ActionLogList",
+        "target": "components\\ListView\\ListView.tsx:ListView",
+        "targetAlias": "ListView",
+        "targetProp": "filters",
+        "isPure": false
+      },
+      {
+        "source": "components\\ListView\\ListView.tsx:ListView",
+        "target": "components\\ListView\\Filters\\index.tsx:UIFilters",
+        "targetAlias": "FilterControls",
+        "targetProp": "filters",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -4231,6 +4855,54 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointOption.tsx:ColorBreakpointOption",
+    "targetComponent": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverControl.tsx:ColorBreakpointsPopoverControl",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointOption.tsx:ColorBreakpointOption",
+        "target": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverTrigger.tsx:ColorBreakpointsPopoverTrigger",
+        "targetAlias": "ColorBreakpointPopoverTrigger",
+        "targetProp": "saveColorBreakpoint",
+        "isPure": true
+      },
+      {
+        "source": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverTrigger.tsx:ColorBreakpointsPopoverTrigger",
+        "target": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverControl.tsx:ColorBreakpointsPopoverControl",
+        "targetAlias": "ColorBreakpointPopoverControl",
+        "targetProp": "onSave",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointOption.tsx:ColorBreakpointOption",
+    "targetComponent": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverControl.tsx:ColorBreakpointsPopoverControl",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointOption.tsx:ColorBreakpointOption",
+        "target": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverTrigger.tsx:ColorBreakpointsPopoverTrigger",
+        "targetAlias": "ColorBreakpointPopoverTrigger",
+        "targetProp": "colorBreakpoints",
+        "isPure": true
+      },
+      {
+        "source": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverTrigger.tsx:ColorBreakpointsPopoverTrigger",
+        "target": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverControl.tsx:ColorBreakpointsPopoverControl",
+        "targetAlias": "ColorBreakpointPopoverControl",
+        "targetProp": "colorBreakpoints",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "explore\\components\\controls\\ColorBreakpointsControl\\index.tsx:ColorBreakpointsControl",
     "targetComponent": "explore\\components\\ControlHeader.tsx:ControlHeader",
     "canRefactorWithContext": false,
@@ -4248,6 +4920,78 @@
         "target": "explore\\components\\ControlHeader.tsx:ControlHeader",
         "targetAlias": "ControlHeader",
         "targetProp": "name",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "explore\\components\\controls\\ColorBreakpointsControl\\index.tsx:ColorBreakpointsControl",
+    "targetComponent": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverControl.tsx:ColorBreakpointsPopoverControl",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "explore\\components\\controls\\ColorBreakpointsControl\\index.tsx:ColorBreakpointsControl",
+        "target": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverTrigger.tsx:ColorBreakpointsPopoverTrigger",
+        "targetAlias": "ColorBreakpointPopoverTrigger",
+        "targetProp": "saveColorBreakpoint",
+        "isPure": false
+      },
+      {
+        "source": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverTrigger.tsx:ColorBreakpointsPopoverTrigger",
+        "target": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverControl.tsx:ColorBreakpointsPopoverControl",
+        "targetAlias": "ColorBreakpointPopoverControl",
+        "targetProp": "onSave",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "explore\\components\\controls\\ColorBreakpointsControl\\index.tsx:ColorBreakpointsControl",
+    "targetComponent": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverControl.tsx:ColorBreakpointsPopoverControl",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "explore\\components\\controls\\ColorBreakpointsControl\\index.tsx:ColorBreakpointsControl",
+        "target": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverTrigger.tsx:ColorBreakpointsPopoverTrigger",
+        "targetAlias": "ColorBreakpointPopoverTrigger",
+        "targetProp": "colorBreakpoints",
+        "isPure": false
+      },
+      {
+        "source": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverTrigger.tsx:ColorBreakpointsPopoverTrigger",
+        "target": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverControl.tsx:ColorBreakpointsPopoverControl",
+        "targetAlias": "ColorBreakpointPopoverControl",
+        "targetProp": "colorBreakpoints",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "explore\\components\\controls\\ColorBreakpointsControl\\index.tsx:ColorBreakpointsControl",
+    "targetComponent": "explore\\components\\controls\\ControlPopover\\ControlPopover.tsx:ControlPopover",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "explore\\components\\controls\\ColorBreakpointsControl\\index.tsx:ColorBreakpointsControl",
+        "target": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverTrigger.tsx:ColorBreakpointsPopoverTrigger",
+        "targetAlias": "ColorBreakpointPopoverTrigger",
+        "targetProp": "visible",
+        "isPure": false
+      },
+      {
+        "source": "explore\\components\\controls\\ColorBreakpointsControl\\ColorBreakpointPopoverTrigger.tsx:ColorBreakpointsPopoverTrigger",
+        "target": "explore\\components\\controls\\ControlPopover\\ControlPopover.tsx:ControlPopover",
+        "targetAlias": "ControlPopover",
+        "targetProp": "defaultOpen",
         "isPure": false
       }
     ],
@@ -5359,6 +6103,30 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "dashboard\\components\\gridComponents\\Chart\\Chart.jsx:Chart",
+    "targetComponent": "components\\Chart\\ChartErrorMessage.tsx:ChartErrorMessage",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "dashboard\\components\\gridComponents\\Chart\\Chart.jsx:Chart",
+        "target": "components\\Chart\\Chart.tsx:Chart",
+        "targetAlias": "ChartContainer",
+        "targetProp": "chartId",
+        "isPure": false
+      },
+      {
+        "source": "components\\Chart\\Chart.tsx:Chart",
+        "target": "components\\Chart\\ChartErrorMessage.tsx:ChartErrorMessage",
+        "targetAlias": "ChartErrorMessage",
+        "targetProp": "key",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "components\\Chart\\ChartErrorMessage.tsx:ChartErrorMessage",
     "targetComponent": "components\\ErrorMessage\\ErrorAlert.tsx:ErrorAlert",
     "canRefactorWithContext": false,
@@ -5452,6 +6220,30 @@
       }
     ],
     "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "dashboard\\components\\gridComponents\\Chart\\Chart.jsx:Chart",
+    "targetComponent": "components\\Chart\\ChartRenderer.jsx:ChartRenderer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "dashboard\\components\\gridComponents\\Chart\\Chart.jsx:Chart",
+        "target": "components\\Chart\\Chart.tsx:Chart",
+        "targetAlias": "ChartContainer",
+        "targetProp": "vizType",
+        "isPure": false
+      },
+      {
+        "source": "components\\Chart\\Chart.tsx:Chart",
+        "target": "components\\Chart\\ChartRenderer.jsx:ChartRenderer",
+        "targetAlias": "ChartRenderer",
+        "targetProp": "data-test",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {

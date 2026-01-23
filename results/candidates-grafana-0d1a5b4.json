@@ -1,57 +1,71 @@
 [
   {
-    "sourceComponent": "plugins\\panel\\logs\\LogsPanel.tsx:LogsPanel",
-    "targetComponent": "features\\logs\\components\\panel\\LogLineDetailsTrace.tsx:LogLineDetailsTrace",
+    "sourceComponent": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+    "targetComponent": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "plugins\\panel\\logs\\LogsPanel.tsx:LogsPanel",
-        "target": "features\\logs\\components\\panel\\LogLineContext.tsx:LogLineContext",
-        "targetAlias": "LogLineContext",
-        "targetProp": "timeZone",
-        "isPure": false
+        "source": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "target": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "targetAlias": "Logs",
+        "targetProp": "range",
+        "isPure": true
       },
       {
-        "source": "features\\logs\\components\\panel\\LogLineContext.tsx:LogLineContext",
+        "source": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
         "target": "features\\logs\\components\\panel\\LogList.tsx:LogList",
         "targetAlias": "LogList",
-        "targetProp": "timeZone",
-        "isPure": true
+        "targetProp": "timeRange",
+        "isPure": false
       },
       {
         "source": "features\\logs\\components\\panel\\LogList.tsx:LogList",
         "target": "features\\logs\\components\\panel\\LogList.tsx:LogListComponent",
         "targetAlias": "LogListComponent",
-        "targetProp": "timeZone",
+        "targetProp": "timeRange",
         "isPure": true
       },
       {
         "source": "features\\logs\\components\\panel\\LogList.tsx:LogListComponent",
         "target": "features\\logs\\components\\panel\\LogLineDetails.tsx:LogLineDetails",
         "targetAlias": "LogLineDetails",
-        "targetProp": "timeZone",
+        "targetProp": "timeRange",
         "isPure": false
       },
       {
         "source": "features\\logs\\components\\panel\\LogLineDetails.tsx:LogLineDetails",
         "target": "features\\logs\\components\\panel\\LogLineDetails.tsx:LogLineDetailsTabs",
         "targetAlias": "LogLineDetailsTabs",
-        "targetProp": "timeZone",
+        "targetProp": "timeRange",
         "isPure": true
       },
       {
         "source": "features\\logs\\components\\panel\\LogLineDetails.tsx:LogLineDetailsTabs",
         "target": "features\\logs\\components\\panel\\LogLineDetailsComponent.tsx:LogLineDetailsComponent",
         "targetAlias": "LogLineDetailsComponent",
-        "targetProp": "timeZone",
+        "targetProp": "timeRange",
         "isPure": true
       },
       {
         "source": "features\\logs\\components\\panel\\LogLineDetailsComponent.tsx:LogLineDetailsComponent",
         "target": "features\\logs\\components\\panel\\LogLineDetailsTrace.tsx:LogLineDetailsTrace",
         "targetAlias": "LogLineDetailsTrace",
-        "targetProp": "timeZone",
+        "targetProp": "timeRange",
+        "isPure": true
+      },
+      {
+        "source": "features\\logs\\components\\panel\\LogLineDetailsTrace.tsx:LogLineDetailsTrace",
+        "target": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "targetAlias": "TraceView",
+        "targetProp": "timeRange",
+        "isPure": false
+      },
+      {
+        "source": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "target": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
+        "targetAlias": "TraceTimelineViewer",
+        "targetProp": "timeRange",
         "isPure": true
       }
     ],
@@ -60,7 +74,7 @@
   },
   {
     "sourceComponent": "features\\logs\\components\\panel\\LogLineContext.tsx:LogLineContext",
-    "targetComponent": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+    "targetComponent": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
@@ -112,6 +126,13 @@
         "targetAlias": "TraceView",
         "targetProp": "timeRange",
         "isPure": false
+      },
+      {
+        "source": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "target": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
+        "targetAlias": "TraceTimelineViewer",
+        "targetProp": "timeRange",
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -119,7 +140,7 @@
   },
   {
     "sourceComponent": "plugins\\panel\\logs\\LogsPanel.tsx:LogsPanel",
-    "targetComponent": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+    "targetComponent": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
@@ -171,6 +192,72 @@
         "targetAlias": "TraceView",
         "targetProp": "timeRange",
         "isPure": false
+      },
+      {
+        "source": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "target": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
+        "targetAlias": "TraceTimelineViewer",
+        "targetProp": "timeRange",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "plugins\\panel\\logs\\LogsPanel.tsx:LogsPanel",
+    "targetComponent": "features\\logs\\components\\panel\\LogLineDetailsTrace.tsx:LogLineDetailsTrace",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "plugins\\panel\\logs\\LogsPanel.tsx:LogsPanel",
+        "target": "features\\logs\\components\\panel\\LogLineContext.tsx:LogLineContext",
+        "targetAlias": "LogLineContext",
+        "targetProp": "timeZone",
+        "isPure": false
+      },
+      {
+        "source": "features\\logs\\components\\panel\\LogLineContext.tsx:LogLineContext",
+        "target": "features\\logs\\components\\panel\\LogList.tsx:LogList",
+        "targetAlias": "LogList",
+        "targetProp": "timeZone",
+        "isPure": true
+      },
+      {
+        "source": "features\\logs\\components\\panel\\LogList.tsx:LogList",
+        "target": "features\\logs\\components\\panel\\LogList.tsx:LogListComponent",
+        "targetAlias": "LogListComponent",
+        "targetProp": "timeZone",
+        "isPure": true
+      },
+      {
+        "source": "features\\logs\\components\\panel\\LogList.tsx:LogListComponent",
+        "target": "features\\logs\\components\\panel\\LogLineDetails.tsx:LogLineDetails",
+        "targetAlias": "LogLineDetails",
+        "targetProp": "timeZone",
+        "isPure": false
+      },
+      {
+        "source": "features\\logs\\components\\panel\\LogLineDetails.tsx:LogLineDetails",
+        "target": "features\\logs\\components\\panel\\LogLineDetails.tsx:LogLineDetailsTabs",
+        "targetAlias": "LogLineDetailsTabs",
+        "targetProp": "timeZone",
+        "isPure": true
+      },
+      {
+        "source": "features\\logs\\components\\panel\\LogLineDetails.tsx:LogLineDetailsTabs",
+        "target": "features\\logs\\components\\panel\\LogLineDetailsComponent.tsx:LogLineDetailsComponent",
+        "targetAlias": "LogLineDetailsComponent",
+        "targetProp": "timeZone",
+        "isPure": true
+      },
+      {
+        "source": "features\\logs\\components\\panel\\LogLineDetailsComponent.tsx:LogLineDetailsComponent",
+        "target": "features\\logs\\components\\panel\\LogLineDetailsTrace.tsx:LogLineDetailsTrace",
+        "targetAlias": "LogLineDetailsTrace",
+        "targetProp": "timeZone",
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -236,41 +323,27 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
-    "targetComponent": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+    "sourceComponent": "features\\logs\\components\\panel\\LogLine.tsx:LogLine",
+    "targetComponent": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
-        "target": "features\\logs\\components\\panel\\LogList.tsx:LogList",
-        "targetAlias": "LogList",
-        "targetProp": "timeRange",
-        "isPure": false
-      },
-      {
-        "source": "features\\logs\\components\\panel\\LogList.tsx:LogList",
-        "target": "features\\logs\\components\\panel\\LogList.tsx:LogListComponent",
-        "targetAlias": "LogListComponent",
+        "source": "features\\logs\\components\\panel\\LogLine.tsx:LogLine",
+        "target": "features\\logs\\components\\panel\\LogLine.tsx:LogLineComponent",
+        "targetAlias": "LogLineComponent",
         "targetProp": "timeRange",
         "isPure": true
       },
       {
-        "source": "features\\logs\\components\\panel\\LogList.tsx:LogListComponent",
-        "target": "features\\logs\\components\\panel\\LogLineDetails.tsx:LogLineDetails",
-        "targetAlias": "LogLineDetails",
-        "targetProp": "timeRange",
-        "isPure": false
-      },
-      {
-        "source": "features\\logs\\components\\panel\\LogLineDetails.tsx:LogLineDetails",
-        "target": "features\\logs\\components\\panel\\LogLineDetails.tsx:LogLineDetailsTabs",
-        "targetAlias": "LogLineDetailsTabs",
+        "source": "features\\logs\\components\\panel\\LogLine.tsx:LogLineComponent",
+        "target": "features\\logs\\components\\panel\\LogLineDetails.tsx:InlineLogLineDetails",
+        "targetAlias": "InlineLogLineDetails",
         "targetProp": "timeRange",
         "isPure": true
       },
       {
-        "source": "features\\logs\\components\\panel\\LogLineDetails.tsx:LogLineDetailsTabs",
+        "source": "features\\logs\\components\\panel\\LogLineDetails.tsx:InlineLogLineDetails",
         "target": "features\\logs\\components\\panel\\LogLineDetailsComponent.tsx:LogLineDetailsComponent",
         "targetAlias": "LogLineDetailsComponent",
         "targetProp": "timeRange",
@@ -289,6 +362,13 @@
         "targetAlias": "TraceView",
         "targetProp": "timeRange",
         "isPure": false
+      },
+      {
+        "source": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "target": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
+        "targetAlias": "TraceTimelineViewer",
+        "targetProp": "timeRange",
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -476,51 +556,6 @@
         "targetAlias": "LogLineDetailsField",
         "targetProp": "log",
         "isPure": true
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "features\\logs\\components\\panel\\LogLine.tsx:LogLine",
-    "targetComponent": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\logs\\components\\panel\\LogLine.tsx:LogLine",
-        "target": "features\\logs\\components\\panel\\LogLine.tsx:LogLineComponent",
-        "targetAlias": "LogLineComponent",
-        "targetProp": "timeRange",
-        "isPure": true
-      },
-      {
-        "source": "features\\logs\\components\\panel\\LogLine.tsx:LogLineComponent",
-        "target": "features\\logs\\components\\panel\\LogLineDetails.tsx:InlineLogLineDetails",
-        "targetAlias": "InlineLogLineDetails",
-        "targetProp": "timeRange",
-        "isPure": true
-      },
-      {
-        "source": "features\\logs\\components\\panel\\LogLineDetails.tsx:InlineLogLineDetails",
-        "target": "features\\logs\\components\\panel\\LogLineDetailsComponent.tsx:LogLineDetailsComponent",
-        "targetAlias": "LogLineDetailsComponent",
-        "targetProp": "timeRange",
-        "isPure": true
-      },
-      {
-        "source": "features\\logs\\components\\panel\\LogLineDetailsComponent.tsx:LogLineDetailsComponent",
-        "target": "features\\logs\\components\\panel\\LogLineDetailsTrace.tsx:LogLineDetailsTrace",
-        "targetAlias": "LogLineDetailsTrace",
-        "targetProp": "timeRange",
-        "isPure": true
-      },
-      {
-        "source": "features\\logs\\components\\panel\\LogLineDetailsTrace.tsx:LogLineDetailsTrace",
-        "target": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
-        "targetAlias": "TraceView",
-        "targetProp": "timeRange",
-        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -1450,6 +1485,44 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "features\\plugins\\admin\\components\\PluginDetailsPage.tsx:PluginDetailsPage",
+    "targetComponent": "features\\plugins\\admin\\components\\GetStartedWithPlugin\\GetStartedWithDataSource.tsx:GetStartedWithDataSource",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\plugins\\admin\\components\\PluginDetailsPage.tsx:PluginDetailsPage",
+        "target": "features\\plugins\\admin\\components\\PluginDetailsBody.tsx:PluginDetailsBody",
+        "targetAlias": "PluginDetailsBody",
+        "targetProp": "plugin",
+        "isPure": false
+      },
+      {
+        "source": "features\\plugins\\admin\\components\\PluginDetailsBody.tsx:PluginDetailsBody",
+        "target": "features\\plugins\\admin\\components\\ConnectionsTab.tsx:ConnectionsTab",
+        "targetAlias": "Connections",
+        "targetProp": "plugin",
+        "isPure": false
+      },
+      {
+        "source": "features\\plugins\\admin\\components\\ConnectionsTab.tsx:ConnectionsTab",
+        "target": "features\\plugins\\admin\\components\\ConnectionsTab.tsx:ConnectionsList",
+        "targetAlias": "ConnectionsList",
+        "targetProp": "plugin",
+        "isPure": false
+      },
+      {
+        "source": "features\\plugins\\admin\\components\\ConnectionsTab.tsx:ConnectionsList",
+        "target": "features\\plugins\\admin\\components\\GetStartedWithPlugin\\GetStartedWithDataSource.tsx:GetStartedWithDataSource",
+        "targetAlias": "GetStartedWithDataSource",
+        "targetProp": "plugin",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "features\\logs\\components\\panel\\LogLine.tsx:LogLine",
     "targetComponent": "features\\logs\\components\\panel\\LogLineDetailsHeader.tsx:LogLineDetailsHeader",
     "canRefactorWithContext": true,
@@ -1830,6 +1903,44 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "features\\explore\\ExplorePage.tsx:ExplorePageContent",
+    "targetComponent": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\ExplorePage.tsx:ExplorePageContent",
+        "target": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
+        "targetAlias": "ExplorePaneContainer",
+        "targetProp": "exploreId",
+        "isPure": false
+      },
+      {
+        "source": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
+        "target": "features\\explore\\Explore.tsx:Explore",
+        "targetAlias": "Explore",
+        "targetProp": "exploreId",
+        "isPure": false
+      },
+      {
+        "source": "features\\explore\\Explore.tsx:Explore",
+        "target": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "targetAlias": "LogsContainer",
+        "targetProp": "exploreId",
+        "isPure": true
+      },
+      {
+        "source": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "target": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "targetAlias": "Logs",
+        "targetProp": "exploreId",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
     "targetComponent": "features\\logs\\components\\panel\\InfiniteScroll.tsx:InfiniteScroll",
     "canRefactorWithContext": true,
@@ -1861,6 +1972,82 @@
         "target": "features\\logs\\components\\panel\\InfiniteScroll.tsx:InfiniteScroll",
         "targetAlias": "InfiniteScroll",
         "targetProp": "timeZone",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+    "targetComponent": "features\\logs\\components\\panel\\InfiniteScroll.tsx:InfiniteScroll",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "target": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "targetAlias": "Logs",
+        "targetProp": "range",
+        "isPure": true
+      },
+      {
+        "source": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "target": "features\\logs\\components\\panel\\LogList.tsx:LogList",
+        "targetAlias": "LogList",
+        "targetProp": "timeRange",
+        "isPure": false
+      },
+      {
+        "source": "features\\logs\\components\\panel\\LogList.tsx:LogList",
+        "target": "features\\logs\\components\\panel\\LogList.tsx:LogListComponent",
+        "targetAlias": "LogListComponent",
+        "targetProp": "timeRange",
+        "isPure": true
+      },
+      {
+        "source": "features\\logs\\components\\panel\\LogList.tsx:LogListComponent",
+        "target": "features\\logs\\components\\panel\\InfiniteScroll.tsx:InfiniteScroll",
+        "targetAlias": "InfiniteScroll",
+        "targetProp": "timeRange",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\ExplorePage.tsx:ExplorePageContent",
+    "targetComponent": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\ExplorePage.tsx:ExplorePageContent",
+        "target": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
+        "targetAlias": "ExplorePaneContainer",
+        "targetProp": "exploreId",
+        "isPure": false
+      },
+      {
+        "source": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
+        "target": "features\\explore\\Explore.tsx:Explore",
+        "targetAlias": "Explore",
+        "targetProp": "exploreId",
+        "isPure": false
+      },
+      {
+        "source": "features\\explore\\Explore.tsx:Explore",
+        "target": "features\\explore\\TraceView\\TraceViewContainer.tsx:TraceViewContainer",
+        "targetAlias": "TraceViewContainer",
+        "targetProp": "exploreId",
+        "isPure": true
+      },
+      {
+        "source": "features\\explore\\TraceView\\TraceViewContainer.tsx:TraceViewContainer",
+        "target": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "targetAlias": "TraceView",
+        "targetProp": "exploreId",
         "isPure": false
       }
     ],
@@ -5777,6 +5964,37 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+    "targetComponent": "features\\explore\\Logs\\LogsTable.tsx:LogsTable",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "target": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "targetAlias": "Logs",
+        "targetProp": "range",
+        "isPure": true
+      },
+      {
+        "source": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "target": "features\\explore\\Logs\\LogsTableWrap.tsx:LogsTableWrap",
+        "targetAlias": "LogsTableWrap",
+        "targetProp": "range",
+        "isPure": false
+      },
+      {
+        "source": "features\\explore\\Logs\\LogsTableWrap.tsx:LogsTableWrap",
+        "target": "features\\explore\\Logs\\LogsTable.tsx:LogsTable",
+        "targetAlias": "LogsTable",
+        "targetProp": "range",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
     "targetComponent": "features\\logs\\components\\panel\\LogLineDetails.tsx:LogLineDetails",
     "canRefactorWithContext": true,
@@ -5871,37 +6089,6 @@
   },
   {
     "sourceComponent": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
-    "targetComponent": "features\\logs\\components\\panel\\InfiniteScroll.tsx:InfiniteScroll",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
-        "target": "features\\logs\\components\\panel\\LogList.tsx:LogList",
-        "targetAlias": "LogList",
-        "targetProp": "timeRange",
-        "isPure": false
-      },
-      {
-        "source": "features\\logs\\components\\panel\\LogList.tsx:LogList",
-        "target": "features\\logs\\components\\panel\\LogList.tsx:LogListComponent",
-        "targetAlias": "LogListComponent",
-        "targetProp": "timeRange",
-        "isPure": true
-      },
-      {
-        "source": "features\\logs\\components\\panel\\LogList.tsx:LogListComponent",
-        "target": "features\\logs\\components\\panel\\InfiniteScroll.tsx:InfiniteScroll",
-        "targetAlias": "InfiniteScroll",
-        "targetProp": "timeRange",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
     "targetComponent": "features\\logs\\components\\fieldSelector\\FieldSelector.tsx:LogListFieldSelector",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
@@ -5963,11 +6150,18 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
-    "targetComponent": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+    "sourceComponent": "features\\explore\\ExplorePage.tsx:ExplorePageContent",
+    "targetComponent": "features\\explore\\CorrelationHelper.tsx:CorrelationHelper",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
+      {
+        "source": "features\\explore\\ExplorePage.tsx:ExplorePageContent",
+        "target": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
+        "targetAlias": "ExplorePaneContainer",
+        "targetProp": "exploreId",
+        "isPure": false
+      },
       {
         "source": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
         "target": "features\\explore\\Explore.tsx:Explore",
@@ -5977,17 +6171,103 @@
       },
       {
         "source": "features\\explore\\Explore.tsx:Explore",
-        "target": "features\\explore\\TraceView\\TraceViewContainer.tsx:TraceViewContainer",
-        "targetAlias": "TraceViewContainer",
+        "target": "features\\explore\\CorrelationHelper.tsx:CorrelationHelper",
+        "targetAlias": "CorrelationHelper",
         "targetProp": "exploreId",
         "isPure": true
-      },
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\ExplorePage.tsx:ExplorePageContent",
+    "targetComponent": "features\\explore\\ExploreToolbar.tsx:ExploreToolbar",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
       {
-        "source": "features\\explore\\TraceView\\TraceViewContainer.tsx:TraceViewContainer",
-        "target": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
-        "targetAlias": "TraceView",
+        "source": "features\\explore\\ExplorePage.tsx:ExplorePageContent",
+        "target": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
+        "targetAlias": "ExplorePaneContainer",
         "targetProp": "exploreId",
         "isPure": false
+      },
+      {
+        "source": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
+        "target": "features\\explore\\Explore.tsx:Explore",
+        "targetAlias": "Explore",
+        "targetProp": "exploreId",
+        "isPure": false
+      },
+      {
+        "source": "features\\explore\\Explore.tsx:Explore",
+        "target": "features\\explore\\ExploreToolbar.tsx:ExploreToolbar",
+        "targetAlias": "ExploreToolbar",
+        "targetProp": "exploreId",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\ExplorePage.tsx:ExplorePageContent",
+    "targetComponent": "features\\explore\\QueryRows.tsx:QueryRows",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\ExplorePage.tsx:ExplorePageContent",
+        "target": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
+        "targetAlias": "ExplorePaneContainer",
+        "targetProp": "exploreId",
+        "isPure": false
+      },
+      {
+        "source": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
+        "target": "features\\explore\\Explore.tsx:Explore",
+        "targetAlias": "Explore",
+        "targetProp": "exploreId",
+        "isPure": false
+      },
+      {
+        "source": "features\\explore\\Explore.tsx:Explore",
+        "target": "features\\explore\\QueryRows.tsx:QueryRows",
+        "targetAlias": "QueryRows",
+        "targetProp": "exploreId",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\ExplorePage.tsx:ExplorePageContent",
+    "targetComponent": "features\\explore\\ResponseErrorContainer.tsx:ResponseErrorContainer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\ExplorePage.tsx:ExplorePageContent",
+        "target": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
+        "targetAlias": "ExplorePaneContainer",
+        "targetProp": "exploreId",
+        "isPure": false
+      },
+      {
+        "source": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
+        "target": "features\\explore\\Explore.tsx:Explore",
+        "targetAlias": "Explore",
+        "targetProp": "exploreId",
+        "isPure": false
+      },
+      {
+        "source": "features\\explore\\Explore.tsx:Explore",
+        "target": "features\\explore\\ResponseErrorContainer.tsx:ResponseErrorContainer",
+        "targetAlias": "ResponseErrorContainer",
+        "targetProp": "exploreId",
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -6989,7 +7269,7 @@
     "sourceComponent": "features\\dashboard-scene\\scene\\DashboardSceneRenderer.tsx:DashboardSceneRenderer",
     "targetComponent": "features\\dashboard-scene\\scene\\new-toolbar\\LeftActions.tsx:LeftActions",
     "canRefactorWithContext": false,
-    "canRefactorWithComposition": true,
+    "canRefactorWithComposition": false,
     "propPassings": [
       {
         "source": "features\\dashboard-scene\\scene\\DashboardSceneRenderer.tsx:DashboardSceneRenderer",
@@ -7014,13 +7294,13 @@
       }
     ],
     "destinationWithMultipleParentsPrec": false,
-    "nonForwardedPropsInIntermediateComponentsPrec": true
+    "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
     "sourceComponent": "features\\dashboard-scene\\scene\\DashboardSceneRenderer.tsx:DashboardSceneRenderer",
     "targetComponent": "features\\dashboard-scene\\scene\\new-toolbar\\RightActions.tsx:RightActions",
     "canRefactorWithContext": false,
-    "canRefactorWithComposition": true,
+    "canRefactorWithComposition": false,
     "propPassings": [
       {
         "source": "features\\dashboard-scene\\scene\\DashboardSceneRenderer.tsx:DashboardSceneRenderer",
@@ -7045,13 +7325,13 @@
       }
     ],
     "destinationWithMultipleParentsPrec": false,
-    "nonForwardedPropsInIntermediateComponentsPrec": true
+    "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
     "sourceComponent": "features\\dashboard-scene\\scene\\DashboardSceneRenderer.tsx:DashboardSceneRenderer",
     "targetComponent": "features\\dashboard-scene\\scene\\NavToolbarActions.tsx:ToolbarActions",
     "canRefactorWithContext": true,
-    "canRefactorWithComposition": true,
+    "canRefactorWithComposition": false,
     "propPassings": [
       {
         "source": "features\\dashboard-scene\\scene\\DashboardSceneRenderer.tsx:DashboardSceneRenderer",
@@ -7076,7 +7356,7 @@
       }
     ],
     "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": true
+    "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
     "sourceComponent": "features\\dashboard-scene\\edit-pane\\DashboardEditPaneSplitter.tsx:DashboardEditPaneSplitter",
@@ -7414,6 +7694,68 @@
         "targetAlias": "InspectDataOptions",
         "targetProp": "onOptionsChange",
         "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\dashboard\\containers\\DashboardPage.tsx:UnthemedDashboardPage",
+    "targetComponent": "features\\inspector\\InspectJSONTab.tsx:InspectJSONTab",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\dashboard\\containers\\DashboardPage.tsx:UnthemedDashboardPage",
+        "target": "features\\dashboard\\components\\Inspector\\PanelInspector.tsx:PanelInspectorUnconnected",
+        "targetAlias": "PanelInspector",
+        "targetProp": "dashboard",
+        "isPure": true
+      },
+      {
+        "source": "features\\dashboard\\components\\Inspector\\PanelInspector.tsx:PanelInspectorUnconnected",
+        "target": "features\\dashboard\\components\\Inspector\\InspectContent.tsx:InspectContent",
+        "targetAlias": "InspectContent",
+        "targetProp": "dashboard",
+        "isPure": false
+      },
+      {
+        "source": "features\\dashboard\\components\\Inspector\\InspectContent.tsx:InspectContent",
+        "target": "features\\inspector\\InspectJSONTab.tsx:InspectJSONTab",
+        "targetAlias": "InspectJSONTab",
+        "targetProp": "dashboard",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\dashboard\\containers\\DashboardPage.tsx:UnthemedDashboardPage",
+    "targetComponent": "features\\inspector\\InspectJSONTab.tsx:InspectJSONTab",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\dashboard\\containers\\DashboardPage.tsx:UnthemedDashboardPage",
+        "target": "features\\dashboard\\components\\Inspector\\PanelInspector.tsx:PanelInspectorUnconnected",
+        "targetAlias": "PanelInspector",
+        "targetProp": "panel",
+        "isPure": true
+      },
+      {
+        "source": "features\\dashboard\\components\\Inspector\\PanelInspector.tsx:PanelInspectorUnconnected",
+        "target": "features\\dashboard\\components\\Inspector\\InspectContent.tsx:InspectContent",
+        "targetAlias": "InspectContent",
+        "targetProp": "panel",
+        "isPure": false
+      },
+      {
+        "source": "features\\dashboard\\components\\Inspector\\InspectContent.tsx:InspectContent",
+        "target": "features\\inspector\\InspectJSONTab.tsx:InspectJSONTab",
+        "targetAlias": "InspectJSONTab",
+        "targetProp": "panel",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -10163,6 +10505,102 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "plugins\\panel\\traces\\TracesPanel.tsx:TracesPanel",
+    "targetComponent": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "plugins\\panel\\traces\\TracesPanel.tsx:TracesPanel",
+        "target": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "targetAlias": "TraceView",
+        "targetProp": "traceProp",
+        "isPure": false
+      },
+      {
+        "source": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "target": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
+        "targetAlias": "TraceTimelineViewer",
+        "targetProp": "trace",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "plugins\\panel\\traces\\TracesPanel.tsx:TracesPanel",
+    "targetComponent": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "plugins\\panel\\traces\\TracesPanel.tsx:TracesPanel",
+        "target": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "targetAlias": "TraceView",
+        "targetProp": "timeRange",
+        "isPure": false
+      },
+      {
+        "source": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "target": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
+        "targetAlias": "TraceTimelineViewer",
+        "targetProp": "timeRange",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+    "targetComponent": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\VirtualizedTraceView.tsx:UnthemedVirtualizedTraceView",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "target": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
+        "targetAlias": "TraceTimelineViewer",
+        "targetProp": "datasourceType",
+        "isPure": false
+      },
+      {
+        "source": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
+        "target": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\VirtualizedTraceView.tsx:UnthemedVirtualizedTraceView",
+        "targetAlias": "VirtualizedTraceView",
+        "targetProp": "datasourceType",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+    "targetComponent": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\VirtualizedTraceView.tsx:UnthemedVirtualizedTraceView",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "target": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
+        "targetAlias": "TraceTimelineViewer",
+        "targetProp": "datasourceUid",
+        "isPure": false
+      },
+      {
+        "source": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
+        "target": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\VirtualizedTraceView.tsx:UnthemedVirtualizedTraceView",
+        "targetAlias": "VirtualizedTraceView",
+        "targetProp": "datasourceUid",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\SpanBarRow.tsx:UnthemedSpanBarRow",
     "targetComponent": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\SpanDetail\\AccordianLogs.tsx:AccordianLogs",
     "canRefactorWithContext": true,
@@ -10636,30 +11074,6 @@
         "target": "features\\logs\\components\\panel\\LogListControlsOption.tsx:LogListControlsSelectOption",
         "targetAlias": "LogListControlsSelectOption",
         "targetProp": "expanded",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "features\\logs\\components\\panel\\LogList.tsx:LogList",
-    "targetComponent": "features\\logs\\components\\panel\\LogLineDetails.tsx:LogLineDetails",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\logs\\components\\panel\\LogList.tsx:LogList",
-        "target": "features\\logs\\components\\panel\\LogList.tsx:LogListComponent",
-        "targetAlias": "LogListComponent",
-        "targetProp": "showControls",
-        "isPure": false
-      },
-      {
-        "source": "features\\logs\\components\\panel\\LogList.tsx:LogListComponent",
-        "target": "features\\logs\\components\\panel\\LogLineDetails.tsx:LogLineDetails",
-        "targetAlias": "LogLineDetails",
-        "targetProp": "showControls",
         "isPure": false
       }
     ],
@@ -12416,6 +12830,78 @@
       }
     ],
     "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "plugins\\datasource\\tempo\\QueryField.tsx:TempoQueryFieldComponent",
+    "targetComponent": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\InlineSearchField.tsx:SearchField",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "plugins\\datasource\\tempo\\QueryField.tsx:TempoQueryFieldComponent",
+        "target": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\TraceQLSearch.tsx:TraceQLSearch",
+        "targetAlias": "TraceQLSearch",
+        "targetProp": "datasource",
+        "isPure": true
+      },
+      {
+        "source": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\TraceQLSearch.tsx:TraceQLSearch",
+        "target": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\InlineSearchField.tsx:SearchField",
+        "targetAlias": "InlineSearchField",
+        "targetProp": "datasource",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "plugins\\datasource\\tempo\\QueryField.tsx:TempoQueryFieldComponent",
+    "targetComponent": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\InlineSearchField.tsx:SearchField",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "plugins\\datasource\\tempo\\QueryField.tsx:TempoQueryFieldComponent",
+        "target": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\TraceQLSearch.tsx:TraceQLSearch",
+        "targetAlias": "TraceQLSearch",
+        "targetProp": "addVariablesToOptions",
+        "isPure": true
+      },
+      {
+        "source": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\TraceQLSearch.tsx:TraceQLSearch",
+        "target": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\InlineSearchField.tsx:SearchField",
+        "targetAlias": "InlineSearchField",
+        "targetProp": "addVariablesToOptions",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "plugins\\datasource\\tempo\\QueryField.tsx:TempoQueryFieldComponent",
+    "targetComponent": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\InlineSearchField.tsx:SearchField",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "plugins\\datasource\\tempo\\QueryField.tsx:TempoQueryFieldComponent",
+        "target": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\TraceQLSearch.tsx:TraceQLSearch",
+        "targetAlias": "TraceQLSearch",
+        "targetProp": "range",
+        "isPure": true
+      },
+      {
+        "source": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\TraceQLSearch.tsx:TraceQLSearch",
+        "target": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\InlineSearchField.tsx:SearchField",
+        "targetAlias": "InlineSearchField",
+        "targetProp": "range",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
@@ -19403,30 +19889,6 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "features\\plugins\\admin\\components\\ConnectionsTab.tsx:ConnectionsTab",
-    "targetComponent": "features\\plugins\\admin\\components\\GetStartedWithPlugin\\GetStartedWithDataSource.tsx:GetStartedWithDataSource",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": true,
-    "propPassings": [
-      {
-        "source": "features\\plugins\\admin\\components\\ConnectionsTab.tsx:ConnectionsTab",
-        "target": "features\\plugins\\admin\\components\\ConnectionsTab.tsx:ConnectionsList",
-        "targetAlias": "ConnectionsList",
-        "targetProp": "plugin",
-        "isPure": false
-      },
-      {
-        "source": "features\\plugins\\admin\\components\\ConnectionsTab.tsx:ConnectionsList",
-        "target": "features\\plugins\\admin\\components\\GetStartedWithPlugin\\GetStartedWithDataSource.tsx:GetStartedWithDataSource",
-        "targetAlias": "GetStartedWithDataSource",
-        "targetProp": "plugin",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": true
-  },
-  {
     "sourceComponent": "features\\plugins\\admin\\components\\PluginListItem.tsx:PluginListItemComponent",
     "targetComponent": "features\\plugins\\admin\\components\\Badges\\PluginEnterpriseBadge.tsx:PluginEnterpriseBadge",
     "canRefactorWithContext": true,
@@ -19709,6 +20171,30 @@
         "targetAlias": "DeletePublicDashboardButton",
         "targetProp": "publicDashboard",
         "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\logs\\components\\LogDetails.tsx:UnThemedLogDetails",
+    "targetComponent": "features\\logs\\components\\LogLabelStats.tsx:LogLabelStats",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\logs\\components\\LogDetails.tsx:UnThemedLogDetails",
+        "target": "features\\logs\\components\\LogDetailsRow.tsx:UnThemedLogDetailsRow",
+        "targetAlias": "LogDetailsRow",
+        "targetProp": "isLabel",
+        "isPure": true
+      },
+      {
+        "source": "features\\logs\\components\\LogDetailsRow.tsx:UnThemedLogDetailsRow",
+        "target": "features\\logs\\components\\LogLabelStats.tsx:LogLabelStats",
+        "targetAlias": "LogLabelStats",
+        "targetProp": "isLabel",
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -20243,23 +20729,191 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
-    "targetComponent": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+    "sourceComponent": "features\\explore\\Explore.tsx:Explore",
+    "targetComponent": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
-        "target": "features\\explore\\Explore.tsx:Explore",
-        "targetAlias": "Explore",
-        "targetProp": "exploreId",
-        "isPure": false
+        "source": "features\\explore\\Explore.tsx:Explore",
+        "target": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "targetAlias": "LogsContainer",
+        "targetProp": "loadingState",
+        "isPure": true
       },
+      {
+        "source": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "target": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "targetAlias": "Logs",
+        "targetProp": "loadingState",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\Explore.tsx:Explore",
+    "targetComponent": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
       {
         "source": "features\\explore\\Explore.tsx:Explore",
         "target": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
         "targetAlias": "LogsContainer",
-        "targetProp": "exploreId",
+        "targetProp": "width",
+        "isPure": true
+      },
+      {
+        "source": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "target": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "targetAlias": "Logs",
+        "targetProp": "width",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\Explore.tsx:Explore",
+    "targetComponent": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\Explore.tsx:Explore",
+        "target": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "targetAlias": "LogsContainer",
+        "targetProp": "onStartScanning",
+        "isPure": true
+      },
+      {
+        "source": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "target": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "targetAlias": "Logs",
+        "targetProp": "onStartScanning",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\Explore.tsx:Explore",
+    "targetComponent": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\Explore.tsx:Explore",
+        "target": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "targetAlias": "LogsContainer",
+        "targetProp": "onStopScanning",
+        "isPure": true
+      },
+      {
+        "source": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "target": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "targetAlias": "Logs",
+        "targetProp": "onStopScanning",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\Explore.tsx:Explore",
+    "targetComponent": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\Explore.tsx:Explore",
+        "target": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "targetAlias": "LogsContainer",
+        "targetProp": "eventBus",
+        "isPure": true
+      },
+      {
+        "source": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "target": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "targetAlias": "Logs",
+        "targetProp": "eventBus",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\Explore.tsx:Explore",
+    "targetComponent": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\Explore.tsx:Explore",
+        "target": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "targetAlias": "LogsContainer",
+        "targetProp": "splitOpenFn",
+        "isPure": true
+      },
+      {
+        "source": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "target": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "targetAlias": "Logs",
+        "targetProp": "splitOpen",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\Explore.tsx:Explore",
+    "targetComponent": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\Explore.tsx:Explore",
+        "target": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "targetAlias": "LogsContainer",
+        "targetProp": "scrollElement",
+        "isPure": true
+      },
+      {
+        "source": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "target": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "targetAlias": "Logs",
+        "targetProp": "scrollElement",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\Explore.tsx:Explore",
+    "targetComponent": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\Explore.tsx:Explore",
+        "target": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "targetAlias": "LogsContainer",
+        "targetProp": "onPinLineCallback",
+        "isPure": true
+      },
+      {
+        "source": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "target": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "targetAlias": "Logs",
+        "targetProp": "onPinLineCallback",
         "isPure": true
       }
     ],
@@ -20531,24 +21185,24 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
-    "targetComponent": "features\\explore\\Logs\\LogsTable.tsx:LogsTable",
+    "sourceComponent": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+    "targetComponent": "features\\explore\\Logs\\LogsTableWrap.tsx:LogsTableWrap",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
+        "source": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "target": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "targetAlias": "Logs",
+        "targetProp": "datasourceType",
+        "isPure": true
+      },
+      {
         "source": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
         "target": "features\\explore\\Logs\\LogsTableWrap.tsx:LogsTableWrap",
         "targetAlias": "LogsTableWrap",
-        "targetProp": "logsSortOrder",
+        "targetProp": "datasourceType",
         "isPure": false
-      },
-      {
-        "source": "features\\explore\\Logs\\LogsTableWrap.tsx:LogsTableWrap",
-        "target": "features\\explore\\Logs\\LogsTable.tsx:LogsTable",
-        "targetAlias": "LogsTable",
-        "targetProp": "logsSortOrder",
-        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -20564,14 +21218,14 @@
         "source": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
         "target": "features\\explore\\Logs\\LogsTableWrap.tsx:LogsTableWrap",
         "targetAlias": "LogsTableWrap",
-        "targetProp": "range",
+        "targetProp": "logsSortOrder",
         "isPure": false
       },
       {
         "source": "features\\explore\\Logs\\LogsTableWrap.tsx:LogsTableWrap",
         "target": "features\\explore\\Logs\\LogsTable.tsx:LogsTable",
         "targetAlias": "LogsTable",
-        "targetProp": "range",
+        "targetProp": "logsSortOrder",
         "isPure": true
       }
     ],
@@ -20669,6 +21323,78 @@
         "targetAlias": "LogsTable",
         "targetProp": "onClickFilterOutLabel",
         "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+    "targetComponent": "features\\logs\\components\\ControlledLogRows.tsx:ControlledLogRows",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "target": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "targetAlias": "Logs",
+        "targetProp": "datasourceType",
+        "isPure": true
+      },
+      {
+        "source": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "target": "features\\logs\\components\\ControlledLogRows.tsx:ControlledLogRows",
+        "targetAlias": "ControlledLogRows",
+        "targetProp": "datasourceType",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+    "targetComponent": "features\\logs\\components\\ControlledLogRows.tsx:ControlledLogRows",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "target": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "targetAlias": "Logs",
+        "targetProp": "logsFrames",
+        "isPure": true
+      },
+      {
+        "source": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "target": "features\\logs\\components\\ControlledLogRows.tsx:ControlledLogRows",
+        "targetAlias": "ControlledLogRows",
+        "targetProp": "logsTableFrames",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+    "targetComponent": "features\\logs\\components\\ControlledLogRows.tsx:ControlledLogRows",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "target": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "targetAlias": "Logs",
+        "targetProp": "range",
+        "isPure": true
+      },
+      {
+        "source": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "target": "features\\logs\\components\\ControlledLogRows.tsx:ControlledLogRows",
+        "targetAlias": "ControlledLogRows",
+        "targetProp": "range",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -20909,6 +21635,30 @@
         "targetAlias": "LogRowsComponent",
         "targetProp": "deduplicatedRows",
         "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+    "targetComponent": "features\\logs\\components\\LogRows.tsx:LogRows",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\explore\\Logs\\LogsContainer.tsx:LogsContainer",
+        "target": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "targetAlias": "Logs",
+        "targetProp": "range",
+        "isPure": true
+      },
+      {
+        "source": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
+        "target": "features\\logs\\components\\LogRows.tsx:LogRows",
+        "targetAlias": "LogRows",
+        "targetProp": "timeRange",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -21779,71 +22529,71 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
-    "targetComponent": "features\\explore\\CorrelationHelper.tsx:CorrelationHelper",
+    "sourceComponent": "features\\explore\\TraceView\\TraceViewContainer.tsx:TraceViewContainer",
+    "targetComponent": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
-        "target": "features\\explore\\Explore.tsx:Explore",
-        "targetAlias": "Explore",
-        "targetProp": "exploreId",
+        "source": "features\\explore\\TraceView\\TraceViewContainer.tsx:TraceViewContainer",
+        "target": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "targetAlias": "TraceView",
+        "targetProp": "scrollElement",
         "isPure": false
       },
       {
-        "source": "features\\explore\\Explore.tsx:Explore",
-        "target": "features\\explore\\CorrelationHelper.tsx:CorrelationHelper",
-        "targetAlias": "CorrelationHelper",
-        "targetProp": "exploreId",
-        "isPure": true
+        "source": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "target": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
+        "targetAlias": "TraceTimelineViewer",
+        "targetProp": "scrollElement",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
-    "targetComponent": "features\\explore\\ExploreToolbar.tsx:ExploreToolbar",
+    "sourceComponent": "features\\explore\\TraceView\\TraceViewContainer.tsx:TraceViewContainer",
+    "targetComponent": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
-        "target": "features\\explore\\Explore.tsx:Explore",
-        "targetAlias": "Explore",
-        "targetProp": "exploreId",
+        "source": "features\\explore\\TraceView\\TraceViewContainer.tsx:TraceViewContainer",
+        "target": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "targetAlias": "TraceView",
+        "targetProp": "traceProp",
         "isPure": false
       },
       {
-        "source": "features\\explore\\Explore.tsx:Explore",
-        "target": "features\\explore\\ExploreToolbar.tsx:ExploreToolbar",
-        "targetAlias": "ExploreToolbar",
-        "targetProp": "exploreId",
-        "isPure": true
+        "source": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "target": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
+        "targetAlias": "TraceTimelineViewer",
+        "targetProp": "trace",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
-    "targetComponent": "features\\explore\\QueryRows.tsx:QueryRows",
+    "sourceComponent": "features\\explore\\TraceView\\TraceViewContainer.tsx:TraceViewContainer",
+    "targetComponent": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
-        "target": "features\\explore\\Explore.tsx:Explore",
-        "targetAlias": "Explore",
-        "targetProp": "exploreId",
+        "source": "features\\explore\\TraceView\\TraceViewContainer.tsx:TraceViewContainer",
+        "target": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "targetAlias": "TraceView",
+        "targetProp": "timeRange",
         "isPure": false
       },
       {
-        "source": "features\\explore\\Explore.tsx:Explore",
-        "target": "features\\explore\\QueryRows.tsx:QueryRows",
-        "targetAlias": "QueryRows",
-        "targetProp": "exploreId",
+        "source": "features\\explore\\TraceView\\TraceView.tsx:TraceView",
+        "target": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\index.tsx:UnthemedTraceTimelineViewer",
+        "targetAlias": "TraceTimelineViewer",
+        "targetProp": "timeRange",
         "isPure": true
       }
     ],
@@ -21873,30 +22623,6 @@
     ],
     "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
-    "targetComponent": "features\\explore\\ResponseErrorContainer.tsx:ResponseErrorContainer",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": true,
-    "propPassings": [
-      {
-        "source": "features\\explore\\ExplorePaneContainer.tsx:ExplorePaneContainerUnconnected",
-        "target": "features\\explore\\Explore.tsx:Explore",
-        "targetAlias": "Explore",
-        "targetProp": "exploreId",
-        "isPure": false
-      },
-      {
-        "source": "features\\explore\\Explore.tsx:Explore",
-        "target": "features\\explore\\ResponseErrorContainer.tsx:ResponseErrorContainer",
-        "targetAlias": "ResponseErrorContainer",
-        "targetProp": "exploreId",
-        "isPure": true
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
     "sourceComponent": "features\\dimensions\\editors\\ValueMappingsEditor\\ValueMappingsEditor.tsx:ValueMappingsEditor",
@@ -25115,6 +25841,30 @@
     "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
+    "sourceComponent": "features\\dashboard\\containers\\DashboardPageProxy.tsx:DashboardPageProxy",
+    "targetComponent": "features\\dashboard\\components\\DashboardLoading\\DashboardLoading.tsx:DashboardLoading",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\dashboard\\containers\\DashboardPageProxy.tsx:DashboardPageProxy",
+        "target": "features\\dashboard\\containers\\DashboardPage.tsx:UnthemedDashboardPage",
+        "targetAlias": "DashboardPage",
+        "targetProp": "initPhase",
+        "isPure": true
+      },
+      {
+        "source": "features\\dashboard\\containers\\DashboardPage.tsx:UnthemedDashboardPage",
+        "target": "features\\dashboard\\components\\DashboardLoading\\DashboardLoading.tsx:DashboardLoading",
+        "targetAlias": "DashboardLoading",
+        "targetProp": "initPhase",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
     "sourceComponent": "features\\dashboard\\containers\\DashboardPage.tsx:UnthemedDashboardPage",
     "targetComponent": "core\\components\\NativeScrollbar.tsx:NativeScrollbar",
     "canRefactorWithContext": true,
@@ -25161,6 +25911,30 @@
     ],
     "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "features\\dashboard\\containers\\DashboardPage.tsx:UnthemedDashboardPage",
+    "targetComponent": "features\\dashboard\\components\\DashboardRow\\DashboardRow.tsx:UnthemedDashboardRow",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\dashboard\\containers\\DashboardPage.tsx:UnthemedDashboardPage",
+        "target": "features\\dashboard\\dashgrid\\DashboardGrid.tsx:DashboardGrid",
+        "targetAlias": "DashboardGrid",
+        "targetProp": "dashboard",
+        "isPure": true
+      },
+      {
+        "source": "features\\dashboard\\dashgrid\\DashboardGrid.tsx:DashboardGrid",
+        "target": "features\\dashboard\\components\\DashboardRow\\DashboardRow.tsx:UnthemedDashboardRow",
+        "targetAlias": "DashboardRow",
+        "targetProp": "dashboard",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
     "sourceComponent": "features\\dashboard\\containers\\DashboardPage.tsx:UnthemedDashboardPage",
@@ -25229,6 +26003,30 @@
         "targetAlias": "LibraryPanelsView",
         "targetProp": "onClickCard",
         "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\dashboard\\containers\\DashboardPage.tsx:UnthemedDashboardPage",
+    "targetComponent": "features\\dashboard\\components\\HelpWizard\\HelpWizard.tsx:HelpWizard",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\dashboard\\containers\\DashboardPage.tsx:UnthemedDashboardPage",
+        "target": "features\\dashboard\\components\\Inspector\\PanelInspector.tsx:PanelInspectorUnconnected",
+        "targetAlias": "PanelInspector",
+        "targetProp": "panel",
+        "isPure": true
+      },
+      {
+        "source": "features\\dashboard\\components\\Inspector\\PanelInspector.tsx:PanelInspectorUnconnected",
+        "target": "features\\dashboard\\components\\HelpWizard\\HelpWizard.tsx:HelpWizard",
+        "targetAlias": "HelpWizard",
+        "targetProp": "panel",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -25397,54 +26195,6 @@
         "targetAlias": "InspectMetadataTab",
         "targetProp": "metadataDatasource",
         "isPure": true
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "features\\dashboard\\components\\Inspector\\PanelInspector.tsx:PanelInspectorUnconnected",
-    "targetComponent": "features\\inspector\\InspectJSONTab.tsx:InspectJSONTab",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\dashboard\\components\\Inspector\\PanelInspector.tsx:PanelInspectorUnconnected",
-        "target": "features\\dashboard\\components\\Inspector\\InspectContent.tsx:InspectContent",
-        "targetAlias": "InspectContent",
-        "targetProp": "dashboard",
-        "isPure": false
-      },
-      {
-        "source": "features\\dashboard\\components\\Inspector\\InspectContent.tsx:InspectContent",
-        "target": "features\\inspector\\InspectJSONTab.tsx:InspectJSONTab",
-        "targetAlias": "InspectJSONTab",
-        "targetProp": "dashboard",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "features\\dashboard\\components\\Inspector\\PanelInspector.tsx:PanelInspectorUnconnected",
-    "targetComponent": "features\\inspector\\InspectJSONTab.tsx:InspectJSONTab",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\dashboard\\components\\Inspector\\PanelInspector.tsx:PanelInspectorUnconnected",
-        "target": "features\\dashboard\\components\\Inspector\\InspectContent.tsx:InspectContent",
-        "targetAlias": "InspectContent",
-        "targetProp": "panel",
-        "isPure": false
-      },
-      {
-        "source": "features\\dashboard\\components\\Inspector\\InspectContent.tsx:InspectContent",
-        "target": "features\\inspector\\InspectJSONTab.tsx:InspectJSONTab",
-        "targetAlias": "InspectJSONTab",
-        "targetProp": "panel",
-        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -25664,6 +26414,30 @@
       }
     ],
     "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\dashboard\\containers\\PublicDashboardPage.tsx:PublicDashboardPage",
+    "targetComponent": "features\\dashboard\\components\\DashboardRow\\DashboardRow.tsx:UnthemedDashboardRow",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\dashboard\\containers\\PublicDashboardPage.tsx:PublicDashboardPage",
+        "target": "features\\dashboard\\dashgrid\\DashboardGrid.tsx:DashboardGrid",
+        "targetAlias": "DashboardGrid",
+        "targetProp": "dashboard",
+        "isPure": false
+      },
+      {
+        "source": "features\\dashboard\\dashgrid\\DashboardGrid.tsx:DashboardGrid",
+        "target": "features\\dashboard\\components\\DashboardRow\\DashboardRow.tsx:UnthemedDashboardRow",
+        "targetAlias": "DashboardRow",
+        "targetProp": "dashboard",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
@@ -26121,6 +26895,30 @@
     ],
     "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\dashboard\\components\\PanelEditor\\PanelEditor.tsx:PanelEditorUnconnected",
+    "targetComponent": "features\\dashboard\\components\\TransformationsEditor\\TransformationsEditor.tsx:UnThemedTransformationsEditor",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\dashboard\\components\\PanelEditor\\PanelEditor.tsx:PanelEditorUnconnected",
+        "target": "features\\dashboard\\components\\PanelEditor\\PanelEditorTabs.tsx:PanelEditorTabs",
+        "targetAlias": "PanelEditorTabs",
+        "targetProp": "panel",
+        "isPure": true
+      },
+      {
+        "source": "features\\dashboard\\components\\PanelEditor\\PanelEditorTabs.tsx:PanelEditorTabs",
+        "target": "features\\dashboard\\components\\TransformationsEditor\\TransformationsEditor.tsx:UnThemedTransformationsEditor",
+        "targetAlias": "TransformationsEditor",
+        "targetProp": "panel",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
     "sourceComponent": "features\\dashboard\\components\\PanelEditor\\PanelEditor.tsx:PanelEditorUnconnected",
@@ -27441,6 +28239,78 @@
     ],
     "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "features\\datasources\\components\\DataSourceDashboards.tsx:DataSourceDashboards",
+    "targetComponent": "features\\datasources\\components\\DashboardsTable.tsx:DashboardsTable",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\datasources\\components\\DataSourceDashboards.tsx:DataSourceDashboards",
+        "target": "features\\datasources\\components\\DataSourceDashboards.tsx:DataSourceDashboardsView",
+        "targetAlias": "DataSourceDashboardsView",
+        "targetProp": "dashboards",
+        "isPure": false
+      },
+      {
+        "source": "features\\datasources\\components\\DataSourceDashboards.tsx:DataSourceDashboardsView",
+        "target": "features\\datasources\\components\\DashboardsTable.tsx:DashboardsTable",
+        "targetAlias": "DashboardTable",
+        "targetProp": "dashboards",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\datasources\\components\\DataSourceDashboards.tsx:DataSourceDashboards",
+    "targetComponent": "features\\datasources\\components\\DashboardsTable.tsx:DashboardsTable",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\datasources\\components\\DataSourceDashboards.tsx:DataSourceDashboards",
+        "target": "features\\datasources\\components\\DataSourceDashboards.tsx:DataSourceDashboardsView",
+        "targetAlias": "DataSourceDashboardsView",
+        "targetProp": "onImportDashboard",
+        "isPure": false
+      },
+      {
+        "source": "features\\datasources\\components\\DataSourceDashboards.tsx:DataSourceDashboardsView",
+        "target": "features\\datasources\\components\\DashboardsTable.tsx:DashboardsTable",
+        "targetAlias": "DashboardTable",
+        "targetProp": "onImport",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\datasources\\components\\DataSourceDashboards.tsx:DataSourceDashboards",
+    "targetComponent": "features\\datasources\\components\\DashboardsTable.tsx:DashboardsTable",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\datasources\\components\\DataSourceDashboards.tsx:DataSourceDashboards",
+        "target": "features\\datasources\\components\\DataSourceDashboards.tsx:DataSourceDashboardsView",
+        "targetAlias": "DataSourceDashboardsView",
+        "targetProp": "onRemoveDashboard",
+        "isPure": false
+      },
+      {
+        "source": "features\\datasources\\components\\DataSourceDashboards.tsx:DataSourceDashboardsView",
+        "target": "features\\datasources\\components\\DashboardsTable.tsx:DashboardsTable",
+        "targetAlias": "DashboardTable",
+        "targetProp": "onRemove",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
     "sourceComponent": "features\\connections\\pages\\AddNewConnectionPage.tsx:AddNewConnectionPage",

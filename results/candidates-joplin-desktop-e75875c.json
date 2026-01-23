@@ -31,6 +31,30 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "gui\\Root.tsx:RootComponent",
+    "targetComponent": "gui\\NewWindowOrIFrame.tsx:NewWindowOrIFrame",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "gui\\Root.tsx:RootComponent",
+        "target": "gui\\NoteEditor\\EditorWindow.tsx:SecondaryWindow",
+        "targetAlias": "EditorWindow",
+        "targetProp": "windowId",
+        "isPure": true
+      },
+      {
+        "source": "gui\\NoteEditor\\EditorWindow.tsx:SecondaryWindow",
+        "target": "gui\\NewWindowOrIFrame.tsx:NewWindowOrIFrame",
+        "targetAlias": "NewWindowOrIFrame",
+        "targetProp": "windowId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "gui\\WindowCommandsAndDialogs\\PluginDialogs.tsx:PluginDialogs",
     "targetComponent": "services\\plugins\\UserWebview.tsx:UserWebview",
     "canRefactorWithContext": true,

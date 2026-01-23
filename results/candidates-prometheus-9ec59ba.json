@@ -269,6 +269,78 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolList",
+    "targetComponent": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolDropDown",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolList",
+        "target": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolListContent",
+        "targetAlias": "ScrapePoolListWithStatusIndicator",
+        "targetProp": "scrapePools",
+        "isPure": false
+      },
+      {
+        "source": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolListContent",
+        "target": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolDropDown",
+        "targetAlias": "ScrapePoolDropDown",
+        "targetProp": "scrapePools",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolList",
+    "targetComponent": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolDropDown",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolList",
+        "target": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolListContent",
+        "targetAlias": "ScrapePoolListWithStatusIndicator",
+        "targetProp": "selectedPool",
+        "isPure": false
+      },
+      {
+        "source": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolListContent",
+        "target": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolDropDown",
+        "targetAlias": "ScrapePoolDropDown",
+        "targetProp": "selectedPool",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolList",
+    "targetComponent": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolDropDown",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolList",
+        "target": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolListContent",
+        "targetAlias": "ScrapePoolListWithStatusIndicator",
+        "targetProp": "onPoolSelect",
+        "isPure": true
+      },
+      {
+        "source": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolListContent",
+        "target": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolDropDown",
+        "targetAlias": "ScrapePoolDropDown",
+        "targetProp": "onScrapePoolChange",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "pages\\targets\\ScrapePoolList.tsx:ScrapePoolListContent",
     "targetComponent": "components\\ToggleMoreLess.tsx:ToggleMoreLess",
     "canRefactorWithContext": true,
@@ -314,6 +386,30 @@
       }
     ],
     "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\status\\Status.tsx:Status",
+    "targetComponent": "pages\\status\\Status.tsx:StatusContent",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\status\\Status.tsx:Status",
+        "target": "pages\\status\\Status.tsx:StatusResult",
+        "targetAlias": "StatusResult",
+        "targetProp": "title",
+        "isPure": false
+      },
+      {
+        "source": "pages\\status\\Status.tsx:StatusResult",
+        "target": "pages\\status\\Status.tsx:StatusContent",
+        "targetAlias": "StatusWithStatusIndicator",
+        "targetProp": "key",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
@@ -550,6 +646,30 @@
         "target": "pages\\graph\\Graph.tsx:Graph",
         "targetAlias": "Graph",
         "targetProp": "handleTimeRangeSelection",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\config\\Config.tsx:Config",
+    "targetComponent": "pages\\config\\Config.tsx:YamlContent",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\config\\Config.tsx:Config",
+        "target": "pages\\config\\Config.tsx:ConfigContent",
+        "targetAlias": "ConfigContent",
+        "targetProp": "error",
+        "isPure": false
+      },
+      {
+        "source": "pages\\config\\Config.tsx:ConfigContent",
+        "target": "pages\\config\\Config.tsx:YamlContent",
+        "targetAlias": "ConfigWithStatusIndicator",
+        "targetProp": "error",
         "isPure": true
       }
     ],

@@ -97,6 +97,276 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "views\\room\\MessageList\\MessageListItem.tsx:MessageListItem",
+    "targetComponent": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\MessageList\\MessageListItem.tsx:MessageListItem",
+        "target": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
+        "targetAlias": "RoomMessage",
+        "targetProp": "unread",
+        "isPure": false
+      },
+      {
+        "source": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
+        "target": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
+        "targetAlias": "RoomMessageContent",
+        "targetProp": "unread",
+        "isPure": false
+      },
+      {
+        "source": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
+        "target": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
+        "targetAlias": "ThreadMetrics",
+        "targetProp": "unread",
+        "isPure": false
+      },
+      {
+        "source": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
+        "target": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "targetAlias": "ThreadMetricsFollow",
+        "targetProp": "unread",
+        "isPure": false
+      },
+      {
+        "source": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "target": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+        "targetAlias": "ThreadMetricsBadge",
+        "targetProp": "unread",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\room\\MessageList\\MessageListItem.tsx:MessageListItem",
+    "targetComponent": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\MessageList\\MessageListItem.tsx:MessageListItem",
+        "target": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
+        "targetAlias": "RoomMessage",
+        "targetProp": "mention",
+        "isPure": false
+      },
+      {
+        "source": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
+        "target": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
+        "targetAlias": "RoomMessageContent",
+        "targetProp": "mention",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
+        "target": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
+        "targetAlias": "ThreadMetrics",
+        "targetProp": "mention",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
+        "target": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "targetAlias": "ThreadMetricsFollow",
+        "targetProp": "mention",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "target": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+        "targetAlias": "ThreadMetricsBadge",
+        "targetProp": "mention",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\room\\MessageList\\MessageListItem.tsx:MessageListItem",
+    "targetComponent": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\MessageList\\MessageListItem.tsx:MessageListItem",
+        "target": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
+        "targetAlias": "RoomMessage",
+        "targetProp": "all",
+        "isPure": false
+      },
+      {
+        "source": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
+        "target": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
+        "targetAlias": "RoomMessageContent",
+        "targetProp": "all",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
+        "target": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
+        "targetAlias": "ThreadMetrics",
+        "targetProp": "all",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
+        "target": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "targetAlias": "ThreadMetricsFollow",
+        "targetProp": "all",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "target": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+        "targetAlias": "ThreadMetricsBadge",
+        "targetProp": "all",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\audit\\components\\AuditMessageList.tsx:AuditMessageList",
+    "targetComponent": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\audit\\components\\AuditMessageList.tsx:AuditMessageList",
+        "target": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
+        "targetAlias": "RoomMessage",
+        "targetProp": "unread",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
+        "target": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
+        "targetAlias": "RoomMessageContent",
+        "targetProp": "unread",
+        "isPure": false
+      },
+      {
+        "source": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
+        "target": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
+        "targetAlias": "ThreadMetrics",
+        "targetProp": "unread",
+        "isPure": false
+      },
+      {
+        "source": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
+        "target": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "targetAlias": "ThreadMetricsFollow",
+        "targetProp": "unread",
+        "isPure": false
+      },
+      {
+        "source": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "target": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+        "targetAlias": "ThreadMetricsBadge",
+        "targetProp": "unread",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\audit\\components\\AuditMessageList.tsx:AuditMessageList",
+    "targetComponent": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\audit\\components\\AuditMessageList.tsx:AuditMessageList",
+        "target": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
+        "targetAlias": "RoomMessage",
+        "targetProp": "mention",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
+        "target": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
+        "targetAlias": "RoomMessageContent",
+        "targetProp": "mention",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
+        "target": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
+        "targetAlias": "ThreadMetrics",
+        "targetProp": "mention",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
+        "target": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "targetAlias": "ThreadMetricsFollow",
+        "targetProp": "mention",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "target": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+        "targetAlias": "ThreadMetricsBadge",
+        "targetProp": "mention",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\audit\\components\\AuditMessageList.tsx:AuditMessageList",
+    "targetComponent": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\audit\\components\\AuditMessageList.tsx:AuditMessageList",
+        "target": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
+        "targetAlias": "RoomMessage",
+        "targetProp": "all",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
+        "target": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
+        "targetAlias": "RoomMessageContent",
+        "targetProp": "all",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
+        "target": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
+        "targetAlias": "ThreadMetrics",
+        "targetProp": "all",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
+        "target": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "targetAlias": "ThreadMetricsFollow",
+        "targetProp": "all",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "target": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+        "targetAlias": "ThreadMetricsBadge",
+        "targetProp": "all",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "views\\room\\MessageList\\MessageList.tsx:MessageList",
     "targetComponent": "components\\message\\StatusIndicators.tsx:StatusIndicators",
     "canRefactorWithContext": true,
@@ -129,120 +399,6 @@
         "targetAlias": "StatusIndicators",
         "targetProp": "message",
         "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "views\\room\\MessageList\\MessageListItem.tsx:MessageListItem",
-    "targetComponent": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "views\\room\\MessageList\\MessageListItem.tsx:MessageListItem",
-        "target": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
-        "targetAlias": "RoomMessage",
-        "targetProp": "unread",
-        "isPure": false
-      },
-      {
-        "source": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
-        "target": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
-        "targetAlias": "RoomMessageContent",
-        "targetProp": "unread",
-        "isPure": false
-      },
-      {
-        "source": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
-        "target": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
-        "targetAlias": "ThreadMetrics",
-        "targetProp": "unread",
-        "isPure": false
-      },
-      {
-        "source": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
-        "target": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
-        "targetAlias": "ThreadMetricsFollow",
-        "targetProp": "unread",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "views\\room\\MessageList\\MessageListItem.tsx:MessageListItem",
-    "targetComponent": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "views\\room\\MessageList\\MessageListItem.tsx:MessageListItem",
-        "target": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
-        "targetAlias": "RoomMessage",
-        "targetProp": "mention",
-        "isPure": false
-      },
-      {
-        "source": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
-        "target": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
-        "targetAlias": "RoomMessageContent",
-        "targetProp": "mention",
-        "isPure": true
-      },
-      {
-        "source": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
-        "target": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
-        "targetAlias": "ThreadMetrics",
-        "targetProp": "mention",
-        "isPure": true
-      },
-      {
-        "source": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
-        "target": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
-        "targetAlias": "ThreadMetricsFollow",
-        "targetProp": "mention",
-        "isPure": true
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "views\\room\\MessageList\\MessageListItem.tsx:MessageListItem",
-    "targetComponent": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "views\\room\\MessageList\\MessageListItem.tsx:MessageListItem",
-        "target": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
-        "targetAlias": "RoomMessage",
-        "targetProp": "all",
-        "isPure": false
-      },
-      {
-        "source": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
-        "target": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
-        "targetAlias": "RoomMessageContent",
-        "targetProp": "all",
-        "isPure": true
-      },
-      {
-        "source": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
-        "target": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
-        "targetAlias": "ThreadMetrics",
-        "targetProp": "all",
-        "isPure": true
-      },
-      {
-        "source": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
-        "target": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
-        "targetAlias": "ThreadMetricsFollow",
-        "targetProp": "all",
-        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -325,120 +481,6 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "views\\audit\\components\\AuditMessageList.tsx:AuditMessageList",
-    "targetComponent": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "views\\audit\\components\\AuditMessageList.tsx:AuditMessageList",
-        "target": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
-        "targetAlias": "RoomMessage",
-        "targetProp": "unread",
-        "isPure": true
-      },
-      {
-        "source": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
-        "target": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
-        "targetAlias": "RoomMessageContent",
-        "targetProp": "unread",
-        "isPure": false
-      },
-      {
-        "source": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
-        "target": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
-        "targetAlias": "ThreadMetrics",
-        "targetProp": "unread",
-        "isPure": false
-      },
-      {
-        "source": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
-        "target": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
-        "targetAlias": "ThreadMetricsFollow",
-        "targetProp": "unread",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "views\\audit\\components\\AuditMessageList.tsx:AuditMessageList",
-    "targetComponent": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "views\\audit\\components\\AuditMessageList.tsx:AuditMessageList",
-        "target": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
-        "targetAlias": "RoomMessage",
-        "targetProp": "mention",
-        "isPure": true
-      },
-      {
-        "source": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
-        "target": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
-        "targetAlias": "RoomMessageContent",
-        "targetProp": "mention",
-        "isPure": true
-      },
-      {
-        "source": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
-        "target": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
-        "targetAlias": "ThreadMetrics",
-        "targetProp": "mention",
-        "isPure": true
-      },
-      {
-        "source": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
-        "target": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
-        "targetAlias": "ThreadMetricsFollow",
-        "targetProp": "mention",
-        "isPure": true
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "views\\audit\\components\\AuditMessageList.tsx:AuditMessageList",
-    "targetComponent": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "views\\audit\\components\\AuditMessageList.tsx:AuditMessageList",
-        "target": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
-        "targetAlias": "RoomMessage",
-        "targetProp": "all",
-        "isPure": true
-      },
-      {
-        "source": "components\\message\\variants\\RoomMessage.tsx:RoomMessage",
-        "target": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
-        "targetAlias": "RoomMessageContent",
-        "targetProp": "all",
-        "isPure": true
-      },
-      {
-        "source": "components\\message\\variants\\room\\RoomMessageContent.tsx:RoomMessageContent",
-        "target": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
-        "targetAlias": "ThreadMetrics",
-        "targetProp": "all",
-        "isPure": true
-      },
-      {
-        "source": "components\\message\\content\\ThreadMetrics.tsx:ThreadMetrics",
-        "target": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
-        "targetAlias": "ThreadMetricsFollow",
-        "targetProp": "all",
-        "isPure": true
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
     "sourceComponent": "views\\admin\\settings\\groups\\LDAPGroupPage.tsx:LDAPGroupPage",
     "targetComponent": "views\\admin\\settings\\SettingsGroupPage\\SettingsGroupPage.tsx:SettingsGroupPage",
     "canRefactorWithContext": true,
@@ -547,6 +589,44 @@
         "targetAlias": "SettingsGroupPage",
         "targetProp": "headerButtons",
         "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\admin\\settings\\groups\\LDAPGroupPage.tsx:LDAPGroupPage",
+    "targetComponent": "views\\admin\\settings\\SettingsSection\\SettingsSection.tsx:SettingsSection",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\admin\\settings\\groups\\LDAPGroupPage.tsx:LDAPGroupPage",
+        "target": "views\\admin\\settings\\groups\\BaseGroupPage.tsx:BaseGroupPage",
+        "targetAlias": "BaseGroupPage",
+        "targetProp": "_id",
+        "isPure": false
+      },
+      {
+        "source": "views\\admin\\settings\\groups\\BaseGroupPage.tsx:BaseGroupPage",
+        "target": "views\\admin\\settings\\groups\\TabbedGroupPage.tsx:TabbedGroupPage",
+        "targetAlias": "TabbedGroupPage",
+        "targetProp": "_id",
+        "isPure": false
+      },
+      {
+        "source": "views\\admin\\settings\\groups\\TabbedGroupPage.tsx:TabbedGroupPage",
+        "target": "views\\admin\\settings\\groups\\GenericGroupPage.tsx:GenericGroupPage",
+        "targetAlias": "GenericGroupPage",
+        "targetProp": "_id",
+        "isPure": false
+      },
+      {
+        "source": "views\\admin\\settings\\groups\\GenericGroupPage.tsx:GenericGroupPage",
+        "target": "views\\admin\\settings\\SettingsSection\\SettingsSection.tsx:SettingsSection",
+        "targetAlias": "Section",
+        "targetProp": "groupId",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -1050,6 +1130,99 @@
         "target": "views\\teams\\ChannelDesertionTable\\ChannelDesertionTable.tsx:ChannelDesertionTable",
         "targetAlias": "ChannelDesertionTable",
         "targetProp": "rooms",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\room\\MemberListRouter.tsx:MemberListRouter",
+    "targetComponent": "views\\room\\contextualBar\\UserInfo\\UserInfoActions.tsx:UserInfoActions",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\MemberListRouter.tsx:MemberListRouter",
+        "target": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
+        "targetAlias": "RoomMembers",
+        "targetProp": "rid",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
+        "target": "views\\room\\contextualBar\\UserInfo\\UserInfoWithData.tsx:UserInfoWithData",
+        "targetAlias": "UserInfoWithData",
+        "targetProp": "rid",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\contextualBar\\UserInfo\\UserInfoWithData.tsx:UserInfoWithData",
+        "target": "views\\room\\contextualBar\\UserInfo\\UserInfoActions.tsx:UserInfoActions",
+        "targetAlias": "UserInfoActions",
+        "targetProp": "rid",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
+    "targetComponent": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWrapper.tsx:InviteUsersWrapper",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
+        "target": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWithData.tsx:InviteUsersWithData",
+        "targetAlias": "InviteUsers",
+        "targetProp": "onClickBack",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWithData.tsx:InviteUsersWithData",
+        "target": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersError.tsx:InviteUsersError",
+        "targetAlias": "InviteUsersError",
+        "targetProp": "onClickBack",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersError.tsx:InviteUsersError",
+        "target": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWrapper.tsx:InviteUsersWrapper",
+        "targetAlias": "InviteUsersWrapper",
+        "targetProp": "onClickBack",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
+    "targetComponent": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWrapper.tsx:InviteUsersWrapper",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
+        "target": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWithData.tsx:InviteUsersWithData",
+        "targetAlias": "InviteUsers",
+        "targetProp": "onClickBack",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWithData.tsx:InviteUsersWithData",
+        "target": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsers.tsx:InviteUsers",
+        "targetAlias": "InviteUsers",
+        "targetProp": "onClickBackMembers",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsers.tsx:InviteUsers",
+        "target": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWrapper.tsx:InviteUsersWrapper",
+        "targetAlias": "InviteUsersWrapper",
+        "targetProp": "onClickBack",
         "isPure": true
       }
     ],
@@ -1616,6 +1789,37 @@
   },
   {
     "sourceComponent": "views\\room\\Header\\RoomHeaderE2EESetup.tsx:RoomHeaderE2EESetup",
+    "targetComponent": "views\\room\\Header\\ParentRoom\\ParentDiscussion\\ParentDiscussionRoute.tsx:ParentDiscussionRoute",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "views\\room\\Header\\RoomHeaderE2EESetup.tsx:RoomHeaderE2EESetup",
+        "target": "views\\room\\Header\\RoomHeader.tsx:RoomHeader",
+        "targetAlias": "RoomHeader",
+        "targetProp": "room",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\Header\\RoomHeader.tsx:RoomHeader",
+        "target": "views\\room\\Header\\ParentRoom\\ParentRoom.tsx:ParentRoom",
+        "targetAlias": "ParentRoom",
+        "targetProp": "room",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\Header\\ParentRoom\\ParentRoom.tsx:ParentRoom",
+        "target": "views\\room\\Header\\ParentRoom\\ParentDiscussion\\ParentDiscussionRoute.tsx:ParentDiscussionRoute",
+        "targetAlias": "ParentDiscussion",
+        "targetProp": "room",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "views\\room\\Header\\RoomHeaderE2EESetup.tsx:RoomHeaderE2EESetup",
     "targetComponent": "views\\room\\Header\\ParentRoom\\ParentTeam.tsx:ParentTeam",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": true,
@@ -1678,6 +1882,37 @@
   },
   {
     "sourceComponent": "views\\room\\Header\\RoomInviteHeader.tsx:RoomInviteHeader",
+    "targetComponent": "views\\room\\Header\\ParentRoom\\ParentDiscussion\\ParentDiscussionRoute.tsx:ParentDiscussionRoute",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "views\\room\\Header\\RoomInviteHeader.tsx:RoomInviteHeader",
+        "target": "views\\room\\Header\\RoomHeader.tsx:RoomHeader",
+        "targetAlias": "RoomHeader",
+        "targetProp": "room",
+        "isPure": true
+      },
+      {
+        "source": "views\\room\\Header\\RoomHeader.tsx:RoomHeader",
+        "target": "views\\room\\Header\\ParentRoom\\ParentRoom.tsx:ParentRoom",
+        "targetAlias": "ParentRoom",
+        "targetProp": "room",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\Header\\ParentRoom\\ParentRoom.tsx:ParentRoom",
+        "target": "views\\room\\Header\\ParentRoom\\ParentDiscussion\\ParentDiscussionRoute.tsx:ParentDiscussionRoute",
+        "targetAlias": "ParentDiscussion",
+        "targetProp": "room",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "views\\room\\Header\\RoomInviteHeader.tsx:RoomInviteHeader",
     "targetComponent": "views\\room\\Header\\ParentRoom\\ParentTeam.tsx:ParentTeam",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": true,
@@ -1731,6 +1966,37 @@
         "source": "views\\room\\Header\\RoomTitle.tsx:RoomTitle",
         "target": "views\\room\\Header\\HeaderIconWithRoom.tsx:HeaderIconWithRoom",
         "targetAlias": "HeaderIconWithRoom",
+        "targetProp": "room",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "views\\room\\Header\\Omnichannel\\OmnichannelRoomHeader.tsx:OmnichannelRoomHeader",
+    "targetComponent": "views\\room\\Header\\ParentRoom\\ParentDiscussion\\ParentDiscussionRoute.tsx:ParentDiscussionRoute",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "views\\room\\Header\\Omnichannel\\OmnichannelRoomHeader.tsx:OmnichannelRoomHeader",
+        "target": "views\\room\\Header\\RoomHeader.tsx:RoomHeader",
+        "targetAlias": "RoomHeader",
+        "targetProp": "room",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\Header\\RoomHeader.tsx:RoomHeader",
+        "target": "views\\room\\Header\\ParentRoom\\ParentRoom.tsx:ParentRoom",
+        "targetAlias": "ParentRoom",
+        "targetProp": "room",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\Header\\ParentRoom\\ParentRoom.tsx:ParentRoom",
+        "target": "views\\room\\Header\\ParentRoom\\ParentDiscussion\\ParentDiscussionRoute.tsx:ParentDiscussionRoute",
+        "targetAlias": "ParentDiscussion",
         "targetProp": "room",
         "isPure": false
       }
@@ -2142,6 +2408,37 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "views\\omnichannel\\contactInfo\\ContactInfo\\ContactInfoWithData.tsx:ContactInfoWithData",
+    "targetComponent": "views\\omnichannel\\contactInfo\\tabs\\ContactInfoHistory\\ContactInfoHistory.tsx:ContactInfoHistory",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\contactInfo\\ContactInfo\\ContactInfoWithData.tsx:ContactInfoWithData",
+        "target": "views\\omnichannel\\contactInfo\\ContactInfo\\ContactInfo.tsx:ContactInfo",
+        "targetAlias": "ContactInfo",
+        "targetProp": "contact",
+        "isPure": true
+      },
+      {
+        "source": "views\\omnichannel\\contactInfo\\ContactInfo\\ContactInfo.tsx:ContactInfo",
+        "target": "views\\omnichannel\\contactInfo\\tabs\\ContactInfoHistory\\ContactInfoHistoryRouter.tsx:ContactInfoHistoryRouter",
+        "targetAlias": "ContactInfoHistory",
+        "targetProp": "contact",
+        "isPure": false
+      },
+      {
+        "source": "views\\omnichannel\\contactInfo\\tabs\\ContactInfoHistory\\ContactInfoHistoryRouter.tsx:ContactInfoHistoryRouter",
+        "target": "views\\omnichannel\\contactInfo\\tabs\\ContactInfoHistory\\ContactInfoHistory.tsx:ContactInfoHistory",
+        "targetAlias": "ContactInfoHistory",
+        "targetProp": "contact",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "views\\omnichannel\\directory\\chats\\ChatInfo\\RoomEdit\\RoomEdit.tsx:RoomEdit",
     "targetComponent": "views\\omnichannel\\tags\\AutoCompleteTagsMultiple.tsx:AutoCompleteTagsMultiple",
     "canRefactorWithContext": true,
@@ -2166,6 +2463,37 @@
         "target": "views\\omnichannel\\tags\\AutoCompleteTagsMultiple.tsx:AutoCompleteTagsMultiple",
         "targetAlias": "AutoCompleteTagsMultiple",
         "targetProp": "department",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\MessageForm\\MessageForm.tsx:MessageForm",
+    "targetComponent": "views\\omnichannel\\components\\outboundMessage\\components\\TemplatePlaceholderSelector\\TemplatePlaceholderSelector.tsx:TemplatePlaceholderSelector",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\MessageForm\\MessageForm.tsx:MessageForm",
+        "target": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\MessageForm\\components\\TemplatePlaceholderField.tsx:TemplatePlaceholderField",
+        "targetAlias": "TemplatePlaceholderField",
+        "targetProp": "contact",
+        "isPure": false
+      },
+      {
+        "source": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\MessageForm\\components\\TemplatePlaceholderField.tsx:TemplatePlaceholderField",
+        "target": "views\\omnichannel\\components\\outboundMessage\\components\\TemplatePlaceholderSelector\\TemplatePlaceholderInput.tsx:TemplatePlaceholderInput",
+        "targetAlias": "TemplatePlaceholderInput",
+        "targetProp": "contact",
+        "isPure": true
+      },
+      {
+        "source": "views\\omnichannel\\components\\outboundMessage\\components\\TemplatePlaceholderSelector\\TemplatePlaceholderInput.tsx:TemplatePlaceholderInput",
+        "target": "views\\omnichannel\\components\\outboundMessage\\components\\TemplatePlaceholderSelector\\TemplatePlaceholderSelector.tsx:TemplatePlaceholderSelector",
+        "targetAlias": "PlaceholderSelector",
+        "targetProp": "contact",
         "isPure": true
       }
     ],
@@ -2229,6 +2557,37 @@
         "targetAlias": "CannedResponse",
         "targetProp": "onClickBack",
         "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\omnichannel\\businessHours\\BusinessHoursRouter.tsx:BusinessHoursRouter",
+    "targetComponent": "views\\omnichannel\\businessHours\\BusinessHoursForm.tsx:BusinessHoursForm",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\businessHours\\BusinessHoursRouter.tsx:BusinessHoursRouter",
+        "target": "views\\omnichannel\\businessHours\\EditBusinessHoursWithData.tsx:EditBusinessHoursWidthData",
+        "targetAlias": "EditBusinessHoursWithData",
+        "targetProp": "type",
+        "isPure": false
+      },
+      {
+        "source": "views\\omnichannel\\businessHours\\EditBusinessHoursWithData.tsx:EditBusinessHoursWidthData",
+        "target": "views\\omnichannel\\businessHours\\EditBusinessHours.tsx:EditBusinessHours",
+        "targetAlias": "EditBusinessHours",
+        "targetProp": "type",
+        "isPure": false
+      },
+      {
+        "source": "views\\omnichannel\\businessHours\\EditBusinessHours.tsx:EditBusinessHours",
+        "target": "views\\omnichannel\\businessHours\\BusinessHoursForm.tsx:BusinessHoursForm",
+        "targetAlias": "BusinessHoursForm",
+        "targetProp": "type",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -2357,6 +2716,99 @@
     ],
     "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "views\\marketplace\\AppsPage\\AppsPageContent.tsx:AppsPageContent",
+    "targetComponent": "views\\marketplace\\components\\RadioDropDown\\RadioDownAnchor.tsx:RadioDownAnchor",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\marketplace\\AppsPage\\AppsPageContent.tsx:AppsPageContent",
+        "target": "views\\marketplace\\AppsPage\\AppsFilters.tsx:AppsFilters",
+        "targetAlias": "AppsFilters",
+        "targetProp": "freePaidFilterStructure",
+        "isPure": false
+      },
+      {
+        "source": "views\\marketplace\\AppsPage\\AppsFilters.tsx:AppsFilters",
+        "target": "views\\marketplace\\components\\RadioDropDown\\RadioDropDown.tsx:RadioDropDown",
+        "targetAlias": "RadioDropDown",
+        "targetProp": "group",
+        "isPure": true
+      },
+      {
+        "source": "views\\marketplace\\components\\RadioDropDown\\RadioDropDown.tsx:RadioDropDown",
+        "target": "views\\marketplace\\components\\RadioDropDown\\RadioDownAnchor.tsx:RadioDownAnchor",
+        "targetAlias": "RadioDropDownAnchor",
+        "targetProp": "group",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\marketplace\\AppsPage\\AppsPageContent.tsx:AppsPageContent",
+    "targetComponent": "views\\marketplace\\components\\RadioDropDown\\RadioDownAnchor.tsx:RadioDownAnchor",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\marketplace\\AppsPage\\AppsPageContent.tsx:AppsPageContent",
+        "target": "views\\marketplace\\AppsPage\\AppsFilters.tsx:AppsFilters",
+        "targetAlias": "AppsFilters",
+        "targetProp": "sortFilterStructure",
+        "isPure": false
+      },
+      {
+        "source": "views\\marketplace\\AppsPage\\AppsFilters.tsx:AppsFilters",
+        "target": "views\\marketplace\\components\\RadioDropDown\\RadioDropDown.tsx:RadioDropDown",
+        "targetAlias": "RadioDropDown",
+        "targetProp": "group",
+        "isPure": true
+      },
+      {
+        "source": "views\\marketplace\\components\\RadioDropDown\\RadioDropDown.tsx:RadioDropDown",
+        "target": "views\\marketplace\\components\\RadioDropDown\\RadioDownAnchor.tsx:RadioDownAnchor",
+        "targetAlias": "RadioDropDownAnchor",
+        "targetProp": "group",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\marketplace\\AppsPage\\AppsPageContent.tsx:AppsPageContent",
+    "targetComponent": "views\\marketplace\\components\\RadioDropDown\\RadioDownAnchor.tsx:RadioDownAnchor",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\marketplace\\AppsPage\\AppsPageContent.tsx:AppsPageContent",
+        "target": "views\\marketplace\\AppsPage\\AppsFilters.tsx:AppsFilters",
+        "targetAlias": "AppsFilters",
+        "targetProp": "statusFilterStructure",
+        "isPure": false
+      },
+      {
+        "source": "views\\marketplace\\AppsPage\\AppsFilters.tsx:AppsFilters",
+        "target": "views\\marketplace\\components\\RadioDropDown\\RadioDropDown.tsx:RadioDropDown",
+        "targetAlias": "RadioDropDown",
+        "targetProp": "group",
+        "isPure": true
+      },
+      {
+        "source": "views\\marketplace\\components\\RadioDropDown\\RadioDropDown.tsx:RadioDropDown",
+        "target": "views\\marketplace\\components\\RadioDropDown\\RadioDownAnchor.tsx:RadioDownAnchor",
+        "targetAlias": "RadioDropDownAnchor",
+        "targetProp": "group",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
     "sourceComponent": "views\\marketplace\\AppsPage\\AppsPageContent.tsx:AppsPageContent",
@@ -2855,6 +3307,37 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "views\\admin\\settings\\SettingsGroupSelector\\SettingsGroupSelector.tsx:SettingsGroupSelector",
+    "targetComponent": "views\\admin\\settings\\SettingsSection\\SettingsSection.tsx:SettingsSection",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\admin\\settings\\SettingsGroupSelector\\SettingsGroupSelector.tsx:SettingsGroupSelector",
+        "target": "views\\admin\\settings\\groups\\BaseGroupPage.tsx:BaseGroupPage",
+        "targetAlias": "BaseGroupPage",
+        "targetProp": "hasReset",
+        "isPure": true
+      },
+      {
+        "source": "views\\admin\\settings\\groups\\BaseGroupPage.tsx:BaseGroupPage",
+        "target": "views\\admin\\settings\\groups\\GenericGroupPage.tsx:GenericGroupPage",
+        "targetAlias": "GenericGroupPage",
+        "targetProp": "hasReset",
+        "isPure": true
+      },
+      {
+        "source": "views\\admin\\settings\\groups\\GenericGroupPage.tsx:GenericGroupPage",
+        "target": "views\\admin\\settings\\SettingsSection\\SettingsSection.tsx:SettingsSection",
+        "targetAlias": "Section",
+        "targetProp": "hasReset",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "views\\admin\\moderation\\ModerationConsolePage.tsx:ModerationConsolePage",
     "targetComponent": "views\\admin\\moderation\\helpers\\ContextMessage.tsx:ContextMessage",
     "canRefactorWithContext": true,
@@ -3274,6 +3757,30 @@
         "target": "views\\teams\\ChannelDesertionTable\\ChannelDesertionTable.tsx:ChannelDesertionTable",
         "targetAlias": "ChannelDesertionTable",
         "targetProp": "eligibleRoomsLength",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\teams\\contextualBar\\info\\TeamsInfoWithData.tsx:TeamsInfoWithData",
+    "targetComponent": "views\\room\\contextualBar\\Info\\EditRoomInfo\\EditRoomInfo.tsx:EditRoomInfo",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\teams\\contextualBar\\info\\TeamsInfoWithData.tsx:TeamsInfoWithData",
+        "target": "views\\room\\contextualBar\\Info\\EditRoomInfo\\EditRoomInfoWithData.tsx:EditRoomInfoWithData",
+        "targetAlias": "EditChannelWithData",
+        "targetProp": "onClickBack",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\contextualBar\\Info\\EditRoomInfo\\EditRoomInfoWithData.tsx:EditRoomInfoWithData",
+        "target": "views\\room\\contextualBar\\Info\\EditRoomInfo\\EditRoomInfo.tsx:EditRoomInfo",
+        "targetAlias": "EditRoomInfo",
+        "targetProp": "onClickBack",
         "isPure": true
       }
     ],
@@ -4097,6 +4604,54 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "sidebar\\sections\\BannerSection.tsx:BannerSection",
+    "targetComponent": "sidebar\\sections\\AirGappedRestrictionBanner\\AirGappedRestrictionWarning.tsx:AirGappedRestrictionWarning",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "sidebar\\sections\\BannerSection.tsx:BannerSection",
+        "target": "sidebar\\sections\\AirGappedRestrictionBanner\\AirGappedRestrictionBanner.tsx:AirGappedRestrictionSection",
+        "targetAlias": "AirGappedRestrictionBanner",
+        "targetProp": "isRestricted",
+        "isPure": false
+      },
+      {
+        "source": "sidebar\\sections\\AirGappedRestrictionBanner\\AirGappedRestrictionBanner.tsx:AirGappedRestrictionSection",
+        "target": "sidebar\\sections\\AirGappedRestrictionBanner\\AirGappedRestrictionWarning.tsx:AirGappedRestrictionWarning",
+        "targetAlias": "AirGappedRestrictionWarning",
+        "targetProp": "isRestricted",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "sidebar\\sections\\BannerSection.tsx:BannerSection",
+    "targetComponent": "sidebar\\sections\\AirGappedRestrictionBanner\\AirGappedRestrictionWarning.tsx:AirGappedRestrictionWarning",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "sidebar\\sections\\BannerSection.tsx:BannerSection",
+        "target": "sidebar\\sections\\AirGappedRestrictionBanner\\AirGappedRestrictionBanner.tsx:AirGappedRestrictionSection",
+        "targetAlias": "AirGappedRestrictionBanner",
+        "targetProp": "remainingDays",
+        "isPure": false
+      },
+      {
+        "source": "sidebar\\sections\\AirGappedRestrictionBanner\\AirGappedRestrictionBanner.tsx:AirGappedRestrictionSection",
+        "target": "sidebar\\sections\\AirGappedRestrictionBanner\\AirGappedRestrictionWarning.tsx:AirGappedRestrictionWarning",
+        "targetAlias": "AirGappedRestrictionWarning",
+        "targetProp": "remainingDays",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
     "targetComponent": "components\\UserInfo\\UserInfo.tsx:UserInfo",
     "canRefactorWithContext": true,
@@ -4130,30 +4685,6 @@
         "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
         "target": "views\\room\\contextualBar\\UserInfo\\UserInfoWithData.tsx:UserInfoWithData",
         "targetAlias": "UserInfoWithData",
-        "targetProp": "rid",
-        "isPure": false
-      },
-      {
-        "source": "views\\room\\contextualBar\\UserInfo\\UserInfoWithData.tsx:UserInfoWithData",
-        "target": "views\\room\\contextualBar\\UserInfo\\UserInfoActions.tsx:UserInfoActions",
-        "targetAlias": "UserInfoActions",
-        "targetProp": "rid",
-        "isPure": true
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
-    "targetComponent": "views\\room\\contextualBar\\UserInfo\\UserInfoActions.tsx:UserInfoActions",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
-        "target": "views\\room\\contextualBar\\UserInfo\\UserInfoWithData.tsx:UserInfoWithData",
-        "targetAlias": "UserInfoWithData",
         "targetProp": "onClickBack",
         "isPure": false
       },
@@ -4169,6 +4700,30 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "views\\room\\MemberListRouter.tsx:MemberListRouter",
+    "targetComponent": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWithData.tsx:InviteUsersWithData",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\MemberListRouter.tsx:MemberListRouter",
+        "target": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
+        "targetAlias": "RoomMembers",
+        "targetProp": "rid",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
+        "target": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWithData.tsx:InviteUsersWithData",
+        "targetAlias": "InviteUsers",
+        "targetProp": "rid",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWithData.tsx:InviteUsersWithData",
     "targetComponent": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWrapper.tsx:InviteUsersWrapper",
     "canRefactorWithContext": true,
@@ -4193,24 +4748,24 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWithData.tsx:InviteUsersWithData",
-    "targetComponent": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWrapper.tsx:InviteUsersWrapper",
+    "sourceComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
+    "targetComponent": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersLoading.tsx:InviteUsersLoading",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWithData.tsx:InviteUsersWithData",
-        "target": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersError.tsx:InviteUsersError",
-        "targetAlias": "InviteUsersError",
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
+        "target": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWithData.tsx:InviteUsersWithData",
+        "targetAlias": "InviteUsers",
         "targetProp": "onClickBack",
         "isPure": false
       },
       {
-        "source": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersError.tsx:InviteUsersError",
-        "target": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWrapper.tsx:InviteUsersWrapper",
-        "targetAlias": "InviteUsersWrapper",
+        "source": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWithData.tsx:InviteUsersWithData",
+        "target": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersLoading.tsx:InviteUsersLoading",
+        "targetAlias": "InviteUsersLoading",
         "targetProp": "onClickBack",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -4362,30 +4917,6 @@
   },
   {
     "sourceComponent": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWithData.tsx:InviteUsersWithData",
-    "targetComponent": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWrapper.tsx:InviteUsersWrapper",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWithData.tsx:InviteUsersWithData",
-        "target": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsers.tsx:InviteUsers",
-        "targetAlias": "InviteUsers",
-        "targetProp": "onClickBackMembers",
-        "isPure": false
-      },
-      {
-        "source": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsers.tsx:InviteUsers",
-        "target": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWrapper.tsx:InviteUsersWrapper",
-        "targetAlias": "InviteUsersWrapper",
-        "targetProp": "onClickBack",
-        "isPure": true
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteUsersWithData.tsx:InviteUsersWithData",
     "targetComponent": "views\\room\\contextualBar\\RoomMembers\\InviteUsers\\InviteLink.tsx:InviteLink",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
@@ -4451,6 +4982,54 @@
         "targetAlias": "InviteLink",
         "targetProp": "onClickEdit",
         "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\room\\MemberListRouter.tsx:MemberListRouter",
+    "targetComponent": "views\\room\\contextualBar\\RoomMembers\\AddUsers\\AddUsers.tsx:AddUsers",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\MemberListRouter.tsx:MemberListRouter",
+        "target": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
+        "targetAlias": "RoomMembers",
+        "targetProp": "rid",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
+        "target": "views\\room\\contextualBar\\RoomMembers\\AddUsers\\AddUsers.tsx:AddUsers",
+        "targetAlias": "AddUsers",
+        "targetProp": "rid",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\room\\MemberListRouter.tsx:MemberListRouter",
+    "targetComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembers.tsx:RoomMembers",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\MemberListRouter.tsx:MemberListRouter",
+        "target": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
+        "targetAlias": "RoomMembers",
+        "targetProp": "rid",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersWithData.tsx:RoomMembersWithData",
+        "target": "views\\room\\contextualBar\\RoomMembers\\RoomMembers.tsx:RoomMembers",
+        "targetAlias": "RoomMembers",
+        "targetProp": "rid",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -5513,6 +6092,78 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "views\\room\\contextualBar\\Threads\\components\\ThreadListMessage.tsx:ThreadListMessage",
+    "targetComponent": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\contextualBar\\Threads\\components\\ThreadListMessage.tsx:ThreadListMessage",
+        "target": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "targetAlias": "ThreadMetricsFollow",
+        "targetProp": "mention",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "target": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+        "targetAlias": "ThreadMetricsBadge",
+        "targetProp": "mention",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\room\\contextualBar\\Threads\\components\\ThreadListMessage.tsx:ThreadListMessage",
+    "targetComponent": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\contextualBar\\Threads\\components\\ThreadListMessage.tsx:ThreadListMessage",
+        "target": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "targetAlias": "ThreadMetricsFollow",
+        "targetProp": "unread",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "target": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+        "targetAlias": "ThreadMetricsBadge",
+        "targetProp": "unread",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\room\\contextualBar\\Threads\\components\\ThreadListMessage.tsx:ThreadListMessage",
+    "targetComponent": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\contextualBar\\Threads\\components\\ThreadListMessage.tsx:ThreadListMessage",
+        "target": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "targetAlias": "ThreadMetricsFollow",
+        "targetProp": "all",
+        "isPure": true
+      },
+      {
+        "source": "components\\message\\content\\ThreadMetricsFollow.tsx:ThreadMetricsFollow",
+        "target": "components\\message\\content\\ThreadMetricsUnreadBadge.tsx:ThreadMetricsUnreadBadge",
+        "targetAlias": "ThreadMetricsBadge",
+        "targetProp": "all",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersRow.tsx:RoomMembersRow",
     "targetComponent": "components\\UserStatus\\ReactiveUserStatus.tsx:ReactiveUserStatus",
     "canRefactorWithContext": false,
@@ -5535,6 +6186,150 @@
     ],
     "destinationWithMultipleParentsPrec": false,
     "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersRow.tsx:RoomMembersRow",
+    "targetComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersActions.tsx:RoomMembersActions",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersRow.tsx:RoomMembersRow",
+        "target": "views\\room\\contextualBar\\RoomMembers\\RoomMembersItem.tsx:RoomMembersItem",
+        "targetAlias": "RoomMembersItem",
+        "targetProp": "username",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersItem.tsx:RoomMembersItem",
+        "target": "views\\room\\contextualBar\\RoomMembers\\RoomMembersActions.tsx:RoomMembersActions",
+        "targetAlias": "UserActions",
+        "targetProp": "username",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersRow.tsx:RoomMembersRow",
+    "targetComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersActions.tsx:RoomMembersActions",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersRow.tsx:RoomMembersRow",
+        "target": "views\\room\\contextualBar\\RoomMembers\\RoomMembersItem.tsx:RoomMembersItem",
+        "targetAlias": "RoomMembersItem",
+        "targetProp": "_id",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersItem.tsx:RoomMembersItem",
+        "target": "views\\room\\contextualBar\\RoomMembers\\RoomMembersActions.tsx:RoomMembersActions",
+        "targetAlias": "UserActions",
+        "targetProp": "_id",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersRow.tsx:RoomMembersRow",
+    "targetComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersActions.tsx:RoomMembersActions",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersRow.tsx:RoomMembersRow",
+        "target": "views\\room\\contextualBar\\RoomMembers\\RoomMembersItem.tsx:RoomMembersItem",
+        "targetAlias": "RoomMembersItem",
+        "targetProp": "rid",
+        "isPure": true
+      },
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersItem.tsx:RoomMembersItem",
+        "target": "views\\room\\contextualBar\\RoomMembers\\RoomMembersActions.tsx:RoomMembersActions",
+        "targetAlias": "UserActions",
+        "targetProp": "rid",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersRow.tsx:RoomMembersRow",
+    "targetComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersActions.tsx:RoomMembersActions",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersRow.tsx:RoomMembersRow",
+        "target": "views\\room\\contextualBar\\RoomMembers\\RoomMembersItem.tsx:RoomMembersItem",
+        "targetAlias": "RoomMembersItem",
+        "targetProp": "name",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersItem.tsx:RoomMembersItem",
+        "target": "views\\room\\contextualBar\\RoomMembers\\RoomMembersActions.tsx:RoomMembersActions",
+        "targetAlias": "UserActions",
+        "targetProp": "name",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersRow.tsx:RoomMembersRow",
+    "targetComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersActions.tsx:RoomMembersActions",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersRow.tsx:RoomMembersRow",
+        "target": "views\\room\\contextualBar\\RoomMembers\\RoomMembersItem.tsx:RoomMembersItem",
+        "targetAlias": "RoomMembersItem",
+        "targetProp": "freeSwitchExtension",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersItem.tsx:RoomMembersItem",
+        "target": "views\\room\\contextualBar\\RoomMembers\\RoomMembersActions.tsx:RoomMembersActions",
+        "targetAlias": "UserActions",
+        "targetProp": "freeSwitchExtension",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersRow.tsx:RoomMembersRow",
+    "targetComponent": "views\\room\\contextualBar\\RoomMembers\\RoomMembersActions.tsx:RoomMembersActions",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersRow.tsx:RoomMembersRow",
+        "target": "views\\room\\contextualBar\\RoomMembers\\RoomMembersItem.tsx:RoomMembersItem",
+        "targetAlias": "RoomMembersItem",
+        "targetProp": "reload",
+        "isPure": true
+      },
+      {
+        "source": "views\\room\\contextualBar\\RoomMembers\\RoomMembersItem.tsx:RoomMembersItem",
+        "target": "views\\room\\contextualBar\\RoomMembers\\RoomMembersActions.tsx:RoomMembersActions",
+        "targetAlias": "UserActions",
+        "targetProp": "reload",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
     "sourceComponent": "views\\room\\contextualBar\\NotificationPreferences\\NotificationPreferencesWithData.tsx:NotificationPreferencesWithData",
@@ -5675,6 +6470,54 @@
         "targetAlias": "TeamAutocomplete",
         "targetProp": "value",
         "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\room\\contextualBar\\Discussions\\DiscussionsListRow.tsx:DiscussionListRow",
+    "targetComponent": "components\\Emoji.tsx:Emoji",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "views\\room\\contextualBar\\Discussions\\DiscussionsListRow.tsx:DiscussionListRow",
+        "target": "views\\room\\contextualBar\\Discussions\\components\\DiscussionsListItem.tsx:DiscussionListItem",
+        "targetAlias": "DiscussionsListItem",
+        "targetProp": "emoji",
+        "isPure": false
+      },
+      {
+        "source": "views\\room\\contextualBar\\Discussions\\components\\DiscussionsListItem.tsx:DiscussionListItem",
+        "target": "components\\Emoji.tsx:Emoji",
+        "targetAlias": "Emoji",
+        "targetProp": "emojiHandle",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "views\\omnichannel\\sidebar\\OmnichannelSidebar.tsx:OmnichannelSidebar",
+    "targetComponent": "components\\Sidebar\\SidebarNavigationItem.tsx:SidebarNavigationItem",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\sidebar\\OmnichannelSidebar.tsx:OmnichannelSidebar",
+        "target": "components\\Sidebar\\SidebarItemsAssembler.tsx:SidebarItemsAssembler",
+        "targetAlias": "SidebarItemsAssemblerProps",
+        "targetProp": "currentPath",
+        "isPure": false
+      },
+      {
+        "source": "components\\Sidebar\\SidebarItemsAssembler.tsx:SidebarItemsAssembler",
+        "target": "components\\Sidebar\\SidebarNavigationItem.tsx:SidebarNavigationItem",
+        "targetAlias": "SidebarNavigationItem",
+        "targetProp": "currentPath",
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -5890,6 +6733,30 @@
         "target": "views\\admin\\settings\\SettingsGroupPage\\SettingsGroupPage.tsx:SettingsGroupPage",
         "targetAlias": "SettingsGroupPage",
         "targetProp": "_id",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\omnichannel\\securityPrivacy\\SecurityPrivacyPage.tsx:SecurityPrivacyPage",
+    "targetComponent": "views\\admin\\settings\\SettingsSection\\SettingsSection.tsx:SettingsSection",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\securityPrivacy\\SecurityPrivacyPage.tsx:SecurityPrivacyPage",
+        "target": "views\\admin\\settings\\groups\\GenericGroupPage.tsx:GenericGroupPage",
+        "targetAlias": "GenericGroupPage",
+        "targetProp": "_id",
+        "isPure": false
+      },
+      {
+        "source": "views\\admin\\settings\\groups\\GenericGroupPage.tsx:GenericGroupPage",
+        "target": "views\\admin\\settings\\SettingsSection\\SettingsSection.tsx:SettingsSection",
+        "targetAlias": "Section",
+        "targetProp": "groupId",
         "isPure": false
       }
     ],
@@ -6131,6 +6998,54 @@
         "targetAlias": "EditContactInfo",
         "targetProp": "onCancel",
         "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\omnichannel\\directory\\ContactContextualBar.tsx:ContactContextualBar",
+    "targetComponent": "views\\omnichannel\\contactInfo\\ContactInfoError.tsx:ContactInfoError",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\directory\\ContactContextualBar.tsx:ContactContextualBar",
+        "target": "views\\omnichannel\\contactInfo\\ContactInfo\\ContactInfoWithData.tsx:ContactInfoWithData",
+        "targetAlias": "ContactInfo",
+        "targetProp": "onClose",
+        "isPure": false
+      },
+      {
+        "source": "views\\omnichannel\\contactInfo\\ContactInfo\\ContactInfoWithData.tsx:ContactInfoWithData",
+        "target": "views\\omnichannel\\contactInfo\\ContactInfoError.tsx:ContactInfoError",
+        "targetAlias": "ContactInfoError",
+        "targetProp": "onClose",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "views\\omnichannel\\directory\\ContactContextualBar.tsx:ContactContextualBar",
+    "targetComponent": "views\\omnichannel\\contactInfo\\ContactInfo\\ContactInfo.tsx:ContactInfo",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\directory\\ContactContextualBar.tsx:ContactContextualBar",
+        "target": "views\\omnichannel\\contactInfo\\ContactInfo\\ContactInfoWithData.tsx:ContactInfoWithData",
+        "targetAlias": "ContactInfo",
+        "targetProp": "onClose",
+        "isPure": false
+      },
+      {
+        "source": "views\\omnichannel\\contactInfo\\ContactInfo\\ContactInfoWithData.tsx:ContactInfoWithData",
+        "target": "views\\omnichannel\\contactInfo\\ContactInfo\\ContactInfo.tsx:ContactInfo",
+        "targetAlias": "ContactInfo",
+        "targetProp": "onClose",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -6401,6 +7316,30 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "views\\omnichannel\\directory\\chats\\ChatInfo\\ChatsContextualBar.tsx:ChatsContextualBar",
+    "targetComponent": "views\\omnichannel\\directory\\chats\\ChatInfo\\RoomEdit\\RoomEdit.tsx:RoomEdit",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\directory\\chats\\ChatInfo\\ChatsContextualBar.tsx:ChatsContextualBar",
+        "target": "views\\omnichannel\\directory\\chats\\ChatInfo\\RoomEdit\\RoomEditWithData.tsx:RoomEditWithData",
+        "targetAlias": "RoomEdit",
+        "targetProp": "onClose",
+        "isPure": false
+      },
+      {
+        "source": "views\\omnichannel\\directory\\chats\\ChatInfo\\RoomEdit\\RoomEditWithData.tsx:RoomEditWithData",
+        "target": "views\\omnichannel\\directory\\chats\\ChatInfo\\RoomEdit\\RoomEdit.tsx:RoomEdit",
+        "targetAlias": "RoomEdit",
+        "targetProp": "onClose",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "views\\omnichannel\\directory\\components\\SourceField.tsx:SourceField",
     "targetComponent": "components\\RoomIcon\\OmnichannelRoomIcon\\OmnichannelAppSourceRoomIcon.tsx:OmnichannelAppSourceRoomIcon",
     "canRefactorWithContext": true,
@@ -6514,6 +7453,30 @@
         "target": "views\\omnichannel\\departments\\EditDepartment.tsx:EditDepartment",
         "targetAlias": "EditDepartment",
         "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\omnichannel\\departments\\EditDepartment.tsx:EditDepartment",
+    "targetComponent": "views\\omnichannel\\departments\\DepartmentAgentsTable\\AgentRow.tsx:AgentRow",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\departments\\EditDepartment.tsx:EditDepartment",
+        "target": "views\\omnichannel\\departments\\DepartmentAgentsTable\\DepartmentAgentsTable.tsx:DepartmentAgentsTable",
+        "targetAlias": "DepartmentsAgentsTable",
+        "targetProp": "register",
+        "isPure": false
+      },
+      {
+        "source": "views\\omnichannel\\departments\\DepartmentAgentsTable\\DepartmentAgentsTable.tsx:DepartmentAgentsTable",
+        "target": "views\\omnichannel\\departments\\DepartmentAgentsTable\\AgentRow.tsx:AgentRow",
+        "targetAlias": "AgentRow",
+        "targetProp": "register",
         "isPure": true
       }
     ],
@@ -6785,6 +7748,54 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "views\\omnichannel\\contactInfo\\ContactInfoRouter.tsx:ContactInfoRouter",
+    "targetComponent": "views\\omnichannel\\contactInfo\\ContactInfoError.tsx:ContactInfoError",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\contactInfo\\ContactInfoRouter.tsx:ContactInfoRouter",
+        "target": "views\\omnichannel\\contactInfo\\ContactInfo\\ContactInfoWithData.tsx:ContactInfoWithData",
+        "targetAlias": "ContactInfo",
+        "targetProp": "onClose",
+        "isPure": false
+      },
+      {
+        "source": "views\\omnichannel\\contactInfo\\ContactInfo\\ContactInfoWithData.tsx:ContactInfoWithData",
+        "target": "views\\omnichannel\\contactInfo\\ContactInfoError.tsx:ContactInfoError",
+        "targetAlias": "ContactInfoError",
+        "targetProp": "onClose",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "views\\omnichannel\\contactInfo\\ContactInfoRouter.tsx:ContactInfoRouter",
+    "targetComponent": "views\\omnichannel\\contactInfo\\ContactInfo\\ContactInfo.tsx:ContactInfo",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\contactInfo\\ContactInfoRouter.tsx:ContactInfoRouter",
+        "target": "views\\omnichannel\\contactInfo\\ContactInfo\\ContactInfoWithData.tsx:ContactInfoWithData",
+        "targetAlias": "ContactInfo",
+        "targetProp": "onClose",
+        "isPure": false
+      },
+      {
+        "source": "views\\omnichannel\\contactInfo\\ContactInfo\\ContactInfoWithData.tsx:ContactInfoWithData",
+        "target": "views\\omnichannel\\contactInfo\\ContactInfo\\ContactInfo.tsx:ContactInfo",
+        "targetAlias": "ContactInfo",
+        "targetProp": "onClose",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "views\\omnichannel\\contactInfo\\tabs\\ContactInfoHistory\\ContactInfoHistoryItem.tsx:ContactInfoHistoryItem",
     "targetComponent": "components\\RoomIcon\\OmnichannelRoomIcon\\OmnichannelAppSourceRoomIcon.tsx:OmnichannelAppSourceRoomIcon",
     "canRefactorWithContext": true,
@@ -7075,7 +8086,7 @@
   {
     "sourceComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\RecipientForm.tsx:RecipientForm",
     "targetComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\components\\RetryButton.tsx:RetryButton",
-    "canRefactorWithContext": false,
+    "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
@@ -7093,13 +8104,13 @@
         "isPure": true
       }
     ],
-    "destinationWithMultipleParentsPrec": false,
+    "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
     "sourceComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\RecipientForm.tsx:RecipientForm",
     "targetComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\components\\RetryButton.tsx:RetryButton",
-    "canRefactorWithContext": false,
+    "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
@@ -7117,7 +8128,103 @@
         "isPure": true
       }
     ],
-    "destinationWithMultipleParentsPrec": false,
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\RecipientForm.tsx:RecipientForm",
+    "targetComponent": "views\\omnichannel\\components\\outboundMessage\\components\\AutoCompleteOutboundProvider.tsx:AutoCompleteOutboundProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\RecipientForm.tsx:RecipientForm",
+        "target": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\components\\ChannelField.tsx:ProviderField",
+        "targetAlias": "ChannelField",
+        "targetProp": "contact",
+        "isPure": false
+      },
+      {
+        "source": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\components\\ChannelField.tsx:ProviderField",
+        "target": "views\\omnichannel\\components\\outboundMessage\\components\\AutoCompleteOutboundProvider.tsx:AutoCompleteOutboundProvider",
+        "targetAlias": "AutoCompleteOutboundProvider",
+        "targetProp": "contact",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\RecipientForm.tsx:RecipientForm",
+    "targetComponent": "views\\omnichannel\\components\\outboundMessage\\components\\AutoCompleteOutboundProvider.tsx:AutoCompleteOutboundProvider",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\RecipientForm.tsx:RecipientForm",
+        "target": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\components\\ChannelField.tsx:ProviderField",
+        "targetAlias": "ChannelField",
+        "targetProp": "disabled",
+        "isPure": true
+      },
+      {
+        "source": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\components\\ChannelField.tsx:ProviderField",
+        "target": "views\\omnichannel\\components\\outboundMessage\\components\\AutoCompleteOutboundProvider.tsx:AutoCompleteOutboundProvider",
+        "targetAlias": "AutoCompleteOutboundProvider",
+        "targetProp": "disabled",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\RecipientForm.tsx:RecipientForm",
+    "targetComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\components\\RetryButton.tsx:RetryButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\RecipientForm.tsx:RecipientForm",
+        "target": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\components\\ChannelField.tsx:ProviderField",
+        "targetAlias": "ChannelField",
+        "targetProp": "isFetching",
+        "isPure": false
+      },
+      {
+        "source": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\components\\ChannelField.tsx:ProviderField",
+        "target": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\components\\RetryButton.tsx:RetryButton",
+        "targetAlias": "RetryButton",
+        "targetProp": "loading",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\RecipientForm.tsx:RecipientForm",
+    "targetComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\components\\RetryButton.tsx:RetryButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\RecipientForm.tsx:RecipientForm",
+        "target": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\components\\ChannelField.tsx:ProviderField",
+        "targetAlias": "ChannelField",
+        "targetProp": "onRetry",
+        "isPure": false
+      },
+      {
+        "source": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RecipientForm\\components\\ChannelField.tsx:ProviderField",
+        "target": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\components\\RetryButton.tsx:RetryButton",
+        "targetAlias": "RetryButton",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
@@ -7242,22 +8349,22 @@
   },
   {
     "sourceComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\MessageForm\\MessageForm.tsx:MessageForm",
-    "targetComponent": "views\\omnichannel\\components\\outboundMessage\\components\\TemplatePlaceholderSelector\\TemplatePlaceholderInput.tsx:TemplatePlaceholderInput",
+    "targetComponent": "views\\omnichannel\\components\\outboundMessage\\components\\TemplatePreview.tsx:TemplatePreview",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
         "source": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\MessageForm\\MessageForm.tsx:MessageForm",
-        "target": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\MessageForm\\components\\TemplatePlaceholderField.tsx:TemplatePlaceholderField",
-        "targetAlias": "TemplatePlaceholderField",
-        "targetProp": "contact",
+        "target": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\MessageForm\\components\\TemplatePreviewField.tsx:TemplatePreviewField",
+        "targetAlias": "TemplatePreviewForm",
+        "targetProp": "template",
         "isPure": false
       },
       {
-        "source": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\MessageForm\\components\\TemplatePlaceholderField.tsx:TemplatePlaceholderField",
-        "target": "views\\omnichannel\\components\\outboundMessage\\components\\TemplatePlaceholderSelector\\TemplatePlaceholderInput.tsx:TemplatePlaceholderInput",
-        "targetAlias": "TemplatePlaceholderInput",
-        "targetProp": "contact",
+        "source": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\MessageForm\\components\\TemplatePreviewField.tsx:TemplatePreviewField",
+        "target": "views\\omnichannel\\components\\outboundMessage\\components\\TemplatePreview.tsx:TemplatePreview",
+        "targetAlias": "TemplatePreview",
+        "targetProp": "template",
         "isPure": true
       }
     ],
@@ -7291,7 +8398,7 @@
   {
     "sourceComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RepliesForm\\RepliesForm.tsx:RepliesForm",
     "targetComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\components\\RetryButton.tsx:RetryButton",
-    "canRefactorWithContext": false,
+    "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
@@ -7309,13 +8416,13 @@
         "isPure": true
       }
     ],
-    "destinationWithMultipleParentsPrec": false,
+    "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
     "sourceComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RepliesForm\\RepliesForm.tsx:RepliesForm",
     "targetComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\components\\RetryButton.tsx:RetryButton",
-    "canRefactorWithContext": false,
+    "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
@@ -7333,13 +8440,61 @@
         "isPure": true
       }
     ],
-    "destinationWithMultipleParentsPrec": false,
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RepliesForm\\RepliesForm.tsx:RepliesForm",
+    "targetComponent": "views\\omnichannel\\components\\outboundMessage\\components\\AutoCompleteDepartmentAgent.tsx:AutoCompleteDepartmentAgent",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RepliesForm\\RepliesForm.tsx:RepliesForm",
+        "target": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RepliesForm\\components\\AgentField.tsx:AgentField",
+        "targetAlias": "AgentField",
+        "targetProp": "agents",
+        "isPure": false
+      },
+      {
+        "source": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RepliesForm\\components\\AgentField.tsx:AgentField",
+        "target": "views\\omnichannel\\components\\outboundMessage\\components\\AutoCompleteDepartmentAgent.tsx:AutoCompleteDepartmentAgent",
+        "targetAlias": "AutoCompleteAgent",
+        "targetProp": "agents",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RepliesForm\\RepliesForm.tsx:RepliesForm",
+    "targetComponent": "views\\omnichannel\\components\\outboundMessage\\components\\AutoCompleteDepartmentAgent.tsx:AutoCompleteDepartmentAgent",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RepliesForm\\RepliesForm.tsx:RepliesForm",
+        "target": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RepliesForm\\components\\AgentField.tsx:AgentField",
+        "targetAlias": "AgentField",
+        "targetProp": "isLoading",
+        "isPure": false
+      },
+      {
+        "source": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\forms\\RepliesForm\\components\\AgentField.tsx:AgentField",
+        "target": "views\\omnichannel\\components\\outboundMessage\\components\\AutoCompleteDepartmentAgent.tsx:AutoCompleteDepartmentAgent",
+        "targetAlias": "AutoCompleteAgent",
+        "targetProp": "aria-busy",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
     "sourceComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\steps\\ReviewStep.tsx:ReviewStep",
     "targetComponent": "views\\omnichannel\\components\\outboundMessage\\components\\TemplatePreview.tsx:TemplatePreview",
-    "canRefactorWithContext": false,
+    "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
@@ -7357,13 +8512,13 @@
         "isPure": false
       }
     ],
-    "destinationWithMultipleParentsPrec": false,
+    "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
     "sourceComponent": "views\\omnichannel\\components\\outboundMessage\\components\\OutboundMessageWizard\\steps\\ReviewStep.tsx:ReviewStep",
     "targetComponent": "views\\omnichannel\\components\\outboundMessage\\components\\TemplatePreview.tsx:TemplatePreview",
-    "canRefactorWithContext": false,
+    "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
@@ -7381,7 +8536,7 @@
         "isPure": true
       }
     ],
-    "destinationWithMultipleParentsPrec": false,
+    "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
@@ -7426,6 +8581,54 @@
         "target": "views\\omnichannel\\cannedResponses\\modals\\CannedResponseEdit.tsx:CannedResponseEdit",
         "targetAlias": "CannedResponseEdit",
         "targetProp": "onDelete",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\omnichannel\\cannedResponses\\modals\\CannedResponsesTable.tsx:CannedResponsesTable",
+    "targetComponent": "views\\omnichannel\\components\\AutoCompleteAgent.tsx:AutoCompleteAgent",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\cannedResponses\\modals\\CannedResponsesTable.tsx:CannedResponsesTable",
+        "target": "views\\omnichannel\\cannedResponses\\modals\\CannedResponseFilter.tsx:CannedResponsesFilter",
+        "targetAlias": "CannedResponseFilter",
+        "targetProp": "createdBy",
+        "isPure": false
+      },
+      {
+        "source": "views\\omnichannel\\cannedResponses\\modals\\CannedResponseFilter.tsx:CannedResponsesFilter",
+        "target": "views\\omnichannel\\components\\AutoCompleteAgent.tsx:AutoCompleteAgent",
+        "targetAlias": "AutoCompleteAgent",
+        "targetProp": "value",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\omnichannel\\cannedResponses\\modals\\CannedResponsesTable.tsx:CannedResponsesTable",
+    "targetComponent": "views\\omnichannel\\components\\AutoCompleteAgent.tsx:AutoCompleteAgent",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\omnichannel\\cannedResponses\\modals\\CannedResponsesTable.tsx:CannedResponsesTable",
+        "target": "views\\omnichannel\\cannedResponses\\modals\\CannedResponseFilter.tsx:CannedResponsesFilter",
+        "targetAlias": "CannedResponseFilter",
+        "targetProp": "setCreatedBy",
+        "isPure": false
+      },
+      {
+        "source": "views\\omnichannel\\cannedResponses\\modals\\CannedResponseFilter.tsx:CannedResponsesFilter",
+        "target": "views\\omnichannel\\components\\AutoCompleteAgent.tsx:AutoCompleteAgent",
+        "targetAlias": "AutoCompleteAgent",
+        "targetProp": "onChange",
         "isPure": true
       }
     ],
@@ -7527,54 +8730,6 @@
     ],
     "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "views\\omnichannel\\businessHours\\EditBusinessHoursWithData.tsx:EditBusinessHoursWidthData",
-    "targetComponent": "views\\omnichannel\\businessHours\\BusinessHoursForm.tsx:BusinessHoursForm",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": true,
-    "propPassings": [
-      {
-        "source": "views\\omnichannel\\businessHours\\EditBusinessHoursWithData.tsx:EditBusinessHoursWidthData",
-        "target": "views\\omnichannel\\businessHours\\EditBusinessHours.tsx:EditBusinessHours",
-        "targetAlias": "EditBusinessHours",
-        "targetProp": "type",
-        "isPure": false
-      },
-      {
-        "source": "views\\omnichannel\\businessHours\\EditBusinessHours.tsx:EditBusinessHours",
-        "target": "views\\omnichannel\\businessHours\\BusinessHoursForm.tsx:BusinessHoursForm",
-        "targetAlias": "BusinessHoursForm",
-        "targetProp": "type",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": true
-  },
-  {
-    "sourceComponent": "views\\omnichannel\\businessHours\\BusinessHoursRouter.tsx:BusinessHoursRouter",
-    "targetComponent": "views\\omnichannel\\businessHours\\BusinessHoursForm.tsx:BusinessHoursForm",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": true,
-    "propPassings": [
-      {
-        "source": "views\\omnichannel\\businessHours\\BusinessHoursRouter.tsx:BusinessHoursRouter",
-        "target": "views\\omnichannel\\businessHours\\EditBusinessHours.tsx:EditBusinessHours",
-        "targetAlias": "EditBusinessHours",
-        "targetProp": "type",
-        "isPure": false
-      },
-      {
-        "source": "views\\omnichannel\\businessHours\\EditBusinessHours.tsx:EditBusinessHours",
-        "target": "views\\omnichannel\\businessHours\\BusinessHoursForm.tsx:BusinessHoursForm",
-        "targetAlias": "BusinessHoursForm",
-        "targetProp": "type",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
     "sourceComponent": "views\\omnichannel\\agents\\AgentInfo.tsx:AgentInfo",
@@ -9089,23 +10244,71 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "views\\admin\\settings\\SettingsGroupSelector\\SettingsGroupSelector.tsx:SettingsGroupSelector",
-    "targetComponent": "views\\admin\\settings\\groups\\GenericGroupPage.tsx:GenericGroupPage",
+    "sourceComponent": "views\\admin\\settings\\groups\\TabbedGroupPage.tsx:TabbedGroupPage",
+    "targetComponent": "views\\admin\\settings\\SettingsSection\\SettingsSection.tsx:SettingsSection",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "views\\admin\\settings\\SettingsGroupSelector\\SettingsGroupSelector.tsx:SettingsGroupSelector",
-        "target": "views\\admin\\settings\\groups\\BaseGroupPage.tsx:BaseGroupPage",
-        "targetAlias": "BaseGroupPage",
+        "source": "views\\admin\\settings\\groups\\TabbedGroupPage.tsx:TabbedGroupPage",
+        "target": "views\\admin\\settings\\groups\\GenericGroupPage.tsx:GenericGroupPage",
+        "targetAlias": "GenericGroupPage",
+        "targetProp": "currentTab",
+        "isPure": false
+      },
+      {
+        "source": "views\\admin\\settings\\groups\\GenericGroupPage.tsx:GenericGroupPage",
+        "target": "views\\admin\\settings\\SettingsSection\\SettingsSection.tsx:SettingsSection",
+        "targetAlias": "Section",
+        "targetProp": "currentTab",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\admin\\settings\\groups\\TabbedGroupPage.tsx:TabbedGroupPage",
+    "targetComponent": "views\\admin\\settings\\SettingsSection\\SettingsSection.tsx:SettingsSection",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\admin\\settings\\groups\\TabbedGroupPage.tsx:TabbedGroupPage",
+        "target": "views\\admin\\settings\\groups\\GenericGroupPage.tsx:GenericGroupPage",
+        "targetAlias": "GenericGroupPage",
         "targetProp": "hasReset",
         "isPure": true
       },
       {
+        "source": "views\\admin\\settings\\groups\\GenericGroupPage.tsx:GenericGroupPage",
+        "target": "views\\admin\\settings\\SettingsSection\\SettingsSection.tsx:SettingsSection",
+        "targetAlias": "Section",
+        "targetProp": "hasReset",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\admin\\settings\\groups\\BaseGroupPage.tsx:BaseGroupPage",
+    "targetComponent": "views\\admin\\settings\\SettingsSection\\SettingsSection.tsx:SettingsSection",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
         "source": "views\\admin\\settings\\groups\\BaseGroupPage.tsx:BaseGroupPage",
         "target": "views\\admin\\settings\\groups\\GenericGroupPage.tsx:GenericGroupPage",
         "targetAlias": "GenericGroupPage",
-        "targetProp": "hasReset",
+        "targetProp": "currentTab",
+        "isPure": true
+      },
+      {
+        "source": "views\\admin\\settings\\groups\\GenericGroupPage.tsx:GenericGroupPage",
+        "target": "views\\admin\\settings\\SettingsSection\\SettingsSection.tsx:SettingsSection",
+        "targetAlias": "Section",
+        "targetProp": "currentTab",
         "isPure": true
       }
     ],

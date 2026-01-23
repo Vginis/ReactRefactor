@@ -4016,6 +4016,30 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "features\\compose\\components\\emoji_picker_dropdown.jsx:EmojiPickerDropdown",
+    "targetComponent": "features\\compose\\components\\emoji_picker_dropdown.jsx:ModifierPicker",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\compose\\components\\emoji_picker_dropdown.jsx:EmojiPickerDropdown",
+        "target": "features\\compose\\components\\emoji_picker_dropdown.jsx:EmojiPickerMenuImpl",
+        "targetAlias": "EmojiPickerMenu",
+        "targetProp": "skinTone",
+        "isPure": true
+      },
+      {
+        "source": "features\\compose\\components\\emoji_picker_dropdown.jsx:EmojiPickerMenuImpl",
+        "target": "features\\compose\\components\\emoji_picker_dropdown.jsx:ModifierPicker",
+        "targetAlias": "ModifierPicker",
+        "targetProp": "modifier",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "features\\compose\\components\\emoji_picker_dropdown.jsx:EmojiPickerMenuImpl",
     "targetComponent": "features\\compose\\components\\emoji_picker_dropdown.jsx:ModifierPickerMenu",
     "canRefactorWithContext": true,

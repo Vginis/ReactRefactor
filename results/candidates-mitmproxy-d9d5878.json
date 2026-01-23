@@ -1,34 +1,34 @@
 [
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-    "targetComponent": "js\\components\\contentviews\\HttpMessage.tsx:CopyButton",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Request",
+    "targetComponent": "components\\contentviews\\HttpMessage.tsx:CopyButton",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Request",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "flow",
         "isPure": false
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
         "targetAlias": "HttpMessage",
         "targetProp": "flow",
         "isPure": true
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
         "targetAlias": "HttpMessageView",
         "targetProp": "flow",
         "isPure": false
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:CopyButton",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "target": "components\\contentviews\\HttpMessage.tsx:CopyButton",
         "targetAlias": "CopyButton",
         "targetProp": "flow",
         "isPure": false
@@ -38,35 +38,35 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-    "targetComponent": "js\\components\\contentviews\\HttpMessage.tsx:CopyButton",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Request",
+    "targetComponent": "components\\contentviews\\HttpMessage.tsx:CopyButton",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Request",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
         "isPure": false
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
         "targetAlias": "HttpMessage",
         "targetProp": "message",
         "isPure": true
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
         "targetAlias": "HttpMessageView",
         "targetProp": "message",
         "isPure": false
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:CopyButton",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "target": "components\\contentviews\\HttpMessage.tsx:CopyButton",
         "targetAlias": "CopyButton",
         "targetProp": "message",
         "isPure": false
@@ -76,35 +76,35 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-    "targetComponent": "js\\components\\contentviews\\HttpMessage.tsx:ViewImage",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Request",
+    "targetComponent": "components\\contentviews\\HttpMessage.tsx:ViewImage",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Request",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "flow",
         "isPure": false
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
         "targetAlias": "HttpMessage",
         "targetProp": "flow",
         "isPure": true
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
         "targetAlias": "HttpMessageView",
         "targetProp": "flow",
         "isPure": false
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:ViewImage",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "target": "components\\contentviews\\HttpMessage.tsx:ViewImage",
         "targetAlias": "ViewImage",
         "targetProp": "flow",
         "isPure": false
@@ -114,35 +114,35 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-    "targetComponent": "js\\components\\contentviews\\HttpMessage.tsx:ViewImage",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Request",
+    "targetComponent": "components\\contentviews\\HttpMessage.tsx:ViewImage",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Request",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
         "isPure": false
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
         "targetAlias": "HttpMessage",
         "targetProp": "message",
         "isPure": true
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
         "targetAlias": "HttpMessageView",
         "targetProp": "message",
         "isPure": false
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:ViewImage",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "target": "components\\contentviews\\HttpMessage.tsx:ViewImage",
         "targetAlias": "ViewImage",
         "targetProp": "message",
         "isPure": false
@@ -152,35 +152,35 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-    "targetComponent": "js\\components\\contentviews\\HttpMessage.tsx:CopyButton",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Response",
+    "targetComponent": "components\\contentviews\\HttpMessage.tsx:CopyButton",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Response",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "flow",
         "isPure": false
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
         "targetAlias": "HttpMessage",
         "targetProp": "flow",
         "isPure": true
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
         "targetAlias": "HttpMessageView",
         "targetProp": "flow",
         "isPure": false
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:CopyButton",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "target": "components\\contentviews\\HttpMessage.tsx:CopyButton",
         "targetAlias": "CopyButton",
         "targetProp": "flow",
         "isPure": false
@@ -190,35 +190,35 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-    "targetComponent": "js\\components\\contentviews\\HttpMessage.tsx:CopyButton",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Response",
+    "targetComponent": "components\\contentviews\\HttpMessage.tsx:CopyButton",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Response",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
         "isPure": true
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
         "targetAlias": "HttpMessage",
         "targetProp": "message",
         "isPure": true
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
         "targetAlias": "HttpMessageView",
         "targetProp": "message",
         "isPure": false
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:CopyButton",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "target": "components\\contentviews\\HttpMessage.tsx:CopyButton",
         "targetAlias": "CopyButton",
         "targetProp": "message",
         "isPure": false
@@ -228,35 +228,35 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-    "targetComponent": "js\\components\\contentviews\\HttpMessage.tsx:ViewImage",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Response",
+    "targetComponent": "components\\contentviews\\HttpMessage.tsx:ViewImage",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Response",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "flow",
         "isPure": false
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
         "targetAlias": "HttpMessage",
         "targetProp": "flow",
         "isPure": true
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
         "targetAlias": "HttpMessageView",
         "targetProp": "flow",
         "isPure": false
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:ViewImage",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "target": "components\\contentviews\\HttpMessage.tsx:ViewImage",
         "targetAlias": "ViewImage",
         "targetProp": "flow",
         "isPure": false
@@ -266,35 +266,35 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-    "targetComponent": "js\\components\\contentviews\\HttpMessage.tsx:ViewImage",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Response",
+    "targetComponent": "components\\contentviews\\HttpMessage.tsx:ViewImage",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Response",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
         "isPure": true
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
         "targetAlias": "HttpMessage",
         "targetProp": "message",
         "isPure": true
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
         "targetAlias": "HttpMessageView",
         "targetProp": "message",
         "isPure": false
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:ViewImage",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "target": "components\\contentviews\\HttpMessage.tsx:ViewImage",
         "targetAlias": "ViewImage",
         "targetProp": "message",
         "isPure": false
@@ -304,28 +304,28 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-    "targetComponent": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageEdit",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Request",
+    "targetComponent": "components\\contentviews\\HttpMessage.tsx:HttpMessageEdit",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Request",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "flow",
         "isPure": false
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
         "targetAlias": "HttpMessage",
         "targetProp": "flow",
         "isPure": true
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageEdit",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessageEdit",
         "targetAlias": "HttpMessageEdit",
         "targetProp": "flow",
         "isPure": false
@@ -335,28 +335,28 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-    "targetComponent": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageEdit",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Request",
+    "targetComponent": "components\\contentviews\\HttpMessage.tsx:HttpMessageEdit",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Request",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
         "isPure": false
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
         "targetAlias": "HttpMessage",
         "targetProp": "message",
         "isPure": true
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageEdit",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessageEdit",
         "targetAlias": "HttpMessageEdit",
         "targetProp": "message",
         "isPure": false
@@ -366,28 +366,28 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-    "targetComponent": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageEdit",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Response",
+    "targetComponent": "components\\contentviews\\HttpMessage.tsx:HttpMessageEdit",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Response",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "flow",
         "isPure": false
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
         "targetAlias": "HttpMessage",
         "targetProp": "flow",
         "isPure": true
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageEdit",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessageEdit",
         "targetAlias": "HttpMessageEdit",
         "targetProp": "flow",
         "isPure": false
@@ -397,28 +397,28 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-    "targetComponent": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageEdit",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Response",
+    "targetComponent": "components\\contentviews\\HttpMessage.tsx:HttpMessageEdit",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Response",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
         "isPure": true
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
         "targetAlias": "HttpMessage",
         "targetProp": "message",
         "isPure": true
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageEdit",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessageEdit",
         "targetAlias": "HttpMessageEdit",
         "targetProp": "message",
         "isPure": false
@@ -428,21 +428,21 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\Modal\\OptionModal.tsx:OptionModal",
-    "targetComponent": "js\\components\\Modal\\OptionInput.tsx:PureOption",
+    "sourceComponent": "components\\Modal\\OptionModal.tsx:OptionModal",
+    "targetComponent": "components\\Modal\\OptionInput.tsx:PureOption",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\Modal\\OptionModal.tsx:OptionModal",
-        "target": "js\\components\\Modal\\OptionInput.tsx:OptionInput",
+        "source": "components\\Modal\\OptionModal.tsx:OptionModal",
+        "target": "components\\Modal\\OptionInput.tsx:OptionInput",
         "targetAlias": "OptionInput",
         "targetProp": "name",
         "isPure": false
       },
       {
-        "source": "js\\components\\Modal\\OptionInput.tsx:OptionInput",
-        "target": "js\\components\\Modal\\OptionInput.tsx:PureOption",
+        "source": "components\\Modal\\OptionInput.tsx:OptionInput",
+        "target": "components\\Modal\\OptionInput.tsx:PureOption",
         "targetAlias": "PureOption",
         "targetProp": "name",
         "isPure": false
@@ -452,21 +452,21 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\DnsMessages.tsx:Request",
-    "targetComponent": "js\\components\\FlowView\\DnsMessages.tsx:Summary",
+    "sourceComponent": "components\\FlowView\\DnsMessages.tsx:Request",
+    "targetComponent": "components\\FlowView\\DnsMessages.tsx:Summary",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": true,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\DnsMessages.tsx:Request",
-        "target": "js\\components\\FlowView\\DnsMessages.tsx:Message",
+        "source": "components\\FlowView\\DnsMessages.tsx:Request",
+        "target": "components\\FlowView\\DnsMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
         "isPure": false
       },
       {
-        "source": "js\\components\\FlowView\\DnsMessages.tsx:Message",
-        "target": "js\\components\\FlowView\\DnsMessages.tsx:Summary",
+        "source": "components\\FlowView\\DnsMessages.tsx:Message",
+        "target": "components\\FlowView\\DnsMessages.tsx:Summary",
         "targetAlias": "Summary",
         "targetProp": "message",
         "isPure": false
@@ -476,21 +476,21 @@
     "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\DnsMessages.tsx:Request",
-    "targetComponent": "js\\components\\FlowView\\DnsMessages.tsx:Questions",
+    "sourceComponent": "components\\FlowView\\DnsMessages.tsx:Request",
+    "targetComponent": "components\\FlowView\\DnsMessages.tsx:Questions",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": true,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\DnsMessages.tsx:Request",
-        "target": "js\\components\\FlowView\\DnsMessages.tsx:Message",
+        "source": "components\\FlowView\\DnsMessages.tsx:Request",
+        "target": "components\\FlowView\\DnsMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
         "isPure": false
       },
       {
-        "source": "js\\components\\FlowView\\DnsMessages.tsx:Message",
-        "target": "js\\components\\FlowView\\DnsMessages.tsx:Questions",
+        "source": "components\\FlowView\\DnsMessages.tsx:Message",
+        "target": "components\\FlowView\\DnsMessages.tsx:Questions",
         "targetAlias": "Questions",
         "targetProp": "message",
         "isPure": false
@@ -500,21 +500,21 @@
     "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\DnsMessages.tsx:Response",
-    "targetComponent": "js\\components\\FlowView\\DnsMessages.tsx:Summary",
+    "sourceComponent": "components\\FlowView\\DnsMessages.tsx:Response",
+    "targetComponent": "components\\FlowView\\DnsMessages.tsx:Summary",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": true,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\DnsMessages.tsx:Response",
-        "target": "js\\components\\FlowView\\DnsMessages.tsx:Message",
+        "source": "components\\FlowView\\DnsMessages.tsx:Response",
+        "target": "components\\FlowView\\DnsMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
         "isPure": true
       },
       {
-        "source": "js\\components\\FlowView\\DnsMessages.tsx:Message",
-        "target": "js\\components\\FlowView\\DnsMessages.tsx:Summary",
+        "source": "components\\FlowView\\DnsMessages.tsx:Message",
+        "target": "components\\FlowView\\DnsMessages.tsx:Summary",
         "targetAlias": "Summary",
         "targetProp": "message",
         "isPure": false
@@ -524,21 +524,21 @@
     "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\DnsMessages.tsx:Response",
-    "targetComponent": "js\\components\\FlowView\\DnsMessages.tsx:Questions",
+    "sourceComponent": "components\\FlowView\\DnsMessages.tsx:Response",
+    "targetComponent": "components\\FlowView\\DnsMessages.tsx:Questions",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": true,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\DnsMessages.tsx:Response",
-        "target": "js\\components\\FlowView\\DnsMessages.tsx:Message",
+        "source": "components\\FlowView\\DnsMessages.tsx:Response",
+        "target": "components\\FlowView\\DnsMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
         "isPure": true
       },
       {
-        "source": "js\\components\\FlowView\\DnsMessages.tsx:Message",
-        "target": "js\\components\\FlowView\\DnsMessages.tsx:Questions",
+        "source": "components\\FlowView\\DnsMessages.tsx:Message",
+        "target": "components\\FlowView\\DnsMessages.tsx:Questions",
         "targetAlias": "Questions",
         "targetProp": "message",
         "isPure": false
@@ -548,21 +548,21 @@
     "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:RequestLine",
-    "targetComponent": "js\\components\\editors\\ValueEditor.tsx:ValueEditor",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:RequestLine",
+    "targetComponent": "components\\editors\\ValueEditor.tsx:ValueEditor",
     "canRefactorWithContext": false,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:RequestLine",
-        "target": "js\\components\\editors\\ValidateEditor.tsx:ValidateEditor",
+        "source": "components\\FlowView\\HttpMessages.tsx:RequestLine",
+        "target": "components\\editors\\ValidateEditor.tsx:ValidateEditor",
         "targetAlias": "ValidateEditor",
         "targetProp": "content",
         "isPure": false
       },
       {
-        "source": "js\\components\\editors\\ValidateEditor.tsx:ValidateEditor",
-        "target": "js\\components\\editors\\ValueEditor.tsx:ValueEditor",
+        "source": "components\\editors\\ValidateEditor.tsx:ValidateEditor",
+        "target": "components\\editors\\ValueEditor.tsx:ValueEditor",
         "targetAlias": "ValueEditor",
         "targetProp": "content",
         "isPure": false
@@ -572,69 +572,21 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:RequestLine",
-    "targetComponent": "js\\components\\editors\\ValueEditor.tsx:ValueEditor",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:RequestLine",
+    "targetComponent": "components\\editors\\ValueEditor.tsx:ValueEditor",
     "canRefactorWithContext": false,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:RequestLine",
-        "target": "js\\components\\editors\\ValidateEditor.tsx:ValidateEditor",
-        "targetAlias": "ValidateEditor",
-        "targetProp": "onEditDone",
-        "isPure": true
-      },
-      {
-        "source": "js\\components\\editors\\ValidateEditor.tsx:ValidateEditor",
-        "target": "js\\components\\editors\\ValueEditor.tsx:ValueEditor",
-        "targetAlias": "ValueEditor",
-        "targetProp": "onEditDone",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": false,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:ResponseLine",
-    "targetComponent": "js\\components\\editors\\ValueEditor.tsx:ValueEditor",
-    "canRefactorWithContext": false,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:ResponseLine",
-        "target": "js\\components\\editors\\ValidateEditor.tsx:ValidateEditor",
-        "targetAlias": "ValidateEditor",
-        "targetProp": "content",
-        "isPure": true
-      },
-      {
-        "source": "js\\components\\editors\\ValidateEditor.tsx:ValidateEditor",
-        "target": "js\\components\\editors\\ValueEditor.tsx:ValueEditor",
-        "targetAlias": "ValueEditor",
-        "targetProp": "content",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": false,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:ResponseLine",
-    "targetComponent": "js\\components\\editors\\ValueEditor.tsx:ValueEditor",
-    "canRefactorWithContext": false,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:ResponseLine",
-        "target": "js\\components\\editors\\ValidateEditor.tsx:ValidateEditor",
+        "source": "components\\FlowView\\HttpMessages.tsx:RequestLine",
+        "target": "components\\editors\\ValidateEditor.tsx:ValidateEditor",
         "targetAlias": "ValidateEditor",
         "targetProp": "onEditDone",
         "isPure": true
       },
       {
-        "source": "js\\components\\editors\\ValidateEditor.tsx:ValidateEditor",
-        "target": "js\\components\\editors\\ValueEditor.tsx:ValueEditor",
+        "source": "components\\editors\\ValidateEditor.tsx:ValidateEditor",
+        "target": "components\\editors\\ValueEditor.tsx:ValueEditor",
         "targetAlias": "ValueEditor",
         "targetProp": "onEditDone",
         "isPure": false
@@ -644,21 +596,69 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-    "targetComponent": "js\\components\\FlowView\\HttpMessages.tsx:Headers",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:ResponseLine",
+    "targetComponent": "components\\editors\\ValueEditor.tsx:ValueEditor",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\FlowView\\HttpMessages.tsx:ResponseLine",
+        "target": "components\\editors\\ValidateEditor.tsx:ValidateEditor",
+        "targetAlias": "ValidateEditor",
+        "targetProp": "content",
+        "isPure": true
+      },
+      {
+        "source": "components\\editors\\ValidateEditor.tsx:ValidateEditor",
+        "target": "components\\editors\\ValueEditor.tsx:ValueEditor",
+        "targetAlias": "ValueEditor",
+        "targetProp": "content",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:ResponseLine",
+    "targetComponent": "components\\editors\\ValueEditor.tsx:ValueEditor",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\FlowView\\HttpMessages.tsx:ResponseLine",
+        "target": "components\\editors\\ValidateEditor.tsx:ValidateEditor",
+        "targetAlias": "ValidateEditor",
+        "targetProp": "onEditDone",
+        "isPure": true
+      },
+      {
+        "source": "components\\editors\\ValidateEditor.tsx:ValidateEditor",
+        "target": "components\\editors\\ValueEditor.tsx:ValueEditor",
+        "targetAlias": "ValueEditor",
+        "targetProp": "onEditDone",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Request",
+    "targetComponent": "components\\FlowView\\HttpMessages.tsx:Headers",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Request",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "flow",
         "isPure": false
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Headers",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\FlowView\\HttpMessages.tsx:Headers",
         "targetAlias": "Headers",
         "targetProp": "flow",
         "isPure": true
@@ -668,21 +668,21 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-    "targetComponent": "js\\components\\FlowView\\HttpMessages.tsx:Headers",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Request",
+    "targetComponent": "components\\FlowView\\HttpMessages.tsx:Headers",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Request",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
         "isPure": false
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Headers",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\FlowView\\HttpMessages.tsx:Headers",
         "targetAlias": "Headers",
         "targetProp": "message",
         "isPure": true
@@ -692,21 +692,21 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
-    "targetComponent": "js\\components\\common\\Button.tsx:Button",
+    "sourceComponent": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
+    "targetComponent": "components\\common\\Button.tsx:Button",
     "canRefactorWithContext": false,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessage",
-        "target": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessage",
+        "target": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
         "targetAlias": "HttpMessageView",
         "targetProp": "startEdit",
         "isPure": true
       },
       {
-        "source": "js\\components\\contentviews\\HttpMessage.tsx:HttpMessageView",
-        "target": "js\\components\\common\\Button.tsx:Button",
+        "source": "components\\contentviews\\HttpMessage.tsx:HttpMessageView",
+        "target": "components\\common\\Button.tsx:Button",
         "targetAlias": "Button",
         "targetProp": "onClick",
         "isPure": true
@@ -716,21 +716,21 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-    "targetComponent": "js\\components\\FlowView\\HttpMessages.tsx:Trailers",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Request",
+    "targetComponent": "components\\FlowView\\HttpMessages.tsx:Trailers",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Request",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "flow",
         "isPure": false
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Trailers",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\FlowView\\HttpMessages.tsx:Trailers",
         "targetAlias": "Trailers",
         "targetProp": "flow",
         "isPure": true
@@ -740,21 +740,21 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-    "targetComponent": "js\\components\\FlowView\\HttpMessages.tsx:Trailers",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Request",
+    "targetComponent": "components\\FlowView\\HttpMessages.tsx:Trailers",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Request",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Request",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
         "isPure": false
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Trailers",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\FlowView\\HttpMessages.tsx:Trailers",
         "targetAlias": "Trailers",
         "targetProp": "message",
         "isPure": true
@@ -764,21 +764,21 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-    "targetComponent": "js\\components\\FlowView\\HttpMessages.tsx:Headers",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Response",
+    "targetComponent": "components\\FlowView\\HttpMessages.tsx:Headers",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Response",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "flow",
         "isPure": false
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Headers",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\FlowView\\HttpMessages.tsx:Headers",
         "targetAlias": "Headers",
         "targetProp": "flow",
         "isPure": true
@@ -788,21 +788,21 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-    "targetComponent": "js\\components\\FlowView\\HttpMessages.tsx:Headers",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Response",
+    "targetComponent": "components\\FlowView\\HttpMessages.tsx:Headers",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Response",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
         "isPure": true
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Headers",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\FlowView\\HttpMessages.tsx:Headers",
         "targetAlias": "Headers",
         "targetProp": "message",
         "isPure": true
@@ -812,21 +812,21 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-    "targetComponent": "js\\components\\FlowView\\HttpMessages.tsx:Trailers",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Response",
+    "targetComponent": "components\\FlowView\\HttpMessages.tsx:Trailers",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Response",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "flow",
         "isPure": false
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Trailers",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\FlowView\\HttpMessages.tsx:Trailers",
         "targetAlias": "Trailers",
         "targetProp": "flow",
         "isPure": true
@@ -836,21 +836,21 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-    "targetComponent": "js\\components\\FlowView\\HttpMessages.tsx:Trailers",
+    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:Response",
+    "targetComponent": "components\\FlowView\\HttpMessages.tsx:Trailers",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Response",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Message",
+        "source": "components\\FlowView\\HttpMessages.tsx:Response",
+        "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
         "isPure": true
       },
       {
-        "source": "js\\components\\FlowView\\HttpMessages.tsx:Message",
-        "target": "js\\components\\FlowView\\HttpMessages.tsx:Trailers",
+        "source": "components\\FlowView\\HttpMessages.tsx:Message",
+        "target": "components\\FlowView\\HttpMessages.tsx:Trailers",
         "targetAlias": "Trailers",
         "targetProp": "message",
         "isPure": true
