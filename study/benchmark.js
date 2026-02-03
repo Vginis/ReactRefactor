@@ -7,7 +7,8 @@ export const projects = [
         stars: "53K",
         repo: "laurent22/joplin",
         version: "v3.5.11",
-        commitId: "e75875c"
+        commitId: "e75875c",
+        lang: "JS/TS"
     },
     {
         projectName: 'Carbon',
@@ -17,7 +18,8 @@ export const projects = [
         stars: "35.9K",
         repo: "carbon-app/carbon",
         version: "v4.9.10",
-        commitId: "0a07790"
+        commitId: "0a07790",
+        lang: "JS"
     },
     {
         projectName: 'Grafana',
@@ -27,7 +29,8 @@ export const projects = [
         stars: "71.7K",
         repo: "grafana/grafana",
         version: "v12.3.1",
-        commitId: "0d1a5b4"
+        commitId: "0d1a5b4",
+        lang: "TS"
     },
     {
         projectName: 'Apache-Superset',
@@ -37,7 +40,8 @@ export const projects = [
         stars: "70.1K",
         repo: "apache/superset",
         version: "v6.0.0",
-        commitId: "6a1c30e"
+        commitId: "6a1c30e",
+        lang: "JS/TS"
     },
     {
         projectName: 'Mastodon',
@@ -47,7 +51,8 @@ export const projects = [
         stars: "49.5K",
         repo: "mastodon/mastodon",
         version: "v4.5.4",
-        commitId: "55a7b1e"
+        commitId: "55a7b1e",
+        lang: "JS/TS"
     },
     {
         projectName: 'Redash',
@@ -57,7 +62,8 @@ export const projects = [
         stars: "28.2K",
         repo: "getredash/redash",
         version: "v25.8.0",
-        commitId: "67a95e9"
+        commitId: "67a95e9",
+        lang: "JS/TS"
     },
     {
         projectName: 'Metabase',
@@ -67,7 +73,8 @@ export const projects = [
         stars: "45.6K",
         repo: "metabase/metabase",
         version: "v58.1",
-        commitId: "7fbf305"
+        commitId: "7fbf305",
+        lang: "JS/TS"
     },
     {
         projectName: 'Prometheus',
@@ -77,7 +84,8 @@ export const projects = [
         stars: "62.2K",
         repo: "prometheus/prometheus",
         version: "v3.9.1",
-        commitId: "9ec59ba"
+        commitId: "9ec59ba",
+        lang: "JS/TS"
     },
     {
         projectName: 'Rocket chat',
@@ -87,7 +95,8 @@ export const projects = [
         stars: "44.3K",
         repo: "RocketChat/Rocket.Chat",
         version: "v8.0.1",
-        commitId: "7137ec8"
+        commitId: "7137ec8",
+        lang: "TS"
     },
     {
         projectName: 'MitmProxy',
@@ -97,6 +106,7 @@ export const projects = [
         stars: "42K",
         repo: "mitmproxy/mitmproxy",
         version: "v12.2.1",
-        commitId: "d9d5878"
+        commitId: "d9d5878",
+        lang: "JS"
     }
 ];
