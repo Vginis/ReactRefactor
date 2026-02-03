@@ -5,7 +5,7 @@ import {
     countCompoundPropDrillings, 
     countPropDrillingFamilies,
     countPropDrillingRefactoringStats
-} from "./stats-calculation/statsJsonCalculation.js";
+} from "./lib/utils/statsJsonCalculation.js";
 import { writeFile, appendFile } from "fs/promises";
 
 let projects = [
