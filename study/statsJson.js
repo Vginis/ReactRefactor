@@ -5,72 +5,79 @@ import {
     countCompoundPropDrillings, 
     countPropDrillingFamilies,
     countPropDrillingRefactoringStats
-} from "./lib/utils/statsJsonCalculation.js";
+} from "../lib/utils/statsJsonCalculation.js";
 import { writeFile, appendFile } from "fs/promises";
+
+const LATEX_OUTPUT_DIR = './study/latex'
+const RESULTS_DIR = './study/results'
+const TBL2_PROP_DRILL_ADOPTION = `${LATEX_OUTPUT_DIR}/prop_drilling_report.tex`
+const TBL3_PROP_DRILL_DEPTH_DISTR = `${LATEX_OUTPUT_DIR}/prop_drilling_depth_report.tex`
+const TBL4_COMP_PROP_DRILL_DISTR = `${LATEX_OUTPUT_DIR}/compound_prop_drillings_report.tex`
+const TBL5_REFACTORING_CANDIDATES = `${LATEX_OUTPUT_DIR}/prop_drillings_refactorings_report.tex`
 
 let projects = [
     {
         projectName: 'Joplin',
-        projectResultsPath: './results/candidates-joplin-desktop-e75875c.json',
+        resultsFile: 'candidates-joplin-desktop-e75875c.json',
         totalComponents: 122  
     },
     {
         projectName: 'Carbon',
-        projectResultsPath: './results/candidates-carbon-0a07790.json',
+        resultsFile: 'candidates-carbon-0a07790.json',
         totalComponents: 108  
     },
     {
         projectName: 'Grafana',
-        projectResultsPath: './results/candidates-grafana-0d1a5b4.json',
+        resultsFile: 'candidates-grafana-0d1a5b4.json',
         totalComponents: 2728  
     },
     {
         projectName: 'Apache-Superset',
-        projectResultsPath: './results/candidates-superset-6a1c30e.json',
+        resultsFile: 'candidates-superset-6a1c30e.json',
         totalComponents: 525  
     },
     {
         projectName: 'Mastodon',
-        projectResultsPath: './results/candidates-mastodon-55a7b1e.json',
+        resultsFile: 'candidates-mastodon-55a7b1e.json',
         totalComponents: 393  
     },
     {
         projectName: 'Redash',
-        projectResultsPath: './results/candidates-redash-67a95e9.json',
+        resultsFile: 'candidates-redash-67a95e9.json',
         totalComponents: 252  
     },
     {
         projectName: 'Metabase',
-        projectResultsPath: './results/candidates-metabase-7fbf305.json',
+        resultsFile: 'candidates-metabase-7fbf305.json',
         totalComponents: 2321  
     },
     {
         projectName: 'Prometheus',
-        projectResultsPath: './results/candidates-prometheus-9ec59ba.json',
+        resultsFile: 'candidates-prometheus-9ec59ba.json',
         totalComponents: 59  
     },
     {
         projectName: 'Rocket chat',
-        projectResultsPath: './results/candidates-rocketchat-7137ec8.json',
+        resultsFile: 'candidates-rocketchat-7137ec8.json',
         totalComponents: 1391  
     },
     {
         projectName: 'MitmProxy',
-        projectResultsPath: './results/candidates-mitmproxy-d9d5878.json',
+        resultsFile: 'candidates-mitmproxy-d9d5878.json',
         totalComponents: 116  
     }
 ];
 
 async function resetLatexFiles() {
-    await writeFile("stats/latex/prop_drilling_report.tex", "");
-    await writeFile("stats/latex/prop_drilling_depth_report.tex", "");
-    await writeFile("stats/latex/compound_prop_drillings_report.tex", "");
-    await writeFile("stats/latex/prop_drillings_refactorings_report.tex", "");
+    await writeFile(TBL2_PROP_DRILL_ADOPTION, "");
+    await writeFile(TBL3_PROP_DRILL_DEPTH_DISTR, "");
+    await writeFile(TBL4_COMP_PROP_DRILL_DISTR, "");
+    await writeFile(TBL5_REFACTORING_CANDIDATES, "");
 }
 
 async function generateReports() {
     for(const project of projects) {
-        let propDrillingsList = await parseResultsJson(project.projectResultsPath);
+        let propDrillingsList = await parseResultsJson(`${RESULTS_DIR}/${project.resultsFile}`);
         generateReportForPropDrillingFrequency(propDrillingsList, project).catch(console.error);
         generateReportForPropDrillingDepths(propDrillingsList, project);
         generateReportForCompoundPropDrillings(propDrillingsList, project);
@@ -93,7 +100,7 @@ async function generateReportForPropDrillingFrequency(propDrillingsList, project
         `& ${ALL_COMPONENTS} ` +
         `& \\valpct{${participantsCount}}{${percentage}} \\\\\n`;
 
-    await appendFile("stats/latex/prop_drilling_report.tex", latexRow, 'utf8');
+    await appendFile(TBL2_PROP_DRILL_ADOPTION, latexRow, 'utf8');
 }
 
 async function generateReportForPropDrillingDepths(propDrillingsList, project) {
@@ -110,7 +117,7 @@ async function generateReportForPropDrillingDepths(propDrillingsList, project) {
         `& ${depth4Col} ` +
         `& ${depth5Col} \\\\\n`;
 
-    await appendFile("stats/latex/prop_drilling_depth_report.tex", latexRow, 'utf8');
+    await appendFile(TBL3_PROP_DRILL_DEPTH_DISTR, latexRow, 'utf8');
 }
 
 function formatDepthColumn(depthsMap, depth, totalPropDrillings) {
@@ -142,7 +149,7 @@ async function generateReportForCompoundPropDrillings(propDrillingsList, project
         `& ${formatTotalStatsColumn(propDrillingsCount, totalCompoundPropDrillings)} ` +
         `& ${formatTotalStatsColumn(propDrillingsCount, totalCompoundPropDrillings - compoundPropDrillingsFamilies['twos'])} \\\\\n`;
 
-    await appendFile("stats/latex/compound_prop_drillings_report.tex", latexRow, 'utf8');
+    await appendFile(TBL4_COMP_PROP_DRILL_DISTR, latexRow, 'utf8');
 }
 
 function formatCompoundPDFamilyBreadthColumnDistribution(compoundPropDrillingsFamilies, breadth, compoundPropDrillingsCount) {
@@ -176,5 +183,5 @@ async function generateReportForRefactoringPropDrillings(propDrillingsList, proj
         `& ${formatTotalStatsColumn(propDrillingsCount, componentCompositionCount)} ` + 
         `& ${formatTotalStatsColumn(propDrillingsCount, refactorablePropDrillingsCount)} \\\\\n`;
 
-    await appendFile("stats/latex/prop_drillings_refactorings_report.tex", latexRow, 'utf8');
+    await appendFile(TBL5_REFACTORING_CANDIDATES, latexRow, 'utf8');
 }
