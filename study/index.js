@@ -10,6 +10,7 @@ import { projects } from './benchmark.js'
 import PropDrillingInfo from "../lib/json/PropDrillingInfo.js";
 import ProjectInfo from "../lib/json/ProjectInfo.js";
 import { appendFileSync, writeFileSync } from "fs";
+import { generateCSV } from "./csv-export.js";
 
 const LATEX_OUTPUT_DIR = './study/latex'
 const RESULTS_DIR = './study/results'
@@ -19,14 +20,24 @@ const TBL3_PROP_DRILL_DEPTH_DISTR = `${LATEX_OUTPUT_DIR}/tbl3_prop_drilling_dept
 const TBL4_COMP_PROP_DRILL_DISTR = `${LATEX_OUTPUT_DIR}/tbl4_compound_prop_drillings_report.tex`
 const TBL5_REFACTORING_CANDIDATES = `${LATEX_OUTPUT_DIR}/tbl5_prop_drillings_refactorings_report.tex`
 
+const args = process.argv.slice(2);
+const action = args[0];
+
 const projectList = projects
     .map(p => ProjectInfo.fromJson(p))
 
+for (const project of projectList) {
+    let propDrillingsList = parseResultsJson(
+        `${RESULTS_DIR}/${project.resultsFile}`, PropDrillingInfo);
+    project.propDrillings = propDrillingsList
+}
 
-let sortedProjects = projectList.toSorted((a, b) => (b.sloc - a.sloc))
-
-
-generateLatexReports(sortedProjects);
+if (!action || action === 'latex') {
+    let sortedProjects = projectList.toSorted((a, b) => (b.sloc - a.sloc))
+    generateLatexReports(sortedProjects);
+} else if (action === 'csv'){
+    generateCSV(projectList, './stats/prop_dillings.csv')
+}
 
 
 function generateLatexReports(projects) {
