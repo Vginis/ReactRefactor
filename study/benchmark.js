@@ -1,9 +1,10 @@
 export const projects = [
     {
-        projectName: 'Joplin',
+        projectName: 'joplin',
         resultsFile: 'candidates-joplin-desktop-e75875c.json',
+        files: 463,
         totalComponents: 122,
-        sloc: 43758 + 3583,
+        sloc: 47341,
         stars: "53K",
         repo: "laurent22/joplin",
         version: "v3.5.11",
@@ -11,8 +12,9 @@ export const projects = [
         lang: "JS/TS"
     },
     {
-        projectName: 'Carbon',
+        projectName: 'carbon',
         resultsFile: 'candidates-carbon-0a07790.json',
+        files: 92,
         totalComponents: 108,
         sloc: 11580,
         stars: "35.9K",
@@ -22,8 +24,9 @@ export const projects = [
         lang: "JS"
     },
     {
-        projectName: 'Grafana',
+        projectName: 'grafana',
         resultsFile: 'candidates-grafana-0d1a5b4.json',
+        files: 4178,
         totalComponents: 2728,
         sloc: 696744,
         stars: "71.7K",
@@ -33,10 +36,11 @@ export const projects = [
         lang: "TS"
     },
     {
-        projectName: 'Apache-Superset',
+        projectName: 'superset',
         resultsFile: 'candidates-superset-6a1c30e.json',
+        files: 978,
         totalComponents: 525,
-        sloc: 172547 + 19546 + 13496,
+        sloc: 205589,
         stars: "70.1K",
         repo: "apache/superset",
         version: "v6.0.0",
@@ -44,10 +48,11 @@ export const projects = [
         lang: "JS/TS"
     },
     {
-        projectName: 'Mastodon',
+        projectName: 'mastodon',
         resultsFile: 'candidates-mastodon-55a7b1e.json',
+        files: 624,
         totalComponents: 393,
-        sloc: 35026+13511+8184,
+        sloc: 56721,
         stars: "49.5K",
         repo: "mastodon/mastodon",
         version: "v4.5.4",
@@ -55,10 +60,11 @@ export const projects = [
         lang: "JS/TS"
     },
     {
-        projectName: 'Redash',
+        projectName: 'redash',
         resultsFile: 'candidates-redash-67a95e9.json',
+        files: 303,
         totalComponents: 252,
-        sloc: 17621+6043+866,
+        sloc: 24530,
         stars: "28.2K",
         repo: "getredash/redash",
         version: "v25.8.0",
@@ -66,10 +72,11 @@ export const projects = [
         lang: "JS/TS"
     },
     {
-        projectName: 'Metabase',
+        projectName: 'metabase',
         resultsFile: 'candidates-metabase-7fbf305.json',
+        files: 4441,
         totalComponents: 2321,
-        sloc: 426935+29506+21091,
+        sloc: 477532,
         stars: "45.6K",
         repo: "metabase/metabase",
         version: "v58.1",
@@ -77,10 +84,11 @@ export const projects = [
         lang: "JS/TS"
     },
     {
-        projectName: 'Prometheus',
+        projectName: 'prometheus',
         resultsFile: 'candidates-prometheus-9ec59ba.json',
+        files: 70,
         totalComponents: 59,
-        sloc: 10120+3396,
+        sloc: 13516,
         stars: "62.2K",
         repo: "prometheus/prometheus",
         version: "v3.9.1",
@@ -88,8 +96,9 @@ export const projects = [
         lang: "JS/TS"
     },
     {
-        projectName: 'Rocket chat',
+        projectName: 'Rocket.Chat',
         resultsFile: 'candidates-rocketchat-7137ec8.json',
+        files: 2503,
         totalComponents: 1391,
         sloc: 142439,
         stars: "44.3K",
@@ -99,10 +108,11 @@ export const projects = [
         lang: "TS"
     },
     {
-        projectName: 'MitmProxy',
+        projectName: 'mitmproxy',
         resultsFile: 'candidates-mitmproxy-d9d5878.json',
+        files: 204,
         totalComponents: 116,
-        sloc: 13591+ 2949,
+        sloc: 16540,
         stars: "42K",
         repo: "mitmproxy/mitmproxy",
         version: "v12.2.1",
