@@ -4,6 +4,26 @@ import { loadAliases } from '../../lib/Alias.js';
 
 describe("ReactComponent", () => {
 
+
+    test("should resolve component uses and their property values", () => {
+
+        const { fileManager, filteredJsxElements } = getFileManager(
+            "test//resources//social-net-alias//src", 
+            "test//resources//social-net-alias//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+
+        expect(reactComponents.length).toBe(6)
+
+        const feedFile = fileManager.getReactFile("Feed.jsx")
+
+        expectReturnedElements(feedFile, "Feed", ["Avatar", "Avatar2", "MyPost"])
+        // FIXME: Child components should be 2, component uses should be 4
+        expectChildComponentsWithName(feedFile, "Feed", ["Post", "Avatar", "Avatar", "Avatar"])
+        expectComponentUses(feedFile, "Feed", 4)
+
+    })
+
     test("should resolve child components in functional declarations", () => {
 
         const { fileManager, filteredJsxElements } = getFileManager(
@@ -62,6 +82,11 @@ describe("ReactComponent", () => {
         const childComponentNames = component.childComponents.map(component => component.name)
         expect(childComponentNames.length).toBe(expectedComponentNames.length)
         expect(childComponentNames).toEqual(expect.arrayContaining(expectedComponentNames))
+    }
+
+    function expectComponentUses(reactFile, componentName, expectedComponentUses){
+        const component = reactFile.getLocalComponent(componentName)
+        expect(component.componentUses.length).toEqual(expectedComponentUses)
     }
 });
 

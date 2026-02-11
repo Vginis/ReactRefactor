@@ -2,7 +2,7 @@ import { default as MyPost } from "./Post.jsx";
 import Avatar from "./Avatar.jsx";
 import { AvatarEx as AvatarEx2, Avatar as Avatar2, WrappedComment as Comment} from "./components.jsx";
 
-const Feed = ({ username, name }) => {
+const Feed = ({ username, name, group }) => {
   const posts = [
     {
       id: 1,
@@ -37,6 +37,7 @@ const Feed = ({ username, name }) => {
   return (
     <div className="feed">
       <h2>Social Feed 2</h2>
+      <Avatar iconUrl={`https://localhost:8000/users/${username}/icon`} name={group} />
       <Avatar iconUrl={`https://localhost:8000/users/${username}/icon`} name={name} />
       <Avatar2 iconUrl={`https://localhost:8000/users/${username}/icon`} name={name} />
 

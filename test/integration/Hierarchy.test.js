@@ -49,10 +49,11 @@ describe("Component hierarchy", () => {
 
         // 5 jsx elements, Feed is not used anywhere
 
-        expect(paths.length).toBe(5);
+        expect(paths.length).toBe(6);
         expect(paths[0].length).toBe(3)
         expect(paths[1].length).toBe(3)
-        expect(paths[2].length).toBe(4)
+        expect(paths[2].length).toBe(3)
+        expect(paths[3].length).toBe(4)
 
     });
 });
