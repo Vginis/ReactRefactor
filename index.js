@@ -49,11 +49,7 @@ console.time("Alias resolution")
 loadAliases2(reactFiles);
 console.timeEnd("Alias resolution")
 
-// console.time("Add parents")
 addParents();
-// console.timeEnd("Add parents")
-
-//addCompositeKeyReturnedElements(reactFiles);
 
 console.time("Hierarchy resolution")
 const { hierarchyTrees, paths } = extractPathsAndHierarchies2();
