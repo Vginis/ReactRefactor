@@ -5,6 +5,8 @@ import { loadReactFiles } from "../../lib/ReactFile.js";
 import { getAllFiles } from "../../lib/util.js";
 import * as cliModule from '../../lib/cli.js';
 
+import { analyzeComponentHierarchy } from '../utils/test-utils.js';
+
 describe("Component composition refactoring pre-condition check.", () => {
     test("should not allow Component composition refactoring", () => {
         
@@ -90,33 +92,12 @@ describe("Component composition refactoring pre-condition check.", () => {
 
 describe("Context refactoring pre-condition check.", () => {
     test("should allow Context refactoring", () => {
-        const testProjectPath = './test/resources/atm-banking/src';
-        const rootFileName = String.raw`test\resources\atm-banking\src\main.jsx`;
 
-        jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
-            projectPath: testProjectPath,
-            rootFile: ".//test//resources//atm-banking//src//main.jsx",
-            rootComponent: "App",
-            fileType: "jsx"
-        });
+        const { hierarchyTrees, paths } = analyzeComponentHierarchy(
+            "test//resources//atm-banking//src",
+            "test//resources//atm-banking//src//main.jsx", "App", 13, 17)
 
-        globalThis.projectPath = testProjectPath
-        const allFiles = getAllFiles(testProjectPath);
-        const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFileName);
-        const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
-
-        loadAliases(reactFiles);
-        addParents();
-        addCompositeKeyReturnedElements(reactFiles);
-
-        const paths = [
-            [
-                String.raw`test\resources\atm-banking\src\App.jsx:App`,
-                String.raw`test\resources\atm-banking\src\Components\Deposit.jsx:Deposit`,
-                String.raw`test\resources\atm-banking\src\Components\Deposit.jsx:Example`,
-            ]
-        ];
-
+    
         const propDrillings = detectPropDrilling(paths);
         expect(propDrillings.length).toBe(1);
         expect(propDrillings[0].checkIfDestComponentHasOtherParentComponents(propDrillings))
@@ -124,33 +105,10 @@ describe("Context refactoring pre-condition check.", () => {
     });
 
     test("should not allow Context refactoring", () => {
-        const testProjectPath = './test/resources/social-netx';
-        const rootFileName = String.raw`test\resources\social-netx\App.jsx`;
 
-        jest.spyOn(cliModule, 'extractGlobalCliVariables').mockReturnValue({
-            projectPath: testProjectPath,
-            rootFile: ".//test//resources//social-netx//src//App.jsx",
-            rootComponent: "App",
-            fileType: "jsx"
-        });
-
-        globalThis.projectPath = testProjectPath
-
-        const allFiles = getAllFiles(testProjectPath);
-        const { reactFiles, filteredJsxElements } = loadReactFiles(allFiles,rootFileName);
-        const reactComponents = loadReactComponents(reactFiles, filteredJsxElements);
-
-        loadAliases(reactFiles);
-        addParents();
-        addCompositeKeyReturnedElements(reactFiles);
-
-        const paths = [
-            [
-                String.raw`test\resources\social-netx\src\App.jsx:App`,
-                String.raw`test\resources\social-netx\src\Feed.jsx:Feed`,
-                String.raw`test\resources\social-netx\src\Avatar.jsx:Avatar`
-            ]
-        ];
+        const { hierarchyTrees, paths } = analyzeComponentHierarchy(
+            "test//resources//social-netx//src",
+            "test//resources//social-netx//src//App.jsx", "App", 13, 17)
 
         const propDrillings = detectPropDrilling(paths);
         expect(propDrillings.length).toBe(1);

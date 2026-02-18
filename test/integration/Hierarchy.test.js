@@ -1,18 +1,18 @@
-import { getFileManager } from '../utils/test-utils.js';
-import { loadAliases2 } from '../../lib/Alias.js';
-import {
-    resolveIfProjectHasMultiplePages,
-    extractPathsAndHierarchies2
-} from '../../lib/util.js';
+// import { getFileManager } from '../utils/test-utils.js';
+// import { loadAliases2 } from '../../lib/Alias.js';
+// import {
+//     resolveIfProjectHasMultiplePages,
+//     extractPathsAndHierarchies2
+// } from '../../lib/util.js';
 
-import {
-    loadReactComponents,
-    addParents
-} from '../../lib/loadingFuncs.js';
+// import {
+//     loadReactComponents,
+//     addParents
+// } from '../../lib/loadingFuncs.js';
+
+import { analyzeComponentHierarchy } from '../utils/test-utils.js';
 
 describe("Component hierarchy", () => {
-
-
    
     test("should load hierarchy without circles", () => {
 
@@ -71,22 +71,3 @@ function expectPath(path, source, dest, length){
     expect(destName).toBe(dest)
 }
 
-function analyzeComponentHierarchy(testProjectPath, rootFileName, rootComponent, expectedReactComponents, expectedJsxElements) {
-
-    const { fileManager, filteredJsxElements } = getFileManager(testProjectPath, rootFileName, rootComponent);
-    const reactFiles = fileManager.reactFiles;
-
-    const reactComponents = loadReactComponents(reactFiles, filteredJsxElements)
-
-    const hasMultiplePages = resolveIfProjectHasMultiplePages(testProjectPath);
-
-    expect(filteredJsxElements.size).toBe(expectedJsxElements);
-    expect(reactComponents.length).toBe(expectedReactComponents);
-
-    loadAliases2(reactFiles);
-    addParents();
-    //addCompositeKeyReturnedElements(reactFiles);
-    const { hierarchyTrees, paths } = extractPathsAndHierarchies2();
-
-    return { hierarchyTrees, paths }
-}

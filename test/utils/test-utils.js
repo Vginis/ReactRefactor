@@ -2,8 +2,16 @@ import path from 'path';
 import { loadReactFiles } from '../../lib/ReactFile.js';
 import {
     getAllFiles,
+    extractPathsAndHierarchies2,
     resolveIfProjectHasMultiplePages,
 } from '../../lib/util.js';
+
+import { loadAliases2 } from '../../lib/Alias.js';
+
+import {
+    loadReactComponents,
+    addParents
+} from '../../lib/loadingFuncs.js';
 
 /**
  * Sets the globalThis.projectPath variable on the basis of a path with // 
@@ -46,4 +54,24 @@ function getFileManager(testProjectPath, rootFilePath, rootComponent) {
     return {fileManager, filteredJsxElements}
 }
 
-export { setProjectPath, setRootFile, getAbsolutePath, getFileManager }
+function analyzeComponentHierarchy(testProjectPath, rootFileName, rootComponent, expectedReactComponents, expectedJsxElements) {
+
+    const { fileManager, filteredJsxElements } = getFileManager(testProjectPath, rootFileName, rootComponent);
+    const reactFiles = fileManager.reactFiles;
+
+    const reactComponents = loadReactComponents(reactFiles, filteredJsxElements)
+
+    const hasMultiplePages = resolveIfProjectHasMultiplePages(testProjectPath);
+
+    expect(filteredJsxElements.size).toBe(expectedJsxElements);
+    expect(reactComponents.length).toBe(expectedReactComponents);
+
+    loadAliases2(reactFiles);
+    addParents();
+    
+    const { hierarchyTrees, paths } = extractPathsAndHierarchies2();
+
+    return { hierarchyTrees, paths }
+}
+
+export { setProjectPath, setRootFile, getAbsolutePath, getFileManager, analyzeComponentHierarchy }
