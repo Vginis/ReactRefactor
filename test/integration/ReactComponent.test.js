@@ -18,8 +18,7 @@ describe("ReactComponent", () => {
         const feedFile = fileManager.getReactFile("Feed.jsx")
 
         expectReturnedElements(feedFile, "Feed", ["Avatar", "Avatar2", "MyPost"])
-        // FIXME: Child components should be 2, component uses should be 4
-        expectChildComponentsWithName(feedFile, "Feed", ["Post", "Avatar", "Avatar", "Avatar"])
+        expectChildComponentsWithName(feedFile, "Feed", ["Post", "Avatar"])
         expectComponentUses(feedFile, "Feed", 4)
 
     })
@@ -79,7 +78,7 @@ describe("ReactComponent", () => {
 
     function expectChildComponentsWithName(reactFile, componentName, expectedComponentNames){
         const component = reactFile.getLocalComponent(componentName)
-        const childComponentNames = component.childComponents.map(component => component.name)
+        const childComponentNames = Array.from(component.childComponents).map(component => component.name)
         expect(childComponentNames.length).toBe(expectedComponentNames.length)
         expect(childComponentNames).toEqual(expect.arrayContaining(expectedComponentNames))
     }

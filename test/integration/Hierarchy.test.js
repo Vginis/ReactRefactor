@@ -43,20 +43,33 @@ describe("Component hierarchy", () => {
 
     test("should load hierarchy containing aliases", () => {
 
+        // App -- Feed -- Avatar (3 uses)
+        //           | -- Post  -- Avatar
+        //                    | -- Comment -- Avatar
+        //                               | -- Post
+
         const { hierarchyTrees, paths } = analyzeComponentHierarchy(
             "test//resources//social-net-alias//src",
             "test//resources//social-net-alias//src//App.jsx", "App", 6, 6)
 
         // 5 jsx elements, Feed is not used anywhere
 
-        expect(paths.length).toBe(6);
-        expect(paths[0].length).toBe(3)
-        expect(paths[1].length).toBe(3)
-        expect(paths[2].length).toBe(3)
-        expect(paths[3].length).toBe(4)
-
+        expect(paths.length).toBe(4);
+        expectPath(paths[0], 'App', 'Avatar', 3)
+        expectPath(paths[1], 'App', 'Avatar', 4)
+        expectPath(paths[2],'App', 'Avatar', 5)
+        expectPath(paths[3],'App', 'Post', 5)
+        
     });
 });
+
+function expectPath(path, source, dest, length){
+    expect(path.length).toBe(length)
+    let sourceName = path[0].split(':').pop()
+    let destName = path[length - 1].split(':').pop()
+    expect(sourceName).toBe(source)
+    expect(destName).toBe(dest)
+}
 
 function analyzeComponentHierarchy(testProjectPath, rootFileName, rootComponent, expectedReactComponents, expectedJsxElements) {
 
