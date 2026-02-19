@@ -2,8 +2,28 @@ import { getFileManager } from '../utils/test-utils.js';
 import { loadReactComponents } from "../../lib/loadingFuncs.js"
 import { loadAliases } from '../../lib/Alias.js';
 
+
 describe("ReactComponent", () => {
 
+    test("should resolve prop values for all its uses", () => {
+
+        const { fileManager, filteredJsxElements } = getFileManager(
+            "test//resources//social-net-alias//src", 
+            "test//resources//social-net-alias//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+
+        const feedFile = fileManager.getReactFile("Feed.jsx")
+        const feed = feedFile.getLocalComponent("Feed")
+        expect(feed).toBeTruthy()
+        const propValues = feed.getChildPropValues()
+
+        expectReturnedElements(feedFile, "Feed", ["Avatar", "Avatar2", "MyPost"])
+        expectChildComponentsWithName(feedFile, "Feed", ["Post", "Avatar"])
+        expectComponentUses(feedFile, "Feed", 4)
+
+
+    })
 
     test("should resolve component uses and their property values", () => {
 

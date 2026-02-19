@@ -1,11 +1,6 @@
-import { loadAliases } from "../../lib/Alias.js";
 import { detectPropDrilling } from "../../lib/Hierarchy.js";
-import { addCompositeKeyReturnedElements, addParents, loadReactComponents } from "../../lib/loadingFuncs.js";
-import { loadReactFiles } from "../../lib/ReactFile.js";
-import { getAllFiles } from "../../lib/util.js";
-import * as cliModule from '../../lib/cli.js';
-
 import { analyzeComponentHierarchy } from '../utils/test-utils.js';
+
 
 describe("Component composition refactoring pre-condition check.", () => {
     test("should not allow Component composition refactoring", () => {
