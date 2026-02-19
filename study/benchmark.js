@@ -74,8 +74,8 @@ export const projects = [
     {
         projectName: 'metabase',
         resultsFile: 'candidates-metabase-7fbf305.json',
-        files: 4441,
-        totalComponents: 2321,
+        files: 4788,
+        totalComponents: 2472,
         sloc: 477532,
         stars: "45.6K",
         repo: "metabase/metabase",
