@@ -18,10 +18,12 @@ describe("ReactComponent", () => {
         expect(feed).toBeTruthy()
         const propValues = feed.getChildPropValues()
 
+        expectComponentUseWithProperties('Avatar', ['iconUrl', 'name'], feed)
+        expectComponentUseWithProperties('Avatar2', ['iconUrl', 'name'], feed)
+
         expectReturnedElements(feedFile, "Feed", ["Avatar", "Avatar2", "MyPost"])
         expectChildComponentsWithName(feedFile, "Feed", ["Post", "Avatar"])
         expectComponentUses(feedFile, "Feed", 4)
-
 
     })
 
@@ -106,6 +108,15 @@ describe("ReactComponent", () => {
     function expectComponentUses(reactFile, componentName, expectedComponentUses){
         const component = reactFile.getLocalComponent(componentName)
         expect(component.componentUses.length).toEqual(expectedComponentUses)
+    }
+
+    function expectComponentUseWithProperties(tagName, propNames, component){
+
+        const result = component.componentUses.some(cu => {
+            return cu.tagName === tagName && propNames.every( p => cu.hasPropertyBinding(p))
+        })
+
+        expect(result).toBeTruthy()
     }
 });
 
