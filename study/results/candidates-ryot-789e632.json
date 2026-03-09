@@ -1,0 +1,674 @@
+[
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\header.tsx:WorkoutHeader",
+    "targetComponent": "components\\routes\\fitness.action\\stat-display-and-input.tsx:StatDisplay",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\header.tsx:WorkoutHeader",
+        "target": "components\\routes\\fitness.action\\rest-timer.tsx:WorkoutDurationTimer",
+        "targetAlias": "WorkoutDurationTimer",
+        "targetProp": "isWorkoutPaused",
+        "isPure": false
+      },
+      {
+        "source": "components\\routes\\fitness.action\\rest-timer.tsx:WorkoutDurationTimer",
+        "target": "components\\routes\\fitness.action\\stat-display-and-input.tsx:StatDisplay",
+        "targetAlias": "StatDisplay",
+        "targetProp": "highlightValue",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\modals.tsx:WorkoutModals",
+    "targetComponent": "components\\routes\\fitness.action\\supersets.tsx:EditSupersetModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\modals.tsx:WorkoutModals",
+        "target": "components\\routes\\fitness.action\\supersets.tsx:DisplaySupersetModal",
+        "targetAlias": "DisplaySupersetModal",
+        "targetProp": "supersetWith",
+        "isPure": true
+      },
+      {
+        "source": "components\\routes\\fitness.action\\supersets.tsx:DisplaySupersetModal",
+        "target": "components\\routes\\fitness.action\\supersets.tsx:EditSupersetModal",
+        "targetAlias": "EditSupersetModal",
+        "targetProp": "supersetWith",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\modals.tsx:WorkoutModals",
+    "targetComponent": "components\\routes\\fitness.action\\supersets.tsx:EditSupersetModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\modals.tsx:WorkoutModals",
+        "target": "components\\routes\\fitness.action\\supersets.tsx:DisplaySupersetModal",
+        "targetAlias": "DisplaySupersetModal",
+        "targetProp": "onClose",
+        "isPure": true
+      },
+      {
+        "source": "components\\routes\\fitness.action\\supersets.tsx:DisplaySupersetModal",
+        "target": "components\\routes\\fitness.action\\supersets.tsx:EditSupersetModal",
+        "targetAlias": "EditSupersetModal",
+        "targetProp": "onClose",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\modals.tsx:WorkoutModals",
+    "targetComponent": "components\\routes\\fitness.action\\supersets.tsx:CreateSupersetModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\modals.tsx:WorkoutModals",
+        "target": "components\\routes\\fitness.action\\supersets.tsx:DisplaySupersetModal",
+        "targetAlias": "DisplaySupersetModal",
+        "targetProp": "supersetWith",
+        "isPure": true
+      },
+      {
+        "source": "components\\routes\\fitness.action\\supersets.tsx:DisplaySupersetModal",
+        "target": "components\\routes\\fitness.action\\supersets.tsx:CreateSupersetModal",
+        "targetAlias": "CreateSupersetModal",
+        "targetProp": "supersetWith",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\modals.tsx:WorkoutModals",
+    "targetComponent": "components\\routes\\fitness.action\\supersets.tsx:CreateSupersetModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\modals.tsx:WorkoutModals",
+        "target": "components\\routes\\fitness.action\\supersets.tsx:DisplaySupersetModal",
+        "targetAlias": "DisplaySupersetModal",
+        "targetProp": "onClose",
+        "isPure": true
+      },
+      {
+        "source": "components\\routes\\fitness.action\\supersets.tsx:DisplaySupersetModal",
+        "target": "components\\routes\\fitness.action\\supersets.tsx:CreateSupersetModal",
+        "targetAlias": "CreateSupersetModal",
+        "targetProp": "onClose",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\modals.tsx:WorkoutModals",
+    "targetComponent": "components\\routes\\fitness.action\\reorder.tsx:ReorderDrawerExerciseElement",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\modals.tsx:WorkoutModals",
+        "target": "components\\routes\\fitness.action\\reorder.tsx:ReorderDrawer",
+        "targetAlias": "ReorderDrawer",
+        "targetProp": "exerciseToReorder",
+        "isPure": false
+      },
+      {
+        "source": "components\\routes\\fitness.action\\reorder.tsx:ReorderDrawer",
+        "target": "components\\routes\\fitness.action\\reorder.tsx:ReorderDrawerExerciseElement",
+        "targetAlias": "ReorderDrawerExerciseElement",
+        "targetProp": "exerciseToReorder",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+    "targetComponent": "components\\routes\\fitness.action\\set-display\\rpe-modal.tsx:RpeModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "targetAlias": "SetDisplay",
+        "targetProp": "setIdx",
+        "isPure": false
+      },
+      {
+        "source": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\rpe-modal.tsx:RpeModal",
+        "targetAlias": "RpeModal",
+        "targetProp": "setIdx",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+    "targetComponent": "components\\routes\\fitness.action\\set-display\\rpe-modal.tsx:RpeModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "targetAlias": "SetDisplay",
+        "targetProp": "exerciseIdx",
+        "isPure": false
+      },
+      {
+        "source": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\rpe-modal.tsx:RpeModal",
+        "targetAlias": "RpeModal",
+        "targetProp": "exerciseIdx",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+    "targetComponent": "components\\routes\\fitness.action\\stat-display-and-input.tsx:StatInput",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "targetAlias": "SetDisplay",
+        "targetProp": "setIdx",
+        "isPure": false
+      },
+      {
+        "source": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "target": "components\\routes\\fitness.action\\stat-display-and-input.tsx:StatInput",
+        "targetAlias": "StatInput",
+        "targetProp": "setIdx",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+    "targetComponent": "components\\routes\\fitness.action\\stat-display-and-input.tsx:StatInput",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "targetAlias": "SetDisplay",
+        "targetProp": "durationUnit",
+        "isPure": false
+      },
+      {
+        "source": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "target": "components\\routes\\fitness.action\\stat-display-and-input.tsx:StatInput",
+        "targetAlias": "StatInput",
+        "targetProp": "durationUnit",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+    "targetComponent": "components\\routes\\fitness.action\\stat-display-and-input.tsx:StatInput",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "targetAlias": "SetDisplay",
+        "targetProp": "exerciseIdx",
+        "isPure": false
+      },
+      {
+        "source": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "target": "components\\routes\\fitness.action\\stat-display-and-input.tsx:StatInput",
+        "targetAlias": "StatInput",
+        "targetProp": "exerciseIdx",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+    "targetComponent": "components\\routes\\fitness.action\\set-display\\action-button.tsx:SetActionButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "targetAlias": "SetDisplay",
+        "targetProp": "setIdx",
+        "isPure": false
+      },
+      {
+        "source": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\action-button.tsx:SetActionButton",
+        "targetAlias": "SetActionButton",
+        "targetProp": "setIdx",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+    "targetComponent": "components\\routes\\fitness.action\\set-display\\action-button.tsx:SetActionButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "targetAlias": "SetDisplay",
+        "targetProp": "stopTimer",
+        "isPure": true
+      },
+      {
+        "source": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\action-button.tsx:SetActionButton",
+        "targetAlias": "SetActionButton",
+        "targetProp": "stopTimer",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+    "targetComponent": "components\\routes\\fitness.action\\set-display\\action-button.tsx:SetActionButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "targetAlias": "SetDisplay",
+        "targetProp": "startTimer",
+        "isPure": true
+      },
+      {
+        "source": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\action-button.tsx:SetActionButton",
+        "targetAlias": "SetActionButton",
+        "targetProp": "startTimer",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+    "targetComponent": "components\\routes\\fitness.action\\set-display\\action-button.tsx:SetActionButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "targetAlias": "SetDisplay",
+        "targetProp": "exerciseIdx",
+        "isPure": false
+      },
+      {
+        "source": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\action-button.tsx:SetActionButton",
+        "targetAlias": "SetActionButton",
+        "targetProp": "exerciseIdx",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+    "targetComponent": "components\\routes\\fitness.action\\set-display\\action-button.tsx:SetActionButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "targetAlias": "SetDisplay",
+        "targetProp": "playCheckSound",
+        "isPure": true
+      },
+      {
+        "source": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\action-button.tsx:SetActionButton",
+        "targetAlias": "SetActionButton",
+        "targetProp": "playCheckSound",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+    "targetComponent": "components\\routes\\fitness.action\\set-display\\action-button.tsx:SetActionButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "targetAlias": "SetDisplay",
+        "targetProp": "isWorkoutPaused",
+        "isPure": true
+      },
+      {
+        "source": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\action-button.tsx:SetActionButton",
+        "targetAlias": "SetActionButton",
+        "targetProp": "isWorkoutPaused",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+    "targetComponent": "components\\routes\\fitness.action\\set-display\\support.tsx:EditSetRestTimer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "targetAlias": "SetDisplay",
+        "targetProp": "setIdx",
+        "isPure": false
+      },
+      {
+        "source": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\support.tsx:EditSetRestTimer",
+        "targetAlias": "EditSetRestTimer",
+        "targetProp": "setIdx",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+    "targetComponent": "components\\routes\\fitness.action\\set-display\\support.tsx:EditSetRestTimer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "targetAlias": "SetDisplay",
+        "targetProp": "exerciseIdx",
+        "isPure": false
+      },
+      {
+        "source": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\support.tsx:EditSetRestTimer",
+        "targetAlias": "EditSetRestTimer",
+        "targetProp": "exerciseIdx",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+    "targetComponent": "components\\routes\\fitness.action\\set-display\\support.tsx:DisplaySetRestTimer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\routes\\fitness.action\\exercise-display\\display.tsx:ExerciseDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "targetAlias": "SetDisplay",
+        "targetProp": "openTimerDrawer",
+        "isPure": false
+      },
+      {
+        "source": "components\\routes\\fitness.action\\set-display\\display.tsx:SetDisplay",
+        "target": "components\\routes\\fitness.action\\set-display\\support.tsx:DisplaySetRestTimer",
+        "targetAlias": "DisplaySetRestTimer",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\routes\\dashboard\\forms\\metadata-progress-update\\progress-update.tsx:MetadataProgressUpdateForm",
+    "targetComponent": "components\\routes\\dashboard\\forms\\metadata-progress-update\\media-types\\show-form.tsx:ShowForm",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "components\\routes\\dashboard\\forms\\metadata-progress-update\\progress-update.tsx:MetadataProgressUpdateForm",
+        "target": "components\\routes\\dashboard\\forms\\metadata-progress-update\\new-progress-form.tsx:MetadataNewProgressUpdateForm",
+        "targetAlias": "MetadataNewProgressUpdateForm",
+        "targetProp": "metadataId",
+        "isPure": false
+      },
+      {
+        "source": "components\\routes\\dashboard\\forms\\metadata-progress-update\\new-progress-form.tsx:MetadataNewProgressUpdateForm",
+        "target": "components\\routes\\dashboard\\forms\\metadata-progress-update\\media-types\\show-form.tsx:ShowForm",
+        "targetAlias": "ShowForm",
+        "targetProp": "metadataId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "components\\routes\\dashboard\\forms\\metadata-progress-update\\progress-update.tsx:MetadataProgressUpdateForm",
+    "targetComponent": "components\\routes\\dashboard\\forms\\metadata-progress-update\\media-types\\anime-form.tsx:AnimeForm",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "components\\routes\\dashboard\\forms\\metadata-progress-update\\progress-update.tsx:MetadataProgressUpdateForm",
+        "target": "components\\routes\\dashboard\\forms\\metadata-progress-update\\new-progress-form.tsx:MetadataNewProgressUpdateForm",
+        "targetAlias": "MetadataNewProgressUpdateForm",
+        "targetProp": "metadataId",
+        "isPure": false
+      },
+      {
+        "source": "components\\routes\\dashboard\\forms\\metadata-progress-update\\new-progress-form.tsx:MetadataNewProgressUpdateForm",
+        "target": "components\\routes\\dashboard\\forms\\metadata-progress-update\\media-types\\anime-form.tsx:AnimeForm",
+        "targetAlias": "AnimeForm",
+        "targetProp": "metadataId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "components\\routes\\dashboard\\forms\\metadata-progress-update\\progress-update.tsx:MetadataProgressUpdateForm",
+    "targetComponent": "components\\routes\\dashboard\\forms\\metadata-progress-update\\media-types\\manga-form.tsx:MangaForm",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "components\\routes\\dashboard\\forms\\metadata-progress-update\\progress-update.tsx:MetadataProgressUpdateForm",
+        "target": "components\\routes\\dashboard\\forms\\metadata-progress-update\\new-progress-form.tsx:MetadataNewProgressUpdateForm",
+        "targetAlias": "MetadataNewProgressUpdateForm",
+        "targetProp": "metadataId",
+        "isPure": false
+      },
+      {
+        "source": "components\\routes\\dashboard\\forms\\metadata-progress-update\\new-progress-form.tsx:MetadataNewProgressUpdateForm",
+        "target": "components\\routes\\dashboard\\forms\\metadata-progress-update\\media-types\\manga-form.tsx:MangaForm",
+        "targetAlias": "MangaForm",
+        "targetProp": "metadataId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "components\\routes\\dashboard\\forms\\metadata-progress-update\\progress-update.tsx:MetadataProgressUpdateForm",
+    "targetComponent": "components\\routes\\dashboard\\forms\\metadata-progress-update\\media-types\\podcast-form.tsx:PodcastForm",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "components\\routes\\dashboard\\forms\\metadata-progress-update\\progress-update.tsx:MetadataProgressUpdateForm",
+        "target": "components\\routes\\dashboard\\forms\\metadata-progress-update\\new-progress-form.tsx:MetadataNewProgressUpdateForm",
+        "targetAlias": "MetadataNewProgressUpdateForm",
+        "targetProp": "metadataId",
+        "isPure": false
+      },
+      {
+        "source": "components\\routes\\dashboard\\forms\\metadata-progress-update\\new-progress-form.tsx:MetadataNewProgressUpdateForm",
+        "target": "components\\routes\\dashboard\\forms\\metadata-progress-update\\media-types\\podcast-form.tsx:PodcastForm",
+        "targetAlias": "PodcastForm",
+        "targetProp": "metadataId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "components\\fitness\\components.tsx:ExerciseHistory",
+    "targetComponent": "components\\fitness\\utils.tsx:DisplaySetStatistics",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\fitness\\components.tsx:ExerciseHistory",
+        "target": "components\\fitness\\components.tsx:DisplaySet",
+        "targetAlias": "DisplaySet",
+        "targetProp": "exerciseLot",
+        "isPure": false
+      },
+      {
+        "source": "components\\fitness\\components.tsx:DisplaySet",
+        "target": "components\\fitness\\utils.tsx:DisplaySetStatistics",
+        "targetAlias": "DisplaySetStatistics",
+        "targetProp": "lot",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\fitness\\components.tsx:ExerciseHistory",
+    "targetComponent": "components\\fitness\\utils.tsx:DisplaySetStatistics",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\fitness\\components.tsx:ExerciseHistory",
+        "target": "components\\fitness\\components.tsx:DisplaySet",
+        "targetAlias": "DisplaySet",
+        "targetProp": "durationUnit",
+        "isPure": false
+      },
+      {
+        "source": "components\\fitness\\components.tsx:DisplaySet",
+        "target": "components\\fitness\\utils.tsx:DisplaySetStatistics",
+        "targetAlias": "DisplaySetStatistics",
+        "targetProp": "durationUnit",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\fitness\\components.tsx:ExerciseHistory",
+    "targetComponent": "components\\fitness\\utils.tsx:DisplaySetStatistics",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\fitness\\components.tsx:ExerciseHistory",
+        "target": "components\\fitness\\components.tsx:DisplaySet",
+        "targetAlias": "DisplaySet",
+        "targetProp": "unitSystem",
+        "isPure": false
+      },
+      {
+        "source": "components\\fitness\\components.tsx:DisplaySet",
+        "target": "components\\fitness\\utils.tsx:DisplaySetStatistics",
+        "targetAlias": "DisplaySetStatistics",
+        "targetProp": "unitSystem",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\common\\summary.tsx:DisplaySummarySection",
+    "targetComponent": "components\\common\\summary.tsx:ActualDisplayStat",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\common\\summary.tsx:DisplaySummarySection",
+        "target": "components\\common\\summary.tsx:DisplayStatForMediaType",
+        "targetAlias": "DisplayStatForMediaType",
+        "targetProp": "data",
+        "isPure": true
+      },
+      {
+        "source": "components\\common\\summary.tsx:DisplayStatForMediaType",
+        "target": "components\\common\\summary.tsx:ActualDisplayStat",
+        "targetAlias": "ActualDisplayStat",
+        "targetProp": "data",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  }
+]

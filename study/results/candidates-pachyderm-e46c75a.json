@@ -1,0 +1,1145 @@
+[
+  {
+    "sourceComponent": "views\\FileBrowser\\FileBrowser.tsx:FileBrowser",
+    "targetComponent": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:DirectoryContents",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\FileBrowser\\FileBrowser.tsx:FileBrowser",
+        "target": "views\\FileBrowser\\components\\LeftPanel\\LeftPanel.tsx:LeftPanel",
+        "targetAlias": "LeftPanel",
+        "targetProp": "selectedCommitId",
+        "isPure": false
+      },
+      {
+        "source": "views\\FileBrowser\\components\\LeftPanel\\LeftPanel.tsx:LeftPanel",
+        "target": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:DirectoryContents",
+        "targetAlias": "DirectoryContents",
+        "targetProp": "selectedCommitId",
+        "isPure": false
+      },
+      {
+        "source": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:DirectoryContents",
+        "target": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:Directory",
+        "targetAlias": "Directory",
+        "targetProp": "selectedCommitId",
+        "isPure": false
+      },
+      {
+        "source": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:Directory",
+        "target": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:DirectoryContents",
+        "targetAlias": "DirectoryContents",
+        "targetProp": "selectedCommitId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\Project\\components\\DAG\\DAG.tsx:DAG",
+    "targetComponent": "views\\Project\\components\\ProjectSidebar\\components\\RepoDetails\\components\\RepoInfo\\RepoInfo.tsx:RepoInfoSection",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\Project\\components\\DAG\\DAG.tsx:DAG",
+        "target": "views\\Project\\components\\ProjectSidebar\\ProjectSidebar.tsx:ProjectSidebar",
+        "targetAlias": "ProjectSidebar",
+        "targetProp": "pipelineOutputsMap",
+        "isPure": false
+      },
+      {
+        "source": "views\\Project\\components\\ProjectSidebar\\ProjectSidebar.tsx:ProjectSidebar",
+        "target": "views\\Project\\components\\ProjectSidebar\\components\\RepoDetails\\RepoDetails.tsx:RepoDetails",
+        "targetAlias": "RepoDetails",
+        "targetProp": "pipelineOutputsMap",
+        "isPure": true
+      },
+      {
+        "source": "views\\Project\\components\\ProjectSidebar\\components\\RepoDetails\\RepoDetails.tsx:RepoDetails",
+        "target": "views\\Project\\components\\ProjectSidebar\\components\\RepoDetails\\components\\RepoInfo\\RepoInfo.tsx:RepoInfoSection",
+        "targetAlias": "RepoInfo",
+        "targetProp": "pipelineOutputsMap",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\components\\RawLogRow\\RawLogRow.tsx:RawLogRow",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "logs",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "targetAlias": "LogsBody",
+        "targetProp": "logs",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\components\\RawLogRow\\RawLogRow.tsx:RawLogRow",
+        "targetAlias": "RawLogRow",
+        "targetProp": "logs",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\components\\RawLogRow\\RawLogRow.tsx:RawLogRow",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "highlightUserLogs",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "targetAlias": "LogsBody",
+        "targetProp": "highlightUserLogs",
+        "isPure": true
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\components\\RawLogRow\\RawLogRow.tsx:RawLogRow",
+        "targetAlias": "RawLogRow",
+        "targetProp": "highlightUserLogs",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\components\\LogRow\\LogRow.tsx:LogRow",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "logs",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "targetAlias": "LogsBody",
+        "targetProp": "logs",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\components\\LogRow\\LogRow.tsx:LogRow",
+        "targetAlias": "LogRow",
+        "targetProp": "logs",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\components\\LogRow\\LogRow.tsx:LogRow",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "highlightUserLogs",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "targetAlias": "LogsBody",
+        "targetProp": "highlightUserLogs",
+        "isPure": true
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\components\\LogRow\\LogRow.tsx:LogRow",
+        "targetAlias": "LogRow",
+        "targetProp": "highlightUserLogs",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\components\\LogRow\\LogRow.tsx:LogRow",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "selectedLogsMap",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "targetAlias": "LogsBody",
+        "targetProp": "selectedLogsMap",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\components\\LogRow\\LogRow.tsx:LogRow",
+        "targetAlias": "LogRow",
+        "targetProp": "selectedLogsMap",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\components\\LogRow\\LogRow.tsx:LogRow",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "setSelectedLogsMap",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "targetAlias": "LogsBody",
+        "targetProp": "setSelectedLogsMap",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\components\\LogRow\\LogRow.tsx:LogRow",
+        "targetAlias": "LogRow",
+        "targetProp": "setSelectedLogsMap",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\Project\\components\\ProjectHeader\\components\\ProjectStatusSearch\\components\\Dropdown\\Dropdown.tsx:Dropdown",
+    "targetComponent": "views\\Project\\components\\ProjectHeader\\components\\GlobalSearch\\components\\SearchResultsDropdown\\components\\SearchResultItem.tsx:Underline",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\Project\\components\\ProjectHeader\\components\\ProjectStatusSearch\\components\\Dropdown\\Dropdown.tsx:Dropdown",
+        "target": "views\\Project\\components\\ProjectHeader\\components\\GlobalSearch\\components\\SearchResultsDropdown\\components\\SearchResultItem.tsx:SearchResultItem",
+        "targetAlias": "SearchResultItem",
+        "targetProp": "searchValue",
+        "isPure": false
+      },
+      {
+        "source": "views\\Project\\components\\ProjectHeader\\components\\GlobalSearch\\components\\SearchResultsDropdown\\components\\SearchResultItem.tsx:SearchResultItem",
+        "target": "views\\Project\\components\\ProjectHeader\\components\\GlobalSearch\\components\\SearchResultsDropdown\\components\\SearchResultItem.tsx:Underline",
+        "targetAlias": "Underline",
+        "targetProp": "search",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\Project\\components\\DAG\\DAG.tsx:DAG",
+    "targetComponent": "views\\Project\\components\\DAGError\\DAGError.tsx:DAGError",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "views\\Project\\components\\DAG\\DAG.tsx:DAG",
+        "target": "views\\Project\\components\\DAGView\\DAGView.tsx:DAGView",
+        "targetAlias": "DAGView",
+        "targetProp": "error",
+        "isPure": false
+      },
+      {
+        "source": "views\\Project\\components\\DAGView\\DAGView.tsx:DAGView",
+        "target": "views\\Project\\components\\DAGError\\DAGError.tsx:DAGError",
+        "targetAlias": "DAGError",
+        "targetProp": "error",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "views\\Project\\components\\DAG\\DAG.tsx:DAG",
+    "targetComponent": "views\\Project\\components\\DAGView\\components\\DAG\\DAG.tsx:DAG",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\Project\\components\\DAG\\DAG.tsx:DAG",
+        "target": "views\\Project\\components\\DAGView\\DAGView.tsx:DAGView",
+        "targetAlias": "DAGView",
+        "targetProp": "dags",
+        "isPure": false
+      },
+      {
+        "source": "views\\Project\\components\\DAGView\\DAGView.tsx:DAGView",
+        "target": "views\\Project\\components\\DAGView\\components\\DAG\\DAG.tsx:DAG",
+        "targetAlias": "DAG",
+        "targetProp": "data",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\Project\\components\\ProjectSidebar\\components\\RepoDetails\\RepoDetails.tsx:RepoDetails",
+    "targetComponent": "views\\Project\\components\\ProjectSidebar\\components\\RepoDetails\\components\\UserMetadata\\components\\EditMetadataModal\\EditMetadataModal.tsx:EditMetadataModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\Project\\components\\ProjectSidebar\\components\\RepoDetails\\RepoDetails.tsx:RepoDetails",
+        "target": "views\\Project\\components\\ProjectSidebar\\components\\RepoDetails\\components\\UserMetadata\\UserMetadata.tsx:UserMetadata",
+        "targetAlias": "UserMetadata",
+        "targetProp": "metadataType",
+        "isPure": false
+      },
+      {
+        "source": "views\\Project\\components\\ProjectSidebar\\components\\RepoDetails\\components\\UserMetadata\\UserMetadata.tsx:UserMetadata",
+        "target": "views\\Project\\components\\ProjectSidebar\\components\\RepoDetails\\components\\UserMetadata\\components\\EditMetadataModal\\EditMetadataModal.tsx:EditMetadataModal",
+        "targetAlias": "EditMetadataModal",
+        "targetProp": "metadataType",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\FileBrowser\\FileBrowser.tsx:FileBrowser",
+    "targetComponent": "views\\FileBrowser\\components\\LeftPanel\\components\\CommitSelect\\CommitSelect.tsx:CommitSelect",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "views\\FileBrowser\\FileBrowser.tsx:FileBrowser",
+        "target": "views\\FileBrowser\\components\\LeftPanel\\LeftPanel.tsx:LeftPanel",
+        "targetAlias": "LeftPanel",
+        "targetProp": "selectedCommitId",
+        "isPure": false
+      },
+      {
+        "source": "views\\FileBrowser\\components\\LeftPanel\\LeftPanel.tsx:LeftPanel",
+        "target": "views\\FileBrowser\\components\\LeftPanel\\components\\CommitSelect\\CommitSelect.tsx:CommitSelect",
+        "targetAlias": "CommitSelect",
+        "targetProp": "selectedCommitId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "views\\FileBrowser\\FileBrowser.tsx:FileBrowser",
+    "targetComponent": "views\\FileBrowser\\components\\LeftPanel\\components\\FileSearch\\FileSearch.tsx:FileSearch",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\FileBrowser\\FileBrowser.tsx:FileBrowser",
+        "target": "views\\FileBrowser\\components\\LeftPanel\\LeftPanel.tsx:LeftPanel",
+        "targetAlias": "LeftPanel",
+        "targetProp": "selectedCommitId",
+        "isPure": false
+      },
+      {
+        "source": "views\\FileBrowser\\components\\LeftPanel\\LeftPanel.tsx:LeftPanel",
+        "target": "views\\FileBrowser\\components\\LeftPanel\\components\\FileSearch\\FileSearch.tsx:FileSearch",
+        "targetAlias": "FileSearch",
+        "targetProp": "selectedCommitId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:DirectoryContents",
+    "targetComponent": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:DirectoryContents",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:DirectoryContents",
+        "target": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:Directory",
+        "targetAlias": "Directory",
+        "targetProp": "filePath",
+        "isPure": false
+      },
+      {
+        "source": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:Directory",
+        "target": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:DirectoryContents",
+        "targetAlias": "DirectoryContents",
+        "targetProp": "path",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:DirectoryContents",
+    "targetComponent": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:DirectoryContents",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:DirectoryContents",
+        "target": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:Directory",
+        "targetAlias": "Directory",
+        "targetProp": "nextPath",
+        "isPure": false
+      },
+      {
+        "source": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:Directory",
+        "target": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:DirectoryContents",
+        "targetAlias": "DirectoryContents",
+        "targetProp": "nextAfterDirectory",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:Directory",
+    "targetComponent": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:Directory",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:Directory",
+        "target": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:DirectoryContents",
+        "targetAlias": "DirectoryContents",
+        "targetProp": "selectedCommitId",
+        "isPure": false
+      },
+      {
+        "source": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:DirectoryContents",
+        "target": "views\\FileBrowser\\components\\LeftPanel\\components\\FileTree\\DirectoryContents.tsx:Directory",
+        "targetAlias": "Directory",
+        "targetProp": "selectedCommitId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\FileBrowser\\components\\FilePreview\\FilePreview.tsx:FilePreview",
+    "targetComponent": "views\\FileBrowser\\components\\FilePreview\\components\\FilePreviewContent\\FilePreviewContent.tsx:FilePreviewRenderer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\FileBrowser\\components\\FilePreview\\FilePreview.tsx:FilePreview",
+        "target": "views\\FileBrowser\\components\\FilePreview\\components\\FilePreviewContent\\FilePreviewContent.tsx:FilePreviewContent",
+        "targetAlias": "FilePreviewContent",
+        "targetProp": "download",
+        "isPure": true
+      },
+      {
+        "source": "views\\FileBrowser\\components\\FilePreview\\components\\FilePreviewContent\\FilePreviewContent.tsx:FilePreviewContent",
+        "target": "views\\FileBrowser\\components\\FilePreview\\components\\FilePreviewContent\\FilePreviewContent.tsx:FilePreviewRenderer",
+        "targetAlias": "FilePreviewRenderer",
+        "targetProp": "download",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\FileBrowser\\components\\FilePreview\\FilePreview.tsx:FilePreview",
+    "targetComponent": "views\\FileBrowser\\components\\FilePreview\\components\\FilePreviewContent\\FilePreviewContent.tsx:FilePreviewRenderer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\FileBrowser\\components\\FilePreview\\FilePreview.tsx:FilePreview",
+        "target": "views\\FileBrowser\\components\\FilePreview\\components\\FilePreviewContent\\FilePreviewContent.tsx:FilePreviewContent",
+        "targetAlias": "FilePreviewContent",
+        "targetProp": "viewSource",
+        "isPure": false
+      },
+      {
+        "source": "views\\FileBrowser\\components\\FilePreview\\components\\FilePreviewContent\\FilePreviewContent.tsx:FilePreviewContent",
+        "target": "views\\FileBrowser\\components\\FilePreview\\components\\FilePreviewContent\\FilePreviewContent.tsx:FilePreviewRenderer",
+        "targetAlias": "FilePreviewRenderer",
+        "targetProp": "viewSource",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsListHeader\\LogsListHeader.tsx:LogsListHeader",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "loading",
+        "isPure": true
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsListHeader\\LogsListHeader.tsx:LogsListHeader",
+        "targetAlias": "LogsListHeader",
+        "targetProp": "loading",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsListHeader\\LogsListHeader.tsx:LogsListHeader",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "logs",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsListHeader\\LogsListHeader.tsx:LogsListHeader",
+        "targetAlias": "LogsListHeader",
+        "targetProp": "logs",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsListHeader\\LogsListHeader.tsx:LogsListHeader",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "selectedLogsMap",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsListHeader\\LogsListHeader.tsx:LogsListHeader",
+        "targetAlias": "LogsListHeader",
+        "targetProp": "selectedLogsMap",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsListHeader\\LogsListHeader.tsx:LogsListHeader",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "setSelectedLogsMap",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsListHeader\\LogsListHeader.tsx:LogsListHeader",
+        "targetAlias": "LogsListHeader",
+        "targetProp": "setSelectedLogsMap",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsListHeader\\LogsListHeader.tsx:LogsListHeader",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "rawLogs",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsListHeader\\LogsListHeader.tsx:LogsListHeader",
+        "targetAlias": "LogsListHeader",
+        "targetProp": "rawLogs",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "loading",
+        "isPure": true
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "targetAlias": "LogsBody",
+        "targetProp": "loading",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "rawLogs",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "targetAlias": "LogsBody",
+        "targetProp": "rawLogs",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "error",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "targetAlias": "LogsBody",
+        "targetProp": "error",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "isSkippedDatum",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "targetAlias": "LogsBody",
+        "targetProp": "isSkippedDatum",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "page",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "targetAlias": "LogsBody",
+        "targetProp": "page",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "isPagingError",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "targetAlias": "LogsBody",
+        "targetProp": "isPagingError",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+    "targetComponent": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\MiddleSection.tsx:MiddleSection",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "targetAlias": "LogsViewer",
+        "targetProp": "isOverLokiQueryLimit",
+        "isPure": false
+      },
+      {
+        "source": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\LogsViewer.tsx:LogsViewer",
+        "target": "views\\DatumViewer\\components\\MiddleSection\\components\\LogsViewer\\components\\LogsBody\\LogsBody.tsx:LogsBody",
+        "targetAlias": "LogsBody",
+        "targetProp": "isOverLokiQueryLimit",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\Landing\\Landing.tsx:Landing",
+    "targetComponent": "views\\Landing\\components\\ProjectRow\\ProjectRow.tsx:ProjectRow",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\Landing\\Landing.tsx:Landing",
+        "target": "views\\Landing\\components\\ProjectTab\\ProjectTab.tsx:ProjectTab",
+        "targetAlias": "ProjectTab",
+        "targetProp": "allProjectNames",
+        "isPure": false
+      },
+      {
+        "source": "views\\Landing\\components\\ProjectTab\\ProjectTab.tsx:ProjectTab",
+        "target": "views\\Landing\\components\\ProjectRow\\ProjectRow.tsx:ProjectRow",
+        "targetAlias": "ProjectRow",
+        "targetProp": "allProjectNames",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\Landing\\Landing.tsx:Landing",
+    "targetComponent": "views\\Landing\\components\\ProjectRow\\ProjectRow.tsx:ProjectRow",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\Landing\\Landing.tsx:Landing",
+        "target": "views\\Landing\\components\\ProjectTab\\ProjectTab.tsx:ProjectTab",
+        "targetAlias": "ProjectTab",
+        "targetProp": "showOnlyAccessible",
+        "isPure": true
+      },
+      {
+        "source": "views\\Landing\\components\\ProjectTab\\ProjectTab.tsx:ProjectTab",
+        "target": "views\\Landing\\components\\ProjectRow\\ProjectRow.tsx:ProjectRow",
+        "targetAlias": "ProjectRow",
+        "targetProp": "showOnlyAccessible",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\Landing\\Landing.tsx:Landing",
+    "targetComponent": "views\\Landing\\components\\ProjectRow\\ProjectRow.tsx:ProjectRow",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\Landing\\Landing.tsx:Landing",
+        "target": "views\\Landing\\components\\ProjectTab\\ProjectTab.tsx:ProjectTab",
+        "targetAlias": "ProjectTab",
+        "targetProp": "setMyProjectsCount",
+        "isPure": false
+      },
+      {
+        "source": "views\\Landing\\components\\ProjectTab\\ProjectTab.tsx:ProjectTab",
+        "target": "views\\Landing\\components\\ProjectRow\\ProjectRow.tsx:ProjectRow",
+        "targetAlias": "ProjectRow",
+        "targetProp": "setMyProjectsCount",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "views\\Landing\\Landing.tsx:Landing",
+    "targetComponent": "views\\Landing\\components\\ProjectRow\\ProjectRow.tsx:ProjectRow",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "views\\Landing\\Landing.tsx:Landing",
+        "target": "views\\Landing\\components\\ProjectTab\\ProjectTab.tsx:ProjectTab",
+        "targetAlias": "ProjectTab",
+        "targetProp": "setAllProjectsCount",
+        "isPure": false
+      },
+      {
+        "source": "views\\Landing\\components\\ProjectTab\\ProjectTab.tsx:ProjectTab",
+        "target": "views\\Landing\\components\\ProjectRow\\ProjectRow.tsx:ProjectRow",
+        "targetAlias": "ProjectRow",
+        "targetProp": "setAllProjectsCount",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\RepoRolesModal\\RepoRolesModal.tsx:RepoRolesModal",
+    "targetComponent": "components\\RolesModal\\components\\AssignRolesForm\\AssignRolesForm.tsx:AssignRolesForm",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\RepoRolesModal\\RepoRolesModal.tsx:RepoRolesModal",
+        "target": "components\\RolesModal\\RolesModal.tsx:RolesModal",
+        "targetAlias": "RolesModal",
+        "targetProp": "resourceType",
+        "isPure": false
+      },
+      {
+        "source": "components\\RolesModal\\RolesModal.tsx:RolesModal",
+        "target": "components\\RolesModal\\components\\AssignRolesForm\\AssignRolesForm.tsx:AssignRolesForm",
+        "targetAlias": "AssignRolesForm",
+        "targetProp": "resourceType",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\RepoActionsMenu\\RepoActionsMenu.tsx:RepoActionsMenu",
+    "targetComponent": "components\\RepoActionsMenu\\components\\DeleteRepoModal\\DeleteRepoModal.tsx:DeleteRepoModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\RepoActionsMenu\\RepoActionsMenu.tsx:RepoActionsMenu",
+        "target": "components\\RepoActionsMenu\\RepoActionsMenu.tsx:RepoActionsModals",
+        "targetAlias": "RepoActionsModals",
+        "targetProp": "repoId",
+        "isPure": false
+      },
+      {
+        "source": "components\\RepoActionsMenu\\RepoActionsMenu.tsx:RepoActionsModals",
+        "target": "components\\RepoActionsMenu\\components\\DeleteRepoModal\\DeleteRepoModal.tsx:DeleteRepoModal",
+        "targetAlias": "DeleteRepoModal",
+        "targetProp": "repoId",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\RepoActionsMenu\\RepoActionsMenu.tsx:RepoActionsMenu",
+    "targetComponent": "components\\RepoActionsMenu\\components\\DeleteRepoModal\\DeleteRepoModal.tsx:DeleteRepoModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\RepoActionsMenu\\RepoActionsMenu.tsx:RepoActionsMenu",
+        "target": "components\\RepoActionsMenu\\RepoActionsMenu.tsx:RepoActionsModals",
+        "targetAlias": "RepoActionsModals",
+        "targetProp": "setDeleteModalOpen",
+        "isPure": false
+      },
+      {
+        "source": "components\\RepoActionsMenu\\RepoActionsMenu.tsx:RepoActionsModals",
+        "target": "components\\RepoActionsMenu\\components\\DeleteRepoModal\\DeleteRepoModal.tsx:DeleteRepoModal",
+        "targetAlias": "DeleteRepoModal",
+        "targetProp": "setModalOpen",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\ProjectRolesModal\\ProjectRolesModal.tsx:ProjectRolesModal",
+    "targetComponent": "components\\RolesModal\\components\\AssignRolesForm\\AssignRolesForm.tsx:AssignRolesForm",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\ProjectRolesModal\\ProjectRolesModal.tsx:ProjectRolesModal",
+        "target": "components\\RolesModal\\RolesModal.tsx:RolesModal",
+        "targetAlias": "RolesModal",
+        "targetProp": "resourceType",
+        "isPure": false
+      },
+      {
+        "source": "components\\RolesModal\\RolesModal.tsx:RolesModal",
+        "target": "components\\RolesModal\\components\\AssignRolesForm\\AssignRolesForm.tsx:AssignRolesForm",
+        "targetAlias": "AssignRolesForm",
+        "targetProp": "resourceType",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsMenu",
+    "targetComponent": "components\\PipelineActionsMenu\\components\\RerunPipelineModal\\RerunPipelineModal.tsx:RerunPipelineModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsMenu",
+        "target": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsModals",
+        "targetAlias": "PipelineActionsModals",
+        "targetProp": "pipelineId",
+        "isPure": false
+      },
+      {
+        "source": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsModals",
+        "target": "components\\PipelineActionsMenu\\components\\RerunPipelineModal\\RerunPipelineModal.tsx:RerunPipelineModal",
+        "targetAlias": "RerunPipelineModal",
+        "targetProp": "pipelineId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsMenu",
+    "targetComponent": "components\\PipelineActionsMenu\\components\\RerunPipelineModal\\RerunPipelineModal.tsx:RerunPipelineModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsMenu",
+        "target": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsModals",
+        "targetAlias": "PipelineActionsModals",
+        "targetProp": "closeRerunPipelineModal",
+        "isPure": false
+      },
+      {
+        "source": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsModals",
+        "target": "components\\PipelineActionsMenu\\components\\RerunPipelineModal\\RerunPipelineModal.tsx:RerunPipelineModal",
+        "targetAlias": "RerunPipelineModal",
+        "targetProp": "onHide",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsMenu",
+    "targetComponent": "components\\PipelineActionsMenu\\components\\RerunPipelineModal\\RerunPipelineModal.tsx:RerunPipelineModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsMenu",
+        "target": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsModals",
+        "targetAlias": "PipelineActionsModals",
+        "targetProp": "rerunPipelineModalIsOpen",
+        "isPure": false
+      },
+      {
+        "source": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsModals",
+        "target": "components\\PipelineActionsMenu\\components\\RerunPipelineModal\\RerunPipelineModal.tsx:RerunPipelineModal",
+        "targetAlias": "RerunPipelineModal",
+        "targetProp": "show",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsMenu",
+    "targetComponent": "components\\PipelineActionsMenu\\components\\DeletePipelineModal\\DeletePipelineModal.tsx:DeletePipelineButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsMenu",
+        "target": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsModals",
+        "targetAlias": "PipelineActionsModals",
+        "targetProp": "pipelineId",
+        "isPure": false
+      },
+      {
+        "source": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsModals",
+        "target": "components\\PipelineActionsMenu\\components\\DeletePipelineModal\\DeletePipelineModal.tsx:DeletePipelineButton",
+        "targetAlias": "DeletePipelineModal",
+        "targetProp": "pipelineId",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsMenu",
+    "targetComponent": "components\\PipelineActionsMenu\\components\\DeletePipelineModal\\DeletePipelineModal.tsx:DeletePipelineButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsMenu",
+        "target": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsModals",
+        "targetAlias": "PipelineActionsModals",
+        "targetProp": "setDeleteModalOpen",
+        "isPure": false
+      },
+      {
+        "source": "components\\PipelineActionsMenu\\PipelineActionsMenu.tsx:PipelineActionsModals",
+        "target": "components\\PipelineActionsMenu\\components\\DeletePipelineModal\\DeletePipelineModal.tsx:DeletePipelineButton",
+        "targetAlias": "DeletePipelineModal",
+        "targetProp": "setModalOpen",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\ClusterRolesModal\\ClusterRolesModal.tsx:ClusterRolesModal",
+    "targetComponent": "components\\RolesModal\\components\\AssignRolesForm\\AssignRolesForm.tsx:AssignRolesForm",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\ClusterRolesModal\\ClusterRolesModal.tsx:ClusterRolesModal",
+        "target": "components\\RolesModal\\RolesModal.tsx:RolesModal",
+        "targetAlias": "RolesModal",
+        "targetProp": "resourceType",
+        "isPure": false
+      },
+      {
+        "source": "components\\RolesModal\\RolesModal.tsx:RolesModal",
+        "target": "components\\RolesModal\\components\\AssignRolesForm\\AssignRolesForm.tsx:AssignRolesForm",
+        "targetAlias": "AssignRolesForm",
+        "targetProp": "resourceType",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  }
+]

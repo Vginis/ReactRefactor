@@ -697,7 +697,7 @@
         "target": "components\\Toggle.js:Toggle",
         "targetAlias": "Toggle",
         "targetProp": "enabled",
-        "isPure": false
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -721,7 +721,7 @@
         "target": "components\\Toggle.js:Toggle",
         "targetAlias": "Toggle",
         "targetProp": "enabled",
-        "isPure": false
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -745,7 +745,7 @@
         "target": "components\\Toggle.js:Toggle",
         "targetAlias": "Toggle",
         "targetProp": "enabled",
-        "isPure": false
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -1128,7 +1128,7 @@
         "source": "components\\Presets.js:Presets",
         "target": "components\\Presets.js:Preset",
         "targetAlias": "Preset",
-        "targetProp": "preset",
+        "targetProp": "selected",
         "isPure": true
       }
     ],

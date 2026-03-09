@@ -1160,7 +1160,7 @@
         "target": "features\\logs\\components\\fieldSelector\\FieldSelector.tsx:FieldSelector",
         "targetAlias": "FieldSelector",
         "targetProp": "clear",
-        "isPure": true
+        "isPure": false
       },
       {
         "source": "features\\logs\\components\\fieldSelector\\FieldSelector.tsx:FieldSelector",
@@ -1387,7 +1387,7 @@
         "source": "core\\components\\RolePicker\\UserRolePicker.tsx:UserRolePicker",
         "target": "core\\components\\RolePicker\\RolePicker.tsx:RolePicker",
         "targetAlias": "RolePicker",
-        "targetProp": "disabled",
+        "targetProp": "basicRoleDisabled",
         "isPure": true
       },
       {
@@ -2891,38 +2891,38 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "features\\admin\\UserAdminPage.tsx:UserAdminPage",
-    "targetComponent": "core\\components\\RolePicker\\RolePicker.tsx:RolePicker",
+    "sourceComponent": "features\\alerting\\unified\\components\\receivers\\form\\ChannelSubForm.tsx:ChannelSubForm",
+    "targetComponent": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionField",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
-        "source": "features\\admin\\UserAdminPage.tsx:UserAdminPage",
-        "target": "features\\admin\\UserOrgs.tsx:UserOrgs",
-        "targetAlias": "UserOrgs",
-        "targetProp": "onOrgRoleChange",
+        "source": "features\\alerting\\unified\\components\\receivers\\form\\ChannelSubForm.tsx:ChannelSubForm",
+        "target": "features\\alerting\\unified\\components\\receivers\\form\\ChannelOptions.tsx:ChannelOptions",
+        "targetAlias": "ChannelOptions",
+        "targetProp": "readOnly",
+        "isPure": true
+      },
+      {
+        "source": "features\\alerting\\unified\\components\\receivers\\form\\ChannelOptions.tsx:ChannelOptions",
+        "target": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionField",
+        "targetAlias": "OptionField",
+        "targetProp": "readOnly",
         "isPure": false
       },
       {
-        "source": "features\\admin\\UserOrgs.tsx:UserOrgs",
-        "target": "features\\admin\\UserOrgs.tsx:OrgRow",
-        "targetAlias": "OrgRow",
-        "targetProp": "onOrgRoleChange",
-        "isPure": true
+        "source": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionField",
+        "target": "features\\alerting\\unified\\components\\receivers\\form\\fields\\SubformField.tsx:SubformField",
+        "targetAlias": "SubformField",
+        "targetProp": "readOnly",
+        "isPure": false
       },
       {
-        "source": "features\\admin\\UserOrgs.tsx:OrgRow",
-        "target": "core\\components\\RolePicker\\UserRolePicker.tsx:UserRolePicker",
-        "targetAlias": "UserRolePicker",
-        "targetProp": "onBasicRoleChange",
-        "isPure": true
-      },
-      {
-        "source": "core\\components\\RolePicker\\UserRolePicker.tsx:UserRolePicker",
-        "target": "core\\components\\RolePicker\\RolePicker.tsx:RolePicker",
-        "targetAlias": "RolePicker",
-        "targetProp": "onBasicRoleChange",
-        "isPure": true
+        "source": "features\\alerting\\unified\\components\\receivers\\form\\fields\\SubformField.tsx:SubformField",
+        "target": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionField",
+        "targetAlias": "OptionField",
+        "targetProp": "readOnly",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -2945,7 +2945,7 @@
         "source": "core\\components\\RolePicker\\UserRolePicker.tsx:UserRolePicker",
         "target": "core\\components\\RolePicker\\RolePicker.tsx:RolePicker",
         "targetAlias": "RolePicker",
-        "targetProp": "disabled",
+        "targetProp": "basicRoleDisabled",
         "isPure": true
       },
       {
@@ -3021,7 +3021,7 @@
         "source": "core\\components\\RolePicker\\UserRolePicker.tsx:UserRolePicker",
         "target": "core\\components\\RolePicker\\RolePicker.tsx:RolePicker",
         "targetAlias": "RolePicker",
-        "targetProp": "disabled",
+        "targetProp": "basicRoleDisabled",
         "isPure": true
       },
       {
@@ -3036,44 +3036,6 @@
         "target": "core\\components\\RolePicker\\BuiltinRoleSelector.tsx:BuiltinRoleSelector",
         "targetAlias": "BuiltinRoleSelector",
         "targetProp": "disabled",
-        "isPure": true
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "features\\admin\\UserOrgs.tsx:AddToOrgModal",
-    "targetComponent": "core\\components\\RolePicker\\BuiltinRoleSelector.tsx:BuiltinRoleSelector",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\admin\\UserOrgs.tsx:AddToOrgModal",
-        "target": "core\\components\\RolePicker\\UserRolePicker.tsx:UserRolePicker",
-        "targetAlias": "UserRolePicker",
-        "targetProp": "basicRoleDisabledMessage",
-        "isPure": true
-      },
-      {
-        "source": "core\\components\\RolePicker\\UserRolePicker.tsx:UserRolePicker",
-        "target": "core\\components\\RolePicker\\RolePicker.tsx:RolePicker",
-        "targetAlias": "RolePicker",
-        "targetProp": "basicRoleDisabledMessage",
-        "isPure": true
-      },
-      {
-        "source": "core\\components\\RolePicker\\RolePicker.tsx:RolePicker",
-        "target": "core\\components\\RolePicker\\RolePickerMenu.tsx:RolePickerMenu",
-        "targetAlias": "RolePickerMenu",
-        "targetProp": "disabledMessage",
-        "isPure": true
-      },
-      {
-        "source": "core\\components\\RolePicker\\RolePickerMenu.tsx:RolePickerMenu",
-        "target": "core\\components\\RolePicker\\BuiltinRoleSelector.tsx:BuiltinRoleSelector",
-        "targetAlias": "BuiltinRoleSelector",
-        "targetProp": "disabledMesssage",
         "isPure": true
       }
     ],
@@ -3897,7 +3859,7 @@
         "target": "features\\logs\\components\\fieldSelector\\FieldSelector.tsx:FieldSelector",
         "targetAlias": "FieldSelector",
         "targetProp": "activeFields",
-        "isPure": true
+        "isPure": false
       },
       {
         "source": "features\\logs\\components\\fieldSelector\\FieldSelector.tsx:FieldSelector",
@@ -3928,7 +3890,7 @@
         "target": "features\\logs\\components\\fieldSelector\\FieldSelector.tsx:FieldSelector",
         "targetAlias": "FieldSelector",
         "targetProp": "activeFields",
-        "isPure": true
+        "isPure": false
       },
       {
         "source": "features\\logs\\components\\fieldSelector\\FieldSelector.tsx:FieldSelector",
@@ -4857,14 +4819,14 @@
         "source": "features\\variables\\editor\\VariableEditorContainer.tsx:VariableEditorContainerUnconnected",
         "target": "features\\variables\\editor\\VariableEditorList.tsx:VariableEditorList",
         "targetAlias": "VariableEditorList",
-        "targetProp": "usages",
+        "targetProp": "usagesNetwork",
         "isPure": true
       },
       {
         "source": "features\\variables\\editor\\VariableEditorList.tsx:VariableEditorList",
         "target": "features\\variables\\editor\\VariableEditorListRow.tsx:VariableEditorListRow",
         "targetAlias": "VariableEditorListRow",
-        "targetProp": "usageTree",
+        "targetProp": "usagesNetwork",
         "isPure": true
       },
       {
@@ -4903,7 +4865,7 @@
         "target": "features\\dashboard-scene\\settings\\variables\\components\\VariableCheckboxField.tsx:VariableCheckboxField",
         "targetAlias": "VariableCheckboxField",
         "targetProp": "value",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -4934,7 +4896,7 @@
         "target": "features\\dashboard-scene\\settings\\variables\\components\\VariableCheckboxField.tsx:VariableCheckboxField",
         "targetAlias": "VariableCheckboxField",
         "targetProp": "value",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -4950,7 +4912,7 @@
         "source": "features\\variables\\datasource\\DataSourceVariableEditor.tsx:DataSourceVariableEditorUnConnected",
         "target": "features\\dashboard-scene\\settings\\variables\\components\\DataSourceVariableForm.tsx:DataSourceVariableForm",
         "targetAlias": "DataSourceVariableForm",
-        "targetProp": "onChange",
+        "targetProp": "onMultiChange",
         "isPure": true
       },
       {
@@ -4981,7 +4943,7 @@
         "source": "features\\variables\\datasource\\DataSourceVariableEditor.tsx:DataSourceVariableEditorUnConnected",
         "target": "features\\dashboard-scene\\settings\\variables\\components\\DataSourceVariableForm.tsx:DataSourceVariableForm",
         "targetAlias": "DataSourceVariableForm",
-        "targetProp": "onChange",
+        "targetProp": "onIncludeAllChange",
         "isPure": true
       },
       {
@@ -5058,7 +5020,7 @@
         "target": "features\\dashboard-scene\\settings\\variables\\components\\VariableCheckboxField.tsx:VariableCheckboxField",
         "targetAlias": "VariableCheckboxField",
         "targetProp": "value",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -5089,7 +5051,7 @@
         "target": "features\\dashboard-scene\\settings\\variables\\components\\VariableCheckboxField.tsx:VariableCheckboxField",
         "targetAlias": "VariableCheckboxField",
         "targetProp": "value",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -5291,7 +5253,7 @@
         "source": "core\\components\\RolePicker\\TeamRolePicker.tsx:TeamRolePicker",
         "target": "core\\components\\RolePicker\\RolePicker.tsx:RolePicker",
         "targetAlias": "RolePicker",
-        "targetProp": "disabled",
+        "targetProp": "basicRoleDisabled",
         "isPure": true
       },
       {
@@ -6306,37 +6268,6 @@
   },
   {
     "sourceComponent": "features\\dashboard-scene\\settings\\AnnotationsEditView.tsx:AnnotationsSettingsView",
-    "targetComponent": "core\\components\\Page\\PageTabs.tsx:PageTabs",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\dashboard-scene\\settings\\AnnotationsEditView.tsx:AnnotationsSettingsView",
-        "target": "features\\dashboard-scene\\settings\\AnnotationsEditView.tsx:AnnotationsSettingsEditView",
-        "targetAlias": "AnnotationsSettingsEditView",
-        "targetProp": "pageNav",
-        "isPure": false
-      },
-      {
-        "source": "features\\dashboard-scene\\settings\\AnnotationsEditView.tsx:AnnotationsSettingsEditView",
-        "target": "core\\components\\Page\\Page.tsx:Page",
-        "targetAlias": "Page",
-        "targetProp": "pageNav",
-        "isPure": false
-      },
-      {
-        "source": "core\\components\\Page\\Page.tsx:Page",
-        "target": "core\\components\\Page\\PageTabs.tsx:PageTabs",
-        "targetAlias": "PageTabs",
-        "targetProp": "navItem",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "features\\dashboard-scene\\settings\\AnnotationsEditView.tsx:AnnotationsSettingsView",
     "targetComponent": "features\\dashboard-scene\\scene\\new-toolbar\\LeftActions.tsx:LeftActions",
     "canRefactorWithContext": false,
     "canRefactorWithComposition": true,
@@ -6454,37 +6385,6 @@
         "targetAlias": "AnnotationQueryEditorActionsWrapper",
         "targetProp": "annotation",
         "isPure": true
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "features\\dashboard-scene\\settings\\DashboardLinksEditView.tsx:DashboardLinksEditViewRenderer",
-    "targetComponent": "core\\components\\Page\\PageTabs.tsx:PageTabs",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\dashboard-scene\\settings\\DashboardLinksEditView.tsx:DashboardLinksEditViewRenderer",
-        "target": "features\\dashboard-scene\\settings\\DashboardLinksEditView.tsx:EditLinkView",
-        "targetAlias": "EditLinkView",
-        "targetProp": "pageNav",
-        "isPure": false
-      },
-      {
-        "source": "features\\dashboard-scene\\settings\\DashboardLinksEditView.tsx:EditLinkView",
-        "target": "core\\components\\Page\\Page.tsx:Page",
-        "targetAlias": "Page",
-        "targetProp": "pageNav",
-        "isPure": false
-      },
-      {
-        "source": "core\\components\\Page\\Page.tsx:Page",
-        "target": "core\\components\\Page\\PageTabs.tsx:PageTabs",
-        "targetAlias": "PageTabs",
-        "targetProp": "navItem",
-        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -6717,14 +6617,14 @@
         "source": "features\\dashboard-scene\\settings\\VariablesEditView.tsx:VariableEditorSettingsListView",
         "target": "features\\dashboard-scene\\settings\\variables\\VariableEditorList.tsx:VariableEditorList",
         "targetAlias": "VariableEditorList",
-        "targetProp": "usages",
+        "targetProp": "usagesNetwork",
         "isPure": false
       },
       {
         "source": "features\\dashboard-scene\\settings\\variables\\VariableEditorList.tsx:VariableEditorList",
         "target": "features\\dashboard-scene\\settings\\variables\\VariableEditorListRow.tsx:VariableEditorListRow",
         "targetAlias": "VariableEditorListRow",
-        "targetProp": "usageTree",
+        "targetProp": "usagesNetwork",
         "isPure": true
       },
       {
@@ -6763,7 +6663,7 @@
         "target": "features\\dashboard-scene\\settings\\variables\\components\\VariableCheckboxField.tsx:VariableCheckboxField",
         "targetAlias": "VariableCheckboxField",
         "targetProp": "value",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -6779,7 +6679,7 @@
         "source": "features\\dashboard-scene\\settings\\variables\\editors\\DataSourceVariableEditor.tsx:DataSourceVariableEditor",
         "target": "features\\dashboard-scene\\settings\\variables\\components\\DataSourceVariableForm.tsx:DataSourceVariableForm",
         "targetAlias": "DataSourceVariableForm",
-        "targetProp": "onChange",
+        "targetProp": "onMultiChange",
         "isPure": false
       },
       {
@@ -6810,7 +6710,7 @@
         "source": "features\\dashboard-scene\\settings\\variables\\editors\\DataSourceVariableEditor.tsx:DataSourceVariableEditor",
         "target": "features\\dashboard-scene\\settings\\variables\\components\\DataSourceVariableForm.tsx:DataSourceVariableForm",
         "targetAlias": "DataSourceVariableForm",
-        "targetProp": "onChange",
+        "targetProp": "onIncludeAllChange",
         "isPure": false
       },
       {
@@ -6841,7 +6741,7 @@
         "source": "features\\dashboard-scene\\settings\\variables\\editors\\DataSourceVariableEditor.tsx:DataSourceVariableEditor",
         "target": "features\\dashboard-scene\\settings\\variables\\components\\DataSourceVariableForm.tsx:DataSourceVariableForm",
         "targetAlias": "DataSourceVariableForm",
-        "targetProp": "onChange",
+        "targetProp": "onAllowCustomValueChange",
         "isPure": false
       },
       {
@@ -7269,7 +7169,7 @@
     "sourceComponent": "features\\dashboard-scene\\scene\\DashboardSceneRenderer.tsx:DashboardSceneRenderer",
     "targetComponent": "features\\dashboard-scene\\scene\\new-toolbar\\LeftActions.tsx:LeftActions",
     "canRefactorWithContext": false,
-    "canRefactorWithComposition": false,
+    "canRefactorWithComposition": true,
     "propPassings": [
       {
         "source": "features\\dashboard-scene\\scene\\DashboardSceneRenderer.tsx:DashboardSceneRenderer",
@@ -7294,13 +7194,13 @@
       }
     ],
     "destinationWithMultipleParentsPrec": false,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
+    "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
     "sourceComponent": "features\\dashboard-scene\\scene\\DashboardSceneRenderer.tsx:DashboardSceneRenderer",
     "targetComponent": "features\\dashboard-scene\\scene\\new-toolbar\\RightActions.tsx:RightActions",
     "canRefactorWithContext": false,
-    "canRefactorWithComposition": false,
+    "canRefactorWithComposition": true,
     "propPassings": [
       {
         "source": "features\\dashboard-scene\\scene\\DashboardSceneRenderer.tsx:DashboardSceneRenderer",
@@ -7325,13 +7225,13 @@
       }
     ],
     "destinationWithMultipleParentsPrec": false,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
+    "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
     "sourceComponent": "features\\dashboard-scene\\scene\\DashboardSceneRenderer.tsx:DashboardSceneRenderer",
     "targetComponent": "features\\dashboard-scene\\scene\\NavToolbarActions.tsx:ToolbarActions",
     "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
+    "canRefactorWithComposition": true,
     "propPassings": [
       {
         "source": "features\\dashboard-scene\\scene\\DashboardSceneRenderer.tsx:DashboardSceneRenderer",
@@ -7356,7 +7256,7 @@
       }
     ],
     "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
+    "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
     "sourceComponent": "features\\dashboard-scene\\edit-pane\\DashboardEditPaneSplitter.tsx:DashboardEditPaneSplitter",
@@ -9591,11 +9491,18 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "features\\alerting\\unified\\components\\receivers\\form\\ChannelOptions.tsx:ChannelOptions",
-    "targetComponent": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionField",
+    "sourceComponent": "features\\alerting\\unified\\components\\receivers\\form\\ChannelSubForm.tsx:ChannelSubForm",
+    "targetComponent": "features\\alerting\\unified\\components\\receivers\\form\\fields\\SubformArrayField.tsx:SubformArrayField",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
+      {
+        "source": "features\\alerting\\unified\\components\\receivers\\form\\ChannelSubForm.tsx:ChannelSubForm",
+        "target": "features\\alerting\\unified\\components\\receivers\\form\\ChannelOptions.tsx:ChannelOptions",
+        "targetAlias": "ChannelOptions",
+        "targetProp": "readOnly",
+        "isPure": true
+      },
       {
         "source": "features\\alerting\\unified\\components\\receivers\\form\\ChannelOptions.tsx:ChannelOptions",
         "target": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionField",
@@ -9605,15 +9512,8 @@
       },
       {
         "source": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionField",
-        "target": "features\\alerting\\unified\\components\\receivers\\form\\fields\\SubformField.tsx:SubformField",
-        "targetAlias": "SubformField",
-        "targetProp": "readOnly",
-        "isPure": false
-      },
-      {
-        "source": "features\\alerting\\unified\\components\\receivers\\form\\fields\\SubformField.tsx:SubformField",
-        "target": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionField",
-        "targetAlias": "OptionField",
+        "target": "features\\alerting\\unified\\components\\receivers\\form\\fields\\SubformArrayField.tsx:SubformArrayField",
+        "targetAlias": "SubformArrayField",
         "targetProp": "readOnly",
         "isPure": false
       }
@@ -9646,6 +9546,37 @@
         "target": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionInput",
         "targetAlias": "OptionInput",
         "targetProp": "onResetSecureField",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\alerting\\unified\\components\\receivers\\form\\ChannelSubForm.tsx:ChannelSubForm",
+    "targetComponent": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionInput",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\alerting\\unified\\components\\receivers\\form\\ChannelSubForm.tsx:ChannelSubForm",
+        "target": "features\\alerting\\unified\\components\\receivers\\form\\ChannelOptions.tsx:ChannelOptions",
+        "targetAlias": "ChannelOptions",
+        "targetProp": "readOnly",
+        "isPure": true
+      },
+      {
+        "source": "features\\alerting\\unified\\components\\receivers\\form\\ChannelOptions.tsx:ChannelOptions",
+        "target": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionField",
+        "targetAlias": "OptionField",
+        "targetProp": "readOnly",
+        "isPure": false
+      },
+      {
+        "source": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionField",
+        "target": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionInput",
+        "targetAlias": "OptionInput",
+        "targetProp": "readOnly",
         "isPure": false
       }
     ],
@@ -9864,37 +9795,6 @@
         "targetAlias": "Tokenize",
         "targetProp": "input",
         "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "features\\admin\\UserOrgs.tsx:OrgRow",
-    "targetComponent": "core\\components\\RolePicker\\RolePickerMenu.tsx:RolePickerMenu",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\admin\\UserOrgs.tsx:OrgRow",
-        "target": "core\\components\\RolePicker\\UserRolePicker.tsx:UserRolePicker",
-        "targetAlias": "UserRolePicker",
-        "targetProp": "apply",
-        "isPure": true
-      },
-      {
-        "source": "core\\components\\RolePicker\\UserRolePicker.tsx:UserRolePicker",
-        "target": "core\\components\\RolePicker\\RolePicker.tsx:RolePicker",
-        "targetAlias": "RolePicker",
-        "targetProp": "apply",
-        "isPure": false
-      },
-      {
-        "source": "core\\components\\RolePicker\\RolePicker.tsx:RolePicker",
-        "target": "core\\components\\RolePicker\\RolePickerMenu.tsx:RolePickerMenu",
-        "targetAlias": "RolePickerMenu",
-        "targetProp": "apply",
-        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -10635,7 +10535,7 @@
         "target": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\SpanDetail\\AccordianKeyValues.tsx:AccordianKeyValues",
         "targetAlias": "AccordianKeyValues",
         "targetProp": "data",
-        "isPure": false
+        "isPure": true
       },
       {
         "source": "features\\explore\\TraceView\\components\\TraceTimelineViewer\\SpanDetail\\AccordianKeyValues.tsx:AccordianKeyValues",
@@ -11138,7 +11038,7 @@
         "source": "features\\logs\\components\\panel\\LogLineDetailsDisplayedFields.tsx:LogLineDetailsDisplayedFields",
         "target": "features\\logs\\components\\panel\\LogLineDetailsDisplayedFields.tsx:DraggableDisplayedField",
         "targetAlias": "DraggableDisplayedField",
-        "targetProp": "key",
+        "targetProp": "field",
         "isPure": false
       },
       {
@@ -11225,58 +11125,10 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "features\\logs\\components\\panel\\LogLineDetailsFields.tsx:LogLineDetailsLabelFields",
-    "targetComponent": "features\\logs\\components\\panel\\LogLineDetailsFields.tsx:MultipleValue",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\logs\\components\\panel\\LogLineDetailsFields.tsx:LogLineDetailsLabelFields",
-        "target": "features\\logs\\components\\panel\\LogLineDetailsFields.tsx:LogLineDetailsField",
-        "targetAlias": "LogLineDetailsField",
-        "targetProp": "keys",
-        "isPure": true
-      },
-      {
-        "source": "features\\logs\\components\\panel\\LogLineDetailsFields.tsx:LogLineDetailsField",
-        "target": "features\\logs\\components\\panel\\LogLineDetailsFields.tsx:MultipleValue",
-        "targetAlias": "MultipleValue",
-        "targetProp": "values",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "features\\logs\\components\\panel\\LogLineDetailsFields.tsx:LogLineDetailsLabelFields",
-    "targetComponent": "features\\logs\\components\\panel\\LogLineDetailsFields.tsx:MultipleValue",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\logs\\components\\panel\\LogLineDetailsFields.tsx:LogLineDetailsLabelFields",
-        "target": "features\\logs\\components\\panel\\LogLineDetailsFields.tsx:LogLineDetailsField",
-        "targetAlias": "LogLineDetailsField",
-        "targetProp": "values",
-        "isPure": true
-      },
-      {
-        "source": "features\\logs\\components\\panel\\LogLineDetailsFields.tsx:LogLineDetailsField",
-        "target": "features\\logs\\components\\panel\\LogLineDetailsFields.tsx:MultipleValue",
-        "targetAlias": "MultipleValue",
-        "targetProp": "values",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
     "sourceComponent": "features\\logs\\components\\panel\\LogLineDetailsFields.tsx:LogLineDetailsField",
     "targetComponent": "features\\logs\\components\\panel\\LogLineDetailsFields.tsx:ClipboardButtonWrapper",
     "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
+    "canRefactorWithComposition": true,
     "propPassings": [
       {
         "source": "features\\logs\\components\\panel\\LogLineDetailsFields.tsx:LogLineDetailsField",
@@ -11290,11 +11142,11 @@
         "target": "features\\logs\\components\\panel\\LogLineDetailsFields.tsx:ClipboardButtonWrapper",
         "targetAlias": "ClipboardButtonWrapper",
         "targetProp": "value",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
+    "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
     "sourceComponent": "features\\logs\\components\\panel\\LogLineDetailsFields.tsx:LogLineDetailsFields",
@@ -12834,7 +12686,7 @@
   },
   {
     "sourceComponent": "plugins\\datasource\\tempo\\QueryField.tsx:TempoQueryFieldComponent",
-    "targetComponent": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\InlineSearchField.tsx:SearchField",
+    "targetComponent": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\SearchField.tsx:SearchField",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
@@ -12847,8 +12699,8 @@
       },
       {
         "source": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\TraceQLSearch.tsx:TraceQLSearch",
-        "target": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\InlineSearchField.tsx:SearchField",
-        "targetAlias": "InlineSearchField",
+        "target": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\SearchField.tsx:SearchField",
+        "targetAlias": "SearchField",
         "targetProp": "datasource",
         "isPure": false
       }
@@ -12858,7 +12710,7 @@
   },
   {
     "sourceComponent": "plugins\\datasource\\tempo\\QueryField.tsx:TempoQueryFieldComponent",
-    "targetComponent": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\InlineSearchField.tsx:SearchField",
+    "targetComponent": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\SearchField.tsx:SearchField",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
@@ -12871,8 +12723,8 @@
       },
       {
         "source": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\TraceQLSearch.tsx:TraceQLSearch",
-        "target": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\InlineSearchField.tsx:SearchField",
-        "targetAlias": "InlineSearchField",
+        "target": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\SearchField.tsx:SearchField",
+        "targetAlias": "SearchField",
         "targetProp": "addVariablesToOptions",
         "isPure": false
       }
@@ -12882,7 +12734,7 @@
   },
   {
     "sourceComponent": "plugins\\datasource\\tempo\\QueryField.tsx:TempoQueryFieldComponent",
-    "targetComponent": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\InlineSearchField.tsx:SearchField",
+    "targetComponent": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\SearchField.tsx:SearchField",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": false,
     "propPassings": [
@@ -12895,8 +12747,8 @@
       },
       {
         "source": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\TraceQLSearch.tsx:TraceQLSearch",
-        "target": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\InlineSearchField.tsx:SearchField",
-        "targetAlias": "InlineSearchField",
+        "target": "plugins\\datasource\\tempo\\SearchTraceQLEditor\\SearchField.tsx:SearchField",
+        "targetAlias": "SearchField",
         "targetProp": "range",
         "isPure": false
       }
@@ -14930,7 +14782,7 @@
         "source": "plugins\\datasource\\cloud-monitoring\\components\\QueryEditor.tsx:QueryEditor",
         "target": "plugins\\datasource\\cloud-monitoring\\components\\SLOQueryEditor.tsx:SLOQueryEditor",
         "targetAlias": "SLOQueryEditor",
-        "targetProp": "onChange",
+        "targetProp": "onChangeAliasBy",
         "isPure": false
       },
       {
@@ -16714,7 +16566,7 @@
         "target": "features\\dashboard-scene\\settings\\variables\\components\\VariableCheckboxField.tsx:VariableCheckboxField",
         "targetAlias": "VariableCheckboxField",
         "targetProp": "value",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -16930,7 +16782,7 @@
         "target": "features\\dashboard-scene\\settings\\variables\\components\\VariableCheckboxField.tsx:VariableCheckboxField",
         "targetAlias": "VariableCheckboxField",
         "targetProp": "value",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -16954,7 +16806,7 @@
         "target": "features\\dashboard-scene\\settings\\variables\\components\\VariableCheckboxField.tsx:VariableCheckboxField",
         "targetAlias": "VariableCheckboxField",
         "targetProp": "value",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -19827,7 +19679,7 @@
         "target": "core\\components\\Page\\Page.tsx:Page",
         "targetAlias": "Page",
         "targetProp": "pageNav",
-        "isPure": true
+        "isPure": false
       },
       {
         "source": "core\\components\\Page\\Page.tsx:Page",
@@ -20177,30 +20029,6 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "features\\logs\\components\\LogDetails.tsx:UnThemedLogDetails",
-    "targetComponent": "features\\logs\\components\\LogLabelStats.tsx:LogLabelStats",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\logs\\components\\LogDetails.tsx:UnThemedLogDetails",
-        "target": "features\\logs\\components\\LogDetailsRow.tsx:UnThemedLogDetailsRow",
-        "targetAlias": "LogDetailsRow",
-        "targetProp": "isLabel",
-        "isPure": true
-      },
-      {
-        "source": "features\\logs\\components\\LogDetailsRow.tsx:UnThemedLogDetailsRow",
-        "target": "features\\logs\\components\\LogLabelStats.tsx:LogLabelStats",
-        "targetAlias": "LogLabelStats",
-        "targetProp": "isLabel",
-        "isPure": true
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
     "sourceComponent": "features\\logs\\components\\panel\\LogLine.tsx:LogLine",
     "targetComponent": "features\\logs\\components\\panel\\LogLineMenu.tsx:LogLineMenu",
     "canRefactorWithContext": true,
@@ -20290,30 +20118,6 @@
         "target": "features\\logs\\components\\panel\\LogLine.tsx:Log",
         "targetAlias": "Log",
         "targetProp": "wrapLogMessage",
-        "isPure": true
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "features\\logs\\components\\panel\\LogLineDetails.tsx:InlineLogLineDetails",
-    "targetComponent": "features\\logs\\components\\panel\\LogLineDetailsHeader.tsx:LogLineDetailsHeader",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\logs\\components\\panel\\LogLineDetails.tsx:InlineLogLineDetails",
-        "target": "features\\logs\\components\\panel\\LogLineDetailsComponent.tsx:LogLineDetailsComponent",
-        "targetAlias": "LogLineDetailsComponent",
-        "targetProp": "focusLogLine",
-        "isPure": true
-      },
-      {
-        "source": "features\\logs\\components\\panel\\LogLineDetailsComponent.tsx:LogLineDetailsComponent",
-        "target": "features\\logs\\components\\panel\\LogLineDetailsHeader.tsx:LogLineDetailsHeader",
-        "targetAlias": "LogLineDetailsHeader",
-        "targetProp": "focusLogLine",
         "isPure": true
       }
     ],
@@ -20938,54 +20742,6 @@
         "target": "features\\logs\\components\\LogRows.tsx:LogRows",
         "targetAlias": "LogRows",
         "targetProp": "timeZone",
-        "isPure": true
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
-    "targetComponent": "features\\explore\\SupplementaryResultError.tsx:SupplementaryResultError",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
-        "target": "features\\explore\\Logs\\LogsVolumePanelList.tsx:LogsVolumePanelList",
-        "targetAlias": "LogsVolumePanelList",
-        "targetProp": "onLoadLogsVolume",
-        "isPure": false
-      },
-      {
-        "source": "features\\explore\\Logs\\LogsVolumePanelList.tsx:LogsVolumePanelList",
-        "target": "features\\explore\\SupplementaryResultError.tsx:SupplementaryResultError",
-        "targetAlias": "SupplementaryResultError",
-        "targetProp": "onSuggestedAction",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
-    "targetComponent": "features\\explore\\SupplementaryResultError.tsx:SupplementaryResultError",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\explore\\Logs\\Logs.tsx:UnthemedLogs",
-        "target": "features\\explore\\Logs\\LogsVolumePanelList.tsx:LogsVolumePanelList",
-        "targetAlias": "LogsVolumePanelList",
-        "targetProp": "onClose",
-        "isPure": true
-      },
-      {
-        "source": "features\\explore\\Logs\\LogsVolumePanelList.tsx:LogsVolumePanelList",
-        "target": "features\\explore\\SupplementaryResultError.tsx:SupplementaryResultError",
-        "targetAlias": "SupplementaryResultError",
-        "targetProp": "onRemove",
         "isPure": true
       }
     ],
@@ -22889,6 +22645,30 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "features\\dashboard-scene\\settings\\AnnotationsEditView.tsx:AnnotationsSettingsEditView",
+    "targetComponent": "core\\components\\Page\\PageTabs.tsx:PageTabs",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\dashboard-scene\\settings\\AnnotationsEditView.tsx:AnnotationsSettingsEditView",
+        "target": "core\\components\\Page\\Page.tsx:Page",
+        "targetAlias": "Page",
+        "targetProp": "pageNav",
+        "isPure": false
+      },
+      {
+        "source": "core\\components\\Page\\Page.tsx:Page",
+        "target": "core\\components\\Page\\PageTabs.tsx:PageTabs",
+        "targetAlias": "PageTabs",
+        "targetProp": "navItem",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
     "sourceComponent": "features\\dashboard-scene\\settings\\AnnotationsEditView.tsx:AnnotationsSettingsView",
     "targetComponent": "features\\dashboard-scene\\settings\\annotations\\AnnotationSettingsEdit.tsx:AnnotationSettingsEdit",
     "canRefactorWithContext": true,
@@ -23033,6 +22813,30 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "features\\dashboard-scene\\settings\\AnnotationsEditView.tsx:AnnotationsSettingsView",
+    "targetComponent": "core\\components\\Page\\PageTabs.tsx:PageTabs",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\dashboard-scene\\settings\\AnnotationsEditView.tsx:AnnotationsSettingsView",
+        "target": "core\\components\\Page\\Page.tsx:Page",
+        "targetAlias": "Page",
+        "targetProp": "pageNav",
+        "isPure": false
+      },
+      {
+        "source": "core\\components\\Page\\Page.tsx:Page",
+        "target": "core\\components\\Page\\PageTabs.tsx:PageTabs",
+        "targetAlias": "PageTabs",
+        "targetProp": "navItem",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
     "sourceComponent": "features\\dashboard-scene\\settings\\DashboardLinksEditView.tsx:DashboardLinksEditViewRenderer",
     "targetComponent": "core\\components\\Page\\Page.tsx:Page",
     "canRefactorWithContext": false,
@@ -23055,6 +22859,30 @@
     ],
     "destinationWithMultipleParentsPrec": false,
     "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\dashboard-scene\\settings\\DashboardLinksEditView.tsx:EditLinkView",
+    "targetComponent": "core\\components\\Page\\PageTabs.tsx:PageTabs",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\dashboard-scene\\settings\\DashboardLinksEditView.tsx:EditLinkView",
+        "target": "core\\components\\Page\\Page.tsx:Page",
+        "targetAlias": "Page",
+        "targetProp": "pageNav",
+        "isPure": false
+      },
+      {
+        "source": "core\\components\\Page\\Page.tsx:Page",
+        "target": "core\\components\\Page\\PageTabs.tsx:PageTabs",
+        "targetAlias": "PageTabs",
+        "targetProp": "navItem",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
     "sourceComponent": "features\\dashboard-scene\\settings\\DashboardLinksEditView.tsx:DashboardLinksEditViewRenderer",
@@ -23103,6 +22931,30 @@
     ],
     "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\dashboard-scene\\settings\\DashboardLinksEditView.tsx:DashboardLinksEditViewRenderer",
+    "targetComponent": "core\\components\\Page\\PageTabs.tsx:PageTabs",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\dashboard-scene\\settings\\DashboardLinksEditView.tsx:DashboardLinksEditViewRenderer",
+        "target": "core\\components\\Page\\Page.tsx:Page",
+        "targetAlias": "Page",
+        "targetProp": "pageNav",
+        "isPure": false
+      },
+      {
+        "source": "core\\components\\Page\\Page.tsx:Page",
+        "target": "core\\components\\Page\\PageTabs.tsx:PageTabs",
+        "targetAlias": "PageTabs",
+        "targetProp": "navItem",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
     "sourceComponent": "features\\dashboard-scene\\settings\\GeneralSettingsEditView.tsx:GeneralSettingsEditViewComponent",
@@ -24945,7 +24797,7 @@
         "source": "features\\dashboard-scene\\settings\\variables\\components\\TextBoxVariableForm.tsx:TextBoxVariableForm",
         "target": "features\\dashboard-scene\\settings\\variables\\components\\VariableTextField.tsx:VariableTextField",
         "targetAlias": "VariableTextField",
-        "targetProp": "value",
+        "targetProp": "defaultValue",
         "isPure": true
       }
     ],
@@ -26324,7 +26176,7 @@
     "sourceComponent": "features\\dashboard\\containers\\PublicDashboardPage.tsx:PublicDashboardPage",
     "targetComponent": "features\\dashboard\\components\\DashboardLoading\\DashboardFailed.tsx:DashboardFailed",
     "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
+    "canRefactorWithComposition": true,
     "propPassings": [
       {
         "source": "features\\dashboard\\containers\\PublicDashboardPage.tsx:PublicDashboardPage",
@@ -26338,11 +26190,11 @@
         "target": "features\\dashboard\\components\\DashboardLoading\\DashboardFailed.tsx:DashboardFailed",
         "targetAlias": "DashboardFailed",
         "targetProp": "initError",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
+    "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
     "sourceComponent": "features\\dashboard\\containers\\PublicDashboardPage.tsx:PublicDashboardPage",
@@ -26699,30 +26551,6 @@
         "targetAlias": "Configuration",
         "targetProp": "timeRange",
         "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "features\\dashboard\\components\\SaveDashboard\\SaveDashboardDiff.tsx:SaveDashboardDiff",
-    "targetComponent": "features\\dashboard-scene\\settings\\version-history\\DiffTitle.tsx:DiffTitle",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\dashboard\\components\\SaveDashboard\\SaveDashboardDiff.tsx:SaveDashboardDiff",
-        "target": "features\\dashboard-scene\\settings\\version-history\\DiffGroup.tsx:DiffGroup",
-        "targetAlias": "DiffGroup",
-        "targetProp": "title",
-        "isPure": false
-      },
-      {
-        "source": "features\\dashboard-scene\\settings\\version-history\\DiffGroup.tsx:DiffGroup",
-        "target": "features\\dashboard-scene\\settings\\version-history\\DiffTitle.tsx:DiffTitle",
-        "targetAlias": "DiffTitle",
-        "targetProp": "title",
-        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -30026,7 +29854,7 @@
         "source": "features\\alerting\\unified\\components\\rule-viewer\\tabs\\Query.tsx:QueryResults",
         "target": "features\\alerting\\unified\\GrafanaRuleQueryViewer.tsx:QueryPreview",
         "targetAlias": "QueryPreview",
-        "targetProp": "key",
+        "targetProp": "refId",
         "isPure": false
       },
       {
@@ -30226,7 +30054,7 @@
         "target": "core\\components\\VersionHistory\\VersionHistoryComparison.tsx:VersionChangeSummary",
         "targetAlias": "VersionChangeSummary",
         "targetProp": "info",
-        "isPure": false
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -30250,7 +30078,7 @@
         "target": "core\\components\\VersionHistory\\VersionHistoryComparison.tsx:VersionChangeSummary",
         "targetAlias": "VersionChangeSummary",
         "targetProp": "info",
-        "isPure": false
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -30514,7 +30342,7 @@
         "target": "features\\alerting\\unified\\triage\\rows\\GenericRow.tsx:GenericRow",
         "targetAlias": "GenericRow",
         "targetProp": "width",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -30610,7 +30438,7 @@
         "target": "features\\alerting\\unified\\triage\\rows\\GenericRow.tsx:GenericRow",
         "targetAlias": "GenericRow",
         "targetProp": "width",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -31100,7 +30928,7 @@
     "sourceComponent": "features\\alerting\\unified\\rule-list\\GroupedView.tsx:GroupedView",
     "targetComponent": "features\\alerting\\unified\\rule-list\\components\\DataSourceErrorBoundary.tsx:DataSourceErrorBoundary",
     "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
+    "canRefactorWithComposition": true,
     "propPassings": [
       {
         "source": "features\\alerting\\unified\\rule-list\\GroupedView.tsx:GroupedView",
@@ -31114,11 +30942,11 @@
         "target": "features\\alerting\\unified\\rule-list\\components\\DataSourceErrorBoundary.tsx:DataSourceErrorBoundary",
         "targetAlias": "DataSourceErrorBoundary",
         "targetProp": "rulesSourceIdentifier",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
+    "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
     "sourceComponent": "features\\alerting\\unified\\rule-list\\PaginatedDataSourceLoader.tsx:RuleGroupListItem",
@@ -32948,7 +32776,7 @@
     "sourceComponent": "features\\alerting\\unified\\components\\rule-editor\\notificaton-preview\\NotificationPreviewByAlertManager.tsx:NotificationPreviewByAlertManager",
     "targetComponent": "features\\alerting\\unified\\components\\rule-editor\\notificaton-preview\\ContactPointGroup.tsx:ContactPointGroup",
     "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
+    "canRefactorWithComposition": true,
     "propPassings": [
       {
         "source": "features\\alerting\\unified\\components\\rule-editor\\notificaton-preview\\NotificationPreviewByAlertManager.tsx:NotificationPreviewByAlertManager",
@@ -32966,7 +32794,7 @@
       }
     ],
     "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
+    "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
     "sourceComponent": "features\\alerting\\unified\\components\\rule-editor\\notificaton-preview\\NotificationRoute.tsx:InstanceMatch",
@@ -33554,30 +33382,6 @@
         "source": "features\\alerting\\unified\\components\\receivers\\form\\ChannelOptions.tsx:ChannelOptions",
         "target": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionField",
         "targetAlias": "OptionField",
-        "targetProp": "readOnly",
-        "isPure": false
-      },
-      {
-        "source": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionField",
-        "target": "features\\alerting\\unified\\components\\receivers\\form\\fields\\SubformArrayField.tsx:SubformArrayField",
-        "targetAlias": "SubformArrayField",
-        "targetProp": "readOnly",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "features\\alerting\\unified\\components\\receivers\\form\\ChannelOptions.tsx:ChannelOptions",
-    "targetComponent": "features\\alerting\\unified\\components\\receivers\\form\\fields\\SubformArrayField.tsx:SubformArrayField",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\alerting\\unified\\components\\receivers\\form\\ChannelOptions.tsx:ChannelOptions",
-        "target": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionField",
-        "targetAlias": "OptionField",
         "targetProp": "pathPrefix",
         "isPure": false
       },
@@ -33682,30 +33486,6 @@
         "target": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionInput",
         "targetAlias": "OptionInput",
         "targetProp": "defaultValue",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "features\\alerting\\unified\\components\\receivers\\form\\ChannelOptions.tsx:ChannelOptions",
-    "targetComponent": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionInput",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "features\\alerting\\unified\\components\\receivers\\form\\ChannelOptions.tsx:ChannelOptions",
-        "target": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionField",
-        "targetAlias": "OptionField",
-        "targetProp": "readOnly",
-        "isPure": false
-      },
-      {
-        "source": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionField",
-        "target": "features\\alerting\\unified\\components\\receivers\\form\\fields\\OptionField.tsx:OptionInput",
-        "targetAlias": "OptionInput",
-        "targetProp": "readOnly",
         "isPure": false
       }
     ],
@@ -34196,7 +33976,7 @@
     "sourceComponent": "features\\alerting\\unified\\components\\import-to-gma\\ConfirmConvertModal.tsx:ConfirmConversionModal",
     "targetComponent": "features\\alerting\\unified\\components\\import-to-gma\\ConfirmConvertModal.tsx:RulesPreview",
     "canRefactorWithContext": false,
-    "canRefactorWithComposition": false,
+    "canRefactorWithComposition": true,
     "propPassings": [
       {
         "source": "features\\alerting\\unified\\components\\import-to-gma\\ConfirmConvertModal.tsx:ConfirmConversionModal",
@@ -34210,11 +33990,11 @@
         "target": "features\\alerting\\unified\\components\\import-to-gma\\ConfirmConvertModal.tsx:RulesPreview",
         "targetAlias": "RulesPreview",
         "targetProp": "rules",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
+    "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
     "sourceComponent": "features\\alerting\\unified\\components\\rule-editor\\alert-rule-form\\ModifyExportRuleForm.tsx:ModifyExportRuleForm",
@@ -35210,7 +34990,7 @@
         "source": "features\\alerting\\unified\\components\\alert-groups\\AlertDetails.tsx:AlertDetails",
         "target": "features\\alerting\\unified\\components\\AnnotationDetailsField.tsx:AnnotationDetailsField",
         "targetAlias": "AnnotationDetailsField",
-        "targetProp": "key",
+        "targetProp": "annotationKey",
         "isPure": false
       },
       {
@@ -35362,7 +35142,7 @@
         "target": "features\\admin\\UserProfile.tsx:UserProfileRow",
         "targetAlias": "UserProfileRow",
         "targetProp": "onChange",
-        "isPure": false
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -35403,7 +35183,7 @@
         "target": "features\\admin\\UserProfile.tsx:UserProfileRow",
         "targetAlias": "UserProfileRow",
         "targetProp": "value",
-        "isPure": false
+        "isPure": true
       },
       {
         "source": "features\\admin\\UserProfile.tsx:UserProfileRow",
@@ -35513,6 +35293,30 @@
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
+    "sourceComponent": "features\\admin\\UserAdminPage.tsx:UserAdminPage",
+    "targetComponent": "features\\admin\\UserOrgs.tsx:OrgRow",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\admin\\UserAdminPage.tsx:UserAdminPage",
+        "target": "features\\admin\\UserOrgs.tsx:UserOrgs",
+        "targetAlias": "UserOrgs",
+        "targetProp": "onOrgRoleChange",
+        "isPure": false
+      },
+      {
+        "source": "features\\admin\\UserOrgs.tsx:UserOrgs",
+        "target": "features\\admin\\UserOrgs.tsx:OrgRow",
+        "targetAlias": "OrgRow",
+        "targetProp": "onOrgRoleChange",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "features\\admin\\UserOrgs.tsx:OrgRow",
     "targetComponent": "core\\components\\RolePicker\\RolePicker.tsx:RolePicker",
     "canRefactorWithContext": true,
@@ -35554,6 +35358,30 @@
         "target": "core\\components\\RolePicker\\RolePicker.tsx:RolePicker",
         "targetAlias": "RolePicker",
         "targetProp": "roleOptions",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\admin\\UserOrgs.tsx:OrgRow",
+    "targetComponent": "core\\components\\RolePicker\\RolePicker.tsx:RolePicker",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\admin\\UserOrgs.tsx:OrgRow",
+        "target": "core\\components\\RolePicker\\UserRolePicker.tsx:UserRolePicker",
+        "targetAlias": "UserRolePicker",
+        "targetProp": "onBasicRoleChange",
+        "isPure": true
+      },
+      {
+        "source": "core\\components\\RolePicker\\UserRolePicker.tsx:UserRolePicker",
+        "target": "core\\components\\RolePicker\\RolePicker.tsx:RolePicker",
+        "targetAlias": "RolePicker",
+        "targetProp": "onBasicRoleChange",
         "isPure": true
       }
     ],
@@ -35666,14 +35494,14 @@
         "source": "features\\admin\\UserOrgs.tsx:AddToOrgModal",
         "target": "core\\components\\RolePicker\\UserRolePicker.tsx:UserRolePicker",
         "targetAlias": "UserRolePicker",
-        "targetProp": "roleOptions",
+        "targetProp": "onBasicRoleChange",
         "isPure": true
       },
       {
         "source": "core\\components\\RolePicker\\UserRolePicker.tsx:UserRolePicker",
         "target": "core\\components\\RolePicker\\RolePicker.tsx:RolePicker",
         "targetAlias": "RolePicker",
-        "targetProp": "roleOptions",
+        "targetProp": "onBasicRoleChange",
         "isPure": true
       }
     ],
@@ -35690,14 +35518,14 @@
         "source": "features\\admin\\UserOrgs.tsx:AddToOrgModal",
         "target": "core\\components\\RolePicker\\UserRolePicker.tsx:UserRolePicker",
         "targetAlias": "UserRolePicker",
-        "targetProp": "onBasicRoleChange",
+        "targetProp": "roleOptions",
         "isPure": true
       },
       {
         "source": "core\\components\\RolePicker\\UserRolePicker.tsx:UserRolePicker",
         "target": "core\\components\\RolePicker\\RolePicker.tsx:RolePicker",
         "targetAlias": "RolePicker",
-        "targetProp": "onBasicRoleChange",
+        "targetProp": "roleOptions",
         "isPure": true
       }
     ],

@@ -200,7 +200,7 @@
         "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
-        "isPure": true
+        "isPure": false
       },
       {
         "source": "components\\FlowView\\HttpMessages.tsx:Message",
@@ -276,7 +276,7 @@
         "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
-        "isPure": true
+        "isPure": false
       },
       {
         "source": "components\\FlowView\\HttpMessages.tsx:Message",
@@ -407,7 +407,7 @@
         "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
-        "isPure": true
+        "isPure": false
       },
       {
         "source": "components\\FlowView\\HttpMessages.tsx:Message",
@@ -510,7 +510,7 @@
         "target": "components\\FlowView\\DnsMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
-        "isPure": true
+        "isPure": false
       },
       {
         "source": "components\\FlowView\\DnsMessages.tsx:Message",
@@ -534,7 +534,7 @@
         "target": "components\\FlowView\\DnsMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
-        "isPure": true
+        "isPure": false
       },
       {
         "source": "components\\FlowView\\DnsMessages.tsx:Message",
@@ -613,30 +613,6 @@
         "target": "components\\editors\\ValueEditor.tsx:ValueEditor",
         "targetAlias": "ValueEditor",
         "targetProp": "content",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": false,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "components\\FlowView\\HttpMessages.tsx:ResponseLine",
-    "targetComponent": "components\\editors\\ValueEditor.tsx:ValueEditor",
-    "canRefactorWithContext": false,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "components\\FlowView\\HttpMessages.tsx:ResponseLine",
-        "target": "components\\editors\\ValidateEditor.tsx:ValidateEditor",
-        "targetAlias": "ValidateEditor",
-        "targetProp": "onEditDone",
-        "isPure": true
-      },
-      {
-        "source": "components\\editors\\ValidateEditor.tsx:ValidateEditor",
-        "target": "components\\editors\\ValueEditor.tsx:ValueEditor",
-        "targetAlias": "ValueEditor",
-        "targetProp": "onEditDone",
         "isPure": false
       }
     ],
@@ -798,7 +774,7 @@
         "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
-        "isPure": true
+        "isPure": false
       },
       {
         "source": "components\\FlowView\\HttpMessages.tsx:Message",
@@ -846,7 +822,7 @@
         "target": "components\\FlowView\\HttpMessages.tsx:Message",
         "targetAlias": "Message",
         "targetProp": "message",
-        "isPure": true
+        "isPure": false
       },
       {
         "source": "components\\FlowView\\HttpMessages.tsx:Message",

@@ -1,0 +1,225 @@
+[
+  {
+    "sourceComponent": "components\\auth\\Flow.tsx:Flow",
+    "targetComponent": "components\\auth\\NodeText.tsx:Content",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\auth\\Flow.tsx:Flow",
+        "target": "components\\auth\\Node.tsx:Node",
+        "targetAlias": "Node",
+        "targetProp": "node",
+        "isPure": true
+      },
+      {
+        "source": "components\\auth\\Node.tsx:Node",
+        "target": "components\\auth\\NodeText.tsx:NodeText",
+        "targetAlias": "NodeText",
+        "targetProp": "node",
+        "isPure": false
+      },
+      {
+        "source": "components\\auth\\NodeText.tsx:NodeText",
+        "target": "components\\auth\\NodeText.tsx:Content",
+        "targetAlias": "Content",
+        "targetProp": "node",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\project\\secrets\\TokenItem.tsx:TokenItem",
+    "targetComponent": "components\\utils\\ConditionallyRender.tsx:ConditionallyRender",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\project\\secrets\\TokenItem.tsx:TokenItem",
+        "target": "components\\ConfirmationDialog.tsx:ConfirmationDailog",
+        "targetAlias": "ConfirmationDailog",
+        "targetProp": "title",
+        "isPure": true
+      },
+      {
+        "source": "components\\ConfirmationDialog.tsx:ConfirmationDailog",
+        "target": "components\\utils\\ConditionallyRender.tsx:ConditionallyRender",
+        "targetAlias": "ConditionallyRender",
+        "targetProp": "if",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\project\\secrets\\Main.tsx:SecretsMain",
+    "targetComponent": "pages\\project\\secrets\\TokenForm.tsx:CreateTokenForm",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\project\\secrets\\Main.tsx:SecretsMain",
+        "target": "pages\\project\\secrets\\ProjectTokensMain.tsx:ProjectTokens",
+        "targetAlias": "ProjectTokens",
+        "targetProp": "project",
+        "isPure": true
+      },
+      {
+        "source": "pages\\project\\secrets\\ProjectTokensMain.tsx:ProjectTokens",
+        "target": "pages\\project\\secrets\\TokenForm.tsx:CreateTokenForm",
+        "targetAlias": "CreateTokenForm",
+        "targetProp": "project",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\project\\secrets\\TokenForm.tsx:CreateTokenForm",
+    "targetComponent": "components\\utils\\ConditionallyRender.tsx:ConditionallyRender",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\project\\secrets\\TokenForm.tsx:CreateTokenForm",
+        "target": "components\\ConfirmationDialog.tsx:ConfirmationDailog",
+        "targetAlias": "ConfirmationDailog",
+        "targetProp": "title",
+        "isPure": true
+      },
+      {
+        "source": "components\\ConfirmationDialog.tsx:ConfirmationDailog",
+        "target": "components\\utils\\ConditionallyRender.tsx:ConditionallyRender",
+        "targetAlias": "ConditionallyRender",
+        "targetProp": "if",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\project\\finding\\VulnerabilityTableItem.tsx:VulnerabilityTableItem",
+    "targetComponent": "components\\utils\\ConditionallyRender.tsx:ConditionallyRender",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\project\\finding\\VulnerabilityTableItem.tsx:VulnerabilityTableItem",
+        "target": "components\\ConfirmationDialog.tsx:ConfirmationDailog",
+        "targetAlias": "ConfirmationDailog",
+        "targetProp": "title",
+        "isPure": true
+      },
+      {
+        "source": "components\\ConfirmationDialog.tsx:ConfirmationDailog",
+        "target": "components\\utils\\ConditionallyRender.tsx:ConditionallyRender",
+        "targetAlias": "ConditionallyRender",
+        "targetProp": "if",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\project\\finding\\VulnerablePackageItem.tsx:VulnerablePackageItem",
+    "targetComponent": "components\\utils\\ConditionallyRender.tsx:ConditionallyRender",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\project\\finding\\VulnerablePackageItem.tsx:VulnerablePackageItem",
+        "target": "components\\ConfirmationDialog.tsx:ConfirmationDailog",
+        "targetAlias": "ConfirmationDailog",
+        "targetProp": "title",
+        "isPure": true
+      },
+      {
+        "source": "components\\ConfirmationDialog.tsx:ConfirmationDailog",
+        "target": "components\\utils\\ConditionallyRender.tsx:ConditionallyRender",
+        "targetAlias": "ConditionallyRender",
+        "targetProp": "if",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\auth\\Flow.tsx:Flow",
+    "targetComponent": "components\\auth\\NodeImage.tsx:NodeImage",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\auth\\Flow.tsx:Flow",
+        "target": "components\\auth\\Node.tsx:Node",
+        "targetAlias": "Node",
+        "targetProp": "node",
+        "isPure": true
+      },
+      {
+        "source": "components\\auth\\Node.tsx:Node",
+        "target": "components\\auth\\NodeImage.tsx:NodeImage",
+        "targetAlias": "NodeImage",
+        "targetProp": "node",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\auth\\Node.tsx:Node",
+    "targetComponent": "components\\auth\\NodeText.tsx:Content",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\auth\\Node.tsx:Node",
+        "target": "components\\auth\\NodeText.tsx:NodeText",
+        "targetAlias": "NodeText",
+        "targetProp": "attributes",
+        "isPure": false
+      },
+      {
+        "source": "components\\auth\\NodeText.tsx:NodeText",
+        "target": "components\\auth\\NodeText.tsx:Content",
+        "targetAlias": "Content",
+        "targetProp": "attributes",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\auth\\Flow.tsx:Flow",
+    "targetComponent": "components\\auth\\NodeAnchor.tsx:NodeAnchor",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\auth\\Flow.tsx:Flow",
+        "target": "components\\auth\\Node.tsx:Node",
+        "targetAlias": "Node",
+        "targetProp": "node",
+        "isPure": true
+      },
+      {
+        "source": "components\\auth\\Node.tsx:Node",
+        "target": "components\\auth\\NodeAnchor.tsx:NodeAnchor",
+        "targetAlias": "NodeAnchor",
+        "targetProp": "node",
+        "isPure": false
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  }
+]

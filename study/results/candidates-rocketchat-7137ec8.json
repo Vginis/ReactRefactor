@@ -1378,7 +1378,7 @@
         "target": "components\\message\\variants\\threadPreview\\ThreadMessagePreviewBody.tsx:ThreadMessagePreviewBody",
         "targetAlias": "ThreadMessagePreviewBody",
         "targetProp": "message",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -2913,7 +2913,7 @@
         "source": "views\\marketplace\\AppsPage\\AppsPageContent.tsx:AppsPageContent",
         "target": "views\\marketplace\\AppsPage\\AppsFilters.tsx:AppsFilters",
         "targetAlias": "AppsFilters",
-        "targetProp": "onSelected",
+        "targetProp": "sortFilterOnSelected",
         "isPure": false
       },
       {
@@ -2975,7 +2975,7 @@
         "source": "views\\marketplace\\AppsPage\\AppsPageContent.tsx:AppsPageContent",
         "target": "views\\marketplace\\AppsPage\\AppsFilters.tsx:AppsFilters",
         "targetAlias": "AppsFilters",
-        "targetProp": "onSelected",
+        "targetProp": "statusFilterOnSelected",
         "isPure": false
       },
       {
@@ -4596,7 +4596,7 @@
         "source": "sidebar\\badges\\SidebarItemBadges.tsx:SidebarItemBadges",
         "target": "sidebar\\badges\\UnreadBadge.tsx:UnreadBadge",
         "targetAlias": "UnreadBadge",
-        "targetProp": "title",
+        "targetProp": "roomTitle",
         "isPure": false
       }
     ],
@@ -5861,7 +5861,7 @@
         "source": "views\\room\\contextualBar\\Threads\\components\\ThreadMessageList.tsx:ThreadMessageList",
         "target": "views\\room\\contextualBar\\Threads\\components\\ThreadMessageItem.tsx:ThreadMessageItem",
         "targetAlias": "ThreadMessageItem",
-        "targetProp": "sequential",
+        "targetProp": "shouldShowAsSequential",
         "isPure": false
       },
       {
@@ -8844,7 +8844,7 @@
         "source": "views\\navigation\\sidepanel\\SidepanelItem\\RoomSidePanelItemBadges.tsx:RoomSidePanelItemBadges",
         "target": "views\\navigation\\sidebar\\badges\\UnreadBadge.tsx:UnreadBadge",
         "targetAlias": "UnreadBadge",
-        "targetProp": "title",
+        "targetProp": "roomTitle",
         "isPure": false
       }
     ],
@@ -9036,7 +9036,7 @@
         "source": "views\\navigation\\sidebar\\badges\\SidebarItemBadges.tsx:SidebarItemBadges",
         "target": "views\\navigation\\sidebar\\badges\\UnreadBadge.tsx:UnreadBadge",
         "targetAlias": "UnreadBadge",
-        "targetProp": "title",
+        "targetProp": "roomTitle",
         "isPure": false
       }
     ],
@@ -9269,7 +9269,7 @@
         "source": "views\\marketplace\\AppsPage\\AppsPageContent.tsx:AppsPageContent",
         "target": "views\\marketplace\\AppsPage\\AppsFilters.tsx:AppsFilters",
         "targetAlias": "AppsFilters",
-        "targetProp": "categories",
+        "targetProp": "categoryTagList",
         "isPure": false
       },
       {
@@ -11004,7 +11004,7 @@
         "source": "sidebar\\badges\\SidebarItemBadges.tsx:SidebarItemBadges",
         "target": "sidebar\\badges\\UnreadBadge.tsx:UnreadBadge",
         "targetAlias": "UnreadBadge",
-        "targetProp": "title",
+        "targetProp": "roomTitle",
         "isPure": false
       }
     ],

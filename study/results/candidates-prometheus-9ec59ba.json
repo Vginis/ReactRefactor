@@ -247,7 +247,7 @@
         "source": "pages\\graph\\PanelList.tsx:PanelListContent",
         "target": "pages\\graph\\Panel.tsx:Panel",
         "targetAlias": "Panel",
-        "targetProp": "key",
+        "targetProp": "id",
         "isPure": false
       },
       {

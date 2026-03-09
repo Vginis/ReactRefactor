@@ -4792,30 +4792,6 @@
         "source": "explore\\components\\controls\\ConditionalFormattingControl\\ConditionalFormattingControl.tsx:ConditionalFormattingControl",
         "target": "explore\\components\\controls\\ConditionalFormattingControl\\FormattingPopover.tsx:FormattingPopover",
         "targetAlias": "FormattingPopover",
-        "targetProp": "config",
-        "isPure": false
-      },
-      {
-        "source": "explore\\components\\controls\\ConditionalFormattingControl\\FormattingPopover.tsx:FormattingPopover",
-        "target": "explore\\components\\controls\\ConditionalFormattingControl\\FormattingPopoverContent.tsx:FormattingPopoverContent",
-        "targetAlias": "FormattingPopoverContent",
-        "targetProp": "config",
-        "isPure": true
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "explore\\components\\controls\\ConditionalFormattingControl\\ConditionalFormattingControl.tsx:ConditionalFormattingControl",
-    "targetComponent": "explore\\components\\controls\\ConditionalFormattingControl\\FormattingPopoverContent.tsx:FormattingPopoverContent",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "explore\\components\\controls\\ConditionalFormattingControl\\ConditionalFormattingControl.tsx:ConditionalFormattingControl",
-        "target": "explore\\components\\controls\\ConditionalFormattingControl\\FormattingPopover.tsx:FormattingPopover",
-        "targetAlias": "FormattingPopover",
         "targetProp": "columns",
         "isPure": false
       },
@@ -4848,6 +4824,30 @@
         "target": "explore\\components\\controls\\ConditionalFormattingControl\\FormattingPopoverContent.tsx:FormattingPopoverContent",
         "targetAlias": "FormattingPopoverContent",
         "targetProp": "extraColorChoices",
+        "isPure": true
+      }
+    ],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "explore\\components\\controls\\ConditionalFormattingControl\\ConditionalFormattingControl.tsx:ConditionalFormattingControl",
+    "targetComponent": "explore\\components\\controls\\ConditionalFormattingControl\\FormattingPopoverContent.tsx:FormattingPopoverContent",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "explore\\components\\controls\\ConditionalFormattingControl\\ConditionalFormattingControl.tsx:ConditionalFormattingControl",
+        "target": "explore\\components\\controls\\ConditionalFormattingControl\\FormattingPopover.tsx:FormattingPopover",
+        "targetAlias": "FormattingPopover",
+        "targetProp": "config",
+        "isPure": false
+      },
+      {
+        "source": "explore\\components\\controls\\ConditionalFormattingControl\\FormattingPopover.tsx:FormattingPopover",
+        "target": "explore\\components\\controls\\ConditionalFormattingControl\\FormattingPopoverContent.tsx:FormattingPopoverContent",
+        "targetAlias": "FormattingPopoverContent",
+        "targetProp": "config",
         "isPure": true
       }
     ],
@@ -5040,7 +5040,7 @@
         "target": "dashboard\\components\\AddSliceCard\\AddSliceCard.tsx:MetadataItem",
         "targetAlias": "MetadataItem",
         "targetProp": "value",
-        "isPure": false
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": true,
@@ -5088,7 +5088,7 @@
         "target": "dashboard\\components\\AddSliceCard\\AddSliceCard.tsx:MetadataItem",
         "targetAlias": "MetadataItem",
         "targetProp": "value",
-        "isPure": false
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": true,

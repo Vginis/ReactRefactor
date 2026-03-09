@@ -158,7 +158,7 @@
     "sourceComponent": "features\\account_featured\\index.tsx:AccountFeatured",
     "targetComponent": "features\\account_timeline\\components\\familiar_followers.tsx:FamiliarFollowers",
     "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
+    "canRefactorWithComposition": true,
     "propPassings": [
       {
         "source": "features\\account_featured\\index.tsx:AccountFeatured",
@@ -183,13 +183,13 @@
       }
     ],
     "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
+    "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
     "sourceComponent": "features\\account_featured\\index.tsx:AccountFeatured",
     "targetComponent": "features\\account\\components\\account_note.tsx:AccountNote",
     "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
+    "canRefactorWithComposition": true,
     "propPassings": [
       {
         "source": "features\\account_featured\\index.tsx:AccountFeatured",
@@ -214,7 +214,7 @@
       }
     ],
     "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
+    "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
     "sourceComponent": "components\\hover_card_account.tsx:HoverCardAccount",
@@ -961,7 +961,7 @@
         "target": "components\\skeleton.tsx:Skeleton",
         "targetAlias": "Skeleton",
         "targetProp": "width",
-        "isPure": false
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -1297,7 +1297,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -1313,15 +1313,15 @@
         "source": "features\\search\\index.tsx:SearchResults",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": false
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -1369,7 +1369,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -1385,15 +1385,15 @@
         "source": "features\\public_timeline\\index.jsx:PublicTimeline",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -1417,7 +1417,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -1433,15 +1433,15 @@
         "source": "features\\onboarding\\follows.tsx:Follows",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -1465,7 +1465,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -1481,15 +1481,15 @@
         "source": "features\\onboarding\\profile.tsx:Profile",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -1513,7 +1513,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -1529,15 +1529,15 @@
         "source": "features\\notifications_v2\\index.tsx:Notifications",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -2425,7 +2425,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -2441,15 +2441,15 @@
         "source": "features\\notifications\\request.jsx:NotificationRequest",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -2473,7 +2473,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -2489,15 +2489,15 @@
         "source": "features\\notifications\\requests.jsx:NotificationRequests",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -2545,7 +2545,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": false
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -2665,7 +2665,7 @@
         "target": "components\\skeleton.tsx:Skeleton",
         "targetAlias": "Skeleton",
         "targetProp": "width",
-        "isPure": false
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3073,7 +3073,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3089,15 +3089,15 @@
         "source": "features\\list_timeline\\index.jsx:ListTimeline",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3113,7 +3113,7 @@
         "source": "features\\list_adder\\index.tsx:ListAdder",
         "target": "features\\list_adder\\index.tsx:ListItem",
         "targetAlias": "ListItem",
-        "targetProp": "key",
+        "targetProp": "id",
         "isPure": false
       },
       {
@@ -3169,7 +3169,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3185,15 +3185,15 @@
         "source": "features\\lists\\index.tsx:Lists",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3241,7 +3241,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3257,15 +3257,15 @@
         "source": "features\\lists\\members.tsx:ListMembers",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3313,7 +3313,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3329,15 +3329,15 @@
         "source": "features\\lists\\new.tsx:NewList",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3385,7 +3385,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3401,15 +3401,15 @@
         "source": "features\\link_timeline\\index.tsx:LinkTimeline",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3433,7 +3433,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3449,15 +3449,15 @@
         "source": "features\\home_timeline\\index.jsx:HomeTimeline",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3529,7 +3529,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3545,15 +3545,15 @@
         "source": "features\\hashtag_timeline\\index.jsx:HashtagTimeline",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3601,7 +3601,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3617,15 +3617,15 @@
         "source": "features\\followed_tags\\index.tsx:FollowedTags",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3649,7 +3649,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3665,15 +3665,15 @@
         "source": "features\\firehose\\index.jsx:Firehose",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3697,7 +3697,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3713,15 +3713,15 @@
         "source": "features\\favourited_statuses\\index.tsx:Favourites",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3745,7 +3745,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3761,15 +3761,15 @@
         "source": "features\\explore\\index.tsx:Explore",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3793,7 +3793,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3809,15 +3809,15 @@
         "source": "features\\domain_blocks\\index.tsx:Blocks",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3841,7 +3841,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3857,15 +3857,15 @@
         "source": "features\\direct_timeline\\index.jsx:DirectTimeline",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3937,7 +3937,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3953,15 +3953,15 @@
         "source": "features\\directory\\index.tsx:Directory",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -3985,7 +3985,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -4001,15 +4001,15 @@
         "source": "features\\compose\\index.tsx:Compose",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -4105,7 +4105,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -4121,15 +4121,15 @@
         "source": "features\\community_timeline\\index.jsx:CommunityTimeline",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -4153,7 +4153,7 @@
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
         "targetProp": "id",
-        "isPure": true
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -4169,15 +4169,15 @@
         "source": "features\\bookmarked_statuses\\index.tsx:Bookmarks",
         "target": "components\\column_header.tsx:ColumnHeader",
         "targetAlias": "ColumnHeader",
-        "targetProp": "icon",
+        "targetProp": "iconComponent",
         "isPure": true
       },
       {
         "source": "components\\column_header.tsx:ColumnHeader",
         "target": "components\\icon.tsx:Icon",
         "targetAlias": "Icon",
-        "targetProp": "id",
-        "isPure": true
+        "targetProp": "icon",
+        "isPure": false
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -4345,7 +4345,7 @@
         "target": "components\\skeleton.tsx:Skeleton",
         "targetAlias": "Skeleton",
         "targetProp": "width",
-        "isPure": false
+        "isPure": true
       }
     ],
     "destinationWithMultipleParentsPrec": false,
@@ -4506,7 +4506,7 @@
         "target": "components\\emoji\\html.tsx:EmojiHTML",
         "targetAlias": "EmojiHTML",
         "targetProp": "as",
-        "isPure": true
+        "isPure": false
       },
       {
         "source": "components\\emoji\\html.tsx:EmojiHTML",
