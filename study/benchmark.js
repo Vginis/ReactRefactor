@@ -180,7 +180,7 @@ export const projects = [
         lang: "TS"
     },
     {
-        projectName: 'pachyderm',
+        projectName: 'ryot',
         resultsFile: 'candidates-ryot-789e632.json',
         files: 115,
         totalComponents: 134,
