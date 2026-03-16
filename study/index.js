@@ -115,10 +115,11 @@ function generateReportForCompoundPropDrillings(propDrillingsList, project) {
     const propDrillingsCount = propDrillingsList.length;
     const { compoundPropDrillingsCount, totalCompoundPropDrillings } = countCompoundPropDrillings(propDrillingsList);
     const compoundPropDrillingsFamilies = countPropDrillingFamilies(propDrillingsList);
+    const memberPdsTotal = compoundPropDrillingsFamilies.memberPdsTotal;
 
-    const breadth2Column = formatCompoundPDFamilyBreadthColumnDistribution(compoundPropDrillingsFamilies, 'twos', compoundPropDrillingsCount);
-    const breadth3Column = formatCompoundPDFamilyBreadthColumnDistribution(compoundPropDrillingsFamilies, 'threes', compoundPropDrillingsCount);
-    const breadthMultipleColumn = formatCompoundPDFamilyBreadthColumnDistribution(compoundPropDrillingsFamilies, 'multiples', compoundPropDrillingsCount);
+    const breadth2Column = formatTotalStatsColumn(compoundPropDrillingsCount, compoundPropDrillingsFamilies['twos']);
+    const breadth3Column = formatTotalStatsColumn(compoundPropDrillingsCount, compoundPropDrillingsFamilies['threes']);
+    const breadthMultipleColumn = formatTotalStatsColumn(compoundPropDrillingsCount, compoundPropDrillingsFamilies['multiples']);
 
     const latexRow =
         `${project.projectName} ` +
@@ -126,21 +127,10 @@ function generateReportForCompoundPropDrillings(propDrillingsList, project) {
         `& ${breadth2Column} ` +
         `& ${breadth3Column} ` +
         `& ${breadthMultipleColumn} ` +
-        `& ${formatTotalStatsColumn(propDrillingsCount, totalCompoundPropDrillings)} ` +
-        `& ${formatTotalStatsColumn(propDrillingsCount, totalCompoundPropDrillings - compoundPropDrillingsFamilies['twos'])} \\\\\n`;
+        `& ${formatTotalStatsColumn(propDrillingsCount, memberPdsTotal)} ` +
+        `& ${formatTotalStatsColumn(propDrillingsCount, totalCompoundPropDrillings - compoundPropDrillingsFamilies['twos']*2)} \\\\\n`;
 
     appendFileSync(TBL4_COMP_PROP_DRILL_DISTR, latexRow, 'utf8');
-}
-
-function formatCompoundPDFamilyBreadthColumnDistribution(compoundPropDrillingsFamilies, breadth, compoundPropDrillingsCount) {
-    const count = compoundPropDrillingsFamilies[breadth] ?? 0;
-
-    if (count === 0) {
-        return "\\emptyVal{}";
-    }
-
-    const percentage = ((compoundPropDrillingsCount / count) * 100).toFixed(1);
-    return `\\valpct{${count}}{${percentage}}`;
 }
 
 function formatTotalStatsColumn(total, count) {
