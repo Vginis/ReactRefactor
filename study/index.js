@@ -37,6 +37,8 @@ if (!action || action === 'latex') {
     generateLatexReports(sortedProjects);
 } else if (action === 'csv'){
     generateCSV(projectList, './stats/prop_dillings.csv')
+} else if (actions === 'pd-dependencies'){
+    
 }
 
 
