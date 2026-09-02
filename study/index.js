@@ -15,6 +15,7 @@ import { generateCSV } from "./csv-export.js";
 const LATEX_OUTPUT_DIR = './study/latex'
 const RESULTS_DIR = './study/results'
 
+const TBL1_DATASET_PROJECTS = `${LATEX_OUTPUT_DIR}/tbl1_dataset_projects.tex`
 const TBL2_PROP_DRILL_ADOPTION = `${LATEX_OUTPUT_DIR}/tbl2_prop_drilling_report.tex`
 const TBL3_PROP_DRILL_DEPTH_DISTR = `${LATEX_OUTPUT_DIR}/tbl3_prop_drilling_depth_report.tex`
 const TBL4_COMP_PROP_DRILL_DISTR = `${LATEX_OUTPUT_DIR}/tbl4_compound_prop_drillings_report.tex`
@@ -50,6 +51,7 @@ function generateLatexReports(projects) {
     for (const project of projects) {
         let propDrillingsList = parseResultsJson(`${RESULTS_DIR}/${project.resultsFile}`, PropDrillingInfo);
         project.propDrillings = propDrillingsList
+        generateReportForDatasetDescriptions(project);
         generateReportForPropDrillingFrequency(propDrillingsList, project, totalObjectTable1);
         generateReportForPropDrillingDepths(propDrillingsList, project, totalObjectTable2);
         generateReportForCompoundPropDrillings(propDrillingsList, project, totalObjectTable3);
@@ -63,6 +65,7 @@ function generateLatexReports(projects) {
 }
 
 function resetLatexFiles() {
+    writeFileSync(TBL1_DATASET_PROJECTS, "");
     writeFileSync(TBL2_PROP_DRILL_ADOPTION, "");
     writeFileSync(TBL3_PROP_DRILL_DEPTH_DISTR, "");
     writeFileSync(TBL4_COMP_PROP_DRILL_DISTR, "");
@@ -101,6 +104,19 @@ function initTotalRowObjects() {
     }
 
     return { totalObjectTable1, totalObjectTable2, totalObjectTable3, totalObjectTable4}
+}
+
+function generateReportForDatasetDescriptions(project) {
+    
+    const latexRow =
+        `${project.projectName.padEnd(15, " ")} ` +
+        `& ${project.lang.padEnd(5, " ")} ` +
+        `& ${padStart(project.sloc, 6)} \t` +
+        `& ${padStart(project.stars, 5)} \t` +
+        `& ${padStart(project.commitId, 8)} \t` +
+        `& ${project.repo.padEnd(22, " ")} \\\\\n`;
+
+    appendFileSync(TBL1_DATASET_PROJECTS, latexRow, 'utf8');
 }
 
 function generateReportForPropDrillingFrequency(propDrillingsList, project, totalObjectTable1) {

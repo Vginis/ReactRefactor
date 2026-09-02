@@ -9,7 +9,7 @@ import { parseResultsJson } from "../lib/utils/statsJsonCalculation.js";
 const RESULTS_DIR = './study/results'
 
 const projectList = projects.map((p) => ProjectInfo.fromJson(p));
-const project = projectList[2]
+const project = projectList[3]
 
 let propDrillingsList = parseResultsJson(
     `${RESULTS_DIR}/${project.resultsFile}`,
@@ -159,6 +159,18 @@ function printOverlappings() {
     
     let compoundPdMembers = propDrillingsList.filter(pd => pd.samePath.length >= 1)
     console.log(`Compound PD members: ${compoundPdMembers.length} / ${propDrillingsList.length}`)
+
+    let parallelPds = propDrillingsList.filter(pd => pd.parallel.length >= 1)
+    console.log(`Parallel PD members: ${parallelPds.length} / ${propDrillingsList.length}`)
+
+    let sameSourcePds = propDrillingsList.filter(pd => pd.sameSource.length >= 1)
+    console.log(`Same source PDs: ${sameSourcePds.length} / ${propDrillingsList.length}`)
+
+    let sameTargetPds = propDrillingsList.filter(pd => pd.sameTarget.length >= 1)
+    console.log(`Same target PDs: ${sameTargetPds.length} / ${propDrillingsList.length}`)
+
+    let individualPds = propDrillingsList.filter(pd => pd.sameTarget.length === 0 && pd.sameSource === 0)
+    console.log(`Individual PDs: ${individualPds.length} / ${propDrillingsList.length}`)
 
 }
 
