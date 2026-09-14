@@ -1,0 +1,1528 @@
+[
+  {
+    "sourceComponent": "components\\apps\\routing-forms\\SingleForm.tsx:SingleFormWrapper",
+    "targetComponent": "components\\apps\\routing-forms\\FormActions.tsx:NewFormDialog",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\apps\\routing-forms\\SingleForm.tsx:SingleFormWrapper",
+        "target": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+        "targetAlias": "SingleForm",
+        "targetProp": "appUrl",
+        "isPure": true
+      },
+      {
+        "source": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+        "target": "components\\apps\\routing-forms\\FormActions.tsx:FormActionsProvider",
+        "targetAlias": "FormActionsProvider",
+        "targetProp": "appUrl",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\FormActions.tsx:FormActionsProvider",
+        "target": "components\\apps\\routing-forms\\FormActions.tsx:Dialogs",
+        "targetAlias": "Dialogs",
+        "targetProp": "appUrl",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\FormActions.tsx:Dialogs",
+        "target": "components\\apps\\routing-forms\\FormActions.tsx:NewFormDialog",
+        "targetAlias": "NewFormDialog",
+        "targetProp": "appUrl",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\apps\\routing-forms\\SingleForm.tsx:SingleFormWrapper",
+    "targetComponent": "components\\apps\\routing-forms\\FormActions.tsx:FormAction",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\apps\\routing-forms\\SingleForm.tsx:SingleFormWrapper",
+        "target": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+        "targetAlias": "SingleForm",
+        "targetProp": "form",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+        "target": "components\\apps\\routing-forms\\Header.tsx:Header",
+        "targetAlias": "Header",
+        "targetProp": "routingForm",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\Header.tsx:Header",
+        "target": "components\\apps\\routing-forms\\Header.tsx:Actions",
+        "targetAlias": "Actions",
+        "targetProp": "form",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\Header.tsx:Actions",
+        "target": "components\\apps\\routing-forms\\FormActions.tsx:FormAction",
+        "targetAlias": "FormAction",
+        "targetProp": "routingForm",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\apps\\routing-forms\\SingleForm.tsx:SingleFormWrapper",
+    "targetComponent": "components\\apps\\routing-forms\\FormSettingsSlideover.tsx:FormSettingsSlideover",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\apps\\routing-forms\\SingleForm.tsx:SingleFormWrapper",
+        "target": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+        "targetAlias": "SingleForm",
+        "targetProp": "form",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+        "target": "components\\apps\\routing-forms\\Header.tsx:Header",
+        "targetAlias": "Header",
+        "targetProp": "routingForm",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\Header.tsx:Header",
+        "target": "components\\apps\\routing-forms\\Header.tsx:Actions",
+        "targetAlias": "Actions",
+        "targetProp": "form",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\Header.tsx:Actions",
+        "target": "components\\apps\\routing-forms\\FormSettingsSlideover.tsx:FormSettingsSlideover",
+        "targetAlias": "FormSettingsSlideover",
+        "targetProp": "form",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\apps\\routing-forms\\SingleForm.tsx:SingleFormWrapper",
+    "targetComponent": "components\\apps\\routing-forms\\FormSettingsSlideover.tsx:FormSettingsSlideover",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\apps\\routing-forms\\SingleForm.tsx:SingleFormWrapper",
+        "target": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+        "targetAlias": "SingleForm",
+        "targetProp": "appUrl",
+        "isPure": true
+      },
+      {
+        "source": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+        "target": "components\\apps\\routing-forms\\Header.tsx:Header",
+        "targetAlias": "Header",
+        "targetProp": "appUrl",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\Header.tsx:Header",
+        "target": "components\\apps\\routing-forms\\Header.tsx:Actions",
+        "targetAlias": "Actions",
+        "targetProp": "appUrl",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\Header.tsx:Actions",
+        "target": "components\\apps\\routing-forms\\FormSettingsSlideover.tsx:FormSettingsSlideover",
+        "targetAlias": "FormSettingsSlideover",
+        "targetProp": "appUrl",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\layout.tsx:SettingsLayoutAppDir",
+    "targetComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:TeamListCollapsible",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\layout.tsx:SettingsLayoutAppDir",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SettingsLayoutAppDirClient",
+        "targetAlias": "SettingsLayoutAppDirClient",
+        "targetProp": "teamFeatures",
+        "isPure": false
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SettingsLayoutAppDirClient",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SidebarContainerElement",
+        "targetAlias": "SidebarContainerElement",
+        "targetProp": "teamFeatures",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SidebarContainerElement",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SettingsSidebarContainer",
+        "targetAlias": "SettingsSidebarContainer",
+        "targetProp": "teamFeatures",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SettingsSidebarContainer",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:TeamListCollapsible",
+        "targetAlias": "TeamListCollapsible",
+        "targetProp": "teamFeatures",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dialog\\RerouteDialog.tsx:RerouteDialog",
+    "targetComponent": "components\\dialog\\RerouteDialog.tsx:CurrentRoutingStatus",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\dialog\\RerouteDialog.tsx:RerouteDialog",
+        "target": "components\\dialog\\RerouteDialog.tsx:RerouteDialogContentAndFooter",
+        "targetAlias": "RerouteDialogContentAndFooter",
+        "targetProp": "booking",
+        "isPure": false
+      },
+      {
+        "source": "components\\dialog\\RerouteDialog.tsx:RerouteDialogContentAndFooter",
+        "target": "components\\dialog\\RerouteDialog.tsx:RerouteDialogContentAndFooterWithFormResponse",
+        "targetAlias": "RerouteDialogContentAndFooterWithFormResponse",
+        "targetProp": "booking",
+        "isPure": false
+      },
+      {
+        "source": "components\\dialog\\RerouteDialog.tsx:RerouteDialogContentAndFooterWithFormResponse",
+        "target": "components\\dialog\\RerouteDialog.tsx:CurrentRoutingStatus",
+        "targetAlias": "CurrentRoutingStatus",
+        "targetProp": "booking",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dialog\\RerouteDialog.tsx:RerouteDialog",
+    "targetComponent": "components\\dialog\\RerouteDialog.tsx:NewRoutingManager",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\dialog\\RerouteDialog.tsx:RerouteDialog",
+        "target": "components\\dialog\\RerouteDialog.tsx:RerouteDialogContentAndFooter",
+        "targetAlias": "RerouteDialogContentAndFooter",
+        "targetProp": "booking",
+        "isPure": false
+      },
+      {
+        "source": "components\\dialog\\RerouteDialog.tsx:RerouteDialogContentAndFooter",
+        "target": "components\\dialog\\RerouteDialog.tsx:RerouteDialogContentAndFooterWithFormResponse",
+        "targetAlias": "RerouteDialogContentAndFooterWithFormResponse",
+        "targetProp": "booking",
+        "isPure": false
+      },
+      {
+        "source": "components\\dialog\\RerouteDialog.tsx:RerouteDialogContentAndFooterWithFormResponse",
+        "target": "components\\dialog\\RerouteDialog.tsx:NewRoutingManager",
+        "targetAlias": "NewRoutingManager",
+        "targetProp": "booking",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+    "targetComponent": "components\\apps\\routing-forms\\FormActions.tsx:NewFormDialog",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+        "target": "components\\apps\\routing-forms\\FormActions.tsx:FormActionsProvider",
+        "targetAlias": "FormActionsProvider",
+        "targetProp": "newFormDialogState",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\FormActions.tsx:FormActionsProvider",
+        "target": "components\\apps\\routing-forms\\FormActions.tsx:Dialogs",
+        "targetAlias": "Dialogs",
+        "targetProp": "newFormDialogState",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\FormActions.tsx:Dialogs",
+        "target": "components\\apps\\routing-forms\\FormActions.tsx:NewFormDialog",
+        "targetAlias": "NewFormDialog",
+        "targetProp": "newFormDialogState",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+    "targetComponent": "components\\apps\\routing-forms\\FormActions.tsx:NewFormDialog",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+        "target": "components\\apps\\routing-forms\\FormActions.tsx:FormActionsProvider",
+        "targetAlias": "FormActionsProvider",
+        "targetProp": "setNewFormDialogState",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\FormActions.tsx:FormActionsProvider",
+        "target": "components\\apps\\routing-forms\\FormActions.tsx:Dialogs",
+        "targetAlias": "Dialogs",
+        "targetProp": "setNewFormDialogState",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\FormActions.tsx:Dialogs",
+        "target": "components\\apps\\routing-forms\\FormActions.tsx:NewFormDialog",
+        "targetAlias": "NewFormDialog",
+        "targetProp": "setNewFormDialogState",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\apps\\routing-forms\\SingleForm.tsx:SingleFormWrapper",
+    "targetComponent": "components\\apps\\routing-forms\\Header.tsx:Actions",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\apps\\routing-forms\\SingleForm.tsx:SingleFormWrapper",
+        "target": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+        "targetAlias": "SingleForm",
+        "targetProp": "permissions",
+        "isPure": true
+      },
+      {
+        "source": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+        "target": "components\\apps\\routing-forms\\Header.tsx:Header",
+        "targetAlias": "Header",
+        "targetProp": "permissions",
+        "isPure": true
+      },
+      {
+        "source": "components\\apps\\routing-forms\\Header.tsx:Header",
+        "target": "components\\apps\\routing-forms\\Header.tsx:Actions",
+        "targetAlias": "Actions",
+        "targetProp": "permissions",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+    "targetComponent": "components\\apps\\routing-forms\\TestForm.tsx:FormView",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+        "target": "components\\apps\\routing-forms\\TestForm.tsx:TestFormRenderer",
+        "targetAlias": "TestFormRenderer",
+        "targetProp": "testForm",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\TestForm.tsx:TestFormRenderer",
+        "target": "components\\apps\\routing-forms\\TestForm.tsx:TestForm",
+        "targetAlias": "TestForm",
+        "targetProp": "form",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\TestForm.tsx:TestForm",
+        "target": "components\\apps\\routing-forms\\TestForm.tsx:FormView",
+        "targetAlias": "FormView",
+        "targetProp": "form",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\layout.tsx:SettingsLayoutAppDir",
+    "targetComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SettingsSidebarContainer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\layout.tsx:SettingsLayoutAppDir",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SettingsLayoutAppDirClient",
+        "targetAlias": "SettingsLayoutAppDirClient",
+        "targetProp": "permissions",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SettingsLayoutAppDirClient",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SidebarContainerElement",
+        "targetAlias": "SidebarContainerElement",
+        "targetProp": "permissions",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SidebarContainerElement",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SettingsSidebarContainer",
+        "targetAlias": "SettingsSidebarContainer",
+        "targetProp": "permissions",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\teams\\[id]\\roles\\page.tsx:Page",
+    "targetComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\DeleteRoleModal.tsx:DeleteRoleModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\teams\\[id]\\roles\\page.tsx:Page",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "targetAlias": "RolesList",
+        "targetProp": "teamId",
+        "isPure": false
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RoleItem",
+        "targetAlias": "RoleItem",
+        "targetProp": "teamId",
+        "isPure": false
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RoleItem",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\DeleteRoleModal.tsx:DeleteRoleModal",
+        "targetAlias": "DeleteRoleModal",
+        "targetProp": "teamId",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\teams\\[id]\\roles\\page.tsx:Page",
+    "targetComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\AdvancedPermissionGroup.tsx:AdvancedPermissionGroup",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\teams\\[id]\\roles\\page.tsx:Page",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "targetAlias": "RolesList",
+        "targetProp": "scope",
+        "isPure": false
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RoleSheet.tsx:RoleSheet",
+        "targetAlias": "RoleSheet",
+        "targetProp": "scope",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RoleSheet.tsx:RoleSheet",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\AdvancedPermissionGroup.tsx:AdvancedPermissionGroup",
+        "targetAlias": "AdvancedPermissionGroup",
+        "targetProp": "scope",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\teams\\[id]\\roles\\page.tsx:Page",
+    "targetComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\AdvancedPermissionGroup.tsx:AdvancedPermissionGroup",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\teams\\[id]\\roles\\page.tsx:Page",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "targetAlias": "RolesList",
+        "targetProp": "isPrivate",
+        "isPure": false
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RoleSheet.tsx:RoleSheet",
+        "targetAlias": "RoleSheet",
+        "targetProp": "isPrivate",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RoleSheet.tsx:RoleSheet",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\AdvancedPermissionGroup.tsx:AdvancedPermissionGroup",
+        "targetAlias": "AdvancedPermissionGroup",
+        "targetProp": "isPrivate",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\teams\\[id]\\roles\\page.tsx:Page",
+    "targetComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\SimplePermissionItem.tsx:SimplePermissionItem",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\teams\\[id]\\roles\\page.tsx:Page",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "targetAlias": "RolesList",
+        "targetProp": "scope",
+        "isPure": false
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RoleSheet.tsx:RoleSheet",
+        "targetAlias": "RoleSheet",
+        "targetProp": "scope",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RoleSheet.tsx:RoleSheet",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\SimplePermissionItem.tsx:SimplePermissionItem",
+        "targetAlias": "SimplePermissionItem",
+        "targetProp": "scope",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\teams\\[id]\\roles\\page.tsx:Page",
+    "targetComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\SimplePermissionItem.tsx:SimplePermissionItem",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\teams\\[id]\\roles\\page.tsx:Page",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "targetAlias": "RolesList",
+        "targetProp": "isPrivate",
+        "isPure": false
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RoleSheet.tsx:RoleSheet",
+        "targetAlias": "RoleSheet",
+        "targetProp": "isPrivate",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RoleSheet.tsx:RoleSheet",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\SimplePermissionItem.tsx:SimplePermissionItem",
+        "targetAlias": "SimplePermissionItem",
+        "targetProp": "isPrivate",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\PbacOptInView.tsx:PbacOptInView",
+    "targetComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\DeleteRoleModal.tsx:DeleteRoleModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\PbacOptInView.tsx:PbacOptInView",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "targetAlias": "RolesList",
+        "targetProp": "teamId",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RoleItem",
+        "targetAlias": "RoleItem",
+        "targetProp": "teamId",
+        "isPure": false
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RoleItem",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\DeleteRoleModal.tsx:DeleteRoleModal",
+        "targetAlias": "DeleteRoleModal",
+        "targetProp": "teamId",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\PbacOptInView.tsx:PbacOptInView",
+    "targetComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\AdvancedPermissionGroup.tsx:AdvancedPermissionGroup",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\PbacOptInView.tsx:PbacOptInView",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "targetAlias": "RolesList",
+        "targetProp": "isPrivate",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RoleSheet.tsx:RoleSheet",
+        "targetAlias": "RoleSheet",
+        "targetProp": "isPrivate",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RoleSheet.tsx:RoleSheet",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\AdvancedPermissionGroup.tsx:AdvancedPermissionGroup",
+        "targetAlias": "AdvancedPermissionGroup",
+        "targetProp": "isPrivate",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\PbacOptInView.tsx:PbacOptInView",
+    "targetComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\SimplePermissionItem.tsx:SimplePermissionItem",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\PbacOptInView.tsx:PbacOptInView",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "targetAlias": "RolesList",
+        "targetProp": "isPrivate",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RoleSheet.tsx:RoleSheet",
+        "targetAlias": "RoleSheet",
+        "targetProp": "isPrivate",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RoleSheet.tsx:RoleSheet",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\SimplePermissionItem.tsx:SimplePermissionItem",
+        "targetAlias": "SimplePermissionItem",
+        "targetProp": "isPrivate",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Page",
+    "targetComponent": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:WeightedAttributesSelector",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Page",
+        "target": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Routes",
+        "targetAlias": "Routes",
+        "targetProp": "attributes",
+        "isPure": false
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Routes",
+        "target": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Route",
+        "targetAlias": "Route",
+        "targetProp": "attributes",
+        "isPure": false
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Route",
+        "target": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:WeightedAttributesSelector",
+        "targetAlias": "WeightedAttributesSelector",
+        "targetProp": "attributes",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "modules\\settings\\admin\\locked-sms-view.tsx:LockedSMSView",
+    "targetComponent": "modules\\settings\\admin\\components\\UsersTable.tsx:LockStatusTable",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "modules\\settings\\admin\\locked-sms-view.tsx:LockedSMSView",
+        "target": "modules\\settings\\admin\\components\\UsersTable.tsx:UsersTable",
+        "targetAlias": "UsersTable",
+        "targetProp": "setSMSLockState",
+        "isPure": false
+      },
+      {
+        "source": "modules\\settings\\admin\\components\\UsersTable.tsx:UsersTable",
+        "target": "modules\\settings\\admin\\components\\UsersTable.tsx:LockStatusTable",
+        "targetAlias": "LockStatusTable",
+        "targetProp": "setSMSLockState",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "modules\\insights\\insights-virtual-queues-view.tsx:InsightsVirtualQueuesPage",
+    "targetComponent": "components\\apps\\routing-forms\\TestForm.tsx:FormView",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "modules\\insights\\insights-virtual-queues-view.tsx:InsightsVirtualQueuesPage",
+        "target": "components\\apps\\routing-forms\\TestForm.tsx:TestForm",
+        "targetAlias": "TestForm",
+        "targetProp": "form",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\TestForm.tsx:TestForm",
+        "target": "components\\apps\\routing-forms\\TestForm.tsx:FormView",
+        "targetAlias": "FormView",
+        "targetProp": "form",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\team\\screens\\Team.tsx:Team",
+    "targetComponent": "components\\team\\screens\\Team.tsx:Member",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\team\\screens\\Team.tsx:Team",
+        "target": "components\\team\\screens\\Team.tsx:Members",
+        "targetAlias": "Members",
+        "targetProp": "teamName",
+        "isPure": true
+      },
+      {
+        "source": "components\\team\\screens\\Team.tsx:Members",
+        "target": "components\\team\\screens\\Team.tsx:Member",
+        "targetAlias": "Member",
+        "targetProp": "teamName",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dialog\\RerouteDialog.tsx:RerouteDialog",
+    "targetComponent": "components\\dialog\\RerouteDialog.tsx:RerouteDialogContentAndFooterWithFormResponse",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\dialog\\RerouteDialog.tsx:RerouteDialog",
+        "target": "components\\dialog\\RerouteDialog.tsx:RerouteDialogContentAndFooter",
+        "targetAlias": "RerouteDialogContentAndFooter",
+        "targetProp": "isOpenDialog",
+        "isPure": false
+      },
+      {
+        "source": "components\\dialog\\RerouteDialog.tsx:RerouteDialogContentAndFooter",
+        "target": "components\\dialog\\RerouteDialog.tsx:RerouteDialogContentAndFooterWithFormResponse",
+        "targetAlias": "RerouteDialogContentAndFooterWithFormResponse",
+        "targetProp": "isOpenDialog",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dialog\\RerouteDialog.tsx:RerouteDialog",
+    "targetComponent": "components\\dialog\\RerouteDialog.tsx:RerouteDialogContentAndFooterWithFormResponse",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\dialog\\RerouteDialog.tsx:RerouteDialog",
+        "target": "components\\dialog\\RerouteDialog.tsx:RerouteDialogContentAndFooter",
+        "targetAlias": "RerouteDialogContentAndFooter",
+        "targetProp": "setIsOpenDialog",
+        "isPure": false
+      },
+      {
+        "source": "components\\dialog\\RerouteDialog.tsx:RerouteDialogContentAndFooter",
+        "target": "components\\dialog\\RerouteDialog.tsx:RerouteDialogContentAndFooterWithFormResponse",
+        "targetAlias": "RerouteDialogContentAndFooterWithFormResponse",
+        "targetProp": "setIsOpenDialog",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\booking\\BookingListItem.tsx:BookingListItem",
+    "targetComponent": "components\\booking\\BookingListItem.tsx:FirstAttendee",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\booking\\BookingListItem.tsx:BookingListItem",
+        "target": "components\\booking\\BookingListItem.tsx:DisplayAttendees",
+        "targetAlias": "DisplayAttendees",
+        "targetProp": "user",
+        "isPure": false
+      },
+      {
+        "source": "components\\booking\\BookingListItem.tsx:DisplayAttendees",
+        "target": "components\\booking\\BookingListItem.tsx:FirstAttendee",
+        "targetAlias": "FirstAttendee",
+        "targetProp": "user",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\booking\\BookingListItem.tsx:BookingListItem",
+    "targetComponent": "components\\booking\\BookingListItem.tsx:FirstAttendee",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\booking\\BookingListItem.tsx:BookingListItem",
+        "target": "components\\booking\\BookingListItem.tsx:DisplayAttendees",
+        "targetAlias": "DisplayAttendees",
+        "targetProp": "currentEmail",
+        "isPure": false
+      },
+      {
+        "source": "components\\booking\\BookingListItem.tsx:DisplayAttendees",
+        "target": "components\\booking\\BookingListItem.tsx:FirstAttendee",
+        "targetAlias": "FirstAttendee",
+        "targetProp": "currentEmail",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\booking\\BookingListItem.tsx:BookingListItem",
+    "targetComponent": "components\\booking\\BookingListItem.tsx:GroupedGuests",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "components\\booking\\BookingListItem.tsx:BookingListItem",
+        "target": "components\\booking\\BookingListItem.tsx:DisplayAttendees",
+        "targetAlias": "DisplayAttendees",
+        "targetProp": "attendees",
+        "isPure": false
+      },
+      {
+        "source": "components\\booking\\BookingListItem.tsx:DisplayAttendees",
+        "target": "components\\booking\\BookingListItem.tsx:GroupedGuests",
+        "targetAlias": "GroupedGuests",
+        "targetProp": "guests",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "components\\booking\\BookingListItem.tsx:BookingListItem",
+    "targetComponent": "components\\booking\\BookingListItem.tsx:RecurringBookingsTooltip",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\booking\\BookingListItem.tsx:BookingListItem",
+        "target": "components\\booking\\BookingListItem.tsx:BookingItemBadges",
+        "targetAlias": "BookingItemBadges",
+        "targetProp": "booking",
+        "isPure": false
+      },
+      {
+        "source": "components\\booking\\BookingListItem.tsx:BookingItemBadges",
+        "target": "components\\booking\\BookingListItem.tsx:RecurringBookingsTooltip",
+        "targetAlias": "RecurringBookingsTooltip",
+        "targetProp": "booking",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\booking\\BookingListItem.tsx:BookingListItem",
+    "targetComponent": "components\\booking\\BookingListItem.tsx:RecurringBookingsTooltip",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\booking\\BookingListItem.tsx:BookingListItem",
+        "target": "components\\booking\\BookingListItem.tsx:BookingItemBadges",
+        "targetAlias": "BookingItemBadges",
+        "targetProp": "recurringDates",
+        "isPure": false
+      },
+      {
+        "source": "components\\booking\\BookingListItem.tsx:BookingItemBadges",
+        "target": "components\\booking\\BookingListItem.tsx:RecurringBookingsTooltip",
+        "targetAlias": "RecurringBookingsTooltip",
+        "targetProp": "recurringDates",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\booking\\BookingListItem.tsx:BookingListItem",
+    "targetComponent": "components\\booking\\BookingListItem.tsx:RecurringBookingsTooltip",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\booking\\BookingListItem.tsx:BookingListItem",
+        "target": "components\\booking\\BookingListItem.tsx:BookingItemBadges",
+        "targetAlias": "BookingItemBadges",
+        "targetProp": "userTimeFormat",
+        "isPure": false
+      },
+      {
+        "source": "components\\booking\\BookingListItem.tsx:BookingItemBadges",
+        "target": "components\\booking\\BookingListItem.tsx:RecurringBookingsTooltip",
+        "targetAlias": "RecurringBookingsTooltip",
+        "targetProp": "userTimeFormat",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\booking\\BookingListItem.tsx:BookingListItem",
+    "targetComponent": "components\\booking\\BookingListItem.tsx:RecurringBookingsTooltip",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\booking\\BookingListItem.tsx:BookingListItem",
+        "target": "components\\booking\\BookingListItem.tsx:BookingItemBadges",
+        "targetAlias": "BookingItemBadges",
+        "targetProp": "userTimeZone",
+        "isPure": false
+      },
+      {
+        "source": "components\\booking\\BookingListItem.tsx:BookingItemBadges",
+        "target": "components\\booking\\BookingListItem.tsx:RecurringBookingsTooltip",
+        "targetAlias": "RecurringBookingsTooltip",
+        "targetProp": "userTimeZone",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+    "targetComponent": "components\\apps\\routing-forms\\Header.tsx:Actions",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+        "target": "components\\apps\\routing-forms\\Header.tsx:Header",
+        "targetAlias": "Header",
+        "targetProp": "isSaving",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\Header.tsx:Header",
+        "target": "components\\apps\\routing-forms\\Header.tsx:Actions",
+        "targetAlias": "Actions",
+        "targetProp": "isSaving",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+    "targetComponent": "components\\apps\\routing-forms\\Header.tsx:Actions",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+        "target": "components\\apps\\routing-forms\\Header.tsx:Header",
+        "targetAlias": "Header",
+        "targetProp": "setIsTestPreviewOpen",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\Header.tsx:Header",
+        "target": "components\\apps\\routing-forms\\Header.tsx:Actions",
+        "targetAlias": "Actions",
+        "targetProp": "setIsTestPreviewOpen",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+    "targetComponent": "components\\apps\\routing-forms\\Header.tsx:Actions",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\apps\\routing-forms\\SingleForm.tsx:SingleForm",
+        "target": "components\\apps\\routing-forms\\Header.tsx:Header",
+        "targetAlias": "Header",
+        "targetProp": "isTestPreviewOpen",
+        "isPure": false
+      },
+      {
+        "source": "components\\apps\\routing-forms\\Header.tsx:Header",
+        "target": "components\\apps\\routing-forms\\Header.tsx:Actions",
+        "targetAlias": "Actions",
+        "targetProp": "isTestPreviewOpen",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\apps\\routing-forms\\TestForm.tsx:TestFormRenderer",
+    "targetComponent": "components\\apps\\routing-forms\\TestForm.tsx:FormView",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\apps\\routing-forms\\TestForm.tsx:TestFormRenderer",
+        "target": "components\\apps\\routing-forms\\TestForm.tsx:TestForm",
+        "targetAlias": "TestForm",
+        "targetProp": "renderFooter",
+        "isPure": true
+      },
+      {
+        "source": "components\\apps\\routing-forms\\TestForm.tsx:TestForm",
+        "target": "components\\apps\\routing-forms\\TestForm.tsx:FormView",
+        "targetAlias": "FormView",
+        "targetProp": "renderFooter",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\apps\\installation\\EventTypesStepCard.tsx:EventTypesStepCard",
+    "targetComponent": "components\\apps\\installation\\EventTypesStepCard.tsx:EventTypeCard",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\apps\\installation\\EventTypesStepCard.tsx:EventTypesStepCard",
+        "target": "components\\apps\\installation\\EventTypesStepCard.tsx:EventTypeGroup",
+        "targetAlias": "EventTypeGroup",
+        "targetProp": "userName",
+        "isPure": true
+      },
+      {
+        "source": "components\\apps\\installation\\EventTypesStepCard.tsx:EventTypeGroup",
+        "target": "components\\apps\\installation\\EventTypesStepCard.tsx:EventTypeCard",
+        "targetAlias": "EventTypeCard",
+        "targetProp": "userName",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SettingsLayoutAppDirClient",
+    "targetComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SettingsSidebarContainer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SettingsLayoutAppDirClient",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SidebarContainerElement",
+        "targetAlias": "SidebarContainerElement",
+        "targetProp": "sideContainerOpen",
+        "isPure": false
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SidebarContainerElement",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\SettingsLayoutAppDirClient.tsx:SettingsSidebarContainer",
+        "targetAlias": "SettingsSidebarContainer",
+        "targetProp": "navigationIsOpenedOnMobile",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\teams\\[id]\\roles\\page.tsx:Page",
+    "targetComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RoleItem",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\teams\\[id]\\roles\\page.tsx:Page",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "targetAlias": "RolesList",
+        "targetProp": "permissions",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RoleItem",
+        "targetAlias": "RoleItem",
+        "targetProp": "permissions",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\teams\\[id]\\roles\\page.tsx:Page",
+    "targetComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RoleSheet.tsx:RoleSheet",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\teams\\[id]\\roles\\page.tsx:Page",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "targetAlias": "RolesList",
+        "targetProp": "teamId",
+        "isPure": false
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RoleSheet.tsx:RoleSheet",
+        "targetAlias": "RoleSheet",
+        "targetProp": "teamId",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\PbacOptInView.tsx:PbacOptInView",
+    "targetComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RoleItem",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\PbacOptInView.tsx:PbacOptInView",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "targetAlias": "RolesList",
+        "targetProp": "permissions",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RoleItem",
+        "targetAlias": "RoleItem",
+        "targetProp": "permissions",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\PbacOptInView.tsx:PbacOptInView",
+    "targetComponent": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RoleSheet.tsx:RoleSheet",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\PbacOptInView.tsx:PbacOptInView",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "targetAlias": "RolesList",
+        "targetProp": "teamId",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RolesList.tsx:RolesList",
+        "target": "app\\(use-page-wrapper)\\settings\\(settings-layout)\\organizations\\roles\\_components\\RoleSheet.tsx:RoleSheet",
+        "targetAlias": "RoleSheet",
+        "targetProp": "teamId",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Page",
+    "targetComponent": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Route",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Page",
+        "target": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Routes",
+        "targetAlias": "Routes",
+        "targetProp": "appUrl",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Routes",
+        "target": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Route",
+        "targetAlias": "Route",
+        "targetProp": "appUrl",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Page",
+    "targetComponent": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Route",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Page",
+        "target": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Routes",
+        "targetAlias": "Routes",
+        "targetProp": "eventTypesByGroup",
+        "isPure": false
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Routes",
+        "target": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Route",
+        "targetAlias": "Route",
+        "targetProp": "eventTypesByGroup",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Page",
+    "targetComponent": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Route",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Page",
+        "target": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Routes",
+        "targetAlias": "Routes",
+        "targetProp": "form",
+        "isPure": true
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Routes",
+        "target": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Route",
+        "targetAlias": "Route",
+        "targetProp": "form",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Routes",
+    "targetComponent": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:WeightedAttributesSelector",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Routes",
+        "target": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Route",
+        "targetAlias": "Route",
+        "targetProp": "route",
+        "isPure": false
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Route",
+        "target": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:WeightedAttributesSelector",
+        "targetAlias": "WeightedAttributesSelector",
+        "targetProp": "route",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Routes",
+    "targetComponent": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:WeightedAttributesSelector",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Routes",
+        "target": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Route",
+        "targetAlias": "Route",
+        "targetProp": "setRoute",
+        "isPure": false
+      },
+      {
+        "source": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:Route",
+        "target": "app\\(use-page-wrapper)\\apps\\routing-forms\\[...pages]\\RouteBuilder.tsx:WeightedAttributesSelector",
+        "targetAlias": "WeightedAttributesSelector",
+        "targetProp": "setRoute",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  }
+]

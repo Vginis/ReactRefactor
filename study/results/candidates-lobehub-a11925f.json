@@ -1,0 +1,2130 @@
+[
+  {
+    "sourceComponent": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+    "targetComponent": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\BuiltinPluginTitle.tsx:BuiltinPluginTitle",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "targetAlias": "Tool",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\index.tsx:Inspectors",
+        "targetAlias": "Inspectors",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\index.tsx:Inspectors",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\ToolTitle.tsx:ToolTitle",
+        "targetAlias": "ToolTitle",
+        "targetProp": "toolCallId",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\ToolTitle.tsx:ToolTitle",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\BuiltinPluginTitle.tsx:BuiltinPluginTitle",
+        "targetAlias": "BuiltinPluginTitle",
+        "targetProp": "toolCallId",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+    "targetComponent": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\BuiltinPluginTitle.tsx:BuiltinPluginTitle",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "targetAlias": "Tool",
+        "targetProp": "identifier",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\index.tsx:Inspectors",
+        "targetAlias": "Inspectors",
+        "targetProp": "identifier",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\index.tsx:Inspectors",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\ToolTitle.tsx:ToolTitle",
+        "targetAlias": "ToolTitle",
+        "targetProp": "identifier",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\ToolTitle.tsx:ToolTitle",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\BuiltinPluginTitle.tsx:BuiltinPluginTitle",
+        "targetAlias": "BuiltinPluginTitle",
+        "targetProp": "identifier",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+    "targetComponent": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\BuiltinPluginTitle.tsx:BuiltinPluginTitle",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "targetAlias": "Tool",
+        "targetProp": "index",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\index.tsx:Inspectors",
+        "targetAlias": "Inspectors",
+        "targetProp": "index",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\index.tsx:Inspectors",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\ToolTitle.tsx:ToolTitle",
+        "targetAlias": "ToolTitle",
+        "targetProp": "index",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\ToolTitle.tsx:ToolTitle",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\BuiltinPluginTitle.tsx:BuiltinPluginTitle",
+        "targetAlias": "BuiltinPluginTitle",
+        "targetProp": "index",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+    "targetComponent": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\BuiltinPluginTitle.tsx:BuiltinPluginTitle",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "targetAlias": "Tool",
+        "targetProp": "messageId",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\index.tsx:Inspectors",
+        "targetAlias": "Inspectors",
+        "targetProp": "messageId",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\index.tsx:Inspectors",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\ToolTitle.tsx:ToolTitle",
+        "targetAlias": "ToolTitle",
+        "targetProp": "messageId",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\ToolTitle.tsx:ToolTitle",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\BuiltinPluginTitle.tsx:BuiltinPluginTitle",
+        "targetAlias": "BuiltinPluginTitle",
+        "targetProp": "messageId",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\settings\\provider\\detail\\default\\ProviderDetialPage.tsx:ProviderDetialPage",
+    "targetComponent": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\EmptyModels.tsx:EmptyState",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\settings\\provider\\detail\\default\\ProviderDetialPage.tsx:ProviderDetialPage",
+        "target": "app\\[variants]\\(main)\\settings\\provider\\detail\\default\\ClientMode.tsx:ClientMode",
+        "targetAlias": "ClientMode",
+        "targetProp": "id",
+        "isPure": false
+      },
+      {
+        "source": "app\\[variants]\\(main)\\settings\\provider\\detail\\default\\ClientMode.tsx:ClientMode",
+        "target": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\index.tsx:ModelList",
+        "targetAlias": "ModelList",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\index.tsx:ModelList",
+        "target": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\index.tsx:Content",
+        "targetAlias": "Content",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\index.tsx:Content",
+        "target": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\EmptyModels.tsx:EmptyState",
+        "targetAlias": "EmptyModels",
+        "targetProp": "provider",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+    "targetComponent": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\ToolTitle.tsx:ToolTitle",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "targetAlias": "Tool",
+        "targetProp": "apiName",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\index.tsx:Inspectors",
+        "targetAlias": "Inspectors",
+        "targetProp": "apiName",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\index.tsx:Inspectors",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\ToolTitle.tsx:ToolTitle",
+        "targetAlias": "ToolTitle",
+        "targetProp": "apiName",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+    "targetComponent": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\Settings.tsx:Settings",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "targetAlias": "Tool",
+        "targetProp": "identifier",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\index.tsx:Inspectors",
+        "targetAlias": "Inspectors",
+        "targetProp": "identifier",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\index.tsx:Inspectors",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\Settings.tsx:Settings",
+        "targetAlias": "Settings",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+    "targetComponent": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\Debug.tsx:Debug",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "targetAlias": "Tool",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\index.tsx:Inspectors",
+        "targetAlias": "Inspectors",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\index.tsx:Inspectors",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\Debug.tsx:Debug",
+        "targetAlias": "Debug",
+        "targetProp": "toolCallId",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+    "targetComponent": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\Debug.tsx:Debug",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "targetAlias": "Tool",
+        "targetProp": "payload",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\index.tsx:Inspectors",
+        "targetAlias": "Inspectors",
+        "targetProp": "payload",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\index.tsx:Inspectors",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Inspector\\Debug.tsx:Debug",
+        "targetAlias": "Debug",
+        "targetProp": "payload",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\settings\\provider\\detail\\default\\index.tsx:ProviderDetail",
+    "targetComponent": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\EmptyModels.tsx:EmptyState",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\settings\\provider\\detail\\default\\index.tsx:ProviderDetail",
+        "target": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\index.tsx:ModelList",
+        "targetAlias": "ModelList",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\index.tsx:ModelList",
+        "target": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\index.tsx:Content",
+        "targetAlias": "Content",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\index.tsx:Content",
+        "target": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\EmptyModels.tsx:EmptyState",
+        "targetAlias": "EmptyModels",
+        "targetProp": "provider",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\settings\\provider\\detail\\default\\ProviderDetialPage.tsx:ProviderDetialPage",
+    "targetComponent": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\ModelTitle\\index.tsx:ModelTitle",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\settings\\provider\\detail\\default\\ProviderDetialPage.tsx:ProviderDetialPage",
+        "target": "app\\[variants]\\(main)\\settings\\provider\\detail\\default\\ClientMode.tsx:ClientMode",
+        "targetAlias": "ClientMode",
+        "targetProp": "id",
+        "isPure": false
+      },
+      {
+        "source": "app\\[variants]\\(main)\\settings\\provider\\detail\\default\\ClientMode.tsx:ClientMode",
+        "target": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\index.tsx:ModelList",
+        "targetAlias": "ModelList",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\index.tsx:ModelList",
+        "target": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\ModelTitle\\index.tsx:ModelTitle",
+        "targetAlias": "ModelTitle",
+        "targetProp": "provider",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\index.tsx:GenerationFeed",
+    "targetComponent": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\ErrorState.tsx:ErrorState",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\index.tsx:GenerationFeed",
+        "target": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\BatchItem.tsx:GenerationBatchItem",
+        "targetAlias": "GenerationBatchItem",
+        "targetProp": "batch",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\BatchItem.tsx:GenerationBatchItem",
+        "target": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\index.tsx:GenerationItem",
+        "targetAlias": "GenerationItem",
+        "targetProp": "generationBatch",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\index.tsx:GenerationItem",
+        "target": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\ErrorState.tsx:ErrorState",
+        "targetAlias": "ErrorState",
+        "targetProp": "generationBatch",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\index.tsx:GenerationFeed",
+    "targetComponent": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\LoadingState.tsx:LoadingState",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\index.tsx:GenerationFeed",
+        "target": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\BatchItem.tsx:GenerationBatchItem",
+        "targetAlias": "GenerationBatchItem",
+        "targetProp": "batch",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\BatchItem.tsx:GenerationBatchItem",
+        "target": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\index.tsx:GenerationItem",
+        "targetAlias": "GenerationItem",
+        "targetProp": "generationBatch",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\index.tsx:GenerationItem",
+        "target": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\LoadingState.tsx:LoadingState",
+        "targetAlias": "LoadingState",
+        "targetProp": "generationBatch",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\page.tsx:Page",
+    "targetComponent": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\features\\Details\\Nav.tsx:Nav",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\page.tsx:Page",
+        "target": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\Client.tsx:Client",
+        "targetAlias": "Client",
+        "targetProp": "mobile",
+        "isPure": false
+      },
+      {
+        "source": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\Client.tsx:Client",
+        "target": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\features\\Details\\index.tsx:Details",
+        "targetAlias": "Details",
+        "targetProp": "mobile",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\features\\Details\\index.tsx:Details",
+        "target": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\features\\Details\\Nav.tsx:Nav",
+        "targetAlias": "Nav",
+        "targetProp": "mobile",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\page.tsx:Page",
+    "targetComponent": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\features\\Sidebar\\index.tsx:Sidebar",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\page.tsx:Page",
+        "target": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\Client.tsx:Client",
+        "targetAlias": "Client",
+        "targetProp": "mobile",
+        "isPure": false
+      },
+      {
+        "source": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\Client.tsx:Client",
+        "target": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\features\\Details\\index.tsx:Details",
+        "targetAlias": "Details",
+        "targetProp": "mobile",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\features\\Details\\index.tsx:Details",
+        "target": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\features\\Sidebar\\index.tsx:Sidebar",
+        "targetAlias": "Sidebar",
+        "targetProp": "mobile",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "tools\\web-browsing\\Render\\Search\\index.tsx:Search",
+    "targetComponent": "tools\\web-browsing\\components\\SearchBar.tsx:SearchBar",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "tools\\web-browsing\\Render\\Search\\index.tsx:Search",
+        "target": "tools\\web-browsing\\Render\\Search\\SearchQuery\\index.tsx:SearchQueryView",
+        "targetAlias": "SearchQueryView",
+        "targetProp": "messageId",
+        "isPure": true
+      },
+      {
+        "source": "tools\\web-browsing\\Render\\Search\\SearchQuery\\index.tsx:SearchQueryView",
+        "target": "tools\\web-browsing\\components\\SearchBar.tsx:SearchBar",
+        "targetAlias": "SearchBar",
+        "targetProp": "messageId",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "tools\\web-browsing\\Render\\Search\\index.tsx:Search",
+    "targetComponent": "tools\\web-browsing\\Render\\Search\\SearchQuery\\SearchView.tsx:SearchBar",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "tools\\web-browsing\\Render\\Search\\index.tsx:Search",
+        "target": "tools\\web-browsing\\Render\\Search\\SearchQuery\\index.tsx:SearchQueryView",
+        "targetAlias": "SearchQueryView",
+        "targetProp": "setEditing",
+        "isPure": true
+      },
+      {
+        "source": "tools\\web-browsing\\Render\\Search\\SearchQuery\\index.tsx:SearchQueryView",
+        "target": "tools\\web-browsing\\Render\\Search\\SearchQuery\\SearchView.tsx:SearchBar",
+        "targetAlias": "SearchBar",
+        "targetProp": "onEditingChange",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "tools\\web-browsing\\Render\\Search\\SearchQuery\\index.tsx:SearchQueryView",
+    "targetComponent": "tools\\web-browsing\\components\\EngineAvatar.tsx:EngineAvatarGroup",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "tools\\web-browsing\\Render\\Search\\SearchQuery\\index.tsx:SearchQueryView",
+        "target": "tools\\web-browsing\\Render\\Search\\SearchQuery\\SearchView.tsx:SearchBar",
+        "targetAlias": "SearchBar",
+        "targetProp": "defaultEngines",
+        "isPure": true
+      },
+      {
+        "source": "tools\\web-browsing\\Render\\Search\\SearchQuery\\SearchView.tsx:SearchBar",
+        "target": "tools\\web-browsing\\components\\EngineAvatar.tsx:EngineAvatarGroup",
+        "targetAlias": "EngineAvatarGroup",
+        "targetProp": "engines",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "tools\\web-browsing\\Render\\Search\\index.tsx:Search",
+    "targetComponent": "tools\\web-browsing\\Render\\Search\\SearchResult\\ShowMore.tsx:ShowMore",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "tools\\web-browsing\\Render\\Search\\index.tsx:Search",
+        "target": "tools\\web-browsing\\Render\\Search\\SearchResult\\index.tsx:SearchResult",
+        "targetAlias": "SearchResult",
+        "targetProp": "messageId",
+        "isPure": true
+      },
+      {
+        "source": "tools\\web-browsing\\Render\\Search\\SearchResult\\index.tsx:SearchResult",
+        "target": "tools\\web-browsing\\Render\\Search\\SearchResult\\ShowMore.tsx:ShowMore",
+        "targetAlias": "ShowMore",
+        "targetProp": "messageId",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "tools\\web-browsing\\Render\\Search\\SearchResult\\index.tsx:SearchResult",
+    "targetComponent": "tools\\web-browsing\\components\\EngineAvatar.tsx:EngineAvatarGroup",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "tools\\web-browsing\\Render\\Search\\SearchResult\\index.tsx:SearchResult",
+        "target": "tools\\web-browsing\\Render\\Search\\SearchResult\\ShowMore.tsx:ShowMore",
+        "targetAlias": "ShowMore",
+        "targetProp": "engines",
+        "isPure": true
+      },
+      {
+        "source": "tools\\web-browsing\\Render\\Search\\SearchResult\\ShowMore.tsx:ShowMore",
+        "target": "tools\\web-browsing\\components\\EngineAvatar.tsx:EngineAvatarGroup",
+        "targetAlias": "EngineAvatarGroup",
+        "targetProp": "engines",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "features\\ProtocolUrlHandler\\index.tsx:ProtocolUrlHandler",
+    "targetComponent": "features\\ProtocolUrlHandler\\InstallPlugin\\CustomPluginInstallModal.tsx:CustomPluginInstallModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ProtocolUrlHandler\\index.tsx:ProtocolUrlHandler",
+        "target": "features\\ProtocolUrlHandler\\InstallPlugin\\index.tsx:PluginInstallConfirmModal",
+        "targetAlias": "PluginInstallConfirmModal",
+        "targetProp": "installRequest",
+        "isPure": false
+      },
+      {
+        "source": "features\\ProtocolUrlHandler\\InstallPlugin\\index.tsx:PluginInstallConfirmModal",
+        "target": "features\\ProtocolUrlHandler\\InstallPlugin\\CustomPluginInstallModal.tsx:CustomPluginInstallModal",
+        "targetAlias": "CustomPluginInstallModal",
+        "targetProp": "installRequest",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ProtocolUrlHandler\\index.tsx:ProtocolUrlHandler",
+    "targetComponent": "features\\ProtocolUrlHandler\\InstallPlugin\\CustomPluginInstallModal.tsx:CustomPluginInstallModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ProtocolUrlHandler\\index.tsx:ProtocolUrlHandler",
+        "target": "features\\ProtocolUrlHandler\\InstallPlugin\\index.tsx:PluginInstallConfirmModal",
+        "targetAlias": "PluginInstallConfirmModal",
+        "targetProp": "onComplete",
+        "isPure": false
+      },
+      {
+        "source": "features\\ProtocolUrlHandler\\InstallPlugin\\index.tsx:PluginInstallConfirmModal",
+        "target": "features\\ProtocolUrlHandler\\InstallPlugin\\CustomPluginInstallModal.tsx:CustomPluginInstallModal",
+        "targetAlias": "CustomPluginInstallModal",
+        "targetProp": "onComplete",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\PluginStore\\Content.tsx:Content",
+    "targetComponent": "features\\PluginStore\\InstalledList\\List\\index.tsx:List",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\PluginStore\\Content.tsx:Content",
+        "target": "features\\PluginStore\\InstalledList\\index.tsx:PluginList",
+        "targetAlias": "PluginList",
+        "targetProp": "keywords",
+        "isPure": true
+      },
+      {
+        "source": "features\\PluginStore\\InstalledList\\index.tsx:PluginList",
+        "target": "features\\PluginStore\\InstalledList\\List\\index.tsx:List",
+        "targetAlias": "List",
+        "targetProp": "keywords",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\PluginStore\\InstalledList\\List\\Item\\index.tsx:Item",
+    "targetComponent": "features\\PluginStore\\InstalledList\\EditCustomPlugin.tsx:EditCustomPlugin",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\PluginStore\\InstalledList\\List\\Item\\index.tsx:Item",
+        "target": "features\\PluginStore\\InstalledList\\List\\Item\\Action.tsx:Actions",
+        "targetAlias": "Actions",
+        "targetProp": "identifier",
+        "isPure": true
+      },
+      {
+        "source": "features\\PluginStore\\InstalledList\\List\\Item\\Action.tsx:Actions",
+        "target": "features\\PluginStore\\InstalledList\\EditCustomPlugin.tsx:EditCustomPlugin",
+        "targetAlias": "EditCustomPlugin",
+        "targetProp": "identifier",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\PluginDevModal\\index.tsx:DevModal",
+    "targetComponent": "features\\PluginDevModal\\MCPManifestForm\\QuickImportSection.tsx:QuickImportSection",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\PluginDevModal\\index.tsx:DevModal",
+        "target": "features\\PluginDevModal\\MCPManifestForm\\index.tsx:MCPManifestForm",
+        "targetAlias": "MCPManifestForm",
+        "targetProp": "form",
+        "isPure": true
+      },
+      {
+        "source": "features\\PluginDevModal\\MCPManifestForm\\index.tsx:MCPManifestForm",
+        "target": "features\\PluginDevModal\\MCPManifestForm\\QuickImportSection.tsx:QuickImportSection",
+        "targetAlias": "QuickImportSection",
+        "targetProp": "form",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\PluginDevModal\\index.tsx:DevModal",
+    "targetComponent": "features\\PluginDevModal\\MCPManifestForm\\QuickImportSection.tsx:QuickImportSection",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\PluginDevModal\\index.tsx:DevModal",
+        "target": "features\\PluginDevModal\\MCPManifestForm\\index.tsx:MCPManifestForm",
+        "targetAlias": "MCPManifestForm",
+        "targetProp": "isEditMode",
+        "isPure": true
+      },
+      {
+        "source": "features\\PluginDevModal\\MCPManifestForm\\index.tsx:MCPManifestForm",
+        "target": "features\\PluginDevModal\\MCPManifestForm\\QuickImportSection.tsx:QuickImportSection",
+        "targetAlias": "QuickImportSection",
+        "targetProp": "isEditMode",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\MCPPluginDetail\\Schema\\index.tsx:Schema",
+    "targetComponent": "app\\[variants]\\(main)\\discover\\features\\Title.tsx:Title",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\MCPPluginDetail\\Schema\\index.tsx:Schema",
+        "target": "features\\MCPPluginDetail\\Schema\\Block.tsx:Block",
+        "targetAlias": "Block",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "features\\MCPPluginDetail\\Schema\\Block.tsx:Block",
+        "target": "app\\[variants]\\(main)\\discover\\features\\Title.tsx:Title",
+        "targetAlias": "Title",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\FileManager\\index.tsx:FileManager",
+    "targetComponent": "features\\FileManager\\Header\\UploadFileButton.tsx:UploadFileButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\FileManager\\index.tsx:FileManager",
+        "target": "features\\FileManager\\Header\\index.tsx:Header",
+        "targetAlias": "Header",
+        "targetProp": "knowledgeBaseId",
+        "isPure": true
+      },
+      {
+        "source": "features\\FileManager\\Header\\index.tsx:Header",
+        "target": "features\\FileManager\\Header\\UploadFileButton.tsx:UploadFileButton",
+        "targetAlias": "UploadFileButton",
+        "targetProp": "knowledgeBaseId",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "features\\FileManager\\index.tsx:FileManager",
+    "targetComponent": "features\\FileManager\\FileList\\EmptyStatus.tsx:EmptyStatus",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\FileManager\\index.tsx:FileManager",
+        "target": "features\\FileManager\\FileList\\index.tsx:FileList",
+        "targetAlias": "FileList",
+        "targetProp": "knowledgeBaseId",
+        "isPure": true
+      },
+      {
+        "source": "features\\FileManager\\FileList\\index.tsx:FileList",
+        "target": "features\\FileManager\\FileList\\EmptyStatus.tsx:EmptyStatus",
+        "targetAlias": "EmptyStatus",
+        "targetProp": "knowledgeBaseId",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\FileManager\\index.tsx:FileManager",
+    "targetComponent": "features\\FileManager\\FileList\\ToolBar\\index.tsx:ToolBar",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\FileManager\\index.tsx:FileManager",
+        "target": "features\\FileManager\\FileList\\index.tsx:FileList",
+        "targetAlias": "FileList",
+        "targetProp": "knowledgeBaseId",
+        "isPure": true
+      },
+      {
+        "source": "features\\FileManager\\FileList\\index.tsx:FileList",
+        "target": "features\\FileManager\\FileList\\ToolBar\\index.tsx:ToolBar",
+        "targetAlias": "ToolBar",
+        "targetProp": "knowledgeBaseId",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\FileManager\\FileList\\index.tsx:FileList",
+    "targetComponent": "features\\FileManager\\FileList\\ToolBar\\MultiSelectActions.tsx:MultiSelectActions",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\FileManager\\FileList\\index.tsx:FileList",
+        "target": "features\\FileManager\\FileList\\ToolBar\\index.tsx:ToolBar",
+        "targetAlias": "ToolBar",
+        "targetProp": "selectCount",
+        "isPure": true
+      },
+      {
+        "source": "features\\FileManager\\FileList\\ToolBar\\index.tsx:ToolBar",
+        "target": "features\\FileManager\\FileList\\ToolBar\\MultiSelectActions.tsx:MultiSelectActions",
+        "targetAlias": "MultiSelectActions",
+        "targetProp": "selectCount",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\FileManager\\FileList\\index.tsx:FileList",
+    "targetComponent": "features\\FileManager\\FileList\\ToolBar\\Config.tsx:Config",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\FileManager\\FileList\\index.tsx:FileList",
+        "target": "features\\FileManager\\FileList\\ToolBar\\index.tsx:ToolBar",
+        "targetAlias": "ToolBar",
+        "targetProp": "config",
+        "isPure": true
+      },
+      {
+        "source": "features\\FileManager\\FileList\\ToolBar\\index.tsx:ToolBar",
+        "target": "features\\FileManager\\FileList\\ToolBar\\Config.tsx:Config",
+        "targetAlias": "Config",
+        "targetProp": "config",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\FileManager\\FileList\\index.tsx:FileList",
+    "targetComponent": "features\\FileManager\\FileList\\ToolBar\\Config.tsx:Config",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\FileManager\\FileList\\index.tsx:FileList",
+        "target": "features\\FileManager\\FileList\\ToolBar\\index.tsx:ToolBar",
+        "targetAlias": "ToolBar",
+        "targetProp": "onConfigChange",
+        "isPure": true
+      },
+      {
+        "source": "features\\FileManager\\FileList\\ToolBar\\index.tsx:ToolBar",
+        "target": "features\\FileManager\\FileList\\ToolBar\\Config.tsx:Config",
+        "targetAlias": "Config",
+        "targetProp": "onConfigChange",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+    "targetComponent": "features\\Conversation\\Messages\\Assistant\\Tool\\Render\\index.tsx:Render",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "targetAlias": "Tool",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Render\\index.tsx:Render",
+        "targetAlias": "Render",
+        "targetProp": "toolCallId",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+    "targetComponent": "features\\Conversation\\Messages\\Assistant\\Tool\\Render\\index.tsx:Render",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "targetAlias": "Tool",
+        "targetProp": "index",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Render\\index.tsx:Render",
+        "targetAlias": "Render",
+        "targetProp": "toolIndex",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+    "targetComponent": "features\\Conversation\\Messages\\Assistant\\Tool\\Render\\index.tsx:Render",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\MessageContent.tsx:AssistantMessageContent",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "targetAlias": "Tool",
+        "targetProp": "messageId",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\Messages\\Assistant\\Tool\\index.tsx:Tool",
+        "target": "features\\Conversation\\Messages\\Assistant\\Tool\\Render\\index.tsx:Render",
+        "targetAlias": "Render",
+        "targetProp": "messageId",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\Conversation\\components\\ShareMessageModal\\index.tsx:ShareModal",
+    "targetComponent": "features\\Conversation\\components\\ShareMessageModal\\ShareImage\\Preview.tsx:Preview",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\Conversation\\components\\ShareMessageModal\\index.tsx:ShareModal",
+        "target": "features\\Conversation\\components\\ShareMessageModal\\ShareImage\\index.tsx:ShareImage",
+        "targetAlias": "ShareImage",
+        "targetProp": "message",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\components\\ShareMessageModal\\ShareImage\\index.tsx:ShareImage",
+        "target": "features\\Conversation\\components\\ShareMessageModal\\ShareImage\\Preview.tsx:Preview",
+        "targetAlias": "Preview",
+        "targetProp": "message",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\Conversation\\components\\Extras\\Usage\\index.tsx:Usage",
+    "targetComponent": "features\\Conversation\\components\\Extras\\Usage\\UsageDetail\\ModelCard.tsx:ModelCard",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "features\\Conversation\\components\\Extras\\Usage\\index.tsx:Usage",
+        "target": "features\\Conversation\\components\\Extras\\Usage\\UsageDetail\\index.tsx:TokenDetail",
+        "targetAlias": "TokenDetail",
+        "targetProp": "provider",
+        "isPure": true
+      },
+      {
+        "source": "features\\Conversation\\components\\Extras\\Usage\\UsageDetail\\index.tsx:TokenDetail",
+        "target": "features\\Conversation\\components\\Extras\\Usage\\UsageDetail\\ModelCard.tsx:ModelCard",
+        "targetAlias": "ModelCard",
+        "targetProp": "provider",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "features\\ChatInput\\Desktop\\FilePreview\\FileItem\\index.tsx:FileItem",
+    "targetComponent": "features\\ChatInput\\components\\UploadDetail\\UploadStatus.tsx:UploadStatus",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ChatInput\\Desktop\\FilePreview\\FileItem\\index.tsx:FileItem",
+        "target": "features\\ChatInput\\components\\UploadDetail\\index.tsx:UploadDetail",
+        "targetAlias": "UploadDetail",
+        "targetProp": "size",
+        "isPure": true
+      },
+      {
+        "source": "features\\ChatInput\\components\\UploadDetail\\index.tsx:UploadDetail",
+        "target": "features\\ChatInput\\components\\UploadDetail\\UploadStatus.tsx:UploadStatus",
+        "targetAlias": "UploadStatus",
+        "targetProp": "size",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ChatInput\\Desktop\\FilePreview\\FileItem\\index.tsx:FileItem",
+    "targetComponent": "features\\ChatInput\\components\\UploadDetail\\UploadStatus.tsx:UploadStatus",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ChatInput\\Desktop\\FilePreview\\FileItem\\index.tsx:FileItem",
+        "target": "features\\ChatInput\\components\\UploadDetail\\index.tsx:UploadDetail",
+        "targetAlias": "UploadDetail",
+        "targetProp": "status",
+        "isPure": true
+      },
+      {
+        "source": "features\\ChatInput\\components\\UploadDetail\\index.tsx:UploadDetail",
+        "target": "features\\ChatInput\\components\\UploadDetail\\UploadStatus.tsx:UploadStatus",
+        "targetAlias": "UploadStatus",
+        "targetProp": "status",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ChatInput\\Desktop\\FilePreview\\FileItem\\index.tsx:FileItem",
+    "targetComponent": "features\\ChatInput\\components\\UploadDetail\\UploadStatus.tsx:UploadStatus",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ChatInput\\Desktop\\FilePreview\\FileItem\\index.tsx:FileItem",
+        "target": "features\\ChatInput\\components\\UploadDetail\\index.tsx:UploadDetail",
+        "targetAlias": "UploadDetail",
+        "targetProp": "uploadState",
+        "isPure": true
+      },
+      {
+        "source": "features\\ChatInput\\components\\UploadDetail\\index.tsx:UploadDetail",
+        "target": "features\\ChatInput\\components\\UploadDetail\\UploadStatus.tsx:UploadStatus",
+        "targetAlias": "UploadStatus",
+        "targetProp": "uploadState",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ChatInput\\ActionBar\\STT\\index.tsx:STT",
+    "targetComponent": "features\\ChatInput\\ActionBar\\STT\\common.tsx:CommonSTT",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ChatInput\\ActionBar\\STT\\index.tsx:STT",
+        "target": "features\\ChatInput\\ActionBar\\STT\\browser.tsx:BrowserSTT",
+        "targetAlias": "BrowserSTT",
+        "targetProp": "mobile",
+        "isPure": true
+      },
+      {
+        "source": "features\\ChatInput\\ActionBar\\STT\\browser.tsx:BrowserSTT",
+        "target": "features\\ChatInput\\ActionBar\\STT\\common.tsx:CommonSTT",
+        "targetAlias": "CommonSTT",
+        "targetProp": "mobile",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ChatInput\\ActionBar\\STT\\browser.tsx:BrowserSTT",
+    "targetComponent": "features\\ChatInput\\ActionBar\\components\\Action.tsx:Action",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ChatInput\\ActionBar\\STT\\browser.tsx:BrowserSTT",
+        "target": "features\\ChatInput\\ActionBar\\STT\\common.tsx:CommonSTT",
+        "targetAlias": "CommonSTT",
+        "targetProp": "handleTriggerStartStop",
+        "isPure": true
+      },
+      {
+        "source": "features\\ChatInput\\ActionBar\\STT\\common.tsx:CommonSTT",
+        "target": "features\\ChatInput\\ActionBar\\components\\Action.tsx:Action",
+        "targetAlias": "Action",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ChatInput\\ActionBar\\STT\\browser.tsx:BrowserSTT",
+    "targetComponent": "features\\ChatInput\\ActionBar\\components\\Action.tsx:Action",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ChatInput\\ActionBar\\STT\\browser.tsx:BrowserSTT",
+        "target": "features\\ChatInput\\ActionBar\\STT\\common.tsx:CommonSTT",
+        "targetAlias": "CommonSTT",
+        "targetProp": "isRecording",
+        "isPure": true
+      },
+      {
+        "source": "features\\ChatInput\\ActionBar\\STT\\common.tsx:CommonSTT",
+        "target": "features\\ChatInput\\ActionBar\\components\\Action.tsx:Action",
+        "targetAlias": "Action",
+        "targetProp": "active",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ChatInput\\ActionBar\\STT\\openai.tsx:OpenaiSTT",
+    "targetComponent": "features\\ChatInput\\ActionBar\\components\\Action.tsx:Action",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ChatInput\\ActionBar\\STT\\openai.tsx:OpenaiSTT",
+        "target": "features\\ChatInput\\ActionBar\\STT\\common.tsx:CommonSTT",
+        "targetAlias": "CommonSTT",
+        "targetProp": "handleTriggerStartStop",
+        "isPure": true
+      },
+      {
+        "source": "features\\ChatInput\\ActionBar\\STT\\common.tsx:CommonSTT",
+        "target": "features\\ChatInput\\ActionBar\\components\\Action.tsx:Action",
+        "targetAlias": "Action",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "features\\ChatInput\\ActionBar\\STT\\openai.tsx:OpenaiSTT",
+    "targetComponent": "features\\ChatInput\\ActionBar\\components\\Action.tsx:Action",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "features\\ChatInput\\ActionBar\\STT\\openai.tsx:OpenaiSTT",
+        "target": "features\\ChatInput\\ActionBar\\STT\\common.tsx:CommonSTT",
+        "targetAlias": "CommonSTT",
+        "targetProp": "isRecording",
+        "isPure": true
+      },
+      {
+        "source": "features\\ChatInput\\ActionBar\\STT\\common.tsx:CommonSTT",
+        "target": "features\\ChatInput\\ActionBar\\components\\Action.tsx:Action",
+        "targetAlias": "Action",
+        "targetProp": "active",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\InvalidAPIKey\\index.tsx:InvalidAPIKey",
+    "targetComponent": "components\\InvalidAPIKey\\APIKeyForm\\Bedrock.tsx:BedrockForm",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "components\\InvalidAPIKey\\index.tsx:InvalidAPIKey",
+        "target": "components\\InvalidAPIKey\\APIKeyForm\\index.tsx:APIKeyForm",
+        "targetAlias": "APIKeyForm",
+        "targetProp": "bedrockDescription",
+        "isPure": true
+      },
+      {
+        "source": "components\\InvalidAPIKey\\APIKeyForm\\index.tsx:APIKeyForm",
+        "target": "components\\InvalidAPIKey\\APIKeyForm\\Bedrock.tsx:BedrockForm",
+        "targetAlias": "BedrockForm",
+        "targetProp": "description",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "components\\InvalidAPIKey\\index.tsx:InvalidAPIKey",
+    "targetComponent": "components\\InvalidAPIKey\\APIKeyForm\\ProviderApiKeyForm.tsx:ProviderApiKeyForm",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\InvalidAPIKey\\index.tsx:InvalidAPIKey",
+        "target": "components\\InvalidAPIKey\\APIKeyForm\\index.tsx:APIKeyForm",
+        "targetAlias": "APIKeyForm",
+        "targetProp": "description",
+        "isPure": true
+      },
+      {
+        "source": "components\\InvalidAPIKey\\APIKeyForm\\index.tsx:APIKeyForm",
+        "target": "components\\InvalidAPIKey\\APIKeyForm\\ProviderApiKeyForm.tsx:ProviderApiKeyForm",
+        "targetAlias": "ProviderApiKeyForm",
+        "targetProp": "description",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\settings\\provider\\_layout\\Mobile.tsx:Layout",
+    "targetComponent": "app\\[variants]\\(main)\\settings\\provider\\ProviderMenu\\index.tsx:Layout",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\settings\\provider\\_layout\\Mobile.tsx:Layout",
+        "target": "app\\[variants]\\(main)\\settings\\provider\\ProviderMenu\\index.tsx:ProviderMenu",
+        "targetAlias": "ProviderMenu",
+        "targetProp": "mobile",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\settings\\provider\\ProviderMenu\\index.tsx:ProviderMenu",
+        "target": "app\\[variants]\\(main)\\settings\\provider\\ProviderMenu\\index.tsx:Layout",
+        "targetAlias": "Layout",
+        "targetProp": "mobile",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\settings\\provider\\detail\\default\\index.tsx:ProviderDetail",
+    "targetComponent": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\ModelTitle\\index.tsx:ModelTitle",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\settings\\provider\\detail\\default\\index.tsx:ProviderDetail",
+        "target": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\index.tsx:ModelList",
+        "targetAlias": "ModelList",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\index.tsx:ModelList",
+        "target": "app\\[variants]\\(main)\\settings\\provider\\features\\ModelList\\ModelTitle\\index.tsx:ModelTitle",
+        "targetAlias": "ModelTitle",
+        "targetProp": "provider",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\settings\\provider\\detail\\default\\ProviderDetialPage.tsx:ProviderDetialPage",
+    "targetComponent": "app\\[variants]\\(main)\\settings\\provider\\features\\ProviderConfig\\index.tsx:ProviderConfig",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\settings\\provider\\detail\\default\\ProviderDetialPage.tsx:ProviderDetialPage",
+        "target": "app\\[variants]\\(main)\\settings\\provider\\detail\\default\\ClientMode.tsx:ClientMode",
+        "targetAlias": "ClientMode",
+        "targetProp": "id",
+        "isPure": false
+      },
+      {
+        "source": "app\\[variants]\\(main)\\settings\\provider\\detail\\default\\ClientMode.tsx:ClientMode",
+        "target": "app\\[variants]\\(main)\\settings\\provider\\features\\ProviderConfig\\index.tsx:ProviderConfig",
+        "targetAlias": "ProviderConfig",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\settings\\llm\\components\\ProviderModelList\\index.tsx:ProviderModelListSelect",
+    "targetComponent": "app\\[variants]\\(main)\\settings\\llm\\components\\ProviderModelList\\ModelConfigModal\\Form.tsx:ModelConfigForm",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\settings\\llm\\components\\ProviderModelList\\index.tsx:ProviderModelListSelect",
+        "target": "app\\[variants]\\(main)\\settings\\llm\\components\\ProviderModelList\\ModelConfigModal\\index.tsx:ModelConfigModal",
+        "targetAlias": "ModelConfigModal",
+        "targetProp": "showAzureDeployName",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\settings\\llm\\components\\ProviderModelList\\ModelConfigModal\\index.tsx:ModelConfigModal",
+        "target": "app\\[variants]\\(main)\\settings\\llm\\components\\ProviderModelList\\ModelConfigModal\\Form.tsx:ModelConfigForm",
+        "targetAlias": "ModelConfigForm",
+        "targetProp": "showAzureDeployName",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\repos\\[id]\\Client.tsx:RepoClientPage",
+    "targetComponent": "app\\[variants]\\(main)\\repos\\[id]\\features\\Menu\\Head\\index.tsx:Head",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\repos\\[id]\\Client.tsx:RepoClientPage",
+        "target": "app\\[variants]\\(main)\\repos\\[id]\\features\\Menu\\index.tsx:ComposeMenu",
+        "targetAlias": "Menu",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\repos\\[id]\\features\\Menu\\index.tsx:ComposeMenu",
+        "target": "app\\[variants]\\(main)\\repos\\[id]\\features\\Menu\\Head\\index.tsx:Head",
+        "targetAlias": "Head",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\repos\\[id]\\evals\\evaluation\\page.tsx:Evaluation",
+    "targetComponent": "app\\[variants]\\(main)\\repos\\[id]\\evals\\evaluation\\CreateEvaluation\\index.tsx:CreateEvaluation",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\repos\\[id]\\evals\\evaluation\\page.tsx:Evaluation",
+        "target": "app\\[variants]\\(main)\\repos\\[id]\\evals\\evaluation\\EmptyGuide\\index.tsx:EmptyGuide",
+        "targetAlias": "EmptyGuide",
+        "targetProp": "knowledgeBaseId",
+        "isPure": false
+      },
+      {
+        "source": "app\\[variants]\\(main)\\repos\\[id]\\evals\\evaluation\\EmptyGuide\\index.tsx:EmptyGuide",
+        "target": "app\\[variants]\\(main)\\repos\\[id]\\evals\\evaluation\\CreateEvaluation\\index.tsx:CreateEvaluation",
+        "targetAlias": "CreateEvaluationButton",
+        "targetProp": "knowledgeBaseId",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\profile\\stats\\page.tsx:Page",
+    "targetComponent": "app\\[variants]\\(main)\\profile\\stats\\features\\TotalAssistants.tsx:TotalMessages",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\profile\\stats\\page.tsx:Page",
+        "target": "app\\[variants]\\(main)\\profile\\stats\\Client.tsx:Client",
+        "targetAlias": "Client",
+        "targetProp": "mobile",
+        "isPure": false
+      },
+      {
+        "source": "app\\[variants]\\(main)\\profile\\stats\\Client.tsx:Client",
+        "target": "app\\[variants]\\(main)\\profile\\stats\\features\\TotalAssistants.tsx:TotalMessages",
+        "targetAlias": "TotalAssistants",
+        "targetProp": "mobile",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\profile\\stats\\page.tsx:Page",
+    "targetComponent": "app\\[variants]\\(main)\\profile\\stats\\features\\AiHeatmaps.tsx:AiHeatmaps",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\profile\\stats\\page.tsx:Page",
+        "target": "app\\[variants]\\(main)\\profile\\stats\\Client.tsx:Client",
+        "targetAlias": "Client",
+        "targetProp": "mobile",
+        "isPure": false
+      },
+      {
+        "source": "app\\[variants]\\(main)\\profile\\stats\\Client.tsx:Client",
+        "target": "app\\[variants]\\(main)\\profile\\stats\\features\\AiHeatmaps.tsx:AiHeatmaps",
+        "targetAlias": "AiHeatmaps",
+        "targetProp": "mobile",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\profile\\stats\\page.tsx:Page",
+    "targetComponent": "app\\[variants]\\(main)\\profile\\stats\\features\\AssistantsRank.tsx:AssistantsRank",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\profile\\stats\\page.tsx:Page",
+        "target": "app\\[variants]\\(main)\\profile\\stats\\Client.tsx:Client",
+        "targetAlias": "Client",
+        "targetProp": "mobile",
+        "isPure": false
+      },
+      {
+        "source": "app\\[variants]\\(main)\\profile\\stats\\Client.tsx:Client",
+        "target": "app\\[variants]\\(main)\\profile\\stats\\features\\AssistantsRank.tsx:AssistantsRank",
+        "targetAlias": "AssistantsRank",
+        "targetProp": "mobile",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\profile\\stats\\page.tsx:Page",
+    "targetComponent": "app\\[variants]\\(main)\\profile\\stats\\features\\TopicsRank.tsx:TopicsRank",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\profile\\stats\\page.tsx:Page",
+        "target": "app\\[variants]\\(main)\\profile\\stats\\Client.tsx:Client",
+        "targetAlias": "Client",
+        "targetProp": "mobile",
+        "isPure": false
+      },
+      {
+        "source": "app\\[variants]\\(main)\\profile\\stats\\Client.tsx:Client",
+        "target": "app\\[variants]\\(main)\\profile\\stats\\features\\TopicsRank.tsx:TopicsRank",
+        "targetAlias": "TopicsRank",
+        "targetProp": "mobile",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\BatchItem.tsx:GenerationBatchItem",
+    "targetComponent": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\ErrorState.tsx:ErrorState",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\BatchItem.tsx:GenerationBatchItem",
+        "target": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\index.tsx:GenerationItem",
+        "targetAlias": "GenerationItem",
+        "targetProp": "generation",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\index.tsx:GenerationItem",
+        "target": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\ErrorState.tsx:ErrorState",
+        "targetAlias": "ErrorState",
+        "targetProp": "generation",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\index.tsx:GenerationItem",
+    "targetComponent": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\ActionButtons.tsx:ActionButtons",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\index.tsx:GenerationItem",
+        "target": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\ErrorState.tsx:ErrorState",
+        "targetAlias": "ErrorState",
+        "targetProp": "onDelete",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\ErrorState.tsx:ErrorState",
+        "target": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\ActionButtons.tsx:ActionButtons",
+        "targetAlias": "ActionButtons",
+        "targetProp": "onDelete",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\BatchItem.tsx:GenerationBatchItem",
+    "targetComponent": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\LoadingState.tsx:LoadingState",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\BatchItem.tsx:GenerationBatchItem",
+        "target": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\index.tsx:GenerationItem",
+        "targetAlias": "GenerationItem",
+        "targetProp": "generation",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\index.tsx:GenerationItem",
+        "target": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\LoadingState.tsx:LoadingState",
+        "targetAlias": "LoadingState",
+        "targetProp": "generation",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\index.tsx:GenerationItem",
+    "targetComponent": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\ActionButtons.tsx:ActionButtons",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\index.tsx:GenerationItem",
+        "target": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\LoadingState.tsx:LoadingState",
+        "targetAlias": "LoadingState",
+        "targetProp": "onDelete",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\LoadingState.tsx:LoadingState",
+        "target": "app\\[variants]\\(main)\\image\\features\\GenerationFeed\\GenerationItem\\ActionButtons.tsx:ActionButtons",
+        "targetAlias": "ActionButtons",
+        "targetProp": "onDelete",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\ImageUpload.tsx:ImageUpload",
+    "targetComponent": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\ImageUpload.tsx:CircularProgress",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\ImageUpload.tsx:ImageUpload",
+        "target": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\ImageUpload.tsx:UploadingDisplay",
+        "targetAlias": "UploadingDisplay",
+        "targetProp": "progress",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\ImageUpload.tsx:UploadingDisplay",
+        "target": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\ImageUpload.tsx:CircularProgress",
+        "targetAlias": "CircularProgress",
+        "targetProp": "value",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\MultiImagesUpload\\index.tsx:MultiImagesUpload",
+    "targetComponent": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\MultiImagesUpload\\index.tsx:CircularProgress",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\MultiImagesUpload\\index.tsx:MultiImagesUpload",
+        "target": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\MultiImagesUpload\\index.tsx:ImageUploadProgress",
+        "targetAlias": "ImageUploadProgress",
+        "targetProp": "currentProgress",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\MultiImagesUpload\\index.tsx:ImageUploadProgress",
+        "target": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\MultiImagesUpload\\index.tsx:CircularProgress",
+        "targetAlias": "CircularProgress",
+        "targetProp": "value",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\ImageUrlsUpload.tsx:ImageUrlsUpload",
+    "targetComponent": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\MultiImagesUpload\\ImageManageModal.tsx:ImageManageModal",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\ImageUrlsUpload.tsx:ImageUrlsUpload",
+        "target": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\MultiImagesUpload\\index.tsx:MultiImagesUpload",
+        "targetAlias": "MultiImagesUpload",
+        "targetProp": "maxCount",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\MultiImagesUpload\\index.tsx:MultiImagesUpload",
+        "target": "app\\[variants]\\(main)\\image\\@menu\\features\\ConfigPanel\\components\\MultiImagesUpload\\ImageManageModal.tsx:ImageManageModal",
+        "targetAlias": "ImageManageModal",
+        "targetProp": "maxCount",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\page.tsx:Page",
+    "targetComponent": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\features\\Header.tsx:Header",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\page.tsx:Page",
+        "target": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\Client.tsx:Client",
+        "targetAlias": "Client",
+        "targetProp": "mobile",
+        "isPure": false
+      },
+      {
+        "source": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\Client.tsx:Client",
+        "target": "app\\[variants]\\(main)\\discover\\(detail)\\provider\\[...slugs]\\features\\Header.tsx:Header",
+        "targetAlias": "Header",
+        "targetProp": "mobile",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\discover\\(detail)\\model\\[...slugs]\\page.tsx:Page",
+    "targetComponent": "app\\[variants]\\(main)\\discover\\(detail)\\features\\Breadcrumb.tsx:Breadcrumb",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\discover\\(detail)\\model\\[...slugs]\\page.tsx:Page",
+        "target": "app\\[variants]\\(main)\\discover\\(detail)\\model\\[...slugs]\\Client.tsx:Client",
+        "targetAlias": "Client",
+        "targetProp": "identifier",
+        "isPure": false
+      },
+      {
+        "source": "app\\[variants]\\(main)\\discover\\(detail)\\model\\[...slugs]\\Client.tsx:Client",
+        "target": "app\\[variants]\\(main)\\discover\\(detail)\\features\\Breadcrumb.tsx:Breadcrumb",
+        "targetAlias": "Breadcrumb",
+        "targetProp": "identifier",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\discover\\(detail)\\assistant\\[...slugs]\\features\\Details\\Capabilities\\index.tsx:Capabilities",
+    "targetComponent": "app\\[variants]\\(main)\\discover\\features\\Title.tsx:Title",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\discover\\(detail)\\assistant\\[...slugs]\\features\\Details\\Capabilities\\index.tsx:Capabilities",
+        "target": "app\\[variants]\\(main)\\discover\\(detail)\\assistant\\[...slugs]\\features\\Details\\Capabilities\\Block.tsx:Block",
+        "targetAlias": "Block",
+        "targetProp": "id",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\discover\\(detail)\\assistant\\[...slugs]\\features\\Details\\Capabilities\\Block.tsx:Block",
+        "target": "app\\[variants]\\(main)\\discover\\features\\Title.tsx:Title",
+        "targetAlias": "Title",
+        "targetProp": "id",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\index.tsx:MobileChatInput",
+    "targetComponent": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\InputArea\\Container.tsx:InnerContainer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\index.tsx:MobileChatInput",
+        "target": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\InputArea\\index.tsx:MobileChatInputArea",
+        "targetAlias": "InputArea",
+        "targetProp": "expand",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\InputArea\\index.tsx:MobileChatInputArea",
+        "target": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\InputArea\\Container.tsx:InnerContainer",
+        "targetAlias": "InnerContainer",
+        "targetProp": "expand",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\index.tsx:MobileChatInput",
+    "targetComponent": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\ActionBar.tsx:RenderActionList",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\index.tsx:MobileChatInput",
+        "target": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\ActionBar.tsx:ActionBar",
+        "targetAlias": "ActionBar",
+        "targetProp": "leftActions",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\ActionBar.tsx:ActionBar",
+        "target": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\ActionBar.tsx:RenderActionList",
+        "targetAlias": "RenderActionList",
+        "targetProp": "dataSource",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\index.tsx:MobileChatInput",
+    "targetComponent": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\ActionBar.tsx:RenderActionList",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\index.tsx:MobileChatInput",
+        "target": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\ActionBar.tsx:ActionBar",
+        "targetAlias": "ActionBar",
+        "targetProp": "rightActions",
+        "isPure": true
+      },
+      {
+        "source": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\ActionBar.tsx:ActionBar",
+        "target": "app\\[variants]\\(main)\\chat\\(workspace)\\@conversation\\features\\ChatInput\\V1Mobile\\ActionBar.tsx:RenderActionList",
+        "targetAlias": "RenderActionList",
+        "targetProp": "dataSource",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  }
+]

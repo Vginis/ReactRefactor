@@ -1,0 +1,23 @@
+github.com/AlDanial/cloc v 2.06  T=3.17 s (573.3 files/s, 64910.6 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+TypeScript                    1630          20318           6859         170978
+SVG                            172             14             15           6472
+CSS                              1             96             21            529
+JSON                            10              5              0            383
+HTML                             1              0              1             79
+Markdown                         1             10              0             40
+Dockerfile                       1             15              2             38
+TOML                             1              7              2             37
+Bourne Shell                     1              5              8             14
+JavaScript                       1              0              0              5
+-------------------------------------------------------------------------------
+SUM:                          1819          20470           6908         178575
+-------------------------------------------------------------------------------
+
+One or more files took longer to process than expected.
+Try rerunning without timeout guards by adding  --timeout 0
+to your command line arguments.  See the documentation on
+the --timeout switch for more information.
+

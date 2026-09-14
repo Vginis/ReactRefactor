@@ -203,4 +203,64 @@ export const projects = [
         commitId: "392ec99",
         lang: "TS"
     },
+     {
+        projectName: 'novu',
+        resultsFile: 'candidates-novu-cfbea2d.json',
+        files: 1577,
+        totalComponents: 1833,
+        sloc:  170978,
+        stars: "40K",
+        repo: "novuhq/novu",
+        version: "v3.19.2",
+        commitId: "cfbea2d",
+        lang: "TS"
+    },
+    {
+        projectName: 'cal.com',
+        resultsFile: 'candidates-calcom-947b05b.json',
+        files: 802,
+        totalComponents: 559,
+        sloc:  89443,
+        stars: "48.4",
+        repo: "calcom/cal.com",
+        version: "v5.7.12",
+        commitId: "947b05b",
+        lang: "TS"
+    },
+    {
+        projectName: 'affine',
+        resultsFile: 'candidates-affine-947b05b.json',
+        files: 2943,
+        totalComponents: 1690,
+        sloc:  0,
+        stars: "72.5",
+        repo: "toeverything/AFFiNE",
+        version: "v0.25.1-beta.0",
+        commitId: "5c0e3b8",
+        lang: "TS"
+    },
+    {
+        projectName: 'lobe-chat',
+        resultsFile: 'candidates-lobehub-a11925f.json',
+        files: 2247,
+        totalComponents: 1185,
+        sloc:  169644,
+        stars: "82.5",
+        repo: "lobehub/lobehub",
+        version: "v1.136.3",
+        commitId: "a11925f",
+        lang: "TS"
+    },
+    {
+        projectName: 'plane',
+        resultsFile: 'candidates-plane-e710f5b.json',
+        files: 144,
+        totalComponents: 104,
+        sloc:  143712,
+        stars: "59.4",
+        repo: "makeplane/plane",
+        version: "v1.1.0",
+        commitId: "e710f5b",
+        lang: "TS"
+    }
 ];

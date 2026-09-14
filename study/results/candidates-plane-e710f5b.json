@@ -1,0 +1,30 @@
+[
+  {
+    "sourceComponent": "core\\components\\issues\\filters.tsx:HeaderFilters",
+    "targetComponent": "core\\components\\issues\\issue-layouts\\layout-icon.tsx:IssueLayoutIcon",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "core\\components\\issues\\filters.tsx:HeaderFilters",
+        "target": "core\\components\\issues\\issue-layouts\\filters\\header\\mobile-layout-selection.tsx:MobileLayoutSelection",
+        "targetAlias": "MobileLayoutSelection",
+        "targetProp": "activeLayout",
+        "isPure": true
+      },
+      {
+        "source": "core\\components\\issues\\issue-layouts\\filters\\header\\mobile-layout-selection.tsx:MobileLayoutSelection",
+        "target": "core\\components\\issues\\issue-layouts\\layout-icon.tsx:IssueLayoutIcon",
+        "targetAlias": "IssueLayoutIcon",
+        "targetProp": "layout",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  }
+]
