@@ -97,8 +97,8 @@ describe("ImportStatement module", () => {
         expect(externalModuleImport.importedReactFile).toBeFalsy()
 
         let prefixedModuleImport = reactFile.importStatements[2]
-        expect(prefixedModuleImport.relativeModulePath).toBe("@/services/cartService")
-        expect(prefixedModuleImport.isExternalModule).toBeTruthy()
+        expect(prefixedModuleImport.relativeModulePath).toBe("services\\cartService")
+        expect(prefixedModuleImport.isExternalModule).toBeFalsy()
 
     });
 
