@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 console.time("Execution time");
 import * as fs from 'fs';
-import { 
-    getAllFiles, 
+import {
+    getAllFiles,
     resolveIfProjectHasMultiplePages,
     extractPathsAndHierarchies2
 } from './lib/util.js';
@@ -11,7 +11,7 @@ import { loadReactComponents, addParents } from './lib/loadingFuncs.js';
 import { detectPropDrilling } from './lib/Hierarchy.js';
 import readline from 'readline';
 import { loadAliases2 } from './lib/Alias.js';
-import { displayMenu, displayPropDrilling} from './lib/cli.js';
+import { displayMenu, displayPropDrilling } from './lib/cli.js';
 import { printPropDrillingsWithDetails } from './lib/PropDrilling.js';
 
 const args = process.argv.slice(2);
@@ -19,6 +19,8 @@ const projectPath = args[0];
 const rootFile = args[1];
 const rootComponent = args[2];
 const fileType = args[3] || rootFile?.split(".").pop();
+// Change this to apply refactorings interactive
+const interactive = false;
 
 globalThis.projectPath = projectPath
 globalThis.rootFile = rootFile
@@ -68,10 +70,7 @@ console.timeEnd("PD detection")
 
 console.log("Found: " + propDrillings.length + " Prop Drilling Occurences");
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+
 
 let currentIndex = 0;
 let inMenu = false;
@@ -95,7 +94,7 @@ function savePaths(paths, debug = true) {
     fs.writeFileSync('./stats/tmp/paths.csv', csvLines.join("\n"), 'utf-8');
 }
 
-function handleUserInput(key) {
+function handleUserInput(rl, key) {
     const reactComponents = globalThis.reactComponentManager.getAllReactComponents();
     if (inMenu) {
         handleMenuInput(key, propDrillings, currentIndex, currentMenuIndex, menuOptions);
@@ -121,8 +120,8 @@ function handleUserInput(key) {
     }
 }
 function handleMenuInput(key) {
-     const reactComponents = globalThis.reactComponentManager.getAllReactComponents();
-     if (key === '\u0003' || key.toLowerCase() === 'q') { // Ctrl+C or 'Q'
+    const reactComponents = globalThis.reactComponentManager.getAllReactComponents();
+    if (key === '\u0003' || key.toLowerCase() === 'q') { // Ctrl+C or 'Q'
         inMenu = false;
         displayPropDrilling(currentIndex, propDrillings);
     } else if (key === '\u001b[A') { // UP arrow
@@ -162,21 +161,33 @@ function handleMenuInput(key) {
 }
 
 if (propDrillings.length > 0) {
-    console.clear();
-    displayPropDrilling(currentIndex, propDrillings);
-    const propDrillingInformation = {
-        propDrillings, reactComponents, rl, currentIndex
-    };
-    process.stdin.on('keypress', (chunk, key) => handleUserInput(key.sequence, propDrillingInformation));
+    if (interactive) {
+        console.clear();
+        displayPropDrilling(currentIndex, propDrillings);
+        const propDrillingInformation = {
+            propDrillings, reactComponents, currentIndex
+        };
+        startInteractiveConsole(propDrillingInformation)
+    }
 } else {
     console.log("No Prop Drilling occurences found.");
     process.exit();
 }
 
-rl.on('SIGINT', () => {
-    rl.close();
-    process.exit();
-});
+function startInteractiveConsole(propDrillingInformation) {
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
+
+    process.stdin.on('keypress', (chunk, key) => handleUserInput(rl, key.sequence, propDrillingInformation));
+
+    rl.on('SIGINT', () => {
+        rl.close();
+        process.exit();
+    });
+}
+
 const { possibleRefactorings, allPropDrillings } = printPropDrillingsWithDetails(propDrillings, reactComponents);
 
 fs.writeFileSync(`./stats/tmp/candidates.json`, JSON.stringify(allPropDrillings, null, 2), 'utf-8');

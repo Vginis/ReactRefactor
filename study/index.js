@@ -11,6 +11,9 @@ import PropDrillingInfo from "../lib/json/PropDrillingInfo.js";
 import ProjectInfo from "../lib/json/ProjectInfo.js";
 import { appendFileSync, writeFileSync } from "fs";
 import { generateCSV } from "./csv-export.js";
+import * as fs from 'node:fs';
+import path from 'path';
+import { exit } from "node:process";
 
 const LATEX_OUTPUT_DIR = './study/latex'
 const RESULTS_DIR = './study/results'
@@ -27,21 +30,42 @@ const action = args[0];
 const projectList = projects
     .map(p => ProjectInfo.fromJson(p))
 
-for (const project of projectList) {
-    let propDrillingsList = parseResultsJson(
-        `${RESULTS_DIR}/${project.resultsFile}`, PropDrillingInfo);
-    project.propDrillings = propDrillingsList
-}
+
 
 if (!action || action === 'latex') {
+    parseJSONResults();
     let sortedProjects = projectList.toSorted((a, b) => (b.sloc - a.sloc))
     generateLatexReports(sortedProjects);
 } else if (action === 'csv'){
+    parseJSONResults();
     generateCSV(projectList, './stats/prop_dillings.csv')
-} else if (actions === 'pd-dependencies'){
+} else if (action === 'pd-dependencies'){
     
+} else if (action === 'update-results'){
+    const project = args[1]
+    const commitId = getProject(project)?.commitId
+    if (!commitId){
+        console.log('Invalid project name')
+        exit()
+    }
+    fs.copyFileSync('./stats/tmp/candidates.json',  
+        path.join('study', 'results', `candidates-${project}-${commitId}.json`))
+
+    fs.copyFileSync('./output.log',  
+        path.join('study', 'log', `${project}.out`))
 }
 
+function parseJSONResults() {
+    for (const project of projectList) {
+        let propDrillingsList = parseResultsJson(
+            `${RESULTS_DIR}/${project.resultsFile}`, PropDrillingInfo);
+        project.propDrillings = propDrillingsList;
+    }
+}
+
+function getProject(projName){
+    return projectList.find(project => project.projectName === projName)
+}
 
 function generateLatexReports(projects) {
     resetLatexFiles();

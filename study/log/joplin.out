@@ -1,0 +1,147 @@
+React file loading: 3.825s
+UserWebview is in ..\benchmark\joplin\packages\app-desktop\services\plugins\UserWebview.tsx
+UserWebviewDialog is in ..\benchmark\joplin\packages\app-desktop\services\plugins\UserWebviewDialog.tsx
+UserWebviewDialogButtonBar is in ..\benchmark\joplin\packages\app-desktop\services\plugins\UserWebviewDialogButtonBar.tsx
+DialogComponent is in ..\benchmark\joplin\packages\app-desktop\plugins\GotoAnything.tsx
+ClipperConfigScreenComponent is in ..\benchmark\joplin\packages\app-desktop\gui\ClipperConfigScreen.tsx
+Dialog is in ..\benchmark\joplin\packages\app-desktop\gui\Dialog.tsx
+DialogButtonRow is in ..\benchmark\joplin\packages\app-desktop\gui\DialogButtonRow.tsx
+DialogTitle is in ..\benchmark\joplin\packages\app-desktop\gui\DialogTitle.tsx
+DropboxLoginScreenComponent is in ..\benchmark\joplin\packages\app-desktop\gui\DropboxLoginScreen.tsx
+ErrorBoundary is in ..\benchmark\joplin\packages\app-desktop\gui\ErrorBoundary.tsx
+SwitchToNewEditorBanner is in ..\benchmark\joplin\packages\app-desktop\gui\ErrorBoundary.tsx
+ExtensionBadge is in ..\benchmark\joplin\packages\app-desktop\gui\ExtensionBadge.tsx
+FolderIconBox is in ..\benchmark\joplin\packages\app-desktop\gui\FolderIconBox.tsx
+HelpButtonComponent is in ..\benchmark\joplin\packages\app-desktop\gui\HelpButton.tsx
+IconButton is in ..\benchmark\joplin\packages\app-desktop\gui\IconButton.tsx
+ImportScreenComponent is in ..\benchmark\joplin\packages\app-desktop\gui\ImportScreen.tsx
+InlineCombobox is in ..\benchmark\joplin\packages\app-desktop\gui\InlineCombobox.tsx
+ItemList is in ..\benchmark\joplin\packages\app-desktop\gui\ItemList.tsx
+JoplinCloudConfigScreen is in ..\benchmark\joplin\packages\app-desktop\gui\JoplinCloudConfigScreen.tsx
+JoplinCloudScreenComponent is in ..\benchmark\joplin\packages\app-desktop\gui\JoplinCloudLoginScreen.tsx
+JoplinCloudSignUpCallToAction is in ..\benchmark\joplin\packages\app-desktop\gui\JoplinCloudSignUpCallToAction.tsx
+MainScreenComponent is in ..\benchmark\joplin\packages\app-desktop\gui\MainScreen.tsx
+MultiNoteActions is in ..\benchmark\joplin\packages\app-desktop\gui\MultiNoteActions.tsx
+NavigatorComponent is in ..\benchmark\joplin\packages\app-desktop\gui\Navigator.tsx
+NewWindowOrIFrame is in ..\benchmark\joplin\packages\app-desktop\gui\NewWindowOrIFrame.tsx
+NoteContentPropertiesDialog is in ..\benchmark\joplin\packages\app-desktop\gui\NoteContentPropertiesDialog.tsx
+NotePropertiesDialog is in ..\benchmark\joplin\packages\app-desktop\gui\NotePropertiesDialog.tsx
+NoteRevisionViewerComponent is in ..\benchmark\joplin\packages\app-desktop\gui\NoteRevisionViewer.tsx
+NoteSearchBar is in ..\benchmark\joplin\packages\app-desktop\gui\NoteSearchBar.tsx
+NoteStatusBarComponent is in ..\benchmark\joplin\packages\app-desktop\gui\NoteStatusBar.tsx
+NoteTextViewer is in ..\benchmark\joplin\packages\app-desktop\gui\NoteTextViewer.tsx
+OneDriveLoginScreenComponent is in ..\benchmark\joplin\packages\app-desktop\gui\OneDriveLoginScreen.tsx
+PdfViewer is in ..\benchmark\joplin\packages\app-desktop\gui\PdfViewer.tsx
+ProfileTableComp is in ..\benchmark\joplin\packages\app-desktop\gui\ProfileEditor.tsx
+ProfileEditorComponent is in ..\benchmark\joplin\packages\app-desktop\gui\ProfileEditor.tsx
+PromptDialog is in ..\benchmark\joplin\packages\app-desktop\gui\PromptDialog.tsx
+ResourceScreenComponent is in ..\benchmark\joplin\packages\app-desktop\gui\ResourceScreen.tsx
+ResourceTableComp is in ..\benchmark\joplin\packages\app-desktop\gui\ResourceScreen.tsx
+RootComponent is in ..\benchmark\joplin\packages\app-desktop\gui\Root.tsx
+Root_UpgradeSyncTarget is in ..\benchmark\joplin\packages\app-desktop\gui\Root_UpgradeSyncTarget.tsx
+ShareNoteDialog is in ..\benchmark\joplin\packages\app-desktop\gui\ShareNoteDialog.tsx
+TagItemComponent is in ..\benchmark\joplin\packages\app-desktop\gui\TagItem.tsx
+TagList is in ..\benchmark\joplin\packages\app-desktop\gui\TagList.tsx
+ToolbarBaseComponent is in ..\benchmark\joplin\packages\app-desktop\gui\ToolbarBase.tsx
+ToolbarSpace is in ..\benchmark\joplin\packages\app-desktop\gui\ToolbarSpace.tsx
+AppDialogs is in ..\benchmark\joplin\packages\app-desktop\gui\WindowCommandsAndDialogs\AppDialogs.tsx
+ModalMessageOverlay is in ..\benchmark\joplin\packages\app-desktop\gui\WindowCommandsAndDialogs\ModalMessageOverlay.tsx
+PluginDialogs is in ..\benchmark\joplin\packages\app-desktop\gui\WindowCommandsAndDialogs\PluginDialogs.tsx
+WindowCommandsAndDialogs is in ..\benchmark\joplin\packages\app-desktop\gui\WindowCommandsAndDialogs\WindowCommandsAndDialogs.tsx
+UpdateNotification is in ..\benchmark\joplin\packages\app-desktop\gui\UpdateNotification\UpdateNotification.tsx
+TrashNotificationMessage is in ..\benchmark\joplin\packages\app-desktop\gui\TrashNotification\TrashNotificationMessage.tsx
+ToolbarButton is in ..\benchmark\joplin\packages\app-desktop\gui\ToolbarButton\ToolbarButton.tsx
+ToggleEditorsButton is in ..\benchmark\joplin\packages\app-desktop\gui\ToggleEditorsButton\ToggleEditorsButton.tsx
+Dialog is in ..\benchmark\joplin\packages\app-desktop\gui\SyncWizard\Dialog.tsx
+StyleSheetContainer is in ..\benchmark\joplin\packages\app-desktop\gui\StyleSheets\StyleSheetContainer.tsx
+StatusScreen is in ..\benchmark\joplin\packages\app-desktop\gui\StatusScreen\StatusScreen.tsx
+SsoLoginScreen is in ..\benchmark\joplin\packages\app-desktop\gui\SsoLoginScreen\SsoLoginScreen.tsx
+FolderAndTagList is in ..\benchmark\joplin\packages\app-desktop\gui\Sidebar\FolderAndTagList.tsx
+SidebarComponent is in ..\benchmark\joplin\packages\app-desktop\gui\Sidebar\Sidebar.tsx
+AllNotesItem is in ..\benchmark\joplin\packages\app-desktop\gui\Sidebar\listItemComponents\AllNotesItem.tsx
+EmptyExpandLink is in ..\benchmark\joplin\packages\app-desktop\gui\Sidebar\listItemComponents\EmptyExpandLink.tsx
+ExpandIcon is in ..\benchmark\joplin\packages\app-desktop\gui\Sidebar\listItemComponents\ExpandIcon.tsx
+ExpandLink is in ..\benchmark\joplin\packages\app-desktop\gui\Sidebar\listItemComponents\ExpandLink.tsx
+FolderItem is in ..\benchmark\joplin\packages\app-desktop\gui\Sidebar\listItemComponents\FolderItem.tsx
+HeaderItem is in ..\benchmark\joplin\packages\app-desktop\gui\Sidebar\listItemComponents\HeaderItem.tsx
+ListItemWrapper is in ..\benchmark\joplin\packages\app-desktop\gui\Sidebar\listItemComponents\ListItemWrapper.tsx
+NoteCount is in ..\benchmark\joplin\packages\app-desktop\gui\Sidebar\listItemComponents\NoteCount.tsx
+TagItem is in ..\benchmark\joplin\packages\app-desktop\gui\Sidebar\listItemComponents\TagItem.tsx
+CollapseExpandAllButton is in ..\benchmark\joplin\packages\app-desktop\gui\Sidebar\hooks\useOnRenderListWrapper.tsx
+NewFolderButton is in ..\benchmark\joplin\packages\app-desktop\gui\Sidebar\hooks\useOnRenderListWrapper.tsx
+ShareFolderDialog is in ..\benchmark\joplin\packages\app-desktop\gui\ShareFolderDialog\ShareFolderDialog.tsx
+SearchBar is in ..\benchmark\joplin\packages\app-desktop\gui\SearchBar\SearchBar.tsx
+LayoutItemContainer is in ..\benchmark\joplin\packages\app-desktop\gui\ResizableLayout\LayoutItemContainer.tsx
+MoveButtons is in ..\benchmark\joplin\packages\app-desktop\gui\ResizableLayout\MoveButtons.tsx
+ResizableLayout is in ..\benchmark\joplin\packages\app-desktop\gui\ResizableLayout\ResizableLayout.tsx
+NotificationItem is in ..\benchmark\joplin\packages\app-desktop\gui\PopupNotification\NotificationItem.tsx
+PopupNotificationList is in ..\benchmark\joplin\packages\app-desktop\gui\PopupNotification\PopupNotificationList.tsx
+PopupNotificationProvider is in ..\benchmark\joplin\packages\app-desktop\gui\PopupNotification\PopupNotificationProvider.tsx
+LabelledPasswordInput is in ..\benchmark\joplin\packages\app-desktop\gui\PasswordInput\LabelledPasswordInput.tsx
+PasswordInput is in ..\benchmark\joplin\packages\app-desktop\gui\PasswordInput\PasswordInput.tsx
+NoteToolbar is in ..\benchmark\joplin\packages\app-desktop\gui\NoteToolbar\NoteToolbar.tsx
+NoteListWrapper is in ..\benchmark\joplin\packages\app-desktop\gui\NoteListWrapper\NoteListWrapper.tsx
+NoteListItem is in ..\benchmark\joplin\packages\app-desktop\gui\NoteListItem\NoteListItem.tsx
+NoteListControls is in ..\benchmark\joplin\packages\app-desktop\gui\NoteListControls\NoteListControls.tsx
+NoteList is in ..\benchmark\joplin\packages\app-desktop\gui\NoteList\NoteList2.tsx
+SecondaryWindow is in ..\benchmark\joplin\packages\app-desktop\gui\NoteEditor\EditorWindow.tsx
+LibraryStyleRoot is in ..\benchmark\joplin\packages\app-desktop\gui\NoteEditor\EditorWindow.tsx
+NoteEditorContent is in ..\benchmark\joplin\packages\app-desktop\gui\NoteEditor\NoteEditor.tsx
+StatusIndicator is in ..\benchmark\joplin\packages\app-desktop\gui\NoteEditor\StatusBar.tsx
+StatusBar is in ..\benchmark\joplin\packages\app-desktop\gui\NoteEditor\StatusBar.tsx
+BannerContent is in ..\benchmark\joplin\packages\app-desktop\gui\NoteEditor\WarningBanner\BannerContent.tsx
+WarningBanner is in ..\benchmark\joplin\packages\app-desktop\gui\NoteEditor\WarningBanner\WarningBanner.tsx
+NoteTitleBar is in ..\benchmark\joplin\packages\app-desktop\gui\NoteEditor\NoteTitle\NoteTitleBar.tsx
+TinyMCE is in ..\benchmark\joplin\packages\app-desktop\gui\NoteEditor\NoteBody\TinyMCE\TinyMCE.tsx
+PlainEditor is in ..\benchmark\joplin\packages\app-desktop\gui\NoteEditor\NoteBody\PlainEditor\PlainEditor.tsx
+Toolbar is in ..\benchmark\joplin\packages\app-desktop\gui\NoteEditor\NoteBody\CodeMirror\Toolbar.tsx
+CodeMirror is in ..\benchmark\joplin\packages\app-desktop\gui\NoteEditor\NoteBody\CodeMirror\v6\CodeMirror.tsx
+Editor is in ..\benchmark\joplin\packages\app-desktop\gui\NoteEditor\NoteBody\CodeMirror\v6\Editor.tsx
+CodeMirror is in ..\benchmark\joplin\packages\app-desktop\gui\NoteEditor\NoteBody\CodeMirror\v5\CodeMirror.tsx
+Editor is in ..\benchmark\joplin\packages\app-desktop\gui\NoteEditor\NoteBody\CodeMirror\v5\Editor.tsx
+Dialog is in ..\benchmark\joplin\packages\app-desktop\gui\MasterPasswordDialog\Dialog.tsx
+ToggleButton is in ..\benchmark\joplin\packages\app-desktop\gui\lib\ToggleButton\ToggleButton.tsx
+SearchInput is in ..\benchmark\joplin\packages\app-desktop\gui\lib\SearchInput\SearchInput.tsx
+KeymapConfigScreen is in ..\benchmark\joplin\packages\app-desktop\gui\KeymapConfig\KeymapConfigScreen.tsx
+ShortcutRecorder is in ..\benchmark\joplin\packages\app-desktop\gui\KeymapConfig\ShortcutRecorder.tsx
+EncryptionConfigScreen is in ..\benchmark\joplin\packages\app-desktop\gui\EncryptionConfigScreen\EncryptionConfigScreen.tsx
+Dialog is in ..\benchmark\joplin\packages\app-desktop\gui\EditFolderDialog\Dialog.tsx
+IconSelector is in ..\benchmark\joplin\packages\app-desktop\gui\EditFolderDialog\IconSelector.tsx
+Dropdown is in ..\benchmark\joplin\packages\app-desktop\gui\Dropdown\Dropdown.tsx
+ButtonBar is in ..\benchmark\joplin\packages\app-desktop\gui\ConfigScreen\ButtonBar.tsx
+ConfigScreenComponent is in ..\benchmark\joplin\packages\app-desktop\gui\ConfigScreen\ConfigScreen.tsx
+Sidebar is in ..\benchmark\joplin\packages\app-desktop\gui\ConfigScreen\Sidebar.tsx
+FontSearch is in ..\benchmark\joplin\packages\app-desktop\gui\ConfigScreen\controls\FontSearch.tsx
+SettingComponent is in ..\benchmark\joplin\packages\app-desktop\gui\ConfigScreen\controls\SettingComponent.tsx
+SettingDescription is in ..\benchmark\joplin\packages\app-desktop\gui\ConfigScreen\controls\SettingDescription.tsx
+SettingHeader is in ..\benchmark\joplin\packages\app-desktop\gui\ConfigScreen\controls\SettingHeader.tsx
+SettingLabel is in ..\benchmark\joplin\packages\app-desktop\gui\ConfigScreen\controls\SettingLabel.tsx
+ToggleAdvancedSettingsButton is in ..\benchmark\joplin\packages\app-desktop\gui\ConfigScreen\controls\ToggleAdvancedSettingsButton.tsx
+PluginBox is in ..\benchmark\joplin\packages\app-desktop\gui\ConfigScreen\controls\plugins\PluginBox.tsx
+PluginsStates is in ..\benchmark\joplin\packages\app-desktop\gui\ConfigScreen\controls\plugins\PluginsStates.tsx
+SearchPlugins is in ..\benchmark\joplin\packages\app-desktop\gui\ConfigScreen\controls\plugins\SearchPlugins.tsx
+Button is in ..\benchmark\joplin\packages\app-desktop\gui\Button\Button.tsx
+Component identification: 648.099ms
+Number of analyzed files: 463
+Number of found Components: 122
+Alias resolution: 0.246ms
+Analyzing component hierarchy for 27 root components
+Hierarchy resolution: 0.694ms
+PD detection: 67.079ms
+Found: 15 Prop Drilling Occurences
+[WindowCommandsAndDialogs(themeId), PluginDialogs(themeId (drilled only)), UserWebviewDialog(themeId (drilled only)), UserWebview] [32m(Context)[0m [31m(Component Composition)[0m
+[RootComponent(windowId (drilled only)), SecondaryWindow(windowId), NewWindowOrIFrame] [32m(Context)[0m [31m(Component Composition)[0m
+[PluginDialogs(viewId), UserWebviewDialog(viewId), UserWebview] [32m(Context)[0m [31m(Component Composition)[0m
+[PluginDialogs(html), UserWebviewDialog(html (drilled only)), UserWebview] [32m(Context)[0m [31m(Component Composition)[0m
+[PluginDialogs(scripts), UserWebviewDialog(scripts (drilled only)), UserWebview] [32m(Context)[0m [31m(Component Composition)[0m
+[PluginDialogs(pluginId), UserWebviewDialog(pluginId), UserWebview] [32m(Context)[0m [31m(Component Composition)[0m
+[PluginDialogs(fitToContent), UserWebviewDialog(fitToContent), UserWebview] [32m(Context)[0m [31m(Component Composition)[0m
+[PluginDialogs(buttons), UserWebviewDialog(buttons), UserWebviewDialogButtonBar] [32m(Context)[0m [32m(Component Composition)[0m
+[WindowCommandsAndDialogs(onClose), NoteContentPropertiesDialog(onCancel), Dialog] [31m(Context)[0m [32m(Component Composition)[0m
+[WindowCommandsAndDialogs(themeId), NoteContentPropertiesDialog(themeId), DialogButtonRow] [32m(Context)[0m [31m(Component Composition)[0m
+[WindowCommandsAndDialogs(onClose), NotePropertiesDialog(onCancel (drilled only)), Dialog] [31m(Context)[0m [32m(Component Composition)[0m
+[WindowCommandsAndDialogs(themeId), NotePropertiesDialog(themeId (drilled only)), DialogButtonRow] [32m(Context)[0m [31m(Component Composition)[0m
+[FolderItem(isExpanded), ExpandLink(isExpanded (drilled only)), ExpandIcon] [32m(Context)[0m [31m(Component Composition)[0m
+[FolderItem(className (drilled only)), ExpandLink(className), EmptyExpandLink] [31m(Context)[0m [32m(Component Composition)[0m
+[NoteListControls(inputRef), SearchBar(inputRef), SearchInput] [31m(Context)[0m [31m(Component Composition)[0m
+Execution time: 4.657s

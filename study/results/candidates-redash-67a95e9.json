@@ -34,6 +34,10 @@
         "isPure": false
       }
     ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
     "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
@@ -72,8 +76,152 @@
         "isPure": false
       }
     ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
     "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QuerySource.jsx:QuerySource",
+    "targetComponent": "components\\PlainButton.tsx:PlainButton",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QuerySource.jsx:QuerySource",
+        "target": "pages\\queries\\components\\QueryMetadata.jsx:QueryMetadata",
+        "targetAlias": "QueryMetadata",
+        "targetProp": "onEditSchedule",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryMetadata.jsx:QueryMetadata",
+        "target": "components\\queries\\SchedulePhrase.jsx:SchedulePhrase",
+        "targetAlias": "SchedulePhrase",
+        "targetProp": "onClick",
+        "isPure": false
+      },
+      {
+        "source": "components\\queries\\SchedulePhrase.jsx:SchedulePhrase",
+        "target": "components\\PlainButton.tsx:PlainButton",
+        "targetAlias": "PlainButton",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QueryView.jsx:QueryView",
+    "targetComponent": "components\\Tooltip.tsx:Tooltip",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QueryView.jsx:QueryView",
+        "target": "pages\\queries\\components\\QueryViewButton.jsx:QueryViewButton",
+        "targetAlias": "QueryViewButton",
+        "targetProp": "title",
+        "isPure": true
+      },
+      {
+        "source": "pages\\queries\\components\\QueryViewButton.jsx:QueryViewButton",
+        "target": "components\\queries\\QueryEditor\\QueryEditorControls.jsx:ButtonTooltip",
+        "targetAlias": "ButtonTooltip",
+        "targetProp": "title",
+        "isPure": true
+      },
+      {
+        "source": "components\\queries\\QueryEditor\\QueryEditorControls.jsx:ButtonTooltip",
+        "target": "components\\Tooltip.tsx:Tooltip",
+        "targetAlias": "Tooltip",
+        "targetProp": "title",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QueryView.jsx:QueryView",
+    "targetComponent": "components\\PlainButton.tsx:PlainButton",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QueryView.jsx:QueryView",
+        "target": "pages\\queries\\components\\QueryMetadata.jsx:QueryMetadata",
+        "targetAlias": "QueryMetadata",
+        "targetProp": "onEditSchedule",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryMetadata.jsx:QueryMetadata",
+        "target": "components\\queries\\SchedulePhrase.jsx:SchedulePhrase",
+        "targetAlias": "SchedulePhrase",
+        "targetProp": "onClick",
+        "isPure": false
+      },
+      {
+        "source": "components\\queries\\SchedulePhrase.jsx:SchedulePhrase",
+        "target": "components\\PlainButton.tsx:PlainButton",
+        "targetAlias": "PlainButton",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
+    "targetComponent": "components\\Timer.jsx:Timer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
+        "target": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidgetHeader",
+        "targetAlias": "VisualizationWidgetHeader",
+        "targetProp": "refreshStartedAt",
+        "isPure": true
+      },
+      {
+        "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidgetHeader",
+        "target": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:RefreshIndicator",
+        "targetAlias": "RefreshIndicator",
+        "targetProp": "refreshStartedAt",
+        "isPure": true
+      },
+      {
+        "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:RefreshIndicator",
+        "target": "components\\Timer.jsx:Timer",
+        "targetAlias": "Timer",
+        "targetProp": "from",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
   },
   {
     "sourceComponent": "pages\\users\\UserProfile.jsx:UserProfile",
@@ -96,270 +244,10 @@
         "isPure": false
       }
     ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "pages\\users\\UserProfile.jsx:UserProfile",
-    "targetComponent": "pages\\users\\components\\ApiKeyForm.jsx:ApiKeyForm",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "pages\\users\\UserProfile.jsx:UserProfile",
-        "target": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
-        "targetAlias": "EditableUserProfile",
-        "targetProp": "user",
-        "isPure": false
-      },
-      {
-        "source": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
-        "target": "pages\\users\\components\\ApiKeyForm.jsx:ApiKeyForm",
-        "targetAlias": "ApiKeyForm",
-        "targetProp": "user",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "pages\\users\\UserProfile.jsx:UserProfile",
-    "targetComponent": "pages\\users\\components\\ToggleUserForm.jsx:ToggleUserForm",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "pages\\users\\UserProfile.jsx:UserProfile",
-        "target": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
-        "targetAlias": "EditableUserProfile",
-        "targetProp": "user",
-        "isPure": false
-      },
-      {
-        "source": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
-        "target": "pages\\users\\components\\ToggleUserForm.jsx:ToggleUserForm",
-        "targetAlias": "ToggleUserForm",
-        "targetProp": "user",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
-    "targetComponent": "pages\\settings\\components\\AuthSettings\\PasswordLoginSettings.jsx:PasswordLoginSettings",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
-        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
-        "targetAlias": "AuthSettings",
-        "targetProp": "values",
-        "isPure": false
-      },
-      {
-        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
-        "target": "pages\\settings\\components\\AuthSettings\\PasswordLoginSettings.jsx:PasswordLoginSettings",
-        "targetAlias": "PasswordLoginSettings",
-        "targetProp": "values",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
-    "targetComponent": "pages\\settings\\components\\AuthSettings\\PasswordLoginSettings.jsx:PasswordLoginSettings",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
-        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
-        "targetAlias": "AuthSettings",
-        "targetProp": "onChange",
-        "isPure": false
-      },
-      {
-        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
-        "target": "pages\\settings\\components\\AuthSettings\\PasswordLoginSettings.jsx:PasswordLoginSettings",
-        "targetAlias": "PasswordLoginSettings",
-        "targetProp": "onChange",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
-    "targetComponent": "pages\\settings\\components\\AuthSettings\\GoogleLoginSettings.jsx:GoogleLoginSettings",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
-        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
-        "targetAlias": "AuthSettings",
-        "targetProp": "values",
-        "isPure": false
-      },
-      {
-        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
-        "target": "pages\\settings\\components\\AuthSettings\\GoogleLoginSettings.jsx:GoogleLoginSettings",
-        "targetAlias": "GoogleLoginSettings",
-        "targetProp": "values",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
-    "targetComponent": "pages\\settings\\components\\AuthSettings\\GoogleLoginSettings.jsx:GoogleLoginSettings",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
-        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
-        "targetAlias": "AuthSettings",
-        "targetProp": "onChange",
-        "isPure": false
-      },
-      {
-        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
-        "target": "pages\\settings\\components\\AuthSettings\\GoogleLoginSettings.jsx:GoogleLoginSettings",
-        "targetAlias": "GoogleLoginSettings",
-        "targetProp": "onChange",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
-    "targetComponent": "pages\\settings\\components\\AuthSettings\\SAMLSettings.jsx:SAMLSettings",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
-        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
-        "targetAlias": "AuthSettings",
-        "targetProp": "values",
-        "isPure": false
-      },
-      {
-        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
-        "target": "pages\\settings\\components\\AuthSettings\\SAMLSettings.jsx:SAMLSettings",
-        "targetAlias": "SAMLSettings",
-        "targetProp": "values",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
-    "targetComponent": "pages\\settings\\components\\AuthSettings\\SAMLSettings.jsx:SAMLSettings",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
-        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
-        "targetAlias": "AuthSettings",
-        "targetProp": "onChange",
-        "isPure": false
-      },
-      {
-        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
-        "target": "pages\\settings\\components\\AuthSettings\\SAMLSettings.jsx:SAMLSettings",
-        "targetAlias": "SAMLSettings",
-        "targetProp": "onChange",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "pages\\dashboards\\DashboardPage.jsx:DashboardComponent",
-    "targetComponent": "pages\\dashboards\\components\\DashboardHeader.jsx:DashboardPageTitle",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": true,
-    "propPassings": [
-      {
-        "source": "pages\\dashboards\\DashboardPage.jsx:DashboardComponent",
-        "target": "pages\\dashboards\\components\\DashboardHeader.jsx:DashboardHeader",
-        "targetAlias": "DashboardHeader",
-        "targetProp": "dashboardConfiguration",
-        "isPure": false
-      },
-      {
-        "source": "pages\\dashboards\\components\\DashboardHeader.jsx:DashboardHeader",
-        "target": "pages\\dashboards\\components\\DashboardHeader.jsx:DashboardPageTitle",
-        "targetAlias": "DashboardPageTitle",
-        "targetProp": "dashboardConfiguration",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": true
-  },
-  {
-    "sourceComponent": "pages\\alert\\components\\Rearm.jsx:Rearm",
-    "targetComponent": "pages\\alert\\components\\Rearm.jsx:RearmByDuration",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "pages\\alert\\components\\Rearm.jsx:Rearm",
-        "target": "pages\\alert\\components\\Rearm.jsx:RearmEditor",
-        "targetAlias": "RearmEditor",
-        "targetProp": "value",
-        "isPure": true
-      },
-      {
-        "source": "pages\\alert\\components\\Rearm.jsx:RearmEditor",
-        "target": "pages\\alert\\components\\Rearm.jsx:RearmByDuration",
-        "targetAlias": "RearmByDuration",
-        "targetProp": "value",
-        "isPure": false
-      }
-    ],
-    "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": false
-  },
-  {
-    "sourceComponent": "pages\\alert\\components\\Rearm.jsx:Rearm",
-    "targetComponent": "pages\\alert\\components\\Rearm.jsx:RearmByDuration",
-    "canRefactorWithContext": true,
-    "canRefactorWithComposition": false,
-    "propPassings": [
-      {
-        "source": "pages\\alert\\components\\Rearm.jsx:Rearm",
-        "target": "pages\\alert\\components\\Rearm.jsx:RearmEditor",
-        "targetAlias": "RearmEditor",
-        "targetProp": "onChange",
-        "isPure": true
-      },
-      {
-        "source": "pages\\alert\\components\\Rearm.jsx:RearmEditor",
-        "target": "pages\\alert\\components\\Rearm.jsx:RearmByDuration",
-        "targetAlias": "RearmByDuration",
-        "targetProp": "onChange",
-        "isPure": false
-      }
-    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
     "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
@@ -384,7 +272,1663 @@
         "isPure": false
       }
     ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
     "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\users\\UserProfile.jsx:UserProfile",
+    "targetComponent": "pages\\users\\components\\ApiKeyForm.jsx:ApiKeyForm",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\users\\UserProfile.jsx:UserProfile",
+        "target": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
+        "targetAlias": "EditableUserProfile",
+        "targetProp": "user",
+        "isPure": false
+      },
+      {
+        "source": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
+        "target": "pages\\users\\components\\ApiKeyForm.jsx:ApiKeyForm",
+        "targetAlias": "ApiKeyForm",
+        "targetProp": "user",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\users\\UserProfile.jsx:UserProfile",
+    "targetComponent": "pages\\users\\components\\ToggleUserForm.jsx:ToggleUserForm",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\users\\UserProfile.jsx:UserProfile",
+        "target": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
+        "targetAlias": "EditableUserProfile",
+        "targetProp": "user",
+        "isPure": false
+      },
+      {
+        "source": "pages\\users\\components\\EditableUserProfile.jsx:EditableUserProfile",
+        "target": "pages\\users\\components\\ToggleUserForm.jsx:ToggleUserForm",
+        "targetAlias": "ToggleUserForm",
+        "targetProp": "user",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+    "targetComponent": "pages\\settings\\components\\AuthSettings\\PasswordLoginSettings.jsx:PasswordLoginSettings",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "targetAlias": "AuthSettings",
+        "targetProp": "values",
+        "isPure": false
+      },
+      {
+        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\PasswordLoginSettings.jsx:PasswordLoginSettings",
+        "targetAlias": "PasswordLoginSettings",
+        "targetProp": "values",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+    "targetComponent": "pages\\settings\\components\\AuthSettings\\PasswordLoginSettings.jsx:PasswordLoginSettings",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "targetAlias": "AuthSettings",
+        "targetProp": "onChange",
+        "isPure": false
+      },
+      {
+        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\PasswordLoginSettings.jsx:PasswordLoginSettings",
+        "targetAlias": "PasswordLoginSettings",
+        "targetProp": "onChange",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+    "targetComponent": "pages\\settings\\components\\AuthSettings\\GoogleLoginSettings.jsx:GoogleLoginSettings",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "targetAlias": "AuthSettings",
+        "targetProp": "values",
+        "isPure": false
+      },
+      {
+        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\GoogleLoginSettings.jsx:GoogleLoginSettings",
+        "targetAlias": "GoogleLoginSettings",
+        "targetProp": "values",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+    "targetComponent": "pages\\settings\\components\\AuthSettings\\GoogleLoginSettings.jsx:GoogleLoginSettings",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "targetAlias": "AuthSettings",
+        "targetProp": "onChange",
+        "isPure": false
+      },
+      {
+        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\GoogleLoginSettings.jsx:GoogleLoginSettings",
+        "targetAlias": "GoogleLoginSettings",
+        "targetProp": "onChange",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+    "targetComponent": "pages\\settings\\components\\AuthSettings\\SAMLSettings.jsx:SAMLSettings",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "targetAlias": "AuthSettings",
+        "targetProp": "values",
+        "isPure": false
+      },
+      {
+        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\SAMLSettings.jsx:SAMLSettings",
+        "targetAlias": "SAMLSettings",
+        "targetProp": "values",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+    "targetComponent": "pages\\settings\\components\\AuthSettings\\SAMLSettings.jsx:SAMLSettings",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\settings\\OrganizationSettings.jsx:OrganizationSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "targetAlias": "AuthSettings",
+        "targetProp": "onChange",
+        "isPure": false
+      },
+      {
+        "source": "pages\\settings\\components\\AuthSettings\\index.jsx:AuthSettings",
+        "target": "pages\\settings\\components\\AuthSettings\\SAMLSettings.jsx:SAMLSettings",
+        "targetAlias": "SAMLSettings",
+        "targetProp": "onChange",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries-list\\QueriesList.jsx:QueriesList",
+    "targetComponent": "components\\NoTaggedObjectsFound.jsx:NoTaggedObjectsFound",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries-list\\QueriesList.jsx:QueriesList",
+        "target": "pages\\queries-list\\QueriesListEmptyState.jsx:QueriesListEmptyState",
+        "targetAlias": "QueriesListEmptyState",
+        "targetProp": "selectedTags",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries-list\\QueriesListEmptyState.jsx:QueriesListEmptyState",
+        "target": "components\\NoTaggedObjectsFound.jsx:NoTaggedObjectsFound",
+        "targetAlias": "NoTaggedObjectsFound",
+        "targetProp": "tags",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QuerySource.jsx:QuerySource",
+    "targetComponent": "components\\DynamicComponent.jsx:DynamicComponent",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QuerySource.jsx:QuerySource",
+        "target": "pages\\queries\\components\\QuerySourceAlerts.jsx:QuerySourceAlerts",
+        "targetAlias": "QuerySourceAlerts",
+        "targetProp": "query",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QuerySourceAlerts.jsx:QuerySourceAlerts",
+        "target": "components\\DynamicComponent.jsx:DynamicComponent",
+        "targetAlias": "DynamicComponent",
+        "targetProp": "query",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QuerySource.jsx:QuerySource",
+    "targetComponent": "components\\DynamicComponent.jsx:DynamicComponent",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QuerySource.jsx:QuerySource",
+        "target": "pages\\queries\\components\\QuerySourceAlerts.jsx:QuerySourceAlerts",
+        "targetAlias": "QuerySourceAlerts",
+        "targetProp": "dataSourcesAvailable",
+        "isPure": true
+      },
+      {
+        "source": "pages\\queries\\components\\QuerySourceAlerts.jsx:QuerySourceAlerts",
+        "target": "components\\DynamicComponent.jsx:DynamicComponent",
+        "targetAlias": "DynamicComponent",
+        "targetProp": "dataSourcesAvailable",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QuerySource.jsx:QuerySource",
+    "targetComponent": "components\\FavoritesControl.jsx:FavoritesControl",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QuerySource.jsx:QuerySource",
+        "target": "pages\\queries\\components\\QueryPageHeader.jsx:QueryPageHeader",
+        "targetAlias": "QueryPageHeader",
+        "targetProp": "query",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryPageHeader.jsx:QueryPageHeader",
+        "target": "components\\FavoritesControl.jsx:FavoritesControl",
+        "targetAlias": "FavoritesControl",
+        "targetProp": "item",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "components\\ParameterValueInput.jsx:ParameterValueInput",
+    "targetComponent": "components\\dynamic-parameters\\DynamicDateRangePicker.jsx:DynamicDateRangePicker",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\ParameterValueInput.jsx:ParameterValueInput",
+        "target": "components\\dynamic-parameters\\DateRangeParameter.jsx:DateRangeParameter",
+        "targetAlias": "DateRangeParameter",
+        "targetProp": "type",
+        "isPure": true
+      },
+      {
+        "source": "components\\dynamic-parameters\\DateRangeParameter.jsx:DateRangeParameter",
+        "target": "components\\dynamic-parameters\\DynamicDateRangePicker.jsx:DynamicDateRangePicker",
+        "targetAlias": "DynamicDateRangePicker",
+        "targetProp": "type",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\ParameterValueInput.jsx:ParameterValueInput",
+    "targetComponent": "components\\SelectWithVirtualScroll.tsx:SelectWithVirtualScroll",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\ParameterValueInput.jsx:ParameterValueInput",
+        "target": "components\\QueryBasedParameterInput.jsx:QueryBasedParameterInput",
+        "targetAlias": "QueryBasedParameterInput",
+        "targetProp": "className",
+        "isPure": true
+      },
+      {
+        "source": "components\\QueryBasedParameterInput.jsx:QueryBasedParameterInput",
+        "target": "components\\SelectWithVirtualScroll.tsx:SelectWithVirtualScroll",
+        "targetAlias": "SelectWithVirtualScroll",
+        "targetProp": "className",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\ParameterValueInput.jsx:ParameterValueInput",
+    "targetComponent": "components\\SelectWithVirtualScroll.tsx:SelectWithVirtualScroll",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\ParameterValueInput.jsx:ParameterValueInput",
+        "target": "components\\QueryBasedParameterInput.jsx:QueryBasedParameterInput",
+        "targetAlias": "QueryBasedParameterInput",
+        "targetProp": "mode",
+        "isPure": true
+      },
+      {
+        "source": "components\\QueryBasedParameterInput.jsx:QueryBasedParameterInput",
+        "target": "components\\SelectWithVirtualScroll.tsx:SelectWithVirtualScroll",
+        "targetAlias": "SelectWithVirtualScroll",
+        "targetProp": "mode",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\ParameterValueInput.jsx:ParameterValueInput",
+    "targetComponent": "components\\SelectWithVirtualScroll.tsx:SelectWithVirtualScroll",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\ParameterValueInput.jsx:ParameterValueInput",
+        "target": "components\\QueryBasedParameterInput.jsx:QueryBasedParameterInput",
+        "targetAlias": "QueryBasedParameterInput",
+        "targetProp": "value",
+        "isPure": true
+      },
+      {
+        "source": "components\\QueryBasedParameterInput.jsx:QueryBasedParameterInput",
+        "target": "components\\SelectWithVirtualScroll.tsx:SelectWithVirtualScroll",
+        "targetAlias": "SelectWithVirtualScroll",
+        "targetProp": "value",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\ParameterValueInput.jsx:ParameterValueInput",
+    "targetComponent": "components\\SelectWithVirtualScroll.tsx:SelectWithVirtualScroll",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\ParameterValueInput.jsx:ParameterValueInput",
+        "target": "components\\QueryBasedParameterInput.jsx:QueryBasedParameterInput",
+        "targetAlias": "QueryBasedParameterInput",
+        "targetProp": "onSelect",
+        "isPure": true
+      },
+      {
+        "source": "components\\QueryBasedParameterInput.jsx:QueryBasedParameterInput",
+        "target": "components\\SelectWithVirtualScroll.tsx:SelectWithVirtualScroll",
+        "targetAlias": "SelectWithVirtualScroll",
+        "targetProp": "onChange",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QuerySource.jsx:QuerySource",
+    "targetComponent": "components\\Timer.jsx:Timer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QuerySource.jsx:QuerySource",
+        "target": "pages\\queries\\components\\QueryExecutionStatus.jsx:QueryExecutionStatus",
+        "targetAlias": "QueryExecutionStatus",
+        "targetProp": "updatedAt",
+        "isPure": true
+      },
+      {
+        "source": "pages\\queries\\components\\QueryExecutionStatus.jsx:QueryExecutionStatus",
+        "target": "components\\Timer.jsx:Timer",
+        "targetAlias": "Timer",
+        "targetProp": "from",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "pages\\queries\\QuerySource.jsx:QuerySource",
+    "targetComponent": "components\\visualizations\\VisualizationRenderer.jsx:VisualizationRenderer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QuerySource.jsx:QuerySource",
+        "target": "pages\\queries\\components\\QueryVisualizationTabs.jsx:QueryVisualizationTabs",
+        "targetAlias": "QueryVisualizationTabs",
+        "targetProp": "queryResult",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryVisualizationTabs.jsx:QueryVisualizationTabs",
+        "target": "components\\visualizations\\VisualizationRenderer.jsx:VisualizationRenderer",
+        "targetAlias": "VisualizationRenderer",
+        "targetProp": "queryResult",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\components\\QueryVisualizationTabs.jsx:QueryVisualizationTabs",
+    "targetComponent": "components\\Filters.jsx:Filters",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\components\\QueryVisualizationTabs.jsx:QueryVisualizationTabs",
+        "target": "components\\visualizations\\VisualizationRenderer.jsx:VisualizationRenderer",
+        "targetAlias": "VisualizationRenderer",
+        "targetProp": "filters",
+        "isPure": false
+      },
+      {
+        "source": "components\\visualizations\\VisualizationRenderer.jsx:VisualizationRenderer",
+        "target": "components\\Filters.jsx:Filters",
+        "targetAlias": "Filters",
+        "targetProp": "filters",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QuerySource.jsx:QuerySource",
+    "targetComponent": "components\\EditVisualizationButton\\QueryControlDropdown.jsx:QueryControlDropdown",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QuerySource.jsx:QuerySource",
+        "target": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "targetAlias": "QueryExecutionMetadata",
+        "targetProp": "query",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "target": "components\\EditVisualizationButton\\QueryControlDropdown.jsx:QueryControlDropdown",
+        "targetAlias": "QueryControlDropdown",
+        "targetProp": "query",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QuerySource.jsx:QuerySource",
+    "targetComponent": "components\\EditVisualizationButton\\QueryControlDropdown.jsx:QueryControlDropdown",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QuerySource.jsx:QuerySource",
+        "target": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "targetAlias": "QueryExecutionMetadata",
+        "targetProp": "queryResult",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "target": "components\\EditVisualizationButton\\QueryControlDropdown.jsx:QueryControlDropdown",
+        "targetAlias": "QueryControlDropdown",
+        "targetProp": "queryResult",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QuerySource.jsx:QuerySource",
+    "targetComponent": "components\\EditVisualizationButton\\QueryControlDropdown.jsx:QueryControlDropdown",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QuerySource.jsx:QuerySource",
+        "target": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "targetAlias": "QueryExecutionMetadata",
+        "targetProp": "selectedVisualization",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "target": "components\\EditVisualizationButton\\QueryControlDropdown.jsx:QueryControlDropdown",
+        "targetAlias": "QueryControlDropdown",
+        "targetProp": "selectedTab",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QuerySource.jsx:QuerySource",
+    "targetComponent": "components\\EditVisualizationButton\\QueryControlDropdown.jsx:QueryControlDropdown",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QuerySource.jsx:QuerySource",
+        "target": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "targetAlias": "QueryExecutionMetadata",
+        "targetProp": "isQueryExecuting",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "target": "components\\EditVisualizationButton\\QueryControlDropdown.jsx:QueryControlDropdown",
+        "targetAlias": "QueryControlDropdown",
+        "targetProp": "queryExecuting",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QuerySource.jsx:QuerySource",
+    "targetComponent": "components\\EditVisualizationButton\\index.jsx:EditVisualizationButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QuerySource.jsx:QuerySource",
+        "target": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "targetAlias": "QueryExecutionMetadata",
+        "targetProp": "selectedVisualization",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "target": "components\\EditVisualizationButton\\index.jsx:EditVisualizationButton",
+        "targetAlias": "EditVisualizationButton",
+        "targetProp": "selectedTab",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QuerySource.jsx:QuerySource",
+    "targetComponent": "components\\EditVisualizationButton\\index.jsx:EditVisualizationButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QuerySource.jsx:QuerySource",
+        "target": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "targetAlias": "QueryExecutionMetadata",
+        "targetProp": "onEditVisualization",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "target": "components\\EditVisualizationButton\\index.jsx:EditVisualizationButton",
+        "targetAlias": "EditVisualizationButton",
+        "targetProp": "openVisualizationEditor",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QueryView.jsx:QueryView",
+    "targetComponent": "components\\FavoritesControl.jsx:FavoritesControl",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QueryView.jsx:QueryView",
+        "target": "pages\\queries\\components\\QueryPageHeader.jsx:QueryPageHeader",
+        "targetAlias": "QueryPageHeader",
+        "targetProp": "query",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryPageHeader.jsx:QueryPageHeader",
+        "target": "components\\FavoritesControl.jsx:FavoritesControl",
+        "targetAlias": "FavoritesControl",
+        "targetProp": "item",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "pages\\queries\\QueryView.jsx:QueryView",
+    "targetComponent": "components\\queries\\QueryEditor\\QueryEditorControls.jsx:ButtonTooltip",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QueryView.jsx:QueryView",
+        "target": "pages\\queries\\components\\QueryViewButton.jsx:QueryViewButton",
+        "targetAlias": "QueryViewButton",
+        "targetProp": "shortcut",
+        "isPure": true
+      },
+      {
+        "source": "pages\\queries\\components\\QueryViewButton.jsx:QueryViewButton",
+        "target": "components\\queries\\QueryEditor\\QueryEditorControls.jsx:ButtonTooltip",
+        "targetAlias": "ButtonTooltip",
+        "targetProp": "shortcut",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QueryView.jsx:QueryView",
+    "targetComponent": "components\\visualizations\\VisualizationRenderer.jsx:VisualizationRenderer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QueryView.jsx:QueryView",
+        "target": "pages\\queries\\components\\QueryVisualizationTabs.jsx:QueryVisualizationTabs",
+        "targetAlias": "QueryVisualizationTabs",
+        "targetProp": "queryResult",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryVisualizationTabs.jsx:QueryVisualizationTabs",
+        "target": "components\\visualizations\\VisualizationRenderer.jsx:VisualizationRenderer",
+        "targetAlias": "VisualizationRenderer",
+        "targetProp": "queryResult",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QueryView.jsx:QueryView",
+    "targetComponent": "components\\EditVisualizationButton\\QueryControlDropdown.jsx:QueryControlDropdown",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QueryView.jsx:QueryView",
+        "target": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "targetAlias": "QueryExecutionMetadata",
+        "targetProp": "query",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "target": "components\\EditVisualizationButton\\QueryControlDropdown.jsx:QueryControlDropdown",
+        "targetAlias": "QueryControlDropdown",
+        "targetProp": "query",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QueryView.jsx:QueryView",
+    "targetComponent": "components\\EditVisualizationButton\\QueryControlDropdown.jsx:QueryControlDropdown",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QueryView.jsx:QueryView",
+        "target": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "targetAlias": "QueryExecutionMetadata",
+        "targetProp": "queryResult",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "target": "components\\EditVisualizationButton\\QueryControlDropdown.jsx:QueryControlDropdown",
+        "targetAlias": "QueryControlDropdown",
+        "targetProp": "queryResult",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QueryView.jsx:QueryView",
+    "targetComponent": "components\\EditVisualizationButton\\QueryControlDropdown.jsx:QueryControlDropdown",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QueryView.jsx:QueryView",
+        "target": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "targetAlias": "QueryExecutionMetadata",
+        "targetProp": "selectedVisualization",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "target": "components\\EditVisualizationButton\\QueryControlDropdown.jsx:QueryControlDropdown",
+        "targetAlias": "QueryControlDropdown",
+        "targetProp": "selectedTab",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QueryView.jsx:QueryView",
+    "targetComponent": "components\\EditVisualizationButton\\QueryControlDropdown.jsx:QueryControlDropdown",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QueryView.jsx:QueryView",
+        "target": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "targetAlias": "QueryExecutionMetadata",
+        "targetProp": "isQueryExecuting",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "target": "components\\EditVisualizationButton\\QueryControlDropdown.jsx:QueryControlDropdown",
+        "targetAlias": "QueryControlDropdown",
+        "targetProp": "queryExecuting",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QueryView.jsx:QueryView",
+    "targetComponent": "components\\EditVisualizationButton\\index.jsx:EditVisualizationButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QueryView.jsx:QueryView",
+        "target": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "targetAlias": "QueryExecutionMetadata",
+        "targetProp": "selectedVisualization",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "target": "components\\EditVisualizationButton\\index.jsx:EditVisualizationButton",
+        "targetAlias": "EditVisualizationButton",
+        "targetProp": "selectedTab",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QueryView.jsx:QueryView",
+    "targetComponent": "components\\EditVisualizationButton\\index.jsx:EditVisualizationButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QueryView.jsx:QueryView",
+        "target": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "targetAlias": "QueryExecutionMetadata",
+        "targetProp": "onEditVisualization",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\components\\QueryExecutionMetadata.jsx:QueryExecutionMetadata",
+        "target": "components\\EditVisualizationButton\\index.jsx:EditVisualizationButton",
+        "targetAlias": "EditVisualizationButton",
+        "targetProp": "openVisualizationEditor",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\queries\\QueryView.jsx:QueryView",
+    "targetComponent": "components\\Timer.jsx:Timer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\QueryView.jsx:QueryView",
+        "target": "pages\\queries\\components\\QueryExecutionStatus.jsx:QueryExecutionStatus",
+        "targetAlias": "QueryExecutionStatus",
+        "targetProp": "updatedAt",
+        "isPure": true
+      },
+      {
+        "source": "pages\\queries\\components\\QueryExecutionStatus.jsx:QueryExecutionStatus",
+        "target": "components\\Timer.jsx:Timer",
+        "targetAlias": "Timer",
+        "targetProp": "from",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "pages\\queries\\VisualizationEmbed.jsx:VisualizationEmbed",
+    "targetComponent": "components\\visualizations\\VisualizationName.jsx:VisualizationName",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\VisualizationEmbed.jsx:VisualizationEmbed",
+        "target": "pages\\queries\\VisualizationEmbed.jsx:VisualizationEmbedHeader",
+        "targetAlias": "VisualizationEmbedHeader",
+        "targetProp": "visualization",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\VisualizationEmbed.jsx:VisualizationEmbedHeader",
+        "target": "components\\visualizations\\VisualizationName.jsx:VisualizationName",
+        "targetAlias": "VisualizationName",
+        "targetProp": "visualization",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "pages\\queries\\VisualizationEmbed.jsx:VisualizationEmbed",
+    "targetComponent": "components\\Timer.jsx:Timer",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\VisualizationEmbed.jsx:VisualizationEmbed",
+        "target": "pages\\queries\\VisualizationEmbed.jsx:VisualizationEmbedFooter",
+        "targetAlias": "VisualizationEmbedFooter",
+        "targetProp": "refreshStartedAt",
+        "isPure": false
+      },
+      {
+        "source": "pages\\queries\\VisualizationEmbed.jsx:VisualizationEmbedFooter",
+        "target": "components\\Timer.jsx:Timer",
+        "targetAlias": "Timer",
+        "targetProp": "from",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "pages\\queries\\VisualizationEmbed.jsx:VisualizationEmbed",
+    "targetComponent": "components\\TimeAgo.jsx:TimeAgo",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "pages\\queries\\VisualizationEmbed.jsx:VisualizationEmbed",
+        "target": "pages\\queries\\VisualizationEmbed.jsx:VisualizationEmbedFooter",
+        "targetAlias": "VisualizationEmbedFooter",
+        "targetProp": "updatedAt",
+        "isPure": true
+      },
+      {
+        "source": "pages\\queries\\VisualizationEmbed.jsx:VisualizationEmbedFooter",
+        "target": "components\\TimeAgo.jsx:TimeAgo",
+        "targetAlias": "TimeAgo",
+        "targetProp": "date",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "pages\\groups\\GroupDataSources.jsx:GroupDataSources",
+    "targetComponent": "components\\groups\\DeleteGroupButton.jsx:DeleteGroupButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\groups\\GroupDataSources.jsx:GroupDataSources",
+        "target": "components\\groups\\DetailsPageSidebar.jsx:DetailsPageSidebar",
+        "targetAlias": "Sidebar",
+        "targetProp": "group",
+        "isPure": true
+      },
+      {
+        "source": "components\\groups\\DetailsPageSidebar.jsx:DetailsPageSidebar",
+        "target": "components\\groups\\DeleteGroupButton.jsx:DeleteGroupButton",
+        "targetAlias": "DeleteGroupButton",
+        "targetProp": "group",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\groups\\GroupDataSources.jsx:GroupDataSources",
+    "targetComponent": "components\\groups\\DeleteGroupButton.jsx:DeleteGroupButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\groups\\GroupDataSources.jsx:GroupDataSources",
+        "target": "components\\groups\\DetailsPageSidebar.jsx:DetailsPageSidebar",
+        "targetAlias": "Sidebar",
+        "targetProp": "onGroupDeleted",
+        "isPure": true
+      },
+      {
+        "source": "components\\groups\\DetailsPageSidebar.jsx:DetailsPageSidebar",
+        "target": "components\\groups\\DeleteGroupButton.jsx:DeleteGroupButton",
+        "targetAlias": "DeleteGroupButton",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\groups\\GroupMembers.jsx:GroupMembers",
+    "targetComponent": "components\\groups\\DeleteGroupButton.jsx:DeleteGroupButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\groups\\GroupMembers.jsx:GroupMembers",
+        "target": "components\\groups\\DetailsPageSidebar.jsx:DetailsPageSidebar",
+        "targetAlias": "Sidebar",
+        "targetProp": "group",
+        "isPure": true
+      },
+      {
+        "source": "components\\groups\\DetailsPageSidebar.jsx:DetailsPageSidebar",
+        "target": "components\\groups\\DeleteGroupButton.jsx:DeleteGroupButton",
+        "targetAlias": "DeleteGroupButton",
+        "targetProp": "group",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\groups\\GroupMembers.jsx:GroupMembers",
+    "targetComponent": "components\\groups\\DeleteGroupButton.jsx:DeleteGroupButton",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\groups\\GroupMembers.jsx:GroupMembers",
+        "target": "components\\groups\\DetailsPageSidebar.jsx:DetailsPageSidebar",
+        "targetAlias": "Sidebar",
+        "targetProp": "onGroupDeleted",
+        "isPure": true
+      },
+      {
+        "source": "components\\groups\\DetailsPageSidebar.jsx:DetailsPageSidebar",
+        "target": "components\\groups\\DeleteGroupButton.jsx:DeleteGroupButton",
+        "targetAlias": "DeleteGroupButton",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\dashboards\\DashboardList.jsx:DashboardList",
+    "targetComponent": "components\\NoTaggedObjectsFound.jsx:NoTaggedObjectsFound",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\dashboards\\DashboardList.jsx:DashboardList",
+        "target": "pages\\dashboards\\components\\DashboardListEmptyState.tsx:DashboardListEmptyState",
+        "targetAlias": "DashboardListEmptyState",
+        "targetProp": "selectedTags",
+        "isPure": false
+      },
+      {
+        "source": "pages\\dashboards\\components\\DashboardListEmptyState.tsx:DashboardListEmptyState",
+        "target": "components\\NoTaggedObjectsFound.jsx:NoTaggedObjectsFound",
+        "targetAlias": "NoTaggedObjectsFound",
+        "targetProp": "tags",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\dashboards\\DashboardPage.jsx:DashboardComponent",
+    "targetComponent": "pages\\dashboards\\components\\DashboardHeader.jsx:DashboardPageTitle",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "pages\\dashboards\\DashboardPage.jsx:DashboardComponent",
+        "target": "pages\\dashboards\\components\\DashboardHeader.jsx:DashboardHeader",
+        "targetAlias": "DashboardHeader",
+        "targetProp": "dashboardConfiguration",
+        "isPure": false
+      },
+      {
+        "source": "pages\\dashboards\\components\\DashboardHeader.jsx:DashboardHeader",
+        "target": "pages\\dashboards\\components\\DashboardHeader.jsx:DashboardPageTitle",
+        "targetAlias": "DashboardPageTitle",
+        "targetProp": "dashboardConfiguration",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "pages\\dashboards\\DashboardPage.jsx:DashboardPage",
+    "targetComponent": "components\\DynamicComponent.jsx:DynamicComponent",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\dashboards\\DashboardPage.jsx:DashboardPage",
+        "target": "pages\\dashboards\\DashboardPage.jsx:DashboardComponent",
+        "targetAlias": "DashboardComponent",
+        "targetProp": "dashboard",
+        "isPure": false
+      },
+      {
+        "source": "pages\\dashboards\\DashboardPage.jsx:DashboardComponent",
+        "target": "components\\DynamicComponent.jsx:DynamicComponent",
+        "targetAlias": "DynamicComponent",
+        "targetProp": "dashboard",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\dashboards\\DashboardPage.jsx:DashboardPage",
+    "targetComponent": "components\\dashboards\\DashboardGrid.jsx:DashboardGrid",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\dashboards\\DashboardPage.jsx:DashboardPage",
+        "target": "pages\\dashboards\\DashboardPage.jsx:DashboardComponent",
+        "targetAlias": "DashboardComponent",
+        "targetProp": "dashboard",
+        "isPure": false
+      },
+      {
+        "source": "pages\\dashboards\\DashboardPage.jsx:DashboardComponent",
+        "target": "components\\dashboards\\DashboardGrid.jsx:DashboardGrid",
+        "targetAlias": "DashboardGrid",
+        "targetProp": "dashboard",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\dashboards\\PublicDashboardPage.jsx:PublicDashboardPage",
+    "targetComponent": "components\\dashboards\\DashboardGrid.jsx:DashboardGrid",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\dashboards\\PublicDashboardPage.jsx:PublicDashboardPage",
+        "target": "pages\\dashboards\\PublicDashboardPage.jsx:PublicDashboard",
+        "targetAlias": "PublicDashboard",
+        "targetProp": "dashboard",
+        "isPure": true
+      },
+      {
+        "source": "pages\\dashboards\\PublicDashboardPage.jsx:PublicDashboard",
+        "target": "components\\dashboards\\DashboardGrid.jsx:DashboardGrid",
+        "targetAlias": "DashboardGrid",
+        "targetProp": "dashboard",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\alert\\AlertNew.jsx:AlertNew",
+    "targetComponent": "components\\QuerySelector.jsx:QuerySelector",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\alert\\AlertNew.jsx:AlertNew",
+        "target": "pages\\alert\\components\\Query.jsx:QueryFormItem",
+        "targetAlias": "Query",
+        "targetProp": "query",
+        "isPure": true
+      },
+      {
+        "source": "pages\\alert\\components\\Query.jsx:QueryFormItem",
+        "target": "components\\QuerySelector.jsx:QuerySelector",
+        "targetAlias": "QuerySelector",
+        "targetProp": "selectedQuery",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\alert\\AlertNew.jsx:AlertNew",
+    "targetComponent": "components\\QuerySelector.jsx:QuerySelector",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\alert\\AlertNew.jsx:AlertNew",
+        "target": "pages\\alert\\components\\Query.jsx:QueryFormItem",
+        "targetAlias": "Query",
+        "targetProp": "onChange",
+        "isPure": true
+      },
+      {
+        "source": "pages\\alert\\components\\Query.jsx:QueryFormItem",
+        "target": "components\\QuerySelector.jsx:QuerySelector",
+        "targetAlias": "QuerySelector",
+        "targetProp": "onChange",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\alert\\components\\Rearm.jsx:Rearm",
+    "targetComponent": "pages\\alert\\components\\Rearm.jsx:RearmByDuration",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\alert\\components\\Rearm.jsx:Rearm",
+        "target": "pages\\alert\\components\\Rearm.jsx:RearmEditor",
+        "targetAlias": "RearmEditor",
+        "targetProp": "value",
+        "isPure": true
+      },
+      {
+        "source": "pages\\alert\\components\\Rearm.jsx:RearmEditor",
+        "target": "pages\\alert\\components\\Rearm.jsx:RearmByDuration",
+        "targetAlias": "RearmByDuration",
+        "targetProp": "value",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\alert\\components\\Rearm.jsx:Rearm",
+    "targetComponent": "pages\\alert\\components\\Rearm.jsx:RearmByDuration",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\alert\\components\\Rearm.jsx:Rearm",
+        "target": "pages\\alert\\components\\Rearm.jsx:RearmEditor",
+        "targetAlias": "RearmEditor",
+        "targetProp": "onChange",
+        "isPure": true
+      },
+      {
+        "source": "pages\\alert\\components\\Rearm.jsx:RearmEditor",
+        "target": "pages\\alert\\components\\Rearm.jsx:RearmByDuration",
+        "targetAlias": "RearmByDuration",
+        "targetProp": "onChange",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\alert\\AlertView.jsx:AlertView",
+    "targetComponent": "components\\TimeAgo.jsx:TimeAgo",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "pages\\alert\\AlertView.jsx:AlertView",
+        "target": "pages\\alert\\AlertView.jsx:AlertState",
+        "targetAlias": "AlertState",
+        "targetProp": "lastTriggered",
+        "isPure": true
+      },
+      {
+        "source": "pages\\alert\\AlertView.jsx:AlertState",
+        "target": "components\\TimeAgo.jsx:TimeAgo",
+        "targetAlias": "TimeAgo",
+        "targetProp": "date",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "pages\\alert\\AlertView.jsx:AlertView",
+    "targetComponent": "components\\QuerySelector.jsx:QuerySelector",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\alert\\AlertView.jsx:AlertView",
+        "target": "pages\\alert\\components\\Query.jsx:QueryFormItem",
+        "targetAlias": "Query",
+        "targetProp": "query",
+        "isPure": true
+      },
+      {
+        "source": "pages\\alert\\components\\Query.jsx:QueryFormItem",
+        "target": "components\\QuerySelector.jsx:QuerySelector",
+        "targetAlias": "QuerySelector",
+        "targetProp": "selectedQuery",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\alert\\components\\AlertDestinations.jsx:AlertDestinations",
+    "targetComponent": "components\\PlainButton.tsx:PlainButton",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\alert\\components\\AlertDestinations.jsx:AlertDestinations",
+        "target": "pages\\alert\\components\\AlertDestinations.jsx:ListItem",
+        "targetAlias": "ListItem",
+        "targetProp": "unsubscribe",
+        "isPure": true
+      },
+      {
+        "source": "pages\\alert\\components\\AlertDestinations.jsx:ListItem",
+        "target": "components\\PlainButton.tsx:PlainButton",
+        "targetAlias": "PlainButton",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\alert\\AlertEdit.jsx:AlertEdit",
+    "targetComponent": "components\\QuerySelector.jsx:QuerySelector",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\alert\\AlertEdit.jsx:AlertEdit",
+        "target": "pages\\alert\\components\\Query.jsx:QueryFormItem",
+        "targetAlias": "Query",
+        "targetProp": "query",
+        "isPure": true
+      },
+      {
+        "source": "pages\\alert\\components\\Query.jsx:QueryFormItem",
+        "target": "components\\QuerySelector.jsx:QuerySelector",
+        "targetAlias": "QuerySelector",
+        "targetProp": "selectedQuery",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "pages\\alert\\AlertEdit.jsx:AlertEdit",
+    "targetComponent": "components\\QuerySelector.jsx:QuerySelector",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "pages\\alert\\AlertEdit.jsx:AlertEdit",
+        "target": "pages\\alert\\components\\Query.jsx:QueryFormItem",
+        "targetAlias": "Query",
+        "targetProp": "onChange",
+        "isPure": true
+      },
+      {
+        "source": "pages\\alert\\components\\Query.jsx:QueryFormItem",
+        "target": "components\\QuerySelector.jsx:QuerySelector",
+        "targetAlias": "QuerySelector",
+        "targetProp": "onChange",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\queries\\QueryEditor\\QueryEditorControls.jsx:EditorControl",
+    "targetComponent": "components\\Tooltip.tsx:Tooltip",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\queries\\QueryEditor\\QueryEditorControls.jsx:EditorControl",
+        "target": "components\\queries\\QueryEditor\\QueryEditorControls.jsx:ButtonTooltip",
+        "targetAlias": "ButtonTooltip",
+        "targetProp": "title",
+        "isPure": false
+      },
+      {
+        "source": "components\\queries\\QueryEditor\\QueryEditorControls.jsx:ButtonTooltip",
+        "target": "components\\Tooltip.tsx:Tooltip",
+        "targetAlias": "Tooltip",
+        "targetProp": "title",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dashboards\\ExpandedWidgetDialog.jsx:ExpandedWidgetDialog",
+    "targetComponent": "components\\Filters.jsx:Filters",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\dashboards\\ExpandedWidgetDialog.jsx:ExpandedWidgetDialog",
+        "target": "components\\visualizations\\VisualizationRenderer.jsx:VisualizationRenderer",
+        "targetAlias": "VisualizationRenderer",
+        "targetProp": "filters",
+        "isPure": true
+      },
+      {
+        "source": "components\\visualizations\\VisualizationRenderer.jsx:VisualizationRenderer",
+        "target": "components\\Filters.jsx:Filters",
+        "targetAlias": "Filters",
+        "targetProp": "filters",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
@@ -408,6 +1952,10 @@
         "isPure": true
       }
     ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
     "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
@@ -432,7 +1980,39 @@
         "isPure": true
       }
     ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
     "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dashboards\\dashboard-widget\\Widget.jsx:Widget",
+    "targetComponent": "components\\PlainButton.tsx:PlainButton",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\dashboards\\dashboard-widget\\Widget.jsx:Widget",
+        "target": "components\\dashboards\\dashboard-widget\\Widget.jsx:WidgetDeleteButton",
+        "targetAlias": "WidgetDeleteButton",
+        "targetProp": "onClick",
+        "isPure": true
+      },
+      {
+        "source": "components\\dashboards\\dashboard-widget\\Widget.jsx:WidgetDeleteButton",
+        "target": "components\\PlainButton.tsx:PlainButton",
+        "targetAlias": "PlainButton",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
@@ -456,6 +2036,10 @@
         "isPure": true
       }
     ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
     "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
@@ -480,7 +2064,39 @@
         "isPure": true
       }
     ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
     "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
+    "targetComponent": "components\\Filters.jsx:Filters",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
+        "target": "components\\visualizations\\VisualizationRenderer.jsx:VisualizationRenderer",
+        "targetAlias": "VisualizationRenderer",
+        "targetProp": "filters",
+        "isPure": true
+      },
+      {
+        "source": "components\\visualizations\\VisualizationRenderer.jsx:VisualizationRenderer",
+        "target": "components\\Filters.jsx:Filters",
+        "targetAlias": "Filters",
+        "targetProp": "filters",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
@@ -504,31 +2120,179 @@
         "isPure": true
       }
     ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
     "destinationWithMultipleParentsPrec": true,
     "nonForwardedPropsInIntermediateComponentsPrec": false
   },
   {
-    "sourceComponent": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
-    "targetComponent": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:RefreshIndicator",
+    "sourceComponent": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidgetHeader",
+    "targetComponent": "components\\visualizations\\VisualizationName.jsx:VisualizationName",
     "canRefactorWithContext": true,
     "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidgetHeader",
+        "target": "components\\QueryLink.jsx:QueryLink",
+        "targetAlias": "QueryLink",
+        "targetProp": "visualization",
+        "isPure": false
+      },
+      {
+        "source": "components\\QueryLink.jsx:QueryLink",
+        "target": "components\\visualizations\\VisualizationName.jsx:VisualizationName",
+        "targetAlias": "VisualizationName",
+        "targetProp": "visualization",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
+    "targetComponent": "components\\Parameters.jsx:Parameters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
     "propPassings": [
       {
         "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
         "target": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidgetHeader",
         "targetAlias": "VisualizationWidgetHeader",
-        "targetProp": "refreshStartedAt",
+        "targetProp": "parameters",
         "isPure": true
       },
       {
         "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidgetHeader",
-        "target": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:RefreshIndicator",
-        "targetAlias": "RefreshIndicator",
-        "targetProp": "refreshStartedAt",
+        "target": "components\\Parameters.jsx:Parameters",
+        "targetAlias": "Parameters",
+        "targetProp": "parameters",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
+    "targetComponent": "components\\Parameters.jsx:Parameters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
+        "target": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidgetHeader",
+        "targetAlias": "VisualizationWidgetHeader",
+        "targetProp": "isEditing",
+        "isPure": true
+      },
+      {
+        "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidgetHeader",
+        "target": "components\\Parameters.jsx:Parameters",
+        "targetAlias": "Parameters",
+        "targetProp": "sortable",
         "isPure": true
       }
     ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
     "destinationWithMultipleParentsPrec": true,
-    "nonForwardedPropsInIntermediateComponentsPrec": true
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
+    "targetComponent": "components\\Parameters.jsx:Parameters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
+        "target": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidgetHeader",
+        "targetAlias": "VisualizationWidgetHeader",
+        "targetProp": "onParametersUpdate",
+        "isPure": true
+      },
+      {
+        "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidgetHeader",
+        "target": "components\\Parameters.jsx:Parameters",
+        "targetAlias": "Parameters",
+        "targetProp": "onValuesChange",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
+    "targetComponent": "components\\Parameters.jsx:Parameters",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
+        "target": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidgetHeader",
+        "targetAlias": "VisualizationWidgetHeader",
+        "targetProp": "onParametersEdit",
+        "isPure": true
+      },
+      {
+        "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidgetHeader",
+        "target": "components\\Parameters.jsx:Parameters",
+        "targetAlias": "Parameters",
+        "targetProp": "onParametersEdit",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
+    "targetComponent": "components\\PlainButton.tsx:PlainButton",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidget",
+        "target": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidgetFooter",
+        "targetAlias": "VisualizationWidgetFooter",
+        "targetProp": "onExpand",
+        "isPure": true
+      },
+      {
+        "source": "components\\dashboards\\dashboard-widget\\VisualizationWidget.jsx:VisualizationWidgetFooter",
+        "target": "components\\PlainButton.tsx:PlainButton",
+        "targetAlias": "PlainButton",
+        "targetProp": "onClick",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
   }
 ]

@@ -1,7 +1,7 @@
 export const projects = [
     {
         projectName: 'joplin',
-        resultsFile: 'candidates-joplin-desktop-e75875c.json',
+        resultsFile: 'candidates-joplin-e75875c.json',
         files: 463,
         totalComponents: 122,
         sloc: 47341,
@@ -9,7 +9,8 @@ export const projects = [
         repo: "laurent22/joplin",
         version: "v3.5.11",
         commitId: "e75875c",
-        lang: "JS/TS"
+        lang: "JS/TS",
+        comment: 'desktop'
     },
     {
         projectName: 'carbon',
@@ -97,7 +98,7 @@ export const projects = [
     },
     {
         projectName: 'Rocket.Chat',
-        resultsFile: 'candidates-rocketchat-7137ec8.json',
+        resultsFile: 'candidates-Rocket.Chat-7137ec8.json',
         files: 2503,
         totalComponents: 1391,
         sloc: 142439,
@@ -217,7 +218,7 @@ export const projects = [
     },
     {
         projectName: 'cal.com',
-        resultsFile: 'candidates-calcom-947b05b.json',
+        resultsFile: 'candidates-cal.com-947b05b.json',
         files: 802,
         totalComponents: 559,
         sloc:  89443,
@@ -241,7 +242,7 @@ export const projects = [
     },
     {
         projectName: 'lobe-chat',
-        resultsFile: 'candidates-lobehub-a11925f.json',
+        resultsFile: 'candidates-lobe-chat-a11925f.json',
         files: 2247,
         totalComponents: 1185,
         sloc:  169644,

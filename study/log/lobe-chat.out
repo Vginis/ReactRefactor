@@ -1,0 +1,1336 @@
+React file loading: 11.187s
+WebBrowsing is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Render\index.tsx
+Search is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Render\Search\index.tsx
+SearchResult is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Render\Search\SearchResult\index.tsx
+SearchResultItem is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Render\Search\SearchResult\SearchResultItem.tsx
+ShowMore is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Render\Search\SearchResult\ShowMore.tsx
+SearchQueryView is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Render\Search\SearchQuery\index.tsx
+SearchBar is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Render\Search\SearchQuery\SearchView.tsx
+Form is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Render\Search\ConfigForm\Form.tsx
+ConfigAlert is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Render\Search\ConfigForm\index.tsx
+SearchXNGIcon is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Render\Search\ConfigForm\SearchXNGIcon.tsx
+FormAction is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Render\Search\ConfigForm\style.tsx
+PagesContent is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Render\PageContent\index.tsx
+LoadingCard is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Render\PageContent\Loading.tsx
+CrawlerResultCard is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Render\PageContent\Result.tsx
+Inspector is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Portal\index.tsx
+Footer is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Portal\Search\Footer.tsx
+Inspector is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Portal\Search\index.tsx
+ResultList is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Portal\Search\ResultList\index.tsx
+CategoryAvatar is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Portal\Search\ResultList\SearchItem\CategoryAvatar.tsx
+SearchItem is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Portal\Search\ResultList\SearchItem\index.tsx
+TitleExtra is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Portal\Search\ResultList\SearchItem\TitleExtra.tsx
+VideoItem is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Portal\Search\ResultList\SearchItem\Video.tsx
+PageContents is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Portal\PageContents\index.tsx
+PageContent is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\Portal\PageContent\index.tsx
+CategoryAvatar is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\components\CategoryAvatar.tsx
+EngineAvatar is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\components\EngineAvatar.tsx
+EngineAvatarGroup is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\components\EngineAvatar.tsx
+SearchBar is in ..\benchmark\nunes\lobehub\src\tools\web-browsing\components\SearchBar.tsx
+LocalFilesRender is in ..\benchmark\nunes\lobehub\src\tools\local-system\Render\index.tsx
+WriteFile is in ..\benchmark\nunes\lobehub\src\tools\local-system\Render\WriteFile\index.tsx
+SearchFiles is in ..\benchmark\nunes\lobehub\src\tools\local-system\Render\SearchFiles\index.tsx
+SearchFiles is in ..\benchmark\nunes\lobehub\src\tools\local-system\Render\SearchFiles\Result.tsx
+SearchQueryView is in ..\benchmark\nunes\lobehub\src\tools\local-system\Render\SearchFiles\SearchQuery\index.tsx
+SearchBar is in ..\benchmark\nunes\lobehub\src\tools\local-system\Render\SearchFiles\SearchQuery\SearchView.tsx
+RunCommand is in ..\benchmark\nunes\lobehub\src\tools\local-system\Render\RunCommand\index.tsx
+RenameLocalFile is in ..\benchmark\nunes\lobehub\src\tools\local-system\Render\RenameLocalFile\index.tsx
+ReadFileQuery is in ..\benchmark\nunes\lobehub\src\tools\local-system\Render\ReadLocalFile\index.tsx
+ReadFileSkeleton is in ..\benchmark\nunes\lobehub\src\tools\local-system\Render\ReadLocalFile\ReadFileSkeleton.tsx
+ReadFileView is in ..\benchmark\nunes\lobehub\src\tools\local-system\Render\ReadLocalFile\ReadFileView.tsx
+ListFiles is in ..\benchmark\nunes\lobehub\src\tools\local-system\Render\ListFiles\index.tsx
+SearchFiles is in ..\benchmark\nunes\lobehub\src\tools\local-system\Render\ListFiles\Result.tsx
+FileItem is in ..\benchmark\nunes\lobehub\src\tools\local-system\components\FileItem.tsx
+GalleyGrid is in ..\benchmark\nunes\lobehub\src\tools\dalle\Render\GalleyGrid.tsx
+DallE is in ..\benchmark\nunes\lobehub\src\tools\dalle\Render\index.tsx
+ToolBar is in ..\benchmark\nunes\lobehub\src\tools\dalle\Render\ToolBar.tsx
+EditMode is in ..\benchmark\nunes\lobehub\src\tools\dalle\Render\Item\EditMode.tsx
+Error is in ..\benchmark\nunes\lobehub\src\tools\dalle\Render\Item\Error.tsx
+ImagePreview is in ..\benchmark\nunes\lobehub\src\tools\dalle\Render\Item\Image.tsx
+ImageFileItem is in ..\benchmark\nunes\lobehub\src\tools\dalle\Render\Item\ImageFileItem.tsx
+ImageItem is in ..\benchmark\nunes\lobehub\src\tools\dalle\Render\Item\index.tsx
+CodeInterpreter is in ..\benchmark\nunes\lobehub\src\tools\code-interpreter\Render\index.tsx
+ResultFileGallery is in ..\benchmark\nunes\lobehub\src\tools\code-interpreter\Render\components\ResultFileGallery.tsx
+ResultImage is in ..\benchmark\nunes\lobehub\src\tools\code-interpreter\Render\components\ResultFileItem.tsx
+ResultFile is in ..\benchmark\nunes\lobehub\src\tools\code-interpreter\Render\components\ResultFileItem.tsx
+ServerConfigStoreProvider is in ..\benchmark\nunes\lobehub\src\store\serverConfig\Provider.tsx
+AppTheme is in ..\benchmark\nunes\lobehub\src\layout\GlobalProvider\AppTheme.tsx
+Editor is in ..\benchmark\nunes\lobehub\src\layout\GlobalProvider\Editor.tsx
+GlobalLayout is in ..\benchmark\nunes\lobehub\src\layout\GlobalProvider\index.tsx
+Locale is in ..\benchmark\nunes\lobehub\src\layout\GlobalProvider\Locale.tsx
+QueryProvider is in ..\benchmark\nunes\lobehub\src\layout\GlobalProvider\Query.tsx
+StyleRegistry is in ..\benchmark\nunes\lobehub\src\layout\GlobalProvider\StyleRegistry.tsx
+AuthProvider is in ..\benchmark\nunes\lobehub\src\layout\AuthProvider\index.tsx
+NoAuthProvider is in ..\benchmark\nunes\lobehub\src\layout\AuthProvider\NoAuth\index.tsx
+NextAuth is in ..\benchmark\nunes\lobehub\src\layout\AuthProvider\NextAuth\index.tsx
+Clerk is in ..\benchmark\nunes\lobehub\src\layout\AuthProvider\Clerk\index.tsx
+DataStatistics is in ..\benchmark\nunes\lobehub\src\features\User\DataStatistics.tsx
+PlanTag is in ..\benchmark\nunes\lobehub\src\features\User\PlanTag.tsx
+UserAvatar is in ..\benchmark\nunes\lobehub\src\features\User\UserAvatar.tsx
+UserInfo is in ..\benchmark\nunes\lobehub\src\features\User\UserInfo.tsx
+UserPanel is in ..\benchmark\nunes\lobehub\src\features\User\UserPanel\index.tsx
+LangButton is in ..\benchmark\nunes\lobehub\src\features\User\UserPanel\LangButton.tsx
+PanelContent is in ..\benchmark\nunes\lobehub\src\features\User\UserPanel\PanelContent.tsx
+ThemeButton is in ..\benchmark\nunes\lobehub\src\features\User\UserPanel\ThemeButton.tsx
+UpgradeBadge is in ..\benchmark\nunes\lobehub\src\features\User\UserPanel\UpgradeBadge.tsx
+NewVersionBadge is in ..\benchmark\nunes\lobehub\src\features\User\UserPanel\useMenu.tsx
+UserLoginOrSignup is in ..\benchmark\nunes\lobehub\src\features\User\UserLoginOrSignup\Community.tsx
+ShareModal is in ..\benchmark\nunes\lobehub\src\features\ShareModal\index.tsx
+ShareText is in ..\benchmark\nunes\lobehub\src\features\ShareModal\ShareText\index.tsx
+Preview is in ..\benchmark\nunes\lobehub\src\features\ShareModal\ShareText\Preview.tsx
+ShareImage is in ..\benchmark\nunes\lobehub\src\features\ShareModal\ShareJSON\index.tsx
+Preview is in ..\benchmark\nunes\lobehub\src\features\ShareModal\ShareJSON\Preview.tsx
+ShareImage is in ..\benchmark\nunes\lobehub\src\features\ShareModal\ShareImage\index.tsx
+Preview is in ..\benchmark\nunes\lobehub\src\features\ShareModal\ShareImage\Preview.tsx
+ChatList is in ..\benchmark\nunes\lobehub\src\features\ShareModal\ShareImage\ChatList\index.tsx
+Footer is in ..\benchmark\nunes\lobehub\src\features\Setting\Footer.tsx
+SettingContainer is in ..\benchmark\nunes\lobehub\src\features\Setting\SettingContainer.tsx
+PWAInstall is in ..\benchmark\nunes\lobehub\src\features\PWAInstall\index.tsx
+PWAInstall is in ..\benchmark\nunes\lobehub\src\features\PWAInstall\Install.tsx
+ProtocolUrlHandler is in ..\benchmark\nunes\lobehub\src\features\ProtocolUrlHandler\index.tsx
+ConfigDisplay is in ..\benchmark\nunes\lobehub\src\features\ProtocolUrlHandler\InstallPlugin\ConfigDisplay.tsx
+CustomPluginInstallModal is in ..\benchmark\nunes\lobehub\src\features\ProtocolUrlHandler\InstallPlugin\CustomPluginInstallModal.tsx
+PluginInstallConfirmModal is in ..\benchmark\nunes\lobehub\src\features\ProtocolUrlHandler\InstallPlugin\index.tsx
+OfficialDetail is in ..\benchmark\nunes\lobehub\src\features\ProtocolUrlHandler\InstallPlugin\OfficialPluginInstallModal\Detail.tsx
+OfficialPluginInstallModal is in ..\benchmark\nunes\lobehub\src\features\ProtocolUrlHandler\InstallPlugin\OfficialPluginInstallModal\index.tsx
+PortalTitle is in ..\benchmark\nunes\lobehub\src\features\Portal\router.tsx
+PortalHeader is in ..\benchmark\nunes\lobehub\src\features\Portal\router.tsx
+PortalBody is in ..\benchmark\nunes\lobehub\src\features\Portal\router.tsx
+Active is in ..\benchmark\nunes\lobehub\src\features\Portal\Thread\Header\Active.tsx
+Header is in ..\benchmark\nunes\lobehub\src\features\Portal\Thread\Header\index.tsx
+NewThreadHeader is in ..\benchmark\nunes\lobehub\src\features\Portal\Thread\Header\New.tsx
+Header is in ..\benchmark\nunes\lobehub\src\features\Portal\Thread\Header\Title.tsx
+ThreadChatItem is in ..\benchmark\nunes\lobehub\src\features\Portal\Thread\Chat\ChatItem.tsx
+ChatList is in ..\benchmark\nunes\lobehub\src\features\Portal\Thread\Chat\ChatList.tsx
+Conversation is in ..\benchmark\nunes\lobehub\src\features\Portal\Thread\Chat\index.tsx
+ThreadDivider is in ..\benchmark\nunes\lobehub\src\features\Portal\Thread\Chat\ThreadDivider\index.tsx
+Desktop is in ..\benchmark\nunes\lobehub\src\features\Portal\Thread\Chat\ChatInput\index.tsx
+Header is in ..\benchmark\nunes\lobehub\src\features\Portal\Plugins\Header.tsx
+ToolUI is in ..\benchmark\nunes\lobehub\src\features\Portal\Plugins\Body\index.tsx
+ToolRender is in ..\benchmark\nunes\lobehub\src\features\Portal\Plugins\Body\ToolRender.tsx
+Header is in ..\benchmark\nunes\lobehub\src\features\Portal\MessageDetail\Header.tsx
+MessageDetailBody is in ..\benchmark\nunes\lobehub\src\features\Portal\MessageDetail\Body\index.tsx
+Title is in ..\benchmark\nunes\lobehub\src\features\Portal\Home\Title.tsx
+Home is in ..\benchmark\nunes\lobehub\src\features\Portal\Home\Body\index.tsx
+Artifacts is in ..\benchmark\nunes\lobehub\src\features\Portal\Home\Body\Plugins\index.tsx
+ArtifactList is in ..\benchmark\nunes\lobehub\src\features\Portal\Home\Body\Plugins\ArtifactList\index.tsx
+ArtifactItem is in ..\benchmark\nunes\lobehub\src\features\Portal\Home\Body\Plugins\ArtifactList\Item\index.tsx
+Files is in ..\benchmark\nunes\lobehub\src\features\Portal\Home\Body\Files\index.tsx
+FileList is in ..\benchmark\nunes\lobehub\src\features\Portal\Home\Body\Files\FileList\index.tsx
+FileItem is in ..\benchmark\nunes\lobehub\src\features\Portal\Home\Body\Files\FileList\Item.tsx
+Header is in ..\benchmark\nunes\lobehub\src\features\Portal\FilePreview\Header.tsx
+FilePreview is in ..\benchmark\nunes\lobehub\src\features\Portal\FilePreview\Body\index.tsx
+Header is in ..\benchmark\nunes\lobehub\src\features\Portal\components\Header.tsx
+Header is in ..\benchmark\nunes\lobehub\src\features\Portal\Artifacts\Header.tsx
+ArtifactsUI is in ..\benchmark\nunes\lobehub\src\features\Portal\Artifacts\Body\index.tsx
+HTMLRenderer is in ..\benchmark\nunes\lobehub\src\features\Portal\Artifacts\Body\Renderer\HTML.tsx
+Renderer is in ..\benchmark\nunes\lobehub\src\features\Portal\Artifacts\Body\Renderer\index.tsx
+SVGRenderer is in ..\benchmark\nunes\lobehub\src\features\Portal\Artifacts\Body\Renderer\SVG.tsx
+ReactRenderer is in ..\benchmark\nunes\lobehub\src\features\Portal\Artifacts\Body\Renderer\React\index.tsx
+PluginTag is in ..\benchmark\nunes\lobehub\src\features\PluginTag\index.tsx
+PluginStatus is in ..\benchmark\nunes\lobehub\src\features\PluginTag\PluginStatus.tsx
+PluginRender is in ..\benchmark\nunes\lobehub\src\features\PluginsUI\Render\index.tsx
+Loading is in ..\benchmark\nunes\lobehub\src\features\PluginsUI\Render\Loading.tsx
+IFrameRender is in ..\benchmark\nunes\lobehub\src\features\PluginsUI\Render\StandaloneType\Iframe.tsx
+PluginDefaultType is in ..\benchmark\nunes\lobehub\src\features\PluginsUI\Render\StandaloneType\index.tsx
+PluginMarkdownType is in ..\benchmark\nunes\lobehub\src\features\PluginsUI\Render\MarkdownType\index.tsx
+PluginDefaultType is in ..\benchmark\nunes\lobehub\src\features\PluginsUI\Render\DefaultType\index.tsx
+SystemJsRender is in ..\benchmark\nunes\lobehub\src\features\PluginsUI\Render\DefaultType\SystemJsRender\index.tsx
+IFrameRender is in ..\benchmark\nunes\lobehub\src\features\PluginsUI\Render\DefaultType\IFrameRender\index.tsx
+BuiltinType is in ..\benchmark\nunes\lobehub\src\features\PluginsUI\Render\BuiltinType\index.tsx
+AddPluginButton is in ..\benchmark\nunes\lobehub\src\features\PluginStore\AddPluginButton.tsx
+Content is in ..\benchmark\nunes\lobehub\src\features\PluginStore\Content.tsx
+PluginStore is in ..\benchmark\nunes\lobehub\src\features\PluginStore\index.tsx
+Loading is in ..\benchmark\nunes\lobehub\src\features\PluginStore\Loading.tsx
+VirtuosoLoading is in ..\benchmark\nunes\lobehub\src\features\PluginStore\VirtuosoLoading.tsx
+Search is in ..\benchmark\nunes\lobehub\src\features\PluginStore\Search\index.tsx
+PluginList is in ..\benchmark\nunes\lobehub\src\features\PluginStore\PluginList\index.tsx
+Actions is in ..\benchmark\nunes\lobehub\src\features\PluginStore\PluginList\List\Action.tsx
+List is in ..\benchmark\nunes\lobehub\src\features\PluginStore\PluginList\List\index.tsx
+Item is in ..\benchmark\nunes\lobehub\src\features\PluginStore\PluginList\List\Item.tsx
+DetailProvider is in ..\benchmark\nunes\lobehub\src\features\PluginStore\PluginList\Detail\DetailProvider.tsx
+EmptyState is in ..\benchmark\nunes\lobehub\src\features\PluginStore\PluginList\Detail\EmptyState.tsx
+Header is in ..\benchmark\nunes\lobehub\src\features\PluginStore\PluginList\Detail\Header.tsx
+Detail is in ..\benchmark\nunes\lobehub\src\features\PluginStore\PluginList\Detail\index.tsx
+DetailsLoading is in ..\benchmark\nunes\lobehub\src\features\PluginStore\PluginList\Detail\Loading.tsx
+TagList is in ..\benchmark\nunes\lobehub\src\features\PluginStore\PluginList\Detail\TagList.tsx
+InstallDetail is in ..\benchmark\nunes\lobehub\src\features\PluginStore\PluginList\Detail\InstallDetail\index.tsx
+Nav is in ..\benchmark\nunes\lobehub\src\features\PluginStore\PluginList\Detail\InstallDetail\Nav.tsx
+Settings is in ..\benchmark\nunes\lobehub\src\features\PluginStore\PluginList\Detail\InstallDetail\Settings.tsx
+Tools is in ..\benchmark\nunes\lobehub\src\features\PluginStore\PluginList\Detail\InstallDetail\Tools.tsx
+MCPPluginList is in ..\benchmark\nunes\lobehub\src\features\PluginStore\McpList\index.tsx
+Actions is in ..\benchmark\nunes\lobehub\src\features\PluginStore\McpList\List\Action.tsx
+List is in ..\benchmark\nunes\lobehub\src\features\PluginStore\McpList\List\index.tsx
+Item is in ..\benchmark\nunes\lobehub\src\features\PluginStore\McpList\List\Item.tsx
+Detail is in ..\benchmark\nunes\lobehub\src\features\PluginStore\McpList\Detail\index.tsx
+DetailsLoading is in ..\benchmark\nunes\lobehub\src\features\PluginStore\McpList\Detail\Loading.tsx
+Settings is in ..\benchmark\nunes\lobehub\src\features\PluginStore\McpList\Detail\Settings\index.tsx
+EditCustomPlugin is in ..\benchmark\nunes\lobehub\src\features\PluginStore\InstalledList\EditCustomPlugin.tsx
+PluginList is in ..\benchmark\nunes\lobehub\src\features\PluginStore\InstalledList\index.tsx
+List is in ..\benchmark\nunes\lobehub\src\features\PluginStore\InstalledList\List\index.tsx
+Actions is in ..\benchmark\nunes\lobehub\src\features\PluginStore\InstalledList\List\Item\Action.tsx
+Item is in ..\benchmark\nunes\lobehub\src\features\PluginStore\InstalledList\List\Item\index.tsx
+CustomPluginEmptyState is in ..\benchmark\nunes\lobehub\src\features\PluginStore\InstalledList\Detail\CustomPluginEmptyState.tsx
+Detail is in ..\benchmark\nunes\lobehub\src\features\PluginStore\InstalledList\Detail\index.tsx
+PluginSettingsConfig is in ..\benchmark\nunes\lobehub\src\features\PluginSettings\index.tsx
+DevModal is in ..\benchmark\nunes\lobehub\src\features\PluginDevModal\index.tsx
+LocalForm is in ..\benchmark\nunes\lobehub\src\features\PluginDevModal\LocalForm.tsx
+ProxyChecker is in ..\benchmark\nunes\lobehub\src\features\PluginDevModal\UrlManifestForm.tsx
+UrlManifestForm is in ..\benchmark\nunes\lobehub\src\features\PluginDevModal\UrlManifestForm.tsx
+ApiItem is in ..\benchmark\nunes\lobehub\src\features\PluginDevModal\PluginPreview\ApiVisualizer.tsx
+ApiVisualizer is in ..\benchmark\nunes\lobehub\src\features\PluginDevModal\PluginPreview\ApiVisualizer.tsx
+PluginEmptyState is in ..\benchmark\nunes\lobehub\src\features\PluginDevModal\PluginPreview\EmptyState.tsx
+PluginPreview is in ..\benchmark\nunes\lobehub\src\features\PluginDevModal\PluginPreview\index.tsx
+ArgsInput is in ..\benchmark\nunes\lobehub\src\features\PluginDevModal\MCPManifestForm\ArgsInput.tsx
+CollapsibleSection is in ..\benchmark\nunes\lobehub\src\features\PluginDevModal\MCPManifestForm\CollapsibleSection.tsx
+MCPManifestForm is in ..\benchmark\nunes\lobehub\src\features\PluginDevModal\MCPManifestForm\index.tsx
+FeatureItem is in ..\benchmark\nunes\lobehub\src\features\PluginDevModal\MCPManifestForm\MCPTypeSelect.tsx
+MCPTypeSelect is in ..\benchmark\nunes\lobehub\src\features\PluginDevModal\MCPManifestForm\MCPTypeSelect.tsx
+QuickImportSection is in ..\benchmark\nunes\lobehub\src\features\PluginDevModal\MCPManifestForm\QuickImportSection.tsx
+APIs is in ..\benchmark\nunes\lobehub\src\features\PluginDetailModal\APIs.tsx
+PluginDetailModal is in ..\benchmark\nunes\lobehub\src\features\PluginDetailModal\index.tsx
+Meta is in ..\benchmark\nunes\lobehub\src\features\PluginDetailModal\Meta.tsx
+PluginAvatar is in ..\benchmark\nunes\lobehub\src\features\PluginAvatar\index.tsx
+PlanIcon is in ..\benchmark\nunes\lobehub\src\features\PlanIcon\index.tsx
+OllamaDesktopSetupGuide is in ..\benchmark\nunes\lobehub\src\features\OllamaSetupGuide\Desktop.tsx
+SetupGuide is in ..\benchmark\nunes\lobehub\src\features\OllamaSetupGuide\index.tsx
+OllamaModelDownloader is in ..\benchmark\nunes\lobehub\src\features\OllamaModelDownloader\index.tsx
+ModelSwitchPanel is in ..\benchmark\nunes\lobehub\src\features\ModelSwitchPanel\index.tsx
+ModelSelect is in ..\benchmark\nunes\lobehub\src\features\ModelSelect\index.tsx
+FrequencyPenalty is in ..\benchmark\nunes\lobehub\src\features\ModelParamsControl\FrequencyPenalty.tsx
+PresencePenalty is in ..\benchmark\nunes\lobehub\src\features\ModelParamsControl\PresencePenalty.tsx
+Warning is in ..\benchmark\nunes\lobehub\src\features\ModelParamsControl\Temperature.tsx
+Temperature is in ..\benchmark\nunes\lobehub\src\features\ModelParamsControl\Temperature.tsx
+TopP is in ..\benchmark\nunes\lobehub\src\features\ModelParamsControl\TopP.tsx
+MobileSwitchLoading is in ..\benchmark\nunes\lobehub\src\features\MobileSwitchLoading\index.tsx
+CollapseDesc is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\CollapseDesc.tsx
+CollapseLayout is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\CollapseLayout.tsx
+DetailProvider is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\DetailProvider.tsx
+Header is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\Header.tsx
+Nav is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\Nav.tsx
+Score is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\Score\index.tsx
+ScoreItem is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\Score\ScoreItem.tsx
+ScoreList is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\Score\ScoreList.tsx
+TotalScore is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\Score\TotalScore.tsx
+GithubBadge is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\Score\GithubBadge\index.tsx
+Block is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\Schema\Block.tsx
+Schema is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\Schema\index.tsx
+Prompts is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\Schema\Prompts.tsx
+Resources is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\Schema\Resources.tsx
+Tools is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\Schema\Tools.tsx
+Overview is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\Overview\index.tsx
+TagList is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\Overview\TagList.tsx
+Deployment is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\Deployment\index.tsx
+Platform is in ..\benchmark\nunes\lobehub\src\features\MCPPluginDetail\Deployment\Platform\index.tsx
+Scores is in ..\benchmark\nunes\lobehub\src\features\MCP\Scores.tsx
+MCPInstallProgress is in ..\benchmark\nunes\lobehub\src\features\MCP\MCPInstallProgress\index.tsx
+MCPConfigForm is in ..\benchmark\nunes\lobehub\src\features\MCP\MCPInstallProgress\MCPConfigForm.tsx
+MCPDependenciesGuide is in ..\benchmark\nunes\lobehub\src\features\MCP\MCPInstallProgress\MCPDependenciesGuide.tsx
+ErrorDetails is in ..\benchmark\nunes\lobehub\src\features\MCP\MCPInstallProgress\InstallError\ErrorDetails.tsx
+InstallError is in ..\benchmark\nunes\lobehub\src\features\MCP\MCPInstallProgress\InstallError\index.tsx
+LocalFile is in ..\benchmark\nunes\lobehub\src\features\LocalFile\LocalFile.tsx
+LocalFolder is in ..\benchmark\nunes\lobehub\src\features\LocalFile\LocalFolder.tsx
+CreateForm is in ..\benchmark\nunes\lobehub\src\features\KnowledgeBaseModal\CreateNew\CreateForm.tsx
+Title is in ..\benchmark\nunes\lobehub\src\features\KnowledgeBaseModal\CreateNew\index.tsx
+AssignKnowledgeBaseModal is in ..\benchmark\nunes\lobehub\src\features\KnowledgeBaseModal\AssignKnowledgeBase\index.tsx
+List is in ..\benchmark\nunes\lobehub\src\features\KnowledgeBaseModal\AssignKnowledgeBase\List.tsx
+Loading is in ..\benchmark\nunes\lobehub\src\features\KnowledgeBaseModal\AssignKnowledgeBase\Loading.tsx
+Actions is in ..\benchmark\nunes\lobehub\src\features\KnowledgeBaseModal\AssignKnowledgeBase\Item\Action.tsx
+EditCustomPlugin is in ..\benchmark\nunes\lobehub\src\features\KnowledgeBaseModal\AssignKnowledgeBase\Item\EditCustomPlugin.tsx
+PluginItem is in ..\benchmark\nunes\lobehub\src\features\KnowledgeBaseModal\AssignKnowledgeBase\Item\index.tsx
+PluginTag is in ..\benchmark\nunes\lobehub\src\features\KnowledgeBaseModal\AssignKnowledgeBase\Item\PluginTag.tsx
+Title is in ..\benchmark\nunes\lobehub\src\features\KnowledgeBaseModal\AddFilesToKnowledgeBase\index.tsx
+SelectForm is in ..\benchmark\nunes\lobehub\src\features\KnowledgeBaseModal\AddFilesToKnowledgeBase\SelectForm.tsx
+EnableClientDBModal is in ..\benchmark\nunes\lobehub\src\features\InitClientDB\EnableModal.tsx
+ErrorResult is in ..\benchmark\nunes\lobehub\src\features\InitClientDB\ErrorResult.tsx
+InitClientDB is in ..\benchmark\nunes\lobehub\src\features\InitClientDB\index.tsx
+InitClientDB is in ..\benchmark\nunes\lobehub\src\features\InitClientDB\InitIndicator.tsx
+PGliteIcon is in ..\benchmark\nunes\lobehub\src\features\InitClientDB\PGliteIcon.tsx
+Backup is in ..\benchmark\nunes\lobehub\src\features\InitClientDB\features\DatabaseRepair\Backup.tsx
+Diagnosis is in ..\benchmark\nunes\lobehub\src\features\InitClientDB\features\DatabaseRepair\Diagnosis.tsx
+DatabaseRepair is in ..\benchmark\nunes\lobehub\src\features\InitClientDB\features\DatabaseRepair\index.tsx
+Repair is in ..\benchmark\nunes\lobehub\src\features\InitClientDB\features\DatabaseRepair\Repair.tsx
+ImageTopicPanel is in ..\benchmark\nunes\lobehub\src\features\ImageTopicPanel\index.tsx
+ImageSidePanel is in ..\benchmark\nunes\lobehub\src\features\ImageSidePanel\index.tsx
+HotkeyContent is in ..\benchmark\nunes\lobehub\src\features\HotkeyHelperPanel\HotkeyContent.tsx
+HotkeyHelperPanel is in ..\benchmark\nunes\lobehub\src\features\HotkeyHelperPanel\index.tsx
+Follow is in ..\benchmark\nunes\lobehub\src\features\Follow\index.tsx
+FileViewer is in ..\benchmark\nunes\lobehub\src\features\FileViewer\index.tsx
+TXTViewer is in ..\benchmark\nunes\lobehub\src\features\FileViewer\Renderer\TXT\index.tsx
+HighlightRect is in ..\benchmark\nunes\lobehub\src\features\FileViewer\Renderer\PDF\HighlightLayer.tsx
+HighlightLayer is in ..\benchmark\nunes\lobehub\src\features\FileViewer\Renderer\PDF\HighlightLayer.tsx
+PDFViewer is in ..\benchmark\nunes\lobehub\src\features\FileViewer\Renderer\PDF\index.tsx
+MSDocRenderer is in ..\benchmark\nunes\lobehub\src\features\FileViewer\Renderer\MSDoc\index.tsx
+ImageRenderer is in ..\benchmark\nunes\lobehub\src\features\FileViewer\Renderer\Image\index.tsx
+NotSupport is in ..\benchmark\nunes\lobehub\src\features\FileViewer\NotSupport\index.tsx
+FileSidePanel is in ..\benchmark\nunes\lobehub\src\features\FileSidePanel\index.tsx
+FileManager is in ..\benchmark\nunes\lobehub\src\features\FileManager\index.tsx
+UploadDock is in ..\benchmark\nunes\lobehub\src\features\FileManager\UploadDock\index.tsx
+UploadItem is in ..\benchmark\nunes\lobehub\src\features\FileManager\UploadDock\Item.tsx
+FilesSearchBar is in ..\benchmark\nunes\lobehub\src\features\FileManager\Header\FilesSearchBar.tsx
+Header is in ..\benchmark\nunes\lobehub\src\features\FileManager\Header\index.tsx
+TogglePanelButton is in ..\benchmark\nunes\lobehub\src\features\FileManager\Header\TogglePanelButton.tsx
+UploadFileButton is in ..\benchmark\nunes\lobehub\src\features\FileManager\Header\UploadFileButton.tsx
+EmptyStatus is in ..\benchmark\nunes\lobehub\src\features\FileManager\FileList\EmptyStatus.tsx
+FileSkeleton is in ..\benchmark\nunes\lobehub\src\features\FileManager\FileList\FileSkeleton.tsx
+FileList is in ..\benchmark\nunes\lobehub\src\features\FileManager\FileList\index.tsx
+Config is in ..\benchmark\nunes\lobehub\src\features\FileManager\FileList\ToolBar\Config.tsx
+ToolBar is in ..\benchmark\nunes\lobehub\src\features\FileManager\FileList\ToolBar\index.tsx
+MultiSelectActions is in ..\benchmark\nunes\lobehub\src\features\FileManager\FileList\ToolBar\MultiSelectActions.tsx
+ChunksBadge is in ..\benchmark\nunes\lobehub\src\features\FileManager\FileList\FileListItem\ChunkTag.tsx
+DropdownMenu is in ..\benchmark\nunes\lobehub\src\features\FileManager\FileList\FileListItem\DropdownMenu.tsx
+FileRenderItem is in ..\benchmark\nunes\lobehub\src\features\FileManager\FileList\FileListItem\index.tsx
+Content is in ..\benchmark\nunes\lobehub\src\features\FileManager\ChunkDrawer\Content.tsx
+ChunkDrawer is in ..\benchmark\nunes\lobehub\src\features\FileManager\ChunkDrawer\index.tsx
+SimilaritySearchList is in ..\benchmark\nunes\lobehub\src\features\FileManager\ChunkDrawer\SimilaritySearchList\index.tsx
+SearchItem is in ..\benchmark\nunes\lobehub\src\features\FileManager\ChunkDrawer\SimilaritySearchList\Item.tsx
+SkeletonLoading is in ..\benchmark\nunes\lobehub\src\features\FileManager\ChunkDrawer\Loading\index.tsx
+ChunkItem is in ..\benchmark\nunes\lobehub\src\features\FileManager\ChunkDrawer\ChunkList\ChunkItem.tsx
+ChunkList is in ..\benchmark\nunes\lobehub\src\features\FileManager\ChunkDrawer\ChunkList\index.tsx
+TitleBar is in ..\benchmark\nunes\lobehub\src\features\ElectronTitlebar\index.tsx
+UpdateModal is in ..\benchmark\nunes\lobehub\src\features\ElectronTitlebar\UpdateModal.tsx
+UpdateNotification is in ..\benchmark\nunes\lobehub\src\features\ElectronTitlebar\UpdateNotification.tsx
+WinControl is in ..\benchmark\nunes\lobehub\src\features\ElectronTitlebar\WinControl\index.tsx
+ConnectionMode is in ..\benchmark\nunes\lobehub\src\features\ElectronTitlebar\Connection\ConnectionMode.tsx
+Connection is in ..\benchmark\nunes\lobehub\src\features\ElectronTitlebar\Connection\index.tsx
+Option is in ..\benchmark\nunes\lobehub\src\features\ElectronTitlebar\Connection\Option.tsx
+RemoteStatus is in ..\benchmark\nunes\lobehub\src\features\ElectronTitlebar\Connection\RemoteStatus.tsx
+WaitingOAuth is in ..\benchmark\nunes\lobehub\src\features\ElectronTitlebar\Connection\Waiting.tsx
+WaitingAnim is in ..\benchmark\nunes\lobehub\src\features\ElectronTitlebar\Connection\WaitingAnim.tsx
+DevPanel is in ..\benchmark\nunes\lobehub\src\features\DevPanel\index.tsx
+AiProviderRuntimeConfig is in ..\benchmark\nunes\lobehub\src\features\DevPanel\SystemInspector\AiProviderRuntimeConfig.tsx
+SystemInspector is in ..\benchmark\nunes\lobehub\src\features\DevPanel\SystemInspector\index.tsx
+JsonViewer is in ..\benchmark\nunes\lobehub\src\features\DevPanel\SystemInspector\JsonViewer.tsx
+ServerConfig is in ..\benchmark\nunes\lobehub\src\features\DevPanel\SystemInspector\ServerConfig.tsx
+SystemAgent is in ..\benchmark\nunes\lobehub\src\features\DevPanel\SystemInspector\ServerConfig.tsx
+DefaultAgentConfig is in ..\benchmark\nunes\lobehub\src\features\DevPanel\SystemInspector\ServerConfig.tsx
+AIProvider is in ..\benchmark\nunes\lobehub\src\features\DevPanel\SystemInspector\ServerConfig.tsx
+DatabasePanel is in ..\benchmark\nunes\lobehub\src\features\DevPanel\PostgresViewer\index.tsx
+Columns is in ..\benchmark\nunes\lobehub\src\features\DevPanel\PostgresViewer\SchemaSidebar\Columns.tsx
+SchemaPanel is in ..\benchmark\nunes\lobehub\src\features\DevPanel\PostgresViewer\SchemaSidebar\index.tsx
+DataTable is in ..\benchmark\nunes\lobehub\src\features\DevPanel\PostgresViewer\DataTable\index.tsx
+MetadataViewer is in ..\benchmark\nunes\lobehub\src\features\DevPanel\MetadataViewer\index.tsx
+Ld is in ..\benchmark\nunes\lobehub\src\features\DevPanel\MetadataViewer\Ld.tsx
+MetaData is in ..\benchmark\nunes\lobehub\src\features\DevPanel\MetadataViewer\MetaData.tsx
+MetaData is in ..\benchmark\nunes\lobehub\src\features\DevPanel\MetadataViewer\Og.tsx
+CollapsibleFloatPanel is in ..\benchmark\nunes\lobehub\src\features\DevPanel\features\FloatPanel.tsx
+Header is in ..\benchmark\nunes\lobehub\src\features\DevPanel\features\Header.tsx
+Table is in ..\benchmark\nunes\lobehub\src\features\DevPanel\features\Table\index.tsx
+TableCell is in ..\benchmark\nunes\lobehub\src\features\DevPanel\features\Table\TableCell.tsx
+TooltipContent is in ..\benchmark\nunes\lobehub\src\features\DevPanel\features\Table\TooltipContent.tsx
+FeatureFlagForm is in ..\benchmark\nunes\lobehub\src\features\DevPanel\FeatureFlagViewer\Form.tsx
+FeatureFlagViewer is in ..\benchmark\nunes\lobehub\src\features\DevPanel\FeatureFlagViewer\index.tsx
+CachePanelContextProvider is in ..\benchmark\nunes\lobehub\src\features\DevPanel\CacheViewer\cacheProvider.tsx
+CacheViewer is in ..\benchmark\nunes\lobehub\src\features\DevPanel\CacheViewer\index.tsx
+DataTable is in ..\benchmark\nunes\lobehub\src\features\DevPanel\CacheViewer\DataTable\index.tsx
+Error is in ..\benchmark\nunes\lobehub\src\features\DataImporter\Error.tsx
+FileUploading is in ..\benchmark\nunes\lobehub\src\features\DataImporter\FileUploading.tsx
+ImportPreviewModal is in ..\benchmark\nunes\lobehub\src\features\DataImporter\ImportDetail.tsx
+DataImporter is in ..\benchmark\nunes\lobehub\src\features\DataImporter\index.tsx
+DataLoading is in ..\benchmark\nunes\lobehub\src\features\DataImporter\Loading.tsx
+SuccessResult is in ..\benchmark\nunes\lobehub\src\features\DataImporter\SuccessResult.tsx
+DefaultMessage is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Default.tsx
+Item is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\index.tsx
+UserActionsBar is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\User\Actions.tsx
+UserBelowMessage is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\User\BelowMessage.tsx
+UserMessageExtra is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\User\Extra.tsx
+ImageFileListViewer is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\User\ImageFileListViewer.tsx
+UserMessage is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\User\index.tsx
+UserMessageContent is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\User\MessageContent.tsx
+VideoFileListViewer is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\User\VideoFileListViewer.tsx
+ContentPreview is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\User\MarkdownRender\ContentPreview.tsx
+MarkdownRender is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\User\MarkdownRender\index.tsx
+FileListViewer is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\User\FileListViewer\index.tsx
+FileItem is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\User\FileListViewer\Item.tsx
+AssistantBlock is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Block.tsx
+AssistantMessage is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\index.tsx
+IntentUnderstanding is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\IntentUnderstanding.tsx
+AssistantMessageContent is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\MessageContent.tsx
+SearchGrounding is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\SearchGrounding.tsx
+Tool is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Tool\index.tsx
+CustomRender is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Tool\Render\CustomRender.tsx
+ErrorResponse is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Tool\Render\ErrorResponse.tsx
+Render is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Tool\Render\index.tsx
+KeyValueEditor is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Tool\Render\KeyValueEditor.tsx
+PluginSettings is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Tool\Render\PluginSettings.tsx
+Arguments is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Tool\Render\Arguments\index.tsx
+ObjectEntity is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Tool\Render\Arguments\ObjectEntity.tsx
+ValueCell is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Tool\Render\Arguments\ValueCell.tsx
+BuiltinPluginTitle is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Tool\Inspector\BuiltinPluginTitle.tsx
+Debug is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Tool\Inspector\Debug.tsx
+Inspectors is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Tool\Inspector\index.tsx
+PluginResult is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Tool\Inspector\PluginResult.tsx
+PluginState is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Tool\Inspector\PluginState.tsx
+Settings is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Tool\Inspector\Settings.tsx
+ToolTitle is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Tool\Inspector\ToolTitle.tsx
+Reasoning is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Reasoning\index.tsx
+FileChunks is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\FileChunks\index.tsx
+ChunkItem is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\FileChunks\Item\index.tsx
+AssistantMessageExtra is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Extra\index.tsx
+ErrorActionsBar is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Actions\Error.tsx
+AssistantActionsBar is in ..\benchmark\nunes\lobehub\src\features\Conversation\Messages\Assistant\Actions\index.tsx
+Render is in ..\benchmark\nunes\lobehub\src\features\Conversation\MarkdownElements\Thinking\Render.tsx
+Render is in ..\benchmark\nunes\lobehub\src\features\Conversation\MarkdownElements\LobeThinking\Render.tsx
+ArtifactIcon is in ..\benchmark\nunes\lobehub\src\features\Conversation\MarkdownElements\LobeArtifact\Render\Icon.tsx
+Render is in ..\benchmark\nunes\lobehub\src\features\Conversation\MarkdownElements\LobeArtifact\Render\index.tsx
+AccessCodeForm is in ..\benchmark\nunes\lobehub\src\features\Conversation\Error\AccessCodeForm.tsx
+ChatInvalidAPIKey is in ..\benchmark\nunes\lobehub\src\features\Conversation\Error\ChatInvalidApiKey.tsx
+ErrorJsonViewer is in ..\benchmark\nunes\lobehub\src\features\Conversation\Error\ErrorJsonViewer.tsx
+ErrorMessageExtra is in ..\benchmark\nunes\lobehub\src\features\Conversation\Error\index.tsx
+InvalidAccessCode is in ..\benchmark\nunes\lobehub\src\features\Conversation\Error\InvalidAccessCode.tsx
+OAuthForm is in ..\benchmark\nunes\lobehub\src\features\Conversation\Error\OAuthForm.tsx
+ErrorActionContainer is in ..\benchmark\nunes\lobehub\src\features\Conversation\Error\style.tsx
+FormAction is in ..\benchmark\nunes\lobehub\src\features\Conversation\Error\style.tsx
+OllamaBizError is in ..\benchmark\nunes\lobehub\src\features\Conversation\Error\OllamaBizError\index.tsx
+InvalidOllamaModel is in ..\benchmark\nunes\lobehub\src\features\Conversation\Error\OllamaBizError\InvalidOllamaModel.tsx
+ClerkLogin is in ..\benchmark\nunes\lobehub\src\features\Conversation\Error\ClerkLogin\index.tsx
+AutoScroll is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\AutoScroll.tsx
+OtpInput is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\OTPInput.tsx
+SkeletonList is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\SkeletonList.tsx
+WideScreenContainer is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\WideScreenContainer\index.tsx
+List is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\VirtualizedList\index.tsx
+VirtualizedList is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\VirtualizedList\index.tsx
+ThreadDivider is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\ThreadDivider\index.tsx
+ShareModal is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\ShareMessageModal\index.tsx
+ShareText is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\ShareMessageModal\ShareText\index.tsx
+Preview is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\ShareMessageModal\ShareText\Preview.tsx
+ShareImage is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\ShareMessageModal\ShareImage\index.tsx
+Preview is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\ShareMessageModal\ShareImage\Preview.tsx
+HistoryDivider is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\History\HistoryDivider.tsx
+History is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\History\index.tsx
+ExtraContainer is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\Extras\ExtraContainer.tsx
+Translate is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\Extras\Translate.tsx
+Usage is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\Extras\Usage\index.tsx
+TokenDetail is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\Extras\Usage\UsageDetail\index.tsx
+ModelCard is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\Extras\Usage\UsageDetail\ModelCard.tsx
+TokenProgress is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\Extras\Usage\UsageDetail\TokenProgress.tsx
+FilePlayer is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\Extras\TTS\FilePlayer.tsx
+InitPlayer is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\Extras\TTS\InitPlayer.tsx
+Player is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\Extras\TTS\Player.tsx
+BackBottom is in ..\benchmark\nunes\lobehub\src\features\Conversation\components\BackBottom\index.tsx
+ChatItem is in ..\benchmark\nunes\lobehub\src\features\ChatItem\ChatItem.tsx
+Actions is in ..\benchmark\nunes\lobehub\src\features\ChatItem\components\Actions.tsx
+Avatar is in ..\benchmark\nunes\lobehub\src\features\ChatItem\components\Avatar.tsx
+BorderSpacing is in ..\benchmark\nunes\lobehub\src\features\ChatItem\components\BorderSpacing.tsx
+ErrorContent is in ..\benchmark\nunes\lobehub\src\features\ChatItem\components\ErrorContent.tsx
+Loading is in ..\benchmark\nunes\lobehub\src\features\ChatItem\components\Loading.tsx
+MessageContent is in ..\benchmark\nunes\lobehub\src\features\ChatItem\components\MessageContent.tsx
+Title is in ..\benchmark\nunes\lobehub\src\features\ChatItem\components\Title.tsx
+ChatInputProvider is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ChatInputProvider.tsx
+TypoBar is in ..\benchmark\nunes\lobehub\src\features\ChatInput\TypoBar\index.tsx
+ExpandButton is in ..\benchmark\nunes\lobehub\src\features\ChatInput\SendArea\ExpandButton.tsx
+SendArea is in ..\benchmark\nunes\lobehub\src\features\ChatInput\SendArea\index.tsx
+SendButton is in ..\benchmark\nunes\lobehub\src\features\ChatInput\SendArea\SendButton.tsx
+ShortcutHint is in ..\benchmark\nunes\lobehub\src\features\ChatInput\SendArea\ShortcutHint.tsx
+DesktopChatInput is in ..\benchmark\nunes\lobehub\src\features\ChatInput\Mobile\index.tsx
+FilePreview is in ..\benchmark\nunes\lobehub\src\features\ChatInput\Mobile\FilePreview\index.tsx
+FileItem is in ..\benchmark\nunes\lobehub\src\features\ChatInput\Mobile\FilePreview\FileItem\File.tsx
+FileItem is in ..\benchmark\nunes\lobehub\src\features\ChatInput\Mobile\FilePreview\FileItem\Image.tsx
+FileItem is in ..\benchmark\nunes\lobehub\src\features\ChatInput\Mobile\FilePreview\FileItem\index.tsx
+InputEditor is in ..\benchmark\nunes\lobehub\src\features\ChatInput\InputEditor\index.tsx
+Placeholder is in ..\benchmark\nunes\lobehub\src\features\ChatInput\InputEditor\Placeholder.tsx
+DesktopChatInput is in ..\benchmark\nunes\lobehub\src\features\ChatInput\Desktop\index.tsx
+FileList is in ..\benchmark\nunes\lobehub\src\features\ChatInput\Desktop\FilePreview\FileList.tsx
+FilePreview is in ..\benchmark\nunes\lobehub\src\features\ChatInput\Desktop\FilePreview\index.tsx
+Content is in ..\benchmark\nunes\lobehub\src\features\ChatInput\Desktop\FilePreview\FileItem\Content.tsx
+FileItem is in ..\benchmark\nunes\lobehub\src\features\ChatInput\Desktop\FilePreview\FileItem\index.tsx
+UploadDetail is in ..\benchmark\nunes\lobehub\src\features\ChatInput\components\UploadDetail\index.tsx
+UploadStatus is in ..\benchmark\nunes\lobehub\src\features\ChatInput\components\UploadDetail\UploadStatus.tsx
+ActionToolbar is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\index.tsx
+FileUpload is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Upload\ClientMode.tsx
+Upload is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Upload\index.tsx
+FileUpload is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Upload\ServerMode.tsx
+Typo is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Typo\index.tsx
+Tools is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Tools\index.tsx
+ToolItem is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Tools\ToolItem.tsx
+Token is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Token\index.tsx
+MainToken is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Token\index.tsx
+PortalToken is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Token\index.tsx
+TokenProgress is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Token\TokenProgress.tsx
+Token is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Token\TokenTag.tsx
+BrowserSTT is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\STT\browser.tsx
+CommonSTT is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\STT\common.tsx
+STT is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\STT\index.tsx
+OpenaiSTT is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\STT\openai.tsx
+Item is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Search\Controls.tsx
+Controls is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Search\Controls.tsx
+FCSearchModel is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Search\FCSearchModel.tsx
+Search is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Search\index.tsx
+SearchEngineIcon is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Search\ModelBuiltinSearch.tsx
+ModelBuiltinSearch is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Search\ModelBuiltinSearch.tsx
+ModelSelect is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Search\FunctionCallingModelSelect\index.tsx
+SaveTopic is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\SaveTopic\index.tsx
+Controls is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Params\Controls.tsx
+Params is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Params\index.tsx
+ContextCachingSwitch is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Model\ContextCachingSwitch.tsx
+ControlsForm is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Model\ControlsForm.tsx
+GPT5ReasoningEffortSlider is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Model\GPT5ReasoningEffortSlider.tsx
+ModelSwitch is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Model\index.tsx
+ReasoningEffortSlider is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Model\ReasoningEffortSlider.tsx
+ReasoningTokenSlider is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Model\ReasoningTokenSlider.tsx
+TextVerbositySlider is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Model\TextVerbositySlider.tsx
+ThinkingBudgetSlider is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Model\ThinkingBudgetSlider.tsx
+ThinkingSlider is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Model\ThinkingSlider.tsx
+Knowledge is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Knowledge\index.tsx
+Controls is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\History\Controls.tsx
+History is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\History\index.tsx
+Action is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\components\Action.tsx
+ActionDropdown is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\components\ActionDropdown.tsx
+ActionPopover is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\components\ActionPopover.tsx
+CheckboxItem is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\components\CheckbokWithLoading.tsx
+Clear is in ..\benchmark\nunes\lobehub\src\features\ChatInput\ActionBar\Clear\index.tsx
+AvatarWithUpload is in ..\benchmark\nunes\lobehub\src\features\AvatarWithUpload\index.tsx
+CloudBanner is in ..\benchmark\nunes\lobehub\src\features\AlertBanner\CloudBanner.tsx
+AgentSettings is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentSettings.tsx
+AgentSettingsContent is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentSettingsContent.tsx
+AgentSettingsProvider is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentSettingsProvider.tsx
+AgentTTS is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentTTS\index.tsx
+SelectWithTTSPreview is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentTTS\SelectWithTTSPreview.tsx
+AgentPrompt is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentPrompt\index.tsx
+Tokens is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentPrompt\TokenTag.tsx
+AddPluginButton is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentPlugin\AddPluginButton.tsx
+AgentPlugin is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentPlugin\index.tsx
+MarketList is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentPlugin\LocalPluginItem.tsx
+PluginSwitch is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentPlugin\PluginAction\index.tsx
+AgentOpening is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentOpening\index.tsx
+OpeningMessage is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentOpening\OpeningMessage.tsx
+OpeningQuestions is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentOpening\OpeningQuestions.tsx
+AgentModal is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentModal\index.tsx
+ModelSelect is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentModal\ModelSelect.tsx
+AutoGenerateAvatar is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentMeta\AutoGenerateAvatar.tsx
+AutoGenerateInput is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentMeta\AutoGenerateInput.tsx
+AutoGenerateSelect is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentMeta\AutoGenerateSelect.tsx
+BackgroundSwatches is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentMeta\BackgroundSwatches.tsx
+AgentMeta is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentMeta\index.tsx
+AgentChat is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentChat\index.tsx
+AgentCategory is in ..\benchmark\nunes\lobehub\src\features\AgentSetting\AgentCategory\index.tsx
+AgentInfo is in ..\benchmark\nunes\lobehub\src\features\AgentInfo\index.tsx
+InnerLink is in ..\benchmark\nunes\lobehub\src\components\InnerLink.tsx
+MaxTokenSlider is in ..\benchmark\nunes\lobehub\src\components\MaxTokenSlider.tsx
+OfficialIcon is in ..\benchmark\nunes\lobehub\src\components\OfficialIcon.tsx
+PublishedTime is in ..\benchmark\nunes\lobehub\src\components\PublishedTime.tsx
+StopLoadingIcon is in ..\benchmark\nunes\lobehub\src\components\StopLoading.tsx
+WebFavicon is in ..\benchmark\nunes\lobehub\src\components\WebFavicon\index.tsx
+TipGuide is in ..\benchmark\nunes\lobehub\src\components\TipGuide\index.tsx
+Thinking is in ..\benchmark\nunes\lobehub\src\components\Thinking\index.tsx
+TextArea is in ..\benchmark\nunes\lobehub\src\components\TextArea\index.tsx
+StructuredData is in ..\benchmark\nunes\lobehub\src\components\StructuredData\index.tsx
+StatisticCard is in ..\benchmark\nunes\lobehub\src\components\StatisticCard\index.tsx
+TitleWithPercentage is in ..\benchmark\nunes\lobehub\src\components\StatisticCard\TitleWithPercentage.tsx
+Statistic is in ..\benchmark\nunes\lobehub\src\components\Statistic\index.tsx
+SidebarHeader is in ..\benchmark\nunes\lobehub\src\components\SidebarHeader\index.tsx
+MobileContentLayout is in ..\benchmark\nunes\lobehub\src\components\server\MobileNavLayout.tsx
+ServerLayout is in ..\benchmark\nunes\lobehub\src\components\server\ServerLayout.tsx
+SafeSpacing is in ..\benchmark\nunes\lobehub\src\components\SafeSpacing\index.tsx
+RepoIcon is in ..\benchmark\nunes\lobehub\src\components\RepoIcon\index.tsx
+ProgressItem is in ..\benchmark\nunes\lobehub\src\components\ProgressItem\index.tsx
+MCPTag is in ..\benchmark\nunes\lobehub\src\components\Plugins\MCPTag.tsx
+PluginAvatar is in ..\benchmark\nunes\lobehub\src\components\Plugins\PluginAvatar.tsx
+PluginTag is in ..\benchmark\nunes\lobehub\src\components\Plugins\PluginTag.tsx
+PanelTitle is in ..\benchmark\nunes\lobehub\src\components\PanelTitle\index.tsx
+SetupGuide is in ..\benchmark\nunes\lobehub\src\components\OllamaSetupGuide\index.tsx
+NProgress is in ..\benchmark\nunes\lobehub\src\components\NProgress\index.tsx
+Notification is in ..\benchmark\nunes\lobehub\src\components\Notification\index.tsx
+AuthIcons is in ..\benchmark\nunes\lobehub\src\components\NextAuth\AuthIcons.tsx
+ModelInfoTags is in ..\benchmark\nunes\lobehub\src\components\ModelSelect\index.tsx
+ModelItemRender is in ..\benchmark\nunes\lobehub\src\components\ModelSelect\index.tsx
+ProviderItemRender is in ..\benchmark\nunes\lobehub\src\components\ModelSelect\index.tsx
+LabelRenderer is in ..\benchmark\nunes\lobehub\src\components\ModelSelect\index.tsx
+Menu is in ..\benchmark\nunes\lobehub\src\components\Menu\index.tsx
+CodeBlock is in ..\benchmark\nunes\lobehub\src\components\mdx\CodeBlock.tsx
+ImageWrapper is in ..\benchmark\nunes\lobehub\src\components\mdx\Image.tsx
+Typography is in ..\benchmark\nunes\lobehub\src\components\mdx\index.tsx
+CustomMDX is in ..\benchmark\nunes\lobehub\src\components\mdx\index.tsx
+A is in ..\benchmark\nunes\lobehub\src\components\mdx\Link.tsx
+MCPStdioCommandInput is in ..\benchmark\nunes\lobehub\src\components\MCPStdioCommandInput\index.tsx
+InstallationIcon is in ..\benchmark\nunes\lobehub\src\components\MCPDepsIcon\index.tsx
+Icon is in ..\benchmark\nunes\lobehub\src\components\MCPDepsIcon\Java.tsx
+Icon is in ..\benchmark\nunes\lobehub\src\components\MCPDepsIcon\PowerShell.tsx
+Icon is in ..\benchmark\nunes\lobehub\src\components\MCPDepsIcon\Terminal.tsx
+Icon is in ..\benchmark\nunes\lobehub\src\components\MCPDepsIcon\UV.tsx
+ManifestPreviewer is in ..\benchmark\nunes\lobehub\src\components\ManifestPreviewer\index.tsx
+UpdateLoading is in ..\benchmark\nunes\lobehub\src\components\Loading\UpdateLoading\index.tsx
+SkeletonLoading is in ..\benchmark\nunes\lobehub\src\components\Loading\SkeletonLoading\index.tsx
+FullscreenLoading is in ..\benchmark\nunes\lobehub\src\components\Loading\FullscreenLoading\index.tsx
+KnowledgeIcon is in ..\benchmark\nunes\lobehub\src\components\KnowledgeIcon\index.tsx
+KeyValueEditor is in ..\benchmark\nunes\lobehub\src\components\KeyValueEditor\index.tsx
+JSONSchemaItemRender is in ..\benchmark\nunes\lobehub\src\components\JSONSchemaConfig\ItemRender.tsx
+InvalidAPIKey is in ..\benchmark\nunes\lobehub\src\components\InvalidAPIKey\index.tsx
+BedrockForm is in ..\benchmark\nunes\lobehub\src\components\InvalidAPIKey\APIKeyForm\Bedrock.tsx
+APIKeyForm is in ..\benchmark\nunes\lobehub\src\components\InvalidAPIKey\APIKeyForm\index.tsx
+ProviderApiKeyForm is in ..\benchmark\nunes\lobehub\src\components\InvalidAPIKey\APIKeyForm\ProviderApiKeyForm.tsx
+InstantSwitch is in ..\benchmark\nunes\lobehub\src\components\InstantSwitch\index.tsx
+InlineTable is in ..\benchmark\nunes\lobehub\src\components\InlineTable\index.tsx
+InitProgress is in ..\benchmark\nunes\lobehub\src\components\InitProgress\index.tsx
+InfoTooltip is in ..\benchmark\nunes\lobehub\src\components\InfoTooltip\index.tsx
+IndexCard is in ..\benchmark\nunes\lobehub\src\components\IndexCard\index.tsx
+ImageItem is in ..\benchmark\nunes\lobehub\src\components\ImageItem\index.tsx
+HtmlPreviewAction is in ..\benchmark\nunes\lobehub\src\components\HtmlPreview\HtmlPreviewAction.tsx
+HtmlPreviewDrawer is in ..\benchmark\nunes\lobehub\src\components\HtmlPreview\PreviewDrawer.tsx
+GuideVideo is in ..\benchmark\nunes\lobehub\src\components\GuideVideo\index.tsx
+GuideModal is in ..\benchmark\nunes\lobehub\src\components\GuideModal\index.tsx
+GroupIcon is in ..\benchmark\nunes\lobehub\src\components\GroupIcon\index.tsx
+GoBack is in ..\benchmark\nunes\lobehub\src\components\GoBack\index.tsx
+Grid is in ..\benchmark\nunes\lobehub\src\components\GalleyGrid\Grid.tsx
+GalleyGrid is in ..\benchmark\nunes\lobehub\src\components\GalleyGrid\index.tsx
+FormInput is in ..\benchmark\nunes\lobehub\src\components\FormInput\FormInput.tsx
+FormPassword is in ..\benchmark\nunes\lobehub\src\components\FormInput\FormPassword.tsx
+FormAction is in ..\benchmark\nunes\lobehub\src\components\FormAction\index.tsx
+EmbeddingStatus is in ..\benchmark\nunes\lobehub\src\components\FileParsingStatus\EmbeddingStatus.tsx
+FileParsingStatus is in ..\benchmark\nunes\lobehub\src\components\FileParsingStatus\index.tsx
+FileIcon is in ..\benchmark\nunes\lobehub\src\components\FileIcon\index.tsx
+FeatureList is in ..\benchmark\nunes\lobehub\src\components\FeatureList\index.tsx
+Description is in ..\benchmark\nunes\lobehub\src\components\Error\Description.tsx
+ErrorCapture is in ..\benchmark\nunes\lobehub\src\components\Error\index.tsx
+RedirectLogin is in ..\benchmark\nunes\lobehub\src\components\Error\RedirectLogin.tsx
+Descriptions is in ..\benchmark\nunes\lobehub\src\components\Descriptions\index.tsx
+DataStyleModal is in ..\benchmark\nunes\lobehub\src\components\DataStyleModal\index.tsx
+CopyableLabel is in ..\benchmark\nunes\lobehub\src\components\CopyableLabel\index.tsx
+ClientResponsiveLayout is in ..\benchmark\nunes\lobehub\src\components\client\ClientResponsiveLayout.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\components\client\ClientResponsiveLayout.tsx
+ClientResponsiveContent is in ..\benchmark\nunes\lobehub\src\components\client\ClientResponsiveContent\index.tsx
+Content is in ..\benchmark\nunes\lobehub\src\components\client\ClientResponsiveContent\index.tsx
+CircleLoader is in ..\benchmark\nunes\lobehub\src\components\CircleLoader\index.tsx
+Divider is in ..\benchmark\nunes\lobehub\src\components\Cell\Divider.tsx
+Cell is in ..\benchmark\nunes\lobehub\src\components\Cell\index.tsx
+BubblesLoadingIcon is in ..\benchmark\nunes\lobehub\src\components\BubblesLoading\index.tsx
+BubblesLoading is in ..\benchmark\nunes\lobehub\src\components\BubblesLoading\index.tsx
+BrowserIcon is in ..\benchmark\nunes\lobehub\src\components\BrowserIcon\index.tsx
+BrandWatermark is in ..\benchmark\nunes\lobehub\src\components\BrandWatermark\index.tsx
+CustomTextLogo is in ..\benchmark\nunes\lobehub\src\components\Branding\ProductLogo\Custom.tsx
+CustomImageLogo is in ..\benchmark\nunes\lobehub\src\components\Branding\ProductLogo\Custom.tsx
+Divider is in ..\benchmark\nunes\lobehub\src\components\Branding\ProductLogo\Custom.tsx
+CustomLogo is in ..\benchmark\nunes\lobehub\src\components\Branding\ProductLogo\Custom.tsx
+ProductLogo is in ..\benchmark\nunes\lobehub\src\components\Branding\ProductLogo\index.tsx
+OrgBrand is in ..\benchmark\nunes\lobehub\src\components\Branding\OrgBrand\index.tsx
+AnimatedCollapsed is in ..\benchmark\nunes\lobehub\src\components\AnimatedCollapsed\index.tsx
+Clarity is in ..\benchmark\nunes\lobehub\src\components\Analytics\Clarity.tsx
+DesktopAnalytics is in ..\benchmark\nunes\lobehub\src\components\Analytics\Desktop.tsx
+GoogleAnalytics is in ..\benchmark\nunes\lobehub\src\components\Analytics\Google.tsx
+Analytics is in ..\benchmark\nunes\lobehub\src\components\Analytics\index.tsx
+LobeAnalyticsProviderWrapper is in ..\benchmark\nunes\lobehub\src\components\Analytics\LobeAnalyticsProviderWrapper.tsx
+PlausibleAnalytics is in ..\benchmark\nunes\lobehub\src\components\Analytics\Plausible.tsx
+ReactScan is in ..\benchmark\nunes\lobehub\src\components\Analytics\ReactScan.tsx
+UmamiAnalytics is in ..\benchmark\nunes\lobehub\src\components\Analytics\Umami.tsx
+VercelAnalytics is in ..\benchmark\nunes\lobehub\src\components\Analytics\Vercel.tsx
+NotFound is in ..\benchmark\nunes\lobehub\src\components\404\index.tsx
+RootLayout is in ..\benchmark\nunes\lobehub\src\app\[variants]\layout.tsx
+ConsentClientError is in ..\benchmark\nunes\lobehub\src\app\[variants]\oauth\consent\[uid]\ClientError.tsx
+ConsentClient is in ..\benchmark\nunes\lobehub\src\app\[variants]\oauth\consent\[uid]\Consent.tsx
+LoginConfirmClient is in ..\benchmark\nunes\lobehub\src\app\[variants]\oauth\consent\[uid]\Login.tsx
+InteractionPage is in ..\benchmark\nunes\lobehub\src\app\[variants]\oauth\consent\[uid]\page.tsx
+OAuthApplicationLogo is in ..\benchmark\nunes\lobehub\src\app\[variants]\oauth\consent\[uid]\components\OAuthApplicationLogo.tsx
+SuccessPage is in ..\benchmark\nunes\lobehub\src\app\[variants]\oauth\callback\success\page.tsx
+FailedPage is in ..\benchmark\nunes\lobehub\src\app\[variants]\oauth\callback\error\page.tsx
+ScreenLoading is in ..\benchmark\nunes\lobehub\src\app\[variants]\loading\index.tsx
+Content is in ..\benchmark\nunes\lobehub\src\app\[variants]\loading\Server\Content.tsx
+ServerMode is in ..\benchmark\nunes\lobehub\src\app\[variants]\loading\Server\index.tsx
+Content is in ..\benchmark\nunes\lobehub\src\app\[variants]\loading\Client\Content.tsx
+InitError is in ..\benchmark\nunes\lobehub\src\app\[variants]\loading\Client\Error.tsx
+ClientMode is in ..\benchmark\nunes\lobehub\src\app\[variants]\loading\Client\index.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\@modal\layout.tsx
+ModalLayout is in ..\benchmark\nunes\lobehub\src\app\[variants]\@modal\_layout\ModalLayout.tsx
+SettingModalLayout is in ..\benchmark\nunes\lobehub\src\app\[variants]\@modal\_layout\SettingModalLayout.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\@modal\(.)changelog\modal\layout.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\@modal\(.)changelog\modal\page.tsx
+Cover is in ..\benchmark\nunes\lobehub\src\app\[variants]\@modal\(.)changelog\modal\features\Cover.tsx
+Hero is in ..\benchmark\nunes\lobehub\src\app\[variants]\@modal\(.)changelog\modal\features\Hero.tsx
+Pagination is in ..\benchmark\nunes\lobehub\src\app\[variants]\@modal\(.)changelog\modal\features\Pagination.tsx
+Post is in ..\benchmark\nunes\lobehub\src\app\[variants]\@modal\(.)changelog\modal\features\Post.tsx
+PublishedTime is in ..\benchmark\nunes\lobehub\src\app\[variants]\@modal\(.)changelog\modal\features\PublishedTime.tsx
+ReadDetail is in ..\benchmark\nunes\lobehub\src\app\[variants]\@modal\(.)changelog\modal\features\ReadDetail.tsx
+VersionTag is in ..\benchmark\nunes\lobehub\src\app\[variants]\@modal\(.)changelog\modal\features\VersionTag.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\_layout\Mobile\index.tsx
+NavBar is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\_layout\Mobile\NavBar.tsx
+DesktopLayoutContainer is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\_layout\Desktop\DesktopLayoutContainer.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\_layout\Desktop\index.tsx
+Avatar is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\_layout\Desktop\SideBar\Avatar.tsx
+BottomActions is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\_layout\Desktop\SideBar\BottomActions.tsx
+Top is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\_layout\Desktop\SideBar\index.tsx
+Nav is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\_layout\Desktop\SideBar\index.tsx
+TopActions is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\_layout\Desktop\SideBar\TopActions.tsx
+PinList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\_layout\Desktop\SideBar\PinList\index.tsx
+SettingsPage is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\page.tsx
+CategoryContent is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\_layout\CategoryContent.tsx
+SettingsContent is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\_layout\SettingsContent.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\_layout\Mobile\Header.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\_layout\Mobile\index.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\_layout\Desktop\Header.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\_layout\Desktop\index.tsx
+SidebarLayout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\_layout\Desktop\SideBar.tsx
+SettingsContextProvider is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\_layout\ContextProvider\index.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\tts\index.tsx
+OpenAI is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\tts\features\OpenAI.tsx
+STT is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\tts\features\STT.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\system-agent\index.tsx
+SystemAgentForm is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\system-agent\features\SystemAgentForm.tsx
+AdvancedActions is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\storage\Advanced.tsx
+StorageEstimate is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\storage\index.tsx
+IndexedDBStorage is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\storage\IndexedDBStorage.tsx
+ProxySettings is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\proxy\index.tsx
+ProxyForm is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\proxy\features\ProxyForm.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\_layout\Mobile.tsx
+Container is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\_layout\Desktop\Container.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\_layout\Desktop\index.tsx
+AddNewProvider is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\ProviderMenu\AddNew.tsx
+All is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\ProviderMenu\All.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\ProviderMenu\index.tsx
+ProviderMenu is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\ProviderMenu\index.tsx
+ProviderItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\ProviderMenu\Item.tsx
+ProviderList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\ProviderMenu\List.tsx
+SearchResult is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\ProviderMenu\SearchResult.tsx
+Placeholder is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\ProviderMenu\SkeletonList.tsx
+SkeletonList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\ProviderMenu\SkeletonList.tsx
+GroupItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\ProviderMenu\SortProviderModal\GroupItem.tsx
+ConfigGroupModal is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\ProviderMenu\SortProviderModal\index.tsx
+Error is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ProviderConfig\Checker.tsx
+Checker is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ProviderConfig\Checker.tsx
+Switch is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ProviderConfig\EnableSwitch.tsx
+ProviderConfig is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ProviderConfig\index.tsx
+SkeletonInput is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ProviderConfig\SkeletonInput.tsx
+UpdateProviderInfo is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ProviderConfig\UpdateProviderInfo\index.tsx
+CreateNewProvider is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ProviderConfig\UpdateProviderInfo\SettingModal.tsx
+DisabledModels is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ModelList\DisabledModels.tsx
+EmptyState is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ModelList\EmptyModels.tsx
+Content is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ModelList\index.tsx
+ModelList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ModelList\index.tsx
+ModelItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ModelList\ModelItem.tsx
+SearchResult is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ModelList\SearchResult.tsx
+Placeholder is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ModelList\SkeletonList.tsx
+SkeletonList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ModelList\SkeletonList.tsx
+SortModelModal is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ModelList\SortModelModal\index.tsx
+ListItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ModelList\SortModelModal\ListItem.tsx
+ModelTitle is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ModelList\ModelTitle\index.tsx
+Search is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ModelList\ModelTitle\Search.tsx
+ModelConfigModal is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ModelList\ModelConfigModal\index.tsx
+EnabledModelList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ModelList\EnabledModelList\index.tsx
+ModelConfigForm is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ModelList\CreateNewModelModal\Form.tsx
+ModelConfigModal is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\ModelList\CreateNewModelModal\index.tsx
+CreateNewProvider is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\features\CreateNewProvider\index.tsx
+ProviderDetailPage is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\detail\index.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\detail\vertexai\index.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\detail\openai\index.tsx
+CheckError is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\detail\ollama\CheckError.tsx
+Container is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\detail\ollama\Container.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\detail\ollama\index.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\detail\newapi\page.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\detail\github\index.tsx
+ClientMode is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\detail\default\ClientMode.tsx
+ProviderDetail is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\detail\default\index.tsx
+ProviderDetialPage is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\detail\default\ProviderDetialPage.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\detail\cloudflare\index.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\detail\bedrock\index.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\detail\azureai\index.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\detail\azure\index.tsx
+Footer is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\(list)\Footer.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\(list)\index.tsx
+ProviderCard is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\(list)\ProviderGrid\Card.tsx
+Switch is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\(list)\ProviderGrid\EnableSwitch.tsx
+List is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\provider\(list)\ProviderGrid\index.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\llm\index.tsx
+Footer is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\llm\features\Footer.tsx
+Error is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\llm\components\Checker.tsx
+Checker is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\llm\components\Checker.tsx
+CustomModelOption is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\llm\components\ProviderModelList\CustomModelOption.tsx
+ProviderModelListSelect is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\llm\components\ProviderModelList\index.tsx
+ModelFetcher is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\llm\components\ProviderModelList\ModelFetcher.tsx
+OptionRender is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\llm\components\ProviderModelList\Option.tsx
+ModelConfigForm is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\llm\components\ProviderModelList\ModelConfigModal\Form.tsx
+ModelConfigModal is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\llm\components\ProviderModelList\ModelConfigModal\index.tsx
+ProviderConfig is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\llm\components\ProviderConfig\index.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\hotkey\index.tsx
+HotkeySetting is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\hotkey\features\Conversation.tsx
+HotkeySetting is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\hotkey\features\Desktop.tsx
+HotkeySetting is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\hotkey\features\Essential.tsx
+UpgradeAlert is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\features\UpgradeAlert.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\common\index.tsx
+Common is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\common\features\Common\Common.tsx
+ChatPreview is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\common\features\ChatAppearance\ChatPreview.tsx
+ChatTransitionPreview is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\common\features\ChatAppearance\ChatTransitionPreview.tsx
+ChatAppearance is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\common\features\ChatAppearance\index.tsx
+Appearance is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\common\features\Appearance\index.tsx
+AgentItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\common\features\Appearance\Preview.tsx
+Preview is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\common\features\Appearance\Preview.tsx
+ThemeSwatchesNeutral is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\common\features\Appearance\ThemeSwatches\ThemeSwatchesNeutral.tsx
+ThemeSwatchesPrimary is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\common\features\Appearance\ThemeSwatches\ThemeSwatchesPrimary.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\agent\index.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\agent\_layout\Desktop.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\agent\_layout\Mobile.tsx
+ProviderMenu is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\agent\AgentMenu\index.tsx
+Menu is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\agent\AgentMenu\Menu.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\about\index.tsx
+AboutList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\about\features\AboutList.tsx
+Analytics is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\about\features\Analytics.tsx
+ItemCard is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\about\features\ItemCard.tsx
+ItemLink is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\about\features\ItemLink.tsx
+Version is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\settings\about\features\Version.tsx
+RepoClientPage is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\Client.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\_layout\Mobile.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\_layout\Desktop\index.tsx
+ComposeMenu is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\features\Menu\index.tsx
+FileMenu is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\features\Menu\Menu\index.tsx
+Head is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\features\Menu\Head\index.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\evals\layout.tsx
+Evaluation is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\evals\evaluation\page.tsx
+EvaluationList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\evals\evaluation\EvaluationList\index.tsx
+EmptyGuide is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\evals\evaluation\EmptyGuide\index.tsx
+CreateForm is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\evals\evaluation\CreateEvaluation\CreateForm.tsx
+CreateEvaluation is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\evals\evaluation\CreateEvaluation\index.tsx
+Title is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\evals\evaluation\CreateEvaluation\useModal.tsx
+Dataset is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\evals\dataset\page.tsx
+EmptyGuide is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\evals\dataset\EmptyGuide\index.tsx
+DatasetList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\evals\dataset\DatasetList\index.tsx
+Item is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\evals\dataset\DatasetList\Item.tsx
+DatasetDetail is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\evals\dataset\DatasetDetail\index.tsx
+CreateForm is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\evals\dataset\CreateDataset\CreateForm.tsx
+Title is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\evals\dataset\CreateDataset\index.tsx
+Container is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\evals\components\Container.tsx
+Tabs is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\repos\[id]\evals\components\Tabs.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\_layout\Mobile\Header.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\_layout\Mobile\index.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\_layout\Desktop\Header.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\_layout\Desktop\index.tsx
+SidebarLayout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\_layout\Desktop\SideBar.tsx
+Client is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\stats\Client.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\stats\page.tsx
+AiHeatmaps is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\stats\features\AiHeatmaps.tsx
+AssistantsRank is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\stats\features\AssistantsRank.tsx
+TopicsRank is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\stats\features\ModelsRank.tsx
+TimeLabel is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\stats\features\TimeLabel.tsx
+TopicsRank is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\stats\features\TopicsRank.tsx
+TotalMessages is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\stats\features\TotalAssistants.tsx
+TotalMessages is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\stats\features\TotalMessages.tsx
+TotalMessages is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\stats\features\TotalTopics.tsx
+TotalWords is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\stats\features\TotalWords.tsx
+Welcome is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\stats\features\Welcome.tsx
+ShareButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\stats\features\ShareButton\index.tsx
+Preview is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\stats\features\ShareButton\Preview.tsx
+ShareModal is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\stats\features\ShareButton\ShareModal.tsx
+TotalCard is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\stats\features\ShareButton\TotalCard.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\security\page.tsx
+Client is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\features\ClerkProfile.tsx
+Client is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\apikey\Client.tsx
+EditableCell is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\apikey\features\EditableCell\index.tsx
+ApiKeyModal is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\apikey\features\ApiKeyModal\index.tsx
+ApiKeyDisplay is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\apikey\features\ApiKeyDisplay\index.tsx
+ApiKeyDatePicker is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\apikey\features\ApiKeyDatePicker\index.tsx
+Category is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\@category\default.tsx
+CategoryContent is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\@category\features\CategoryContent.tsx
+Client is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\(home)\Client.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\(home)\[[...slugs]]\page.tsx
+SSOProvidersList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\profile\(home)\features\SSOProvidersList\index.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\layout.tsx
+NotSupportClient is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\NotSupportClient.tsx
+AiImage is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\page.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\_layout\Mobile\index.tsx
+Container is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\_layout\Desktop\Container.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\_layout\Desktop\index.tsx
+PromptInput is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\features\PromptInput\index.tsx
+PromptTitle is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\features\PromptInput\Title.tsx
+ImageWorkspaceContent is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\features\ImageWorkspace\Content.tsx
+EmptyState is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\features\ImageWorkspace\EmptyState.tsx
+ImageWorkspace is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\features\ImageWorkspace\index.tsx
+SkeletonList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\features\ImageWorkspace\SkeletonList.tsx
+GenerationBatchItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\features\GenerationFeed\BatchItem.tsx
+GenerationFeed is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\features\GenerationFeed\index.tsx
+ReferenceImages is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\features\GenerationFeed\ReferenceImages.tsx
+ActionButtons is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\features\GenerationFeed\GenerationItem\ActionButtons.tsx
+ElapsedTime is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\features\GenerationFeed\GenerationItem\ElapsedTime.tsx
+ErrorState is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\features\GenerationFeed\GenerationItem\ErrorState.tsx
+GenerationItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\features\GenerationFeed\GenerationItem\index.tsx
+LoadingState is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\features\GenerationFeed\GenerationItem\LoadingState.tsx
+SuccessState is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\features\GenerationFeed\GenerationItem\SuccessState.tsx
+Topics is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@topic\features\Topics\index.tsx
+NewTopicButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@topic\features\Topics\NewTopicButton.tsx
+SkeletonList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@topic\features\Topics\SkeletonList.tsx
+TopicItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@topic\features\Topics\TopicItem.tsx
+TopicsList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@topic\features\Topics\TopicList.tsx
+ConfigItemLayout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\index.tsx
+ConfigPanel is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\index.tsx
+CfgSliderInput is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\CfgSliderInput.tsx
+DimensionControlGroup is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\DimensionControlGroup.tsx
+ImageConfigSkeleton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\ImageConfigSkeleton.tsx
+ImageNum is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\ImageNum.tsx
+CircularProgress is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\ImageUpload.tsx
+Placeholder is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\ImageUpload.tsx
+UploadingDisplay is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\ImageUpload.tsx
+SuccessDisplay is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\ImageUpload.tsx
+ImageUpload is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\ImageUpload.tsx
+ImageUrl is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\ImageUrl.tsx
+ImageUrlsUpload is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\ImageUrlsUpload.tsx
+ModelSelect is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\ModelSelect.tsx
+QualitySelect is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\QualitySelect.tsx
+SeedNumberInput is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\SeedNumberInput.tsx
+SizeSelect is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\SizeSelect.tsx
+StepsSliderInput is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\StepsSliderInput.tsx
+ImageManageModal is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\MultiImagesUpload\ImageManageModal.tsx
+ImageUploadPlaceholder is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\MultiImagesUpload\index.tsx
+CircularProgress is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\MultiImagesUpload\index.tsx
+ImageUploadProgress is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\MultiImagesUpload\index.tsx
+ImageThumbnails is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\MultiImagesUpload\index.tsx
+SingleImageDisplay is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\MultiImagesUpload\index.tsx
+MultiImagesUpload is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\features\ConfigPanel\components\MultiImagesUpload\index.tsx
+SizeSelect is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\components\SizeSelect\index.tsx
+SeedNumberInput is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\components\SeedNumberInput\index.tsx
+AspectRatioSelect is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\image\@menu\components\AspectRatioSelect\index.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\[id]\Header.tsx
+FilePage is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\[id]\page.tsx
+FileDetail is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\features\FileDetail.tsx
+NotSupportClient is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\NotSupportClient.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\_layout\Mobile.tsx
+Container is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\_layout\Desktop\Container.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\_layout\Desktop\index.tsx
+FileDetail is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\@modal\(.)[id]\FileDetail.tsx
+FilePreview is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\@modal\(.)[id]\FilePreview.tsx
+FullscreenModal is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\@modal\(.)[id]\FullscreenModal.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\@modal\(.)[id]\page.tsx
+Menu is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\@menu\default.tsx
+LineIcon is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\@menu\features\KnowledgeBase\EmptyStatus.tsx
+EmptyStatus is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\@menu\features\KnowledgeBase\EmptyStatus.tsx
+KnowledgeBase is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\@menu\features\KnowledgeBase\index.tsx
+KnowledgeBaseList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\@menu\features\KnowledgeBase\KnowledgeBaseList.tsx
+Placeholder is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\@menu\features\KnowledgeBase\SkeletonList.tsx
+SkeletonList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\@menu\features\KnowledgeBase\SkeletonList.tsx
+Content is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\@menu\features\KnowledgeBase\Item\Content.tsx
+KnowledgeBaseItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\@menu\features\KnowledgeBase\Item\index.tsx
+FileMenu is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\files\(content)\@menu\features\FileMenu\index.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\_layout\Mobile\index.tsx
+Container is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\_layout\Desktop\Container.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\_layout\Desktop\Header.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\_layout\Desktop\index.tsx
+LikeButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\features\LikeButton.tsx
+Search is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\features\Search.tsx
+Title is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\features\Title.tsx
+CreateButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\features\CreateButton\index.tsx
+Inner is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\features\CreateButton\Inner.tsx
+CardBanner is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\components\CardBanner.tsx
+CategoryContainer is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\components\CategoryContainer.tsx
+CategoryMenu is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\components\CategoryMenu.tsx
+GitHubAvatar is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\components\GitHubAvatar.tsx
+Card is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\components\GridLoadingCard.tsx
+GridLoadingCard is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\components\GridLoadingCard.tsx
+ListLoading is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\components\ListLoading.tsx
+DetailsLoading is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\components\ListLoading.tsx
+Loading is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\components\Loading.tsx
+SearchResultCount is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\components\SearchResultCount.tsx
+Statistic is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\components\Statistic.tsx
+Title is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\components\Title.tsx
+VirtuosoList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\components\VirtuosoGridList\index.tsx
+VirtuosoGridList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\components\VirtuosoGridList\index.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\_layout\Mobile\Header.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\_layout\Mobile\index.tsx
+Nav is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\_layout\Mobile\Nav.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\_layout\Desktop\index.tsx
+Nav is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\_layout\Desktop\Nav.tsx
+Client is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\provider\Client.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\provider\page.tsx
+ProvoderList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\provider\features\List\index.tsx
+ProviderItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\provider\features\List\Item.tsx
+Client is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\model\Client.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\model\page.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\model\_layout\Desktop.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\model\_layout\Mobile.tsx
+ModelList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\model\features\List\index.tsx
+ModelItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\model\features\List\Item.tsx
+ModelTypeIcon is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\model\features\List\ModelTypeIcon.tsx
+Category is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\model\features\Category\index.tsx
+Client is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\mcp\Client.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\mcp\page.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\mcp\_layout\Desktop.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\mcp\_layout\Mobile.tsx
+ConnectionTypeTag is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\mcp\features\List\ConnectionTypeTag.tsx
+McpList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\mcp\features\List\index.tsx
+McpItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\mcp\features\List\Item.tsx
+MetaInfo is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\mcp\features\List\MetaInfo.tsx
+Category is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\mcp\features\Category\index.tsx
+Pagination is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\features\Pagination.tsx
+SortButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\features\SortButton\index.tsx
+Client is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\assistant\Client.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\assistant\page.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\assistant\_layout\Desktop.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\assistant\_layout\Mobile.tsx
+AssistantList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\assistant\features\List\index.tsx
+AssistantItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\assistant\features\List\Item.tsx
+TokenTag is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\assistant\features\List\TokenTag.tsx
+Category is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\assistant\features\Category\index.tsx
+Client is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\(home)\Client.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(list)\(home)\page.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\_layout\Desktop.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\_layout\Mobile\Header.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\_layout\Mobile\index.tsx
+Client is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\provider\[...slugs]\Client.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\provider\[...slugs]\page.tsx
+DetailProvider is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\provider\[...slugs]\features\DetailProvider.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\provider\[...slugs]\features\Header.tsx
+Sidebar is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\provider\[...slugs]\features\Sidebar\index.tsx
+Related is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\provider\[...slugs]\features\Sidebar\RelatedModels\index.tsx
+RelatedItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\provider\[...slugs]\features\Sidebar\RelatedModels\Item.tsx
+Related is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\provider\[...slugs]\features\Sidebar\Related\index.tsx
+RelatedItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\provider\[...slugs]\features\Sidebar\Related\Item.tsx
+ActionButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\provider\[...slugs]\features\Sidebar\ActionButton\index.tsx
+ProviderConfig is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\provider\[...slugs]\features\Sidebar\ActionButton\ProviderConfig.tsx
+Details is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\provider\[...slugs]\features\Details\index.tsx
+Nav is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\provider\[...slugs]\features\Details\Nav.tsx
+Related is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\provider\[...slugs]\features\Details\Related\index.tsx
+Overview is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\provider\[...slugs]\features\Details\Overview\index.tsx
+ModelList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\provider\[...slugs]\features\Details\Overview\ModelList\index.tsx
+Guide is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\provider\[...slugs]\features\Details\Guide\index.tsx
+Client is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\Client.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\page.tsx
+DetailProvider is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\features\DetailProvider.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\features\Header.tsx
+Sidebar is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\features\Sidebar\index.tsx
+Related is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\features\Sidebar\RelatedProviders\index.tsx
+RelatedItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\features\Sidebar\RelatedProviders\Item.tsx
+Related is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\features\Sidebar\Related\index.tsx
+RelatedItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\features\Sidebar\Related\Item.tsx
+ChatWithModel is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\features\Sidebar\ActionButton\ChatWithModel.tsx
+ActionButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\features\Sidebar\ActionButton\index.tsx
+Details is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\features\Details\index.tsx
+Nav is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\features\Details\Nav.tsx
+Related is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\features\Details\Related\index.tsx
+ParameterList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\features\Details\Parameter\index.tsx
+ParameterItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\features\Details\Parameter\ParameterItem.tsx
+Overview is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\features\Details\Overview\index.tsx
+ProviderList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\model\[...slugs]\features\Details\Overview\ProviderList\index.tsx
+Client is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\mcp\[slug]\Client.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\mcp\[slug]\page.tsx
+ConnectionTypeAlert is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\mcp\[slug]\features\Sidebar\ConnectionTypeAlert.tsx
+Sidebar is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\mcp\[slug]\features\Sidebar\index.tsx
+ServerConfig is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\mcp\[slug]\features\Sidebar\ServerConfig.tsx
+TocList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\mcp\[slug]\features\Sidebar\TocList\index.tsx
+Related is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\mcp\[slug]\features\Sidebar\Related\index.tsx
+RelatedItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\mcp\[slug]\features\Sidebar\Related\Item.tsx
+ActionButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\mcp\[slug]\features\Sidebar\ActionButton\index.tsx
+Details is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\mcp\[slug]\features\Details\index.tsx
+Versions is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\mcp\[slug]\features\Details\Versions\index.tsx
+Related is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\mcp\[slug]\features\Details\Related\index.tsx
+Back is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\features\Back.tsx
+Block is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\features\Block.tsx
+Breadcrumb is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\features\Breadcrumb.tsx
+DetailLayout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\features\DetailLayout.tsx
+HighlightBlock is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\features\HighlightBlock.tsx
+MarkdownRender is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\features\MakedownRender.tsx
+ShareButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\features\ShareButton.tsx
+SidebarContainer is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\features\SidebarContainer.tsx
+Heading is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\features\Toc\Heading.tsx
+Toc is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\features\Toc\index.tsx
+TocProvider is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\features\Toc\useToc.tsx
+Client is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\Client.tsx
+Loading is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\loading.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\page.tsx
+DetailProvider is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\DetailProvider.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Header.tsx
+Sidebar is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Sidebar\index.tsx
+TocList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Sidebar\TocList\index.tsx
+Summary is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Sidebar\Summary\index.tsx
+Related is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Sidebar\Related\index.tsx
+RelatedItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Sidebar\Related\Item.tsx
+AddAgent is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Sidebar\ActionButton\AddAgent.tsx
+ActionButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Sidebar\ActionButton\index.tsx
+Details is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Details\index.tsx
+Nav is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Details\Nav.tsx
+Overview is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Details\SystemRole\index.tsx
+TagList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Details\SystemRole\TagList.tsx
+Related is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Details\Related\index.tsx
+Overview is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Details\Overview\index.tsx
+TagList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Details\Overview\TagList.tsx
+Block is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Details\Capabilities\Block.tsx
+Capabilities is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Details\Capabilities\index.tsx
+Knowledge is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Details\Capabilities\Knowledge.tsx
+KnowledgeItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Details\Capabilities\KnowledgeItem.tsx
+PluginItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Details\Capabilities\PluginItem.tsx
+Plugin is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\discover\(detail)\assistant\[...slugs]\features\Details\Capabilities\Plugins.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\_layout\Mobile.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\_layout\Desktop\index.tsx
+SessionPanel is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\_layout\Desktop\SessionPanel.tsx
+Workspace is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\_layout\Desktop\Workspace.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\settings\layout.tsx
+EditPage is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\settings\page.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\settings\_layout\Mobile\Header.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\settings\_layout\Mobile\index.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\settings\_layout\Desktop\Header.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\settings\_layout\Desktop\index.tsx
+HeaderContent is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\settings\features\HeaderContent.tsx
+SubmitAgentButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\settings\features\SubmitAgentButton\index.tsx
+SubmitAgentModal is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\settings\features\SubmitAgentButton\SubmitAgentModal.tsx
+TogglePanelButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\features\TogglePanelButton.tsx
+Title is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\features\PageTitle\index.tsx
+ExportConfigButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\features\Migration\ExportConfigButton.tsx
+Failed is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\features\Migration\Failed.tsx
+Migration is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\features\Migration\index.tsx
+MigrationModal is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\features\Migration\Modal.tsx
+MigrationStart is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\features\Migration\Start.tsx
+UpgradeButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\features\Migration\UpgradeButton.tsx
+Session is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\default.tsx
+MobileLayout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\_layout\Mobile\index.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\_layout\Mobile\SessionHeader.tsx
+DesktopLayout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\_layout\Desktop\index.tsx
+PanelBody is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\_layout\Desktop\PanelBody.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\_layout\Desktop\SessionHeader.tsx
+SessionSearchBar is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\features\SessionSearchBar.tsx
+SkeletonList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\features\SkeletonList.tsx
+DefaultMode is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\features\SessionListContent\DefaultMode.tsx
+SessionListContent is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\features\SessionListContent\index.tsx
+SearchMode is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\features\SessionListContent\SearchMode.tsx
+CreateGroupModal is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\features\SessionListContent\Modals\CreateGroupModal.tsx
+RenameGroupModal is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\features\SessionListContent\Modals\RenameGroupModal.tsx
+GroupItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\features\SessionListContent\Modals\ConfigGroupModal\GroupItem.tsx
+ConfigGroupModal is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\features\SessionListContent\Modals\ConfigGroupModal\index.tsx
+ListItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\features\SessionListContent\ListItem\index.tsx
+AddButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\features\SessionListContent\List\AddButton.tsx
+SessionList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\features\SessionListContent\List\index.tsx
+Actions is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\features\SessionListContent\List\Item\Actions.tsx
+Inbox is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\features\SessionListContent\Inbox\index.tsx
+Actions is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\features\SessionListContent\CollapseGroup\Actions.tsx
+CollapseGroup is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\@session\features\SessionListContent\CollapseGroup\index.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\page.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\_layout\Mobile\index.tsx
+Topics is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\_layout\Mobile\TopicModal.tsx
+ChatHeaderTitle is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\_layout\Mobile\ChatHeader\ChatHeaderTitle.tsx
+MobileHeader is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\_layout\Mobile\ChatHeader\index.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\_layout\Desktop\index.tsx
+PortalPanel is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\_layout\Desktop\Portal.tsx
+TopicPanel is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\_layout\Desktop\TopicPanel.tsx
+HeaderAction is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\_layout\Desktop\ChatHeader\HeaderAction.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\_layout\Desktop\ChatHeader\index.tsx
+Main is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\_layout\Desktop\ChatHeader\Main.tsx
+SearchTag is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\_layout\Desktop\ChatHeader\Tags\HistoryLimitTags.tsx
+TitleTags is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\_layout\Desktop\ChatHeader\Tags\index.tsx
+PluginTag is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\_layout\Desktop\ChatHeader\Tags\KnowledgeTag.tsx
+SearchTag is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\_layout\Desktop\ChatHeader\Tags\SearchTags.tsx
+Changelog is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\features\ChangelogModal.tsx
+SettingButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\features\SettingButton.tsx
+TelemetryNotification is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\features\TelemetryNotification.tsx
+ShareButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\features\ShareButton\index.tsx
+AgentSettings is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\features\AgentSettings\index.tsx
+Topic is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\default.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\_layout\Desktop.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\_layout\Mobile.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\features\Header.tsx
+Placeholder is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\features\SkeletonList.tsx
+SkeletonList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\features\SkeletonList.tsx
+TopicSearchBar is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\features\TopicSearchBar\index.tsx
+TopicListContent is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\features\TopicListContent\index.tsx
+DefaultContent is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\features\TopicListContent\TopicItem\DefaultContent.tsx
+TopicItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\features\TopicListContent\TopicItem\index.tsx
+TopicContent is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\features\TopicListContent\TopicItem\TopicContent.tsx
+Content is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\features\TopicListContent\ThreadItem\Content.tsx
+ThreadItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\features\TopicListContent\ThreadItem\index.tsx
+SearchResult is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\features\TopicListContent\SearchResult\index.tsx
+FlatMode is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\features\TopicListContent\FlatMode\index.tsx
+TopicGroupItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\features\TopicListContent\ByTimeMode\GroupItem.tsx
+ByTimeMode is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\features\TopicListContent\ByTimeMode\index.tsx
+SystemRole is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\features\SystemRole\index.tsx
+SystemRole is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@topic\features\SystemRole\SystemRoleContent.tsx
+Inspector is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@portal\default.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@portal\_layout\Desktop.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@portal\_layout\Mobile.tsx
+Body is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@portal\features\Body.tsx
+ChatConversation is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\default.tsx
+ZenModeToast is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ZenModeToast\index.tsx
+Toast is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ZenModeToast\Toast.tsx
+ChatMinimap is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatMinimap\index.tsx
+Content is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatList\Content.tsx
+ChatList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatList\index.tsx
+OpeningQuestions is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatList\WelcomeChatItem\OpeningQuestions.tsx
+WelcomeMessage is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatList\WelcomeChatItem\WelcomeMessage.tsx
+AddButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatList\WelcomeChatItem\InboxWelcome\AddButton.tsx
+AgentsSuggest is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatList\WelcomeChatItem\InboxWelcome\AgentsSuggest.tsx
+InboxWelcome is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatList\WelcomeChatItem\InboxWelcome\index.tsx
+QuestionSuggest is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatList\WelcomeChatItem\InboxWelcome\QuestionSuggest.tsx
+MainChatItem is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatList\ChatItem\index.tsx
+Thread is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatList\ChatItem\Thread.tsx
+Item is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatList\ChatItem\ThreadItem.tsx
+ChatInput is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatInput\index.tsx
+RenderActionList is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatInput\V1Mobile\ActionBar.tsx
+ActionBar is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatInput\V1Mobile\ActionBar.tsx
+MobileChatInput is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatInput\V1Mobile\index.tsx
+MobileChatSendButton is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatInput\V1Mobile\Send.tsx
+InnerContainer is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatInput\V1Mobile\InputArea\Container.tsx
+MobileChatInputArea is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatInput\V1Mobile\InputArea\index.tsx
+Files is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatInput\V1Mobile\Files\index.tsx
+MobileChatInput is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatInput\Mobile\index.tsx
+ClassicChatInput is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatInput\Desktop\ClassicChat.tsx
+Desktop is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatInput\Desktop\GroupChat.tsx
+Desktop is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\chat\(workspace)\@conversation\features\ChatInput\Desktop\index.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\changelog\page.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\changelog\_layout\Mobile\Header.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\changelog\_layout\Mobile\index.tsx
+Container is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\changelog\_layout\Desktop\Container.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\changelog\_layout\Desktop\index.tsx
+GridLayout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\changelog\features\GridLayout.tsx
+Hero is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\changelog\features\Hero.tsx
+Post is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\changelog\features\Post.tsx
+PublishedTime is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\changelog\features\PublishedTime.tsx
+VersionTag is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\changelog\features\VersionTag.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\(mobile)\me\settings\layout.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\(mobile)\me\settings\page.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\(mobile)\me\settings\features\Header.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\(mobile)\me\profile\layout.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\(mobile)\me\profile\page.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\(mobile)\me\profile\features\Header.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\(mobile)\me\data\layout.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\(mobile)\me\data\page.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\(mobile)\me\data\features\Header.tsx
+Layout is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\(mobile)\me\(home)\layout.tsx
+Loading is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\(mobile)\me\(home)\loading.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\(mobile)\me\(home)\page.tsx
+Header is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\(mobile)\me\(home)\features\Header.tsx
+UserBanner is in ..\benchmark\nunes\lobehub\src\app\[variants]\(main)\(mobile)\me\(home)\features\UserBanner.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(auth)\layout.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(auth)\signup\[[...signup]]\page.tsx
+BtnListLoading is in ..\benchmark\nunes\lobehub\src\app\[variants]\(auth)\next-auth\signin\AuthSignInBox.tsx
+Page is in ..\benchmark\nunes\lobehub\src\app\[variants]\(auth)\login\[[...login]]\page.tsx
+RootLayout is in ..\benchmark\nunes\lobehub\src\app\desktop\layout.tsx
+DevTools is in ..\benchmark\nunes\lobehub\src\app\desktop\devtools\page.tsx
+Component identification: 2.496s
+Number of analyzed files: 2247
+Number of found Components: 1185
+Alias resolution: 1.52ms
+Analyzing component hierarchy for 242 root components
+Hierarchy resolution: 15.245ms
+PD detection: 828.682ms
+Found: 141 Prop Drilling Occurences
+[AssistantMessageContent(identifier (drilled only), identifier (drilled only)), Tool(identifier (drilled only), identifier (drilled only)), Inspectors(id (drilled only)), Settings(id (drilled only)), PluginDetailModal(id (drilled only)), Meta(identifier (drilled only)), PluginAvatar] [32m(Context)[0m [31m(Component Composition)[0m
+[AssistantMessageContent(identifier (drilled only), identifier (drilled only), identifier (drilled only), identifier (drilled only)), Tool(identifier (drilled only), identifier (drilled only), identifier (drilled only)), Inspectors(id (drilled only)), Settings(id (drilled only)), PluginDetailModal(id (drilled only)), PluginSettingsConfig] [31m(Context)[0m [31m(Component Composition)[0m
+[AssistantMessageContent(identifier (drilled only), identifier (drilled only), identifier (drilled only), identifier (drilled only)), Tool(identifier (drilled only), identifier (drilled only), identifier (drilled only)), Inspectors(id (drilled only)), Settings(id (drilled only)), PluginDetailModal(id (drilled only)), APIs] [32m(Context)[0m [31m(Component Composition)[0m
+[Item(identifier (drilled only)), Actions(id (drilled only)), PluginDetailModal(id (drilled only)), Meta(identifier (drilled only)), PluginAvatar] [32m(Context)[0m [31m(Component Composition)[0m
+[AssistantMessageContent(id (drilled only), id (drilled only), id (drilled only)), Tool(id (drilled only), id (drilled only)), Inspectors(toolCallId (drilled only), toolCallId (drilled only)), ToolTitle(toolCallId (drilled only), toolCallId (drilled only)), BuiltinPluginTitle] [32m(Context)[0m [31m(Component Composition)[0m
+[AssistantMessageContent(identifier (drilled only)), Tool(identifier (drilled only)), Inspectors(identifier (drilled only)), ToolTitle(identifier (drilled only)), BuiltinPluginTitle] [32m(Context)[0m [31m(Component Composition)[0m
+[AssistantMessageContent(index (drilled only)), Tool(index (drilled only)), Inspectors(index (drilled only)), ToolTitle(index (drilled only)), BuiltinPluginTitle] [32m(Context)[0m [31m(Component Composition)[0m
+[AssistantMessageContent(messageId (drilled only)), Tool(messageId (drilled only)), Inspectors(messageId (drilled only)), ToolTitle(messageId (drilled only)), BuiltinPluginTitle] [32m(Context)[0m [31m(Component Composition)[0m
+[ChatInvalidAPIKey(bedrockDescription (drilled only)), InvalidAPIKey(bedrockDescription (drilled only), bedrockDescription (drilled only)), APIKeyForm(description (drilled only)), BedrockForm(description (drilled only)), FormAction] [31m(Context)[0m [31m(Component Composition)[0m
+[ProviderDetialPage(id), ClientMode(id (drilled only)), ModelList(id (drilled only)), Content(provider (drilled only)), EmptyState] [32m(Context)[0m [32m(Component Composition)[0m
+[GenerationBatchItem(bedrockDescription (drilled only)), InvalidAPIKey(bedrockDescription (drilled only), bedrockDescription (drilled only)), APIKeyForm(description (drilled only)), BedrockForm(description (drilled only)), FormAction] [31m(Context)[0m [31m(Component Composition)[0m
+[Item(identifier (drilled only)), Actions(id (drilled only)), PluginDetailModal(id (drilled only)), PluginSettingsConfig] [31m(Context)[0m [31m(Component Composition)[0m
+[Item(identifier (drilled only)), Actions(id (drilled only)), PluginDetailModal(id (drilled only)), APIs] [32m(Context)[0m [31m(Component Composition)[0m
+[AssistantActionsBar(message (drilled only)), ShareModal(message (drilled only)), ShareImage(message (drilled only)), Preview] [32m(Context)[0m [31m(Component Composition)[0m
+[AssistantMessageContent(apiName (drilled only)), Tool(apiName (drilled only)), Inspectors(apiName (drilled only)), ToolTitle] [32m(Context)[0m [31m(Component Composition)[0m
+[AssistantMessageContent(id (drilled only), id (drilled only), id (drilled only)), Tool(id (drilled only), id (drilled only)), Inspectors(toolCallId (drilled only)), Debug] [32m(Context)[0m [31m(Component Composition)[0m
+[AssistantMessageContent(payload (drilled only)), Tool(payload (drilled only)), Inspectors(payload (drilled only)), Debug] [32m(Context)[0m [31m(Component Composition)[0m
+[ErrorMessageExtra(id (drilled only)), ChatInvalidAPIKey(id (drilled only)), InvalidAPIKey(id (drilled only)), APIKeyForm] [32m(Context)[0m [31m(Component Composition)[0m
+[ErrorMessageExtra(provider (drilled only)), ChatInvalidAPIKey(provider (drilled only)), InvalidAPIKey(provider (drilled only)), APIKeyForm] [32m(Context)[0m [31m(Component Composition)[0m
+[InvalidAPIKey(description (drilled only)), APIKeyForm(description (drilled only)), ProviderApiKeyForm(description (drilled only)), FormAction] [31m(Context)[0m [31m(Component Composition)[0m
+[InvalidAccessCode(id (drilled only)), ChatInvalidAPIKey(id (drilled only)), InvalidAPIKey(id (drilled only)), APIKeyForm] [32m(Context)[0m [31m(Component Composition)[0m
+[InvalidAccessCode(provider (drilled only)), ChatInvalidAPIKey(provider (drilled only)), InvalidAPIKey(provider (drilled only)), APIKeyForm] [32m(Context)[0m [31m(Component Composition)[0m
+[FileItem(status (drilled only)), FileItem(status (drilled only)), UploadDetail(status (drilled only)), UploadStatus] [32m(Context)[0m [31m(Component Composition)[0m
+[FileItem(uploadState (drilled only)), FileItem(uploadState (drilled only)), UploadDetail(uploadState (drilled only)), UploadStatus] [32m(Context)[0m [31m(Component Composition)[0m
+[FileItem(status (drilled only)), FileItem(status (drilled only)), UploadDetail(className (drilled only)), FileParsingStatus] [31m(Context)[0m [31m(Component Composition)[0m
+[ProviderDetail(id (drilled only)), ModelList(id (drilled only)), Content(provider (drilled only)), EmptyState] [32m(Context)[0m [32m(Component Composition)[0m
+[ProviderDetialPage(id), ClientMode(id (drilled only)), ModelList(provider (drilled only)), ModelTitle] [32m(Context)[0m [31m(Component Composition)[0m
+[RepoClientPage(knowledgeBaseId (drilled only)), FileManager(knowledgeBaseId (drilled only)), Header(knowledgeBaseId (drilled only)), UploadFileButton] [32m(Context)[0m [32m(Component Composition)[0m
+[RepoClientPage(knowledgeBaseId (drilled only)), FileManager(knowledgeBaseId (drilled only)), FileList(knowledgeBaseId (drilled only)), EmptyStatus] [32m(Context)[0m [31m(Component Composition)[0m
+[RepoClientPage(knowledgeBaseId (drilled only)), FileManager(knowledgeBaseId (drilled only)), FileList(knowledgeBaseId (drilled only)), ToolBar] [32m(Context)[0m [31m(Component Composition)[0m
+[GenerationFeed(batch (drilled only)), GenerationBatchItem(generationBatch (drilled only)), GenerationItem(generationBatch (drilled only)), ErrorState] [32m(Context)[0m [31m(Component Composition)[0m
+[GenerationFeed(batch (drilled only)), GenerationBatchItem(generationBatch (drilled only)), GenerationItem(generationBatch (drilled only)), LoadingState] [32m(Context)[0m [31m(Component Composition)[0m
+[Page(mobile), Client(mobile (drilled only)), Details(mobile (drilled only)), Nav] [32m(Context)[0m [31m(Component Composition)[0m
+[Page(mobile), Client(mobile (drilled only)), Details(mobile (drilled only)), Sidebar] [32m(Context)[0m [32m(Component Composition)[0m
+[Page(mobile), Client(mobile (drilled only)), Details(mobile (drilled only)), Deployment] [31m(Context)[0m [32m(Component Composition)[0m
+[Search(messageId (drilled only)), SearchQueryView(messageId (drilled only)), SearchBar] [31m(Context)[0m [31m(Component Composition)[0m
+[Search(setEditing (drilled only)), SearchQueryView(onEditingChange (drilled only)), SearchBar] [32m(Context)[0m [31m(Component Composition)[0m
+[SearchQueryView(defaultEngines (drilled only)), SearchBar(engines (drilled only)), EngineAvatarGroup] [32m(Context)[0m [32m(Component Composition)[0m
+[Search(messageId (drilled only)), SearchResult(messageId (drilled only)), ShowMore] [32m(Context)[0m [31m(Component Composition)[0m
+[SearchResult(engines (drilled only)), ShowMore(engines (drilled only)), EngineAvatarGroup] [32m(Context)[0m [32m(Component Composition)[0m
+[SearchItem(engines (drilled only)), TitleExtra(engines (drilled only)), EngineAvatarGroup] [32m(Context)[0m [32m(Component Composition)[0m
+[VideoItem(engines (drilled only)), TitleExtra(engines (drilled only)), EngineAvatarGroup] [32m(Context)[0m [32m(Component Composition)[0m
+[WriteFile(name (drilled only)), LocalFile(fileName), FileIcon] [31m(Context)[0m [31m(Component Composition)[0m
+[RenameLocalFile(name (drilled only)), LocalFile(fileName), FileIcon] [31m(Context)[0m [31m(Component Composition)[0m
+[UserInfo(type (drilled only)), PlanTag(plan (drilled only), plan (drilled only)), PlanIcon] [32m(Context)[0m [31m(Component Composition)[0m
+[OfficialDetail(identifier (drilled only)), MCPInstallProgress(identifier (drilled only)), InstallError] [32m(Context)[0m [31m(Component Composition)[0m
+[OfficialDetail(identifier (drilled only)), MCPInstallProgress(identifier (drilled only)), MCPDependenciesGuide] [32m(Context)[0m [31m(Component Composition)[0m
+[OfficialDetail(identifier (drilled only)), MCPInstallProgress(identifier (drilled only)), MCPConfigForm] [32m(Context)[0m [31m(Component Composition)[0m
+[Schema(id (drilled only)), Block(id (drilled only)), Title] [31m(Context)[0m [31m(Component Composition)[0m
+[ArtifactList(identifier (drilled only)), ArtifactItem(identifier (drilled only)), PluginAvatar] [32m(Context)[0m [32m(Component Composition)[0m
+[Conversation(mobile (drilled only)), ChatList(mobile (drilled only)), VirtualizedList] [32m(Context)[0m [31m(Component Composition)[0m
+[Header(size (drilled only)), PluginAvatar(size (drilled only)), PluginAvatar] [31m(Context)[0m [31m(Component Composition)[0m
+[Item(identifier (drilled only)), MCPInstallProgress(identifier (drilled only)), InstallError] [32m(Context)[0m [31m(Component Composition)[0m
+[Item(identifier (drilled only)), MCPInstallProgress(identifier (drilled only)), MCPDependenciesGuide] [32m(Context)[0m [31m(Component Composition)[0m
+[Item(identifier (drilled only)), MCPInstallProgress(identifier (drilled only)), MCPConfigForm] [32m(Context)[0m [31m(Component Composition)[0m
+[Item(identifier (drilled only)), Actions(identifier (drilled only)), EditCustomPlugin] [32m(Context)[0m [31m(Component Composition)[0m
+[Actions(onOpenChange (drilled only)), EditCustomPlugin(onOpenChange (drilled only)), DevModal] [31m(Context)[0m [31m(Component Composition)[0m
+[Actions(open (drilled only)), EditCustomPlugin(open (drilled only)), DevModal] [31m(Context)[0m [31m(Component Composition)[0m
+[DevModal(form (drilled only)), MCPManifestForm(form), QuickImportSection] [32m(Context)[0m [31m(Component Composition)[0m
+[DevModal(isEditMode (drilled only)), MCPManifestForm(isEditMode), QuickImportSection] [32m(Context)[0m [31m(Component Composition)[0m
+[Meta(size (drilled only)), PluginAvatar(size (drilled only)), PluginAvatar] [31m(Context)[0m [31m(Component Composition)[0m
+[CustomPluginEmptyState(onOpenChange (drilled only)), EditCustomPlugin(onOpenChange (drilled only)), DevModal] [31m(Context)[0m [31m(Component Composition)[0m
+[CustomPluginEmptyState(open (drilled only)), EditCustomPlugin(open (drilled only)), DevModal] [31m(Context)[0m [31m(Component Composition)[0m
+[PluginItem(name (drilled only)), KnowledgeIcon(fileName (drilled only)), FileIcon] [31m(Context)[0m [31m(Component Composition)[0m
+[UserMessage(id (drilled only)), UserMessageExtra(id (drilled only)), Translate] [32m(Context)[0m [31m(Component Composition)[0m
+[UserMessageContent(items (drilled only)), ImageFileListViewer(items (drilled only)), GalleyGrid] [31m(Context)[0m [31m(Component Composition)[0m
+[AssistantBlock(items (drilled only)), ImageFileListViewer(items (drilled only)), GalleyGrid] [31m(Context)[0m [31m(Component Composition)[0m
+[AssistantMessageExtra(metadata (drilled only)), Usage(meta (drilled only)), TokenDetail] [32m(Context)[0m [31m(Component Composition)[0m
+[Usage(provider (drilled only)), TokenDetail(provider (drilled only)), ModelCard] [32m(Context)[0m [32m(Component Composition)[0m
+[AssistantMessage(id (drilled only)), AssistantMessageExtra(id (drilled only)), Translate] [32m(Context)[0m [31m(Component Composition)[0m
+[AssistantActionsBar(message (drilled only)), ShareModal(item (drilled only)), ShareText] [32m(Context)[0m [32m(Component Composition)[0m
+[AssistantMessageContent(items (drilled only)), ImageFileListViewer(items (drilled only)), GalleyGrid] [31m(Context)[0m [31m(Component Composition)[0m
+[AssistantMessageContent(id (drilled only), id (drilled only), id (drilled only)), Tool(toolCallId (drilled only), toolCallId (drilled only)), Render] [32m(Context)[0m [31m(Component Composition)[0m
+[AssistantMessageContent(index (drilled only)), Tool(toolIndex (drilled only)), Render] [32m(Context)[0m [31m(Component Composition)[0m
+[AssistantMessageContent(messageId (drilled only)), Tool(messageId (drilled only)), Render] [32m(Context)[0m [31m(Component Composition)[0m
+[APIKeyForm(avatar (drilled only)), ProviderApiKeyForm(avatar (drilled only)), FormAction] [31m(Context)[0m [31m(Component Composition)[0m
+[FileItem(tasks (drilled only)), FileItem(tasks (drilled only)), UploadDetail] [32m(Context)[0m [31m(Component Composition)[0m
+[FileItem(size (drilled only)), UploadDetail(size (drilled only)), UploadStatus] [32m(Context)[0m [31m(Component Composition)[0m
+[Content(keywords (drilled only)), PluginList(keywords (drilled only)), List] [32m(Context)[0m [31m(Component Composition)[0m
+[STT(mobile (drilled only)), BrowserSTT(mobile (drilled only)), CommonSTT] [32m(Context)[0m [31m(Component Composition)[0m
+[BrowserSTT(handleTriggerStartStop (drilled only)), CommonSTT(onClick (drilled only)), Action] [31m(Context)[0m [31m(Component Composition)[0m
+[BrowserSTT(isRecording (drilled only)), CommonSTT(active (drilled only)), Action] [31m(Context)[0m [31m(Component Composition)[0m
+[OpenaiSTT(handleTriggerStartStop (drilled only)), CommonSTT(onClick (drilled only)), Action] [31m(Context)[0m [31m(Component Composition)[0m
+[OpenaiSTT(isRecording (drilled only)), CommonSTT(active (drilled only)), Action] [31m(Context)[0m [31m(Component Composition)[0m
+[RootLayout(appearance), GlobalLayout(defaultAppearance (drilled only)), AppTheme] [32m(Context)[0m [31m(Component Composition)[0m
+[RootLayout(isMobile), GlobalLayout(isMobile (drilled only)), ServerConfigStoreProvider] [32m(Context)[0m [31m(Component Composition)[0m
+[RootLayout(variants), GlobalLayout(segmentVariants (drilled only)), ServerConfigStoreProvider] [32m(Context)[0m [31m(Component Composition)[0m
+[Content(activeStage (drilled only)), FullscreenLoading(activeStage (drilled only)), InitProgress] [32m(Context)[0m [31m(Component Composition)[0m
+[Content(stages (drilled only)), FullscreenLoading(stages (drilled only)), InitProgress] [32m(Context)[0m [31m(Component Composition)[0m
+[Layout(mobile (drilled only)), ProviderMenu(mobile), Layout] [32m(Context)[0m [32m(Component Composition)[0m
+[ProviderDetail(id (drilled only)), ModelList(provider (drilled only)), ModelTitle] [32m(Context)[0m [31m(Component Composition)[0m
+[ProviderDetialPage(id), ClientMode(id (drilled only)), ProviderConfig] [32m(Context)[0m [31m(Component Composition)[0m
+[ProviderCard(enabled (drilled only)), Switch(enabled), InstantSwitch] [32m(Context)[0m [31m(Component Composition)[0m
+[ProviderModelListSelect(showAzureDeployName (drilled only)), ModelConfigModal(showAzureDeployName (drilled only)), ModelConfigForm] [32m(Context)[0m [31m(Component Composition)[0m
+[RepoClientPage(id (drilled only)), ComposeMenu(id (drilled only)), Head] [32m(Context)[0m [32m(Component Composition)[0m
+[FileList(selectCount (drilled only)), ToolBar(selectCount (drilled only)), MultiSelectActions] [32m(Context)[0m [31m(Component Composition)[0m
+[FileList(config (drilled only)), ToolBar(config (drilled only)), Config] [32m(Context)[0m [31m(Component Composition)[0m
+[FileList(onConfigChange (drilled only)), ToolBar(onConfigChange (drilled only)), Config] [32m(Context)[0m [31m(Component Composition)[0m
+[Evaluation(knowledgeBaseId), EmptyGuide(knowledgeBaseId (drilled only)), CreateEvaluation] [32m(Context)[0m [32m(Component Composition)[0m
+[Page(mobile), Client(mobile (drilled only)), TotalMessages] [32m(Context)[0m [32m(Component Composition)[0m
+[Page(mobile), Client(mobile (drilled only)), AiHeatmaps] [32m(Context)[0m [32m(Component Composition)[0m
+[Page(mobile), Client(mobile (drilled only)), AssistantsRank] [32m(Context)[0m [32m(Component Composition)[0m
+[Page(mobile), Client(mobile (drilled only)), TopicsRank] [32m(Context)[0m [32m(Component Composition)[0m
+[GenerationBatchItem(id (drilled only)), InvalidAPIKey(id (drilled only)), APIKeyForm] [32m(Context)[0m [31m(Component Composition)[0m
+[GenerationBatchItem(provider (drilled only)), InvalidAPIKey(provider (drilled only)), APIKeyForm] [32m(Context)[0m [31m(Component Composition)[0m
+[GenerationBatchItem(generation (drilled only)), GenerationItem(generation (drilled only)), ErrorState] [32m(Context)[0m [31m(Component Composition)[0m
+[GenerationItem(onDelete (drilled only)), ErrorState(onDelete (drilled only)), ActionButtons] [31m(Context)[0m [32m(Component Composition)[0m
+[GenerationBatchItem(generation (drilled only)), GenerationItem(generation (drilled only)), LoadingState] [32m(Context)[0m [31m(Component Composition)[0m
+[GenerationItem(onDelete (drilled only)), LoadingState(onDelete (drilled only)), ActionButtons] [31m(Context)[0m [32m(Component Composition)[0m
+[ImageUpload(progress (drilled only)), UploadingDisplay(value (drilled only)), CircularProgress] [32m(Context)[0m [32m(Component Composition)[0m
+[MultiImagesUpload(currentProgress (drilled only)), ImageUploadProgress(value (drilled only)), CircularProgress] [32m(Context)[0m [31m(Component Composition)[0m
+[ImageUrlsUpload(maxCount (drilled only)), MultiImagesUpload(maxCount (drilled only)), ImageManageModal] [32m(Context)[0m [31m(Component Composition)[0m
+[Page(identifier), Client(identifier (drilled only)), Breadcrumb] [32m(Context)[0m [31m(Component Composition)[0m
+[Page(mobile), Client(mobile (drilled only)), Header] [32m(Context)[0m [32m(Component Composition)[0m
+[ActionButton(identifier (drilled only)), MCPInstallProgress(identifier (drilled only)), InstallError] [32m(Context)[0m [31m(Component Composition)[0m
+[ActionButton(identifier (drilled only)), MCPInstallProgress(identifier (drilled only)), MCPDependenciesGuide] [32m(Context)[0m [31m(Component Composition)[0m
+[ActionButton(identifier (drilled only)), MCPInstallProgress(identifier (drilled only)), MCPConfigForm] [32m(Context)[0m [31m(Component Composition)[0m
+[Capabilities(id (drilled only)), Block(id (drilled only)), Title] [31m(Context)[0m [31m(Component Composition)[0m
+[ProtocolUrlHandler(installRequest), PluginInstallConfirmModal(installRequest (drilled only)), CustomPluginInstallModal] [32m(Context)[0m [31m(Component Composition)[0m
+[ProtocolUrlHandler(onComplete), PluginInstallConfirmModal(onComplete (drilled only)), CustomPluginInstallModal] [32m(Context)[0m [31m(Component Composition)[0m
+[ConfigDisplay(value (drilled only)), KeyValueEditor(value (drilled only)), FormInput] [31m(Context)[0m [31m(Component Composition)[0m
+[EditPage(tab (drilled only)), AgentSettings(tab (drilled only)), AgentSettingsContent] [32m(Context)[0m [31m(Component Composition)[0m
+[Page(mobile), TelemetryNotification(mobile (drilled only)), Notification] [32m(Context)[0m [31m(Component Composition)[0m
+[AgentSettings(tab (drilled only)), AgentSettings(tab (drilled only)), AgentSettingsContent] [32m(Context)[0m [31m(Component Composition)[0m
+[PortalHeader(title (drilled only)), Header(title (drilled only)), SidebarHeader] [31m(Context)[0m [31m(Component Composition)[0m
+[ChatConversation(mobile), ChatList(mobile), SkeletonList] [32m(Context)[0m [32m(Component Composition)[0m
+[WelcomeMessage(avatar), ChatItem(avatar (drilled only)), Avatar] [32m(Context)[0m [31m(Component Composition)[0m
+[WelcomeMessage(placement (drilled only)), ChatItem(placement (drilled only)), Avatar] [32m(Context)[0m [31m(Component Composition)[0m
+[WelcomeMessage(avatar), ChatItem(avatar (drilled only)), Title] [32m(Context)[0m [31m(Component Composition)[0m
+[WelcomeMessage(placement (drilled only)), ChatItem(placement (drilled only)), Title] [32m(Context)[0m [31m(Component Composition)[0m
+[WelcomeMessage(placement (drilled only)), ChatItem(placement (drilled only)), ErrorContent] [32m(Context)[0m [31m(Component Composition)[0m
+[WelcomeMessage(editing (drilled only)), ChatItem(editing (drilled only)), MessageContent] [32m(Context)[0m [31m(Component Composition)[0m
+[WelcomeMessage(message), ChatItem(message (drilled only)), MessageContent] [32m(Context)[0m [31m(Component Composition)[0m
+[WelcomeMessage(placement (drilled only)), ChatItem(placement (drilled only)), MessageContent] [32m(Context)[0m [31m(Component Composition)[0m
+[WelcomeMessage(variant (drilled only)), ChatItem(variant (drilled only)), MessageContent] [32m(Context)[0m [31m(Component Composition)[0m
+[WelcomeMessage(editing (drilled only)), ChatItem(editing (drilled only)), Actions] [32m(Context)[0m [31m(Component Composition)[0m
+[WelcomeMessage(placement (drilled only)), ChatItem(placement (drilled only)), Actions] [32m(Context)[0m [31m(Component Composition)[0m
+[WelcomeMessage(variant (drilled only)), ChatItem(variant (drilled only)), Actions] [32m(Context)[0m [31m(Component Composition)[0m
+[MobileChatInput(expand (drilled only)), MobileChatInputArea(expand (drilled only)), InnerContainer] [32m(Context)[0m [31m(Component Composition)[0m
+[MobileChatInput(leftActions (drilled only)), ActionBar(dataSource (drilled only)), RenderActionList] [32m(Context)[0m [31m(Component Composition)[0m
+[MobileChatInput(rightActions (drilled only)), ActionBar(dataSource (drilled only)), RenderActionList] [32m(Context)[0m [31m(Component Composition)[0m
+Execution time: 15.223s
