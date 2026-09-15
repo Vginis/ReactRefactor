@@ -48,8 +48,36 @@ function expectLocalComponent(reactFile, localName, componentName) {
 
 describe("ReactFile component resolution", () => {
 
+    test("should identify components imported with @ path prefix", () => {
+
+        const { fileManager, filteredJsxElements } = getFileManager(
+            "test//resources//ecommerce-react//src",
+            "test//resources//ecommerce-react//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+        expect(reactComponents.length).toBe(81)
+
+        let reactFile = fileManager.getReactFile("components\\product\\ProductItem.jsx")
+        expect(reactFile).toBeTruthy()
+
+        expectImportedComponent(reactFile, "ImageLoader", "ImageLoader")
+        
+    })
+
     test("should identify components imported from barrel modules", () => {
 
+        const { fileManager, filteredJsxElements } = getFileManager(
+            "test//resources//ecommerce-react//src",
+            "test//resources//ecommerce-react//src//App.jsx");
+
+        const reactComponents = loadReactComponents(fileManager.reactFiles, filteredJsxElements)
+        expect(reactComponents.length).toBe(81)
+
+        const indexFile = fileManager.getReactFile("components\\common")
+        expect(indexFile).toBeTruthy()
+
+        expectExportedComponent(indexFile, "ImageLoader", "ImageLoader")
+        
     })
 
     test("should identify components imported from reexporting statements", () => {

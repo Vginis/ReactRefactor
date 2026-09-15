@@ -1,6 +1,27 @@
 import { getFileManager } from '../utils/test-utils.js';
 import { getModulePathRelativeToProjectRoot } from '../../lib/FileManager.js';
 
+function expectSpecifierToPathResolution(specifier, reactFile, expectedModulePath) {
+    let modulePath = globalThis.fileManager.getRelativeModulePath(specifier, reactFile)
+    expect(modulePath).toBe(expectedModulePath)
+    expect(globalThis.fileManager.getReactFile(modulePath)).toBeTruthy()
+}
+
+describe("Module path with wildcard characters", () => {
+
+    test("should resolve @ as first path segment", () => {
+        const { fileManager } = getFileManager(
+            "test//resources//ecommerce-react//src",
+            "test//resources//ecommerce-react//src//App.jsx");
+
+        let reactFile = fileManager.getReactFile("components\\product\\ProductItem.jsx")
+        expect(reactFile).toBeTruthy()
+
+        expectSpecifierToPathResolution("@/components/common", reactFile, "components\\common")
+        
+    })
+
+})
 
 describe("Module path alignment to project root", () => {
 
@@ -63,15 +84,11 @@ describe("FileManager relative module path resolution", () => {
         let reactFile = fileManager.getReactFile("components\\books\\BookCartModal.tsx")
         expect(reactFile).toBeTruthy()
 
-        expectSpecifierToPathResolution("src/components/common/LoadingSpinner", reactFile, "components\\common\\LoadingSpinner" )
+        expectSpecifierToPathResolution("src/components/common/LoadingSpinner", reactFile, "components\\common\\LoadingSpinner")
 
     })
 
-    function expectSpecifierToPathResolution(specifier, reactFile, expectedModulePath) {
-        let modulePath = globalThis.fileManager.getRelativeModulePath(specifier, reactFile)
-        expect(modulePath).toBe(expectedModulePath)
-        expect(globalThis.fileManager.getReactFile(modulePath)).toBeTruthy()
-    }
+
 
 })
 
