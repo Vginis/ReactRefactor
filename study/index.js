@@ -14,6 +14,7 @@ import { generateCSV } from "./csv-export.js";
 import * as fs from 'node:fs';
 import path from 'path';
 import { exit } from "node:process";
+import { execSync } from "node:child_process"
 
 const LATEX_OUTPUT_DIR = './study/latex'
 const RESULTS_DIR = './study/results'
@@ -36,23 +37,43 @@ if (!action || action === 'latex') {
     parseJSONResults();
     let sortedProjects = projectList.toSorted((a, b) => (b.sloc - a.sloc))
     generateLatexReports(sortedProjects);
-} else if (action === 'csv'){
+} else if (action === 'csv') {
     parseJSONResults();
     generateCSV(projectList, './stats/prop_dillings.csv')
-} else if (action === 'pd-dependencies'){
-    
-} else if (action === 'update-results'){
+} else if (action === 'pd-dependencies') {
+
+} else if (action === 'update-results') {
     const project = args[1]
     const commitId = getProject(project)?.commitId
-    if (!commitId){
+    if (!commitId) {
         console.log('Invalid project name')
         exit()
     }
-    fs.copyFileSync('./stats/tmp/candidates.json',  
+    fs.copyFileSync('./stats/tmp/candidates.json',
         path.join('study', 'results', `candidates-${project}-${commitId}.json`))
 
-    fs.copyFileSync('./output.log',  
+    fs.copyFileSync('./output.log',
         path.join('study', 'log', `${project}.out`))
+} else if (action === 'clone') {
+    //cloneRepo('../benchmark', 'carbon', 'carbon-app/carbon', '0a07790')
+    cloneRepo('../benchmark', 'plane', 'makeplane/plane', 'e710f5b')
+}
+
+
+function cloneRepo(benchmarkDir, projectName, repoId, commitId) {
+    try {
+        // Example: running a simple 'ls' or 'dir' command
+        let output = execSync(`git clone https://github.com/${repoId} ${projectName}`, { 
+            cwd: `${benchmarkDir}`,
+            encoding: 'utf8' });
+        console.log('Output:\n', output);
+
+        output = execSync(`git checkout ${commitId}`, { 
+            cwd: `${benchmarkDir}/${projectName}`,
+            encoding: 'utf8' });
+    } catch (error) {
+        console.error('Execution failed:', error.message);
+    }
 }
 
 function parseJSONResults() {
@@ -63,7 +84,7 @@ function parseJSONResults() {
     }
 }
 
-function getProject(projName){
+function getProject(projName) {
     return projectList.find(project => project.projectName === projName)
 }
 
@@ -81,7 +102,7 @@ function generateLatexReports(projects) {
         generateReportForCompoundPropDrillings(propDrillingsList, project, totalObjectTable3);
         generateReportForRefactoringPropDrillings(propDrillingsList, project, totalObjectTable4);
     }
-    
+
     addTotalRowForPropDrillingFrequency(totalObjectTable1);
     addTotalRowForPropDrillingDepths(totalObjectTable2);
     addTotalRowForCompoundPropDrillings(totalObjectTable3);
@@ -107,7 +128,7 @@ function initTotalRowObjects() {
         totalPropDrillings: 0,
         depthColumn3: 0,
         depthColumn4: 0,
-        depthColumn5: 0 
+        depthColumn5: 0
     }
 
     const totalObjectTable3 = {
@@ -127,11 +148,11 @@ function initTotalRowObjects() {
         totalRefactoringsCount: 0
     }
 
-    return { totalObjectTable1, totalObjectTable2, totalObjectTable3, totalObjectTable4}
+    return { totalObjectTable1, totalObjectTable2, totalObjectTable3, totalObjectTable4 }
 }
 
 function generateReportForDatasetDescriptions(project) {
-    
+
     const latexRow =
         `${project.projectName.padEnd(15, " ")} ` +
         `& ${project.lang.padEnd(5, " ")} ` +
@@ -173,7 +194,7 @@ function addTotalRowForPropDrillingFrequency(totalObjectTable1) {
         `& ${padStart(totalObjectTable1.totalPropDrillings, 4)} \t` +
         `& ${padStart(allComponents, 4)} \t` +
         `& ${valPct(participantsCount, percentage, 4)} \t`;
-    
+
     appendFileSync(TBL2_PROP_DRILL_ADOPTION, latexEmptyRow, 'utf8');
     appendFileSync(TBL2_PROP_DRILL_ADOPTION, latexRow, 'utf8');
 }
@@ -216,11 +237,11 @@ function addTotalRowForPropDrillingDepths(totalObjectTable2) {
         `Total \t` +
         `& ${padStart(totalPropDrillings, 4)} \t` +
         `& ${valPct(totalObjectTable2.depthColumn3, ((totalObjectTable2.depthColumn3 / totalPropDrillings) * 100).toFixed(1), 4)} \t` +
-        `& ${valPct(totalObjectTable2.depthColumn4, ((totalObjectTable2.depthColumn4 / totalPropDrillings) * 100).toFixed(1), 4)} \t` + 
+        `& ${valPct(totalObjectTable2.depthColumn4, ((totalObjectTable2.depthColumn4 / totalPropDrillings) * 100).toFixed(1), 4)} \t` +
         `& ${valPct(totalObjectTable2.depthColumn5, ((totalObjectTable2.depthColumn5 / totalPropDrillings) * 100).toFixed(1), 4)} \t`;
-    
+
     appendFileSync(TBL3_PROP_DRILL_DEPTH_DISTR, latexEmptyRow, 'utf8');
-    appendFileSync(TBL3_PROP_DRILL_DEPTH_DISTR, latexRow, 'utf8'); 
+    appendFileSync(TBL3_PROP_DRILL_DEPTH_DISTR, latexRow, 'utf8');
 }
 
 function formatDepthColumn(depthsMap, depth, totalPropDrillings) {
@@ -236,7 +257,7 @@ function formatDepthColumn(depthsMap, depth, totalPropDrillings) {
     const percentage = ((count / totalPropDrillings) * 100).toFixed(1);
     return {
         latexFormat: `\\valpct{${count}}{${percentage}}`,
-        count: count 
+        count: count
     };
 }
 
@@ -250,7 +271,7 @@ function generateReportForCompoundPropDrillings(propDrillingsList, project, tota
     const breadth3Column = formatTotalStatsColumn(compoundPropDrillingsCount, compoundPropDrillingsFamilies['threes']);
     const breadthMultipleColumn = formatTotalStatsColumn(compoundPropDrillingsCount, compoundPropDrillingsFamilies['multiples']);
 
-    const compoundPropDrillingsFamiliesOver3Depth = totalCompoundPropDrillings - compoundPropDrillingsFamilies['twos']*2
+    const compoundPropDrillingsFamiliesOver3Depth = totalCompoundPropDrillings - compoundPropDrillingsFamilies['twos'] * 2
     const latexRow =
         `${project.projectName} ` +
         `& ${compoundPropDrillingsCount} ` +
@@ -284,9 +305,9 @@ function addTotalRowForCompoundPropDrillings(totalObjectTable3) {
         `& ${formatTotalStatsColumn(totalCompoundPropDrillings, totalObjectTable3.breadthMutlipleColumnCount).latexFormat} \t` +
         `& ${formatTotalStatsColumn(totalPropDrillings, totalObjectTable3.memberPdsTotalCount).latexFormat} \t` +
         `& ${formatTotalStatsColumn(totalPropDrillings, totalObjectTable3.compoundPropDrillingsFamiliesOver3Depth).latexFormat} \t`;
-    
+
     appendFileSync(TBL4_COMP_PROP_DRILL_DISTR, latexEmptyRow, 'utf8');
-    appendFileSync(TBL4_COMP_PROP_DRILL_DISTR, latexRow, 'utf8'); 
+    appendFileSync(TBL4_COMP_PROP_DRILL_DISTR, latexRow, 'utf8');
 }
 
 
@@ -334,7 +355,7 @@ function addTotalRowForRefactoringPropDrillings(totalObjectTable4) {
         `& ${formatTotalStatsColumn(totalPropDrillings, totalObjectTable4.contextRefactoringsCount).latexFormat} \t` +
         `& ${formatTotalStatsColumn(totalPropDrillings, totalObjectTable4.compositionRefactoringsCount).latexFormat} \t` +
         `& ${formatTotalStatsColumn(totalPropDrillings, totalObjectTable4.totalRefactoringsCount).latexFormat} \t`;
-    
+
     appendFileSync(TBL5_REFACTORING_CANDIDATES, latexEmptyRow, 'utf8');
-    appendFileSync(TBL5_REFACTORING_CANDIDATES, latexRow, 'utf8'); 
+    appendFileSync(TBL5_REFACTORING_CANDIDATES, latexRow, 'utf8');
 }

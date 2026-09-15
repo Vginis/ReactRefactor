@@ -14,18 +14,36 @@ import { loadAliases2 } from './lib/Alias.js';
 import { displayMenu, displayPropDrilling } from './lib/cli.js';
 import { printPropDrillingsWithDetails } from './lib/PropDrilling.js';
 
+import { Command } from 'commander';
+const program = new Command();
+
+program
+    .requiredOption('-p, --project <string>', 'Relative path of the project under analysis (root directory of React app)')
+    .requiredOption('--root <string>', 'Relative path of a source file declaring a root component')
+    .option('-i, --interactive', 'Runs the tool in interactive mode', false)
+    .option('-m, --prefix-mappings <strings...>', 'Mappings of module prefixes to paths relative to project root, e.g. @//=core @//plane-web=ce')
+
+program.parse()
+
+const options = program.opts()
+
+console.log('Options:', program.opts())
+
 const args = process.argv.slice(2);
-const projectPath = args[0];
-const rootFile = args[1];
-const rootComponent = args[2];
-const fileType = args[3] || rootFile?.split(".").pop();
+const projectPath = options.project;
+const rootFile = options.root;
+const rootComponent = undefined;
+
+const fileType = undefined
+
 // Change this to apply refactorings interactive
-const interactive = false;
+const interactive = options.interactive;
 
 globalThis.projectPath = projectPath
 globalThis.rootFile = rootFile
 globalThis.rootComponent = rootComponent
 globalThis.fileType = fileType
+globalThis.prefixMappings = options.prefixMappings
 
 
 if (!projectPath && !rootFile) {
