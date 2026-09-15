@@ -7,6 +7,24 @@ function expectSpecifierToPathResolution(specifier, reactFile, expectedModulePat
     expect(globalThis.fileManager.getReactFile(modulePath)).toBeTruthy()
 }
 
+
+describe("Module path from prefix mappings", () => {
+
+    test("should resolve module paths from prefix mappings", () => {
+
+        const { fileManager } = getFileManager(
+            "test//resources//ecommerce-react//src",
+            "test//resources//ecommerce-react//src//App.jsx", undefined, "@/=./");
+
+        let reactFile = fileManager.getReactFile("components\\product\\ProductItem.jsx")
+        expect(reactFile).toBeTruthy()
+
+        expectSpecifierToPathResolution("@/components/common", reactFile, "components\\common")
+        
+    })
+
+})
+
 describe("Module path with wildcard characters", () => {
 
     test("should resolve @ as first path segment", () => {
