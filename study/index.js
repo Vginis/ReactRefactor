@@ -120,9 +120,16 @@ function generateLatexReports(projects) {
 }
 
 function resetLatexFiles() {
-    writeFileSync(TBL1_DATASET_PROJECTS, "");
-    writeFileSync(TBL2_PROP_DRILL_ADOPTION, "");
-    writeFileSync(TBL3_PROP_DRILL_DEPTH_DISTR, "");
+    writeFileSync(TBL1_DATASET_PROJECTS, 
+        `% ${"Project".padEnd(15, " ")} ${"Lang".padEnd(7, " ")} ${"SLOC".padEnd(11, " ")} ${"Stars".padEnd(11, " ")}  CommitId  ${"Github Repository".padEnd(22, " ")}\n`);
+
+    writeFileSync(TBL2_PROP_DRILL_ADOPTION, 
+        `% ${"Project".padEnd(15, " ")} ${"PDs".padEnd(7, " ")} ${"Components".padEnd(15, " ")} Prop Drilling Participants \n`);
+
+    writeFileSync(TBL3_PROP_DRILL_DEPTH_DISTR, 
+        `% ${"Project".padEnd(15, " ")} ${"PDs".padEnd(6, " ")} ` +
+        `${"Depth#1".padEnd(24, " ")} ${"Depth#2".padEnd(24, " ")} ${"Depth#3".padEnd(24, " ")} \n`
+    );
     writeFileSync(TBL4_COMP_PROP_DRILL_DISTR, "");
     writeFileSync(TBL5_REFACTORING_CANDIDATES, "");
 }
@@ -183,7 +190,7 @@ function generateReportForPropDrillingFrequency(propDrillingsList, project, tota
     const latexRow =
         `${project.projectName.padEnd(15, " ")} ` +
         `& ${padStart(propDrillingsCount, 4)} \t` +
-        `& ${padStart(ALL_COMPONENTS, 4)} \t` +
+        `& ${padStart(ALL_COMPONENTS, 10)} \t` +
         `& ${valPct(participantsCount, percentage, 4)} \\\\\n`;
 
     appendFileSync(TBL2_PROP_DRILL_ADOPTION, latexRow, 'utf8');
@@ -198,12 +205,12 @@ function addTotalRowForPropDrillingFrequency(totalObjectTable1) {
     const allComponents = totalObjectTable1.totalComponents;
 
     const percentage = ((participantsCount / allComponents) * 100).toFixed(1);
-    const latexEmptyRow = ' \\\\\n';
+    const latexEmptyRow = ' %\\bottomrule \n';
     const latexRow =
-        `Total \t` +
+        `\\cmidrule{1-4} \n\\textbf{Total} \t` +
         `& ${padStart(totalObjectTable1.totalPropDrillings, 4)} \t` +
-        `& ${padStart(allComponents, 4)} \t` +
-        `& ${valPct(participantsCount, percentage, 4)} \t`;
+        `& ${padStart(allComponents, 10)} \t` +
+        `& ${valPct(participantsCount, percentage, 4)} \\\\\n\\cmidrule{1-4}`;
 
     appendFileSync(TBL2_PROP_DRILL_ADOPTION, latexEmptyRow, 'utf8');
     appendFileSync(TBL2_PROP_DRILL_ADOPTION, latexRow, 'utf8');
@@ -225,11 +232,11 @@ function generateReportForPropDrillingDepths(propDrillingsList, project, totalOb
     const depth5Col = formatDepthColumn(depthMap, 5, totalPropDrillings);
 
     const latexRow =
-        `${project.projectName} ` +
-        `& ${totalPropDrillings} ` +
-        `& ${depth3Col.latexFormat} ` +
-        `& ${depth4Col.latexFormat} ` +
-        `& ${depth5Col.latexFormat} \\\\\n`;
+        `${project.projectName.padEnd(15, " ")} ` +
+        `& ${padStart(totalPropDrillings, 4)} ` +
+        `& ${depth3Col.latexFormat.padEnd(20, " ")} ` +
+        `& ${depth4Col.latexFormat.padEnd(20, " ")} ` +
+        `& ${depth5Col.latexFormat.padEnd(20, " ")} \\\\\n`;
 
     appendFileSync(TBL3_PROP_DRILL_DEPTH_DISTR, latexRow, 'utf8');
 
@@ -242,13 +249,15 @@ function generateReportForPropDrillingDepths(propDrillingsList, project, totalOb
 function addTotalRowForPropDrillingDepths(totalObjectTable2) {
     const totalPropDrillings = totalObjectTable2.totalPropDrillings;
 
-    const latexEmptyRow = ' \\\\\n';
+    const latexEmptyRow = ' %\\bottomrule \n';
     const latexRow =
-        `Total \t` +
-        `& ${padStart(totalPropDrillings, 4)} \t` +
-        `& ${valPct(totalObjectTable2.depthColumn3, ((totalObjectTable2.depthColumn3 / totalPropDrillings) * 100).toFixed(1), 4)} \t` +
-        `& ${valPct(totalObjectTable2.depthColumn4, ((totalObjectTable2.depthColumn4 / totalPropDrillings) * 100).toFixed(1), 4)} \t` +
-        `& ${valPct(totalObjectTable2.depthColumn5, ((totalObjectTable2.depthColumn5 / totalPropDrillings) * 100).toFixed(1), 4)} \t`;
+        `\\cmidrule{1-5} \n` +
+        `${"\\textbf{Total}".padEnd(15, " ")} ` +
+        `& ${padStart(totalPropDrillings, 4)} ` +
+        `& ${valPct(totalObjectTable2.depthColumn3, ((totalObjectTable2.depthColumn3 / totalPropDrillings) * 100).toFixed(1), 4)}  ` +
+        `& ${valPct(totalObjectTable2.depthColumn4, ((totalObjectTable2.depthColumn4 / totalPropDrillings) * 100).toFixed(1), 4)}  ` +
+        `& ${valPct(totalObjectTable2.depthColumn5, ((totalObjectTable2.depthColumn5 / totalPropDrillings) * 100).toFixed(1), 4)} \\\\\n` +
+        `\\cmidrule{1-5} \n`;
 
     appendFileSync(TBL3_PROP_DRILL_DEPTH_DISTR, latexEmptyRow, 'utf8');
     appendFileSync(TBL3_PROP_DRILL_DEPTH_DISTR, latexRow, 'utf8');
@@ -266,7 +275,7 @@ function formatDepthColumn(depthsMap, depth, totalPropDrillings) {
 
     const percentage = ((count / totalPropDrillings) * 100).toFixed(1);
     return {
-        latexFormat: `\\valpct{${count}}{${percentage}}`,
+        latexFormat: valPct(count, percentage, 4), //`\\valpct{${count}}{${percentage}}`,
         count: count
     };
 }
