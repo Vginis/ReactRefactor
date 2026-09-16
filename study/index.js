@@ -292,13 +292,13 @@ function generateReportForCompoundPropDrillings(propDrillingsList, project, tota
 
     const compoundPropDrillingsFamiliesOver3Depth = totalCompoundPropDrillings - compoundPropDrillingsFamilies['twos'] * 2
     const latexRow =
-        `${project.projectName} ` +
-        `& ${compoundPropDrillingsCount} ` +
-        `& ${breadth2Column.latexFormat} ` +
-        `& ${breadth3Column.latexFormat} ` +
-        `& ${breadthMultipleColumn.latexFormat} ` +
-        `& ${formatTotalStatsColumn(propDrillingsCount, memberPdsTotal).latexFormat} ` +
-        `& ${formatTotalStatsColumn(propDrillingsCount, compoundPropDrillingsFamiliesOver3Depth).latexFormat} \\\\\n`;
+        `${project.projectName.padEnd(15, " ")} ` +
+        `& ${padStart(compoundPropDrillingsCount, 4)} ` +
+        `& ${breadth2Column.latexFormat.padEnd(20, " ")} ` +
+        `& ${breadth3Column.latexFormat.padEnd(20, " ")} ` +
+        `& ${breadthMultipleColumn.latexFormat.padEnd(20, " ")} ` +
+        `& ${formatTotalStatsColumn(propDrillingsCount, memberPdsTotal).latexFormat.padEnd(20, " ")} ` +
+        `& ${formatTotalStatsColumn(propDrillingsCount, compoundPropDrillingsFamiliesOver3Depth).latexFormat.padEnd(20, " ")} \\\\\n`;
 
     appendFileSync(TBL4_COMP_PROP_DRILL_DISTR, latexRow, 'utf8');
 
@@ -315,15 +315,15 @@ function addTotalRowForCompoundPropDrillings(totalObjectTable3) {
     const totalCompoundPropDrillings = totalObjectTable3.totalCompoundPropDrillings;
     const totalPropDrillings = totalObjectTable3.totalPropDrillings;
 
-    const latexEmptyRow = ' \\\\\n';
+    const latexEmptyRow = ' %\\bottomrule \n';
     const latexRow =
-        `Total \t` +
-        `& ${padStart(totalCompoundPropDrillings, 4)} \t` +
-        `& ${formatTotalStatsColumn(totalCompoundPropDrillings, totalObjectTable3.breadth2ColumnCount).latexFormat} \t` +
-        `& ${formatTotalStatsColumn(totalCompoundPropDrillings, totalObjectTable3.breadth3ColumnCount).latexFormat} \t` +
-        `& ${formatTotalStatsColumn(totalCompoundPropDrillings, totalObjectTable3.breadthMutlipleColumnCount).latexFormat} \t` +
-        `& ${formatTotalStatsColumn(totalPropDrillings, totalObjectTable3.memberPdsTotalCount).latexFormat} \t` +
-        `& ${formatTotalStatsColumn(totalPropDrillings, totalObjectTable3.compoundPropDrillingsFamiliesOver3Depth).latexFormat} \t`;
+        `\\cmidrule{1-7} \n\\textbf{Total} \t` +
+        `& ${padStart(totalCompoundPropDrillings, 4)} ` +
+        `& ${formatTotalStatsColumn(totalCompoundPropDrillings, totalObjectTable3.breadth2ColumnCount).latexFormat}  ` +
+        `& ${formatTotalStatsColumn(totalCompoundPropDrillings, totalObjectTable3.breadth3ColumnCount).latexFormat}  ` +
+        `& ${formatTotalStatsColumn(totalCompoundPropDrillings, totalObjectTable3.breadthMutlipleColumnCount).latexFormat}  ` +
+        `& ${formatTotalStatsColumn(totalPropDrillings, totalObjectTable3.memberPdsTotalCount).latexFormat}  ` +
+        `& ${formatTotalStatsColumn(totalPropDrillings, totalObjectTable3.compoundPropDrillingsFamiliesOver3Depth).latexFormat}  \\\\\n\\cmidrule{1-7}`;
 
     appendFileSync(TBL4_COMP_PROP_DRILL_DISTR, latexEmptyRow, 'utf8');
     appendFileSync(TBL4_COMP_PROP_DRILL_DISTR, latexRow, 'utf8');
@@ -340,7 +340,7 @@ function formatTotalStatsColumn(total, count) {
 
     const percentage = ((count / total) * 100).toFixed(1);
     return {
-        latexFormat: `\\valpct{${count}}{${percentage}}`,
+        latexFormat: valPct(count, percentage, 4), //`\\valpct{${count}}{${percentage}}`,
         count: count
     };
 }
