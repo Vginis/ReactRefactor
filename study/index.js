@@ -56,7 +56,8 @@ if (!action || action === 'latex') {
         path.join('study', 'log', `${project}.out`))
 } else if (action === 'clone') {
     //cloneRepo('../benchmark', 'carbon', 'carbon-app/carbon', '0a07790')
-    cloneRepo('../benchmark', 'plane', 'makeplane/plane', 'e710f5b')
+    //cloneRepo('../benchmark', 'plane', 'makeplane/plane', 'e710f5b')
+    cloneRepo('../benchmark', 'novu', 'novuhq/novu', 'cfbea2d')
 }
 
 
