@@ -21,7 +21,7 @@ program
     .requiredOption('-p, --project <string>', 'Relative path of the project under analysis (root directory of React app)')
     .requiredOption('--root <string>', 'Relative path of a source file declaring a root component')
     .option('-i, --interactive', 'Runs the tool in interactive mode', false)
-    .option('-m, --prefix-mappings <strings...>', 'Mappings of module prefixes to paths relative to project root, e.g. @//=core @//plane-web=ce')
+    .option('-m, --prefix-mappings <string>', 'Mappings of module prefixes to paths relative to project root, e.g. "@//=core @//plane-web=ce" (single space separated)')
 
 program.parse()
 
@@ -43,7 +43,7 @@ globalThis.projectPath = projectPath
 globalThis.rootFile = rootFile
 globalThis.rootComponent = rootComponent
 globalThis.fileType = fileType
-globalThis.prefixMappings = options.prefixMappings
+globalThis.prefixMappings = options.prefixMappings ? options.prefixMappings.split(" ") : undefined
 
 
 if (!projectPath && !rootFile) {
@@ -87,8 +87,6 @@ const propDrillings = detectPropDrilling(paths);
 console.timeEnd("PD detection")
 
 console.log("Found: " + propDrillings.length + " Prop Drilling Occurences");
-
-
 
 let currentIndex = 0;
 let inMenu = false;

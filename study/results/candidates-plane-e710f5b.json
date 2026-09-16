@@ -1,8 +1,232 @@
 [
   {
+    "sourceComponent": "core\\components\\issues\\issue-layouts\\kanban\\default.tsx:KanBan",
+    "targetComponent": "core\\components\\ui\\loader\\layouts\\kanban-layout-loader.tsx:KanbanIssueBlockLoader",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "core\\components\\issues\\issue-layouts\\kanban\\default.tsx:KanBan",
+        "target": "core\\components\\ui\\loader\\layouts\\kanban-layout-loader.tsx:KanbanColumnLoader",
+        "targetAlias": "KanbanColumnLoader",
+        "targetProp": "cardHeight",
+        "isPure": true
+      },
+      {
+        "source": "core\\components\\ui\\loader\\layouts\\kanban-layout-loader.tsx:KanbanColumnLoader",
+        "target": "core\\components\\ui\\loader\\layouts\\kanban-layout-loader.tsx:KanbanIssueBlockLoader",
+        "targetAlias": "KanbanIssueBlockLoader",
+        "targetProp": "cardHeight",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "core\\components\\issues\\issue-layouts\\kanban\\default.tsx:KanBan",
+    "targetComponent": "core\\components\\ui\\loader\\layouts\\kanban-layout-loader.tsx:KanbanIssueBlockLoader",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "core\\components\\issues\\issue-layouts\\kanban\\default.tsx:KanBan",
+        "target": "core\\components\\ui\\loader\\layouts\\kanban-layout-loader.tsx:KanbanColumnLoader",
+        "targetAlias": "KanbanColumnLoader",
+        "targetProp": "shouldAnimate",
+        "isPure": true
+      },
+      {
+        "source": "core\\components\\ui\\loader\\layouts\\kanban-layout-loader.tsx:KanbanColumnLoader",
+        "target": "core\\components\\ui\\loader\\layouts\\kanban-layout-loader.tsx:KanbanIssueBlockLoader",
+        "targetAlias": "KanbanIssueBlockLoader",
+        "targetProp": "shouldAnimate",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(home)\\page.tsx:HomePage",
+    "targetComponent": "core\\components\\auth-screens\\header.tsx:AuthHeader",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "app\\(home)\\page.tsx:HomePage",
+        "target": "core\\components\\auth-screens\\auth-base.tsx:AuthBase",
+        "targetAlias": "AuthBase",
+        "targetProp": "authType",
+        "isPure": false
+      },
+      {
+        "source": "core\\components\\auth-screens\\auth-base.tsx:AuthBase",
+        "target": "core\\components\\auth-screens\\header.tsx:AuthHeader",
+        "targetAlias": "AuthHeader",
+        "targetProp": "type",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "core\\components\\integration\\github\\root.tsx:GithubImporterRoot",
+    "targetComponent": "core\\components\\integration\\github\\auth.tsx:GithubAuth",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "core\\components\\integration\\github\\root.tsx:GithubImporterRoot",
+        "target": "core\\components\\integration\\github\\import-configure.tsx:GithubImportConfigure",
+        "targetAlias": "GithubImportConfigure",
+        "targetProp": "provider",
+        "isPure": true
+      },
+      {
+        "source": "core\\components\\integration\\github\\import-configure.tsx:GithubImportConfigure",
+        "target": "core\\components\\integration\\github\\auth.tsx:GithubAuth",
+        "targetAlias": "GithubAuth",
+        "targetProp": "provider",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "core\\components\\integration\\github\\root.tsx:GithubImporterRoot",
+    "targetComponent": "core\\components\\integration\\github\\single-user-select.tsx:SingleUserSelect",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "core\\components\\integration\\github\\root.tsx:GithubImporterRoot",
+        "target": "core\\components\\integration\\github\\import-users.tsx:GithubImportUsers",
+        "targetAlias": "GithubImportUsers",
+        "targetProp": "users",
+        "isPure": false
+      },
+      {
+        "source": "core\\components\\integration\\github\\import-users.tsx:GithubImportUsers",
+        "target": "core\\components\\integration\\github\\single-user-select.tsx:SingleUserSelect",
+        "targetAlias": "SingleUserSelect",
+        "targetProp": "users",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "core\\components\\integration\\github\\root.tsx:GithubImporterRoot",
+    "targetComponent": "core\\components\\integration\\github\\single-user-select.tsx:SingleUserSelect",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "core\\components\\integration\\github\\root.tsx:GithubImporterRoot",
+        "target": "core\\components\\integration\\github\\import-users.tsx:GithubImportUsers",
+        "targetAlias": "GithubImportUsers",
+        "targetProp": "setUsers",
+        "isPure": false
+      },
+      {
+        "source": "core\\components\\integration\\github\\import-users.tsx:GithubImportUsers",
+        "target": "core\\components\\integration\\github\\single-user-select.tsx:SingleUserSelect",
+        "targetAlias": "SingleUserSelect",
+        "targetProp": "setUsers",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "core\\components\\workspace\\sidebar\\sidebar-menu-items.tsx:SidebarMenuItems",
+    "targetComponent": "core\\components\\workspace\\sidebar\\sidebar-item.tsx:SidebarItemBase",
+    "canRefactorWithContext": true,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "core\\components\\workspace\\sidebar\\sidebar-menu-items.tsx:SidebarMenuItems",
+        "target": "ce\\components\\workspace\\sidebar\\sidebar-item.tsx:SidebarItem",
+        "targetAlias": "SidebarItem",
+        "targetProp": "item",
+        "isPure": true
+      },
+      {
+        "source": "ce\\components\\workspace\\sidebar\\sidebar-item.tsx:SidebarItem",
+        "target": "core\\components\\workspace\\sidebar\\sidebar-item.tsx:SidebarItemBase",
+        "targetAlias": "SidebarItemBase",
+        "targetProp": "item",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": true,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
+  },
+  {
+    "sourceComponent": "app\\(all)\\[workspaceSlug]\\(projects)\\projects\\(detail)\\[projectId]\\modules\\(detail)\\header.tsx:ModuleIssuesHeader",
+    "targetComponent": "core\\components\\issues\\issue-layouts\\layout-icon.tsx:IssueLayoutIcon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(all)\\[workspaceSlug]\\(projects)\\projects\\(detail)\\[projectId]\\modules\\(detail)\\header.tsx:ModuleIssuesHeader",
+        "target": "core\\components\\issues\\issue-layouts\\filters\\header\\mobile-layout-selection.tsx:MobileLayoutSelection",
+        "targetAlias": "MobileLayoutSelection",
+        "targetProp": "activeLayout",
+        "isPure": true
+      },
+      {
+        "source": "core\\components\\issues\\issue-layouts\\filters\\header\\mobile-layout-selection.tsx:MobileLayoutSelection",
+        "target": "core\\components\\issues\\issue-layouts\\layout-icon.tsx:IssueLayoutIcon",
+        "targetAlias": "IssueLayoutIcon",
+        "targetProp": "layout",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
     "sourceComponent": "core\\components\\issues\\filters.tsx:HeaderFilters",
     "targetComponent": "core\\components\\issues\\issue-layouts\\layout-icon.tsx:IssueLayoutIcon",
-    "canRefactorWithContext": true,
+    "canRefactorWithContext": false,
     "canRefactorWithComposition": false,
     "propPassings": [
       {
@@ -24,7 +248,147 @@
     "parallel": [],
     "sameSource": [],
     "sameTarget": [],
-    "destinationWithMultipleParentsPrec": true,
+    "destinationWithMultipleParentsPrec": false,
     "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(all)\\[workspaceSlug]\\(projects)\\projects\\(detail)\\[projectId]\\cycles\\(detail)\\header.tsx:CycleIssuesHeader",
+    "targetComponent": "core\\components\\issues\\issue-layouts\\layout-icon.tsx:IssueLayoutIcon",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "app\\(all)\\[workspaceSlug]\\(projects)\\projects\\(detail)\\[projectId]\\cycles\\(detail)\\header.tsx:CycleIssuesHeader",
+        "target": "core\\components\\issues\\issue-layouts\\filters\\header\\mobile-layout-selection.tsx:MobileLayoutSelection",
+        "targetAlias": "MobileLayoutSelection",
+        "targetProp": "activeLayout",
+        "isPure": true
+      },
+      {
+        "source": "core\\components\\issues\\issue-layouts\\filters\\header\\mobile-layout-selection.tsx:MobileLayoutSelection",
+        "target": "core\\components\\issues\\issue-layouts\\layout-icon.tsx:IssueLayoutIcon",
+        "targetAlias": "IssueLayoutIcon",
+        "targetProp": "layout",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "core\\components\\workspace-notifications\\sidebar\\notification-card\\item.tsx:NotificationItem",
+    "targetComponent": "core\\components\\editor\\lite-text\\editor.tsx:LiteTextEditor",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "core\\components\\workspace-notifications\\sidebar\\notification-card\\item.tsx:NotificationItem",
+        "target": "core\\components\\workspace-notifications\\sidebar\\notification-card\\content.tsx:NotificationContent",
+        "targetAlias": "NotificationContent",
+        "targetProp": "workspaceId",
+        "isPure": true
+      },
+      {
+        "source": "core\\components\\workspace-notifications\\sidebar\\notification-card\\content.tsx:NotificationContent",
+        "target": "core\\components\\editor\\lite-text\\editor.tsx:LiteTextEditor",
+        "targetAlias": "LiteTextEditor",
+        "targetProp": "workspaceId",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "core\\components\\workspace-notifications\\sidebar\\notification-card\\item.tsx:NotificationItem",
+    "targetComponent": "core\\components\\editor\\lite-text\\editor.tsx:LiteTextEditor",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "core\\components\\workspace-notifications\\sidebar\\notification-card\\item.tsx:NotificationItem",
+        "target": "core\\components\\workspace-notifications\\sidebar\\notification-card\\content.tsx:NotificationContent",
+        "targetAlias": "NotificationContent",
+        "targetProp": "workspaceSlug",
+        "isPure": true
+      },
+      {
+        "source": "core\\components\\workspace-notifications\\sidebar\\notification-card\\content.tsx:NotificationContent",
+        "target": "core\\components\\editor\\lite-text\\editor.tsx:LiteTextEditor",
+        "targetAlias": "LiteTextEditor",
+        "targetProp": "workspaceSlug",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "core\\components\\workspace-notifications\\sidebar\\notification-card\\item.tsx:NotificationItem",
+    "targetComponent": "core\\components\\editor\\lite-text\\editor.tsx:LiteTextEditor",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": false,
+    "propPassings": [
+      {
+        "source": "core\\components\\workspace-notifications\\sidebar\\notification-card\\item.tsx:NotificationItem",
+        "target": "core\\components\\workspace-notifications\\sidebar\\notification-card\\content.tsx:NotificationContent",
+        "targetAlias": "NotificationContent",
+        "targetProp": "projectId",
+        "isPure": true
+      },
+      {
+        "source": "core\\components\\workspace-notifications\\sidebar\\notification-card\\content.tsx:NotificationContent",
+        "target": "core\\components\\editor\\lite-text\\editor.tsx:LiteTextEditor",
+        "targetAlias": "LiteTextEditor",
+        "targetProp": "projectId",
+        "isPure": true
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": false
+  },
+  {
+    "sourceComponent": "app\\(all)\\sign-up\\page.tsx:SignUpPage",
+    "targetComponent": "core\\components\\auth-screens\\header.tsx:AuthHeader",
+    "canRefactorWithContext": false,
+    "canRefactorWithComposition": true,
+    "propPassings": [
+      {
+        "source": "app\\(all)\\sign-up\\page.tsx:SignUpPage",
+        "target": "core\\components\\auth-screens\\auth-base.tsx:AuthBase",
+        "targetAlias": "AuthBase",
+        "targetProp": "authType",
+        "isPure": false
+      },
+      {
+        "source": "core\\components\\auth-screens\\auth-base.tsx:AuthBase",
+        "target": "core\\components\\auth-screens\\header.tsx:AuthHeader",
+        "targetAlias": "AuthHeader",
+        "targetProp": "type",
+        "isPure": false
+      }
+    ],
+    "samePath": [],
+    "parallel": [],
+    "sameSource": [],
+    "sameTarget": [],
+    "destinationWithMultipleParentsPrec": false,
+    "nonForwardedPropsInIntermediateComponentsPrec": true
   }
 ]

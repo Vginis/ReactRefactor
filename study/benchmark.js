@@ -255,8 +255,8 @@ export const projects = [
     {
         projectName: 'plane',
         resultsFile: 'candidates-plane-e710f5b.json',
-        files: 144,
-        totalComponents: 104,
+        files: 1848,
+        totalComponents: 1358,
         sloc:  143712,
         stars: "59.4",
         repo: "makeplane/plane",
