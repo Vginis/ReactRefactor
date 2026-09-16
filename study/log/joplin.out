@@ -1,4 +1,10 @@
-React file loading: 3.825s
+Options: {
+  interactive: false,
+  debug: false,
+  project: '../benchmark/joplin/packages/app-desktop',
+  root: '../benchmark/joplin/packages/app-desktop/app.ts'
+}
+React file loading: 3.350s
 UserWebview is in ..\benchmark\joplin\packages\app-desktop\services\plugins\UserWebview.tsx
 UserWebviewDialog is in ..\benchmark\joplin\packages\app-desktop\services\plugins\UserWebviewDialog.tsx
 UserWebviewDialogButtonBar is in ..\benchmark\joplin\packages\app-desktop\services\plugins\UserWebviewDialogButtonBar.tsx
@@ -121,13 +127,13 @@ PluginBox is in ..\benchmark\joplin\packages\app-desktop\gui\ConfigScreen\contro
 PluginsStates is in ..\benchmark\joplin\packages\app-desktop\gui\ConfigScreen\controls\plugins\PluginsStates.tsx
 SearchPlugins is in ..\benchmark\joplin\packages\app-desktop\gui\ConfigScreen\controls\plugins\SearchPlugins.tsx
 Button is in ..\benchmark\joplin\packages\app-desktop\gui\Button\Button.tsx
-Component identification: 648.099ms
+Component identification: 691.562ms
 Number of analyzed files: 463
 Number of found Components: 122
-Alias resolution: 0.246ms
+Alias resolution: 0.204ms
 Analyzing component hierarchy for 27 root components
-Hierarchy resolution: 0.694ms
-PD detection: 67.079ms
+Hierarchy resolution: 0.685ms
+PD detection: 66.395ms
 Found: 15 Prop Drilling Occurences
 [WindowCommandsAndDialogs(themeId), PluginDialogs(themeId (drilled only)), UserWebviewDialog(themeId (drilled only)), UserWebview] [32m(Context)[0m [31m(Component Composition)[0m
 [RootComponent(windowId (drilled only)), SecondaryWindow(windowId), NewWindowOrIFrame] [32m(Context)[0m [31m(Component Composition)[0m
@@ -144,4 +150,4 @@ Found: 15 Prop Drilling Occurences
 [FolderItem(isExpanded), ExpandLink(isExpanded (drilled only)), ExpandIcon] [32m(Context)[0m [31m(Component Composition)[0m
 [FolderItem(className (drilled only)), ExpandLink(className), EmptyExpandLink] [31m(Context)[0m [32m(Component Composition)[0m
 [NoteListControls(inputRef), SearchBar(inputRef), SearchInput] [31m(Context)[0m [31m(Component Composition)[0m
-Execution time: 4.657s
+Execution time: 4.168s

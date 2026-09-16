@@ -1,4 +1,10 @@
-React file loading: 37.597s
+Options: {
+  interactive: false,
+  debug: false,
+  project: '../benchmark/grafana/public/app',
+  root: '../benchmark/grafana/public/app/AppWrapper.tsx'
+}
+React file loading: 34.862s
 AppWrapper is in ..\benchmark\grafana\public\app\AppWrapper.tsx
 DataSourceDashboardRoute is in ..\benchmark\grafana\public\app\routes\routes.tsx
 DataSourceEditRoute is in ..\benchmark\grafana\public\app\routes\routes.tsx
@@ -2727,13 +2733,13 @@ PermissionListItem is in ..\benchmark\grafana\public\app\core\components\AccessC
 Permissions is in ..\benchmark\grafana\public\app\core\components\AccessControl\Permissions.tsx
 TestCreationComponent is in ..\benchmark\grafana\public\app\api\clients\folder\v1beta1\test-utils.tsx
 TestUpdateComponent is in ..\benchmark\grafana\public\app\api\clients\folder\v1beta1\test-utils.tsx
-Component identification: 13.363s
+Component identification: 15.489s
 Number of analyzed files: 4178
 Number of found Components: 2728
-Alias resolution: 2.139ms
+Alias resolution: 2.229ms
 Analyzing component hierarchy for 467 root components
-Hierarchy resolution: 16.072ms
-PD detection: 25.340s
+Hierarchy resolution: 14.231ms
+PD detection: 17.845s
 Found: 1376 Prop Drilling Occurences
 [LogsContainer(range (drilled only)), UnthemedLogs(timeRange), LogList(timeRange (drilled only)), LogListComponent(timeRange), LogLineDetails(timeRange (drilled only)), LogLineDetailsTabs(timeRange (drilled only)), LogLineDetailsComponent(timeRange (drilled only)), LogLineDetailsTrace(timeRange), TraceView(timeRange (drilled only)), UnthemedTraceTimelineViewer] [32m(Context)[0m [31m(Component Composition)[0m
 [LogLineContext(timeRange (drilled only)), LogList(timeRange (drilled only)), LogListComponent(timeRange), LogLineDetails(timeRange (drilled only)), LogLineDetailsTabs(timeRange (drilled only)), LogLineDetailsComponent(timeRange (drilled only)), LogLineDetailsTrace(timeRange), TraceView(timeRange (drilled only)), UnthemedTraceTimelineViewer] [32m(Context)[0m [31m(Component Composition)[0m
@@ -4111,4 +4117,4 @@ Found: 1376 Prop Drilling Occurences
 [ActionsValueEditor(getSuggestions (drilled only)), ActionsInlineEditor(getSuggestions (drilled only)), ActionEditorModalContent] [32m(Context)[0m [31m(Component Composition)[0m
 [ChangePassword(pristine), ValidationLabels(pristine (drilled only)), ValidationLabel] [32m(Context)[0m [31m(Component Composition)[0m
 [ChangePassword(password), ValidationLabels(password (drilled only)), ValidationLabel] [32m(Context)[0m [31m(Component Composition)[0m
-Execution time: 1:28.455 (m:ss.mmm)
+Execution time: 1:20.262 (m:ss.mmm)

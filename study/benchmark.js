@@ -46,7 +46,8 @@ export const projects = [
         repo: "apache/superset",
         version: "v6.0.0",
         commitId: "6a1c30e",
-        lang: "JS/TS"
+        lang: "JS/TS",
+        comment: "frontend"
     },
     {
         projectName: 'mastodon',
@@ -146,7 +147,7 @@ export const projects = [
     },
     {
         projectName: 'affine',
-        resultsFile: 'candidates-affine-947b05b.json',
+        resultsFile: 'candidates-affine-5c0e3b8.json',
         files: 2943,
         totalComponents: 1690,
         sloc:  231911,

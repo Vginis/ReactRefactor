@@ -1,4 +1,10 @@
-React file loading: 8.471s
+Options: {
+  interactive: false,
+  debug: false,
+  project: '../benchmark/superset/superset-frontend/src/',
+  root: '../benchmark/superset/superset-frontend/src/profile/index.tsx'
+}
+React file loading: 7.121s
 TimeTable is in ..\benchmark\superset\superset-frontend\src\visualizations\TimeTable\TimeTable.tsx
 ValueCell is in ..\benchmark\superset\superset-frontend\src\visualizations\TimeTable\components\ValueCell\ValueCell.tsx
 SparklineCell is in ..\benchmark\superset\superset-frontend\src\visualizations\TimeTable\components\SparklineCell\SparklineCell.tsx
@@ -524,13 +530,13 @@ DrillBySubmenu is in ..\benchmark\superset\superset-frontend\src\components\Char
 Row is in ..\benchmark\superset\superset-frontend\src\components\Chart\DrillBy\DrillBySubmenu.tsx
 ModifiedInfo is in ..\benchmark\superset\superset-frontend\src\components\AuditInfo\index.tsx
 AlteredSliceTag is in ..\benchmark\superset\superset-frontend\src\components\AlteredSliceTag\index.tsx
-Component identification: 1.979s
+Component identification: 2.042s
 Number of analyzed files: 978
 Number of found Components: 525
-Alias resolution: 0.637ms
+Alias resolution: 0.466ms
 Analyzing component hierarchy for 141 root components
-Hierarchy resolution: 2.624ms
-PD detection: 1.191s
+Hierarchy resolution: 2.589ms
+PD detection: 1.110s
 Found: 256 Prop Drilling Occurences
 [Chart(formData), SliceHeader(formData (drilled only)), SliceHeaderControls(formData), DrillDetailModal(formData (drilled only)), DrillDetailPane] [32m(Context)[0m [31m(Component Composition)[0m
 [SliceAdder(datasourceName (drilled only)), AddSliceCard(tooltipText), MetadataItem(tooltipText (drilled only)), TruncatedTextWithTooltip] [32m(Context)[0m [31m(Component Composition)[0m
@@ -788,4 +794,4 @@ Found: 256 Prop Drilling Occurences
 [DatasourceEditor(database (drilled only)), TableSelector(db), DatabaseSelector] [32m(Context)[0m [31m(Component Composition)[0m
 [DatasourceEditor(handleError (drilled only)), TableSelector(handleError), DatabaseSelector] [32m(Context)[0m [31m(Component Composition)[0m
 [DatasourceEditor(sqlLabMode (drilled only)), TableSelector(sqlLabMode), DatabaseSelector] [32m(Context)[0m [31m(Component Composition)[0m
-Execution time: 13.285s
+Execution time: 11.680s

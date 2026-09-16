@@ -1,4 +1,10 @@
-React file loading: 1.466s
+Options: {
+  interactive: false,
+  debug: false,
+  project: '../benchmark/mitmproxy/web/src/js',
+  root: '../benchmark/mitmproxy/web/src/js/app.jsx'
+}
+React file loading: 1.344s
 Wrapper is in ..\benchmark\mitmproxy\web\src\js\__tests__\test-utils.tsx
 TComponent is in ..\benchmark\mitmproxy\web\src\js\__tests__\components\helpers\AutoScrollSpec.tsx
 TComp is in ..\benchmark\mitmproxy\web\src\js\__tests__\components\contentviews\useContentSpec.tsx
@@ -115,13 +121,13 @@ Divider is in ..\benchmark\mitmproxy\web\src\js\components\common\Dropdown.tsx
 HideInStatic is in ..\benchmark\mitmproxy\web\src\js\components\common\HideInStatic.tsx
 Splitter is in ..\benchmark\mitmproxy\web\src\js\components\common\Splitter.tsx
 ToggleButton is in ..\benchmark\mitmproxy\web\src\js\components\common\ToggleButton.tsx
-Component identification: 295.786ms
+Component identification: 284.901ms
 Number of analyzed files: 204
 Number of found Components: 116
-Alias resolution: 0.193ms
+Alias resolution: 0.176ms
 Analyzing component hierarchy for 28 root components
-Hierarchy resolution: 0.691ms
-PD detection: 42.477ms
+Hierarchy resolution: 0.667ms
+PD detection: 38.848ms
 Found: 29 Prop Drilling Occurences
 [Request(flow), Message(flow (drilled only)), HttpMessage(flow), HttpMessageView(flow), CopyButton] [32m(Context)[0m [31m(Component Composition)[0m
 [Request(message), Message(message (drilled only)), HttpMessage(message), HttpMessageView(message), CopyButton] [32m(Context)[0m [31m(Component Composition)[0m
@@ -152,4 +158,4 @@ Found: 29 Prop Drilling Occurences
 [Response(message), Message(message (drilled only)), Headers] [32m(Context)[0m [31m(Component Composition)[0m
 [Response(flow), Message(flow (drilled only)), Trailers] [32m(Context)[0m [31m(Component Composition)[0m
 [Response(message), Message(message (drilled only)), Trailers] [32m(Context)[0m [31m(Component Composition)[0m
-Execution time: 1.901s
+Execution time: 1.739s
