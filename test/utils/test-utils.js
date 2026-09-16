@@ -42,7 +42,8 @@ function getFileManager(testProjectPath, rootFilePath, rootComponent, prefixMapp
     setProjectPath(testProjectPath)
     setRootFile(rootFilePath)
     globalThis.rootComponent = rootComponent
-    globalThis.prefixMappings = prefixMappings
+    globalThis.prefixMappings = prefixMappings ? 
+                prefixMappings.split(" ") : undefined
 
     const allFiles = getAllFiles(globalThis.projectPath);
     const hasMultiplePages = resolveIfProjectHasMultiplePages(globalThis.projectPath);

@@ -1,5 +1,6 @@
 import { getFileManager } from '../utils/test-utils.js';
 import { getModulePathRelativeToProjectRoot } from '../../lib/FileManager.js';
+import exp from 'node:constants';
 
 function expectSpecifierToPathResolution(specifier, reactFile, expectedModulePath) {
     let modulePath = globalThis.fileManager.getRelativeModulePath(specifier, reactFile)
@@ -10,16 +11,30 @@ function expectSpecifierToPathResolution(specifier, reactFile, expectedModulePat
 
 describe("Module path from prefix mappings", () => {
 
-    test("should resolve module paths from prefix mappings", () => {
+    test("should resolve module paths from @ prefix mappings", () => {
 
         const { fileManager } = getFileManager(
             "test//resources//ecommerce-react//src",
-            "test//resources//ecommerce-react//src//App.jsx", undefined, "@/=./");
+            "test//resources//ecommerce-react//src//App.jsx", undefined, "@/=");
 
         let reactFile = fileManager.getReactFile("components\\product\\ProductItem.jsx")
         expect(reactFile).toBeTruthy()
 
         expectSpecifierToPathResolution("@/components/common", reactFile, "components\\common")
+        
+    })
+
+    test("should resolve module paths from multiple prefixes", () => {
+
+        const { fileManager } = getFileManager(
+            "test//resources//ecommerce-react//src",
+            "test//resources//ecommerce-react//src//App.jsx", undefined, "@=core @/plane-web=ce");
+
+        let reactFile = fileManager.getReactFile("components\\product\\ProductItem.jsx")
+        expect(reactFile).toBeTruthy()
+
+        let path = fileManager.getRelativeModulePath("@/components/common", reactFile)
+        expect(path).toBe("core\\components\\common")
         
     })
 
