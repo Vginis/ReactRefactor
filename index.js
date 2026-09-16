@@ -22,6 +22,7 @@ program
     .requiredOption('--root <string>', 'Relative path of a source file declaring a root component')
     .option('-i, --interactive', 'Runs the tool in interactive mode', false)
     .option('-m, --prefix-mappings <string>', 'Mappings of module prefixes to paths relative to project root, e.g. "@//=core @//plane-web=ce" (single space separated)')
+    .option('-d, --debug', 'Debug mode', false)
 
 program.parse()
 
@@ -44,6 +45,7 @@ globalThis.rootFile = rootFile
 globalThis.rootComponent = rootComponent
 globalThis.fileType = fileType
 globalThis.prefixMappings = options.prefixMappings ? options.prefixMappings.split(" ") : undefined
+globalThis.debug = options.debug
 
 
 if (!projectPath && !rootFile) {
