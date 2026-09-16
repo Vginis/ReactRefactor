@@ -1,5 +1,17 @@
 #!/bin/bash
 
+# Create working directories
+mkdir stats
+mkdir stats/tmp
+mkdir ../benchmark
+
+# Install Dependencies
+npm install
+
+# Clone benchmark projects
+npm run clone-benchmark
+
+# Analyze benchmark projects
 ./study/scripts/benchmark/affine.sh
 ./study/scripts/benchmark/calcom.sh
 ./study/scripts/benchmark/carbon.sh

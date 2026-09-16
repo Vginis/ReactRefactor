@@ -18,7 +18,7 @@ import { execSync } from "node:child_process"
 
 const LATEX_OUTPUT_DIR = './study/latex'
 const RESULTS_DIR = './study/results'
-const BENCHMARKS_DIR = '../benchmark'
+const BENCHMARKS_DIR = '../benchmark2'
 
 const TBL1_DATASET_PROJECTS = `${LATEX_OUTPUT_DIR}/tbl1_dataset_projects.tex`
 const TBL2_PROP_DRILL_ADOPTION = `${LATEX_OUTPUT_DIR}/tbl2_prop_drilling_report.tex`
@@ -56,18 +56,22 @@ if (!action || action === 'latex') {
     fs.copyFileSync('./output.log',
         path.join('study', 'log', `${project}.out`))
 } else if (action === 'clone') {
-    cloneRepo(BENCHMARKS_DIR, 'carbon', 'carbon-app/carbon', '0a07790')
-    //cloneRepo('../benchmark', 'plane', 'makeplane/plane', 'e710f5b')
-    //cloneRepo('../benchmark', 'novu', 'novuhq/novu', 'cfbea2d')
-    //cloneRepo(BENCHMARKS_DIR, 'affine', 'toeverything/AFFiNE', '5c0e3b8')
+
+    projectList.forEach(project => {
+        cloneRepo(BENCHMARKS_DIR, project.projectName, project.repo, project.commitId)
+    })
 }
 
 
 function cloneRepo(benchmarkDir, projectName, repoId, commitId) {
     try {
-        
-        if (!fs.existsSync(BENCHMARKS_DIR)){
-            fs.mkdirSync(BENCHMARKS_DIR)
+        console.log(`Cloning repository ${repoId}@${commitId} ...`)
+        if (!fs.existsSync(benchmarkDir)){
+            fs.mkdirSync(benchmarkDir)
+        }
+        if (fs.existsSync(path.join(benchmarkDir, projectName))) {
+            console.log(`Project ${projectName} already cloned`)
+            return
         }
         let output = execSync(`git clone https://github.com/${repoId} ${projectName}`, { 
             cwd: `${benchmarkDir}`,
