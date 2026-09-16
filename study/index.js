@@ -18,7 +18,7 @@ import { execSync } from "node:child_process"
 
 const LATEX_OUTPUT_DIR = './study/latex'
 const RESULTS_DIR = './study/results'
-const BENCHMARKS_DIR = '../benchmark2'
+const BENCHMARKS_DIR = '../benchmark'
 
 const TBL1_DATASET_PROJECTS = `${LATEX_OUTPUT_DIR}/tbl1_dataset_projects.tex`
 const TBL2_PROP_DRILL_ADOPTION = `${LATEX_OUTPUT_DIR}/tbl2_prop_drilling_report.tex`
