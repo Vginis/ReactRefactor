@@ -18,6 +18,7 @@ import { execSync } from "node:child_process"
 
 const LATEX_OUTPUT_DIR = './study/latex'
 const RESULTS_DIR = './study/results'
+const BENCHMARKS_DIR = '../benchmark'
 
 const TBL1_DATASET_PROJECTS = `${LATEX_OUTPUT_DIR}/tbl1_dataset_projects.tex`
 const TBL2_PROP_DRILL_ADOPTION = `${LATEX_OUTPUT_DIR}/tbl2_prop_drilling_report.tex`
@@ -55,16 +56,19 @@ if (!action || action === 'latex') {
     fs.copyFileSync('./output.log',
         path.join('study', 'log', `${project}.out`))
 } else if (action === 'clone') {
-    //cloneRepo('../benchmark', 'carbon', 'carbon-app/carbon', '0a07790')
+    cloneRepo(BENCHMARKS_DIR, 'carbon', 'carbon-app/carbon', '0a07790')
     //cloneRepo('../benchmark', 'plane', 'makeplane/plane', 'e710f5b')
     //cloneRepo('../benchmark', 'novu', 'novuhq/novu', 'cfbea2d')
-    cloneRepo('../benchmark', 'affine', 'toeverything/AFFiNE', '5c0e3b8')
+    //cloneRepo(BENCHMARKS_DIR, 'affine', 'toeverything/AFFiNE', '5c0e3b8')
 }
 
 
 function cloneRepo(benchmarkDir, projectName, repoId, commitId) {
     try {
-        // Example: running a simple 'ls' or 'dir' command
+        
+        if (!fs.existsSync(BENCHMARKS_DIR)){
+            fs.mkdirSync(BENCHMARKS_DIR)
+        }
         let output = execSync(`git clone https://github.com/${repoId} ${projectName}`, { 
             cwd: `${benchmarkDir}`,
             encoding: 'utf8' });

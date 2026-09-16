@@ -5,7 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "latex": "node ./study/index.js latex",
+    "clone-benchmark": "node ./study/index.js clone"
+
   },
   "author": "",
   "license": "ISC",
