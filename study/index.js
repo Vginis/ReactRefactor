@@ -57,7 +57,8 @@ if (!action || action === 'latex') {
 } else if (action === 'clone') {
     //cloneRepo('../benchmark', 'carbon', 'carbon-app/carbon', '0a07790')
     //cloneRepo('../benchmark', 'plane', 'makeplane/plane', 'e710f5b')
-    cloneRepo('../benchmark', 'novu', 'novuhq/novu', 'cfbea2d')
+    //cloneRepo('../benchmark', 'novu', 'novuhq/novu', 'cfbea2d')
+    cloneRepo('../benchmark', 'affine', 'toeverything/AFFiNE', '5c0e3b8')
 }
 
 

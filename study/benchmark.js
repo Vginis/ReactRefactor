@@ -149,7 +149,7 @@ export const projects = [
         resultsFile: 'candidates-affine-947b05b.json',
         files: 2943,
         totalComponents: 1690,
-        sloc:  0,
+        sloc:  231911,
         stars: "72.5",
         repo: "toeverything/AFFiNE",
         version: "v0.25.1-beta.0",
