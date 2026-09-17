@@ -40,7 +40,7 @@ if (!action || action === 'latex') {
     generateLatexReports(sortedProjects);
 } else if (action === 'csv') {
     parseJSONResults();
-    generateCSV(projectList, './stats/prop_dillings.csv')
+    generateCSV(projectList, './prop-drillings-export.csv')
 } else if (action === 'pd-dependencies') {
 
 } else if (action === 'update-results') {
