@@ -4,7 +4,7 @@ Options: {
   project: '../benchmark/Rocket.Chat/apps/meteor/client',
   root: '../benchmark/Rocket.Chat/apps/meteor/client/main.ts'
 }
-React file loading: 10.358s
+React file loading: 11.660s
 TeamAutocomplete is in ..\benchmark\Rocket.Chat\apps\meteor\client\views\teams\contextualBar\TeamAutocomplete\TeamAutocomplete.tsx
 BaseRemoveUsersModal is in ..\benchmark\Rocket.Chat\apps\meteor\client\views\teams\contextualBar\members\RemoveUsersModal\BaseRemoveUsersModal.tsx
 RemoveUsersFirstStep is in ..\benchmark\Rocket.Chat\apps\meteor\client\views\teams\contextualBar\members\RemoveUsersModal\RemoveUsersFirstStep.tsx
@@ -1396,13 +1396,13 @@ GameCenter is in ..\benchmark\Rocket.Chat\apps\meteor\client\apps\gameCenter\Gam
 GameCenterContainer is in ..\benchmark\Rocket.Chat\apps\meteor\client\apps\gameCenter\GameCenterContainer.tsx
 GameCenterInvitePlayersModal is in ..\benchmark\Rocket.Chat\apps\meteor\client\apps\gameCenter\GameCenterInvitePlayersModal.tsx
 GameCenterList is in ..\benchmark\Rocket.Chat\apps\meteor\client\apps\gameCenter\GameCenterList.tsx
-Component identification: 3.133s
+Component identification: 3.093s
 Number of analyzed files: 2503
 Number of found Components: 1391
-Alias resolution: 0.927ms
+Alias resolution: 0.938ms
 Analyzing component hierarchy for 222 root components
-Hierarchy resolution: 5.795ms
-PD detection: 1.479s
+Hierarchy resolution: 5.332ms
+PD detection: 1.489s
 Found: 430 Prop Drilling Occurences
 [SettingsRoute(onClickBack (drilled only)), SettingsGroupSelector(onClickBack), LDAPGroupPage(onClickBack (drilled only)), BaseGroupPage(onClickBack), TabbedGroupPage(onClickBack (drilled only)), GenericGroupPage(onClickBack (drilled only)), SettingsGroupPage] [32m(Context)[0m [31m(Component Composition)[0m
 [NavBarSearchListBox(room), NavBarSearchRow(room), NavBarSearchItemWithData(room), SidebarItemBadges(room), OmnichannelBadges(room), RoomActivityIcon] [32m(Context)[0m [31m(Component Composition)[0m
@@ -1834,4 +1834,4 @@ Found: 430 Prop Drilling Occurences
 [ImageAttachment(setLoadImage), AttachmentImage(load (drilled only)), Load] [32m(Context)[0m [31m(Component Composition)[0m
 [AudioAttachment(size (drilled only)), MessageCollapsible(size), AttachmentSize] [32m(Context)[0m [32m(Component Composition)[0m
 [VideoAttachment(size (drilled only)), MessageCollapsible(size), AttachmentSize] [32m(Context)[0m [32m(Component Composition)[0m
-Execution time: 16.332s
+Execution time: 17.699s

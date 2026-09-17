@@ -4,7 +4,7 @@ Options: {
   project: '../benchmark/metabase/frontend/src/metabase/',
   root: '../benchmark/metabase/frontend/src/metabase/App.tsx'
 }
-React file loading: 20.837s
+React file loading: 24.700s
 App is in ..\benchmark\metabase\frontend\src\metabase\App.tsx
 ErrorBoundaryInner is in ..\benchmark\metabase\frontend\src\metabase\ErrorBoundary.tsx
 IsAuthenticated is in ..\benchmark\metabase\frontend\src\metabase\route-guards.tsx
@@ -2477,13 +2477,13 @@ LoginHistoryItem is in ..\benchmark\metabase\frontend\src\metabase\account\login
 LoginHistoryGroup is in ..\benchmark\metabase\frontend\src\metabase\account\login-history\components\LoginHistory\LoginHistory.jsx
 AccountLayout is in ..\benchmark\metabase\frontend\src\metabase\account\app\components\AccountLayout\AccountLayout.jsx
 AccountHeader is in ..\benchmark\metabase\frontend\src\metabase\account\app\components\AccountHeader\AccountHeader.tsx
-Component identification: 8.339s
+Component identification: 9.009s
 Number of analyzed files: 4788
 Number of found Components: 2472
-Alias resolution: 2.298ms
+Alias resolution: 2.25ms
 Analyzing component hierarchy for 501 root components
-Hierarchy resolution: 25.238ms
-PD detection: 31.920s
+Hierarchy resolution: 30.213ms
+PD detection: 31.813s
 Found: 1917 Prop Drilling Occurences
 [ActionCreatorWithContext(onClose (drilled only)), ActionCreator(onCloseModal), ActionCreatorView(onClose), DataReferenceInline(onClose (drilled only)), DataReference(onClose), MainPane(onClose (drilled only)), SidebarContent(onClose (drilled only)), SidebarHeader] [32m(Context)[0m [31m(Component Composition)[0m
 [ViewHeaderContainer(isObjectDetail (drilled only)), ViewTitleHeader(isObjectDetail), SavedQuestionLeftSide(isObjectDetail), QuestionDataSource(isObjectDetail (drilled only)), SourceTableBreadcrumbs(isObjectDetail), DataSourceCrumbs(isObjectDetail), HeadBreadcrumbs] [31m(Context)[0m [31m(Component Composition)[0m
@@ -4402,4 +4402,4 @@ Found: 1917 Prop Drilling Occurences
 [NotificationsAppInner(canManageSubscriptions), NotificationList(isEditable), NotificationCard] [32m(Context)[0m [31m(Component Composition)[0m
 [NotificationsAppInner(onUnsubscribe), NotificationList(onUnsubscribe), NotificationCard] [32m(Context)[0m [31m(Component Composition)[0m
 [NotificationsAppInner(onArchive), NotificationList(onArchive), NotificationCard] [32m(Context)[0m [31m(Component Composition)[0m
-Execution time: 1:15.556 (m:ss.mmm)
+Execution time: 1:21.286 (m:ss.mmm)

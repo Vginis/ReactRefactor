@@ -4,7 +4,7 @@ Options: {
   project: '../benchmark/carbon',
   root: '../benchmark/carbon/pages/index.js'
 }
-React file loading: 810.712ms
+React file loading: 803.462ms
 Contributors is in ..\benchmark\carbon\pages\about.js
 About is in ..\benchmark\carbon\pages\about.js
 Plan is in ..\benchmark\carbon\pages\account.js
@@ -113,13 +113,13 @@ Boxy is in ..\benchmark\carbon\components\svg\WindowThemes.js
 Font is in ..\benchmark\carbon\components\style\Font.js
 Reset is in ..\benchmark\carbon\components\style\Reset.js
 Typography is in ..\benchmark\carbon\components\style\Typography.js
-Component identification: 139.505ms
+Component identification: 137.534ms
 Number of analyzed files: 92
 Number of found Components: 108
-Alias resolution: 0.121ms
+Alias resolution: 0.126ms
 Analyzing component hierarchy for 12 root components
-Hierarchy resolution: 0.697ms
-PD detection: 103.274ms
+Hierarchy resolution: 0.719ms
+PD detection: 101.846ms
 Found: 69 Prop Drilling Occurences
 [EditorContainer(themes), Editor(themes (drilled only)), Themes(themes (drilled only)), ThemeCreate(items), ListSetting] [32m(Context)[0m [31m(Component Composition)[0m
 [Settings(windowControls (drilled only)), WindowSettings(windowControls (drilled only)), ThemeSelect(enabled (drilled only)), Toggle] [31m(Context)[0m [31m(Component Composition)[0m
@@ -190,4 +190,4 @@ Found: 69 Prop Drilling Occurences
 [Snippets(enableHeroText (drilled only)), Page(enableHeroText (drilled only)), Header] [32m(Context)[0m [32m(Component Composition)[0m
 [Snippet(onClick (drilled only)), ConfirmButton(onClick), Button] [31m(Context)[0m [31m(Component Composition)[0m
 [Embed(theme (drilled only)), Page(theme), StylesheetLink] [32m(Context)[0m [32m(Component Composition)[0m
-Execution time: 1.248s
+Execution time: 1.244s

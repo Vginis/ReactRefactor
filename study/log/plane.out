@@ -5,7 +5,7 @@ Options: {
   root: '../benchmark/plane/apps/web/app/layout.tsx',
   prefixMappings: '@=core @/plane-web=ce'
 }
-React file loading: 9.079s
+React file loading: 10.470s
 HomePageHeader is in ..\benchmark\plane\apps\web\ee\components\home\header.tsx
 IntercomProvider is in ..\benchmark\plane\apps\web\core\lib\intercom-provider.tsx
 PostHogProvider is in ..\benchmark\plane\apps\web\core\lib\posthog-provider.tsx
@@ -1364,13 +1364,13 @@ ResetPasswordLayout is in ..\benchmark\plane\apps\web\app\(all)\accounts\reset-p
 ResetPasswordPage is in ..\benchmark\plane\apps\web\app\(all)\accounts\reset-password\page.tsx
 ForgotPasswordLayout is in ..\benchmark\plane\apps\web\app\(all)\accounts\forgot-password\layout.tsx
 ForgotPasswordPage is in ..\benchmark\plane\apps\web\app\(all)\accounts\forgot-password\page.tsx
-Component identification: 3.211s
+Component identification: 3.272s
 Number of analyzed files: 1848
 Number of found Components: 1358
-Alias resolution: 1.351ms
+Alias resolution: 0.843ms
 Analyzing component hierarchy for 227 root components
-Hierarchy resolution: 26.619ms
-PD detection: 1.054s
+Hierarchy resolution: 10.546ms
+PD detection: 1.064s
 Found: 14 Prop Drilling Occurences
 [KanBan(cardHeight (drilled only)), KanbanColumnLoader(cardHeight (drilled only)), KanbanIssueBlockLoader] [31m(Context)[0m [31m(Component Composition)[0m
 [KanBan(shouldAnimate (drilled only)), KanbanColumnLoader(shouldAnimate), KanbanIssueBlockLoader] [31m(Context)[0m [31m(Component Composition)[0m
@@ -1386,4 +1386,4 @@ Found: 14 Prop Drilling Occurences
 [NotificationItem(workspaceSlug (drilled only)), NotificationContent(workspaceSlug (drilled only)), LiteTextEditor] [31m(Context)[0m [31m(Component Composition)[0m
 [NotificationItem(projectId (drilled only)), NotificationContent(projectId (drilled only)), LiteTextEditor] [31m(Context)[0m [31m(Component Composition)[0m
 [SignUpPage(authType), AuthBase(type), AuthHeader] [31m(Context)[0m [32m(Component Composition)[0m
-Execution time: 13.482s
+Execution time: 15.129s

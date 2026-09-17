@@ -4,7 +4,7 @@ Options: {
   project: '../benchmark/redash/client/app',
   root: '../benchmark/redash/client/app/index.js'
 }
-React file loading: 1.916s
+React file loading: 2.174s
 UserProfile is in ..\benchmark\redash\client\app\pages\users\UserProfile.jsx
 UsersListActions is in ..\benchmark\redash\client\app\pages\users\UsersList.jsx
 UsersList is in ..\benchmark\redash\client\app\pages\users\UsersList.jsx
@@ -257,13 +257,13 @@ General is in ..\benchmark\redash\client\app\components\admin\StatusBlock.jsx
 DatabaseMetrics is in ..\benchmark\redash\client\app\components\admin\StatusBlock.jsx
 Queues is in ..\benchmark\redash\client\app\components\admin\StatusBlock.jsx
 Manager is in ..\benchmark\redash\client\app\components\admin\StatusBlock.jsx
-Component identification: 433.583ms
+Component identification: 435.056ms
 Number of analyzed files: 303
 Number of found Components: 252
-Alias resolution: 0.251ms
+Alias resolution: 0.247ms
 Analyzing component hierarchy for 67 root components
-Hierarchy resolution: 1.455ms
-PD detection: 235.15ms
+Hierarchy resolution: 1.448ms
+PD detection: 229.691ms
 Found: 80 Prop Drilling Occurences
 [UserProfile(user), EditableUserProfile(user), PasswordForm(user), ResendInvitationForm(user), PasswordLinkAlert] [32m(Context)[0m [31m(Component Composition)[0m
 [UserProfile(user), EditableUserProfile(user), PasswordForm(user), PasswordResetForm(user), PasswordLinkAlert] [32m(Context)[0m [31m(Component Composition)[0m
@@ -345,4 +345,4 @@ Found: 80 Prop Drilling Occurences
 [VisualizationWidget(onParametersUpdate (drilled only)), VisualizationWidgetHeader(onValuesChange (drilled only)), Parameters] [32m(Context)[0m [31m(Component Composition)[0m
 [VisualizationWidget(onParametersEdit (drilled only)), VisualizationWidgetHeader(onParametersEdit (drilled only)), Parameters] [32m(Context)[0m [31m(Component Composition)[0m
 [VisualizationWidget(onExpand (drilled only)), VisualizationWidgetFooter(onClick (drilled only)), PlainButton] [31m(Context)[0m [31m(Component Composition)[0m
-Execution time: 2.806s
+Execution time: 3.111s

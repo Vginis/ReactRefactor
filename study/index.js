@@ -121,17 +121,23 @@ function generateLatexReports(projects) {
 
 function resetLatexFiles() {
     writeFileSync(TBL1_DATASET_PROJECTS, 
-        `% ${"Project".padEnd(15, " ")} ${"Lang".padEnd(7, " ")} ${"SLOC".padEnd(11, " ")} ${"Stars".padEnd(11, " ")}  CommitId  ${"Github Repository".padEnd(22, " ")}\n`);
+        `% ${"Project".padEnd(13, " ")} | ${"Lang".padEnd(5, " ")} | ${"SLOC".padEnd(9, " ")} | ${"Stars".padEnd(8, " ")}  | CommitId  | ${"Github Repository".padEnd(22, " ")}\n`);
 
     writeFileSync(TBL2_PROP_DRILL_ADOPTION, 
-        `% ${"Project".padEnd(15, " ")} ${"PDs".padEnd(7, " ")} ${"Components".padEnd(15, " ")} Prop Drilling Participants \n`);
+        `% ${"Project".padEnd(13, " ")} | ${"PDs".padEnd(5, " ")} | ${"Components".padEnd(13, " ")} | Prop Drilling Participants \n`);
 
     writeFileSync(TBL3_PROP_DRILL_DEPTH_DISTR, 
-        `% ${"Project".padEnd(15, " ")} ${"PDs".padEnd(6, " ")} ` +
-        `${"Depth#1".padEnd(24, " ")} ${"Depth#2".padEnd(24, " ")} ${"Depth#3".padEnd(24, " ")} \n`
+        `% ${"Project".padEnd(13, " ")} | ${"PDs".padEnd(4, " ")} | ` +
+        `${"Depth 1".padEnd(20, " ")} | ${"Depth 2".padEnd(20, " ")} | ${"Depth 3 ".padEnd(24, " ")} \n`
     );
-    writeFileSync(TBL4_COMP_PROP_DRILL_DISTR, "");
-    writeFileSync(TBL5_REFACTORING_CANDIDATES, "");
+    writeFileSync(TBL4_COMP_PROP_DRILL_DISTR, 
+        `% ${"Project".padEnd(13, " ")} | ${"CPDs".padEnd(4, " ")} | ` +
+        `${"Breadth 2".padEnd(20, " ")} | ${"Breadth 3".padEnd(20, " ")} | ${"Breadth >= 4".padEnd(20, " ")} ` +
+        `| ${"Total Member PDs".padEnd(20, " ")}| ${"Member PDs in |CPD| >= 3".padEnd(20, " ")} \n`
+    );
+    writeFileSync(TBL5_REFACTORING_CANDIDATES, 
+        `% ${"Project".padEnd(13, " ")} | ${"PDs".padEnd(4, " ")} | ` +
+        `${"Candidates Context".padEnd(20, " ")} | ${"Candidates Composition".padEnd(20, " ")} | ${"Total Refactoring Candidates".padEnd(5, " ")} \n`);
 }
 
 function initTotalRowObjects() {
@@ -350,11 +356,14 @@ function generateReportForRefactoringPropDrillings(propDrillingsList, project, t
     const propDrillingsCount = propDrillingsList.length;
 
     const latexRow =
-        `${project.projectName} ` +
-        `& ${propDrillingsCount} ` +
-        `& ${formatTotalStatsColumn(propDrillingsCount, contextCount).latexFormat} ` +
-        `& ${formatTotalStatsColumn(propDrillingsCount, componentCompositionCount).latexFormat} ` +
-        `& ${formatTotalStatsColumn(propDrillingsCount, refactorablePropDrillingsCount).latexFormat} \\\\\n`;
+        `${project.projectName.padEnd(15, " ")} ` +
+        `& ${padStart(propDrillingsCount, 4)} ` +
+        `& ${formatTotalStatsColumn(propDrillingsCount, contextCount)
+            .latexFormat.padEnd(20, " ")} ` +
+        `& ${formatTotalStatsColumn(propDrillingsCount, componentCompositionCount)
+            .latexFormat.padEnd(20, " ")} ` +
+        `& ${formatTotalStatsColumn(propDrillingsCount, refactorablePropDrillingsCount)
+            .latexFormat.padEnd(20, " ")} \\\\\n`;
 
     appendFileSync(TBL5_REFACTORING_CANDIDATES, latexRow, 'utf8');
 
@@ -367,13 +376,15 @@ function generateReportForRefactoringPropDrillings(propDrillingsList, project, t
 function addTotalRowForRefactoringPropDrillings(totalObjectTable4) {
     const totalPropDrillings = totalObjectTable4.totalPropDrillings;
 
-    const latexEmptyRow = ' \\\\\n';
+    const latexEmptyRow = ' %\\bottomrule \n';
     const latexRow =
-        `Total \t` +
-        `& ${padStart(totalPropDrillings, 4)} \t` +
-        `& ${formatTotalStatsColumn(totalPropDrillings, totalObjectTable4.contextRefactoringsCount).latexFormat} \t` +
-        `& ${formatTotalStatsColumn(totalPropDrillings, totalObjectTable4.compositionRefactoringsCount).latexFormat} \t` +
-        `& ${formatTotalStatsColumn(totalPropDrillings, totalObjectTable4.totalRefactoringsCount).latexFormat} \t`;
+        `\\cmidrule{1-5} \n` +
+        `${"\\textbf{Total}".padEnd(15, " ")} ` +
+        `& ${padStart(totalPropDrillings, 4)} ` +
+        `& ${formatTotalStatsColumn(totalPropDrillings, totalObjectTable4.contextRefactoringsCount).latexFormat} ` +
+        `& ${formatTotalStatsColumn(totalPropDrillings, totalObjectTable4.compositionRefactoringsCount).latexFormat}    ` +
+        `& ${formatTotalStatsColumn(totalPropDrillings, totalObjectTable4.totalRefactoringsCount).latexFormat} \\\\\n` +
+        `\\cmidrule{1-5} \n`;
 
     appendFileSync(TBL5_REFACTORING_CANDIDATES, latexEmptyRow, 'utf8');
     appendFileSync(TBL5_REFACTORING_CANDIDATES, latexRow, 'utf8');

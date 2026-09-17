@@ -4,7 +4,7 @@ Options: {
   project: '../benchmark/prometheus/web/ui/react-app/src',
   root: '../benchmark/prometheus/web/ui/react-app/src/App.tsx'
 }
-React file loading: 943.084ms
+React file loading: 1.003s
 App is in ..\benchmark\prometheus\web\ui\react-app\src\App.tsx
 Navigation is in ..\benchmark\prometheus\web\ui\react-app\src\Navbar.tsx
 ThemeToggle is in ..\benchmark\prometheus\web\ui\react-app\src\Theme.tsx
@@ -64,13 +64,13 @@ CustomInfiniteScroll is in ..\benchmark\prometheus\web\ui\react-app\src\componen
 SearchBar is in ..\benchmark\prometheus\web\ui\react-app\src\components\SearchBar.tsx
 ToggleMoreLess is in ..\benchmark\prometheus\web\ui\react-app\src\components\ToggleMoreLess.tsx
 StartingContent is in ..\benchmark\prometheus\web\ui\react-app\src\components\withStartingIndicator.tsx
-Component identification: 183.005ms
+Component identification: 210.276ms
 Number of analyzed files: 70
 Number of found Components: 59
-Alias resolution: 0.102ms
+Alias resolution: 0.111ms
 Analyzing component hierarchy for 12 root components
-Hierarchy resolution: 0.499ms
-PD detection: 31.067ms
+Hierarchy resolution: 0.524ms
+PD detection: 33.634ms
 Found: 25 Prop Drilling Occurences
 [PanelList(metrics), PanelListContent(metricNames), Panel(metricNames (drilled only)), ExpressionInput(metrics), MetricsExplorer] [32m(Context)[0m [31m(Component Composition)[0m
 [PanelList(useLocalTime), PanelListContent(useLocalTime (drilled only)), Panel(useLocalTime (drilled only)), GraphControls(useLocalTime (drilled only)), TimeInput] [32m(Context)[0m [31m(Component Composition)[0m
@@ -97,4 +97,4 @@ Found: 25 Prop Drilling Occurences
 [Panel(lastQueryParams (drilled only)), GraphTabContent(queryParams (drilled only)), Graph] [32m(Context)[0m [31m(Component Composition)[0m
 [Panel(handleTimeRangeSelection (drilled only)), GraphTabContent(handleTimeRangeSelection (drilled only)), Graph] [32m(Context)[0m [31m(Component Composition)[0m
 [Config(error), ConfigContent(error (drilled only)), YamlContent] [32m(Context)[0m [31m(Component Composition)[0m
-Execution time: 1.258s
+Execution time: 1.367s

@@ -4,7 +4,7 @@ Options: {
   project: '../benchmark/novu/apps/dashboard/src',
   root: '../benchmark/novu/apps/dashboard/src/main.tsx'
 }
-React file loading: 11.007s
+React file loading: 13.062s
 Protect is in ..\benchmark\novu\apps\dashboard\src\utils\protect.tsx
 ClerkLoaded is in ..\benchmark\novu\apps\dashboard\src\utils\self-hosted\clerk-loaded.tsx
 OrganizationList is in ..\benchmark\novu\apps\dashboard\src\utils\self-hosted\components.tsx
@@ -1888,13 +1888,13 @@ OverviewItem is in ..\benchmark\novu\apps\dashboard\src\components\activity\comp
 ActivityStatusBadge is in ..\benchmark\novu\apps\dashboard\src\components\activity\components\status-badge.tsx
 StatusPreviewCard is in ..\benchmark\novu\apps\dashboard\src\components\activity\components\status-preview-card.tsx
 StepIndicators is in ..\benchmark\novu\apps\dashboard\src\components\activity\components\step-indicators.tsx
-Component identification: 5.255s
+Component identification: 5.118s
 Number of analyzed files: 1577
 Number of found Components: 1883
-Alias resolution: 1.046ms
+Alias resolution: 1.229ms
 Analyzing component hierarchy for 344 root components
-Hierarchy resolution: 97.503ms
-PD detection: 21.539s
+Hierarchy resolution: 55.726ms
+PD detection: 23.838s
 Found: 1334 Prop Drilling Occurences
 [ControlInput(resourceId), EditorOverlays(resourceId), EditTranslationPopover(resourceId), TranslationKeyInput(resourceId (drilled only)), TranslationDrawer(key (drilled only)), TranslationDrawerContent] [32m(Context)[0m [31m(Component Composition)[0m
 [BubbleMenuVariablePillForWorkflows(resourceId (drilled only)), EditorOverlays(resourceId), EditTranslationPopover(resourceId), TranslationKeyInput(resourceId (drilled only)), TranslationDrawer(key (drilled only)), TranslationDrawerContent] [32m(Context)[0m [31m(Component Composition)[0m
@@ -3230,4 +3230,4 @@ Found: 1334 Prop Drilling Occurences
 [WhatsAppWhatsNextGuide(onClose (drilled only)), IntegrationCredentialsSidebar(onClose), IntegrationSheet] [32m(Context)[0m [31m(Component Composition)[0m
 [WhatsAppConnectedView(whatsappIntegration), WhatsAppInboxCard(whatsappIntegration (drilled only)), WhatsAppInboxCardBody] [32m(Context)[0m [31m(Component Composition)[0m
 [MsTeamsDistribution(code (drilled only)), CodeBlock(content), CopyToClipboard] [32m(Context)[0m [31m(Component Composition)[0m
-Execution time: 49.889s
+Execution time: 54.479s

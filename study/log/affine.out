@@ -5,7 +5,7 @@ Options: {
   root: '../benchmark/affine/packages/frontend/apps/electron/src/main/index.ts',
   prefixMappings: '@affine/core=core/src @affine/component=component/src @affine/electron=apps/electron/src'
 }
-React file loading: 14.449s
+React file loading: 13.271s
 App is in ..\benchmark\affine\packages\frontend\media-capture-playground\web\app.tsx
 AppItem is in ..\benchmark\affine\packages\frontend\media-capture-playground\web\components\app-item.tsx
 AppList is in ..\benchmark\affine\packages\frontend\media-capture-playground\web\components\app-list.tsx
@@ -1696,13 +1696,13 @@ ToggleGroup is in ..\benchmark\affine\packages\frontend\admin\src\components\ui\
 ToggleGroupItem is in ..\benchmark\affine\packages\frontend\admin\src\components\ui\toggle-group.tsx
 Toggle is in ..\benchmark\affine\packages\frontend\admin\src\components\ui\toggle.tsx
 TooltipContent is in ..\benchmark\affine\packages\frontend\admin\src\components\ui\tooltip.tsx
-Component identification: 4.075s
+Component identification: 3.630s
 Number of analyzed files: 2493
 Number of found Components: 1690
-Alias resolution: 0.959ms
+Alias resolution: 0.957ms
 Analyzing component hierarchy for 344 root components
-Hierarchy resolution: 23.537ms
-PD detection: 6.609s
+Hierarchy resolution: 24.415ms
+PD detection: 6.495s
 Found: 841 Prop Drilling Occurences
 [PageDetailEditor(page), BlockSuiteEditor(page), BlockSuiteEditorImpl(page), BlocksuiteDocEditor(doc (drilled only)), StarterBar(doc), StarterBarNotEmpty] [32m(Context)[0m [31m(Component Composition)[0m
 [Component(onClose (drilled only)), MobileSignInPanel(onSkip), SignInPanel(onSkip (drilled only)), SignInStep(onClick (drilled only)), Button] [31m(Context)[0m [31m(Component Composition)[0m
@@ -2545,4 +2545,4 @@ Found: 841 Prop Drilling Occurences
 [UserForm(handleClose), RightPanelHeader(onClick (drilled only)), Button] [31m(Context)[0m [31m(Component Composition)[0m
 [UserForm(handleConfirm), RightPanelHeader(onClick (drilled only)), Button] [31m(Context)[0m [31m(Component Composition)[0m
 [UpdateUserForm(title (drilled only)), UserForm(title (drilled only)), RightPanelHeader] [32m(Context)[0m [31m(Component Composition)[0m
-Execution time: 29.215s
+Execution time: 27.857s

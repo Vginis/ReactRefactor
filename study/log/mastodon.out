@@ -4,7 +4,7 @@ Options: {
   project: '../benchmark/mastodon/app/javascript',
   root: '../benchmark/mastodon/app/javascript/mastodon/main.tsx'
 }
-React file loading: 4.273s
+React file loading: 4.852s
 Wrapper is in ..\benchmark\mastodon\app\javascript\testing\rendering.tsx
 C is in ..\benchmark\mastodon\app\javascript\mastodon\identity_context.tsx
 C is in ..\benchmark\mastodon\app\javascript\mastodon\utils\react_router.tsx
@@ -399,13 +399,13 @@ ReportReasonSelector is in ..\benchmark\mastodon\app\javascript\mastodon\compone
 Retention is in ..\benchmark\mastodon\app\javascript\mastodon\components\admin\Retention.jsx
 Trends is in ..\benchmark\mastodon\app\javascript\mastodon\components\admin\Trends.jsx
 Account is in ..\benchmark\mastodon\app\javascript\mastodon\components\account\index.tsx
-Component identification: 917.824ms
+Component identification: 992.506ms
 Number of analyzed files: 640
 Number of found Components: 394
-Alias resolution: 0.361ms
+Alias resolution: 0.394ms
 Analyzing component hierarchy for 134 root components
-Hierarchy resolution: 2.948ms
-PD detection: 543.587ms
+Hierarchy resolution: 3.492ms
+PD detection: 586.155ms
 Found: 219 Prop Drilling Occurences
 [DisplayName(className (drilled only)), DisplayNameDefault(className), DisplayNameWithoutDomain(className), AnimateEmojiProvider] [32m(Context)[0m [31m(Component Composition)[0m
 [EmbeddedStatus(className (drilled only)), EmbeddedStatusContent(className (drilled only)), EmojiHTML(className (drilled only)), AnimateEmojiProvider] [32m(Context)[0m [31m(Component Composition)[0m
@@ -626,4 +626,4 @@ Found: 219 Prop Drilling Occurences
 [HTMLBlock(extraEmojis (drilled only)), EmojiHTML(emojis (drilled only)), CustomEmojiProvider] [31m(Context)[0m [32m(Component Composition)[0m
 [HTMLBlock(as (drilled only)), EmojiHTML(as (drilled only)), AnimateEmojiProvider] [32m(Context)[0m [31m(Component Composition)[0m
 [HTMLBlock(className (drilled only)), EmojiHTML(className (drilled only)), AnimateEmojiProvider] [32m(Context)[0m [31m(Component Composition)[0m
-Execution time: 6.509s
+Execution time: 7.322s
