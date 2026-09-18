@@ -124,7 +124,7 @@ function resetLatexFiles() {
         `% ${"Project".padEnd(13, " ")} | ${"Lang".padEnd(5, " ")} | ${"SLOC".padEnd(9, " ")} | ${"Stars".padEnd(8, " ")}  | CommitId  | ${"Github Repository".padEnd(22, " ")}\n`);
 
     writeFileSync(TBL2_PROP_DRILL_ADOPTION, 
-        `% ${"Project".padEnd(13, " ")} | ${"PDs".padEnd(5, " ")} | ${"Components".padEnd(13, " ")} | Prop Drilling Participants \n`);
+        `% ${"Project".padEnd(13, " ")} | ${"PDs".padEnd(5, " ")} | ${"PPDs".padEnd(21, " ")} | ${"Components".padEnd(13, " ")} | Prop Drilling Participants \n`);
 
     writeFileSync(TBL3_PROP_DRILL_DEPTH_DISTR, 
         `% ${"Project".padEnd(13, " ")} | ${"PDs".padEnd(4, " ")} | ` +
@@ -143,6 +143,7 @@ function resetLatexFiles() {
 function initTotalRowObjects() {
     const totalObjectTable1 = {
         totalPropDrillings: 0,
+        totalPurePropDrillings: 0,
         totalComponents: 0,
         pdParticipants: 0
     }
@@ -189,18 +190,22 @@ function generateReportForDatasetDescriptions(project) {
 
 function generateReportForPropDrillingFrequency(propDrillingsList, project, totalObjectTable1) {
     const propDrillingsCount = propDrillingsList.length;
+    const purePropDrillingsCount = project.findPurePropDrillings()
     const participantsCount = countDistinctComponents(propDrillingsList);
     const ALL_COMPONENTS = project.totalComponents;
     const percentage = ((participantsCount / ALL_COMPONENTS) * 100).toFixed(1);
+    const ppdPercentage = ((purePropDrillingsCount / propDrillingsCount) * 100).toFixed(1);
 
     const latexRow =
         `${project.projectName.padEnd(15, " ")} ` +
         `& ${padStart(propDrillingsCount, 4)} \t` +
+        `& ${valPct(purePropDrillingsCount, ppdPercentage, 4)} \t` +
         `& ${padStart(ALL_COMPONENTS, 10)} \t` +
         `& ${valPct(participantsCount, percentage, 4)} \\\\\n`;
 
     appendFileSync(TBL2_PROP_DRILL_ADOPTION, latexRow, 'utf8');
 
+    totalObjectTable1.totalPurePropDrillings += purePropDrillingsCount;
     totalObjectTable1.totalPropDrillings += propDrillingsCount;
     totalObjectTable1.totalComponents += ALL_COMPONENTS;
     totalObjectTable1.pdParticipants += participantsCount;
@@ -209,14 +214,18 @@ function generateReportForPropDrillingFrequency(propDrillingsList, project, tota
 function addTotalRowForPropDrillingFrequency(totalObjectTable1) {
     const participantsCount = totalObjectTable1.pdParticipants;
     const allComponents = totalObjectTable1.totalComponents;
+    const totalPurePropDrillings = totalObjectTable1.totalPurePropDrillings;
+    const totalPropDrillings = totalObjectTable1.totalPropDrillings;
 
     const percentage = ((participantsCount / allComponents) * 100).toFixed(1);
+    const ppdPercentage = ((totalPurePropDrillings / totalPropDrillings) * 100).toFixed(1);
     const latexEmptyRow = ' %\\bottomrule \n';
     const latexRow =
-        `\\cmidrule{1-4} \n\\textbf{Total} \t` +
+        `\\cmidrule{1-5} \n\\textbf{Total} \t` +
         `& ${padStart(totalObjectTable1.totalPropDrillings, 4)} \t` +
+        `& ${valPct(totalPurePropDrillings, ppdPercentage, 4)} \t` +
         `& ${padStart(allComponents, 10)} \t` +
-        `& ${valPct(participantsCount, percentage, 4)} \\\\\n\\cmidrule{1-4}`;
+        `& ${valPct(participantsCount, percentage, 4)} \\\\\n\\cmidrule{1-5}`;
 
     appendFileSync(TBL2_PROP_DRILL_ADOPTION, latexEmptyRow, 'utf8');
     appendFileSync(TBL2_PROP_DRILL_ADOPTION, latexRow, 'utf8');
