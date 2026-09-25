@@ -7,6 +7,7 @@
   "scripts": {
     "test": "jest",
     "latex": "node ./study/index.js latex",
+    "csv": "node ./study/index.js csv",
     "clone-benchmark": "node ./study/index.js clone"
 
   },
