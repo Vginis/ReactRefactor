@@ -1,12 +1,15 @@
 # ReactRefactor
 
-**ReactRefactor** is a research prototype for [brief description of what the tool does].
+The repository includes 
 
-It implements the approach presented in:
+**ReactRefactor** is a refactoring tool implementing the approach presented in:
 
 > **Refactoring React Component Hierarchies to eliminate Prop Drilling**  
 > Vangelis Gkinis, Vassilis E. Zafeiris  
 > Submitted to the *Journal of Systems and Software*.
+>
+> Arxiv preprint: [https://arxiv.org](https://arxiv.org/id)
+
 
 ## Overview
 
@@ -41,20 +44,20 @@ npm install
 Run ReactRefactor with:
 
 ```bash
-node index.js <REACT-APP-DIR>
+node index.js <REACT-APP-DIR> <PATH-TO-A-ROOT-COMPONENT>
 ```
 
 Example:
 
 ```bash
-node index.js ./example-project
+node index.js ./example-project ./example-project/app/src/main.jsx
 ```
 
 ### Command-line options
 
 | Option | Description |
 | --- | --- |
-| `--help` | Display available options |
+| `--interactive` | Run in interactive mode |
 | `--refactoring <name>` | Select the refactoring to apply |
 | `[OPTION]` | [DESCRIPTION] |
 
