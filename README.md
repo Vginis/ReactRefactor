@@ -1,8 +1,6 @@
 # ReactRefactor
 
-The repository includes 
-
-**ReactRefactor** is a refactoring tool implementing the approach presented in:
+Refactoring tool and replication package for the empirical study presented in::
 
 > **Refactoring React Component Hierarchies to eliminate Prop Drilling**  
 > Vangelis Gkinis, Vassilis E. Zafeiris  
@@ -14,9 +12,12 @@ The repository includes
 ## Overview
 
 ReactRefactor is a static analysis tool that identifies refactoring opportunities related to Prop Drilling in React projects.
-In non interactive mode, ReactRefactor lists all identified Prop Drillings 
-and their potential for being refactored through employment of the Context API or Component Composition.
-In interactive mode, it allows the user to eliminate a selected Prop Drilling through any applicable approach.
+It analyzes a React codebase and recovers component declarations, 
+their properties and parent-child dependencies in the render tree that can be statically inferred from the returned JSX of each component.
+Moreover, it captures the flow of data due to prop passings and identifies Prop Drillings and their features (e.g. forwarded properties).
+
+In non interactive mode, ReactRefactor lists all identified Prop Drillings of a given codebase
+and suggests applicable strategies for their refactoring, i.g. employment of the Context API or Component Composition.
 
 ## Requirements
 
@@ -44,13 +45,13 @@ npm install
 Run ReactRefactor with:
 
 ```bash
-node index.js <REACT-APP-DIR> <PATH-TO-A-ROOT-COMPONENT>
+node index.js --project <REACT-APP-SRC-DIR> --root <PATH-TO-A-ROOT-COMPONENT>
 ```
 
 Example:
 
 ```bash
-node index.js ./example-project ./example-project/app/src/main.jsx
+node index.js --project ./react-project/app/src --root ./react-project/app/src/main.jsx
 ```
 
 ### Command-line options
@@ -58,13 +59,15 @@ node index.js ./example-project ./example-project/app/src/main.jsx
 | Option | Description |
 | --- | --- |
 | `--interactive` | Run in interactive mode |
-| `--refactoring <name>` | Select the refactoring to apply |
-| `[OPTION]` | [DESCRIPTION] |
+| `--project <path>` | Relative or absolute path to the source folder of the React project |
+| `--root <path>` | Relative or absolute path to a source file declaring a root component  |
+| `--prefix-mappings <string>` | Mappings of module prefixes in import statements to paths relative to project root, e.g. `"@//=core @//plane-web=ce"` (single space separated). Essential for the analysis of multi-module projects. |
 
 
 ## Reproducing the Paper Results
 
-The repository contains the artifacts required to reproduce the experimental evaluation reported in the associated paper.
+The repository contains the artifacts required to reproduce 
+the experimental evaluation reported in the paper **Refactoring Refactoring React Component Hierarchies to eliminate Prop Drilling**.
 
 The replication package is located in:
 
@@ -75,10 +78,11 @@ study/
 The replication package contains:
 
 ```text
-replication/
-├── README.md
-├── subjects/       # Projects/subjects used in the evaluation
-├── scripts/        # Experiment and analysis scripts
+study/
+├── index.js        # Entry point to the replication package utility
+├── benchmark.js    # JSON description of all projects included in the empirical study
+├── results/        # JSON files with the `ReactRefactor` analysis results
+├── log/            # Log files with the output of `ReactRefactor` for each analyzed project
 ├── data/           # Input and/or raw experimental data
 └── results/        # Expected or generated results
 ```
@@ -91,11 +95,12 @@ The instructions describe how to reproduce the experiments corresponding to each
 
 ### Artifact corresponding to the paper
 
-The exact version of TOOL_NAME and the replication package used for the experiments reported in the paper are permanently archived at:
+The exact version of `ReactRefactor` and the replication package used for the experiments reported in the paper are permanently archived at:
 
-> **Zenodo:** [DOI / link to archived release]
+> **Zenodo:** [https://dx.doi.org/10.5281/zenodo.23042867]
 
-The archived release should be used when reproducing the results reported in the paper. The `main` branch of this repository may contain subsequent changes to the tool.
+The archived release should be used when reproducing the results reported in the paper. 
+The `main` branch of this repository may contain subsequent changes to the tool.
 
 ## Repository Structure
 
