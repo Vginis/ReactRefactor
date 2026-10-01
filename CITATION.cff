@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software in your research, please cite it using the metadata below."
 
-title: "ReactRefactor"
+title: "Replication package: Refactoring React Component Hierarchies to Eliminate Prop Drilling"
 type: software
 
 authors:
