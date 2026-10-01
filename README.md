@@ -81,17 +81,23 @@ The replication package contains:
 study/
 ├── index.js        # Entry point to the replication package utility
 ├── benchmark.js    # JSON description of all projects included in the empirical study
-├── results/        # JSON files with the `ReactRefactor` analysis results
+├── latex/          # Latex tables with the empirical study results 
 ├── log/            # Log files with the output of `ReactRefactor` for each analyzed project
-├── data/           # Input and/or raw experimental data
-└── results/        # Expected or generated results
+├── results/        # JSON files with the `ReactRefactor` analysis results
+├── scripts/        # Required JS source files for running the replication package
 ```
 
-The instructions describe how to reproduce the experiments corresponding to each research question:
+The execution of the replication package involves the following:
+- cloning of benchmark projects in the `../benchmarks` directory,
+- checking out an appropriate revision for each project ,
+- running the ReactRefactor tool to all projects
+- produce latex reports with the results
 
-- **RQ1:** [Short description]
-- **RQ2:** [Short description]
-- **RQ3:** [Short description]
+You can run the whole replication package with the command:
+
+```bash
+./run-replication.sh
+```
 
 ### Artifact corresponding to the paper
 
@@ -108,8 +114,7 @@ The `main` branch of this repository may contain subsequent changes to the tool.
 .
 ├── src/                 # Tool implementation
 ├── tests/               # Automated tests
-├── examples/            # Usage examples
-├── replication/         # Paper replication package
+├── study/               # Paper replication package
 ├── CITATION.cff         # Citation metadata
 ├── LICENSE
 └── README.md
@@ -120,20 +125,6 @@ The `main` branch of this repository may contain subsequent changes to the tool.
 If you use ReactRefactor in academic work, please cite the associated paper.
 
 Citation information is provided in [`CITATION.cff`](CITATION.cff).
-
-Once published:
-
-```bibtex
-@article{CITATION_KEY,
-  author  = {AUTHOR_1 and AUTHOR_2},
-  title   = {PAPER_TITLE},
-  journal = {Journal of Systems and Software},
-  year    = {YEAR},
-  volume  = {VOLUME},
-  pages   = {PAGES},
-  doi     = {DOI}
-}
-```
 
 The specific software artifact used in the evaluation can also be cited using its Zenodo DOI:
 
