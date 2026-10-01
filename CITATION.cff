@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it using the metadata below."
+
+title: "ReactRefactor"
+type: software
+
+authors:
+  - family-names: "GKINIS"
+    given-names: "VANGELIS"
+    affiliation: "ATHENS UNIVERSITY OF ECONOMICS AND BUSINESS"
+
+  - family-names: "ZAFEIRIS"
+    given-names: "VASSILIS"
+    orcid: "https://orcid.org/0000-0003-0751-4509"
+    affiliation: "UNIVERSITY OF IOANNINA"
+
+
+version: "1.0.0"
+
+date-released: "2026-10-01"
+
+repository-code: "https://github.com/Vginis/ReactRefactor"
+
+url: "https://github.com/Vginis/ReactRefactor"
+
+license: "Apache-2.0"
+
+abstract: >-
+  ReactRefactor is a research prototype for identification of refactoring opportunities
+  in React projects related to Prop Drilling.
+
+keywords:
+  - refactoring
+  - software engineering
+  - React
+  - Prop Drilling
+  - Context API
+  - Component Composition
