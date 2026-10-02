@@ -96,7 +96,7 @@ You can run the whole replication package with the command:
 
 The exact version of `ReactRefactor` and the replication package used for the experiments reported in the paper are permanently archived at:
 
-> **Zenodo:** [https://dx.doi.org/10.5281/zenodo.23042867]
+> **Zenodo:** [https://doi.org/10.5281/zenodo.23098328]
 
 The archived release should be used when reproducing the results reported in the paper. 
 The `main` branch of this repository may contain subsequent changes to the tool.
