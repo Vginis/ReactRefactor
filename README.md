@@ -28,28 +28,24 @@ Node.js >= 22
 ## Installation
 
 Clone the repository:
-
 ```bash
 git clone https://github.com/Vginis/ReactRefactor
 cd ReactRefactor
 ```
 
-Build the tool:
-
+Download all required dependencies:
 ```bash
 npm install
 ```
 
 ## Usage
 
-Run ReactRefactor with:
-
+Run ReactRefactor through the command:
 ```bash
 node index.js --project <REACT-APP-SRC-DIR> --root <PATH-TO-A-ROOT-COMPONENT>
 ```
 
 Example:
-
 ```bash
 node index.js --project ./react-project/app/src --root ./react-project/app/src/main.jsx
 ```
@@ -70,13 +66,11 @@ The repository contains the artifacts required to reproduce
 the experimental evaluation reported in the paper **Refactoring Refactoring React Component Hierarchies to eliminate Prop Drilling**.
 
 The replication package is located in:
-
 ```text
 study/
 ```
 
-The replication package contains:
-
+The replication package contains the following files and directories:
 ```text
 study/
 ├── index.js        # Entry point to the replication package utility
@@ -94,7 +88,6 @@ The execution of the replication package involves the following:
 - produce latex reports with the results
 
 You can run the whole replication package with the command:
-
 ```bash
 ./run-replication.sh
 ```
