@@ -6,7 +6,7 @@ Refactoring tool and replication package for the empirical study presented in::
 > Vangelis Gkinis, Vassilis E. Zafeiris  
 > Submitted to the *Journal of Systems and Software*.
 >
-> Arxiv preprint: [https://arxiv.org](https://arxiv.org/id)
+> Arxiv preprint: [https://arxiv.org/abs/2610.01376](https://arxiv.org/abs/2610.01376)
 
 
 ## Overview
@@ -123,13 +123,18 @@ The `main` branch of this repository may contain subsequent changes to the tool.
 ## Citation
 
 If you use ReactRefactor in academic work, please cite the associated paper.
+Citation information is provided below:
 
-Citation information is provided in [`CITATION.cff`](CITATION.cff).
-
-The specific software artifact used in the evaluation can also be cited using its Zenodo DOI:
-
-```text
-[ZENODO SOFTWARE CITATION]
+```bibtex
+@misc{gkinis2026,
+    title={Refactoring React Component Hierarchies to Eliminate Prop Drilling}, 
+    author={Vangelis Gkinis and Vassilis E. Zafeiris},
+    year={2026},
+    eprint={2610.01376},
+    archivePrefix={arXiv},
+    primaryClass={cs.SE},
+    url={https://arxiv.org/abs/2610.01376}, 
+}
 ```
 
 ## License
