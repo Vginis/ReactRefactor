@@ -4,7 +4,7 @@ Refactoring tool and replication package for the empirical study presented in::
 
 > **Refactoring React Component Hierarchies to eliminate Prop Drilling**  
 > Vangelis Gkinis, Vassilis E. Zafeiris  
-> Submitted to the *Journal of Systems and Software*.
+> Submitted for review to Elsevier Journal.
 >
 > Arxiv preprint: [https://arxiv.org/abs/2610.01376](https://arxiv.org/abs/2610.01376)
 
